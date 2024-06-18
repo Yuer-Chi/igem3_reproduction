@@ -12,12 +12,12 @@
 
     <!-- Custom CSS -->
     <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="../static/css/index.css">
-    <link rel="stylesheet" href="../static/font/font.css">
-    <link rel="stylesheet" href="../static/css/loading.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'font/font.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/loading.css') }}">
 
-    <script src="../static/js/loading.js"></script>
-    <script src="../static/js/fontsize.js"></script>
+    <script src="{{ url_for('static', filename = 'js/loading.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js/fontsize.js') }}"></script>
 <!--    <title>{% block title %}{% endblock %} | XMU-China - iGEM 2024</title>-->
 
 </head>
