@@ -4,11 +4,11 @@
 <!--{% block lead %}Describe how and why you chose your iGEM project.{% endblock %}-->
 
 {% block page_content %}
-   <link rel="stylesheet" href="../static/css/description.css">
+   <link rel="stylesheet" href="{{ url_for('static', filename = 'css/description.css') }}">
     <div id="scrollToTopBtn">
         <img src="https://static.igem.wiki/teams/5136//button.png" alt="">
     </div>
-    <script src="../static/js/button.js"></script>
+    <script src="{{ url_for('static', filename = 'js/button.js') }}"></script>
 
     <div class="banner"></div>
     <div class="main">
