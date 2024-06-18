@@ -1,57 +1,102 @@
 {% extends "layout.html" %}
   
 {% block title %}Project Description{% endblock %}
-{% block lead %}Describe how and why you chose your iGEM project.{% endblock %}
+<!--{% block lead %}Describe how and why you chose your iGEM project.{% endblock %}-->
 
 {% block page_content %}
-
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Bronze Medal Criterion #3</h4>
-      <p>Describe how and why you chose your iGEM project.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/medals">2024 Medals Page</a> for more information.</p>
+   <link rel="stylesheet" href="../static/css/description.css">
+    <div id="scrollToTopBtn">
+        <img src="https://static.igem.wiki/teams/5136//button.png" alt="">
     </div>
-  </div>
-</div>
+    <script src="../static/js/button.js"></script>
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <ul>
-      <li>A clear and concise description of your project.</li>
-      <li>A detailed explanation of why your team chose to work on this particular project.</li>
-      <li>References and sources to document your research.</li>
-      <li>Use illustrations and other visual resources to explain your project.</li>
-    </ul>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2022.igem.wiki/dtu-denmark/description">2022 DTU-Denmark</a></li>
-      <li><a href="https://2019.igem.org/Team:ITESO_Guadalajara/Description">2019 ITESO Guadalajara</a></li>
-      <li><a href="https://2020.igem.org/Team:Technion-Israel/Description">2020 Technion Israel</a></li>
-      <li><a href="https://2020.igem.org/Team:Botchan_Lab_Tokyo/Description">2020 Botchan Lab Tokyo</a></li>
-      <li><a href="https://2020.igem.org/Team:St_Andrews/Description">2020 St Andrews</a></li>
-      <li><a href="https://2020.igem.org/Team:MIT/Description">2020 MIT</a></li>
-    </ul>
-  </div>
-</div>
+    <div class="banner"></div>
+    <div class="main">
+        <nav class="navbar">
+            <ul>
+            <li><a href="#Inspiration">Inspiration</a></li>
+            <li><a href="#Background">Background</a></li>
+            <li><a href="#Problem">Problem</a></li>
+            <li><a href="#Solution">Solution</a></li>
+            <li><a href="#Project">Project</a></li>
+            <li><a href="#Biosafety">Biosafety</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="about">
+                <h2 id="Inspiration">Inspiration</h2>
+                <p>Ink serves as a carrier of information, yet its inherent properties present certain challenges. In daily life, writing inevitably involves errors, which necessitates a method for immediate removal of pen marks. As for industrial production, ink removal is the major challenge in paper recycling. These problems led us to center on bio-deinking this year. </p>
+                <h2 id="Background">Background</h2>
+                <p>From 1981 to 2020, the global waste paper utilization rate increased year by year, from 30.6% in 1981 to 61.3% in 2020. In countries with abundant wood resources, such as the US, Brazil, Finland and Sweden, paper production mainly relies on virgin wood pulp. On the other hand, in countries like China, Japan and South Korea where wood resources are limited, waste paper is the main fiber material for paper production. Paper recycling reduces the need for tree felling and carbon emissions, aligning with the global carbon neutrality goals. </p>
+                <p>In 2022, there were about 2500 paper manufacturers in China. With an annual growth rate of 2.64%, the total production of paper and cardboard in 2022 was 124.25 million tons. The market scale of China's paper recycling industry has reached 163.992 billion yuan and is expected to continue expanding, reaching 231.159 billion yuan by 2025. </p>
+                <p>Waste paper is a dominant raw material in China's paper industry. But the current national standard GB20811-2006 "Technical Requirements for Waste Paper Recycling" failed to meet the quality acceptance requirements of manufacturers, making it increasingly important to enhance the quality of waste paper recycling.</p>
+                <img src=".https://static.igem.wiki/teams/5136/1.png" alt="">
+                <h2 id="Problem">Problem</h2>
+                <p>We've noticed that there are two main factors barricading the sustainable development of paper resources: the difficulties in industrial waste paper recycling and the waste in the utilization process of paper products.</p>
+                <p>The recovery rate of waste paper in China has been declining from 2013 to 2022, indicating difficulties in the recycling process. Further research reveals that the biggest challenge in recycling is the removal of various inks contained within the waste paper. However, the traditional industrial alkali deinking process not only consumes large amounts of reagents but also affects the whiteness of the pulp and severely pollutes the environment. Additionally, during the pulping process of waste paper, wastewater and solid waste that contains high levels of heavy metals are generated despite multi-stage treatment.</p>
+                <p>Regarding the utilization of paper products, we focused on the consumers’ habit in daily use. In daily life, writing remains indispensable, yet an error in this process leaves non-erasable marks. Our team has frequently noticed paper wastage due to these unavoidable mistakes, such as reports and official documents invalidated by corrections and discarding of paper with writing errors in aesthetic concerns. These practices adversely affect the utilization rate of paper. In the case of fully utilized papers, such as draft paper and homework paper from schools, their fate typically end up being discarded. However, if the marks on them could be completely removed, the paper could be reused by consumers, thus decreasing the rate of disposal.</p>
+                <h2 id="Solution">Solution</h2>
+                <p>Currently, the industrial removal of ink from waste paper primarily relies on the alkaline deinking-floatation and washing methods. However, this conventional approach not only demands substantial amounts of chemicals but also causes huge water consumption. It further results in the release of organic agents that pose health risks to workers and lead to environmental contamination. In addition, fibers rich in lignin tend to darken under alkaline conditions, diminishing the whiteness of the pulp. The presence of chemical additives in the deinking process complicates wastewater and sludge treatment, necessitating more sophisticated procedures prior to disposal.</p>
+                <p>As for pen marks erasure for daily use, stationery manufacturers have taken note of the need, leading to the development of various erasure products like correction tapes, erasable pens, and correction fluids. However, these products have their flaws considering effectiveness, safety, and environmental impact.</p>
+                <p>Correction tape may not stick well to certain types of paper, and improper use can cause damage to paper. Correction fluid contains poisonous volatile organic compounds such as dichloromethane, trichloromethane, and xylene, which is harmful to human health and the environment. Erasable pen is poorly applied and has subtle effects. These defects prevent them from fully meeting consumers' needs for erasing pen marks.</p>
+                <h2 id="Project">Project</h2>
+                <p>Two light-blocking bioreactors were designed using purple Bacillus as chassis organism.</p>
+                <p>In the first bioreactor, the ability of purple Bacillus to produce HCN was enhanced, and gold and silver in electronic waste were converted into easily soluble gold and silver cyanide by the way of hydrogen cyanide complexing metal ions.</p>
+                <p>In the second bioreactor, the ability of purple Bacillus to degrade HCN was enhanced, and gold and silver ions were reduced to metal nanoparticles by NiFe hydrogenase, while cyanide which was harmful to the environment was degraded by HCN degrading enzyme, which realized effective recovery of precious metals gold and silver and effective treatment of toxic hydrides.</p>
+                <img src="https://static.igem.wiki/teams/5136/design.png" alt="">
+                <h2 id="Biosafety">Biosafety</h2>
+                <p>Throughout the whole project, detoxification of post-deinking waste water is the only process that involves direct contact between our engineered bacteria and the environment. Therefore, a physical barrier and a suicide switch was applied to ensure biosafety.</p>
+                <p>The tough outer shell of the hydrogel beads acts as the barrier so that bacteria are confined to the beads. To avoid potential leakage due to beads breaking, we also designed a suicide switch that is specifically induced by a rhamnose promoter containing an inverter.</p>
+            </div>
+        </div>
+    </div>
+<!--<div class="row mt-4">-->
+<!--  <div class="col">-->
+<!--    <div class="bd-callout bd-callout-info">-->
+<!--      <h4>Bronze Medal Criterion #3</h4>-->
+<!--      <p>Describe how and why you chose your iGEM project.</p>-->
+<!--      <hr>-->
+<!--      <p>Please see the <a href="https://competition.igem.org/judging/medals">2024 Medals Page</a> for more information.</p>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>Some advice</h2>
-    <hr>
-    <p>We encourage you to put up a lot of information and content on your wiki, but we also encourage you to include summaries as much as possible. If you think of the sections in your project description as the sections in a publication, you should try to be concise, accurate, and unambiguous in your achievements. Your Project Description should include more information than your project abstract.</p>
-  </div>
-  <div class="col-lg-4">
-    <h2>References</h2>
-    <hr>
-    <p>iGEM teams are encouraged to record references you use during the course of your research. They should be posted somewhere on your wiki so that judges and other visitors can see how you thought about your project and what works inspired you.</p>
-  </div>
-</div>
+<!--<div class="row mt-4">-->
+<!--  <div class="col-lg-8">-->
+<!--    <h2>What should this page contain?</h2>-->
+<!--    <hr>-->
+<!--    <ul>-->
+<!--      <li>A clear and concise description of your project.</li>-->
+<!--      <li>A detailed explanation of why your team chose to work on this particular project.</li>-->
+<!--      <li>References and sources to document your research.</li>-->
+<!--      <li>Use illustrations and other visual resources to explain your project.</li>-->
+<!--    </ul>-->
+<!--  </div>-->
+<!--  <div class="col-lg-4">-->
+<!--    <h2>Inspirations</h2>-->
+<!--    <hr>-->
+<!--    <ul>-->
+<!--      <li><a href="https://2022.igem.wiki/dtu-denmark/description">2022 DTU-Denmark</a></li>-->
+<!--      <li><a href="https://2019.igem.org/Team:ITESO_Guadalajara/Description">2019 ITESO Guadalajara</a></li>-->
+<!--      <li><a href="https://2020.igem.org/Team:Technion-Israel/Description">2020 Technion Israel</a></li>-->
+<!--      <li><a href="https://2020.igem.org/Team:Botchan_Lab_Tokyo/Description">2020 Botchan Lab Tokyo</a></li>-->
+<!--      <li><a href="https://2020.igem.org/Team:St_Andrews/Description">2020 St Andrews</a></li>-->
+<!--      <li><a href="https://2020.igem.org/Team:MIT/Description">2020 MIT</a></li>-->
+<!--    </ul>-->
+<!--  </div>-->
+<!--</div>-->
+
+<!--<div class="row mt-4">-->
+<!--  <div class="col-lg-8">-->
+<!--    <h2>Some advice</h2>-->
+<!--    <hr>-->
+<!--    <p>We encourage you to put up a lot of information and content on your wiki, but we also encourage you to include summaries as much as possible. If you think of the sections in your project description as the sections in a publication, you should try to be concise, accurate, and unambiguous in your achievements. Your Project Description should include more information than your project abstract.</p>-->
+<!--  </div>-->
+<!--  <div class="col-lg-4">-->
+<!--    <h2>References</h2>-->
+<!--    <hr>-->
+<!--    <p>iGEM teams are encouraged to record references you use during the course of your research. They should be posted somewhere on your wiki so that judges and other visitors can see how you thought about your project and what works inspired you.</p>-->
+<!--  </div>-->
+<!--</div>-->
 
 {% endblock %}
