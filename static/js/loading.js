@@ -15,7 +15,7 @@ var time=setInterval(function () {
         //  ('#loading').remove();
     }
 
-    loadingBackground.style.opacity=opacity;
+    // loadingBackground.style.opacity=opacity;
     opacity-=0.4;
 },100);
 }
