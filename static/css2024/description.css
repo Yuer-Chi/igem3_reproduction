@@ -1,0 +1,331 @@
+
+.wrapper-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25vw;
+    height: 100vh;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.sidebar-link:hover{
+    color:#6dd1d1;
+}
+
+.sidebar-link {
+  font-size: 20px; /* 设置字体大小 */
+  transition: font-size 0.2s; /* 设置过渡动画效果 */
+}
+
+.sidebar-link.current {
+  font-size: 35px; /* 设置字体大小 */
+}
+
+.left-bar-right-item:hover{
+    color:#6dd1d1;
+}
+
+.left-bar{
+    padding:30px;
+}
+
+
+.scroll-bar {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    height: 0;
+    width: 2%;
+    background-color: #BDF1EF;
+    transition: width 0.2s ease-out, left 0.2s ease-out;
+}
+
+.wrapper-left:hover .scroll-bar {
+    height: 100%;
+}
+
+.content-page {
+    font-family: ZepplinBold !important;
+}
+
+/*first page*/
+.home-banner {
+    margin-bottom: 22px;
+    background-attachment: fixed;
+    background-size: auto 120%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    background-position: center;
+}
+
+
+/*首页的插图*/
+.home-banner img {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.page-banner {
+    max-height: 100vh;
+    position: relative;
+    margin-bottom: 16px;
+    color: black;
+    border-radius: 30px;
+}
+
+.home-banner .container {
+    min-width: 100%;
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    display: block;
+}
+
+/*首页中间的字*/
+@media (max-width: 1367px) {
+    .home-banner {
+        height: 90vh;
+        background-size: auto 100%;
+    }
+
+    .home-banner .container .row .col-lg-12 {
+        /*margin-top: 300px;*/
+        zoom: 0.9;
+    }
+}
+
+@media (max-width: 1000px) {
+    .home-banner {
+        height: 90vh;
+        background-size: auto 100%;
+    }
+
+    .home-banner .container .row .col-lg-12 {
+        /*margin-top: 100px;*/
+        zoom: 0.8;
+    }
+}
+
+@media (max-width: 1400px) and (min-width: 1300px) {
+    .page-banner .container .row .col-lg-12 {
+        position: absolute;
+        top: 50%;
+    }
+
+    .home-banner .container .row .col-lg-12 {
+        margin-top: 0;
+    }
+}
+
+#sub-title {
+    z-index: 10;
+    text-shadow: 0 0 0.5em lightgrey, 0 0 0.2em #5c5c5c;
+}
+
+/*description字设置*/
+.headline {
+    /*font-family: Moon;*/
+    align-items: center;
+    display: flex;
+    font-size: calc(1rem + 14vmin);
+    height: auto;
+    justify-content: center;
+    perspective: 1000px;
+    scroll-snap-align: start;
+    width: 100%;
+}
+
+/*content page*/
+.widget:first-child {
+    margin-top: 5vh;
+
+}
+
+.widget-box {
+    /*font-family: Futura;*/
+    line-height: 1.75;
+    text-align: justify !important;
+    display: block;
+    padding: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 6px;
+}
+
+/*h4标题*/
+.widget-title {
+    /*font-family: Moon;*/
+    color: #929793;
+    font-size: 2.6rem;
+    margin-top: 40px;
+}
+
+.widget-small-title {
+    /*font-family: Moon;*/
+    color: #929793;
+    font-size: 1.8rem;
+    margin-top: 40px;
+}
+
+/*文本*/
+.categories {
+    /*font-family: Moon;*/
+    position: relative;
+    list-style: none;
+    padding: 12px;
+    margin: 30px 0 !important;
+    font-size: 24px;
+}
+
+/*配图*/
+.illustration img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    max-width: 500px;
+    width: 100%;
+    width: -moz-available;
+}
+
+/*配图的文字*/
+.illustration .pic-description {
+    font-size: large;
+    text-align: center;
+    margin-top: 22px;
+    margin-right: 80px;
+    margin-left: 80px;
+    line-height: 1.5;
+}
+
+.illustration .pic-description p {
+    font-size: large;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.5;
+    margin-bottom: 0 !important;
+}
+
+/*引用部分*/
+.reference {
+    /*font-family: Moon;*/
+    color: #929793;;
+    font-size: 22px;
+    padding-left: 0px;
+}
+
+/*侧边栏 outline*/
+@media (max-width: 992px) {
+    #bigtitle {
+        display: none;
+    }
+}
+
+/*@media (max-width: 1300px) and (min-width: 1200px){*/
+/*#bigtitle {*/
+/*    transform: scale(0.75);*/
+/*}*/
+/*}*/
+/*侧边栏部分*/
+#bigtitle {
+    position: fixed;
+    font-family: Aaargh !important;
+    background-color: #bebeba;
+    top: 0px;
+    height: 640px;
+    width: 21%;
+    font-weight: bold;
+    margin-top: 5vh !important;
+    text-align: center;
+    opacity: 0;
+}
+
+
+.magic-box {
+    margin: 0px !important;
+    padding: 0px !important;
+    list-style: none;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+
+}
+
+.magic-box li {
+    /*font-family: 'Moon', cursive!important;*/
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+/*侧边栏*/
+.magic-box li:hover {
+    /*font-family: 'Moon', cursive!important;*/
+    background-color: #d5d7d9;
+}
+
+.magic-box li a {
+    color: #9a8736;
+    display: block;
+    text-decoration: none;
+}
+
+.magic-box .active {
+    background-color: #cde0da;
+}
+
+/* scrollbar design */
+/*定义滚动条高宽及背景
+ 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+    width: 8px;
+    height: 100%;
+    background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道*/
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+/*定义滑块*/
+/* ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-image: -webkit-gradient(linear,
+    40% 0%,
+    75% 84%,
+    from(#E9FDFC),
+    to(#BDF1EF),
+    color-stop(.8, #BDF1EF));
+} */
+/* 定义滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-image: linear-gradient(
+        to bottom right, /* 线性渐变方向 */
+        #E9FDFC,        /* 起始颜色 */
+        #BDF1EF         /* 结束颜色 */
+    );
+}
+
+
+/*.divider {*/
+/*    background-color: #ed6335;*/
+/*    height: 0.12rem;*/
+/*    width: auto;*/
+/*    margin-top: 15px;*/
+/*}*/
