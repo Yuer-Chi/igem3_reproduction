@@ -25,13 +25,14 @@ def serve():
 # @app.route('/')
 # def home():
 #     return render_template('pages/home.html')
-
 @app.route('/')
 def home():
     try:
         return render_template('pages/home.html')
+    except FileNotFoundError as e:
+        return f"Template not found: {e}", 404  # 返回404状态码
     except Exception as e:
-        return f"Error: {e}", 501
+        return f"Internal Server Error: {e}", 501  # 返回500状态码
 
 
 # @app.route('/<page>')
