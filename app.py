@@ -31,7 +31,7 @@ def home():
     try:
         return render_template('pages/home.html')
     except Exception as e:
-        return f"Error: {e}", 500
+        return f"Error: {e}", 501
 
 
 # @app.route('/<page>')
