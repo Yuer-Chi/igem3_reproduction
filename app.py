@@ -22,13 +22,28 @@ def freeze():
 def serve():
     freezer.run()
 
+# @app.route('/')
+# def home():
+#     return render_template('pages/home.html')
+
 @app.route('/')
 def home():
-    return render_template('pages/home.html')
+    try:
+        return render_template('pages/home.html')
+    except Exception as e:
+        return f"Error: {e}", 500
 
+
+# @app.route('/<page>')
+# def pages(page):
+#     return render_template(str(Path('pages')) + '/' + page.lower() + '.html')
 @app.route('/<page>')
 def pages(page):
-    return render_template(str(Path('pages')) + '/' + page.lower() + '.html')
+    try:
+        return render_template(f'pages/{page.lower()}.html')
+    except Exception as e:
+        return f"Page not found: {e}", 404
+
 
 # Main Function, Runs at http://0.0.0.0:8080
 if __name__ == "__main__":
