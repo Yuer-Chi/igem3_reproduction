@@ -1,0 +1,55 @@
+.menu {
+    position: fixed; /* 固定在页面 */
+    bottom: 0px; /* 距离页面底部 20px */
+    right: 0px; /* 距离页面右侧 20px */
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; /* 移除背景颜色 */
+    z-index: 100000; /* 确保在其他元素之上 */
+}
+
+.menu li {
+    position: absolute;
+    list-style: none;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden; /* 确保图像不会超出边界 */
+    transform-origin: 100px;
+    transition: 0.3s;
+    transform: rotate(0deg) translateX(80px);
+}
+
+.menu.active li {
+    transform: rotate(calc(360deg/8*var(--i)));
+}
+
+.menu li img {
+    max-width: 100%; /* 限制图像宽度为 li 容器宽度 */
+    max-height: 100%; /* 限制图像高度为 li 容器高度 */
+    object-fit: contain; /* 保持图像比例不变，全部显示 */
+    border-radius: 50%; /* 如果需要保持图像为圆形 */
+}
+
+.toggle {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+    cursor: pointer;
+    overflow: hidden; /* 确保图像不会超出容器边界 */
+}
+
+.toggle img {
+    max-width: 100%; /* 限制图像宽度为容器宽度 */
+    max-height: 100%; /* 限制图像高度为容器高度 */
+    object-fit: contain; /* 保持图像比例不变，全部显示 */
+    border-radius: 50%; /* 如果需要保持图像为圆形 */
+}

@@ -1,0 +1,831 @@
+a{
+    text-decoration: none;
+}
+
+/*loading开始*/
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999999999;
+}
+
+#loader {
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+}
+
+.loader-img {
+    display: grid;
+}
+
+/*给loader*/
+.loader-img::before {
+    content: '';
+    width: 0;
+}
+
+.loader-img img {
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #deecec;
+    z-index: 1000;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+
+/* Loaded */
+.loaded #loader-wrapper .loader-section.section-left {
+    height: 100%;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+    height: 100%;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: all 0.3s 1s ease-out;
+    transition: all 0.3s 1s ease-out;
+}
+
+/* JavaScript Turned Off */
+.no-js #loader-wrapper {
+    display: none;
+}
+
+.no-js h1 {
+    color: #222222;
+}
+
+#loader-wrapper .load_title {
+    font-family: 'Open Sans';
+    color: #FFF;
+    font-size: 19px;
+    width: 100%;
+    text-align: center;
+    z-index: 9999999999999;
+    position: absolute;
+    top: 60%;
+    opacity: 1;
+    line-height: 30px;
+}
+
+#loader-wrapper .load_title span {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 13px;
+    color: #FFF;
+    opacity: 0.5;
+}
+
+/*loading结束*/
+
+/*up键开始*/
+.toTop {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 80px;
+    height: 80px;
+    background-image: url("https://static.igem.wiki/teams/4907/wiki/background/top1.png") !important;
+    background-size: 80px 80px;
+    visibility: visible;
+    cursor: pointer;
+    transition: all .2s ease;
+    z-index: 1100;
+}
+
+@media (max-width: 1000px) {
+    .toTop {
+        right: 3px !important;
+    }
+}
+
+.toTop::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: -4px auto;
+    width: 12px;
+    height: 12px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.toTop:hover {
+    animation: myfirst 0.8s ease-in-out;
+}
+
+@keyframes myfirst {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, -15px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.toTop:hover::after {
+    border-color: #fff;
+}
+
+/*up键结束*/
+
+/*侧边栏开始*/
+.myScrollspy {
+    position: fixed;
+    top: 83px;
+    left: 0;
+    width: 16.67vw;
+    height: calc(100vh - 90px);
+    transition: 0.5s;
+    opacity: 1;
+    /* background-color: #6a5e93; */
+    background-color: rgba(106, 94, 147, 0.8);
+
+    pointer-events: auto;
+    box-shadow: 5px 0 10px -5px rgba(0, 0, 0, 0.5);
+    pointer-events: auto; /* 允许点击事件 */
+}
+
+.myScrollspy.hidden * {
+    opacity: 0; /* 设置透明度为 0 */
+    pointer-events: none; /* 禁用点击事件 */
+}
+
+.left-bar {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    z-index: 2;
+    display: block;
+}
+
+.left-bar-right {
+    position: relative;
+    width: 100%;
+}
+
+
+.sidebar-link:hover {
+    color: #a5af14;
+}
+
+.left-bar-right-item {
+    padding-bottom: 10px;
+}
+
+.small-item {
+    padding-left: 10px;
+    padding-bottom: 2px !important;
+}
+
+.sidebar-link {
+    font-size: 20px; /* 设置字体大小 */
+    color:#FFF ;
+    transition: font-size 0.2s; /* 设置过渡动画效果 */
+    text-decoration: none;
+    font-family: Aaargh;
+    font-weight: bold;
+}
+
+.sidebar-link.current {
+    font-size: 26px; /* 设置字体大小 */
+    color: #bac596;
+}
+
+.sidebar-link.active {
+    font-size: 30px; /* 设置字体大小 */
+    color: #b2aa6d;
+}
+
+/*侧边栏二级*/
+.sidebar-link-two:hover {
+    color: #a5af14;
+}
+
+.sidebar-link-two {
+    font-size: 16px; /* 设置字体大小 */
+    color: #274940;
+    transition: font-size 0.2s; /* 设置过渡动画效果 */
+    font-family: Aaargh;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sidebar-link-two.current {
+    font-size: 17px; /* 设置字体大小 */
+    color: #b2aa6d;
+}
+
+.sidebar-link-two.active {
+    font-size: 17px; /* 设置字体大小 */
+    color: #b2aa6d;
+}
+
+.scroll-bar {
+    position: absolute;
+    top: 0;
+    left: 97%;
+    height: 10px;
+    width: 3%;
+    background-color: #bac596;
+    transition: height 0.2s ease-out;
+}
+
+
+.left-bar-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 50px;
+}
+
+.left-bar-bg img {
+    position: relative;
+    left: 0;
+    width: 90%; /* 图片宽度*/
+    z-index: -1;
+    opacity: 50%;
+    margin-left: 10px;
+}
+
+/*侧边栏结束*/
+
+/*myPage框架开始*/
+.myPage {
+    position: relative;
+    left: 10vw;
+    width: 83.33vw;
+}
+
+.myPage:before {
+    content: ' ';
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background: url("../img/bg.png") center 0 repeat; */
+    background-image: linear-gradient(to right, #f0f0f0 0%, #EBD69C 100%);
+    background-size: cover;
+}
+
+.myPage-main {
+    position: relative;
+    width: 95%;
+}
+
+.myPage-main-content {
+    position: relative;
+    width: 85%;
+    margin: auto;
+    text-align: justify;
+}
+
+.myPage-padding {
+    position: absolute;
+    width: 5%;
+    height: 100%;
+    right: 0;
+    background-color: #e0ebeb;
+    box-shadow: -5px 0 10px -5px rgba(0, 0, 0, 0.5);
+}
+
+
+/*滚动条*/
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+/*滚动条头*/
+::-webkit-scrollbar-thumb {
+    border-radius: 1em;
+    background-color: rgb(102, 128, 94);
+}
+
+
+/*滚动条轨道*/
+::-webkit-scrollbar-track {
+    background-color: #e0ebeb;
+}
+
+/*myPage框架结束*/
+
+/*分页大标题开始*/
+.myPage-headline {
+    position: relative;
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 0.3rem solid #66805d;
+    width: 90%;
+    left: 5%;
+}
+
+.myPage-headline-content {
+    position: relative;
+    font-size: 60px;
+}
+
+/*分页大标题结束*/
+
+/*分页段落开始*/
+.myPage-paragraph {
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+.myPage-paragraph-headline-h2 {
+    color: #274940;
+    font-family: Aaargh;
+    font-size: 45px;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 0.25rem solid #66805d;
+    font-weight: bold;
+}
+
+.myPage-paragraph-headline-h2:nth-of-type(1) {
+    margin-top: 70px;
+}
+
+.myPage-paragraph-headline-h3 {
+    color: #274940;
+    font-family: Aaargh;
+    font-size: 35px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+    font-weight: bold;
+}
+
+.myPage-paragraph-headline-h3::before {
+    content: "";
+    display: inline-block;
+    width: 30px; /* 根据 SVG 图标的宽度调整 */
+    height: 30px; /* 根据 SVG 图标的高度调整 */
+    background-image: url("https://static.igem.wiki/teams/4907/wiki/background/l2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 0.5em; /* 调整图标与文本之间的间距 */
+}
+
+.myPage-paragraph-headline-h4 {
+    color: #67815e;
+    font-family: Aaargh;
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.myPage-paragraph-headline-h4::before {
+    content: "";
+    display: inline-block;
+    width: 30px; /* 根据 SVG 图标的宽度调整 */
+    height: 30px; /* 根据 SVG 图标的高度调整 */
+    background-image: url("https://static.igem.wiki/teams/4907/wiki/background/l3.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 0.5em; /* 调整图标与文本之间的间距 */
+}
+
+.myPage-paragraph-headline-h5 {
+    color: #899160;
+    font-family: Aaargh;
+    font-size: 26px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.myPage-paragraph-headline-h5::before {
+    content: "";
+    display: inline-block;
+    width: 30px; /* 根据 SVG 图标的宽度调整 */
+    height: 30px; /* 根据 SVG 图标的高度调整 */
+    background-image: url("https://static.igem.wiki/teams/4907/wiki/background/l4.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 0.5em; /* 调整图标与文本之间的间距 */
+}
+
+.myPage-paragraph-headline-h6 {
+    color: #274940;
+    display: inline-block;
+    font-family: Aaargh;
+    font-size: 22px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #9da96d;
+    font-weight: bold;
+}
+
+.myPage-paragraph-headline-divider {
+    background-color: #66805d;
+    height: 0.25rem;
+    width: 350px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.myPage-paragraph-content {
+    color: #274940;
+    font-family: chocolates;
+    font-size: 24px;
+    line-height: 2em;
+    padding-bottom: 20px;
+}
+
+.myPage-paragraph-content a {
+    color: #444f13;
+}
+
+.myPage-paragraph-fig img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    max-width: 500px;
+    width: 100%;
+    width: -moz-available;
+}
+
+/*配图的文字*/
+.myPage-paragraph-fig-description {
+    font-size: large;
+    font-family: chocolates;
+    text-align: center;
+    margin-top: 22px;
+    margin-right: 80px;
+    margin-left: 80px;
+    line-height: 1.5;
+    color: #444f13;
+    padding-bottom: 30px;
+}
+
+.myPage-paragraph-ul {
+    color: #274940;
+    font-family: chocolates;
+    font-size: 24px;
+    counter-reset: my-counter; /* 设置计数器的初始值 */
+    list-style-type: none; /* 隐藏默认的序号样式 */
+    padding-left: 0; /* 移除默认的内边距 */
+}
+
+.myPage-paragraph-ul li::before {
+    content: "";
+    display: inline-block;
+    width: 30px; /* 根据 SVG 图标的宽度调整 */
+    height: 30px; /* 根据 SVG 图标的高度调整 */
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='%23EBC475' class='bi bi-stars' viewBox='0 0 16 16'%3E%3Cpath d='M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 0.5em; /* 调整图标与文本之间的间距 */
+}
+
+.myPage-paragraph-reference {
+    color: #274940;
+    font-family: chocolates;
+    font-size: 24px;
+    counter-reset: my-counter; /* 设置计数器的初始值 */
+    list-style-type: none; /* 隐藏默认的序号样式 */
+    padding-left: 0; /* 移除默认的内边距 */
+}
+
+.myPage-paragraph-reference li {
+    margin-bottom: 10px;
+}
+
+.myPage-paragraph-reference li::before {
+    content: "[" counter(my-counter) "]"; /* 设置序号的内容和格式 */
+    counter-increment: my-counter; /* 递增计数器的值 */
+    left: 0; /* 将序号定位到最左侧 */
+    width: 40px; /* 序号部分的固定宽度 */
+    text-align: left; /* 将序号左对齐 */
+}
+
+/*parts表格开始*/
+.myPage-paragraph-table-div {
+    padding-top: 20px;
+}
+
+.myPage-paragraph-table {
+    border-collapse: collapse;
+    border: 2px solid #60815b;
+    width: 100%;
+}
+
+.myPage-paragraph-table td {
+    color: #274940; /* 设置链接的文本颜色 */
+    text-align: center;
+}
+
+.td-img-container {
+    width: 100%;
+    text-align: center;
+}
+
+.myPage-paragraph-table img {
+    position: relative;
+    width: 80%;
+}
+
+.myPage-paragraph-table a {
+    color: #b2b994; /* 设置链接的文本颜色 */
+    text-decoration: none; /* 添加下划线 */
+}
+
+.myPage-paragraph-table a::after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("https://static.igem.wiki/teams/4907/wiki/parts/niao.png");
+    background-size: cover;
+    margin-left: 10px; /* 调整图标与连接之间的间距 */
+}
+
+.myPage-paragraph-table a::after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("https://static.igem.wiki/teams/4907/wiki/parts/niao.png");
+    background-size: cover;
+    margin-left: 5px; /* 调整图标与连接之间的间距 */
+}
+
+.myPage-paragraph-table a:hover {
+    color: #66805e; /* 设置链接的鼠标悬停时的文本颜色 */
+    text-decoration: none; /* 移除鼠标悬停时的下划线 */
+}
+
+.myPage-paragraph-table tr:first-child {
+    background-color: #a6b3a3;
+    color: #60815b;
+}
+
+.myPage-paragraph-table th,
+.myPage-paragraph-table td {
+    border: 1px solid #60815b;
+    padding: 8px;
+}
+
+.myPage-paragraph-table th:first-child,
+.myPage-paragraph-table td:first-child {
+    width: 10%;
+}
+
+
+/*parts表格结束*/
+
+/*分页段落结束*/
+
+/*footer开始*/
+#myFooter {
+    background-color: #173029;
+    height: 30vh;
+    z-index: 500;
+    position: relative;
+    left: -16.67vw;
+    width: 100vw;
+}
+
+.footer-xiaohui {
+    position: absolute;
+    left: 3%;
+    width: 45%;
+    height: 85%;
+    top: 5%;
+}
+
+
+.footer-xiaohui img {
+    position: absolute;
+    height: 45%;
+}
+
+.footer-xiaoming {
+    position: absolute;
+    left: 18%;
+    top: 15%;
+    font-size: 24px;
+    color: rgba(218, 206, 185, 100);
+    font-family: Fashion;
+}
+
+.footer-didian {
+    position: absolute;
+    left: 3%;
+    width: 45%;
+    height: 35%;
+    top: 55%;
+}
+
+.footer-didian img {
+    position: absolute;
+    height: 100%;
+}
+
+.footer-didianming {
+    position: absolute;
+    left: 18%;
+    top: 15%;
+    font-size: 16px;
+    color: rgba(218, 206, 185, 100);
+    font-family: Fashion;
+}
+
+.footer-duihui {
+    position: absolute;
+    left: 32%;
+    width: 45%;
+    height: 85%;
+    top: 7%;
+}
+
+.footer-duihui img {
+    position: absolute;
+    height: 45%;
+}
+
+.footer-follow {
+    position: absolute;
+    left: 40%;
+    width: 25%;
+    height: 85%;
+    top: 3%;
+    justify-content: center;
+}
+
+.footer-followus {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: rgba(218, 206, 185, 100);
+    font-family: Fashion;
+}
+
+.footer-wechat {
+    position: absolute;
+    left: 10%;
+    height: 30%;
+    width: 17%;
+    top: 20%;
+}
+
+.footer-wechat:hover {
+    transform: scale(1.2);
+}
+
+.footer-facebook {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30%;
+    width: 17%;
+    top: 20%;
+}
+
+.footer-facebook:hover {
+    transform: translateX(-50%) scale(1.2);
+}
+
+.footer-ins {
+    position: absolute;
+    right: 10%;
+    height: 30%;
+    width: 17%;
+    top: 20%;
+}
+
+.footer-ins:hover {
+    transform: scale(1.2);
+}
+
+.footer-weibo {
+    position: absolute;
+    left: 25%;
+    height: 30%;
+    width: 17%;
+    top: 60%;
+}
+
+.footer-weibo:hover {
+    transform: scale(1.2);
+}
+
+.footer-twitter {
+    position: absolute;
+    right: 25%;
+    height: 30%;
+    width: 17%;
+    top: 60%;
+}
+
+.footer-twitter:hover {
+    transform: scale(1.2);
+}
+
+.footer-bar {
+    position: absolute;
+    top: 13%;
+    bottom: 13%;
+    left: 67%;
+    width: 0.5%;
+    background-color: #66805e;
+}
+
+.footer-contact {
+    position: absolute;
+    right: 6%;
+    width: 25%;
+    height: 85%;
+    top: 3%;
+    justify-content: center;
+}
+
+.footer-contact img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25%;
+    height: 45%;
+}
+
+.footer-contactus {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: rgba(218, 206, 185, 100);
+    font-family: Fashion;
+}
+
+.footer-mail {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: rgba(218, 206, 185, 100);
+    font-family: Fashion;
+}
+
+/*footer结束*/
