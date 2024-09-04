@@ -32,6 +32,7 @@ def home():
     except FileNotFoundError as e:
         return f"Template not found: {e}", 404  # 返回404状态码
     except Exception as e:
+        print(f"Error details: {e}")
         return f"Internal Server Error: {e}", 501  # 返回500状态码
 
 
