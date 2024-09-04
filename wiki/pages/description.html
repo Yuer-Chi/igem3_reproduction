@@ -4,7 +4,9 @@
 <!--{% block lead %}Describe how and why you chose your iGEM project.{% endblock %}-->
 
 {% block page_content %}
-<link rel="stylesheet" href="{{ url_for('static', filename = 'css/description.css') }}">
+
+
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/description.css') }}">  
 
 
 <div id="scrollToTopBtn">
@@ -12,14 +14,14 @@
 </div>
 <script src="{{ url_for('static', filename = 'js/button.js') }}"></script>
 
-<div class="banner"></div>
-<div class="main">
+    <div class="banner"></div>
+<div class="main"> 
 
-  <div class="content">
-    <div class="about">
-      <h2 id="Inspiration">Inspiration</h2>
-                <p>Ink and paper are ubiquitous in daily life and the printing industry. However, separating them once they combined presents a significant challenge. The difficulty in eliminating ink from paper hampers both everyday reuse and industrial waste paper recycling. Moreover, the wastewater resulting from the deinking process contains high-level heavy metals and various pollutants. These issues have guided our focus towards bio-deinking and the detoxification of post-deinking wastewater this year. </p>
-      <h2 id="Background">Background</h2>
+<div class="content">
+            <div class="about">
+                <h2 id="Inspiration">Inspiration</h2>
+                <p>Inkk and paper are ubiquitous in daily life and the printing industry. However, separating them once they combined presents a significant challenge. The difficulty in eliminating ink from paper hampers both everyday reuse and industrial waste paper recycling. Moreover, the wastewater resulting from the deinking process contains high-level heavy metals and various pollutants. These issues have guided our focus towards bio-deinking and the detoxification of post-deinking wastewater this year. </p>
+                <h2 id="Background">Background</h2>
                 <p>The ongoing climate crisis driven by carbon dioxide emissions has led to numerous disasters and heavy losses worldwide. Trees act as carbon sinks, absorbing atmospheric carbon dioxide. Deforestation, mainly caused by logging for various commercial purposes, including paper production, plays a crucial role in increasing carbon dioxide level, aggravating global warming. The global pulp and paper industry, featuring the extensive use of virgin wood, has contributed significantly to greenhouse gas (GHG) emissions. From 1961 to 2019, the pulp and paper industry generated 43.5 billion tons of carbon dioxide, accounting for 4.2% of global anthropogenic GHG emissions.</p>
                 <p>China has one of the largest paper production industries globally. Despite waste paper being a significant raw material in China's paper industry, only about half of the waste paper produced is recycle. Furthermore, the recovery rate for waste paper has been declining over the years, dropping from 72.2% in 2013 to 53.5% in 2022. Such figures indicate that a significant portion of waste paper resources is underutilized in China.</p>
                 <p>Recycling one ton of paper can save approximately 17 trees, 7,000 gallons of water, and 4,000 kilowatt-hours of electricity. Therefore, paper recycling not only conserves natural resources but also reduces the environmental footprint. Despite the importance of paper recycling, traditional methods pose significant environmental challenges. The de-inking process in paper recycling consumes large amount of water and chemicals. Moreover, the sludge from de-inking that contains heavy metals and toxic chemicals releases carbon dioxide and various toxic gases when incinerated and contaminates soil and water if landfilled. This underscores the necessity for innovative methods that enhance recycling efficiency and minimize pollution.</p>
@@ -75,16 +77,16 @@
       <h2 id="Biosafety">Biosafety</h2>
                 <p>Throughout the whole project, detoxification of post-deinking waste water is the only process that involves direct contact between our engineered bacteria and the environment. Therefore, a physical barrier and a suicide switch are applied to ensure biosafety.</p>
                 <p>The tough outer shell of the hydrogel beads acts as the barrier so that bacteria are confined to the beads. To avoid potential leakage due to beads breaking, we also designed a suicide circuit expressing cytotoxic protein CcdB consistently which is specifically repressed by a rhamnose-induced anti-CcdB protein CcdA. Together, these two designs prevent our engineered microbes from escaping.</p>
-      <div>
-        <img src="https://static.igem.wiki/teams/5136/description/7.png" alt="">
-        <p style="text-align: center;font-size: 6rem!important">Fig.7 Principles of physical repression of hydrogels</p>
-      </div>
-      <div>
-        <img src="https://static.igem.wiki/teams/5136/description/8.jpg" alt="">
-        <p style="text-align: center;font-size: 6rem!important">Fig.8 Biosafety gene circuits</p>
-      </div>
-    </div>
-  </div>
+                <div>
+                  <img src="https://static.igem.wiki/teams/5136/description/7.png" alt="">
+                  <p style="text-align: center;font-size: 6rem!important">Fig.7 Principles of physical repression of hydrogels</p>
+                </div>
+                 <div>
+                  <img src="https://static.igem.wiki/teams/5136/description/8.jpg" alt="">
+                  <p style="text-align: center;font-size: 6rem!important">Fig.8 Biosafety gene circuits</p>
+                </div>
+            </div>
+        </div>
 </div>
 
 
