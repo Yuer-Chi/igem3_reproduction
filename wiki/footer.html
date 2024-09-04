@@ -28,6 +28,24 @@
         <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
     </li>
 </div>
+<script>
+    let toggle = document.querySelector('.toggle');
+    let menu = document.querySelector('.menu');
+
+    toggle.onmouseover = function () {
+        menu.classList.add('active');
+    }
+
+    toggle.onmouseout = function () {
+        menu.classList.remove('active');
+    }
+    toggle.onclick = function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // 平滑滚动效果
+        });
+    }
+</script>
 <div class="footer">
     <div class="xmu">
         <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-xmulogo.png" alt="xmu">

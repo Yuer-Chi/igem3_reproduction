@@ -15,3 +15,4 @@ toggle.onclick = function () {
         behavior: 'smooth' // 平滑滚动效果
     });
 }
+// 失效力
