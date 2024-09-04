@@ -1,78 +1,80 @@
 {% extends "layout.html" %}
-  
+
 {% block title %}Project Description{% endblock %}
 <!--{% block lead %}Describe how and why you chose your iGEM project.{% endblock %}-->
 
 {% block page_content %}
-   <link rel="stylesheet" href="{{ url_for('static', filename = 'css/description.css') }}">  
 
 
-    <div id="scrollToTopBtn">
-        <img src="https://static.igem.wiki/teams/5136//button.png" alt="">
-    </div>
-    <script src="{{ url_for('static', filename = 'js/button.js') }}"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/description.css') }}">  
+
+
+<div id="scrollToTopBtn">
+  <img src="https://static.igem.wiki/teams/5136//button.png" alt="">
+</div>
+<script src="{{ url_for('static', filename = 'js/button.js') }}"></script>
 
     <div class="banner"></div>
-    <div class="main">
-        
-        <div class="content">
+<div class="main"> 
+
+<div class="content">
             <div class="about">
                 <h2 id="Inspiration">Inspiration</h2>
-                <p>Ink and paper are ubiquitous in daily life and the printing industry. However, separating them once they combined presents a significant challenge. The difficulty in eliminating ink from paper hampers both everyday reuse and industrial waste paper recycling. Moreover, the wastewater resulting from the deinking process contains high-level heavy metals and various pollutants. These issues have guided our focus towards bio-deinking and the detoxification of post-deinking wastewater this year. </p>
+                <p>Inkk and paper are ubiquitous in daily life and the printing industry. However, separating them once they combined presents a significant challenge. The difficulty in eliminating ink from paper hampers both everyday reuse and industrial waste paper recycling. Moreover, the wastewater resulting from the deinking process contains high-level heavy metals and various pollutants. These issues have guided our focus towards bio-deinking and the detoxification of post-deinking wastewater this year. </p>
                 <h2 id="Background">Background</h2>
                 <p>The ongoing climate crisis driven by carbon dioxide emissions has led to numerous disasters and heavy losses worldwide. Trees act as carbon sinks, absorbing atmospheric carbon dioxide. Deforestation, mainly caused by logging for various commercial purposes, including paper production, plays a crucial role in increasing carbon dioxide level, aggravating global warming. The global pulp and paper industry, featuring the extensive use of virgin wood, has contributed significantly to greenhouse gas (GHG) emissions. From 1961 to 2019, the pulp and paper industry generated 43.5 billion tons of carbon dioxide, accounting for 4.2% of global anthropogenic GHG emissions.</p>
                 <p>China has one of the largest paper production industries globally. Despite waste paper being a significant raw material in China's paper industry, only about half of the waste paper produced is recycle. Furthermore, the recovery rate for waste paper has been declining over the years, dropping from 72.2% in 2013 to 53.5% in 2022. Such figures indicate that a significant portion of waste paper resources is underutilized in China.</p>
                 <p>Recycling one ton of paper can save approximately 17 trees, 7,000 gallons of water, and 4,000 kilowatt-hours of electricity. Therefore, paper recycling not only conserves natural resources but also reduces the environmental footprint. Despite the importance of paper recycling, traditional methods pose significant environmental challenges. The de-inking process in paper recycling consumes large amount of water and chemicals. Moreover, the sludge from de-inking that contains heavy metals and toxic chemicals releases carbon dioxide and various toxic gases when incinerated and contaminates soil and water if landfilled. This underscores the necessity for innovative methods that enhance recycling efficiency and minimize pollution.</p>
-                <div>
-                  <img src="https://static.igem.wiki/teams/5136/description/1.jpg" alt="Fig.1 Chinese waste paper recycling data">
+      <div>
+        <img src="https://static.igem.wiki/teams/5136/description/1.jpg" alt="Fig.1 Chinese waste paper recycling data">
                   <p style="text-align: center;font-size: 6rem!important" >Fig.1 Chinese waste paper recycling data</p>
-                </div>
+      </div>
 
-                <h2 id="Problem">Problem</h2>
+      <h2 id="Problem">Problem</h2>
                 <p>We've noticed that there are two main factors barricading the sustainable development of paper resources: the waste in the utilization process of paper products and the difficulties in industrial waste paper recycling.</p>
                 <p>Regarding the utilization of paper products, we focused on the consumers’ habits in daily use. In daily life, writing remains indispensable, yet it inevitably involves error and leaves non-erasable marks. Our team has frequently noticed paper wastage due to these unavoidable mistakes, such as reports or official documents invalidated by corrections and discarding of paper with writing errors in aesthetic concerns. These practices adversely affect the utilization rate of paper and burden the process of recycling. However, if the marks could be completely removed, much convenience will there be when writing mistakes and fully-used paper could be reused right away, thus decreasing the rate of disposal.</p>
                 <p>As for waste paper recycling, the industrial removal of ink from waste paper primarily relies on the alkaline deinking methods. However, this conventional approach not only demands substantial amount of toxic chemicals but also causes huge water consumption. It further results in the release of organic agents and heavy metals that pose health risks to workers and lead to environmental contamination. The presence of toxic chemical additives in the deinking process complicates wastewater and sludge treatment, necessitating more sophisticated procedures prior to disposal. In addition, fibers rich in lignin tend to darken under alkaline conditions, diminishing the whiteness of recycled paper.</p>
-                <h2 id="Solution">The current solution</h2>
+      <h2 id="Solution">The current solution</h2>
                 <p>Stationery manufacturers have taken note of the need for pen mark erasure in daily use, leading to the development of various erasure products like correction tapes, erasable pens, and correction fluids. However, these products have their flaws considering effectiveness, safety, and environmental impact. Correction tape may not stick well to certain types of paper, and improper use can cause damage to paper. Correction fluid contains poisonous volatile organic compounds such as dichloromethane, trichloromethane, and xylene, which are harmful to human health and the environment. Erasable pen has very few application scenarios for its pen marks fade away easily under high temperature. These defects prevent them from fully meeting consumers' needs.</p>
                 <p>In the waste paper recycling process, the initial step involves pulping, where sorted paper is mixed with water and chemicals, subsequently breaking down into fibers. This pulp then undergoes an alkaline deinking-flotation and washing process to separate the ink from the pulp. Since alkaline treatment reduces the brightness and whiteness of pulp, the deinked pulp is usually bleached.</p>
                 <p>Traditional bleaching techniques often involves chlorine-based chemicals, such as chlorine and hypochlorite, which generate harmful chlorinated organic compounds. As for heavy metals in the post-deinking wastewater, they precipitate and enter the sludge after traditional wastewater treatments. The sludge is then incinerated and landfilled, which poses great risk to soil environment.</p>
 
-                <div>
-                  <img src="https://static.igem.wiki/teams/5136/description/2.png" alt="">
-                  <p style="text-align: center;font-size: 6rem!important">Fig.2 Waste paper recycling process</p>
-                </div>
-                <div>
-                  <img src="https://static.igem.wiki/teams/5136/description/3.png" alt="">
-                  <p style="text-align: center;font-size: 6rem!important">Fig.3 The way to erase the handwriting</p>
-                </div>
+      <div>
+        <img src="https://static.igem.wiki/teams/5136/description/2.png" alt="">
+        <p style="text-align: center;font-size: 6rem!important">Fig.2 Waste paper recycling process</p>
+      </div>
+      <div>
+        <img src="https://static.igem.wiki/teams/5136/description/3.png" alt="">
+        <p style="text-align: center;font-size: 6rem!important">Fig.3 The way to erase the handwriting</p>
+      </div>
 
-                 <h2 id="Project">Project</h2>
+      <h2 id="Project">Project</h2>
 
                 <p>To foster sustainable development of paper resources, we propose a two-pronged solution focused on "reducing demand" and "enhancing supply." On the one hand, "reducing demand" is achieved by encouraging the repeated use of paper in everyday life, for which we have introduced a bio-based eraser pen. On the other hand, "increasing supply" refers to an effective and environmentally friendly multi-enzyme deinking method for industrial paper recycling. To further reduce pollution and achieve a greener waste paper recycling process, we also designed a metallothioneins-based biosorption system to absorb heavy metals in in the post-deinking water.</p>
-                <h3>1.The eraser pen</h3>
+      <h3>1.The eraser pen</h3>
                 <p>Our solution for pen mark erasure in daily use leads to a user-friendly “eraser pen”. This pen uses enzymes and rhamnolipid as its “ink” to dissolve pen marks and has a highly efficient bio-absorbent on its tail to absorb ink particles.</p>
                 <p>The first step of the approach is “writing” a mixture of various enzymes on the error pen marks to degrade the binding agents of ink. The binding agent in the ink plays a vital role in setting the ink particles stick onto paper. Its main components include various resins. Targeting the degradation of binding agents, we selected the highly active mutant lipase L3-3 and turboPETase, which have strong specificity and high degrading efficiency for the common binding agent polyester resin.</p>
                 <p>After enzymes processing, the structure of the ink mark becomes loose, but the ink is not completely separated from the surface of paper. By employing the biosurfactant rhamnolipid, ink particles are dissolved and detached from paper.</p>
-                <p>Finally, press the adsorbent onto the ink mark so that the free ink particles are absorbed and removed.</p>
-                <div>
-                  <img src="https://static.igem.wiki/teams/5136/description/4.png" alt="">
-                  <p style="text-align: center;font-size: 6rem!important">Fig.4 The principle of erasing pen</p>
-                </div>
-                <h3>2.Industrial deinking and wastewater detoxification</h3>
-                <h4>2.1Deinking </h4>
+      <p>Finally, press the adsorbent onto the ink mark so that the free ink particles are absorbed and removed.</p>
+      <div>
+        <img src="https://static.igem.wiki/teams/5136/description/4.png" alt="">
+        <p style="text-align: center;font-size: 6rem!important">Fig.4 The principle of erasing pen</p>
+      </div>
+      <h3>2.Industrial deinking and wastewater detoxification</h3>
+      <h4>2.1Deinking </h4>
                 <p>To improve the deinking process of waste paper recycling, a composite of highly efficient enzymes produced by our engineered becteria E. coli was applied to the pulp. The multi-enzyme system is composed of cellulase, lipase and laccase and is released from E. coli via a bacterial lysozyme mediated autolytic system.</p>
-                <div>
-                  <img src="https://static.igem.wiki/teams/5136/description/5.png" alt="">
+      <div>
+        <img src="https://static.igem.wiki/teams/5136/description/5.png" alt="">
                   <p style="text-align: center;font-size: 6rem!important">Fig.5 Working principle of biological deinking system</p>
-                </div>
-                <h4>2.2Heavy metal absorption</h4>
+      </div>
+      <h4>2.2Heavy metal absorption</h4>
                 <p>After deinking, heavy metals in the ink, such as Pb, Cr, Cd and Hg, are released into the wastewater. To tackle this problem we proposed two solutions based on metallothioneins MT2A and MT3, known for their strong capacity to absorb metal ions. One solution employs surface displaying of MT2A/MT3 on E. coli to enhance the contact between MT2A/MT3 and metal ions, thus improving heavy metal adsorption efficiency. However, surface-displayed MT2A/MT3 has a reduced ability to adsorb Cd2+. Therefor we combined another solution which involves E. coli expressing intracellular MT2A/MT3 alongside Cd2+ transporters, allowing for direct capture and binding of Cd2+ inside the cell, thereby optimizing Cd2+ adsorption from the wastewater.</p>
-                <div>
-                  <img src="https://static.igem.wiki/teams/5136/description/6.png" alt="">
+      <div>
+        <img src="https://static.igem.wiki/teams/5136/description/6.png" alt="">
                   <p style="text-align: center;font-size: 6rem!important">Fig.6 Principle of systematic elimination of heavy metals</p>
-                </div>
+      </div>
                 <p>Furthermore, to better collect the absorbed metal ions, the engineered bacteria are encapsulated within hydrogel beads. These beads can be easily retrieved from the water once they reach their absorption capacity.</p>
-                <h2 id="Biosafety">Biosafety</h2>
+      <h2 id="Biosafety">Biosafety</h2>
                 <p>Throughout the whole project, detoxification of post-deinking waste water is the only process that involves direct contact between our engineered bacteria and the environment. Therefore, a physical barrier and a suicide switch are applied to ensure biosafety.</p>
                 <p>The tough outer shell of the hydrogel beads acts as the barrier so that bacteria are confined to the beads. To avoid potential leakage due to beads breaking, we also designed a suicide circuit expressing cytotoxic protein CcdB consistently which is specifically repressed by a rhamnose-induced anti-CcdB protein CcdA. Together, these two designs prevent our engineered microbes from escaping.</p>
                 <div>
@@ -85,7 +87,7 @@
                 </div>
             </div>
         </div>
-    </div>
+</div>
 
 
 {% endblock %}
