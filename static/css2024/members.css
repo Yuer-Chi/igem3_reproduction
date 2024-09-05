@@ -1,0 +1,148 @@
+.container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* 使容器的高度至少和屏幕一样高，这样可以在垂直方向上居中 */
+  min-height: 50vh;
+  /* 你可以根据需要设置其他属性 */
+}
+.hhh{
+  margin-left: -300px;
+  width: 80vw;
+  overflow: hidden;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* 或者你可以根据需要指定一个具体的宽度 */
+  /* max-width: 960px; */
+   /* 可选项，根据需要设置最大宽度 */
+  /* margin: auto; */
+  /* margin-top: 100px; */
+  /* margin-left: -600px; */
+  /* 你可以根据需要添加其他样式 */
+  transform: rotate(-60deg);
+   /* 旋转整个grid 45度 */
+}
+
+
+.row {
+  display: flex;
+  /* 应用粉笔特效图案 */
+  filter: url(#chalk);
+  margin-top: 10px;
+  /* margin-bottom: 10px; */
+}
+
+.pro-card-wrapper {
+  /* 开启3D空间 */
+  perspective: 300px;
+  margin-left: 5px;
+  margin-right: 5px;
+  /* transform: rotate(90deg); */
+}
+
+.pro-card {
+  /* 基础布局 */
+  width: 240px;
+  height: 180px;
+  /* margin: 20px; */
+  font-size: 48px;
+  position: relative;
+  text-align: center;
+
+  /* 翻转特效时间 */
+  transition: transform 0.8s;
+  /* 保留3D空间 */
+  transform-style: preserve-3d;
+}
+
+/* 假名 */
+.zheng,
+.fan {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url("./tlp.png"); */
+  backface-visibility: hidden;
+  border: 1px solid #d2dae2;
+  color: white;
+
+  /* 调整背景图片大小和位置 */
+  background-size: cover; /* 使背景图片覆盖整个元素 */
+  background-position: center; /* 将背景图片居中 */
+}
+
+.zheng{
+  background-image: url("../img/tlp.png");
+}
+/* 翻转卡片 */
+.fan {
+  transform: rotateY(180deg);
+  background-image: url("../img/ftlp.png");
+}
+
+.pro-card-wrapper:hover .pro-card {
+  transform: rotateY(180deg);
+}
+
+/* 屏幕适配 */
+@media screen and (max-width: 960px) {
+  .pro-card {
+    width: 120px;
+    height: 160px;
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .pro-card {
+    width: 81px;
+    height: 108px;
+    font-size: 24px;
+  }
+  /* 屏幕小于650px特效会影响阅读，取消 */
+  .row {
+    filter: none;
+  }
+
+  .zheng,
+  .fan {
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .pro-card {
+    width: 60px;
+    height: 80px;
+    font-size: 20px;
+  }
+}
+
+
+.welcome
+{
+  width: 50vw;
+  display: flex; /* 定义为 Flex 容器 */
+  flex-direction: column; /* 设置主轴方向为垂直方向 */
+  justify-content: center; /* 在主轴（竖直方向）上居中 */
+  align-items: center; /* 在交叉轴（水平方向）上居中（可选） */
+  /* margin-top: 100px; */
+  margin-left: -10vw;
+  font-size:50px;
+  font-family: Comic Sans Ms;
+  color: #534f7a;
+  text-shadow: 
+    1px 1px 0px #6a5e93,  /* 第一层阴影 */
+    2px 2px 0px #6a5e93,  /* 第二层阴影 */
+    3px 3px 0px #6a5e93,  /* 第三层阴影 */
+    4px 4px 0px #6a5e93;  /* 第四层阴影 */
+}
