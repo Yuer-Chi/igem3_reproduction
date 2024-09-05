@@ -196,7 +196,7 @@ a{
     opacity: 1;
     /* background-color: #6a5e93; */
     background-color: rgba(106, 94, 147, 0.8);
-
+    z-index: 100;
     pointer-events: auto;
     box-shadow: 5px 0 10px -5px rgba(0, 0, 0, 0.5);
     pointer-events: auto; /* 允许点击事件 */
