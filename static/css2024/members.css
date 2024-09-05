@@ -228,8 +228,8 @@
   margin-left: -80px;
 }
 .tiaozhuan-img{
-  width: 180px;
-  height: 240px;
+  width: 150px;
+  height: 200px;
   /* background-image: url("../img/tlp-shu.png"); */
   background-size: cover; /* 使背景图片覆盖整个元素 */
   background-position: center; /* 将背景图片居中 */
