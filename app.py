@@ -35,7 +35,9 @@ def home():
         print(f"Error details: {e}")
         return f"Internal Server Error: {e}", 503  # 返回500状态码
 
-
+@app.route('/members')
+def members():
+    return render_template('pages/members.html')
 
 # @app.route('/<page>')
 # def pages(page):
