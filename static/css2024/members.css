@@ -147,6 +147,7 @@
   background-image: url("../img/tlp.png");
 } */
 /* 翻转卡片 */
+
 .fan-top {
   transform: rotateY(180deg);
   /* background-image: url("../img/ftlp.png"); */
