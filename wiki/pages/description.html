@@ -6,7 +6,7 @@
 {% block page_content %}
 
 
-<link rel="stylesheet" href="{{ url_for('static', filename = 'css2024/description.css') }}">  
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css2024/description.css') }}">
 
 
 
@@ -18,428 +18,410 @@ toggle.onclick = function () {
 menu.classList.toggle('active')
 }
 </script> -->
-<script>
-let toggle = document.querySelector('.toggle');
-let menu = document.querySelector('.menu');
 
-toggle.onmouseover = function () {
-  menu.classList.add('active');
-}
-
-toggle.onmouseout = function () {
-  menu.classList.remove('active');
-}
-toggle.onclick = function () {
-  window.scrollTo({
-      top: 0,
-      behavior: 'smooth' // 平滑滚动效果
-  });
-}
-</script>
 
 <!-- 主体部分 -->
-<div class="container">
+<!-- <div class="container"> -->
 
 <!--loading-->
 
 <!--Magic-navbar-->
 <div class="myScrollspy">
-  <div class="left-bar">
-      <div class="left-bar-right">
-          <div class="left-bar-right-item">
-              <a href="#section1" class="sidebar-link" data-section="section1">Inspiration</a>
-          </div>
-          <div class="left-bar-right-item">
-              <a href="#section2" class="sidebar-link" data-section="section2">Background</a>
-          </div>
-          <div class="left-bar-right-item">
-              <a href="#section3" class="sidebar-link" data-section="section3">The problem</a>
-          </div>
-          <div class="left-bar-right-item">
-              <a href="#section4" class="sidebar-link" data-section="section4">Current
-                  solution</a>
-          </div>
-          <div class="left-bar-right-item">
-              <a href="#section5" class="sidebar-link" data-section="section5">Project</a>
-          </div>
-          <div class="left-bar-right-item">
-              <a href="#section6" class="sidebar-link" data-section="section6">Biosafety</a>
-          </div>
-          <div class="left-bar-right-item">
-              <a href="#section7" class="sidebar-link" data-section="section7">Reference</a>
-          </div>
-      </div>
-  </div>
-  <div class="left-bar-bg">
-      <img src="../static/img/shu.png" alt="">
-  </div>
-  <div class="scroll-bar"></div>
+    <div class="left-bar">
+        <div class="left-bar-right">
+            <div class="left-bar-right-item">
+                <a href="#section1" class="sidebar-link" data-section="section1">Inspiration</a>
+            </div>
+            <div class="left-bar-right-item">
+                <a href="#section2" class="sidebar-link" data-section="section2">Background</a>
+            </div>
+            <div class="left-bar-right-item">
+                <a href="#section3" class="sidebar-link" data-section="section3">The problem</a>
+            </div>
+            <div class="left-bar-right-item">
+                <a href="#section4" class="sidebar-link" data-section="section4">Current
+                    solution</a>
+            </div>
+            <div class="left-bar-right-item">
+                <a href="#section5" class="sidebar-link" data-section="section5">Project</a>
+            </div>
+            <div class="left-bar-right-item">
+                <a href="#section6" class="sidebar-link" data-section="section6">Biosafety</a>
+            </div>
+            <div class="left-bar-right-item">
+                <a href="#section7" class="sidebar-link" data-section="section7">Reference</a>
+            </div>
+        </div>
+    </div>
+    <div class="left-bar-bg">
+        <img src="../static/img/shu.png" alt="">
+    </div>
+    <div class="scroll-bar"></div>
 </div>
 
 <!--content-->
 <div class="myPage" style="background-image: linear-gradient(to right, #f0f0f0 0%, #EBD69C 100%);">
-  <!-- <div class="myPage-padding"></div> -->
-  <div class="myPage-main">
-      <div style="height: 100px;position:relative;"></div>
-      <div class="myPage-main-content">
-          <div class="myPage-headline">
-              <h1 class="myPage-headline-content">
-                  <span style="color: #66805d">.</span>
-                  <span style="color: #1a432e;font-family: Aaargh;">Description</span>
-                  <span style="color: #66805d">.</span>
-              </h1>
-          </div>
-          <!---Inspiration--->
-          <div class="myPage-paragraph" id="section1">
-              <h2 class="myPage-paragraph-headline-h2">1. Inspiration</h2>
-              <p class="myPage-paragraph-content" style="font-family:Aaargh;">
-                  style="font-family:Aaargh;"<br>
-                  In recent years, EI Nino phenomenon has caused drought and soil frost in several regions
-                  around
-                  the
-                  world. Soil frost and drought, derived from environmental and climatic disasters, can bring
-                  great
-                  hazards to agriculture and forestry. This year, we have decided to dedicate our research
-                  efforts
-                  to
-                  finding solutions for the severe challenges.
-                  <br>α/β
-              </p>
-          </div>
-          <!-- -Background- -->
-          <div class="myPage-paragraph" id="section2">
-              <h2 class="myPage-paragraph-headline-h2">2. Background</h2>
-              <p class="myPage-paragraph-content">
-                  Agriculture serves basic human needs by producing food, feed, and fibers. More
-                  resilient, sustainable, and inclusive food systems are critical to achieving the world's
-                  development goals.
-              </p>
-              <p class="myPage-paragraph-content">
-                  The prevalence of food deficiency globally rose from 8.0% to 9.8% from 2019 to 2021, and
-                  it was estimated that about 828 million people worldwide were experiencing starvation in
-                  2021 (1), which highlights the urgency and significance of addressing food
-                  issues.
-                  Agriculture is the primary source of food production and also accounts for 4% of global
-                  gross domestic product (GDP), and in some least developing countries, it can account for
-                  more than 25% of GDP (2).
-                  In China, the total output value of agriculture in 2022 reached 8.83 trillion yuan,
-                  accounting for 7.3% of that year's GDP (3).
-                  Agriculture development is one of the most powerful tools to end extreme poverty, boost
-                  shared prosperity, and feed projected 9.7 billion people by 2050 since the growth in the
-                  agriculture sector is two to four times more effective in raising incomes among the
-                  poorest compared to other sectors (4).
-              </p>
-          </div>
+    <!-- <div class="myPage-padding"></div> -->
+    <div class="myPage-main">
+        <div style="height: 100px;position:relative;"></div>
+        <div class="myPage-main-content">
+            <div class="myPage-headline">
+                <h1 class="myPage-headline-content">
+                    <span style="color: #66805d">.</span>
+                    <span style="color: #1a432e;font-family: Aaargh;">Description</span>
+                    <span style="color: #66805d">.</span>
+                </h1>
+            </div>
+            <!---Inspiration--->
+            <div class="myPage-paragraph" id="section1">
+                <h2 class="myPage-paragraph-headline-h2">1. Inspiration</h2>
+                <p class="myPage-paragraph-content" style="font-family:Aaargh;">
+                    style="font-family:Aaargh;"<br>
+                    In recent years, EI Nino phenomenon has caused drought and soil frost in several regions
+                    around
+                    the
+                    world. Soil frost and drought, derived from environmental and climatic disasters, can bring
+                    great
+                    hazards to agriculture and forestry. This year, we have decided to dedicate our research
+                    efforts
+                    to
+                    finding solutions for the severe challenges.
+                    <br>α/β
+                </p>
+            </div>
+            <!-- -Background- -->
+            <div class="myPage-paragraph" id="section2">
+                <h2 class="myPage-paragraph-headline-h2">2. Background</h2>
+                <p class="myPage-paragraph-content">
+                    Agriculture serves basic human needs by producing food, feed, and fibers. More
+                    resilient, sustainable, and inclusive food systems are critical to achieving the world's
+                    development goals.
+                </p>
+                <p class="myPage-paragraph-content">
+                    The prevalence of food deficiency globally rose from 8.0% to 9.8% from 2019 to 2021, and
+                    it was estimated that about 828 million people worldwide were experiencing starvation in
+                    2021 (1), which highlights the urgency and significance of addressing food
+                    issues.
+                    Agriculture is the primary source of food production and also accounts for 4% of global
+                    gross domestic product (GDP), and in some least developing countries, it can account for
+                    more than 25% of GDP (2).
+                    In China, the total output value of agriculture in 2022 reached 8.83 trillion yuan,
+                    accounting for 7.3% of that year's GDP (3).
+                    Agriculture development is one of the most powerful tools to end extreme poverty, boost
+                    shared prosperity, and feed projected 9.7 billion people by 2050 since the growth in the
+                    agriculture sector is two to four times more effective in raising incomes among the
+                    poorest compared to other sectors (4).
+                </p>
+            </div>
 
-          <!--The problem-->
-          <div class="myPage-paragraph" id="section3">
-              <h2 class="myPage-paragraph-headline-h2">3. The problem</h2>
-              <p class="myPage-paragraph-content">
-                  Seasonally frozen soil, freezing in winter and thawing in summer, alternating once a
-                  year is widely distributed in China.
-                  The thickness of seasonally frozen soil ranges from ~0.5 m to ~3 m in Northeast, North,
-                  and Northwest China.
-                  In 2022, a total of 870.7 thousand hectares of crops in China were damaged due to low
-                  temperatures, with a direct economic loss of 12.45 billion yuan.
-                  In addition, China encountered a nationwide cold wave in April 2023, which caused a
-                  large drop in temperature. Overall, about 1.899 million hectares of arable area were
-                  affected by low-temperature, with direct economic losses of 1.36 billion yuan (5).
-              </p>
-              <p class="myPage-paragraph-content">
-                  Globally, frost and freezing temperatures caused severe damage to crops, including
-                  vineyards and fruit trees, oilseed rapes, potatoes, and sugar beets across Europe from
-                  early April 2021.
-                  In France, about 80% of the country's wine and fruit tree regions were affected, with
-                  the extent of the damage also substantial in Italy, the Czech Republic, and the UK
-                  (6).
-              </p>
-              <p class="myPage-paragraph-content">
-                  Similarly, flash drought comes on fast—drying out soil in a matter of days to weeks. If
-                  a flash drought occurs at a critical point in the growing season, it could devastate an
-                  entire crop and cause huge economic losses (7).
-                  Fujian Province is particularly susceptible to droughts in autumn due to the rainless,
-                  hot weather caused by subtropical highs in the South China Sea.
-                  According to statistics, 6,090.2 thousand hectares of crops were affected by drought in
-                  China in 2022 (8), primarily concentrated in the south of the middle and lower
-                  reaches of the Yangtze River, with a direct economic loss of 51.28 billion yuan
-                  (9).
-                  Furthermore, we found that flash drought risk over cropland is expected to increase
-                  globally, with the largest increases projected across North America (change in annual
-                  risk from 32% in 2015 to 49% in 2100) and Europe (32% to 53%) (10).
-              </p>
-              <p class="myPage-paragraph-content">
-                  In short brief, both soil drought and soil frost have significant adverse effects on
-                  agriculture globally, which can lead to decreased crop productivity, reduced food
-                  production, and economic losses for farmers.
-                  Additionally, these conditions can also result in soil degradation, erosion, and loss of
-                  soil fertility. Countermeasures that have the potential to decrease impacts are
-                  increasingly adopted, but there is still a lot of room for improvement.
-              </p>
+            <!--The problem-->
+            <div class="myPage-paragraph" id="section3">
+                <h2 class="myPage-paragraph-headline-h2">3. The problem</h2>
+                <p class="myPage-paragraph-content">
+                    Seasonally frozen soil, freezing in winter and thawing in summer, alternating once a
+                    year is widely distributed in China.
+                    The thickness of seasonally frozen soil ranges from ~0.5 m to ~3 m in Northeast, North,
+                    and Northwest China.
+                    In 2022, a total of 870.7 thousand hectares of crops in China were damaged due to low
+                    temperatures, with a direct economic loss of 12.45 billion yuan.
+                    In addition, China encountered a nationwide cold wave in April 2023, which caused a
+                    large drop in temperature. Overall, about 1.899 million hectares of arable area were
+                    affected by low-temperature, with direct economic losses of 1.36 billion yuan (5).
+                </p>
+                <p class="myPage-paragraph-content">
+                    Globally, frost and freezing temperatures caused severe damage to crops, including
+                    vineyards and fruit trees, oilseed rapes, potatoes, and sugar beets across Europe from
+                    early April 2021.
+                    In France, about 80% of the country's wine and fruit tree regions were affected, with
+                    the extent of the damage also substantial in Italy, the Czech Republic, and the UK
+                    (6).
+                </p>
+                <p class="myPage-paragraph-content">
+                    Similarly, flash drought comes on fast—drying out soil in a matter of days to weeks. If
+                    a flash drought occurs at a critical point in the growing season, it could devastate an
+                    entire crop and cause huge economic losses (7).
+                    Fujian Province is particularly susceptible to droughts in autumn due to the rainless,
+                    hot weather caused by subtropical highs in the South China Sea.
+                    According to statistics, 6,090.2 thousand hectares of crops were affected by drought in
+                    China in 2022 (8), primarily concentrated in the south of the middle and lower
+                    reaches of the Yangtze River, with a direct economic loss of 51.28 billion yuan
+                    (9).
+                    Furthermore, we found that flash drought risk over cropland is expected to increase
+                    globally, with the largest increases projected across North America (change in annual
+                    risk from 32% in 2015 to 49% in 2100) and Europe (32% to 53%) (10).
+                </p>
+                <p class="myPage-paragraph-content">
+                    In short brief, both soil drought and soil frost have significant adverse effects on
+                    agriculture globally, which can lead to decreased crop productivity, reduced food
+                    production, and economic losses for farmers.
+                    Additionally, these conditions can also result in soil degradation, erosion, and loss of
+                    soil fertility. Countermeasures that have the potential to decrease impacts are
+                    increasingly adopted, but there is still a lot of room for improvement.
+                </p>
 
-          </div>
+            </div>
 
-          <!--The current solution-->
-          <div class="myPage-paragraph" id="section4">
-              <h2 class="myPage-paragraph-headline-h2">4. The current solution</h2>
-              <p class="myPage-paragraph-content">
-                  At present, people primarily resorts to traditional methods to address these problems in
-                  China.
-                  Methods for soil drought including constructing water conservancy projects, mobilizing
-                  water sources, growing drought-resistant crops, and using chemical water-retention
-                  material.
-                  However, these solutions either involve substantial engineering work or require
-                  expensive and complicated synthesis, separation, and purification techniques.
-                  As for frost damage, preventive measures like greenhouses, mulching films, and straw
-                  burning are currently used, which are neither convenient, efficient, nor eco-friendly.
-                  Therefore, we need to take action to develop new strategies to mitigate the effects of
-                  drought and freeze stress without delay.
-              </p>
+            <!--The current solution-->
+            <div class="myPage-paragraph" id="section4">
+                <h2 class="myPage-paragraph-headline-h2">4. The current solution</h2>
+                <p class="myPage-paragraph-content">
+                    At present, people primarily resorts to traditional methods to address these problems in
+                    China.
+                    Methods for soil drought including constructing water conservancy projects, mobilizing
+                    water sources, growing drought-resistant crops, and using chemical water-retention
+                    material.
+                    However, these solutions either involve substantial engineering work or require
+                    expensive and complicated synthesis, separation, and purification techniques.
+                    As for frost damage, preventive measures like greenhouses, mulching films, and straw
+                    burning are currently used, which are neither convenient, efficient, nor eco-friendly.
+                    Therefore, we need to take action to develop new strategies to mitigate the effects of
+                    drought and freeze stress without delay.
+                </p>
 
-              <!---Fig.1--->
-              <div class="myPage-paragraph-fig">
-                  <img src="https://static.igem.wiki/teams/4907/wiki/description/description-fig1.png" alt="">
-                  <div class="myPage-paragraph-fig-description"><b>Fig. 1 A collection diagram of existing
-                          methods.</b>
-                  </div>
-              </div>
-          </div>
+                <!---Fig.1--->
+                <div class="myPage-paragraph-fig">
+                    <img src="https://static.igem.wiki/teams/4907/wiki/description/description-fig1.png" alt="">
+                    <div class="myPage-paragraph-fig-description"><b>Fig. 1 A collection diagram of existing
+                            methods.</b>
+                    </div>
+                </div>
+            </div>
 
-          <!--Project-->
-          <div class="myPage-paragraph" id="section5">
-              <h2 class="myPage-paragraph-headline-h2">5. Project</h2>
-              <p class="myPage-paragraph-content">
-                  To address these challenges mentioned above, we design two production paths.
-                  Firstly, an antifreeze protein production path with a cold-responsive system is put
-                  forth.
-                  Meanwhile, an automated drought response system for water-retention material's production
-                  in terms of soil drought is designed.
-                  These two production paths are to tackle the soil frost and drought problems,
-                  respectively.
-              </p>
-              <h3 class="myPage-paragraph-headline-h3" id="Project-Anti-Icing">5.1 Anti-icing</h3>
-              <p class="myPage-paragraph-content">
-                  Antifreeze proteins (AFPs) are extensively identified in different cold-tolerant
-                  species, which can facilitate the persistence of cold-adapted organisms by decreasing
-                  the freezing point of their body fluids (11).
-                  We choose two antifreeze proteins: <i>Tm</i>AFP and <i>Sf</i>IBP, noted for their high
-                  thermal hysteresis and ice recrystallization inhibitory activities, respectively
-                  (12), which can inhibit the occurrence of soil frost, effectively and
-                  environmental-friendly.
-              </p>
-              <p class="myPage-paragraph-content">
-                  We expect to construct our engineered bacteria with an auto-low-temperature sensing
-                  function, so here we introduce the CspA low-temperature response system.
-                  The secondary structure of RNA's 5'-UTR and 3'-UTR is changed at low temperatures
-                  (13), which promotes the expression of downstream genes.
-                  Based on the cold shock response mechanism of RNA, we introduce the 5'-UTR and 3'-UTR
-                  sequences of the CspA system as a temperature control switch to realize the
-                  expression of antifreeze proteins in a low-temperature environment.
-              </p>
+            <!--Project-->
+            <div class="myPage-paragraph" id="section5">
+                <h2 class="myPage-paragraph-headline-h2">5. Project</h2>
+                <p class="myPage-paragraph-content">
+                    To address these challenges mentioned above, we design two production paths.
+                    Firstly, an antifreeze protein production path with a cold-responsive system is put
+                    forth.
+                    Meanwhile, an automated drought response system for water-retention material's production
+                    in terms of soil drought is designed.
+                    These two production paths are to tackle the soil frost and drought problems,
+                    respectively.
+                </p>
+                <h3 class="myPage-paragraph-headline-h3" id="Project-Anti-Icing">5.1 Anti-icing</h3>
+                <p class="myPage-paragraph-content">
+                    Antifreeze proteins (AFPs) are extensively identified in different cold-tolerant
+                    species, which can facilitate the persistence of cold-adapted organisms by decreasing
+                    the freezing point of their body fluids (11).
+                    We choose two antifreeze proteins: <i>Tm</i>AFP and <i>Sf</i>IBP, noted for their high
+                    thermal hysteresis and ice recrystallization inhibitory activities, respectively
+                    (12), which can inhibit the occurrence of soil frost, effectively and
+                    environmental-friendly.
+                </p>
+                <p class="myPage-paragraph-content">
+                    We expect to construct our engineered bacteria with an auto-low-temperature sensing
+                    function, so here we introduce the CspA low-temperature response system.
+                    The secondary structure of RNA's 5'-UTR and 3'-UTR is changed at low temperatures
+                    (13), which promotes the expression of downstream genes.
+                    Based on the cold shock response mechanism of RNA, we introduce the 5'-UTR and 3'-UTR
+                    sequences of the CspA system as a temperature control switch to realize the
+                    expression of antifreeze proteins in a low-temperature environment.
+                </p>
 
-              <!---Fig.2--->
-              <div class="myPage-paragraph-fig">
-                  <img src="https://static.igem.wiki/teams/4907/wiki/description/description-fig2.png" alt="">
-                  <div class="myPage-paragraph-fig-description"><b>Fig. 2 Low-temperature expression
-                          mechanism.</b>
-                  </div>
-              </div>
+                <!---Fig.2--->
+                <div class="myPage-paragraph-fig">
+                    <img src="https://static.igem.wiki/teams/4907/wiki/description/description-fig2.png" alt="">
+                    <div class="myPage-paragraph-fig-description"><b>Fig. 2 Low-temperature expression
+                            mechanism.</b>
+                    </div>
+                </div>
 
-              <p class="myPage-paragraph-content">
-                  To optimize our engineered bacteria, we also take the stress resistance design and the
-                  surface
-                  display of cellulose-binding proteins design into consideration.
-              </p>
+                <p class="myPage-paragraph-content">
+                    To optimize our engineered bacteria, we also take the stress resistance design and the
+                    surface
+                    display of cellulose-binding proteins design into consideration.
+                </p>
 
-              <!--Fig. 3 Workflow of anti-icing-->
-              <div class="myPage-paragraph-fig">
-                  <img src="https://static.igem.wiki/teams/4907/wiki/description/description-fig3.png" alt="">
-                  <div class="myPage-paragraph-fig-description"><b>Fig. 3 Workflow of anti-icing.</b>
-                  </div>
-              </div>
+                <!--Fig. 3 Workflow of anti-icing-->
+                <div class="myPage-paragraph-fig">
+                    <img src="https://static.igem.wiki/teams/4907/wiki/description/description-fig3.png" alt="">
+                    <div class="myPage-paragraph-fig-description"><b>Fig. 3 Workflow of anti-icing.</b>
+                    </div>
+                </div>
 
-              <h3 class="myPage-paragraph-headline-h3">5.2 Anti-Drought</h3>
-              <h4 class="myPage-paragraph-headline-h4">1. BC/HA complexity as water-retention material</h4>
-              <p class="myPage-paragraph-content">
-                  <b>Bacterial celluloses (BCs)</b> have good water retention and repair properties, and
-                  in-situ
-                  modification of BC with <b>hyaluronic acid (HA)</b> improves the water-holding capacity of
-                  cellulose composite (14).
-                  <i>E. coli</i> Nissle 1917 and <i>E. coli</i> BL21(DE3) are co-cultured in the fermenters
-                  producing BCs and HA, respectively, eventually forming as BC/HA compounds.
-              </p>
+                <h3 class="myPage-paragraph-headline-h3">5.2 Anti-Drought</h3>
+                <h4 class="myPage-paragraph-headline-h4">1. BC/HA complexity as water-retention material</h4>
+                <p class="myPage-paragraph-content">
+                    <b>Bacterial celluloses (BCs)</b> have good water retention and repair properties, and
+                    in-situ
+                    modification of BC with <b>hyaluronic acid (HA)</b> improves the water-holding capacity of
+                    cellulose composite (14).
+                    <i>E. coli</i> Nissle 1917 and <i>E. coli</i> BL21(DE3) are co-cultured in the fermenters
+                    producing BCs and HA, respectively, eventually forming as BC/HA compounds.
+                </p>
 
-              <!--Fig. 4 Diagram of BC/HA compound-->
-              <div class="myPage-paragraph-fig">
-                  <img src="https://static.igem.wiki/teams/4907/wiki/description/description-fig4.png" alt="">
-                  <div class="myPage-paragraph-fig-description"><b>Fig. 4 Diagram of BC/HA compound.</b></div>
-              </div>
+                <!--Fig. 4 Diagram of BC/HA compound-->
+                <div class="myPage-paragraph-fig">
+                    <img src="https://static.igem.wiki/teams/4907/wiki/description/description-fig4.png" alt="">
+                    <div class="myPage-paragraph-fig-description"><b>Fig. 4 Diagram of BC/HA compound.</b></div>
+                </div>
 
-              <h4 class="myPage-paragraph-headline-h4">2. Bio-factory for production</h4>
-              <p class="myPage-paragraph-content">
-                  To reduce cumbersome chemical treatment procedures, we design a set of co-culture
-                  systems for two engineering bacteria to obtain BC/HA cross-linked polymers automatically
-                  (15).
-              </p>
-              <p class="myPage-paragraph-content">
-                  We further equip the biological factory with monitoring <a
-                      style="font-weight: bolder;text-decoration: none;"
-                      href="{{ url_for('pages', page='hardware') }}">Hardware</a>,
-                  which can realize the functions of automatically synthesizing and deploying
-                  water-retention material.
-              </p>
+                <h4 class="myPage-paragraph-headline-h4">2. Bio-factory for production</h4>
+                <p class="myPage-paragraph-content">
+                    To reduce cumbersome chemical treatment procedures, we design a set of co-culture
+                    systems for two engineering bacteria to obtain BC/HA cross-linked polymers automatically
+                    (15).
+                </p>
+                <p class="myPage-paragraph-content">
+                    We further equip the biological factory with monitoring <a
+                        style="font-weight: bolder;text-decoration: none;"
+                        href="{{ url_for('pages', page='hardware') }}">Hardware</a>,
+                    which can realize the functions of automatically synthesizing and deploying
+                    water-retention material.
+                </p>
 
-              <!--Fig. 5 Workflow of anti-drought-->
-              <div class="myPage-paragraph-fig">
-                  <img src="https://static.igem.wiki/teams/4907/wiki/description/description-fig5-1.png"
-                      alt="">
-                  <div class="myPage-paragraph-fig-description"><b>Fig. 5 Workflow of anti-drought.</b>
-                  </div>
-              </div>
-          </div>
+                <!--Fig. 5 Workflow of anti-drought-->
+                <div class="myPage-paragraph-fig">
+                    <img src="https://static.igem.wiki/teams/4907/wiki/description/description-fig5-1.png" alt="">
+                    <div class="myPage-paragraph-fig-description"><b>Fig. 5 Workflow of anti-drought.</b>
+                    </div>
+                </div>
+            </div>
 
-          <!--Biosafety-->
-          <div class="myPage-paragraph" id="section6">
-              <h2 class="myPage-paragraph-headline-h2">6. Biosafety</h2>
-              <p class="myPage-paragraph-content">
-                  Given that soil is an open environment, for the sake of biosafety, we are obliged to
-                  prevent engineering bacteria leakage.
-                  Additionally, due to the soil microbial diversity, it is also important to prevent
-                  horizontal gene transfer (HGT).
-              </p>
-              <p class="myPage-paragraph-content">
-                  In that case, we use the <i>ccdB</i>/<i>ccdA</i> toxin/antitoxin system (16).
-                  The <i>ccdA</i> gene, which encodes the antitoxin CcdA conjugate to CcdB, is introduced
-                  into the genome of the engineered bacteria.
-                  The strong constitutive promoter J23106 is used to regulate its expression.
-                  The <i>ccdB</i> gene, which encodes a toxin with broad-spectrum toxicity, is regulated
-                  by a weak constitutive promoter J23109 and inserted into the gene expression vector.
-                  Once HGT occurs, the <i>ccdB</i> gene will encode toxins in genetically unrelated
-                  organisms, leading to their death.
-              </p>
-          </div>
+            <!--Biosafety-->
+            <div class="myPage-paragraph" id="section6">
+                <h2 class="myPage-paragraph-headline-h2">6. Biosafety</h2>
+                <p class="myPage-paragraph-content">
+                    Given that soil is an open environment, for the sake of biosafety, we are obliged to
+                    prevent engineering bacteria leakage.
+                    Additionally, due to the soil microbial diversity, it is also important to prevent
+                    horizontal gene transfer (HGT).
+                </p>
+                <p class="myPage-paragraph-content">
+                    In that case, we use the <i>ccdB</i>/<i>ccdA</i> toxin/antitoxin system (16).
+                    The <i>ccdA</i> gene, which encodes the antitoxin CcdA conjugate to CcdB, is introduced
+                    into the genome of the engineered bacteria.
+                    The strong constitutive promoter J23106 is used to regulate its expression.
+                    The <i>ccdB</i> gene, which encodes a toxin with broad-spectrum toxicity, is regulated
+                    by a weak constitutive promoter J23109 and inserted into the gene expression vector.
+                    Once HGT occurs, the <i>ccdB</i> gene will encode toxins in genetically unrelated
+                    organisms, leading to their death.
+                </p>
+            </div>
 
-          <!---Inspiration--->
-          <div class="myPage-paragraph" id="section1">
-              <h2 class="myPage-paragraph-headline-h2">1. Inspiration</h2>
-              <p class="myPage-paragraph-content">
-                  In recent years, EI Nino phenomenon has caused drought and soil frost in several regions
-                  around
-                  the
-                  world. Soil frost and drought, derived from environmental and climatic disasters, can
-                  bring
-                  great
-                  hazards to agriculture and forestry. This year, we have decided to dedicate our research
-                  efforts
-                  to
-                  finding solutions for the severe challenges.
-              </p>
-          </div>
-
+            <!---Inspiration--->
+            <div class="myPage-paragraph" id="section1">
+                <h2 class="myPage-paragraph-headline-h2">1. Inspiration</h2>
+                <p class="myPage-paragraph-content">
+                    In recent years, EI Nino phenomenon has caused drought and soil frost in several regions
+                    around
+                    the
+                    world. Soil frost and drought, derived from environmental and climatic disasters, can
+                    bring
+                    great
+                    hazards to agriculture and forestry. This year, we have decided to dedicate our research
+                    efforts
+                    to
+                    finding solutions for the severe challenges.
+                </p>
+            </div>
 
 
-          <!--Reference-->
-          <div class="myPage-paragraph" id="section7">
-              <h2 class="myPage-paragraph-headline-h2">7. Reference</h2>
-              <ol class="myPage-paragraph-reference">
-                  <li> https://www.fao.org/3/cc0639zh/online/cc0639zh.html</li>
-                  <li> https://www.worldbank.org/en/topic/agriculture/overview</li>
-                  <li> https://www.statista.com/statistics/270325/distribution-of-gross-domestic-product-gdp-across-economic-sectors-in-china/
-                  </li>
-                  <li> https://www.worldbank.org/en/topic/agriculture/overvie</li>
-                  <li> https://www.mem.gov.cn/xw/yjglbgzdt/202105/t20210508_384756.shtml</li>
-                  <li> J. R. Lamichhane, Rising risks of late-spring frosts in a
-                      changing climate. <i>Nat. Clim. Change</i>. <b>11</b>, 554-555 (2021).
-                  </li>
-                  <li> Y. Qing, S. Wang, B. C. Ancell, Z.-L. Yang, Accelerating flash
-                      droughts induced by the joint influence of soil moisture depletion and atmospheric
-                      aridity. <i>Nat. Commun</i>. <b>13</b>, 1139 (2022).
-                  <li> https://www.mem.gov.cn/xw/yjglbgzdt/202105/t20210508_384756.shtml
-                  </li>
-                  <li> J. Xia, J. Chen, D. She, Impacts and countermeasures of extreme drought in the
-                      yangtze river
-                      basin in 2022. <i>J. Hydraul. Eng.</i> <b>53</b>,
-                      1143-1153 (2022).
-                  </li>
-                  <li> J. I. Christian <i>et al</i>., Global projections of flash drought
-                      show increased risk in a warming climate. <i>Commun. Earth Environ</i>. <b>4</b>,
-                      165 (2023).
-                  </li>
-                  <li> A. Baskaran <i>et al</i>., Anti freeze proteins (Afp): Properties,
-                      sources and applications - A review. <i>Int. J. Biol. Macromol</i>. <b>189</b>,
-                      292-305 (2021).
-                  </li>
-                  <li> U. S. Midya, S. Bandyopadhyay, Elucidating the Sluggish Water
-                      Dynamics at the Ice-Binding Surface of the <i>Hyperactive Tenebrio molitor</i>
-                      Antifreeze
-                      Protein. <i>The Journal of Physical Chemistry B</i>. <b>127</b>, 121-132 (2023).
-                  </li>
-                  <li> A. M. Giuliodori <i>et al.</i>, <i>E. coli</i> CspA
-                      stimulates translation in the cold of its own mRNA by promoting ribosome
-                      progression. <i>Front. Microbiol</i>. <b>14</b>, 72 (2023).
-                  </li>
-                  <li> S. Tang <i>et al.</i>, A covalently cross-linked hyaluronic
-                      acid/bacterial cellulose composite hydrogel for potential biological applications.
-                      <i>Carbohydr. Polym</i>. <b>252</b>, 117123 (2021).
-                  </li>
-                  <li> K. Liu, J. M. Catchmark, Bacterial cellulose/hyaluronic acid
-                      nanocomposites production through co-culturing <i>Gluconacetobacter hansenii</i> and
-                      <i>Lactococcus lactis</i> in a two-vessel circulating system. <i>Bioresour.
-                          Technol</i>. <b>290</b>, 121715 (2019).
-                  </li>
-                  <li> O. Wright, M. Delmans, G. B. Stan, T. Ellis, GeneGuard: A
-                      modular plasmid system designed for biosafety. <i>ACS Synth Biol</i>. <b>4</b>,
-                      307-316 (2015).
-                  </li>
-              </ol>
-          </div>
-      </div>
-      <!-- <div class="footer-top"></div> -->
+
+            <!--Reference-->
+            <div class="myPage-paragraph" id="section7">
+                <h2 class="myPage-paragraph-headline-h2">7. Reference</h2>
+                <ol class="myPage-paragraph-reference">
+                    <li> https://www.fao.org/3/cc0639zh/online/cc0639zh.html</li>
+                    <li> https://www.worldbank.org/en/topic/agriculture/overview</li>
+                    <li> https://www.statista.com/statistics/270325/distribution-of-gross-domestic-product-gdp-across-economic-sectors-in-china/
+                    </li>
+                    <li> https://www.worldbank.org/en/topic/agriculture/overvie</li>
+                    <li> https://www.mem.gov.cn/xw/yjglbgzdt/202105/t20210508_384756.shtml</li>
+                    <li> J. R. Lamichhane, Rising risks of late-spring frosts in a
+                        changing climate. <i>Nat. Clim. Change</i>. <b>11</b>, 554-555 (2021).
+                    </li>
+                    <li> Y. Qing, S. Wang, B. C. Ancell, Z.-L. Yang, Accelerating flash
+                        droughts induced by the joint influence of soil moisture depletion and atmospheric
+                        aridity. <i>Nat. Commun</i>. <b>13</b>, 1139 (2022).
+                    <li> https://www.mem.gov.cn/xw/yjglbgzdt/202105/t20210508_384756.shtml
+                    </li>
+                    <li> J. Xia, J. Chen, D. She, Impacts and countermeasures of extreme drought in the
+                        yangtze river
+                        basin in 2022. <i>J. Hydraul. Eng.</i> <b>53</b>,
+                        1143-1153 (2022).
+                    </li>
+                    <li> J. I. Christian <i>et al</i>., Global projections of flash drought
+                        show increased risk in a warming climate. <i>Commun. Earth Environ</i>. <b>4</b>,
+                        165 (2023).
+                    </li>
+                    <li> A. Baskaran <i>et al</i>., Anti freeze proteins (Afp): Properties,
+                        sources and applications - A review. <i>Int. J. Biol. Macromol</i>. <b>189</b>,
+                        292-305 (2021).
+                    </li>
+                    <li> U. S. Midya, S. Bandyopadhyay, Elucidating the Sluggish Water
+                        Dynamics at the Ice-Binding Surface of the <i>Hyperactive Tenebrio molitor</i>
+                        Antifreeze
+                        Protein. <i>The Journal of Physical Chemistry B</i>. <b>127</b>, 121-132 (2023).
+                    </li>
+                    <li> A. M. Giuliodori <i>et al.</i>, <i>E. coli</i> CspA
+                        stimulates translation in the cold of its own mRNA by promoting ribosome
+                        progression. <i>Front. Microbiol</i>. <b>14</b>, 72 (2023).
+                    </li>
+                    <li> S. Tang <i>et al.</i>, A covalently cross-linked hyaluronic
+                        acid/bacterial cellulose composite hydrogel for potential biological applications.
+                        <i>Carbohydr. Polym</i>. <b>252</b>, 117123 (2021).
+                    </li>
+                    <li> K. Liu, J. M. Catchmark, Bacterial cellulose/hyaluronic acid
+                        nanocomposites production through co-culturing <i>Gluconacetobacter hansenii</i> and
+                        <i>Lactococcus lactis</i> in a two-vessel circulating system. <i>Bioresour.
+                            Technol</i>. <b>290</b>, 121715 (2019).
+                    </li>
+                    <li> O. Wright, M. Delmans, G. B. Stan, T. Ellis, GeneGuard: A
+                        modular plasmid system designed for biosafety. <i>ACS Synth Biol</i>. <b>4</b>,
+                        307-316 (2015).
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <!-- <div class="footer-top"></div> -->
 
 
-  </div>
+    </div>
 
 </div>
 
 
 
 <style>
-  .popover-header {
-      color: white;
-      font-size: 16px;
-      font-family: Fashion;
-      text-align: center;
-      background-color: #1bcea6;
-  }
+    .popover-header {
+        color: white;
+        font-size: 16px;
+        font-family: Fashion;
+        text-align: center;
+        background-color: #1bcea6;
+    }
 
-  .popover-arrow {
-      color: #1bcea6;
-  }
+    .popover-arrow {
+        color: #1bcea6;
+    }
 
-  .popover-body {
-      background-color: #1bcea6;
-      align-items: center;
-  }
+    .popover-body {
+        background-color: #1bcea6;
+        align-items: center;
+    }
 
-  .popover-body img {
-      margin: 5px 35px;
-      width: 110px;
-      height: 110px;
-  }
+    .popover-body img {
+        margin: 5px 35px;
+        width: 110px;
+        height: 110px;
+    }
 </style>
 <script src="../static/js2024/scroll.js"></script>
 <script>
-  $(function () {
-      $("[data-toggle='popover']").popover({
-          animation: true,
-          html: true,//content中插入html代码
-          container: "body",
-          content: "<img src='https://static.igem.wiki/teams/4907/wiki/footer-icon/qrcode.jpg'>",//插入图片的路径 及 样式
-      });
-  });
+    $(function () {
+        $("[data-toggle='popover']").popover({
+            animation: true,
+            html: true,//content中插入html代码
+            container: "body",
+            content: "<img src='https://static.igem.wiki/teams/4907/wiki/footer-icon/qrcode.jpg'>",//插入图片的路径 及 样式
+        });
+    });
 </script>
 <!-- <div class="footer-top" ></div> -->
 <div style="margin-bottom: 100px;"></div>
-</div>
+<!-- </div> -->
 <!-- <div id="scrollToTopBtn">
   <img src="https://static.igem.wiki/teams/5136//button.png" alt="">
 </div>
