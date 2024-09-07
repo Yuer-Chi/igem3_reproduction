@@ -5,6 +5,7 @@
     left: 0;
     background: linear-gradient(to right, #b3a7cd, #6a5e92, #3d1c71);
     width: 100vw;
+    box-shadow: 0 10px;
 }
 
 /* 清除浏览器默认格式 */
