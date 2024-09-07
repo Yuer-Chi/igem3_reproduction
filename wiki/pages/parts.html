@@ -1006,6 +1006,16 @@
     });
   });
 </script> -->
+<script>
+    $(function () {
+        $("[data-toggle='popover']").popover({
+            animation: true,
+            html: true,//content中插入html代码
+            container: "body",
+            content: "<img src='https://static.igem.wiki/teams/4907/wiki/footer-icon/qrcode.jpg'>",//插入图片的路径 及 样式
+        });
+    });
+</script>
 
 
 {% endblock %}
