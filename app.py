@@ -39,6 +39,10 @@ def home():
 def members():
     return render_template('pages/members.html')
 
+@app.route('/parts')
+def members():
+    return render_template('pages/parts.html')
+
 # @app.route('/<page>')
 # def pages(page):
 #     return render_template(str(Path('pages')) + '/' + page.lower() + '.html')
