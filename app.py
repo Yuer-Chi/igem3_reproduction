@@ -38,11 +38,7 @@ def home():
 @app.route('/members')
 def members():
     return render_template('pages/members.html')
-
-@app.route('/parts')
-def parts():
-    return render_template('pages/parts.html')
-
+    
 
 
 
