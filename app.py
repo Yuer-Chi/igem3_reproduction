@@ -40,7 +40,7 @@ def members():
     return render_template('pages/members.html')
 
 @app.route('/parts')
-def members():
+def parts():
     return render_template('pages/parts.html')
 
 # @app.route('/<page>')
