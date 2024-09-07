@@ -2,6 +2,7 @@
     height: 30vh;
     z-index: 500;
     position: relative;
+    left: 0;
     background: linear-gradient(to right, #b3a7cd, #6a5e92, #3d1c71);
     width: 100vw;
 }
