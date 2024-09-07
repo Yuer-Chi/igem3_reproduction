@@ -22,38 +22,13 @@ def freeze():
 def serve():
     freezer.run()
 
-# @app.route('/')
-# def home():
-#     return render_template('pages/home.html')
 @app.route('/')
 def home():
-    try:
-        return render_template('pages/home.html')
-    except FileNotFoundError as e:
-        return f"Template not found: {e}", 404  # 返回404状态码
-    except Exception as e:
-        print(f"Error details: {e}")
-        return f"Internal Server Error: {e}", 503  # 返回500状态码
+    return render_template('pages/home.html')
 
-@app.route('/members')
-def members():
-    return render_template('pages/members.html')
-    
-@app.route('/parts')
-def members():
-    return render_template('pages/parts.html')
-
-
-# @app.route('/<page>')
-# def pages(page):
-#     return render_template(str(Path('pages')) + '/' + page.lower() + '.html')
 @app.route('/<page>')
 def pages(page):
-    try:
-        return render_template(f'pages/{page.lower()}.html')
-    except Exception as e:
-        return f"Page not found: {e}", 404
-
+    return render_template(str(Path('pages')) + '/' + page.lower() + '.html')
 
 # Main Function, Runs at http://0.0.0.0:8080
 if __name__ == "__main__":
