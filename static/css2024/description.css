@@ -4,36 +4,17 @@
 }
 
 
-.wrapper-left {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 25vw;
-    height: 100vh;
-    transition: 0.5s;
-    opacity: 0;
-}
 
-.sidebar-link:hover{
+
+/* .sidebar-link:hover{
     color:#6dd1d1;
-}
+} */
 
-.sidebar-link {
-  font-size: 20px; /* 设置字体大小 */
-  transition: font-size 0.2s; /* 设置过渡动画效果 */
-}
 
-.sidebar-link.current {
-  font-size: 35px; /* 设置字体大小 */
-}
+/* .sidebar-link.current {
+  font-size: 35px; 
+} */
 
-.left-bar-right-item:hover{
-    color:#6dd1d1;
-}
-
-.left-bar{
-    padding:30px;
-}
 
 
 .scroll-bar {
