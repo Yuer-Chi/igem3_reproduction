@@ -322,7 +322,8 @@ a{
     bottom: 0;
     left: 0;
     /* background: url("../img/bg.png") center 0 repeat; */
-    background-image: linear-gradient(to right, #f0f0f0 0%, #EBD69C 100%);
+    /* background-image: linear-gradient(to right, #f0f0f0 0%, #EBD69C 100%); */
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
     background-size: cover;
 }
 
@@ -476,7 +477,7 @@ a{
 }
 
 .myPage-paragraph-headline-divider {
-    background-color: #66805d;
+    background-color: #534f7a;
     height: 0.25rem;
     width: 350px;
     margin-top: 15px;
