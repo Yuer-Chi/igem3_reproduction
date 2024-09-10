@@ -1,34 +1,533 @@
 {% extends "layout.html" %}
-  
+
 {% block title %}Notebook{% endblock %}
 {% block lead %}Document the dates you worked on your project. This should be a detailed account of the work done each day for your project.{% endblock %}
 
 {% block page_content %}
+<!--notebook-->
+<link href="{{ url_for('static', filename = 'css2024/notebook.css') }}" rel="stylesheet">
+<style>
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <ul>
-      <li>Chronological notes of what your team is doing.</li>
-      <li>Brief descriptions of daily important events.</li>
-      <li>Pictures of your progress.</li>
-      <li>Mention who participated in what task.</li>
-    </ul>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul> 
-      <li><a href="http://2018.igem.org/Team:Munich/Notebook">2018 Munich</a></li>
-      <li><a href="https://2019.igem.org/Team:Georgia_State/Notebook">2019 Georgia State</a></li>
-      <li><a href="https://2019.igem.org/Team:Newcastle/Notebook">2019 Newcastle</a></li>
-      <li><a href="https://2020.igem.org/Team:IISER-Pune-India/Notebook">2020 IISER Pune India</a></li>
-      <li><a href="https://2020.igem.org/Team:Lund/Notebook">2020 Lund</a></li>
-      <li><a href="https://2020.igem.org/Team:NOVA_LxPortugal/Notebook">2020 NOVA LxPortugal</a></li>
-      <li><a href="https://2020.igem.org/Team:RDFZ-China/NoteBook">2020 RDFZ China</a></li>
-    </ul>
-  </div>
-</div>
+  body {
+    background: linear-gradient(to bottom, #ddebeb 60%, #a9bbae);
+    font-family: chocolates;
+    /*line-height: 2em;*/
+    height: fit-content;
+  }
 
+  .first-page {
+    position: relative;
+    height: 50vh;
+  }
+
+  .first-page .ItemLeft {
+    position: absolute;
+    width: 51%;
+    left: 5vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .ItemLeft .NoteTitle {
+    font-size: 4.2rem;
+    color: #1a4940;
+    flex-basis: 100%;
+    font-weight: bolder;
+    margin: auto;
+  }
+
+  .ItemLeft .NotePaper {
+    font-size: 1.4rem;
+    text-align: justify;
+    flex-basis: 100%;
+    color: #6b764e;
+    margin: auto;
+  }
+
+  .first-page .ItemRight {
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    right: 1vw;
+    background-image: url("https://static.igem.wiki/teams/4907/wiki/notebook/bird.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+</style>
+
+    <!--loading-->
+<div id="loader-wrapper">
+    <div id="loader">
+      <div class="loader-img">
+        <img src="https://static.igem.wiki/teams/4907/wiki/background/loading.png">
+      </div>
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+<main style="overflow: hidden">
+  <div class="container" style="margin-top: 100px;">
+    <section class="first-page">
+      <div class="ItemLeft">
+        <h1 class="myPage-headline-content NoteTitle">
+          <span style="color: #66805d">.</span>
+          <span style="color: #1a432e;font-family: Aaargh;">NoteBook</span>
+          <span style="color: #66805d">.</span>
+        </h1>
+        <div class="NotePaper">
+          Dive into our iGEM 2023 adventure with XMU-China! It's not just a science notebook; it's a tale of sweat,
+          laughter, mentor wisdom, and the unbeatable thrill of teamwork. Our journey wasn't just about cells and
+          sequences; it was about passion, courage, and the relentless pursuit of science.
+        </div>
+      </div>
+      <div class="ItemRight">
+      </div>
+    </section>
+    <!--content page-->
+    <div class="father">
+      <div id="container">
+        <div class="book">
+          <div class="first paper">
+            <div class="page front contents">
+              <div class="intro">
+              </div>
+            </div>
+            <div class="page backnote"></div>
+          </div>
+
+          <div class="second paper">
+            <div class="page front contents">
+              <div id="vara-container"></div>
+              <div class="diary-title">Last December to January</div>
+              <div class="diary-content">- XMU-China started a new round of recruitment!</div>
+              <div class="diary-content">- We shared synthetic biology knowledge and lots of excellent projects in iGEM
+                with college students in different majors. Each one who participates and completes the selection is the
+                BEST!
+              </div>
+            </div>
+            <div class="page backnote"></div>
+          </div>
+
+          <div class="third paper">
+            <div class="page front contents">
+              <div id="vara-container2"></div>
+              <div class="diary-title">Met in February</div>
+              <div class="diary-content">- Our team was formally founded. This year, we got fourteen fresh faces on
+                board!
+              </div>
+              <div class="diary-content">- By chance, we learned that extreme weather had been threatening agricultural
+                production in recent years. At this point, the project theme about anti-icing and anti-drought came into
+                our view. We were then divided into two groups, focusing on preventing frost and combating drought
+                issues respectively. We held meetings and discussed every weekend about everyone’s progress and solved
+                problems together.
+              </div>
+            </div>
+            <div class="page backnote"></div>
+          </div>
+
+          <div class="fourth paper">
+            <div class="page front contents">
+              <div id="vara-container3"></div>
+              <div class="diary-title">April-May</div>
+              <div class="diary-content">- We learned the fundamental knowledge of molecular cloning and laboratory
+                qualities. After that, we were trained for molecular cloning operations, which helped us to design
+                experiments rationally.
+              </div>
+              <div class="diary-content">- We optimized and constructed the sequences of the needed genes.</div>
+              <div class="diary-content">- We completed the original hypothesis testing experiments needed, then
+                consulted professors for advice. With their help, we gradually refined our project.
+              </div>
+            </div>
+            <div class="page backnote"></div>
+          </div>
+
+          <div class="five paper">
+            <div class="page front contents">
+              <div id="vara-container4"></div>
+              <div class="diary-title">Ambition in March</div>
+              <div class="diary-content">- During the first-ever meetup of XMU-China 2023 friends, we celebrated a
+                fellow member's birthday. 242 days before Grand Jamboree, we made a golden prize wish.
+              </div>
+              <div class="diary-picture" style="overflow: hidden">
+                <img style="max-height: 250px"
+                     src="https://static.igem.wiki/teams/4907/wiki/notebook/ambition-fig1.jpg">
+              </div>
+            </div>
+            <div class="page backnote"></div>
+          </div>
+
+          <div class="six paper">
+            <div class="page front contents">
+              <div id="vara-container5"></div>
+              <div class="diary-title">April</div>
+              <div class="diary-content" style="margin-bottom: 9px">- Brainstroming! Project design was gradually
+                improved.
+              </div>
+              <div class="diary-title">Interview with Prof. Jianwei Lyu</div>
+              <div class="diary-content">- We interviewed Prof. Lyu at school of life science in Xiamen University. He
+                laid emphasis on the significance of biosafety to us.
+              </div>
+            </div>
+            <div class="page backnote"></div>
+          </div>
+
+          <div class="seven paper">
+            <div class="page front contents">
+              <div id="vara-container6"></div>
+              <div class="diary-title">May</div>
+              <div class="diary-content" style="margin-bottom: 13px">- We learned the fundamental knowledge of molecular
+                cloning and laboratory qualities. After that, we were trained for molecular cloning operations, which
+                helped us to design experiments rationally.
+              </div>
+
+              <div class="diary-content">- We drafted the original hypothesis testing experiments needed under
+                instruction.
+              </div>
+            </div>
+            <div class="page backnote"></div>
+          </div>
+
+          <div class="eight paper">
+            <div class="page front contents">
+              <div id="vara-container7"></div>
+              <div class="diary-title">May 6</div>
+              <div class="diary-content" style="margin-bottom: 14px">- Naiads at its very inception.</div>
+
+              <div class="diary-picture" style="overflow: hidden;height: 400px">
+                <img style="max-height: 350px;max-width: 400px"
+                     src="https://static.igem.wiki/teams/4907/wiki/notebook/first-fig1.jpg">
+              </div>
+            </div>
+            <div class="page backnote"></div>
+          </div>
+
+          <div class="nine paper">
+            <div class="page front contents">
+              <div id="vara-container8"></div>
+              <div class="diary-title">June 9</div>
+              <div class="diary-content" style="margin-bottom: 16px">- We proved that the two cryptic plasmid are in
+                Nissle 1917, and then we started to carry out CRIPSR/Cas9...(didn't know that this would be a great
+                torture in the next few months, SHIFT).
+              </div>
+              <div class="diary-title">June 16</div>
+              <div class="diary-content" style="margin-bottom: 16px">- Our very first group photo!
+              </div>
+              <div class="diary-picture" style="overflow: hidden">
+                <img style="max-height: 350px" src="https://static.igem.wiki/teams/4907/wiki/notebook/first-fig2.jpg">
+              </div>
+            </div>
+            <div class="page backnote"></div>
+          </div>
+
+          <div class="ten paper">
+            <div class="page front contents">
+              <div id="vara-container9"></div>
+              <div class="diary-title">Interview with Prof. Dai Wang</div>
+              <div class="diary-content" style="margin-bottom: 14px">- Breakthrough in biosynthesis of composite water
+                retaining agent! We finally confirmed to achieve control of the microbial composition by adjusting
+                antibiotic ratios. And Prof. Wang gave us a lot of advice on the design of HGT (horizontal gene
+                transfer) prevention as well.
+              </div>
+            </div>
+            <div class="page backnote"></div>
+          </div>
+
+          <div class="ten-1 paper">
+            <div class="page front contents">
+              <div id="vara-container10"></div>
+              <div class="diary-title">July 2</div>
+              <div class="diary-content" style="margin-bottom: 14px">- The birth of our goddess.
+              </div>
+              <div class="diary-picture" style="overflow: hidden">
+                <img style="max-height: 250px" src="https://static.igem.wiki/teams/4907/wiki/notebook/first-fig3.png">
+              </div>
+            </div>
+            <div class="page backnote"></div>
+          </div>
+
+          <div class="ten-2 paper">
+            <div class="page front contents">
+              <div id="vara-container11"></div>
+              <div class="diary-title">July 2</div>
+              <div class="diary-content" style="margin-bottom: 14px">- Happy!!! The production of TmAFP is improved
+                significantly because changing the expressed strain from BL21 (DE3) to BL21 Star (DE3).
+              </div>
+              <div class="diary-content">- Very luckily, we eliminated pMUT1. FANG was so happy. But she didn't know the
+                power of pMUT2.
+              </div>
+              <div class="diary-title">July 15</div>
+              <div class="diary-content" style="margin-bottom: 17px">
+                - First successful characterization experiment within the team! Thanks to BBa_K4907132, thanks to the
+                Oxford Cup!
+              </div>
+            </div>
+            <div class="page backnote"></div>
+          </div>
+
+          <div class="ten-3 paper">
+            <div class="page front contents">
+              <div id="vara-container12"></div>
+              <div class="diary-title">Water Resources Bureau</div>
+              <div class="diary-content" style="margin-bottom: 17px">
+                - We held a discussion with personnel from the Water Resources Bureau, where we gained insights into
+                existing methods for drought monitoring and prevention, further enhancing our project's background
+                knowledge.
+              </div>
+              <div class="diary-title">July 28</div>
+              <div class="diary-content" style="margin-bottom: 17px">
+                - Our team had been successfully assigned to the new village this year: Agriculture!
+              </div>
+              <div class="diary-title">July 31</div>
+              <div class="diary-content" style="margin-bottom: 17px">
+                - After countless mutations, VSW-3 RNAP (BBa_K4907114) is finally built!
+              </div>
+            </div>
+            <div class="page backnote"></div>
+          </div>
+
+          <div class="ten-4 paper">
+            <div class="page front contents">
+              <div id="vara-container13"></div>
+              <div class="diary-title">Busy August</div>
+              <div class="diary-title">August 5</div>
+              <div class="diary-content" style="margin-bottom: 14px">- The third time purification, we finally got a
+                satisfying protein gel map of CBM. TT was over-excited because it took her a month to do the damn job!
+              </div>
+              <div class="diary-title">August 9</div>
+              <div class="diary-content">- Engineering Success! After adding a linker between Kp-SP and GFP, the fusion
+                protein emit fluorescence finally!
+              </div>
+            </div>
+            <div class="page backnote"></div>
+          </div>
+
+          <div class="ten-5 paper">
+            <div class="page front contents">
+              <div id="vara-container14"></div>
+              <div class="diary-title">Xinfeng and Mount Wuyi field research</div>
+              <div class="diary-content" style="margin-bottom: 14px">We went our separate ways - one heading to Xinfeng,
+                Jiangxi for soil frost damage research, and the other to Mount Wuyi, Fujian for soil drought research,
+                ultimately enhancing our project's background data. Surprise! A local farmer uncle mentioned that we
+                might be able to spread AFPs and water-retaining agents on crop leaves, providing us with an incredibly
+                new idea for our project implementation.
+              </div>
+            </div>
+            <div class="page backnote"></div>
+          </div>
+
+          <div class="ten-6 paper">
+            <div class="page front contents">
+              <div id="vara-container15"></div>
+              <div class="diary-title">August 12</div>
+              <div class="diary-content">- We try try try, we fail fail fail.
+                The reason for the three-month-long experimental failures in constructing and characterizing the part
+                BBa_K4907145 turned out to be unbelievably stupid - the promoter was installed backward.
+              </div>
+              <div class="diary-title">August 13</div>
+              <div class="diary-content">- Amazingly, just when I was about to give up VSW-3 RNAP, it worked. Was it
+                meant to be?
+              </div>
+            </div>
+            <div class="page backnote"></div>
+          </div>
+
+          <div class="ten-7 paper">
+            <div class="page front contents">
+              <div id="vara-container16"></div>
+              <div class="diary-title">August 22</div>
+              <div class="diary-content">- Family who knows……Misfortunes never come alone. After a dramatic three-month
+                saga of construction and characterization of hrp genes, brace for this epic twist – the sequences used
+                were dead wrong, god!
+              </div>
+              <div class="diary-title">August 27</div>
+              <div class="diary-content" style="margin-bottom: 15px">- Finally, after two months of trials and failures,
+                pMUT2 had been eliminated!!! (roaring). Omg relB is so powerful ahhhhhhh!
+              </div>
+              <div class="diary-title">August 30</div>
+              <div class="diary-content" style="margin-bottom: 16px">- Construction of BBa_K4907140 is finished.</div>
+            </div>
+            <div class="page backnote"></div>
+          </div>
+
+          <div class="ten-8 paper">
+            <div class="page front contents">
+              <div id="vara-container17"></div>
+              <div class="diary-title">New September</div>
+              <div class="diary-title">September 10</div>
+              <div class="diary-content" style="margin-bottom: 15px">- First operation of FermentX!</div>
+
+              <div class="diary-picture" style="overflow: hidden;height: 400px">
+                <img style="max-width: 400px" src="https://static.igem.wiki/teams/4907/wiki/notebook/sept-fig1.png">
+              </div>
+            </div>
+            <div class="page backnote"></div>
+          </div>
+
+          <div class="ten-9 paper">
+            <div class="page  front contents">
+              <div id="vara-container18"></div>
+              <div class="diary-title">September 13</div>
+              <div class="diary-content" style="margin-bottom: 15px">- Promotion Video, it's done.</div>
+
+              <div class="diary-title">September 10-September 20</div>
+              <div class="diary-content" style="margin-bottom: 15px">- BBa_K4907123 were constructed and characterized
+                successfully which only took ONE time.
+              </div>
+
+              <div class="diary-title">September 23</div>
+              <div class="diary-content" style="margin-bottom: 15px">- We completely abandon the gene circuit building
+                of parE because of its hypertoxicity after struggling for three months...
+              </div>
+
+            </div>
+            <div class="page backnote"></div>
+          </div>
+
+          <div class="ten-10 paper">
+            <div class="page  front contents">
+              <div id="vara-container19"></div>
+              <div class="diary-title">September 24</div>
+              <div class="diary-content" style="margin-bottom: 15px">- Xiang’an said goodbye to Siming, one last time.
+              </div>
+              <div class="diary-picture" style="overflow: hidden;height: 400px">
+                <img style="max-width: 440px" src="https://static.igem.wiki/teams/4907/wiki/notebook/ending-fig1.jpg">
+              </div>
+            </div>
+            <div class="page backnote"></div>
+          </div>
+
+          <div class="ten-11 paper">
+            <div class="page last front contents">
+              <div id="vara-container20"></div>
+              <div class="diary-title">September 30</div>
+              <div class="diary-content" style="margin-bottom: 15px">- After trying five protocols with no success, TT
+                is so desperate for
+                J04450_pSB3C5 to grow in ECNP.
+              </div>
+
+              <div class="diary-title">Sprint in October!</div>
+              <div class="diary-title">October 12</div>
+              <div class="diary-content" style="margin-bottom: 15px">- Wiki FREEZE!!!
+              </div>
+
+              <div class="diary-title">End in November</div>
+              <div class="diary-title">November 2-November 5</div>
+              <div class="diary-content" style="margin-bottom: 15px">- Wish we all find the gem! In PARIS! End of
+                competition, infinite in friendship.
+              </div>
+
+            </div>
+            <div class="page backnote"></div>
+          </div>
+
+          <div class="side"></div>
+          <div class="bottom"></div>
+          <div class="shadow"></div>
+        </div>
+        <div class="open-me">read me ↑</div>
+      </div>
+    </div>
+  </div>
+   <div id="myFooter" style="width: 100vw;left: 0">
+        <!--  内容部分-->
+        <div class="footer-xiaohui">
+          <img src="https://static.igem.wiki/teams/4907/wiki/footer-icon/xmuchina.png" alt="">
+          <div class="footer-xiaoming">
+            Xiamen University
+          </div>
+        </div>
+        <div class="footer-didian">
+          <img src="https://static.igem.wiki/teams/4907/wiki/footer-icon/place.png" alt="">
+          <div class="footer-didianming">
+            Xiamen University, Fujian, China<br>
+            No.422, Siming South Road, Fujian, P.R.China 361005
+          </div>
+        </div>
+        <div class="footer-duihui">
+          <img src="https://static.igem.wiki/teams/4907/wiki/footer-icon/teamlogo.png" alt="">
+        </div>
+        <div class="footer-follow">
+          <div class="footer-followus">
+            follow us
+          </div>
+          <div class="footer-wechat">
+            <a type="button" title="scan with wechat" data-toggle="popover" data-popper-placement="left"
+               style="display: block">
+              <img src="https://static.igem.wiki/teams/4907/wiki/footer-icon/chat.png" alt=""
+                   style="max-width: 100%;">
+            </a>
+          </div>
+          <div class="footer-facebook">
+            <img src="https://static.igem.wiki/teams/4907/wiki/footer-icon/facebook.png" alt=""
+                 style="max-width: 100%;">
+          </div>
+          <div class="footer-ins">
+            <img src="https://static.igem.wiki/teams/4907/wiki/footer-icon/ins.png" alt=""
+                 style="max-width: 100%;">
+          </div>
+          <div class="footer-weibo">
+            <a href="https://weibo.com/u/7482868083">
+              <img src="https://static.igem.wiki/teams/4907/wiki/footer-icon/blog.png" alt=""
+                   style="max-width: 100%;">
+            </a>
+          </div>
+          <div class="footer-twitter">
+            <a href="https://twitter.com/XMU_igem">
+              <img src="https://static.igem.wiki/teams/4907/wiki/footer-icon/twitter.png" alt="" style="max-width: 100%;">
+            </a>
+          </div>
+        </div>
+        <div class="footer-bar"></div>
+        <div class="footer-contact">
+          <div class="footer-contactus">
+            contact us
+          </div>
+          <img src="https://static.igem.wiki/teams/4907/wiki/footer-icon/mail.png" alt="">
+          <div class="footer-mail">
+            igemxmu@gmail.com
+          </div>
+        </div>
+      </div>
+</main>
+
+<style>
+  .popover-header {
+    color: white;
+    font-size: 16px;
+    font-family: Fashion;
+    text-align: center;
+    background-color: #1bcea6;
+  }
+
+  .popover-arrow {
+    color: #1bcea6;
+  }
+
+  .popover-body {
+    background-color: #1bcea6;
+    align-items: center;
+  }
+
+  .popover-body img {
+    margin: 5px 35px;
+    width: 110px;
+    height: 110px;
+  }
+</style>
+<script>
+  $(function () {
+    $("[data-toggle='popover']").popover({
+      animation: true,
+      html: true,//content中插入html代码
+      container: "body",
+      content: "<img src='https://static.igem.wiki/teams/4907/wiki/footer-icon/qrcode.jpg'>",//插入图片的路径 及 样式
+    });
+  });
+</script>
+<!-- <script src="{{ url_for('static', filename = 'js/vara.min.js') }}"></script> -->
+<script src="{{ url_for('static', filename = 'js2024/notebook.js') }}"></script>
 {% endblock %}
