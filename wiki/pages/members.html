@@ -4,6 +4,16 @@
 
 
 <link rel="stylesheet" href="{{ url_for('static', filename = 'css2024/members.css') }}">
+<!--loading-->
+<div id="loader-wrapper">
+    <div id="loader">
+      <div class="loader-img">
+        <img src="https://static.igem.wiki/teams/4907/wiki/background/loading.png">
+      </div>
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
 <div class="container-member">
     <div class="hhh">
         <!--loading-->
@@ -996,5 +1006,5 @@
         <p style="font-family: Comic Sans Ms;">Welcome to XMU iGEM-2024</p>
     </div> -->
 </div>
-
+<script src="{{ url_for('static', filename = 'js2024/loading.js') }}"></script>
 {% endblock %}
