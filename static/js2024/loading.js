@@ -27,13 +27,19 @@ document.addEventListener("DOMContentLoaded", function () {
 function loadingFade() {
     var opacity = 1;
     var loadingPage = document.getElementById('loader-wrapper');
+    
+    if (!loadingPage) {
+        console.error('Element with id "loader-wrapper" not found.');
+        return;  // 如果没有找到元素，直接返回
+    }
+
     var time = setInterval(function () {
         if (opacity <= 0) {
             clearInterval(time);
             loadingPage.remove();
         } else {
             loadingPage.style.opacity = opacity;
-            opacity -= 0.05;  // 调整步长让动画更平滑
+            opacity -= 0.05;
         }
-    }, 50);  // 调整时间间隔
+    }, 50);
 }
