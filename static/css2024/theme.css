@@ -194,8 +194,7 @@ a{
     height: calc(100vh - 90px);
     transition: 0.5s;
     opacity: 1;
-    /* background-color: #6a5e93; */
-    background-color: rgba(106, 94, 147, 0.8);
+    background-color: #cec3ed;
     z-index: 100;
     pointer-events: auto;
     box-shadow: 5px 0 10px -5px rgba(0, 0, 0, 0.5);
@@ -280,11 +279,15 @@ a{
 .scroll-bar {
     position: absolute;
     top: 0;
-    left: 97%;
-    height: 10px;
-    width: 3%;
-    background-color: #bac596;
-    transition: height 0.2s ease-out;
+    left: 98%;
+    height: 0;
+    width: 2%;
+    background-color: #9f78b7;
+    transition: width 0.2s ease-out, left 0.2s ease-out;
+}
+
+.wrapper-left:hover .scroll-bar {
+    height: 100%;
 }
 
 
