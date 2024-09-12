@@ -244,17 +244,17 @@ a{
 
 .sidebar-link.current {
     font-size: 26px; /* 设置字体大小 */
-    color: #bac596;
+    color: #ffffc8;
 }
 
 .sidebar-link.active {
     font-size: 30px; /* 设置字体大小 */
-    color: #b2aa6d;
+    color: #fad395;
 }
 
 /*侧边栏二级*/
 .sidebar-link-two:hover {
-    color: #a5af14;
+    color: #fad395;
 }
 
 .sidebar-link-two {
