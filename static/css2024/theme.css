@@ -260,7 +260,7 @@ a{
 
 .sidebar-link-two {
     font-size: 16px; /* 设置字体大小 */
-    color: #274940;
+    color: #534f7a;
     transition: font-size 0.2s; /* 设置过渡动画效果 */
     font-family: Aaargh;
     font-weight: bold;
@@ -395,7 +395,7 @@ a{
 }
 
 .myPage-paragraph-headline-h2 {
-    color: #274940;
+    color: #534f7a;
     font-family: Aaargh;
     font-size: 45px;
     display: inline-block;
@@ -409,7 +409,7 @@ a{
 }
 
 .myPage-paragraph-headline-h3 {
-    color: #274940;
+    color: #534f7a;
     font-family: Aaargh;
     font-size: 35px;
     padding-bottom: 10px;
@@ -467,7 +467,7 @@ a{
 }
 
 .myPage-paragraph-headline-h6 {
-    color: #274940;
+    color: #534f7a;
     display: inline-block;
     font-family: Aaargh;
     font-size: 22px;
@@ -485,7 +485,7 @@ a{
 }
 
 .myPage-paragraph-content {
-    color: #274940;
+    color: #534f7a;
     font-family: chocolates;
     font-size: 24px;
     line-height: 2em;
@@ -520,7 +520,7 @@ a{
 }
 
 .myPage-paragraph-ul {
-    color: #274940;
+    color: #534f7a;
     font-family: chocolates;
     font-size: 24px;
     counter-reset: my-counter; /* 设置计数器的初始值 */
@@ -540,7 +540,7 @@ a{
 }
 
 .myPage-paragraph-reference {
-    color: #274940;
+    color: #534f7a;
     font-family: chocolates;
     font-size: 24px;
     counter-reset: my-counter; /* 设置计数器的初始值 */
@@ -572,7 +572,7 @@ a{
 }
 
 .myPage-paragraph-table td {
-    color: #274940; /* 设置链接的文本颜色 */
+    color: #534f7a; /* 设置链接的文本颜色 */
     text-align: center;
 }
 
@@ -612,7 +612,7 @@ a{
 }
 
 .myPage-paragraph-table a:hover {
-    color: #66805e; /* 设置链接的鼠标悬停时的文本颜色 */
+    color: #867a77; /* 设置链接的鼠标悬停时的文本颜色 */
     text-decoration: none; /* 移除鼠标悬停时的下划线 */
 }
 
