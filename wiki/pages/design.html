@@ -15,12 +15,20 @@ with new communities by discussing public values and the science behind syntheti
     <div class="left-bar">
       <div class="left-bar-right">
         <div class="left-bar-right-item">
-          <a href="#section1" class="sidebar-link" data-section="section1">标题1</a>
+          <a href="#section1" class="sidebar-link" data-section="section1">文字段落</a>
         </div>
         <div class="left-bar-right-item">
-          <a href="#section2" class="sidebar-link" data-section="section2">标题2</a>
+          <a href="#section2" class="sidebar-link" data-section="section2">插图演示</a>
         </div>
-        <!-- 这里只做2个方便展示 -->
+        <div class="left-bar-right-item">
+          <a href="#section2" class="sidebar-link" data-section="section2">小标题和小小标题</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section2" class="sidebar-link" data-section="section2">超链接的写法</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section2" class="sidebar-link" data-section="section2">reference的写法</a>
+        </div>
 
       </div>
     </div>
@@ -30,7 +38,7 @@ with new communities by discussing public values and the science behind syntheti
     <div class="scroll-bar"></div>
   </div>
 
-  <!--content-->
+  <!--以下就是正文段落-->
   <div class="myPage">
     <div class="myPage-main">
       <div style="height: 100px;position:relative;"></div>
@@ -44,7 +52,7 @@ with new communities by discussing public values and the science behind syntheti
         </div>
         <!---标题1--->
         <div class="myPage-paragraph" id="section1">
-          <h2 class="myPage-paragraph-headline-h2">1. 标题1</h2>
+          <h2 class="myPage-paragraph-headline-h2">1.标题1</h2>
           <!-- 记住这里的h2就是标题 -->
           <p class="myPage-paragraph-content">
             开始文字，若需要分段，请复制这个class=myPage-paragraph-content的p标签。
@@ -55,27 +63,21 @@ with new communities by discussing public values and the science behind syntheti
         </div>
         <!-- -Background- -->
         <div class="myPage-paragraph" id="section2">
-          <h2 class="myPage-paragraph-headline-h2">2. Background</h2>
+          <h2 class="myPage-paragraph-headline-h2">2.标题2</h2>
           <p class="myPage-paragraph-content">
             这里就是展示一下如何插入图片，图片的格式就是一张图片，可以说png，jpg等等格式都没问题。
           </p>
           <div class="myPage-paragraph-fig">
             <img src="https://static.igem.wiki/teams/4907/wiki/description/description-fig1.png" alt="">
-            <div class="myPage-paragraph-fig-description"><b>Fig. 1 A collection diagram of existing
-                methods.</b>
+            <div class="myPage-paragraph-fig-description"><b>Fig. 1这里就是写备注就好了</b>
             </div>
           </div>
         </div>
 
+        <div class="myPage-paragraph" id="section3">
+          <h2 class="myPage-paragraph-headline-h2">3.标题3</h2>
 
-
-
-
-        <!--Project-->
-        <div class="myPage-paragraph" id="section5">
-          <h2 class="myPage-paragraph-headline-h2">5. Project</h2>
-
-          <h3 class="myPage-paragraph-headline-h3" id="Project-Anti-Icing">5.1 小标题</h3>
+          <h3 class="myPage-paragraph-headline-h3">5.1 小标题</h3>
           <p class="myPage-paragraph-content">
             这里展示一下小标题，，页面中的标题用的是h2，小标题用的是h3，小小标题用的是h4。
           </p>
@@ -93,72 +95,24 @@ with new communities by discussing public values and the science behind syntheti
         </div>
 
         <!--Biosafety-->
-        <div class="myPage-paragraph" id="section6">
-          <h2 class="myPage-paragraph-headline-h2">6. Biosafety</h2>
+        <div class="myPage-paragraph" id="section4">
+          <h2 class="myPage-paragraph-headline-h2">4.标题4</h2>
           <p class="myPage-paragraph-content">
-            这里主要是展示一下超链接要怎么用，像接下来这个 
-            <a style="font-weight: bolder;text-decoration: none;" href="{{ url_for('pages', page='hardware') }}">Hardware</a>,
-            就是跳转到我们网页的其他页面的格式，如果我跳转到其他网页的话比如
-            <a style="font-weight: bolder;text-decoration: none;" href="https://www.baidu.com/">百度</a>的话,
+            这里主要是展示一下超链接要怎么用，像接下来这个 <a style="font-weight: bolder;text-decoration: none;"
+              href="{{ url_for('pages', page='hardware') }}">Hardware</a>,
+            就是跳转到我们网页的其他页面的格式，如果我跳转到其他网页的话比如<a style="font-weight: bolder;text-decoration: none;"
+              href="https://www.baidu.com/">百度</a>的话,
             就是这种格式。
           </p>
         </div>
 
 
         <!--Reference-->
-        <div class="myPage-paragraph" id="section7">
-          <h2 class="myPage-paragraph-headline-h2">7. Reference</h2>
+        <div class="myPage-paragraph" id="section5">
+          <h2 class="myPage-paragraph-headline-h2">5.标题5</h2>
           <ol class="myPage-paragraph-reference">
-            <li> https://www.fao.org/3/cc0639zh/online/cc0639zh.html</li>
-            <li> https://www.worldbank.org/en/topic/agriculture/overview</li>
-            <li>
-              https://www.statista.com/statistics/270325/distribution-of-gross-domestic-product-gdp-across-economic-sectors-in-china/
-            </li>
-            <li> https://www.worldbank.org/en/topic/agriculture/overvie</li>
-            <li> https://www.mem.gov.cn/xw/yjglbgzdt/202105/t20210508_384756.shtml</li>
-            <li> J. R. Lamichhane, Rising risks of late-spring frosts in a
-              changing climate. <i>Nat. Clim. Change</i>. <b>11</b>, 554-555 (2021).
-            </li>
-            <li> Y. Qing, S. Wang, B. C. Ancell, Z.-L. Yang, Accelerating flash
-              droughts induced by the joint influence of soil moisture depletion and atmospheric
-              aridity. <i>Nat. Commun</i>. <b>13</b>, 1139 (2022).
-            <li> https://www.mem.gov.cn/xw/yjglbgzdt/202105/t20210508_384756.shtml
-            </li>
-            <li> J. Xia, J. Chen, D. She, Impacts and countermeasures of extreme drought in the
-              yangtze river
-              basin in 2022. <i>J. Hydraul. Eng.</i> <b>53</b>,
-              1143-1153 (2022).
-            </li>
-            <li> J. I. Christian <i>et al</i>., Global projections of flash drought
-              show increased risk in a warming climate. <i>Commun. Earth Environ</i>. <b>4</b>,
-              165 (2023).
-            </li>
-            <li> A. Baskaran <i>et al</i>., Anti freeze proteins (Afp): Properties,
-              sources and applications - A review. <i>Int. J. Biol. Macromol</i>. <b>189</b>,
-              292-305 (2021).
-            </li>
-            <li> U. S. Midya, S. Bandyopadhyay, Elucidating the Sluggish Water
-              Dynamics at the Ice-Binding Surface of the <i>Hyperactive Tenebrio molitor</i>
-              Antifreeze
-              Protein. <i>The Journal of Physical Chemistry B</i>. <b>127</b>, 121-132 (2023).
-            </li>
-            <li> A. M. Giuliodori <i>et al.</i>, <i>E. coli</i> CspA
-              stimulates translation in the cold of its own mRNA by promoting ribosome
-              progression. <i>Front. Microbiol</i>. <b>14</b>, 72 (2023).
-            </li>
-            <li> S. Tang <i>et al.</i>, A covalently cross-linked hyaluronic
-              acid/bacterial cellulose composite hydrogel for potential biological applications.
-              <i>Carbohydr. Polym</i>. <b>252</b>, 117123 (2021).
-            </li>
-            <li> K. Liu, J. M. Catchmark, Bacterial cellulose/hyaluronic acid
-              nanocomposites production through co-culturing <i>Gluconacetobacter hansenii</i> and
-              <i>Lactococcus lactis</i> in a two-vessel circulating system. <i>Bioresour.
-                Technol</i>. <b>290</b>, 121715 (2019).
-            </li>
-            <li> O. Wright, M. Delmans, G. B. Stan, T. Ellis, GeneGuard: A
-              modular plasmid system designed for biosafety. <i>ACS Synth Biol</i>. <b>4</b>,
-              307-316 (2015).
-            </li>
+            <li>最后就是reference的部分</li>
+            <li>只要注意用的是li标签就好了</li>
           </ol>
         </div>
       </div>
