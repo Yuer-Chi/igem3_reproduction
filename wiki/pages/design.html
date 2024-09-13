@@ -1,35 +1,172 @@
 {% extends "layout.html" %}
-  
+
 {% block title %}design{% endblock %}
-{% block lead %}Innovative educational tools and outreach activities have the ability to establish a two-way dialogue with new communities by discussing public values and the science behind synthetic biology.{% endblock %}
+{% block lead %}Innovative educational tools and outreach activities have the ability to establish a two-way dialogue
+with new communities by discussing public values and the science behind synthetic biology.{% endblock %}
 
 {% block page_content %}
 
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Best Education</h4>
-      <p>How have you developed new opportunities to include more people in shaping synthetic biology? Innovative educational tools and outreach activities have the ability to establish a two-way dialogue with new communities by discussing public values and the science behind synthetic biology. Document your approach and what was learned by everyone involved to compete for this award.</p>
-      <p>To compete for the Best Education prize, select the prize on the <a href="https://competition.igem.org/deliverables/judging-form">judging form</a> and describe your work on this page.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/awards">2024 Awards Page</a> for more information.</p>
-    </div>
-  </div>
-</div>
+<div class="container-desc">
 
-<div class="row mt-4">
-  <div class="col">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2020.igem.org/Team:CCA_San_Diego/Education">2020 CCA San Diego</a></li>
-      <li><a href="https://2020.igem.org/Team:Lambert_GA/Education">2020 Lambert GA</a></li>
-      <li><a href="https://2020.igem.org/Team:Stanford/Education">2020 Stanford</a></li>
-      <li><a href="https://2020.igem.org/Team:Waseda/Education">2020 Waseda</a></li>
-      <li><a href="https://2020.igem.org/Team:Fudan/Education">2020 Fudan</a></li>
-      <li><a href="https://2020.igem.org/Team:Toulouse_INSA-UPS/Education">2020 Toulouse INSA UPS</a></li>
-    </ul>
+  <!--loading-->
+
+  <!--侧边导航栏-->
+  <div class="myScrollspy">
+    <div class="left-bar">
+      <div class="left-bar-right">
+        <div class="left-bar-right-item">
+          <a href="#section1" class="sidebar-link" data-section="section1">标题1</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section2" class="sidebar-link" data-section="section2">标题2</a>
+        </div>
+        <!-- 这里只做2个方便展示 -->
+
+      </div>
+    </div>
+    <div class="left-bar-bg">
+      <img src="https://static.igem.wiki/teams/5136/cbl-img.png" alt="">
+    </div>
+    <div class="scroll-bar"></div>
   </div>
+
+  <!--content-->
+  <div class="myPage">
+    <div class="myPage-main">
+      <div style="height: 100px;position:relative;"></div>
+      <div class="myPage-main-content">
+        <div class="myPage-headline">
+          <h1 class="myPage-headline-content">
+            <span style="color: #867a77">.</span>
+            <span style="color: #483b53;font-family: Aaargh;">这个页面的大标题</span>
+            <span style="color: #867a77">.</span>
+          </h1>
+        </div>
+        <!---标题1--->
+        <div class="myPage-paragraph" id="section1">
+          <h2 class="myPage-paragraph-headline-h2">1. 标题1</h2>
+          <!-- 记住这里的h2就是标题 -->
+          <p class="myPage-paragraph-content">
+            开始文字，若需要分段，请复制这个class=myPage-paragraph-content的p标签。
+          </p>
+          <p class="myPage-paragraph-content">
+            接上面的分段，就像这样，同时如果有需要有<b>粗体</b>或者<i>斜体</i>，请记得加上b和i的标签。
+          </p>
+        </div>
+        <!-- -Background- -->
+        <div class="myPage-paragraph" id="section2">
+          <h2 class="myPage-paragraph-headline-h2">2. Background</h2>
+          <p class="myPage-paragraph-content">
+            这里就是展示一下如何插入图片，图片的格式就是一张图片，可以说png，jpg等等格式都没问题。
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/4907/wiki/description/description-fig1.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Fig. 1 A collection diagram of existing
+                methods.</b>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <!--Project-->
+        <div class="myPage-paragraph" id="section5">
+          <h2 class="myPage-paragraph-headline-h2">5. Project</h2>
+
+          <h3 class="myPage-paragraph-headline-h3" id="Project-Anti-Icing">5.1 小标题</h3>
+          <p class="myPage-paragraph-content">
+            这里展示一下小标题，，页面中的标题用的是h2，小标题用的是h3，小小标题用的是h4。
+          </p>
+
+          <h3 class="myPage-paragraph-headline-h3">5.2 还是小标题</h3>
+          <h4 class="myPage-paragraph-headline-h4">1. 小小标题</h4>
+          <p class="myPage-paragraph-content">
+            比如这里就有小小标题
+          </p>
+          <h4 class="myPage-paragraph-headline-h4">2. 另一个小小标题</h4>
+          <p class="myPage-paragraph-content">
+            同上
+          </p>
+
+        </div>
+
+        <!--Biosafety-->
+        <div class="myPage-paragraph" id="section6">
+          <h2 class="myPage-paragraph-headline-h2">6. Biosafety</h2>
+          <p class="myPage-paragraph-content">
+            这里主要是展示一下超链接要怎么用，像接下来这个 
+            <a style="font-weight: bolder;text-decoration: none;" href="{{ url_for('pages', page='hardware') }}">Hardware</a>,
+            就是跳转到我们网页的其他页面的格式，如果我跳转到其他网页的话比如
+            <a style="font-weight: bolder;text-decoration: none;" href="https://www.baidu.com/">百度</a>的话,
+            就是这种格式。
+          </p>
+        </div>
+
+
+        <!--Reference-->
+        <div class="myPage-paragraph" id="section7">
+          <h2 class="myPage-paragraph-headline-h2">7. Reference</h2>
+          <ol class="myPage-paragraph-reference">
+            <li> https://www.fao.org/3/cc0639zh/online/cc0639zh.html</li>
+            <li> https://www.worldbank.org/en/topic/agriculture/overview</li>
+            <li>
+              https://www.statista.com/statistics/270325/distribution-of-gross-domestic-product-gdp-across-economic-sectors-in-china/
+            </li>
+            <li> https://www.worldbank.org/en/topic/agriculture/overvie</li>
+            <li> https://www.mem.gov.cn/xw/yjglbgzdt/202105/t20210508_384756.shtml</li>
+            <li> J. R. Lamichhane, Rising risks of late-spring frosts in a
+              changing climate. <i>Nat. Clim. Change</i>. <b>11</b>, 554-555 (2021).
+            </li>
+            <li> Y. Qing, S. Wang, B. C. Ancell, Z.-L. Yang, Accelerating flash
+              droughts induced by the joint influence of soil moisture depletion and atmospheric
+              aridity. <i>Nat. Commun</i>. <b>13</b>, 1139 (2022).
+            <li> https://www.mem.gov.cn/xw/yjglbgzdt/202105/t20210508_384756.shtml
+            </li>
+            <li> J. Xia, J. Chen, D. She, Impacts and countermeasures of extreme drought in the
+              yangtze river
+              basin in 2022. <i>J. Hydraul. Eng.</i> <b>53</b>,
+              1143-1153 (2022).
+            </li>
+            <li> J. I. Christian <i>et al</i>., Global projections of flash drought
+              show increased risk in a warming climate. <i>Commun. Earth Environ</i>. <b>4</b>,
+              165 (2023).
+            </li>
+            <li> A. Baskaran <i>et al</i>., Anti freeze proteins (Afp): Properties,
+              sources and applications - A review. <i>Int. J. Biol. Macromol</i>. <b>189</b>,
+              292-305 (2021).
+            </li>
+            <li> U. S. Midya, S. Bandyopadhyay, Elucidating the Sluggish Water
+              Dynamics at the Ice-Binding Surface of the <i>Hyperactive Tenebrio molitor</i>
+              Antifreeze
+              Protein. <i>The Journal of Physical Chemistry B</i>. <b>127</b>, 121-132 (2023).
+            </li>
+            <li> A. M. Giuliodori <i>et al.</i>, <i>E. coli</i> CspA
+              stimulates translation in the cold of its own mRNA by promoting ribosome
+              progression. <i>Front. Microbiol</i>. <b>14</b>, 72 (2023).
+            </li>
+            <li> S. Tang <i>et al.</i>, A covalently cross-linked hyaluronic
+              acid/bacterial cellulose composite hydrogel for potential biological applications.
+              <i>Carbohydr. Polym</i>. <b>252</b>, 117123 (2021).
+            </li>
+            <li> K. Liu, J. M. Catchmark, Bacterial cellulose/hyaluronic acid
+              nanocomposites production through co-culturing <i>Gluconacetobacter hansenii</i> and
+              <i>Lactococcus lactis</i> in a two-vessel circulating system. <i>Bioresour.
+                Technol</i>. <b>290</b>, 121715 (2019).
+            </li>
+            <li> O. Wright, M. Delmans, G. B. Stan, T. Ellis, GeneGuard: A
+              modular plasmid system designed for biosafety. <i>ACS Synth Biol</i>. <b>4</b>,
+              307-316 (2015).
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-bottom: 100px;"></div>
 </div>
 
 {% endblock %}
