@@ -425,7 +425,7 @@ a{
     display: inline-block;
     width: 30px; /* 根据 SVG 图标的宽度调整 */
     height: 30px; /* 根据 SVG 图标的高度调整 */
-    background-image: url("https://static.igem.wiki/teams/4907/wiki/background/l2.svg");
+    background-image: url("https://static.igem.wiki/teams/5136/little-icon/h3.png");
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: 0.5em; /* 调整图标与文本之间的间距 */
@@ -444,7 +444,7 @@ a{
     display: inline-block;
     width: 30px; /* 根据 SVG 图标的宽度调整 */
     height: 30px; /* 根据 SVG 图标的高度调整 */
-    background-image: url("https://static.igem.wiki/teams/4907/wiki/background/l3.svg");
+    background-image: url("https://static.igem.wiki/teams/5136/little-icon/h4.png");
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: 0.5em; /* 调整图标与文本之间的间距 */
@@ -463,7 +463,7 @@ a{
     display: inline-block;
     width: 30px; /* 根据 SVG 图标的宽度调整 */
     height: 30px; /* 根据 SVG 图标的高度调整 */
-    background-image: url("https://static.igem.wiki/teams/4907/wiki/background/l4.svg");
+    background-image: url("https://static.igem.wiki/teams/5136/little-icon/h5.png");
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: 0.5em; /* 调整图标与文本之间的间距 */
@@ -496,7 +496,7 @@ a{
 }
 
 .myPage-paragraph-content a {
-    color: #444f13;
+    color: #483b53;
 }
 
 .myPage-paragraph-fig img {
