@@ -153,7 +153,7 @@
             const scaleImage = document.createElement("img");
             scaleImage.src = `https://static.igem.wiki/teams/5136/member-tlp-3/cjh-yz.jpeg`; // 确保路径正确
             // scaleImage.alt = `Year ${time}`;
-            scaleImage.style.width = '200px'; // 调整图片大小
+            scaleImage.style.width = '150px'; // 调整图片大小
 
             thickClockScale.appendChild(scaleImage);
             invisibleClockTable.appendChild(thickClockScale);
@@ -168,7 +168,7 @@
                 slide.style.transform = `translateY(${offset * 100}%)`;
             });
             // 调用旋转时钟表盘函数
-            clockRotate(offset * 30);
+            clockRotate(offset * 24);
         }
         // 向后切换卡片
         function slideToNext() {
@@ -176,7 +176,7 @@
             slides.forEach(slide => {
                 slide.style.transform = `translateY(${offset * 100}%)`;
             });
-            clockRotate(offset * 30);
+            clockRotate(offset * 24);
         }
         // 旋转时钟表盘
         function clockRotate(degree) {
