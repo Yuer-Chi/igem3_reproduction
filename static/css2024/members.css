@@ -74,8 +74,8 @@
 .pro-card-wrapper-pin {
   /* 开启3D空间 */
   perspective: 300px;
-  margin-left: -2px;
-  margin-right: -2px;
+  margin-left: 2px;
+  margin-right: 2px;
   /* transform: rotate(90deg); */
 }
 .pro-card {
