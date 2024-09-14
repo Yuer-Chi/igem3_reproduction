@@ -6,12 +6,13 @@ with new communities by discussing public values and the science behind syntheti
 
 {% block page_content %}
 
-<div class="container-desc">
+<div class="container">
 
   <!--loading-->
 
   <!--侧边导航栏-->
   <div class="myScrollspy">
+    <!-- 文字导航 -->
     <div class="left-bar">
       <div class="left-bar-right">
         <div class="left-bar-right-item">
@@ -21,20 +22,21 @@ with new communities by discussing public values and the science behind syntheti
           <a href="#section2" class="sidebar-link" data-section="section2">插图演示</a>
         </div>
         <div class="left-bar-right-item">
-          <a href="#section2" class="sidebar-link" data-section="section3">小标题和小小标题</a>
+          <a href="#section3" class="sidebar-link" data-section="section3">小标题和小小标题</a>
         </div>
         <div class="left-bar-right-item">
-          <a href="#section2" class="sidebar-link" data-section="section4">超链接的写法</a>
+          <a href="#section4" class="sidebar-link" data-section="section4">超链接的写法</a>
         </div>
         <div class="left-bar-right-item">
-          <a href="#section2" class="sidebar-link" data-section="section5">reference的写法</a>
+          <a href="#section5" class="sidebar-link" data-section="section5">reference的写法</a>
         </div>
-
       </div>
     </div>
+    <!-- 底部插图 -->
     <div class="left-bar-bg">
       <img src="https://static.igem.wiki/teams/5136/cbl-img.png" alt="">
     </div>
+    <!-- 进度条 -->
     <div class="scroll-bar"></div>
   </div>
 
@@ -43,6 +45,7 @@ with new communities by discussing public values and the science behind syntheti
     <div class="myPage-main">
       <div style="height: 100px;position:relative;"></div>
       <div class="myPage-main-content">
+        <!---大标题--->
         <div class="myPage-headline">
           <h1 class="myPage-headline-content">
             <span style="color: #867a77">.</span>
@@ -50,7 +53,8 @@ with new communities by discussing public values and the science behind syntheti
             <span style="color: #867a77">.</span>
           </h1>
         </div>
-        <!---标题1--->
+
+        <!---文字段落--->
         <div class="myPage-paragraph" id="section1">
           <h2 class="myPage-paragraph-headline-h2">1.标题1</h2>
           <!-- 记住这里的h2就是标题 -->
@@ -61,7 +65,8 @@ with new communities by discussing public values and the science behind syntheti
             接上面的分段，就像这样，同时如果有需要有<b>粗体</b>或者<i>斜体</i>，请记得加上b和i的标签。
           </p>
         </div>
-        <!-- -Background- -->
+
+        <!---插图演示--->
         <div class="myPage-paragraph" id="section2">
           <h2 class="myPage-paragraph-headline-h2">2.标题2</h2>
           <p class="myPage-paragraph-content">
@@ -74,6 +79,7 @@ with new communities by discussing public values and the science behind syntheti
           </div>
         </div>
 
+        <!---小标题和小小标题--->
         <div class="myPage-paragraph" id="section3">
           <h2 class="myPage-paragraph-headline-h2">3.标题3</h2>
 
@@ -94,7 +100,7 @@ with new communities by discussing public values and the science behind syntheti
 
         </div>
 
-        <!--Biosafety-->
+        <!---超链接的写法--->
         <div class="myPage-paragraph" id="section4">
           <h2 class="myPage-paragraph-headline-h2">4.标题4</h2>
           <p class="myPage-paragraph-content">
@@ -107,11 +113,12 @@ with new communities by discussing public values and the science behind syntheti
         </div>
 
 
-        <!--Reference-->
+        <!--Reference的写法-->
         <div class="myPage-paragraph" id="section5">
           <h2 class="myPage-paragraph-headline-h2">5.标题5</h2>
           <ol class="myPage-paragraph-reference">
             <li>最后就是reference的部分</li>
+            <li>写几个ref就是写几个li标签</li>
             <li>只要注意用的是li标签就好了</li>
           </ol>
         </div>
