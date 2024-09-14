@@ -570,7 +570,7 @@ a{
 
 .myPage-paragraph-table {
     border-collapse: collapse;
-    border: 2px solid #60815b;
+    border: 2px solid #483b53;
     width: 100%;
 }
 
@@ -620,13 +620,13 @@ a{
 }
 
 .myPage-paragraph-table tr:first-child {
-    background-color: #a6b3a3;
-    color: #60815b;
+    background-color: #cec3ed;
+    color: #483b53;
 }
 
 .myPage-paragraph-table th,
 .myPage-paragraph-table td {
-    border: 1px solid #60815b;
+    border: 1px solid #483b53;
     padding: 8px;
 }
 
