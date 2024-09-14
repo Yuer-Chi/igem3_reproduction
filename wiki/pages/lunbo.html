@@ -116,7 +116,7 @@
         for (let i = -60, year = startYear - 1; i < 300; i += 6) {
             // 调用添加时钟刻度函数
             addClockScale(i);
-            if (i % 30 === 0) {
+            if (i % 24 === 0) {
                 // 如果为整点时，调用添加粗刻度函数
                 addThickClockScale(i, year);
                 year++;
