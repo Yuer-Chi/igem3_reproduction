@@ -1,4 +1,4 @@
-a{
+a {
     text-decoration: none;
 }
 
@@ -171,9 +171,11 @@ a{
     0% {
         transform: translate(0px, 0px);
     }
+
     50% {
         transform: translate(0px, -15px);
     }
+
     100% {
         transform: translate(0px, 0px);
     }
@@ -198,12 +200,15 @@ a{
     z-index: 100;
     pointer-events: auto;
     box-shadow: 5px 0 10px -5px rgba(0, 0, 0, 0.5);
-    pointer-events: auto; /* 允许点击事件 */
+    pointer-events: auto;
+    /* 允许点击事件 */
 }
 
 .myScrollspy.hidden * {
-    opacity: 0; /* 设置透明度为 0 */
-    pointer-events: none; /* 禁用点击事件 */
+    opacity: 0;
+    /* 设置透明度为 0 */
+    pointer-events: none;
+    /* 禁用点击事件 */
 }
 
 .left-bar {
@@ -234,21 +239,25 @@ a{
 }
 
 .sidebar-link {
-    font-size: 20px; /* 设置字体大小 */
-    color:#FFF ;
-    transition: font-size 0.2s; /* 设置过渡动画效果 */
+    font-size: 20px;
+    /* 设置字体大小 */
+    color: #FFF;
+    transition: font-size 0.2s;
+    /* 设置过渡动画效果 */
     text-decoration: none;
     font-family: Aaargh;
     font-weight: bold;
 }
 
 .sidebar-link.current {
-    font-size: 26px; /* 设置字体大小 */
+    font-size: 26px;
+    /* 设置字体大小 */
     color: #ffffc8;
 }
 
 .sidebar-link.active {
-    font-size: 30px; /* 设置字体大小 */
+    font-size: 30px;
+    /* 设置字体大小 */
     color: #fad395;
 }
 
@@ -258,21 +267,25 @@ a{
 }
 
 .sidebar-link-two {
-    font-size: 16px; /* 设置字体大小 */
+    font-size: 16px;
+    /* 设置字体大小 */
     color: #534f7a;
-    transition: font-size 0.2s; /* 设置过渡动画效果 */
+    transition: font-size 0.2s;
+    /* 设置过渡动画效果 */
     font-family: Aaargh;
     font-weight: bold;
     text-decoration: none;
 }
 
 .sidebar-link-two.current {
-    font-size: 17px; /* 设置字体大小 */
+    font-size: 17px;
+    /* 设置字体大小 */
     color: #b2aa6d;
 }
 
 .sidebar-link-two.active {
-    font-size: 17px; /* 设置字体大小 */
+    font-size: 17px;
+    /* 设置字体大小 */
     color: #b2aa6d;
 }
 
@@ -301,7 +314,8 @@ a{
 .left-bar-bg img {
     position: relative;
     left: 0;
-    width: 90%; /* 图片宽度*/
+    width: 90%;
+    /* 图片宽度*/
     z-index: -1;
     opacity: 50%;
     margin-left: 10px;
@@ -423,12 +437,15 @@ a{
 .myPage-paragraph-headline-h3::before {
     content: "";
     display: inline-block;
-    width: 30px; /* 根据 SVG 图标的宽度调整 */
-    height: 30px; /* 根据 SVG 图标的高度调整 */
+    width: 30px;
+    /* 根据 SVG 图标的宽度调整 */
+    height: 30px;
+    /* 根据 SVG 图标的高度调整 */
     background-image: url("https://static.igem.wiki/teams/5136/little-icon/h3.png");
     background-repeat: no-repeat;
     background-size: contain;
-    margin-right: 0.5em; /* 调整图标与文本之间的间距 */
+    margin-right: 0.5em;
+    /* 调整图标与文本之间的间距 */
 }
 
 .myPage-paragraph-headline-h4 {
@@ -442,12 +459,15 @@ a{
 .myPage-paragraph-headline-h4::before {
     content: "";
     display: inline-block;
-    width: 30px; /* 根据 SVG 图标的宽度调整 */
-    height: 30px; /* 根据 SVG 图标的高度调整 */
+    width: 30px;
+    /* 根据 SVG 图标的宽度调整 */
+    height: 30px;
+    /* 根据 SVG 图标的高度调整 */
     background-image: url("https://static.igem.wiki/teams/5136/little-icon/h4.png");
     background-repeat: no-repeat;
     background-size: contain;
-    margin-right: 0.5em; /* 调整图标与文本之间的间距 */
+    margin-right: 0.5em;
+    /* 调整图标与文本之间的间距 */
 }
 
 .myPage-paragraph-headline-h5 {
@@ -461,12 +481,15 @@ a{
 .myPage-paragraph-headline-h5::before {
     content: "";
     display: inline-block;
-    width: 30px; /* 根据 SVG 图标的宽度调整 */
-    height: 30px; /* 根据 SVG 图标的高度调整 */
+    width: 30px;
+    /* 根据 SVG 图标的宽度调整 */
+    height: 30px;
+    /* 根据 SVG 图标的高度调整 */
     background-image: url("https://static.igem.wiki/teams/5136/little-icon/h5.png");
     background-repeat: no-repeat;
     background-size: contain;
-    margin-right: 0.5em; /* 调整图标与文本之间的间距 */
+    margin-right: 0.5em;
+    /* 调整图标与文本之间的间距 */
 }
 
 .myPage-paragraph-headline-h6 {
@@ -526,41 +549,57 @@ a{
     color: #534f7a;
     font-family: chocolates;
     font-size: 24px;
-    counter-reset: my-counter; /* 设置计数器的初始值 */
-    list-style-type: none; /* 隐藏默认的序号样式 */
-    padding-left: 0; /* 移除默认的内边距 */
+    counter-reset: my-counter;
+    /* 设置计数器的初始值 */
+    list-style-type: none;
+    /* 隐藏默认的序号样式 */
+    padding-left: 0;
+    /* 移除默认的内边距 */
 }
 
 .myPage-paragraph-ul li::before {
     content: "";
     display: inline-block;
-    width: 30px; /* 根据 SVG 图标的宽度调整 */
-    height: 30px; /* 根据 SVG 图标的高度调整 */
+    width: 30px;
+    /* 根据 SVG 图标的宽度调整 */
+    height: 30px;
+    /* 根据 SVG 图标的高度调整 */
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='%23EBC475' class='bi bi-stars' viewBox='0 0 16 16'%3E%3Cpath d='M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z'%3E%3C/path%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-size: contain;
-    margin-right: 0.5em; /* 调整图标与文本之间的间距 */
+    margin-right: 0.5em;
+    /* 调整图标与文本之间的间距 */
 }
 
 .myPage-paragraph-reference {
     color: #534f7a;
     font-family: chocolates;
     font-size: 24px;
-    counter-reset: my-counter; /* 设置计数器的初始值 */
-    list-style-type: none; /* 隐藏默认的序号样式 */
-    padding-left: 0; /* 移除默认的内边距 */
+    counter-reset: my-counter;
+    /* 设置计数器的初始值 */
+    list-style-type: none;
+    /* 隐藏默认的序号样式 */
+    padding-left: 0;
+    /* 移除默认的内边距 */
 }
 
 .myPage-paragraph-reference li {
     margin-bottom: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .myPage-paragraph-reference li::before {
-    content: "[" counter(my-counter) "]"; /* 设置序号的内容和格式 */
-    counter-increment: my-counter; /* 递增计数器的值 */
-    left: 0; /* 将序号定位到最左侧 */
-    width: 40px; /* 序号部分的固定宽度 */
-    text-align: left; /* 将序号左对齐 */
+    content: "[" counter(my-counter) "]";
+    /* 设置序号的内容和格式 */
+    counter-increment: my-counter;
+    /* 递增计数器的值 */
+    left: 0;
+    /* 将序号定位到最左侧 */
+    width: 40px;
+    /* 序号部分的固定宽度 */
+    text-align: left;
+    /* 将序号左对齐 */
 }
 
 /*parts表格开始*/
@@ -575,7 +614,8 @@ a{
 }
 
 .myPage-paragraph-table td {
-    color: #534f7a; /* 设置链接的文本颜色 */
+    color: #534f7a;
+    /* 设置链接的文本颜色 */
     text-align: center;
 }
 
@@ -590,8 +630,10 @@ a{
 }
 
 .myPage-paragraph-table a {
-    color: #b2b994; /* 设置链接的文本颜色 */
-    text-decoration: none; /* 添加下划线 */
+    color: #b2b994;
+    /* 设置链接的文本颜色 */
+    text-decoration: none;
+    /* 添加下划线 */
 }
 
 .myPage-paragraph-table a::after {
@@ -601,7 +643,8 @@ a{
     height: 16px;
     background-image: url("https://static.igem.wiki/teams/5136/parts-table-icon/tubiao.png");
     background-size: cover;
-    margin-left: 10px; /* 调整图标与连接之间的间距 */
+    margin-left: 10px;
+    /* 调整图标与连接之间的间距 */
 }
 
 .myPage-paragraph-table a::after {
@@ -611,12 +654,15 @@ a{
     height: 16px;
     background-image: url("https://static.igem.wiki/teams/5136/parts-table-icon/tubiao.png");
     background-size: cover;
-    margin-left: 5px; /* 调整图标与连接之间的间距 */
+    margin-left: 5px;
+    /* 调整图标与连接之间的间距 */
 }
 
 .myPage-paragraph-table a:hover {
-    color: #867a77; /* 设置链接的鼠标悬停时的文本颜色 */
-    text-decoration: none; /* 移除鼠标悬停时的下划线 */
+    color: #867a77;
+    /* 设置链接的鼠标悬停时的文本颜色 */
+    text-decoration: none;
+    /* 移除鼠标悬停时的下划线 */
 }
 
 .myPage-paragraph-table tr:first-child {
