@@ -631,7 +631,7 @@ a {
 }
 
 .myPage-paragraph-table a {
-    color: #b2b994;
+    color: #534f7a;
     /* 设置链接的文本颜色 */
     text-decoration: none;
     /* 添加下划线 */
@@ -660,7 +660,7 @@ a {
 }
 
 .myPage-paragraph-table a:hover {
-    color: #867a77;
+    color: #cec3ed;
     /* 设置链接的鼠标悬停时的文本颜色 */
     text-decoration: none;
     /* 移除鼠标悬停时的下划线 */
