@@ -204,14 +204,14 @@
 
 .welcome
 {
-  width: 50vw;
+  width: 60vw;
   display: flex; /* 定义为 Flex 容器 */
   flex-direction: column; /* 设置主轴方向为垂直方向 */
   justify-content: center; /* 在主轴（竖直方向）上居中 */
   align-items: center; /* 在交叉轴（水平方向）上居中（可选） */
   margin-top: 200px;
   margin-left: -10vw;
-  font-size:50px;
+  font-size:80px;
   font-family: Comic Sans Ms;
   color: #534f7a;
   text-shadow: 
