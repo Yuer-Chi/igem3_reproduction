@@ -1,0 +1,191 @@
+{% extends "layout.html" %}
+
+{% block title %}Proposed Implementation{% endblock %}
+{% block lead %}Innovative educational tools and outreach activities have the ability to establish a two-way dialogue
+with new communities by discussing public values and the science behind synthetic biology.{% endblock %}
+
+{% block page_content %}
+
+<div class="container">
+
+    <!--loading-->
+
+    <!--侧边导航栏-->
+    <div class="myScrollspy">
+        <!-- 文字导航 -->
+        <div class="left-bar">
+            <div class="left-bar-right">
+                <div class="left-bar-right-item">
+                    <a href="#section1" class="sidebar-link" data-section="section1">Overview</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a href="#section2" class="sidebar-link" data-section="section2">Proposed Implementation</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a href="#section3" class="sidebar-link" data-section="section3">Safety</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a href="#section4" class="sidebar-link" data-section="section4">Challenges</a>
+                </div>
+            </div>
+        </div>
+        <!-- 底部插图 -->
+        <div class="left-bar-bg">
+            <img src="https://static.igem.wiki/teams/5136/cbl-img.png" alt="">
+        </div>
+        <!-- 进度条 -->
+        <div class="scroll-bar"></div>
+    </div>
+
+    <!--以下就是正文段落-->
+    <div class="myPage">
+        <div class="myPage-main">
+            <div style="height: 100px;position:relative;"></div>
+            <div class="myPage-main-content">
+                <!---大标题--->
+                <div class="myPage-headline">
+                    <h1 class="myPage-headline-content">
+                        <span style="color: #867a77">.</span>
+                        <span style="color: #483b53;font-family: Aaargh;">Implementation</span>
+                        <span style="color: #867a77">.</span>
+                    </h1>
+                </div>
+
+                <!---Overview--->
+                <div class="myPage-paragraph" id="section1">
+                    <h2 class="myPage-paragraph-headline-h2">Overview</h2>
+                    <p class="myPage-paragraph-content">
+                        The current climate crisis urgently demands effective solutions. Forests play a crucial role in
+                        carbon sequestration, reducing the greenhouse effect, and mitigating climate change. However, a
+                        significant amount of timber is used for paper production. Improving the efficiency of paper
+                        recycling and deinking can help protect forests and alleviate environmental and climate
+                        challenges.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        Traditional deinking methods face issues of inefficiency and environmental pollution. Our
+                        innovative approach (see design for details) enhances deinking efficiency and reduces pollution,
+                        thereby increasing the recycling rate of paper. This also promotes the green transformation of
+                        related industries, providing a new pathway to address the climate crisis.
+                    </p>
+                </div>
+
+                <!---Proposed Implementation--->
+                <div class="myPage-paragraph" id="section2">
+                    <h2 class="myPage-paragraph-headline-h2">Proposed Implementation</h2>
+                    <h3 class="myPage-paragraph-headline-h3">1.Target Users</h3>
+                    <h4 class="myPage-paragraph-headline-h4">1.1 Recycled Paper Mills</h4>
+                    <p class="myPage-paragraph-content">
+                        Our project primarily targets recycled paper mills that use waste paper as raw material. In the
+                        context of severe climate challenges and scarce forest resources, the utilization rate of waste
+                        paper remains suboptimal, and the deinking process often produces pollutants like "black liquor"
+                        (see HP for more details). By implementing our optimized deinking and pulping system, we aim to
+                        enhance deinking efficiency, increase paper recycling rates, reduce environmental pollution from
+                        traditional deinking methods, and promote the sustainable development of the paper industry and
+                        its related supply chains.
+                    </p>
+                    <h4 class="myPage-paragraph-headline-h4">1.2 Relevant Research Teams</h4>
+                    <p class="myPage-paragraph-content">
+                        In our laboratory, we have simulated and optimized industrial deinking processes, developing a
+                        comprehensive experimental protocol (see protocol for more details). This provides valuable
+                        references and methods for other research teams, fostering further innovative research. Notably,
+                        we conducted systematic tests on the functionality of signal peptides (see software for more
+                        details), assisting other teams in selecting appropriate signal peptides as needed, thereby
+                        supporting the advancement of additional innovative studies.
+                    </p>
+                    <h3 class="myPage-paragraph-headline-h3">2. Usage</h3>
+                    <p class="myPage-paragraph-content">
+                        We use engineered E. coli BL21 to release or secrete enzymes such as cellulase, monooxygenase,
+                        and laccase to treat paper. These enzymes effectively separate ink from paper fibers, achieving
+                        a biphasic separation of pulp and ink. Enzymatic treatment enhances the separation, ensuring
+                        thorough division of ink and paper fibers.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        In the subsequent process, limonene is used to extract and separate ink from the fibers,
+                        improving efficiency and reducing fiber loss. As a biosynthesized terpene, limonene effectively
+                        enhances ink separation, making the paper recycling process eco-friendlier and more efficient.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        Additionally, to address heavy metals in the wastewater from the deinking process, we designed a
+                        heavy metal ion adsorption system. Engineered E. coli BL21 is cultured in a fermenter to utilize
+                        their adsorption capacity to capture heavy metals from the wastewater. The process involves
+                        introducing wastewater into the fermenter, where the cultured strains treat it over time. After
+                        treatment, the bacterial sediment at the bottom of the fermenter, containing adsorbed heavy
+                        metals,
+                        is collected.
+                    </p>
+
+
+
+                </div>
+
+                <!---Safety--->
+                <div class="myPage-paragraph" id="section3">
+                    <h2 class="myPage-paragraph-headline-h2">Safety</h2>
+
+                    <h3 class="myPage-paragraph-headline-h3">1.Bacterial Lysis Mechanism</h3>
+                    <p class="myPage-paragraph-content">
+                        We designed a lysis mechanism responsive to arabinose, causing bacteria to automatically lyse
+                        upon detecting the arabinose signal. This process not only releases enzymes into the environment
+                        to perform their functions but also ensures that bacteria do not remain in the environment.
+                        Through this mechanism, bacteria naturally decompose after completing their tasks, preventing
+                        biosafety issues.
+                    </p>
+                    <h3 class="myPage-paragraph-headline-h3">2.Suicide Switch</h3>
+                    <p class="myPage-paragraph-content">
+                        Additionally, we developed a blue light-activated suicide switch. When exposed to blue light,
+                        this switch is activated, triggering bacterial lysis and death. We treat the effluent with blue
+                        light to ensure complete elimination of bacteria. This measure further ensures environmental
+                        safety by preventing uncontrolled bacterial spread.
+                    </p>
+                    <h3 class="myPage-paragraph-headline-h3">3.Risk Assessment</h3>
+                    <p class="myPage-paragraph-content">
+                        Since engineered bacteria are used when the project is implemented, there are potential risks to
+                        public health and the environment. Therefore, before we put our devices into production,
+                        testing, and applications outside the laboratory, extensive testing should be performed to
+                        ensure that our engineered bacteria are safe for humans and the environment.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        Besides, China passed a new biosecurity law and it come into effect on April 15, 2021. The law
+                        establishes systems for biosecurity risk prevention and control, including risk monitoring and
+                        early warning, risk investigation and assessment, and information sharing. It also has
+                        provisions to prevent and respond to specific biosecurity risks, including major emerging
+                        infectious diseases, epidemics, and sudden outbreaks, and biotechnology research, development,
+                        and application. To keep our activities legal, applying for permits and approvals is necessary
+                        if we execute our proposed implementation.
+                    </p>
+
+
+                </div>
+
+                <!---Challenges--->
+                <div class="myPage-paragraph" id="section4">
+                    <h2 class="myPage-paragraph-headline-h2">Challenges</h2>
+                    <p class="myPage-paragraph-content">
+                        Currently, we have made some progress in ink removal from everyday materials and proposed
+                        various methods and suggestions. However, achieving the ideal ink removal effect is still a work
+                        in progress. We plan to explore new technologies to reduce waste paper in daily life and promote
+                        sustainable development.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        In research and development, our project is dedicated to exploring more efficient enzymes to
+                        improve deinking efficiency. This will help enhance the quality of recycled paper and further
+                        advance the recycled paper industry, promoting green and sustainable development.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        Finally, we aim to collaborate with recycled paper mills for on-site experimental testing. This
+                        will help assess the practical feasibility of our current project design and microbial strains,
+                        identify and address any shortcomings, and lay the experimental foundation for the project's
+                        eventual industrialization.
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div style="margin-bottom: 100px;"></div>
+</div>
+
+{% endblock %}
