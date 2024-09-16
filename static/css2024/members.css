@@ -8,7 +8,7 @@
 .container-member {
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(to right, #f0f0f0 0%, #EBD69C 100%);
+  background-image: linear-gradient(to right, #FFFFC8 0%, #EBD69C 100%);
   /* align-items: center; */
   /* 使容器的高度至少和屏幕一样高，这样可以在垂直方向上居中 */
   min-height: 50vh;
