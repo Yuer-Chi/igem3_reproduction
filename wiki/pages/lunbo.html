@@ -103,6 +103,24 @@
         </div>
     </div>
     <script>
+
+        let imageUrls = [
+            "https://static.igem.wiki/teams/5136/member-tlp-2/kyh-hh.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/xcx-xx.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/lzm-mss.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/mzy-ddr.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/lj-myzl.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/yyf-njs.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/zxx-gt.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/jrh-ty.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/lxr-sp.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/crq-ss.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-2/fmz-qzgw.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-2/zyh-sbqs.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/zy-yl.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/wjw-lr.jpeg",
+            // 添加更多图片URL
+        ];
         // 定义变量
         let offset = 0;
         let maxOffset = 3;
@@ -114,32 +132,30 @@
         // 设定起始年份为2021
         let startYear = 2021;
         for (let i = -60, year = startYear - 1; i < 300; i += 6) {
-            // 调用添加时钟刻度函数
             addClockScale(i);
             if (i % 24 === 0) {
-                // 如果为整点时，调用添加粗刻度函数
-                addThickClockScale(i, year);
+                let index = (year - startYear + 1); // 计算年份对应的索引
+                addThickClockScale(i, year, imageUrls[index]);
                 year++;
             }
         }
         // 添加时钟刻度
-        function addClockScale(degree) {
-            // 创建一个隐藏的表格元素
+        function addThickClockScale(degree, time, imageUrl) {
             const invisibleClockTable = document.createElement("div");
-            // 添加类名
             invisibleClockTable.className = "invisible-table";
-            // 设置旋转角度
             invisibleClockTable.style.transform = `rotate(${degree}deg)`;
-            // 创建时钟刻度元素
-            const clockScale = document.createElement("div");
-            // 添加类名
-            clockScale.className = "clock-scale";
-            // 将时钟刻度元素添加到表格中
-            invisibleClockTable.appendChild(clockScale);
-            // 将表格添加到时钟表盘中
+
+            const thickClockScale = document.createElement("div");
+            thickClockScale.className = "clock-thick";
+
+            const scaleImage = document.createElement("img");
+            scaleImage.src = imageUrl;
+            scaleImage.style.width = '150px';
+
+            thickClockScale.appendChild(scaleImage);
+            invisibleClockTable.appendChild(thickClockScale);
             clock.appendChild(invisibleClockTable);
         }
-
 
 
         function addThickClockScale(degree, time) {
