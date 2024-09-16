@@ -140,6 +140,25 @@
             }
         }
         // 添加时钟刻度
+        function addClockScale(degree) {
+            // 创建一个隐藏的表格元素
+            const invisibleClockTable = document.createElement("div");
+            // 添加类名
+            invisibleClockTable.className = "invisible-table";
+            // 设置旋转角度
+            invisibleClockTable.style.transform = `rotate(${degree}deg)`;
+            // 创建时钟刻度元素
+            const clockScale = document.createElement("div");
+            // 添加类名
+            clockScale.className = "clock-scale";
+            // 将时钟刻度元素添加到表格中
+            invisibleClockTable.appendChild(clockScale);
+            // 将表格添加到时钟表盘中
+            clock.appendChild(invisibleClockTable);
+        }
+
+
+
         function addThickClockScale(degree, time, imageUrl) {
             const invisibleClockTable = document.createElement("div");
             invisibleClockTable.className = "invisible-table";
@@ -151,25 +170,6 @@
             const scaleImage = document.createElement("img");
             scaleImage.src = imageUrl;
             scaleImage.style.width = '150px';
-
-            thickClockScale.appendChild(scaleImage);
-            invisibleClockTable.appendChild(thickClockScale);
-            clock.appendChild(invisibleClockTable);
-        }
-
-
-        function addThickClockScale(degree, time) {
-            const invisibleClockTable = document.createElement("div");
-            invisibleClockTable.className = "invisible-table";
-            invisibleClockTable.style.transform = `rotate(${degree}deg)`;
-
-            const thickClockScale = document.createElement("div");
-            thickClockScale.className = "clock-thick";
-
-            const scaleImage = document.createElement("img");
-            scaleImage.src = `https://static.igem.wiki/teams/5136/member-tlp-3/cjh-yz.jpeg`; // 确保路径正确
-            // scaleImage.alt = `Year ${time}`;
-            scaleImage.style.width = '150px'; // 调整图片大小
 
             thickClockScale.appendChild(scaleImage);
             invisibleClockTable.appendChild(thickClockScale);
