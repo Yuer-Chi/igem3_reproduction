@@ -20,27 +20,41 @@
         <div id="content">
             <div class="card">
                 <div class="photo">
-                    <img src="https://static.igem.wiki/teams/5136/member-tlp-2/kyh-hh.jpeg" alt="">
-
+                    <img src="https://static.igem.wiki/teams/5136/member-tlp-2/ljc-em.jpeg" alt="">
                 </div>
-
                 <div class="jianjie">
                     <div class="card-title">
-                        卡牌名-人名
+                        恶魔 - 吕锦程
                     </div>
                     <div class="card-passage">
                         <br>
-                        <p style="font-size: 3vw;">学院名</p>
+                        <p style="font-size: 3vw;">化学化工学院</p>
                         <br>
                         <br>
-                        mottomottomottomottomottomottomotto，mottomottomotto
-                        mottomottomottomottomottomotto
-                        mottomotto
-                        
+                        Persistence is a brand new journey.
                     </div>
                 </div>
-
             </div>
+
+            <div class="card">
+                <div class="photo">
+                    <img src="https://static.igem.wiki/teams/5136/member-tlp-1/zlh-bjs.jpeg" alt="">
+                </div>
+                <div class="jianjie">
+                    <div class="card-title">
+                        宝剑四 - 张琳昊
+                    </div>
+                    <div class="card-passage">
+                        <br>
+                        <p style="font-size: 3vw;">生命科学学院</p>
+                        <br>
+                        <br>
+                        My brain has two parts: one is left, and another is right. My left brain has nothing right,
+                        right brain has nothing left.
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <div id="clock">
@@ -52,33 +66,35 @@
     <script>
 
         let imageUrls = [
-            "https://static.igem.wiki/teams/5136/member-tlp-2/kyh-hh.jpeg",
-            "https://static.igem.wiki/teams/5136/member-tlp-1/xcx-xx.jpeg",
-            "https://static.igem.wiki/teams/5136/member-tlp-1/lzm-mss.jpeg",
-            "https://static.igem.wiki/teams/5136/member-tlp-1/mzy-ddr.jpeg",
-            "https://static.igem.wiki/teams/5136/member-tlp-1/lj-myzl.jpeg",
-            "https://static.igem.wiki/teams/5136/member-tlp-1/yyf-njs.jpeg",
-            "https://static.igem.wiki/teams/5136/member-tlp-1/zxx-gt.jpeg",
-            "https://static.igem.wiki/teams/5136/member-tlp-1/jrh-ty.jpeg",
-            "https://static.igem.wiki/teams/5136/member-tlp-1/lxr-sp.jpeg",
-            "https://static.igem.wiki/teams/5136/member-tlp-1/crq-ss.jpeg",
-            "https://static.igem.wiki/teams/5136/member-tlp-2/fmz-qzgw.jpeg",
-            "https://static.igem.wiki/teams/5136/member-tlp-2/zyh-sbqs.jpeg",
-            "https://static.igem.wiki/teams/5136/member-tlp-1/zy-yl.jpeg",
-            "https://static.igem.wiki/teams/5136/member-tlp-1/wjw-lr.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-2/ljc-em.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/zlh-bjs.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-2/ljc-em.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/zlh-bjs.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-2/ljc-em.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/zlh-bjs.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/zlh-bjs.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-2/ljc-em.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/zlh-bjs.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-2/ljc-em.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/zlh-bjs.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-2/ljc-em.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/zlh-bjs.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-2/ljc-em.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/zlh-bjs.jpeg",
+            
             // 添加更多图片URL
         ];
         // 定义变量
         let offset = 0;
-        let maxOffset = 3;
-        let minOffset = -3;
+        let maxOffset = 0;
+        let minOffset = -14;
         // 获取所有卡片元素并存储在数组中
         const slides = Array.from(document.querySelectorAll(".card"));
         // 获取时钟表盘元素
         const clock = document.querySelector("#clock-table");
         // 设定起始年份为2021
         let startYear = 2021;
-        for (let i = -60, year = startYear - 1; i < 300; i += 6) {
+        for (let i = 0, year = startYear - 1; i < 360; i += 6) {
             addClockScale(i);
             if (i % 24 === 0) {
                 let index = (year - startYear + 1); // 计算年份对应的索引
@@ -116,7 +132,7 @@
 
             const scaleImage = document.createElement("img");
             scaleImage.src = imageUrl;
-            scaleImage.style.width = '150px';
+            scaleImage.style.width = '10vw';
             scaleImage.style.transform = 'rotate(90deg)';
 
             thickClockScale.appendChild(scaleImage);
