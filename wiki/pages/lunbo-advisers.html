@@ -307,7 +307,7 @@
         const clock = document.querySelector("#clock-table");
         // 设定起始年份为2021
         let startYear = 2021;
-        for (let i = -60, year = startYear - 1; i < 300; i += 6) {
+        for (let i = 0, year = startYear - 1; i < 300; i += 6) {
             addClockScale(i);
             if (i % 24 === 0) {
                 let index = (year - startYear + 1); // 计算年份对应的索引
