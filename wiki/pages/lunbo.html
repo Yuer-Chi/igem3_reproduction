@@ -35,7 +35,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="card">
                 <div class="photo">
                     <img src="https://static.igem.wiki/teams/5136/member-tlp-1/xcx-xx.jpeg" alt="">
@@ -53,7 +53,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="card">
                 <div class="photo">
                     <img src="https://static.igem.wiki/teams/5136/member-tlp-1/lzm-mss.jpeg" alt="">
@@ -71,7 +71,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="card">
                 <div class="photo">
                     <img src="https://static.igem.wiki/teams/5136/member-tlp-1/mzy-ddr.jpeg" alt="">
@@ -89,7 +89,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="card">
                 <div class="photo">
                     <img src="https://static.igem.wiki/teams/5136/member-tlp-1/lj-myzl.jpeg" alt="">
@@ -107,7 +107,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="card">
                 <div class="photo">
                     <img src="https://static.igem.wiki/teams/5136/member-tlp-1/yyf-njs.jpeg" alt="">
@@ -125,7 +125,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="card">
                 <div class="photo">
                     <img src="https://static.igem.wiki/teams/5136/member-tlp-1/zxx-gt.jpeg" alt="">
@@ -143,7 +143,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="card">
                 <div class="photo">
                     <img src="https://static.igem.wiki/teams/5136/member-tlp-1/jrh-ty.jpeg" alt="">
@@ -161,7 +161,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="card">
                 <div class="photo">
                     <img src="https://static.igem.wiki/teams/5136/member-tlp-1/lxr-sp.jpeg" alt="">
@@ -179,7 +179,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="card">
                 <div class="photo">
                     <img src="https://static.igem.wiki/teams/5136/member-tlp-1/crq-ss.jpeg" alt="">
@@ -197,7 +197,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="card">
                 <div class="photo">
                     <img src="https://static.igem.wiki/teams/5136/member-tlp-2/fmz-qzgw.jpeg" alt="">
@@ -215,7 +215,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="card">
                 <div class="photo">
                     <img src="https://static.igem.wiki/teams/5136/member-tlp-2/zyh-sbqs.jpeg" alt="">
@@ -233,7 +233,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="card">
                 <div class="photo">
                     <img src="https://static.igem.wiki/teams/5136/member-tlp-1/zy-yl.jpeg" alt="">
@@ -251,7 +251,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="card">
                 <div class="photo">
                     <img src="https://static.igem.wiki/teams/5136/member-tlp-1/wjw-lr.jpeg" alt="">
@@ -269,7 +269,24 @@
                     </div>
                 </div>
             </div>
-            
+
+            <div class="card">
+                <div class="photo">
+                    <img src="https://static.igem.wiki/teams/5136/member-tlp-1/zxx-gt.jpeg" alt="">
+                </div>
+                <div class="jianjie">
+                    <div class="card-title">
+                        高塔 - 张晓晓
+                    </div>
+                    <div class="card-passage">
+                        <br>
+                        <p style="font-size: 3vw;">生命科学学院</p>
+                        <br>
+                        <br>
+                        There is a crack in everything, that's how the light gets in.
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="clock">
@@ -295,12 +312,13 @@
             "https://static.igem.wiki/teams/5136/member-tlp-2/zyh-sbqs.jpeg",
             "https://static.igem.wiki/teams/5136/member-tlp-1/zy-yl.jpeg",
             "https://static.igem.wiki/teams/5136/member-tlp-2/wjw-lr.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/zxx-gt.jpeg",
             // 添加更多图片URL
         ];
         // 定义变量
         let offset = 0;
-        let maxOffset = 1;
-        let minOffset = -3;
+        let maxOffset = 0;
+        let minOffset = -14;
         // 获取所有卡片元素并存储在数组中
         const slides = Array.from(document.querySelectorAll(".card"));
         // 获取时钟表盘元素
@@ -354,23 +372,40 @@
         }
         // 向前切换卡片
         function slideToPrev() {
-            // 更新偏移量，取最大值
-            offset = Math.min(maxOffset, offset + 1);
-            slides.forEach(slide => {
-                // 根据偏移量设置卡片垂直偏移效果
-                slide.style.transform = `translateY(${offset * 100}%)`;
-            });
-            // 调用旋转时钟表盘函数
-            clockRotate(offset * 24);
+            if (offset === maxOffset) {
+                // 当达到最大偏移量时，所有卡片向相反方向滑动
+                slides.forEach(slide => {
+                    slide.style.transform = `translateY(${maxOffset * 100}%)`;  // 反向偏转到 maxOffset
+                });
+            } else {
+                // 正常滑动
+                offset = Math.min(maxOffset, offset + 1);
+                slides.forEach((slide, i) => {
+                    slide.style.transform = `translateY(${(i - offset) * 100}%)`;
+                });
+            }
         }
+
         // 向后切换卡片
         function slideToNext() {
-            offset = Math.max(minOffset, offset - 1);
-            slides.forEach(slide => {
-                slide.style.transform = `translateY(${offset * 100}%)`;
-            });
-            clockRotate(offset * 24);
+            if (offset === minOffset) {
+                // 当达到最小偏移量时，所有卡片向相反方向滑动
+                slides.forEach(slide => {
+                    slide.style.transform = `translateY(${minOffset * -100}%)`;  // 反向偏转到 minOffset
+                });
+            } else {
+                // 正常滑动
+                offset = Math.max(minOffset, offset - 1);
+                slides.forEach((slide, i) => {
+                    slide.style.transform = `translateY(${(i - offset) * 100}%)`;
+                });
+            }
         }
+
+        // 初始化时设置卡片位置
+        slides.forEach((slide, i) => {
+            slide.style.transform = `translateY(${i * 100}%)`;
+        });
         // 旋转时钟表盘
         function clockRotate(degree) {
             // 根据角度旋转时钟表盘
