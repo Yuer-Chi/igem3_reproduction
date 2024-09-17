@@ -317,8 +317,8 @@
         ];
         // 定义变量
         let offset = 0;
-        let maxOffset = 14;
-        let minOffset = 0;
+        let maxOffset = 1;
+        let minOffset = -3;
         // 获取所有卡片元素并存储在数组中
         const slides = Array.from(document.querySelectorAll(".card"));
         // 获取时钟表盘元素
@@ -405,10 +405,7 @@
             clockRotate(offset * 24);
         }
 
-        // 初始化时设置卡片位置
-        slides.forEach((slide, i) => {
-            slide.style.transform = `translateY(${i * 100}%)`;
-        });
+
         // 旋转时钟表盘
         function clockRotate(degree) {
             // 根据角度旋转时钟表盘
