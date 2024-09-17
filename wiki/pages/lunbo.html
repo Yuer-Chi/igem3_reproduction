@@ -317,8 +317,8 @@
         ];
         // 定义变量
         let offset = 0;
-        let maxOffset = 0;
-        let minOffset = -14;
+        let maxOffset = 14;
+        let minOffset = 0;
         // 获取所有卡片元素并存储在数组中
         const slides = Array.from(document.querySelectorAll(".card"));
         // 获取时钟表盘元素
@@ -384,6 +384,7 @@
                     slide.style.transform = `translateY(${(i - offset) * 100}%)`;
                 });
             }
+            clockRotate(offset * 24);
         }
 
         // 向后切换卡片
@@ -400,6 +401,7 @@
                     slide.style.transform = `translateY(${(i - offset) * 100}%)`;
                 });
             }
+            clockRotate(offset * 24);
         }
 
         // 初始化时设置卡片位置
