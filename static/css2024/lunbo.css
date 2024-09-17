@@ -145,23 +145,24 @@
     /* height: auto; */
     /* width: 1000px; */
     position:absolute;
-    top: -98px;
+    /* top: -98px; */
+    top:6.5vw;
     left: 1vw;
 }
 
 .clock-thick span {
     font-size: 50px;
-    position: absolute;
-    left: 140%;
-    top: calc(50% - 30px);
-    color: #5053fc;
+    /* position: absolute; */
+    /* left: 140%; */
+    /* top: calc(50% - 30px); */
+    /* color: #5053fc; */
 }
 
 .clock-scale {
     width: 4%;
-    height: 2px;
-    background-color: #6a5e93;
-    position: absolute;
-    top: calc(50% - .5px);
-    left: 0px;
+    /* height: 2px; */
+    /* background-color: #6a5e93; */
+    /* position: absolute; */
+    /* top: calc(50% - .5px); */
+    /* left: 0px; */
 }
