@@ -59,7 +59,7 @@
 .book .shadow {
     background: transparent;
     transform: translateZ(-3em);
-    box-shadow: -1em 1em 0px 0px #284940;
+    box-shadow: -1em 1em 0px 0px #483b53;
     z-index: 1;
 }
 .book .paper {
@@ -68,7 +68,7 @@
     transform-style: preserve-3d;
 }
 .book .paper.open {
-    box-shadow: 2.2em 1em 0px 0px #284940;
+    box-shadow: 2.2em 1em 0px 0px #483b53;
     transform: rotateX(0deg) rotateY(-180deg) rotateZ(0deg);
 }
 .book .paper .page.front {
@@ -88,7 +88,7 @@
     transform: translateZ(0px);
 }
 .book .first .page {
-    background-image: url("https://static.igem.wiki/teams/4907/wiki/notebook/cover11111.jpg");
+    background-image: url("https://static.igem.wiki/teams/5136/notebook/notebook-logo.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -278,7 +278,7 @@
     margin-right: 20px;
     font-family: Aaargh;
     font-weight: bold;
-    color: #61825a;
+    color: #534f7a;
 }
 
 .diary-content{
@@ -316,13 +316,13 @@
     }
 }
 .open-me{
-    color: #d2f2ef;
+    color: #cec3ed;
     font-family: Aaargh;
     font-size:2.5rem;
 }
 @media (min-width: 1200px) {
     .open-me{
-        color: #274940;
+        color: #483b53;
         /*font-family: ;*/
         font-size:2.5rem;
     }
