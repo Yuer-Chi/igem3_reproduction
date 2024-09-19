@@ -88,7 +88,8 @@
     transform: translateZ(0px);
 }
 .book .first .page {
-    background-image: url("https://static.igem.wiki/teams/5136/notebook/notebook-logo.jpg");
+    background-color: #f1f1f1;
+    background-image: url("https://static.igem.wiki/teams/5136/notebook/notebooklogo.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }
