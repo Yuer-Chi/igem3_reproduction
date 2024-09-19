@@ -11,38 +11,27 @@
 <style>
     /* Back按钮的样式 */
     .back-button {
-        position: fixed;
-        /* 固定位置 */
-        top: 10px;
-        /* 距离顶部10px */
-        left: 10px;
-        /* 距离左边10px */
-        background-color: #ff6600;
-        /* 按钮背景颜色 */
-        color: white;
-        /* 按钮文字颜色 */
-        border: none;
-        /* 移除边框 */
-        padding: 10px 20px;
-        /* 按钮的内边距 */
-        font-size: 16px;
-        /* 字体大小 */
-        border-radius: 5px;
-        /* 圆角 */
-        cursor: pointer;
-        /* 鼠标悬停显示手型 */
-        z-index: 1000;
-        /* 保证按钮在最前面显示 */
-    }
+            position: fixed; /* 固定位置 */
+            top: 10px; /* 距离顶部10px */
+            left: 10px; /* 距离左边10px */
+            width: 50px; /* 设置按钮宽度为50px */
+            height: 50px; /* 设置按钮高度为50px */
+            background-image: url('https://static.igem.wiki/teams/5136/button-lunbo.png'); /* 背景图片 */
+            background-size: cover; /* 图片完全填充按钮 */
+            background-position: center; /* 图片居中 */
+            border: none; /* 移除边框 */
+            border-radius: 5px; /* 圆角 */
+            cursor: pointer; /* 鼠标悬停显示手型 */
+            z-index: 1000; /* 保证按钮在最前面显示 */
+        }
 
-    .back-button:hover {
-        background-color: #cc5200;
-        /* 悬停时按钮变暗 */
-    }
+        .back-button:hover {
+            opacity: 0.8; /* 悬停时按钮稍微透明 */
+        }
 </style>
 
 <body>
-    <button class="back-button" onclick="window.history.back();">Back</button>
+    <button class="back-button" onclick="window.history.back();"></button>
 
     <div class="lunbo">
         <i class="iconfont icon-arrow-up-bold" id="up-btn" onclick="slideToPrev()">
