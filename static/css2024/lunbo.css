@@ -111,7 +111,20 @@
 
 @media(max-width:1000px) {
     #clock {
-        right: -90%;
+        right: -75%;
+    }
+}
+
+
+@media(max-width:1300px) {
+    #clock {
+        right: -55%;
+    }
+}
+
+@media(max-width:1500px) {
+    #clock {
+        right: -45%;
     }
 }
 
