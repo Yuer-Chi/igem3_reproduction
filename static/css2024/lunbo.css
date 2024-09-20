@@ -102,7 +102,7 @@
     /* 纵横比为1:1 */
     aspect-ratio: 1 / 1;
     position: absolute;
-    right: -50%;
+    right: -45%;
     top: -20%;
     border-radius: 50%;
     /* background-image: linear-gradient(to right, #f0f0f0 0%, #EBD69C 100%); */
