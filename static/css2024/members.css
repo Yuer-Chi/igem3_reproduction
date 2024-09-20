@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   background-image: linear-gradient(to right, #f0f0f0 0%, #EBD69C 100%);
-  /* align-items: center; */
+  align-items: center;
   /* 使容器的高度至少和屏幕一样高，这样可以在垂直方向上居中 */
   min-height: 50vh;
   /* 你可以根据需要设置其他属性 */
@@ -21,7 +21,7 @@
 }
 .hhh-xie{
   /* margin-left: -300px; */
-  margin-top: 15vh;
+  /* margin-top: 15vh; */
   width: 80vw;
   overflow: hidden;
 }
@@ -246,4 +246,8 @@
   /* margin-top: 100px; */
   font-family: Comic Sans Ms;
   color: #6a5e93;
+  background-image: url('https://static.igem.wiki/teams/5136/notebook/notebook-1.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
