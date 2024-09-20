@@ -98,12 +98,12 @@
 }
 
 #clock {
-    height: 120%;
+    height: 140%;
     /* 纵横比为1:1 */
     aspect-ratio: 1 / 1;
     position: absolute;
     right: -45%;
-    top: -10%;
+    top: -20%;
     border-radius: 50%;
     /* background-image: linear-gradient(to right, #f0f0f0 0%, #EBD69C 100%); */
     background-image:url('https://static.igem.wiki/teams/5136/notebook/notebook-1.png');
@@ -153,8 +153,8 @@
 
 .clock-thick {
     width: 6%;
-    height: 6px;
-    background-color: #6a5e93;
+    /* height: 6px; */
+    /* background-color: #6a5e93; */
     position: absolute;
     top: calc(50% - 3px);
     left: 0px;
