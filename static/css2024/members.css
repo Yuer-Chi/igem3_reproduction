@@ -11,7 +11,7 @@
   background-image: linear-gradient(to right, #f0f0f0 0%, #EBD69C 100%);
   /* align-items: center; */
   /* 使容器的高度至少和屏幕一样高，这样可以在垂直方向上居中 */
-  min-height: 50vh;
+  min-height: 65vh;
   /* 你可以根据需要设置其他属性 */
 }
 .hhh{
@@ -239,7 +239,7 @@
   cursor: pointer;
 }
 .fenlei{
-  width: 50vw;
+  width: 40vw;
   display: flex; /* 定义为 Flex 容器 */
   flex-direction: column; /* 设置主轴方向为垂直方向 */
   justify-content: center; /* 在主轴（竖直方向）上居中 */
