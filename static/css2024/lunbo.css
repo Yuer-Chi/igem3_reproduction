@@ -44,8 +44,8 @@
 /* 1 */
 
 .photo-wrapper {
-    width: 36%;
-    height: 100%;
+    width: 36vh;
+    height: 48vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,6 +115,7 @@
     color: white;
     transition: transform .8s ease-in-out;
     gap: 10%;
+    align-items: center;
 }
 
 .card-time {
