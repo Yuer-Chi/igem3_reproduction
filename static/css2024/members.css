@@ -16,6 +16,18 @@
   /* 你可以根据需要设置其他属性 */
 }
 
+.container-member img {
+  width: 80%; /* 宽度占父容器的80% */
+  max-width: 100%; /* 确保图片不会超过容器宽度 */
+  height: auto; /* 保持图片的宽高比 */
+  position: relative; /* 使用 relative 可以方便控制其定位 */
+  top: 0; /* 保证图片位于父容器的顶部 */
+  left: 50%; /* 左边缘移动到容器中点 */
+  transform: translateX(-50%); /* 使图片水平居中 */
+  margin-top: 0; /* 确保图片紧贴顶部 */
+}
+
+
 .hhh {
   margin-left: -30vw;
   width: 80vw;
