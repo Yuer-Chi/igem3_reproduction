@@ -200,16 +200,28 @@ with new communities by discussing public values and the science behind syntheti
 
   <div style="margin-bottom: 100px;"></div>
   <script>
-    // jQuery to handle the collapse toggle
-  $(document).ready(function() {
-      $('#accordion-Det .panel-title a').click(function() {
-          var targetId = $(this).attr('href');
-          $(targetId).collapse('toggle');
-          return false; // Prevent the default behavior of the anchor
-      });
-  });
-  
-  </script>
+    // jQuery to handle the collapse toggle and style changes
+    $(document).ready(function () {
+        $('#accordion-Det .panel-title a').click(function () {
+            var targetId = $(this).attr('href');
+            // Toggle the collapse
+            $(targetId).collapse('toggle');
+
+            // Event for collapse show
+            $(targetId).on('shown.bs.collapse', function () {
+                $(this).prev().find('a').removeClass('collapsed').addClass('expanded');
+            });
+
+            // Event for collapse hide
+            $(targetId).on('hidden.bs.collapse', function () {
+                $(this).prev().find('a').removeClass('expanded').addClass('collapsed');
+            });
+
+            return false; // Prevent the default behavior of the anchor
+        });
+    });
+</script>
+
 </div>
 
 {% endblock %}

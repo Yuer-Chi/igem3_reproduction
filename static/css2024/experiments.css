@@ -52,6 +52,13 @@
     border: 1px solid #e0ebeb;
 
 }
+
+.accordion .panel-title a.expanded {
+    background: #4CAF50; /* 示例的深绿色背景 */
+    color: #FFFFFF; /* 文字颜色 */
+    border: 1px solid #388E3C; /* 边框颜色 */
+}
+
 /*打开*/
 .accordion .panel-title a:after,
 .accordion .panel-title a.collapsed:after {
@@ -80,7 +87,7 @@
     background: url("https://static.igem.wiki/teams/4907/wiki/favicon.png");
     background-size: 100%;
     color: steelblue;
-    border: 1px solid lightblue;
+    /* border: 1px solid lightblue; */
     box-shadow: none;
 }
 .accordion .panel-body {
@@ -93,14 +100,14 @@
 }
 .accordion .panel-body a {
     text-decoration: none;
-    color: #274940;
+    color: #534f7a;
     font-size: 24px!important;
 }
 .accordion .panel-body p {
     font-size: 24px;
     padding-left: 25px;
-    border-left: 3px dashed #274940;
-    color: #274940;
+    border-left: 3px dashed #534f7a;
+    color: #534f7a;
     line-height: 2em;
 
 }
@@ -176,23 +183,23 @@
     -o-transition-property: height, visibility;
     transition-property: height, visibility
 }
-.exp_name {
+/* .exp_name {
     font-size: 2rem;
     color: skyblue;
     line-height: 3rem;
     text-align: center;
     margin-bottom: 10px;
-}
+} */
 
-.expstep_name {
+/* .expstep_name {
     font-size: 30px;
     font-weight: bold;
-    color: #274940;
+    color: #534f7a;
     line-height: 3rem;
     text-align: left;
     margin: 50px 40px 40px 5px;
-}
-table {
+} */
+/* table {
     border-collapse: collapse!important;
     border: 2px solid #60815b!important;
     width: 100%!important;
@@ -216,10 +223,10 @@ table td:first-child {
     font-weight: 550;
 }
 h2 {
-    color: #274940!important;
+    color: #534f7a!important;
     font-family: Aaargh!important;
     font-size: 45px!important;
     display: inline-block!important;
     padding-bottom: 10px!important;
     border-bottom: 0.25rem solid #66805d!important;
-}
+} */
