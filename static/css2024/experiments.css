@@ -36,9 +36,9 @@
 .accordion .panel-title a {
     display: block;
     padding: 12px 20px 12px 50px;
-    background: #61825a;
+    background: #cec3ed;
     font-size: 25px;
-    color: #284940;
+    color: #534f7a;
     border: 1px solid transparent;
     border-radius: 30px;
     position: relative;
@@ -47,16 +47,16 @@
     text-decoration: none;
 }
 .accordion .panel-title a.collapsed {
-    background: repeating-linear-gradient(45deg, #1a6a5f, #66805d 2px, #66805d 2px, #66805d 3px);
-    color: white;
-    border: 1px solid #e0ebeb;
+    background: repeating-linear-gradient(45deg, #534f7a, #534f7a 2px, #534f7a 2px, #534f7a 3px);
+    color: #cec3ed;
+    border: 1px solid #e9defa;
 
 }
 
 .accordion .panel-title a.expanded {
-    background: #4CAF50; /* 示例的深绿色背景 */
-    color: #FFFFFF; /* 文字颜色 */
-    border: 1px solid #388E3C; /* 边框颜色 */
+    background: #cec3ed; /* 示例的深绿色背景 */
+    color: #534f7a; /* 文字颜色 */
+    border: 1px solid #9f78b7; /* 边框颜色 */
 }
 
 /*打开*/
@@ -72,7 +72,7 @@
     line-height: 55px;
     border-radius: 50%;
     font-size: 25px;
-    color: skyblue;
+    /* color: skyblue; */
     text-align: center;
     border: 1px solid transparent;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.58);
