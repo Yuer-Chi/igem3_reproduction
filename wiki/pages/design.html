@@ -11,9 +11,12 @@ with new communities by discussing public values and the science behind syntheti
     box-shadow: none;
     border-radius: 0;
     margin: 0 0 40px 10px;
-  }
-
-  .accordion .panel-title a {
+}
+.accordion .panel-heading {
+    padding: 0;
+    border-radius: 30px;
+}
+.accordion .panel-title a {
     display: block;
     padding: 12px 20px 12px 50px;
     background: #61825a;
@@ -25,34 +28,74 @@ with new communities by discussing public values and the science behind syntheti
     transition: all 0.3s ease 0s;
     text-align: left;
     text-decoration: none;
-  }
-
-  .accordion .panel-title a.collapsed {
+}
+.accordion .panel-title a.collapsed {
     background: repeating-linear-gradient(45deg, #1a6a5f, #66805d 2px, #66805d 2px, #66805d 3px);
     color: white;
     border: 1px solid #e0ebeb;
-  }
 
-  .accordion .panel-title a:after {
+}
+/*打开*/
+.accordion .panel-title a:after,
+.accordion .panel-title a.collapsed:after {
     content: "";
     background: url("https://static.igem.wiki/teams/4907/wiki/favicon.png");
     background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: Aaargh;
     width: 55px;
     height: 55px;
+    line-height: 55px;
     border-radius: 50%;
+    font-size: 25px;
+    color: skyblue;
+    text-align: center;
+    border: 1px solid transparent;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.58);
     position: absolute;
     top: -5px;
     left: -20px;
     transition: all 0.3s ease 0s;
-  }
-
-  .accordion .panel-body {
+}
+/**/
+/*关闭*/
+.accordion .panel-title a.collapsed:after {
+    background: url("https://static.igem.wiki/teams/4907/wiki/favicon.png");
+    background-size: 100%;
+    color: steelblue;
+    border: 1px solid lightblue;
+    box-shadow: none;
+}
+.accordion .panel-body {
     padding: 20px 25px 10px 9px;
     background: transparent;
     border-top: none;
     position: relative;
     text-align: justify;
-  }
+    font-family: chocolates;
+}
+.accordion .panel-body a {
+    text-decoration: none;
+    color: #274940;
+    font-size: 24px!important;
+}
+.accordion .panel-body p {
+    font-size: 24px;
+    padding-left: 25px;
+    border-left: 3px dashed #274940;
+    color: #274940;
+    line-height: 2em;
+
+}
+.accordion .panel-body img{
+    width: 100%;
+    margin: 1vw auto;
+}
+.downloadpdf:after {
+    content: url("https://static.igem.wiki/teams/4195/wiki/web-picture/background/background/shrimp-open.png");
+    font-family: Harding;
+
+}
 </style>
 <div class="container">
 
