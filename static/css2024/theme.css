@@ -226,7 +226,7 @@ a {
 
 
 .sidebar-link:hover {
-    color: #fad395;
+    color: #603592;
 }
 
 .left-bar-right-item {
@@ -241,7 +241,7 @@ a {
 .sidebar-link {
     font-size: 20px;
     /* 设置字体大小 */
-    color: #FFF;
+    color: #2d1e36;
     transition: font-size 0.2s;
     /* 设置过渡动画效果 */
     text-decoration: none;
@@ -252,13 +252,13 @@ a {
 .sidebar-link.current {
     font-size: 26px;
     /* 设置字体大小 */
-    color: #ffffc8;
+    color: #9e68b1;
 }
 
 .sidebar-link.active {
     font-size: 30px;
     /* 设置字体大小 */
-    color: #fad395;
+    color: #2d1e36;
 }
 
 /*侧边栏二级*/
