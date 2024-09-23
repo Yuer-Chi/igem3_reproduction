@@ -51,6 +51,9 @@
 /* 1 */
 
 .photo-wrapper {
+    
+    transform: translateY(-7vh);
+    flex-direction: column;
     width: 36vh;
     height: 48vh;
     display: flex;
