@@ -37,7 +37,7 @@
 
 .hhh-xie {
   /* margin-left: -300px; */
-  /* margin-top: 15vh; */
+  margin-top: 6vh;
   align-self: center;
   width: 80vw;
   overflow: hidden;
@@ -299,7 +299,7 @@
   /* 在主轴（竖直方向）上居中 */
   align-items: center;
   /* 在交叉轴（水平方向）上居中（可选） */
-  /* margin-top: 100px; */
+  margin-top: 4vh;
   font-family: Comic Sans Ms;
   color: #6a5e93;
   background-image: url('https://static.igem.wiki/teams/5136/notebook/notebook-noeye.png');
