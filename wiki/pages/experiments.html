@@ -1,29 +1,275 @@
 {% extends "layout.html" %}
-  
+
 {% block title %}Experiments{% endblock %}
 {% block lead %}Describe the research, experiments, and protocols you used in your iGEM project.{% endblock %}
 
 {% block page_content %}
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <p>Describe the research, experiments, and protocols you used in your iGEM project. These should be detailed enough for another team to repeat your experiments.</p>
-    <p>If you made Parts this year, please remember to put all information, characterization, and measurement data on the Part's Main Page on the <a href="https://parts.igem.org/Main_Page">Registry</a>.</p>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2019.igem.org/Team:Nantes/Experiments">2019 Nantes</a></li>
-      <li><a href="https://2019.igem.org/Team:TU_Eindhoven/Experiments">2019 TU Eindhoven</a></li>
-      <li><a href="https://2019.igem.org/Team:Mingdao/Demonstrate">2019 Mingdao</a></li>
-      <li><a href="https://2020.igem.org/Team:Amsterdam/Experiments">2020 Amsterdam</a></li>
-      <li><a href="https://2020.igem.org/Team:NCTU_Formosa/Experiments">2020 NCTU Formosa</a></li>
-      <li><a href="https://2020.igem.org/Team:USAFA/Experiments">2020 USAFA</a></li>
-    </ul>
-  </div>
-</div>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="shortcut icon" type="image/png" href="https://static.igem.wiki/teams/4907/wiki/favicon.png">
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+  <!-- Bootstrap CSS -->
+  <link href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}" rel="stylesheet">
+
+  <!--  Theme CSS-->
+  <link href="{{ url_for('static', filename = 'theme.css') }}" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="{{ url_for('static', filename = 'font.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'navbar.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'experiments.css') }}" rel="stylesheet">
+
+  <title>{% block title %}{% endblock %}Experiments</title>
+
+</head>
+
+<body>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="{{ url_for('static', filename = 'js/jquery-3.5.1.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/bootstrap.bundle.min.js') }}"></script>
+  <!--index-->
+  <script src="{{ url_for('static', filename = 'js/gsap.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'js/scrollmagic.js') }}"></script>
+
+
+  <!-- Navigation -->
+  {% include 'menu.html' %}
+
+  <!-- Header -->
+  <div class="toTop"></div>
+
+  <style>
+    .accordion .panel-title a:after,
+    .accordion .panel-title a.collapsed:after {
+      top: 0 !important;
+      left: -15px !important;
+    }
+  </style>
+  <!-- Page Content -->
+  <main style="overflow:hidden">
+    <!--loading-->
+    <div id="loader-wrapper">
+      <div id="loader">
+        <div class="loader-img">
+          <img src="https://static.igem.wiki/teams/4907/wiki/background/loading.png">
+        </div>
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+
+    <!--Magic-navbar-->
+    <div class="myScrollspy">
+      <div class="left-bar">
+        <div class="left-bar-right">
+          <div class="left-bar-right-item">
+            <a href="#section1" class="sidebar-link" data-section="section1">Common Experiment</a>
+          </div>
+          <div class="left-bar-right-item">
+            <a href="#section2" class="sidebar-link" data-section="section2">Anti-icing Group</a>
+          </div>
+          <div class="left-bar-right-item">
+            <a href="#section3" class="sidebar-link" data-section="section3">Solutions of soil drought</a>
+          </div>
+        </div>
+      </div>
+      <div class="left-bar-bg">
+        <img src="https://static.igem.wiki/teams/4907/wiki/background/sidebar1.png" alt="">
+      </div>
+      <div class="scroll-bar"></div>
+    </div>
+    <!--content-->
+    <div class="myPage">
+      <div class="myPage-padding"></div>
+      <div class="myPage-main">
+        <div style="height: 100px;position:relative;"></div>
+        <div class="myPage-main-content">
+          <div class="myPage-headline">
+            <h1 class="myPage-headline-content">
+              <span style="color: #66805d">.</span>
+              <span style="color: #1a432e;font-family: Aaargh;">Experiments</span>
+              <span style="color: #66805d">.</span>
+            </h1>
+          </div>
+          <div class="myPage-paragraph" id="section1">
+            <h2 class="myPage-paragraph-headline-h2">Common Experiments</h2>
+            <br>
+            <section id="Common" class="js-scroll-step">
+              <div class="container conter">
+                <div class="row">
+                  <div class="col-md-offset-3 col-md-10">
+                    <div id="accordion-Com" class="accordion">
+                      <div class="expstep_name">molecular cloning handbook</div>
+                      <div class="panel">
+                        <div class="panel-heading" role="tab" id="heading-c">
+                          <h4 class="panel-title">
+                            <a role="button" class="collapsed" data-toggle="collapse" href="#collapse-c"
+                              aria-expanded="true" aria-controls="collapse-c">Handbook</a>
+                          </h4>
+                        </div>
+                        <div id="collapse-c" class="panel-collapse collapse" role="tabpanel">
+                          <div class="panel-body">
+                            <a target="_blank"
+                              href="https://static.igem.wiki/teams/4907/wiki/pdf/molecular-cloning-handbook-9-0.pdf"
+                              style="font-size: 18px">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#61825a"
+                                class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+                                <path
+                                  d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+                                <path
+                                  d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
+                              </svg>
+                              molecular-cloning-handbook-9-0.pdf </span></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!--        Anti-icing Group    -->
+          <div class="myPage-paragraph" id="section2">
+            <h2 class="myPage-paragraph-headline-h2 ">Anti-icing Group</h2>
+            <br>
+            <section id="detection_part" class="js-scroll-step">
+              <div class="container conter">
+                <div class="row">
+                  <div class="col-md-offset-3 col-md-10">
+                    <div id="accordion-Det" class="accordion">
+                      <div class="myPage-paragraph-headline-h3 expstep_name">CspA mRNA Experiment</div>
+                      <div class="panel">
+                        <div class="panel-heading" role="tab" id="heading51">
+                          <h4 class="panel-title">
+                            <a role="button" class="collapsed" data-toggle="collapse" href="#collapse51"
+                              aria-expanded="true" aria-controls="collapse51">
+                              Requirements
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapse51" class="panel-collapse collapse" role="tabpanel">
+                          <div class="panel-body">
+                            <p>● LB liquid medium<br>
+                              ● Tecan Infinite M200 microplate reader<br>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel">
+                        <div class="panel-heading" role="tab" id="heading52">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#collapse52"
+                              aria-expanded="false" aria-controls="collapse52">
+                              Protocol
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapse52" class="panel-collapse collapse" role="tabpanel">
+                          <div class="panel-body">
+                            <p>1. Revive the transformed bacteria by incubating them at 37 °C with shaking at 200
+                              <i>r.p.m.</i> for 12 hours.<br>
+                              2. Inoculate the revived bacteria at 2% concentration into 10 mL of LB medium and shake
+                              at 37 °C for around 2 hours until the OD<sub>600</sub> values reaches 0.6-0.8.<br>
+                              3. Incubate the above bacteria separately at 4 °C, 15 °C, and 37 °C, each with shaking at
+                              200 r.p.m. .<br>
+                              4. Use Tecan Infinite M200 microplate reader to measure the green fluorescence intensity
+                              and
+                              OD<sub>600</sub> values at 2 hours, 4 hours, and 6 hours.<br>
+                              <em><small>Note: Excitation wavelength: 488 <i>nm</i>, Emission wavelength: 530
+                                  <i>nm</i>.</small></em><br>
+                              5. Calculate the ratio of green fluorescence intensity to OD<sub>600</sub> data.<br>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+          </div>
+
+          <!--soil drought-->
+
+        </div>
+      </div>
+  </main>
+
+  <style>
+    .myPage:before {
+      content: ' ';
+      position: fixed;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: url("https://static.igem.wiki/teams/4907/wiki/background/team.png") center 0 no-repeat;
+      opacity: 0.16;
+      background-size: cover;
+    }
+  </style>
+
+  <style>
+    .popover-header {
+      color: white;
+      font-size: 16px;
+      font-family: Fashion;
+      text-align: center;
+      background-color: #1bcea6;
+    }
+
+    .popover-arrow {
+      color: #1bcea6;
+    }
+
+    .popover-body {
+      background-color: #1bcea6;
+      align-items: center;
+    }
+
+    .popover-body img {
+      margin: 5px 35px;
+      width: 110px;
+      height: 110px;
+    }
+  </style>
+
+  <script>
+    $(function () {
+      $("[data-toggle='popover']").popover({
+        animation: true,
+        html: true,//content中插入html代码
+        container: "body",
+        content: "<img src='https://static.igem.wiki/teams/4907/wiki/footer-icon/qrcode.jpg'>",//插入图片的路径 及 样式
+      });
+    });
+  </script>
+
+
+  <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+
+
+  <!--  Theme JS-->
+  <script src="{{ url_for('static', filename = 'theme/theme.js') }}"></script>
+
+  <script src="{{ url_for('static', filename = 'js/B_3.3.7.js') }}"></script>
+</body>
+
+</html>
+
 
 {% endblock %}
