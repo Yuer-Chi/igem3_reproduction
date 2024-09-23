@@ -1,50 +1,121 @@
 {% extends "layout.html" %}
-  
+
 {% block title %}Safety{% endblock %}
 {% block lead %}Describe all the safety issues of your project.{% endblock %}
 
 {% block page_content %}
 
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Safety and Security Award</h4>
-      <p>Synthetic biology will need to be used safely and securely if local people are to solve local problems all around the world. The Safety and Security Committee is challenging teams to apply biological engineering approaches to manage risks associated with synthetic biology. Can you take the next step in incremental progress towards knowledge, understanding, and tools that will make the use of synthetic biology safer and more secure?</p>
-      <p>To compete for the Safety and Security award, please describe your work on this page and also fill out the description on the <a href="https://competition.igem.org/deliverables/judging-form">judging form</a>.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/awards">2024 Awards Page</a> for more information.</p>
-    </div>
-  </div>
-</div>
+<script src="{{ url_for('static', filename = 'js2024/jquery-3.5.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
 
-<div class="row mt-4">
-  <div class="col">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <p>On this page of your wiki, you should write about how you are addressing any safety issues in your project. The wiki is a place where you can go beyond the questions on the safety forms, and write about whatever safety topics are most interesting in your project. (You do not need to copy your safety forms onto this wiki page.)</p>
-    <div class="bd-callout bd-callout-info">
-      <p>Please visit the <a href="https://responsibility.igem.org/safety-policies/introduction">Safety Policies page</a> to find this year's safety requirements & deadlines, and to learn about safe & responsible research in iGEM.</p>
-    </div>
-  </div>
-</div>
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>Safe Project Design</h2>
-    <hr>
-    <p>Does your project include any safety features? Have you made certain decisions about the design to reduce risks? Write about them here! For example:</p>
-    <ul>
-      <li>Choosing a non-pathogenic chassis</li>
-      <li>Choosing parts that will not harm humans / animals / plants</li>
-      <li>Substituting safer materials for dangerous materials in a proof-of-concept experiment</li>
-      <li>Including an "induced lethality" or "kill-switch" device</li>
-    </ul>
+
+
+<div class="container">
+
+  <!--loading-->
+
+  <!--侧边导航栏-->
+  <div class="myScrollspy">
+    <!-- 文字导航 -->
+    <div class="left-bar">
+      <div class="left-bar-right">
+        <div class="left-bar-right-item">
+          <a href="#section1" class="sidebar-link" data-section="section1">Safe Project Design</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section2" class="sidebar-link" data-section="section2">Safe Lab Work</a>
+        </div>
+      </div>
+    </div>
+    <!-- 底部插图 -->
+    <div class="left-bar-bg">
+      <img src="https://static.igem.wiki/teams/5136/cbl-img.png" alt="">
+    </div>
+    <!-- 进度条 -->
+    <div class="scroll-bar"></div>
   </div>
-  <div class="col-lg-4">
-    <h2>Safe Lab Work</h2>
-    <hr>
-    <p>What safety procedures do you use every day in the lab? Did you perform any unusual experiments, or face any unusual safety issues? Write about them here!</p>
+
+  <!--以下就是正文段落-->
+  <div class="myPage">
+    <div class="myPage-main">
+      <div style="height: 100px;position:relative;"></div>
+      <div class="myPage-main-content">
+        <!---大标题--->
+        <div class="myPage-headline">
+          <h1 class="myPage-headline-content">
+            <span style="color: #867a77">.</span>
+            <span style="color: #483b53;font-family: Aaargh;">Safety</span>
+            <span style="color: #867a77">.</span>
+          </h1>
+        </div>
+
+        <!---文字段落--->
+        <div class="myPage-paragraph" id="section1">
+          <h2 class="myPage-paragraph-headline-h2">Safe Project Design</h2>
+          <!-- 记住这里的h2就是标题 -->
+          <p class="myPage-paragraph-content">
+            <b>Great importance is attached to safety in our project design. </b>
+          </p>
+          <p class="myPage-paragraph-content">
+            Firstly, we use E. coli as our chassis organisms, which poses no harm to individuals or environment. E. coli
+            DH5α, DH10β, BL21(DE3) and BW25113 are utilized when we implement the experiments of molecular cloning,
+            expression and verification.
+          </p>
+          <p class="myPage-paragraph-content">
+            This year our team fight for deinking of waste paper and harmless treatment of wastewater. In the deinking
+            part, we use a combination of multiple enzymes to promote the ink separation on the surface of waste paper.
+            To bypass the expensive protein purification step of enzymes, we introduce the signal peptides into our
+            project to secrete target proteins into the supernatant, then use the supernatant to treat waste paper.
+            After deinking process, the paper will be treated with high temperature, which ensures that the engineering
+            bacteria could not leak. In the wastewater treatment part, we selected MT2A and MT3 human metallothioneins
+            and expressed them in engineered bacteria for adsorption of heavy metal ions in wastewater. To avoid the
+            possibility of bacterial diffusion in the environment, we designed a blue-light-activated kill switch that
+            will be activated when the bacteria are exposed to blue light then will trigger the death of the bacteria.
+            Hence, by treating the effluent with blue light, we can ensure complete elimination of bacteria.
+          </p>
+          <p class="myPage-paragraph-content"></p>
+          All the proteins are totally harmless to human body. All the plasmids are harmless for human beings and none
+          of our parts would raise any safety issue according to the current expertise.
+          </p>
+        </div>
+
+        <!---插图演示--->
+        <div class="myPage-paragraph" id="section2">
+          <h2 class="myPage-paragraph-headline-h2">Safe Lab Work</h2>
+          <p class="myPage-paragraph-content">
+            The laboratory is equipped with the location of emergency exits, emergency ventilation devices,
+            fire-fighting equipment, first aid kits, and so on. Every year after recruiting new members, we spend
+            several weeks training them in basic laboratory operations and handling safety accidents. When entering the
+            laboratory, we must wear laboratory clothes, gloves, and goggles. All bacterial culture mediums have
+            undergone sterilization treatment. We strictly follow the BSL-1 regulations to dispose of all biological
+            materials and metabolic waste. The laboratory is also equipped with specialized operators for handling
+            hazardous materials and biological products.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/4907/wiki/safety/safety-fig1.jpg" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Fig. 1 First aid kits of our lab.</b>
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            At the same time, we invited laboratory safety engineer, Lina Wu, to conduct safety education for all team
+            members when they officially got into the experimental phase.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/4907/wiki/safety/safety-fig2.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Fig. 2 Members learnt laboratory safety intentions.</b>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+
   </div>
+
+  <div style="margin-bottom: 100px;"></div>
+
 </div>
 
 {% endblock %}
