@@ -13,6 +13,7 @@ with new communities by discussing public values and the science behind syntheti
 
 
 
+
 <div class="container">
 
   <!--loading-->
@@ -198,6 +199,17 @@ with new communities by discussing public values and the science behind syntheti
   </div>
 
   <div style="margin-bottom: 100px;"></div>
+  <script>
+    // jQuery to handle the collapse toggle
+  $(document).ready(function() {
+      $('#accordion-Det .panel-title a').click(function() {
+          var targetId = $(this).attr('href');
+          $(targetId).collapse('toggle');
+          return false; // Prevent the default behavior of the anchor
+      });
+  });
+  
+  </script>
 </div>
 
 {% endblock %}
