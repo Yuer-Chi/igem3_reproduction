@@ -2,3 +2,8 @@
     font-family: MyFont;
     src: url(SpecialElite.ttf);
 }
+
+@font-face {
+    font-family: yishu;
+    src: url(SellenaBrush-x3JyK.ttf);
+}
