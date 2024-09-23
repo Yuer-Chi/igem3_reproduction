@@ -63,7 +63,7 @@
 .accordion .panel-title a:after,
 .accordion .panel-title a.collapsed:after {
     content: "";
-    background: url("https://static.igem.wiki/teams/4907/wiki/favicon.png");
+    background: url("https://static.igem.wiki/teams/5136/little-icon/zhedie.png");
     background-size: 100%;
     background-repeat: no-repeat;
     font-family: Aaargh;
@@ -84,7 +84,7 @@
 /**/
 /*关闭*/
 .accordion .panel-title a.collapsed:after {
-    background: url("https://static.igem.wiki/teams/4907/wiki/favicon.png");
+    background: url("https://static.igem.wiki/teams/5136/little-icon/zhedie.png");
     background-size: 100%;
     color: steelblue;
     /* border: 1px solid lightblue; */
