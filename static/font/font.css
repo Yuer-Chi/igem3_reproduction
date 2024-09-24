@@ -12,11 +12,16 @@
     font-size: 5vw;
     font-weight: 500;
     padding-bottom: 10px;
-    border-bottom: 3px solid #6a5e93;
+    border-bottom: 3px solid #53372c;
     margin-bottom: 10px;
-    font-family: 'yishu',sans-serif;
+    font-family: 'yishu', sans-serif;
 }
 
-.card-name-yishu{
-    font-family: 'yishu',sans-serif;
+.card-name-yishu {
+    font-family: 'yishu', sans-serif;
+    color: #53372c;
+    position: absolute;
+    bottom: -25%;
+    z-index: 100;
+    font-size: 5vh;
 }
