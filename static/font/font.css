@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'yishu';
-    src: url(SellenaBrush-x3JyK.ttf);
+    src: url(DucDeBerry.ttf);
 }
 
 .card-title {
@@ -14,5 +14,9 @@
     padding-bottom: 10px;
     border-bottom: 3px solid #6a5e93;
     margin-bottom: 10px;
+    font-family: 'yishu',sans-serif;
+}
+
+.card-name-yishu{
     font-family: 'yishu',sans-serif;
 }
