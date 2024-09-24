@@ -211,6 +211,7 @@
     left: 0px;
 }
 .clock-thick img{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.58);
     /* height: auto; */
     /* width: 1000px; */
     position:absolute;
