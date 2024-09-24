@@ -9,7 +9,11 @@
 <script src="{{ url_for('static', filename = 'js2024/jquery-3.5.1.min.js') }}"></script>
 <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
 
-
+<style>
+    #hainan-link.current {
+        font-size: 24px;
+    }
+</style>
 
 
 <div class="container">
@@ -28,10 +32,10 @@
                     <a href="#section2" class="sidebar-link" data-section="section2">HUBU-China</a>
                 </div>
                 <div class="left-bar-right-item">
-                    <a href="#section3" class="sidebar-link" data-section="section3">11th CCiC</a>
+                    <a href="#section3" class="sidebar-link" data-section="section3">11<sup>th</sup> CCiC</a>
                 </div>
                 <div class="left-bar-right-item">
-                    <a href="#section4" class="sidebar-link" data-section="section4">Hainan-China & NJTech-China</a>
+                    <a id="hainan-link" href="#section4" class="sidebar-link" data-section="section4">Hainan-China & NJTech-China</a>
                 </div>
                 <div class="left-bar-right-item">
                     <a href="#section5" class="sidebar-link" data-section="section5">Summary</a>
@@ -98,7 +102,7 @@
 
                 <!---小标题和小小标题--->
                 <div class="myPage-paragraph" id="section3">
-                    <h2 class="myPage-paragraph-headline-h2">11th CCiC</h2>
+                    <h2 class="myPage-paragraph-headline-h2">11<sup>th</sup> CCiC</h2>
 
                     <p class="myPage-paragraph-content">
                         From July 11 to 14, 2024, we were invited to Xi’an Jiaotong-Liverpool University to attend the

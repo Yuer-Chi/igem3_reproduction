@@ -114,7 +114,7 @@
     justify-content: center;
     align-items: center;
     margin: 0;
-    color: #6a5e93;
+    color: #53372c;
 }
 .card {
     width:100%;
@@ -211,6 +211,7 @@
     left: 0px;
 }
 .clock-thick img{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.58);
     /* height: auto; */
     /* width: 1000px; */
     position:absolute;
