@@ -52,7 +52,7 @@
 
 .photo-wrapper {
     
-    transform: translateY(-10vh);
+    transform: translateY(-5vh);
     flex-direction: column;
     width: 36vh;
     height: 48vh;
@@ -107,6 +107,7 @@
 }
 .jianjie{
     /* margin-left: 20%; */
+    /* transform: translateY(-3vh); */
     width: 54%;
     margin: 0 auto;
     display:flex ;
@@ -243,7 +244,7 @@
     left: 3vh;
     width: 10vh;
     height: 10vh;
-    background-image: url('https://static.igem.wiki/teams/5136/button-lunbo.png');
+    background-image: url('https://static.igem.wiki/teams/5136/button-lb.png');
     background-size: cover;
     background-color: transparent;
     background-position: center;
