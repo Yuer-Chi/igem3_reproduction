@@ -8,28 +8,6 @@
     <link rel="stylesheet" href="{{ url_for('static', filename = 'css2024/lunbo.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename = 'css2024/members.css') }}">
 </head>
-<style>
-    /* Back按钮的样式 */
-    .back-button {
-            position: fixed; /* 固定位置 */
-            top: 10px; /* 距离顶部10px */
-            left: 10px; /* 距离左边10px */
-            width: 50px; /* 设置按钮宽度为50px */
-            height: 50px; /* 设置按钮高度为50px */
-            background-image: url('https://static.igem.wiki/teams/5136/button-lunbo.png'); /* 背景图片 */
-            background-size: cover; /* 图片完全填充按钮 */
-            background-color: transparent;
-            background-position: center; /* 图片居中 */
-            border: none; /* 移除边框 */
-            border-radius: 5px; /* 圆角 */
-            cursor: pointer; /* 鼠标悬停显示手型 */
-            z-index: 1000; /* 保证按钮在最前面显示 */
-        }
-
-        .back-button:hover {
-            opacity: 0.8; /* 悬停时按钮稍微透明 */
-        }
-</style>
 
 <body>
     <button class="back-button" onclick="window.history.back();"></button>
@@ -83,10 +61,12 @@
         <div id="content">
             <div class="card">
                 <div class="photo-wrapper">
-                    <div class="photo-front" style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/ljc-em.jpeg');">
+                    <div class="photo-front"
+                        style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/ljc-em.jpeg');">
                         <!-- 可以在这里添加更多前面的内容，比如名字等 -->
                     </div>
-                    <div class="photo-back" style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/ljc.jpeg');">
+                    <div class="photo-back"
+                        style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/ljc.jpeg');">
                         <!-- 这里是背面的图片或信息 -->
                     </div>
                 </div>
@@ -103,13 +83,15 @@
                     </div>
                 </div>
             </div>
-        
+
             <div class="card">
                 <div class="photo-wrapper">
-                    <div class="photo-front" style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/zlh-bjs.jpeg');">
+                    <div class="photo-front"
+                        style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/zlh-bjs.jpeg');">
                         <!-- 可以在这里添加更多前面的内容，比如名字等 -->
                     </div>
-                    <div class="photo-back" style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/zlh.jpeg');">
+                    <div class="photo-back"
+                        style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/zlh.jpeg');">
                         <!-- 这里是背面的图片或信息 -->
                     </div>
                 </div>
@@ -122,12 +104,13 @@
                         <p style="font-size: 3vw;">生命科学学院</p>
                         <br>
                         <br>
-                        My brain has two parts: one is left, and another is right. My left brain has nothing right, right brain has nothing left.
+                        My brain has two parts: one is left, and another is right. My left brain has nothing right,
+                        right brain has nothing left.
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <div id="clock">
             <div id="clock-center"></div>
             <div id="clock-pointer"></div>

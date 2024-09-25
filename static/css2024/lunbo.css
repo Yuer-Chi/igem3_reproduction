@@ -33,11 +33,11 @@
 }
 
 #up-btn {
-    top: 5%;
+    top: 0%;
 }
 
 #down-btn {
-    bottom: 10%;
+    bottom: 5%;
 }
 
 #content {
@@ -143,7 +143,7 @@
 }
 
 .card-passage {
-    font-size: 24px;
+    font-size: 2.4vw;
     font-weight: 300;
     text-align: center;
 }
@@ -235,4 +235,25 @@
     /* position: absolute; */
     /* top: calc(50% - .5px); */
     /* left: 0px; */
+}
+
+.back-button {
+    position: fixed;
+    top: 3vh;
+    left: 3vh;
+    width: 10vh;
+    height: 10vh;
+    background-image: url('https://static.igem.wiki/teams/5136/button-lunbo.png');
+    background-size: cover;
+    background-color: transparent;
+    background-position: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.back-button:hover {
+    opacity: 0.8;
+    /* 悬停时按钮稍微透明 */
 }
