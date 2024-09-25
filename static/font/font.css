@@ -25,3 +25,14 @@
     z-index: 100;
     font-size: 5vh;
 }
+
+.pv-text {
+    font-family: 'yishu',sans-serif;
+    font-size: 10vh;
+    color: #6a5e93;
+    margin-bottom: 4vh;
+    /* 文字距离视频的间距 */
+    margin-top: 4vh;
+    text-align: center;
+    /* 文字居中 */
+}

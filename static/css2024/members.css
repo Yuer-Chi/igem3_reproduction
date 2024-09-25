@@ -20,7 +20,7 @@
 .corner-image {
   position: absolute;
   height: 100%; /* Set height to 100% of the parent container */
-  width: auto; /* Maintain aspect ratio */
+  width: 45%; /* Maintain aspect ratio */
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -28,12 +28,14 @@
 
 .left-corner {
   background-image: url('https://static.igem.wiki/teams/5136/notebook/new.png');
-  left: 0; /* Align to the left */
+  left: -22.5%; /* Align to the left */
+  top: 50%;
 }
 
 .right-corner {
   background-image: url('https://static.igem.wiki/teams/5136/notebook/new.png');
-  right: 0; /* Align to the right */
+  right: -22.5%; /* Align to the right */
+  top: 50%;
 }
 
 .container-member img {
@@ -328,13 +330,7 @@
 }
 
 
-.pv-text {
-  font-size: 10vh;
-  color: #6a5e93;
-  margin-bottom: 4vh; /* 文字距离视频的间距 */
-  margin-top: 4vh;
-  text-align: center; /* 文字居中 */
-}
+
 
 .pv {
   /* position: relative;
