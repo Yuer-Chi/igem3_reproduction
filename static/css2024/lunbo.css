@@ -52,14 +52,14 @@
 
 .photo-wrapper {
     
-    transform: translateY(-7vh);
+    transform: translateY(-10vh);
     flex-direction: column;
     width: 36vh;
     height: 48vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    perspective: 1000px; /* 开启3D效果 */
+    perspective: 1500px; /* 开启3D效果 */
 }
 
 .photo-front, .photo-back {
