@@ -14,9 +14,29 @@
   /* 使容器的高度至少和屏幕一样高，这样可以在垂直方向上居中 */
   min-height: 100vh;
   position: relative;
+  overflow: hidden;
   /* 你可以根据需要设置其他属性 */
 }
+.corner-image {
+  position: absolute;
+  height: 100%; /* Set height to 100% of the parent container */
+  width: auto; /* Maintain aspect ratio */
+}
 
+.left-corner {
+  left: 0; /* Align to the left */
+}
+
+.right-corner {
+  right: 0; /* Align to the right */
+}
+
+
+.corner-image {
+  width: auto; /* Set width to 100% */
+  height: 100%; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover to ensure it fills the area */
+}
 .container-member img {
   width: 50%; /* 宽度占父容器的80% */
   max-width: 100%; /* 确保图片不会超过容器宽度 */
