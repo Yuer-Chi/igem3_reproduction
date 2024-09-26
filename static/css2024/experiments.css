@@ -183,6 +183,11 @@
     -o-transition-property: height, visibility;
     transition-property: height, visibility
 }
+.exp-note{
+    position: relative;
+    left: 9%;
+    width: 80%;
+}
 /* .exp_name {
     font-size: 2rem;
     color: skyblue;
