@@ -1,29 +1,694 @@
 {% extends "layout.html" %}
-  
+
 {% block title %}Experiments{% endblock %}
 {% block lead %}Describe the research, experiments, and protocols you used in your iGEM project.{% endblock %}
 
 {% block page_content %}
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <p>Describe the research, experiments, and protocols you used in your iGEM project. These should be detailed enough for another team to repeat your experiments.</p>
-    <p>If you made Parts this year, please remember to put all information, characterization, and measurement data on the Part's Main Page on the <a href="https://parts.igem.org/Main_Page">Registry</a>.</p>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2019.igem.org/Team:Nantes/Experiments">2019 Nantes</a></li>
-      <li><a href="https://2019.igem.org/Team:TU_Eindhoven/Experiments">2019 TU Eindhoven</a></li>
-      <li><a href="https://2019.igem.org/Team:Mingdao/Demonstrate">2019 Mingdao</a></li>
-      <li><a href="https://2020.igem.org/Team:Amsterdam/Experiments">2020 Amsterdam</a></li>
-      <li><a href="https://2020.igem.org/Team:NCTU_Formosa/Experiments">2020 NCTU Formosa</a></li>
-      <li><a href="https://2020.igem.org/Team:USAFA/Experiments">2020 USAFA</a></li>
-    </ul>
-  </div>
-</div>
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css2024/experiments.css') }}">
+<script src="{{ url_for('static', filename = 'js2024/jquery-3.5.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
 
+
+<div class="container">
+
+  <!--loading-->
+
+  <!--侧边导航栏-->
+  <div class="myScrollspy">
+    <!-- 文字导航 -->
+    <div class="left-bar">
+      <div class="left-bar-right">
+        <div class="left-bar-right-item">
+          <a href="#section1" class="sidebar-link" data-section="section1">Commom Experiment</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section2" class="sidebar-link" data-section="section2">Enzymatic Deinking</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section3" class="sidebar-link" data-section="section3">Harmless Treatment of Wastewater</a>
+        </div>
+      </div>
+    </div>
+    <!-- 底部插图 -->
+    <div class="left-bar-bg">
+      <img src="https://static.igem.wiki/teams/5136/cbl-img.png" alt="">
+    </div>
+    <!-- 进度条 -->
+    <div class="scroll-bar"></div>
+  </div>
+
+  <!--以下就是正文段落-->
+  <div class="myPage">
+    <div class="myPage-main">
+      <div style="height: 100px;position:relative;"></div>
+      <div class="myPage-main-content">
+        <!---大标题--->
+        <div class="myPage-headline">
+          <h1 class="myPage-headline-content">
+            <span style="color: #867a77">.</span>
+            <span style="color: #483b53;font-family: Aaargh;">Experiments</span>
+            <span style="color: #867a77">.</span>
+          </h1>
+        </div>
+
+        <!---文字段落--->
+        <div class="myPage-paragraph" id="section1">
+          <h2 class="myPage-paragraph-headline-h2">Commom Experiment</h2>
+          <h3 class="myPage-paragraph-headline-h3">molecular cloning handbook</h3>
+          <div id="accordion-Det" class="accordion">
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading2024">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse2024" aria-expanded="true"
+                    aria-controls="collapse2024">Handbook</a>
+                </h4>
+              </div>
+              <div id="collapse2024" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <a target="_blank"
+                    href="https://static.igem.wiki/teams/4907/wiki/pdf/molecular-cloning-handbook-9-0.pdf"
+                    style="font-size: 18px">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#61825a"
+                      class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+                      <path
+                        d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+                      <path
+                        d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
+                    </svg>
+                    <span>molecular-cloning-handbook-9-0.pdf</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+        </div>
+
+        <!---插图演示--->
+        <div class="myPage-paragraph" id="section2">
+          <h2 class="myPage-paragraph-headline-h2">Enzymatic Deinking</h2>
+          <div id="accordion-Det" class="accordion">
+            <div class="myPage-paragraph-headline-h3 expstep_name">Protein Purification</div>
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading1">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse1" aria-expanded="true"
+                    aria-controls="collapse1">
+                    Materials & Apparatus
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>- AKTA pure™ chromatography system<br>
+                    - LB or TB liquid medium<br>
+                    - 50 mM Tris-HCl buffer (pH 7.5) <br>
+                    - Elution Solution A (50 mM Tris-HCl, 0.3 M NaCl, 20 mM imidazole, pH 7.5) <br>
+                    - Elution Solution B (50 mM Tris-HCl, 0.3 M NaCl, 200 mM imidazole, pH7.5) <br>
+                    - HisTrap HP His tag protein purification columns <br>
+                    - Kanamycin (50 mg/mL) <br>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading2">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="false"
+                    aria-controls="collapse2">
+                    Protocol
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>1. Bacteria culture is inoculated into LB liquid mediums at 2% (v/v) and kept at 37 °C, 200 rpm and
+                    last 12-16 h. <br>
+                    2. Bacteria culture from step 1 is inoculated into LB liquid mediums at 2% (v/v) and kept at 37 °C,
+                    200 rpm until the OD600 of bacteria culture reached at 0.6~0.8. <br>
+                    3. Corresponding inducer is added into bacteria culture from step 2 and kept at Suitable culture
+                    conditions and last 16-20 h. <br>
+                    4. Bacteria culture form step 3 is centrifuged at 6500 rpm at 4 °C for 7 minutes to collect the cell
+                    and resuspended with 25-30 mL Tris-HCl buffer (pH 7.5) <br>
+                    5. Repeat step 4 twice. <br>
+                    6. The liquid from step 5 is treated with ultrasonication to lyse the cell.
+                    7. The lysis is centrifuged at 9000 rpm at 4 °C for 20 minutes to remove the cell debris and then
+                    the
+                    supernatant is filter through a 0.22 μm membrane filter. <br>
+                    8. The target protein is purified from the supernatant using a HisTrap column with AKTA pure™
+                    chromatography system. <br>
+                    9. The eluate containing the target proteins is dialyzed with Tris-HCl buffer (pH 7.5) overnight to
+                    remove imidazole for subsequent uses. <br>
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="accordion-Det" class="accordion">
+            <div class="myPage-paragraph-headline-h3 expstep_name">Deinking Pulp DE Experiment</div>
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading3">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse3" aria-expanded="true"
+                    aria-controls="collapse3">
+                    Materials & Apparatus
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>- Deli Ruiguan multifunctional office copy paper (A4) <br>
+                    - Blender <br>
+                    - Drying Oven <br>
+                    - Stirrer <br>
+                    - Water bath <br>
+                    - Gel imaging system <br>
+                    - 60 mm Büchner funnel <br>
+                    - i-Quip 7 cm fast quantitative filter paper <br>
+                    - Deink-enzymes <br>
+                    - Blotting papers <br>
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading4">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse4" aria-expanded="false"
+                    aria-controls="collapse4">
+                    Protocol
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse4" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>1. Papers printed identical content are shredded into small strips. <br>
+                    2. Strips from step 1 are weighed and added into appropriate amount of purified water to prepare 1%
+                    (w/v) pulp. <br>
+                    3. The complex from step 2 is grinded by a blender continuing 30 minutes. <br>
+                    4. 30 mL of the pulp is transferred into a flask and treated with 2 mL of 7.5 deink-enzyme solution
+                    and kept at the optimal temperature of the enzyme for 60 minutes while being stirred by a
+                    fixed-speed
+                    stirrer. <br>
+                    5. After step 4, the pulp is added 0.6 mL limonene and shaken at 25 °C, 200 rpm for 1 minute, and
+                    then
+                    transferred into a beaker and stirred by a fixed-speed magnetic stirrer for 1 minute. <br>
+                    6. After 1 minute, a blotting paper is placed on the surface of the pulp for 30 seconds then is
+                    removed. <br>
+                    7. The pulp is filtered by i-Quip 7 cm fast quantitative filter paper using a Büchner funnel to
+                    collect paper fibers. <br>
+                    8. Paper fibers from step 7 are complete dried at 65 °C in a drying oven to get a recycled paper.
+                    <br>
+                    9. The recycled paper from step 8 is imaged by the Coomassie Brilliant Blue mode of gel imaging
+                    system
+                    and then its average grayscale value is analyzed by Image Lab which is a computer program written by
+                    ourselves. <br>
+
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="accordion-Det" class="accordion">
+            <div class="myPage-paragraph-headline-h3 expstep_name">In-Situ Deinking Experiment with Rhamnolipids</div>
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading5">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse5" aria-expanded="true"
+                    aria-controls="collapse5">
+                    Materials & Apparatus
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse5" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>- Gel imaging system <br>
+                    - Fume hood <br>
+                    - 96-well plate <br>
+                    - 6-well plate <br>
+                    - Water-based fountain pen <br>
+                    - MUJI smooth oil-based blue ballpoint pen <br>
+                    - Deli Ruiguan multifunctional office copy paper (A4) <br>
+                    - Rhamnolipid samples <br>
+                    - rhamnolipid-limonene mixture <br>
+                    - SDS solution <br>
+                    - SDS-limonene mixture <br>
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading6">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse6" aria-expanded="true"
+                    aria-controls="collapse6">
+                    Protocol
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse6" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>1. The paper is cut into 2.5 cm × 2.5 cm squares. <br>
+                    2. Square papers are written with the identical content and dried at 65 °C for 10 minutes to ensure
+                    the ink is completely dry. <br>
+                    3. Each well of a 6-well plate is placed with a square paper from step 2 and added with 2.0 mL
+                    rhamnolipid-limonene mixture. <br>
+                    4. The square papers are taken out per 15 minutes and air-dried until 1 hour. Note: Take three
+                    parallel samples per treatment/time point to ensure experimental accuracy. <br>
+                    5. The square papers are imaged by the Coomassie Brilliant Blue mode of gel imaging system and then
+                    its average grayscale value is analyzed by Image Lab which is a computer program written by
+                    ourselves.
+                    <br>
+
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- !!! -->
+
+
+          </div>
+          <div id="accordion-Det" class="accordion">
+            <div class="myPage-paragraph-headline-h3 expstep_name">Production and Adsorption Efficiency Measurement of
+              Cross-Linked Chitosan</div>
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading9">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse9" aria-expanded="true"
+                    aria-controls="collapse9">
+                    Materials & Apparatus
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse9" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>- Chitosan powder <br>
+                    - 2.0% (w/w) acetic acid (HAc) <br>
+                    - 0.1 M NaOH <br>
+                    - 2.5% (w/w) glutaraldehyde <br>
+                    - 0.1 M HCl <br>
+                    - Diluted ink solution (diluted 2000 times) <br>
+                    - Water bath <br>
+                    - Tecan Infinite M200 microplate reader <br>
+
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <h4 class="myPage-paragraph-headline-h4">A. Preparation of Crosslinked Chitosan</h4>
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading7">
+
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse7" aria-expanded="false"
+                    aria-controls="collapse7">
+                    Protocol
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse7" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>1. 0.45 g of chitosan is dissolved by 15 mL of 2.0 % (w/w) HAc.40 mL of 0.1 M NaOH is added into
+                    the
+                    chitosan solution. <br>
+                    2. The solution from step 2 is centrifuged at 3600 rpm for 5 minutes to collect the precipitation.
+                    <br>
+                    3. The precipitation is resuspended by 50 mL of purified water to repeat step 3 until the pH of the
+                    supernatant is neutral. <br>
+                    4. The precipitation is transferred to a petri dish, flatten with a spatula, dried at 80 °C to form
+                    a
+                    film and then weighed. <br>
+
+                    5. The dry film is treated with 2.5% (w/w) glutaraldehyde at 60 °C for 24 hours to form crosslinked
+                    Chitosan. <br>
+                    Note: The ratio of glutaraldehyde to chitosan is 25 mL/g <br>
+                    6. The cross-linked Chitosan is separated from the complex from step 6 and then dried at 80 °C. <br>
+                    7. Discard the glutaraldehyde, and dry the sample again in the oven at 80 °C. <br>
+
+
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <h4 class="myPage-paragraph-headline-h4">B. Chitosan Adsorption Experiment</h4>
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading8">
+
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse8" aria-expanded="false"
+                    aria-controls="collapse8">
+                    Protocol
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse8" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>1. 0.10 g of crosslinked chitosan is added to a 1.5-mL centrifuge tube. <br>
+                    2. The crosslinked chitosan is soaked by 1.0 mL 0.1 M HCl for 90 minutes. <br>
+                    3. The crosslinked chitosan is wished by water until the water is neutral and air-dried. <br>
+                    4. 1.0 mL of diluted ink is mixed with the crosslinked chitosan from step 3. <br>
+                    5. OD400 of the supernatant is measured by Tecan Infinite M200 microplate reader immediately and
+                    then
+                    measured per 1 hour until 4 hours. <br>
+                    6. Calculate the adsorption rate based on the standard curve. <br>
+
+
+
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="accordion-Det" class="accordion">
+            <div class="myPage-paragraph-headline-h3 expstep_name">Ink Coating and Deinking Method</div>
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading10">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse10" aria-expanded="true"
+                    aria-controls="collapse10">
+                    Materials & Apparatus
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse10" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>- 2.5% (w/w) rhamnolipid solution <br>
+                    - 2.5% (w/w) SDS solution <br>
+                    - M&G MG6128 black ink refill <br>
+                    - 75% (v/v) alcohol <br>
+                    - 1 cm × 1 cm square papers- Metal bath <br>
+                    - Tecan Infinite M200 microplate reader <br>
+
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading11">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse11" aria-expanded="false"
+                    aria-controls="collapse11">
+                    Protocol
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse11" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>1. The ink is transferred into a 2-mL centrifuge tube and diluted by 75% (v/v) alcohol 10-20 times
+                    approximately. <br>
+                    2. 15 &#181;L diluted ink is added on a square paper and spread evenly by a pipette tip. <br>
+                    3. The square paper is air-dried for 3 minutes and then placed into a 2-mL centrifuge tube. <br>
+                    Note: Take five parallel samples per experiment to ensure experimental accuracy. <br>
+                    4. 1 mL of the reaction liquid (SDS solution, rhamnolipid solution, or purified water) is added into
+                    the centrifuge tube from step 4. <br>
+                    5. The centrifuge tube is shaken at 25 °C, 1000 rpm for 10 minutes by metal bath. <br>
+                    6. OD400 of the supernatant in the centrifuge tube is measured. <br>
+                    7. The ink concentration of the supernatant is calculated by using the standard curve. <br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!---小标题和小小标题--->
+        <div class="myPage-paragraph" id="section3">
+          <h2 class="myPage-paragraph-headline-h2">Harmless Treatment of Wastewater</h2>
+          <div id="accordion-Det" class="accordion">
+            <div class="myPage-paragraph-headline-h3 expstep_name">Lysis Efficiency Measurement of Autolysis System
+            </div>
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading12">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse12" aria-expanded="true"
+                    aria-controls="collapse12">
+                    Materials & Apparatus
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse12" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>- Tecan Infinite M200 microplate reader <br>
+                    - Centrifuge <br>
+                    - Chloramphenicol (34 mg/mL) <br>
+                    - Kanamycin (50 mg/mL) <br>
+                    - LB liquid medium <br>
+                    - IPTG (Isopropyl β-D-1-thiogalactopyranoside) (1 mol/L) <br>
+                    - double sterile water <br>
+                    - L-arabinose stock solution (20% (w/v)) <br>
+
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading13">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse13" aria-expanded="false"
+                    aria-controls="collapse13">
+                    Protocol
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse13" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>1. Bacteria culture is inoculated into LB liquid mediums at 2% (v/v) and kept at 37 °C, 200 rpm
+                    overnight. <br>
+                    2. Bacteria culture from step 1 is inoculated into LB liquid mediums at 2% (v/v) and kept at 37 °C,
+                    200 rpm until the OD600 of bacteria culture reached at 0.6~0.8. <br>
+                    3. 0.5 mM IPTG is added into bacteria culture to induce the expression of sfGFP at 18 °C for 20
+                    hours.
+                    When the OD<sub>6</sub>. <br>
+                    4. After 10 hours, 0.25% arabinose is added into bacteria culture to initiate autolysis system
+                    expression. <br>
+                    5. The fluorescence intensity of the bacteria culture is measured immediately by Tecan Infinite M200
+                    microplate reader. <br>
+                    6. The bacteria culture is centrifuge at 6500 rpm for 10 minutes and then measured the fluorescence
+                    intensity of the supernatant by Tecan Infinite M200 microplate reader. <br>
+                    7. After 10 hours, the fluorescence intensity of the bacteria culture and the supernatant are
+                    measured
+                    again. <br>
+                    8. The lysis efficiency is calculated by dividing the fluorescence intensity of the supernatant by
+                    the
+                    fluorescence intensity of the bacteria culture. <br>
+
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading14">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse14" aria-expanded="false"
+                    aria-controls="collapse14">
+                    <i>Note</i>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse14" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>
+                    <i>
+                      To further improve the autolysis efficiency of the E. coli FLSA system, the following two methods
+                      can be applied: <br>
+                      1. When inducing the Fhud-T7Lysozyme-SsrA module with 0.25% arabinose, add 0.5% Triton X-100 to
+                      the
+                      culture (add Triton X-100 along with arabinose). <br>
+                      2. Adjust the pH of the induced culture medium to 8.0 using 2 M NaOH ( before adding arabinose),
+                      and
+                      then shake at 25°C for 30 minutes. Analyze the sfGFP distribution with a microplate reader and 10%
+                      SDS-PAGE. Quantify the band intensity using ImageJ. Define the lysis or release efficiency as the
+                      percentage of the target protein in the supernatant divided by the total target protein in the
+                      culture. <br>
+
+                    </i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="accordion-Det" class="accordion">
+            <div class="myPage-paragraph-headline-h3 expstep_name">Verification of the Surface Display System </div>
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading15">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse15" aria-expanded="true"
+                    aria-controls="collapse15">
+                    Materials & Apparatus
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse10" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>- LB liquid medium chloramphenicol <br>
+                    - Chloramphenicol (34 mg/mL) <br>
+                    - PBS buffer (pH 7.5) <br>
+                    - L-arabinose stock solution (20% (w/v)) <br>
+                    - Tecan Infinite M200 microplate reader <br>
+                    - Centrifuge <br>
+                    - HisTag-Spytag-GFP <br>
+
+
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading16">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse16" aria-expanded="false"
+                    aria-controls="collapse16">
+                    Protocol
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse16" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>1. Bacteria culture is inoculated into LB liquid mediums at 2% (v/v) and kept at 37 °C, 200 rpm
+                    overnight. <br>
+                    2. Bacteria culture from step 1 is inoculated into LB liquid mediums at 2% (v/v) and kept at 37 °C,
+                    200 rpm until the OD600 of bacteria culture reached at 0.6~0.8. <br>
+                    3. 0.2% arabinose is added into bacteria culture to induce the expression of INPNC-HisTag-SpyCatcher
+                    in E. coli BL21 (DE3) at 37 °C for 12 hours. <br>
+                    4. 0.2 mg/mL HisTag-Spytag-GFP is added into bacteria culture and kept at 37 °C, 200 rpm for 12
+                    hours.
+                    <br>
+                    5. 1 mL of bacteria culture is centrifuged at 6500 rpm for 5 minutes, then 1 mL fresh LB liquid
+                    medium
+                    was used to resuspend the precipitate, repeat 2 times for centrifugation and suspension under the
+                    same
+                    conditions. <br>
+                    6. Then the fluorescence intensity of the precipitate is measured by Tecan Infinite M200 microplate
+                    reader. <br>
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="accordion-Det" class="accordion">
+            <div class="myPage-paragraph-headline-h3 expstep_name">Spot Assay for Kill Switch</div>
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading17">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse17" aria-expanded="true"
+                    aria-controls="collapse17">
+                    Requirements
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse17" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>- LB liquid medium <br>
+                    - Ampicillin (100 mg/mL) <br>
+                    - Self-made blue-light illumination device <br>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading18">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse18" aria-expanded="false"
+                    aria-controls="collapse18">
+                    Protocol
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse18" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>1. Bacteria culture is inoculated into LB liquid medium at 2% (v/v) and kept at 37 °C, 200 rpm
+                    overnight (12-16 hours). <br>
+                    2. The overnight culture from step 1 is inoculated into LB liquid mediums at 2% (v/v) and kept at 37
+                    °C, 200 rpm.Two groups are set: one group (ILLUMINATION)is exposed to blue light (with a relative
+                    light intensity of 250) and the other group (DARKNESS) is kept in darkness. <br>
+                    <i>Note: Each group should have three parallel cultures.</i> <br>
+                    3. After culturing for 6 hours, 20 &#181;L of the bacteria culture is taken and mixed thoroughly
+                    with
+                    180
+                    &#181;L of fresh LB medium containing the same antibiotic concentration. <br>
+                    4. 20 μL of the diluted culture is taken and mixed with another 180 μL of fresh LB medium with the
+                    same antibiotic concentration. Repeat this dilution process 6 times, resulting in 7 dilution levels.
+                    <br>
+                    5. 5 μL of each diluted culture is taken and spotted onto pre-prepared solid plates containing the
+                    same antibiotic concentration. Then the plates are incubated at 37 °C for 12 hours. <br>
+                    6. The survival ratio is calculated. First, the colony-forming units (CFU)/mL is calculated: CFU/mL
+                    =
+                    colony count × dilution factor / 0.005 mL (a single dilution has a dilution factor of 10, two
+                    dilutions would be 102, and so on). The survival ratio (log10) is calculated as: log10[(CFU/mL of
+                    the
+                    ILLUMINATION group)/(CFU/mL of the DARKNESS group)]. <br>
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+        <!--Reference的写法-->
+        <div class="myPage-paragraph" id="section5">
+          <h2 class="myPage-paragraph-headline-h2">5.标题5</h2>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/9-26test.jpg" alt="" style="width: 40%;">
+            <div class="myPage-paragraph-fig-description"><b>9-26test</b>
+            </div>
+          </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/9-26test2.png" alt="" style="width: 40%">
+            <div class="myPage-paragraph-fig-description"><b>9-26test2</b>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-bottom: 100px;"></div>
+  <script>
+    // jQuery to handle the collapse toggle and style changes
+    $(document).ready(function () {
+      $('#accordion-Det .panel-title a').click(function () {
+        var targetId = $(this).attr('href');
+        // Toggle the collapse
+        $(targetId).collapse('toggle');
+
+        // Event for collapse show
+        $(targetId).on('shown.bs.collapse', function () {
+          $(this).prev().find('a').removeClass('collapsed').addClass('expanded');
+        });
+
+        // Event for collapse hide
+        $(targetId).on('hidden.bs.collapse', function () {
+          $(this).prev().find('a').removeClass('expanded').addClass('collapsed');
+        });
+
+        return false; // Prevent the default behavior of the anchor
+      });
+    });
+  </script>
+
+</div>
 {% endblock %}
