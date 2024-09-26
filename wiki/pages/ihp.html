@@ -1,0 +1,546 @@
+{% extends "layout.html" %}
+
+{% block title %}design{% endblock %}
+{% block lead %}Innovative educational tools and outreach activities have the ability to establish a two-way dialogue
+with new communities by discussing public values and the science behind synthetic biology.{% endblock %}
+
+{% block page_content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css2024/experiments.css') }}">
+
+<script src="{{ url_for('static', filename = 'js2024/jquery-3.5.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
+
+
+
+
+<div class="container">
+
+    <!--loading-->
+
+    <!--侧边导航栏-->
+    <div class="myScrollspy">
+        <!-- 文字导航 -->
+        <div class="left-bar">
+            <div class="left-bar-right">
+                <div class="left-bar-right-item">
+                    <a href="#section1" class="sidebar-link" data-section="section1">Overview</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a href="#section2" class="sidebar-link" data-section="section2">Background</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a href="#section3" class="sidebar-link" data-section="section3">Project design</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a href="#section4" class="sidebar-link" data-section="section4">Project design improvement</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a href="#section5" class="sidebar-link" data-section="section5">Feedback</a>
+                </div>
+            </div>
+        </div>
+        <!-- 底部插图 -->
+        <div class="left-bar-bg">
+            <img src="https://static.igem.wiki/teams/5136/cbl-img.png" alt="">
+        </div>
+        <!-- 进度条 -->
+        <div class="scroll-bar"></div>
+    </div>
+
+    <!--以下就是正文段落-->
+    <div class="myPage">
+        <div class="myPage-main">
+            <div style="height: 100px;position:relative;"></div>
+            <div class="myPage-main-content">
+                <!---大标题--->
+                <div class="myPage-headline">
+                    <h1 class="myPage-headline-content">
+                        <span style="color: #867a77">.</span>
+                        <span style="color: #483b53;font-family: Aaargh;">Integrated Human Practices</span>
+                        <span style="color: #867a77">.</span>
+                    </h1>
+                </div>
+
+                <!---文字段落--->
+                <div class="myPage-paragraph" id="section1">
+                    <h2 class="myPage-paragraph-headline-h2">Overview</h2>
+                    <!-- 记住这里的h2就是标题 -->
+                    <p class="myPage-paragraph-content">
+                        The ongoing <b>climate crisis</b> driven by high levels of carbon dioxide emissions has led to
+                        numerous
+                        disasters and heavy losses worldwide. Climate-related disasters, such as the alarming melting of
+                        glaciers, rising sea levels, and a surge in extreme weather events, have become increasingly
+                        frequent and severe over the years. According to incomplete data statistics, this catastrophic
+                        weather resulted in significant economic losses and substantial human casualties, reaching
+                        nearly <b>$143 billion annually</b> and approximately <b>60,951 deaths</b> in the last 20 years
+                        (1). So,
+                        governments act to alleviate the climate crisis, and their efforts focus on two main strategies:
+                        <b>reducing the sources of greenhouse gas emissions and improving carbon absorption</b>.
+                        Improving
+                        carbon absorption relies mostly on natural solutions. <b>The best way is to protect vegetation,
+                            especially forests</b>. Therefore, <b>Human Practices</b> are essential to understand the
+                        full scope of the
+                        problem, find effective solutions, and arouse broad public concern.
+                    </p>
+                    <h3 class="myPage-paragraph-headline-h3">Investigating the current situation and problems</h3>
+                    <p class="myPage-paragraph-content">
+                        After discussions with Professor Liang, we recognized the vital role of trees in global climate
+                        regulation. Due to their long growth cycles, trees recover slowly after large-scale
+                        deforestation, which worsens the climate crisis. <b>So, promoting the recycling of renewable
+                            resources, especially paper, was the best way to protect forest resources and mitigate the
+                            climate crisis</b>. After consulting the reference, we know that <b>129.65-million-ton</b>
+                        paper products
+                        were produced in <b>2023</b>, which accounts for <b>39.5%</b> of total timber consumption in
+                        China, while the
+                        utilization rate of waste paper has <b>decreased from 72.5% (2014)</b> to <b>52.4% (2023)</b>.
+                        After a field
+                        survey of the paper enterprises, we learned that the inefficiency of deinking and pollution in
+                        the paper recycling process continues to limit paper recycling efforts significantly. For waste
+                        paper entering the recycling process, removing ink from the waste paper is the main intractable
+                        problem, including <b>high cost</b>, <b>environmental pollution</b>, and <b>health risks</b>.
+                        Thus, our project
+                        focuses on developing a <b>green and sustainable method</b> to overcome this problem.
+                    </p>
+                    <h3 class="myPage-paragraph-headline-h3">Exploring an unprecedented answer</h3>
+                    <p class="myPage-paragraph-content">
+                        To make paper recycling more environmentally friendly and cost-effective, we plan to optimize
+                        the industrial waste paper recycling process using synthetic biology techniques. We developed
+                        and refined our project through interviews with experts from both academia and industry. (1)
+                        After consulting with Professor <b>Yang Liulin</b> and <b>Lin Chen</b>, we designed a
+                        multienzyme system
+                        consisting of <b>lipase</b>, <b>laccase</b>, and <b>monooxygenase</b> to remove the ink from the
+                        pulp. (2) We
+                        consulted with Ms. <b>Zhuang Xiaoyan</b>, and she pointed out that using an autolysis system in
+                        industrial applications would require large amounts of expensive inducers, making it
+                        cost-prohibitive. She recommended using <b>signal peptides</b> instead, which skip the expensive
+                        protein purification and/or inducers. (3) Based on our enterprise survey, we discovered that
+                        deinking flotation is the preferred method for removing printed ink from paper during the
+                        recycling process. However, this method will cause a loss of fiber, thus lowering the recovery
+                        rate. To address this issue, we consulted Associate Professor <b>Sha Yong</b>, an expert in
+                        petroleum
+                        extraction. He advised us to use a hydrophobic solvent to extract the ink particles. Therefore,
+                        we chose to use <b>limonene</b>, a hydrophobic solvent that can be biosynthesized, from many
+                        hydrophobic solvents to extract the ink in the pulp after enzymatic deinking. These <b>human
+                            practices have provided theoretical guidance for our project</b>, allowing us to enhance and
+                        refine
+                        our research continually.
+                    </p>
+                    <h3 class="myPage-paragraph-headline-h3">Arousing broad public concern</h3>
+                    <p class="myPage-paragraph-content">
+                        Furthermore, we have actively engaged with the public to <b>raise awareness</b> about recycling.
+                        We
+                        conducted surveys to understand people's attitudes toward paper recycling and the use of
+                        recycled paper. We organized a <b>communication seminar</b> to introduce synthetic biology
+                        principles
+                        and techniques to the <b>paper enterprise staff</b>, deepening their understanding of synthetic
+                        biology. We also held <b>educational activities</b> at the <b>Xiamen Science and Technology
+                            Museum</b> and
+                        <b>Yanwu Primary School</b> to popularize the importance of recycling renewable resources. These
+                        efforts are not just about raising awareness, but also about fostering a sense of collective
+                        responsibility. We aim to encourage more people to pay <b>attention to the recycling of
+                            paper</b> and
+                        other renewable resources, working together to <b>mitigate the climate crisis</b>.
+                    </p>
+
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/11.png" alt="">
+                        <div class="myPage-paragraph-fig-description"><b>Fig. 1</b>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!---插图演示--->
+                <div class="myPage-paragraph" id="section2">
+                    <h2 class="myPage-paragraph-headline-h2">Background</h2>
+                    <p class="myPage-paragraph-content">
+                        The climate crisis, a pressing issue of our time, is primarily driven by greenhouse gases, such
+                        as carbon dioxide, trapping heat in the atmosphere. This results in global warming, leading to
+                        the alarming melting of glaciers, rising sea levels, and a surge in extreme weather events. The
+                        El Niño phenomenon, which has become increasingly erratic and destructive, is a stark example of
+                        these changes. It has caused severe flooding in countries like Peru and Ecuador in South
+                        America, and devastating droughts in places like Australia, Indonesia, and parts of Southeast
+                        Asia. These weather disasters have had profound impacts on agriculture, infrastructure, and
+                        national economies. <b>The global climate crisis is rapidly worsening</b>, with countries facing
+                        escalating crop failures, higher economic costs, and more frequent natural disasters.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        In response to this growing threat, governments worldwide have implemented various policies to
+                        mitigate the effects of climate change. One key initiative is the Paris Agreement, which aims to
+                        keep the increase in global average temperature well below 2°C above pre-industrial levels.
+                        These efforts focus on two main strategies: <b>reducing the sources of greenhouse gas emissions
+                            and
+                            improving carbon absorption</b>. Reducing emissions focuses on energy conservation and
+                        cutting
+                        emissions, like using energy more efficiently and switching to renewable sources such as solar
+                        and wind power. Improving carbon absorption relies mostly on natural solutions. <b>The best way
+                            is
+                            to protect vegetation, especially forests</b>. Therefore, many countries are now investing
+                        in
+                        reforestation projects and promoting sustainable land use to strengthen the Earth's natural
+                        ability to absorb emissions. However, the growth rate of wood is far from enough to meet the
+                        human demand for wood. <u><b>So, promoting the recycling of renewable resources, especially
+                                paper, was
+                                the best way to protect forest resources and mitigate the climate crisis.</b></u>
+                    </p>
+
+                </div>
+
+                <!---小标题和小小标题--->
+                <div class="myPage-paragraph" id="section3">
+                    <h2 class="myPage-paragraph-headline-h2">Project design -Investigating the current situation and
+                        problems</h2>
+
+                    <h3 class="myPage-paragraph-headline-h3">1.Brainstorming</h3>
+                    <p class="myPage-paragraph-content">
+                        Based on a preliminary understanding of the relationship between climate crisis and paper
+                        manufacturing, our team initiated many brainstorming sessions to discuss the project design.
+                        Some of the questions below are critical and should be ascertained first.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (1) What important role do forests play in climate regulation?
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (2) How does paper production impact the climate and environment?
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (3) Can paper be recycled?
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (4) How does paper recycling contribute to addressing the climate crisis?
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (5) What is the current status of paper recycling? What is the main challenge?
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        So, we carried out some <b>Human Practices</b> to find answers to our doubts.
+                    </p>
+
+                    <h3 class="myPage-paragraph-headline-h3">2.Theoretical and practical investigation</h3>
+                    <h4 class="myPage-paragraph-headline-h4">2.1What important role do forests play in climate
+                        regulation?</h4>
+                    <!-- <h5 class="myPage-paragraph-headline-h5">小小小标题</h5> -->
+                    <p class="myPage-paragraph-content">
+                        After searching for information from the literature, we found that forests are vital in
+                        regulating the global climate. They absorb large amounts of carbon dioxide, which helps slow
+                        down global warming. Statistics indicate that forests absorb about <b>880 million tons</b> of
+                        carbon
+                        dioxide annually (1). However, in a discussion with Professor Liang Dan, he highlighted that
+                        about <b>13 million hectares</b> of forests are lost each year due to human activities (2),
+                        mainly for
+                        essential uses like paper production. The official data indicated that <b>129.65-million-ton</b>
+                        paper
+                        products were produced in 2023, which accounts for <b>39.5%</b> of total timber consumption in
+                        China,
+                        confirming the conclusion from Prof. Liang. This puts immense pressure on forest resources and
+                        worsens ecological imbalances and climate crisis. Following Professor Liang's advice, we focused
+                        on investigating the <b>paper industry and paper recycling</b> to alleviate its dependence on
+                        forests
+                        and help mitigate the climate crisis.
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp/ihp-fig2.png" alt="">
+                        <div class="myPage-paragraph-fig-description"><b>Fig.2 Members of XMU-China discussed with
+                                Assistant Professor Liang Dan</b>
+                        </div>
+                    </div>
+                    <h4 class="myPage-paragraph-headline-h4">2.2How does paper production impact the climate and
+                        environment?</h4>
+
+                    <h4 class="myPage-paragraph-headline-h4">2.2How does paper production impact the climate and
+                        environment?</h4>
+                    <p class="myPage-paragraph-content">
+                        It is known that paper production and consumption require the felling of many trees. In 2023,
+                        China produced <b>129.65 million tons</b> of paper and paperboard, equivalent to cutting down
+                        over <b>20
+                            billion trees</b> (3). To better understand the impact of paper production on the climate
+                        and
+                        environment, we held discussions with the Zhangzhou Municipal Ecology and Environment Bureau.
+                        The Bureau staff noted that the paper industry not only accelerates the depletion of forest
+                        resources but also contributes significantly to carbon emissions and environmental pollution,
+                        such as black liquor waste and wastewater containing high levels of ammonia, nitrogen, and total
+                        phosphorus. Many paper enterprises have been classified as "pollutant discharging entities."
+                        This made us realize that the paper industry urgently needs to <b>adopt a more sustainable
+                            development approach, reducing its heavy dependence on forest resources and minimizing
+                            environmental pollution to address future climate challenges better</b>.
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp/ihp-fig3.png" alt="">
+                        <div class="myPage-paragraph-fig-description"><b>Fig.3 Members of XMU-China communicated with
+                                staff of Zhangzhou Municipal Ecology and Environment Bureau</b>
+                        </div>
+                    </div>
+                    <h4 class="myPage-paragraph-headline-h4">2.3Can paper be recycled?</h4>
+                    <p class="myPage-paragraph-content">
+                        <b>Of course!</b> We got a clear answer at the Xiamen Low-Value Recyclable Sorting Center. In
+                        cities
+                        like Xiamen and across China, <b>recycling renewable resources like paper is strongly encouraged
+                            to
+                            reduce waste and support sustainable development.</b>
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        The Xiamen Low-Value Recyclable Sorting Center is the first demonstration project for low-value
+                        recyclable materials in China. Ms. Liu, a staff member, explained that the center uses advanced
+                        technology to automatically identify and sort different types of waste, such as paper, plastics,
+                        and metals. This technology speeds up the recycling process and greatly reduces the amount of
+                        waste sent to landfills. The center focuses on recycling low-value materials like used paper,
+                        playing a key role in helping Xiamen become a more resource-efficient city.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        Ms. Liu also mentioned that both China and the international community are working to build a
+                        resource-efficient society. This project is not only part of China’s environmental efforts but
+                        also
+                        contributes to global goals for sustainability. These initiatives are improving local waste
+                        management and positively impacting environment worldwide.
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp/ihp-fig4.png" alt="">
+                        <div class="myPage-paragraph-fig-description"><b>Fig.4 Members of XMU-China communicated with
+                                staff of Xiamen Low-Value Recyclable Sorting Center </b>
+                        </div>
+                    </div>
+                    <h4 class="myPage-paragraph-headline-h4">2.4How does paper recycling contribute to addressing the
+                        climate crisis?</h4>
+                    <p class="myPage-paragraph-content">
+                        We further conducted a field investigation at Quanzhou Nine Dragons Paper Co., Ltd.. The staff
+                        explained that <b>recycling waste paper</b> can not only optimize the raw material structure and
+                        reduces environmental pollution but also significantly decreases petrochemical energy
+                        consumption, making it <b>an important way to promote the sustainable development of the
+                            paper</b>
+                        industry. According to statistics, producing recycled paper from waste paper greatly benefits
+                        the earth.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (1) Recycle 1 ton of waste paper could save 17 trees.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (2) Recycle 1 ton of waste paper could save 100 tons of water.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (3) Recycle 1 ton of waste paper could save 600 kWh of electricity.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (4) Recycle 1 ton of waste paper could reduce the emission of 11.37 tons of carbon dioxide.
+                    </p>
+                    <h4 class="myPage-paragraph-headline-h4">2.5What is the current status of paper recycling? What is
+                        the main challenge?</h4>
+                    <p class="myPage-paragraph-content">
+                        To better understand this issue, we visited the Fuxing Renew able Resources Recycling Store, a
+                        small recycling center, for an on-site investigation. The owner told us that small recycling
+                        centers like theirs can collect about 600 kg of waste paper daily, while larger recycling
+                        centers can collect up to 2000 kg of waste paper daily. The official data also indicated that
+                        63.37 <b>million ton</b> of paper pulp were produced from waste paper in 2023, accounting for
+                        50% of
+                        the total annual paper pulp production, while the utilization rate of waste paper has decreased
+                        from 72.5% (2014) to 52.4% (2023) (3). Thus, some bottlenecks challenge paper recycling.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        At the paper enterprise, the worker showed us the paper recycling process. For the waste paper
+                        entered into the recycling process, removing ink in the waste paper is the main intractable
+                        problem in the recycling industry. We summarize the issues, include but is not limited to the
+                        following points:
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (1) <b>High cost</b>: Plenty of water and chemical reagents were used to remove the ink from
+                        waste
+                        paper, and the effluent treatment also incurred many processing fees.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (2) <b>Environmental pollution</b>: The improper process mode (incinerate or landfill solid
+                        sludge) may
+                        result in severe pollution.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (3) <b>Health risk</b>: Using many chemical reagents, such as hydrogen peroxide and sodium
+                        hydroxide,
+                        poses significant health risks to workers in paper enterprise.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        In conclusion, this conventional approach requires a substantial amount of toxic chemicals. It
+                        also releases poisonous organic agents and heavy metals that may cause environmental
+                        contamination.
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp/ihp-fig5.png" alt="">
+                        <div class="myPage-paragraph-fig-description"><b>Fig.5 Members of XMU-China communicated with
+                                relevant staffs of Quanzhou Nine Dragons Paper Co., Ltd.</b>
+                        </div>
+                    </div>
+                    <h3 class="myPage-paragraph-headline-h3">3.Summary</h3>
+                    <p class="myPage-paragraph-content">
+                        After the serious Human Practices with the professor and staff in street waste recycling
+                        stations, the government sector, and paper enterprises, we explore the comprehensive information
+                        about paper recycling. As climate change continues to accelerate, the need to preserve our
+                        forests has never been more critical. Deforestation, driven by commercial purposes such as paper
+                        production, exacerbates this issue by the destruction of vital carbon sinks. Thus, Paper
+                        recycling is an effective way to protect the forests and mitigate the climate crisis. However,
+                        the current methods for pulp deinking and heavy metals treatment in recycled paper are
+                        inefficient and highly polluted, which are the key bottlenecks in improving the utilization rate
+                        of recycled pulp and realizing the greening of the paper production process. Therefore, by
+                        focusing on optimizing the pulp deinking and heavy metal treatment processes, we can improve the
+                        utilization rate of recycled pulp, reduce carbon emissions and environmental pollution, and
+                        provide a more effective solution to address environmental and climate crisis.
+                    </p>
+                </div>
+
+                <!---超链接的写法--->
+                <div class="myPage-paragraph" id="section4">
+                    <h2 class="myPage-paragraph-headline-h2">Project design improvement -Exploring an unprecedented
+                        answer</h2>
+                    <h3 class="myPage-paragraph-headline-h3">1.Pulp Deinking</h3>
+                    <p class="myPage-paragraph-content">
+                        To better understand the current state of paper recycling, we visited the Xiamen Renewable
+                        Resources Industry Association. The senior staff told us, “Removing the stains, especially ink,
+                        is a serious problem for many enterprises that block waste paper recycling.” Standard deinking
+                        methods, such as chemical and physical methods, are highly polluted and inefficient, affecting
+                        the quality and yield of recycled paper. This made us realize that the <b>low efficiency of
+                            deinking is a significant obstacle to waste paper recycling</b>. As a result, we began to
+                        consider
+                        the possibility of using synthetic biology technology to develop a more eco-friendly and
+                        efficient deinking method. By overcoming these challenges and optimizing key steps in the
+                        recycling process, we can promote paper recycling, reduce deforestation, and mitigate the
+                        climate crisis.
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp/ihp-fig6.png" alt="">
+                        <div class="myPage-paragraph-fig-description"><b>Fig.6 Members of XMU-China visited the Xiamen
+                                Renewable Resources Industry Association</b>
+                        </div>
+                    </div>
+                    <p class="myPage-paragraph-content">
+                        <b>How do we optimize the process of removing ink from the pulp?</b>
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        Our survey found that the ink binder is the key factor contributing to the low deinking
+                        efficiency, as it causes the ink to adhere tightly to the pulp. To address this issue, we
+                        designed a multienzyme system consisting of lipase and laccase to degrade the ink binder and
+                        remove the ink. So, we consulted Professor Yang Liulin, a polymer expert, to assess the
+                        feasibility of this approach. He pointed out that the current enzyme methods struggle to break
+                        down the polymer resin in the ink binder efficiently. He further advised us to use cellulase to
+                        degrade the cellulose on the paper surface. Following his advice, we optimized our original
+                        design by <b>adding cellulase to the enzyme system</b>.
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp/ihp-fig7.png" alt="">
+                        <div class="myPage-paragraph-fig-description"><b>Fig.7 Associate Professor Yang Liulin from the
+                                College of Chemistry and Chemical Engineering at Xiamen University</b>
+                        </div>
+                    </div>
+                    <p class="myPage-paragraph-content">
+                        During the experiment, we found that the deinking effect of using cellulase, lipase, and laccase
+                        was limited and did not meet our expectations. To find more effective enzymes, we consulted with
+                        Associate Professor Ling Chen. After analyzing the treatment system and the main components of
+                        the ink binder, he suggested using oxidases, such as monooxygenases, to degrade the ink binder
+                        partially. Following his advice, <b>the introduction of monooxygenase significantly improved the
+                            deinking effect</b>. Although it still did not fully meet our expectations, it showed great
+                        potential in pulp deinking. Therefore, we decided to explore different types of monooxygenases
+                        and perform saturation mutagenesis to harvest the most efficient ones and discover more
+                        effective variants.
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp/ihp-fig8.png" alt="">
+                        <div class="myPage-paragraph-fig-description"><b>Fig.8 Members of XMU-China were talking with
+                                Associate Professor Ling Chen</b>
+                        </div>
+                    </div>
+                    <p class="myPage-paragraph-content">
+                        In our initial design, we considered using an autolysis system to release enzymes. To evaluate
+                        the feasibility of this approach, we consulted with Ms. Zhuang Xiaoyan. She pointed out that
+                        using an autolysis system in industrial applications would require large amounts of expensive
+                        inducers, making it cost-prohibitive. She recommended <b>using signal peptides instead</b>,
+                        which
+                        offers three key advantages. <b>Firstly</b>, it can secrete the target protein extracellularly
+                        and
+                        avoid the expensive protein purification procedure, significantly reducing production costs.
+                        <b>Secondly</b>, engineered bacteria can continuously release enzymes rather than undergoing
+                        one-time
+                        lysis, thus improving efficiency. <b>Lastly</b>, unlike the autolysis system, which poses a
+                        biosecurity
+                        risk by potentially releasing plasmids, signal peptides help minimize this risk. Based on her
+                        advice, we tested various signal peptides and selected the most effective one.
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp/ihp-fig9.png" alt="">
+                        <div class="myPage-paragraph-fig-description"><b>Fig.9 Members of XMU-China discussed with Ms.
+                                Zhuang Xiaoyan</b>
+                        </div>
+                    </div>
+                    <p class="myPage-paragraph-content">
+                        Based on our survey, we discovered that deinking flotation is the preferred method for removing
+                        printed ink from paper during the recycling process. The process is based on the difference
+                        between hydrophilic and hydrophobic inks, in which the latter can be removed from the pulp
+                        suspension by adhering to bubbles (7). However, this method will cause a loss of fiber, thus
+                        lowering the recovery rate. This problem was also verified by the senior staff in the paper
+                        enterprise. To address this issue, we consulted Associate Professor Sha Yong, an expert in
+                        petroleum extraction. He explained, "Because ink particles and pulp fibers are similar in size,
+                        flotation methods are difficult to separate them effectively. <b>Using a hydrophobic solvent to
+                            extract the ink particles might be possible</b>." Therefore, we chose to use limonene from
+                        many
+                        hydrophobic solvents to extract the ink in the pulp after enzymatic deinking. It can be
+                        synthesized through synthetic biology and fermentation engineering (8), <b>overcoming the
+                            shortage
+                            of flotation method that carries away a large number of pulp fibers so as to minimize the
+                            loss
+                            of fibers</b>. Upon testing, we observed a significant improvement in the deinking process.
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp/ihp-fig10.png" alt="">
+                        <div class="myPage-paragraph-fig-description"><b>Fig.10 Members of XMU-China were talking with
+                                Associate Professor Sha Yong</b>
+                        </div>
+                    </div>
+                    <h3 class="myPage-paragraph-headline-h3">2.Safety</h3>
+                    <p class="myPage-paragraph-content">
+                        In previous conversations with staff at Quanzhou Nine Dragons Paper Co., Ltd., we learned that
+                        sterilization processes commonly used in enterprises include UV and filtration. However, these
+                        processes do not fully meet biosafety standards, posing a potential risk of engineered bacteria
+                        escaping into the environment, which could threaten ecological health and biodiversity. We
+                        designed a light-triggered kill switch to avoid introducing additional chemicals into
+                        wastewater, such as various inducers. After deinking in a dark circumstance, the inbuilt kill
+                        switch will be turned to the “ON” state via exposure to a specific wavelength’s light
+                        illumination to achieve the biocontainment goal. To evaluate the feasibility of the new solution
+                        in the industry, we revisited Quanzhou Nine Dragons Paper Co., Ltd. at the end of the season.
+                        After introducing the method in detail to the relevant staff, the staff acknowledged its
+                        potential in terms of safety and flexibility. However, there were still concerns: “We need to
+                        ensure the reliability and stability of this solution in practical applications. Additionally,
+                        we must evaluate its impact on existing equipment and processes. If these issues can be
+                        addressed, we believe this proposal is worth pursuing further.”
+                    </p>
+                </div>
+
+
+                <!--Reference的写法-->
+                <div class="myPage-paragraph" id="section5">
+                    <h2 class="myPage-paragraph-headline-h2">Feedback -Arousing broad public concern</h2>
+                    <h3 class="myPage-paragraph-headline-h3">1.Communicate with paper mills to evaluate strategy</h3>
+                    <p class="myPage-paragraph-content">
+                        At the end of the season, we revisited Quanzhou Nine Dragons Paper Co., Ltd. to present our
+                        proposal and seek feedback. They evaluated our approach based on compatibility, treatment
+                        effectiveness, cost, and pollution control. During this process, we noticed that the company had
+                        an incomplete understanding of synthetic biology concepts and applications. To address this, we
+                        organized a communication seminar to introduce synthetic biology principles and techniques in
+                        depth. During the communication, we reported our research throughout the season to the company,
+                        in which we constructed an innovative and efficient method for deinking waste paper,
+                        continuously optimized the design and established standard operation procedures to solve
+                        practical problems. <b>This exchange has enhanced the understanding of synthetic biology and the
+                            highlight the advantages of cross-disciplines in solving practical problems.</b>
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp/ihp-fig11.jpg" alt="">
+                        <div class="myPage-paragraph-fig-description"><b>Fig.11 Members of XMU-China revisited Quanzhou
+                                Nine Dragons Paper Co., Ltd.</b>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div style="margin-bottom: 100px;"></div>
+</div>
+
+{% endblock %}
