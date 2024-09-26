@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://static.igem.wiki/teams/5136/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>members</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css2024/lunbo.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css2024/members.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'font/font.css') }}">
+</head>
+
+<body>
+    <button class="back-button" onclick="window.history.back();"></button>
+
+    <div class="lunbo">
+        <i class="iconfont icon-arrow-up-bold" id="up-btn" onclick="slideToPrev()">
+            <div style="transform: rotate(-90deg);">&gt</div>
+        </i>
+        <i class="iconfont icon-arrow-down-bold" id="down-btn" onclick="slideToNext()">
+            <div style="transform: rotate(-90deg);">&lt</div>
+        </i>
+
+        <div id="content">
+            <div class="card">
+                <div class="photo-wrapper">
+                    <div class="photo-front"
+                        style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/ljc.jpeg');">
+                        <!-- 可以在这里添加更多前面的内容，比如名字等 -->
+                    </div>
+                    <div class="photo-back"
+                        style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/ljc-em.jpeg');">
+                        <!-- 这里是背面的图片或信息 -->
+                    </div>
+                    <p class="card-name-yishu"  >The Devil</p>
+                </div>
+                <div class="jianjie">
+                    <div class="card-title">
+                        Jincheng Lyu
+                    </div>
+                    <div class="card-passage">
+                        <br>
+                        <p style="font-size: 3vw;">Chemistry</p>
+                        <br>
+                        Persistence is a brand new journey.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="photo-wrapper">
+                    <div class="photo-front"
+                        style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/zlh.jpeg');">
+                        <!-- 可以在这里添加更多前面的内容，比如名字等 -->
+                    </div>
+                    <div class="photo-back"
+                        style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/zlh-bjs.jpeg');">
+                        <!-- 这里是背面的图片或信息 -->
+                    </div>
+                    <p class="card-name-yishu"  >Ⅳ of Sword</p>
+                </div>
+                <div class="jianjie">
+                    <div class="card-title">
+                        LLinhao Zhang
+                    </div>
+                    <div class="card-passage">
+                        <br>
+                        <p style="font-size: 3vw;">Biological Science</p>
+                        <br>
+                        
+                        My brain has two parts: one is left, and another is right. My left brain has nothing right,
+                        right brain has nothing left.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="clock">
+            <div id="clock-center"></div>
+            <div id="clock-pointer"></div>
+            <div id="clock-table"></div>
+        </div>
+    </div>
+    <script>
+
+        let imageUrls = [
+            "https://static.igem.wiki/teams/5136/member-tlp-2/ljc-em.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/zlh-bjs.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-2/ljc-em.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/zlh-bjs.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-2/ljc-em.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/zlh-bjs.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/zlh-bjs.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-2/ljc-em.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/zlh-bjs.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-2/ljc-em.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/zlh-bjs.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-2/ljc-em.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/zlh-bjs.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-2/ljc-em.jpeg",
+            "https://static.igem.wiki/teams/5136/member-tlp-1/zlh-bjs.jpeg",
+
+            // 添加更多图片URL
+        ];
+        // 定义变量
+        let offset = 0;
+        let maxOffset = 0;
+        let minOffset = -1;
+        // 获取所有卡片元素并存储在数组中
+        const slides = Array.from(document.querySelectorAll(".card"));
+        // 获取时钟表盘元素
+        const clock = document.querySelector("#clock-table");
+        // 设定起始年份为2021
+        let startYear = 2021;
+        for (let i = 0, year = startYear - 1; i < 360; i += 6) {
+            addClockScale(i);
+            if (i % 24 === 0) {
+                let index = (year - startYear + 1); // 计算年份对应的索引
+                addThickClockScale(i, year, imageUrls[index]);
+                year++;
+            }
+        }
+        // 添加时钟刻度
+        function addClockScale(degree) {
+            // 创建一个隐藏的表格元素
+            const invisibleClockTable = document.createElement("div");
+            // 添加类名
+            invisibleClockTable.className = "invisible-table";
+            // 设置旋转角度
+            invisibleClockTable.style.transform = `rotate(${degree}deg)`;
+            // 创建时钟刻度元素
+            const clockScale = document.createElement("div");
+            // 添加类名
+            clockScale.className = "clock-scale";
+            // 将时钟刻度元素添加到表格中
+            invisibleClockTable.appendChild(clockScale);
+            // 将表格添加到时钟表盘中
+            clock.appendChild(invisibleClockTable);
+        }
+
+
+
+        function addThickClockScale(degree, time, imageUrl) {
+            const invisibleClockTable = document.createElement("div");
+            invisibleClockTable.className = "invisible-table";
+            invisibleClockTable.style.transform = `rotate(${degree}deg)`;
+
+            const thickClockScale = document.createElement("div");
+            thickClockScale.className = "clock-thick";
+
+            const scaleImage = document.createElement("img");
+            scaleImage.src = imageUrl;
+            scaleImage.style.width = '16.6vh';
+            scaleImage.style.transform = 'rotate(90deg)';
+
+            thickClockScale.appendChild(scaleImage);
+            invisibleClockTable.appendChild(thickClockScale);
+            clock.appendChild(invisibleClockTable);
+        }
+        // 向前切换卡片
+        function slideToPrev() {
+            // 更新偏移量，取最大值
+            offset = Math.min(maxOffset, offset + 1);
+            slides.forEach(slide => {
+                // 根据偏移量设置卡片垂直偏移效果
+                slide.style.transform = `translateY(${offset * 100}%)`;
+            });
+            // 调用旋转时钟表盘函数
+            clockRotate(offset * 24);
+        }
+        // 向后切换卡片
+        function slideToNext() {
+            offset = Math.max(minOffset, offset - 1);
+            slides.forEach(slide => {
+                slide.style.transform = `translateY(${offset * 100}%)`;
+            });
+            clockRotate(offset * 24);
+        }
+        // 旋转时钟表盘
+        function clockRotate(degree) {
+            // 根据角度旋转时钟表盘
+            clock.style.transform = `rotate(${degree}deg)`;
+        }
+    </script>
+</body>
+
+</html>
