@@ -413,89 +413,213 @@
 
       <!---小标题和小小标题--->
       <div class="myPage-paragraph" id="section3">
-        <h2 class="myPage-paragraph-headline-h2">3.标题3</h2>
-
-        <h3 class="myPage-paragraph-headline-h3">5.1 小标题</h3>
-        <p class="myPage-paragraph-content">
-          这里展示一下小标题，，页面中的标题用的是h2，小标题用的是h3，小小标题用的是h4。
-        </p>
-
-        <h3 class="myPage-paragraph-headline-h3">5.2 还是小标题</h3>
-        <h4 class="myPage-paragraph-headline-h4">1. 小小标题</h4>
-        <p class="myPage-paragraph-content">
-          比如这里就有小小标题
-        </p>
-        <h4 class="myPage-paragraph-headline-h4">2. 另一个小小标题</h4>
-        <p class="myPage-paragraph-content">
-          同上
-        </p>
-
-      </div>
-
-      <!---超链接的写法--->
-      <div class="myPage-paragraph" id="section4">
-        <h2 class="myPage-paragraph-headline-h2">4.标题4</h2>
-        <p class="myPage-paragraph-content">
-          这里主要是展示一下超链接要怎么用，像接下来这个 <a style="font-weight: bolder;text-decoration: none;"
-            href="{{ url_for('pages', page='hardware') }}">Hardware</a>,
-          就是跳转到我们网页的其他页面的格式，如果我跳转到其他网页的话比如<a style="font-weight: bolder;text-decoration: none;"
-            href="https://www.baidu.com/">百度</a>的话,
-          就是这种格式。
-        </p>
-
+        <h2 class="myPage-paragraph-headline-h2">Harmless Treatment of Wastewater</h2>
         <div id="accordion-Det" class="accordion">
-          <div class="myPage-paragraph-headline-h3 expstep_name">CspA mRNA Experiment</div>
+          <div class="myPage-paragraph-headline-h3 expstep_name">Lysis Efficiency Measurement of Autolysis System </div>
           <div class="panel">
-            <div class="panel-heading" role="tab" id="heading51">
+            <div class="panel-heading" role="tab" id="heading12">
               <h4 class="panel-title">
-                <a role="button" class="collapsed" data-toggle="collapse" href="#collapse51" aria-expanded="true"
-                  aria-controls="collapse51">
-                  Requirements
+                <a role="button" class="collapsed" data-toggle="collapse" href="#collapse12" aria-expanded="true"
+                  aria-controls="collapse12">
+                  Materials & Apparatus
                 </a>
               </h4>
             </div>
-            <div id="collapse51" class="panel-collapse collapse" role="tabpanel">
+            <div id="collapse12" class="panel-collapse collapse" role="tabpanel">
               <div class="panel-body">
-                <p>● LB liquid medium<br>
-                  ● Tecan Infinite M200 microplate reader<br>
+                <p>- Tecan Infinite M200 microplate reader <br>
+                  - Centrifuge <br>
+                  - Chloramphenicol (34 mg/mL) <br>
+                  - Kanamycin (50 mg/mL) <br>
+                  - LB liquid medium <br>
+                  - IPTG (Isopropyl β-D-1-thiogalactopyranoside) (1 mol/L) <br>
+                  - double sterile water <br>
+                  - L-arabinose stock solution (20% (w/v)) <br>
+
+
                 </p>
               </div>
             </div>
           </div>
           <div class="panel">
-            <div class="panel-heading" role="tab" id="heading52">
+            <div class="panel-heading" role="tab" id="heading13">
               <h4 class="panel-title">
-                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse52" aria-expanded="false"
-                  aria-controls="collapse52">
+                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse13" aria-expanded="false"
+                  aria-controls="collapse13">
                   Protocol
                 </a>
               </h4>
             </div>
-            <div id="collapse52" class="panel-collapse collapse" role="tabpanel">
+            <div id="collapse13" class="panel-collapse collapse" role="tabpanel">
               <div class="panel-body">
-                <p>1. Revive the transformed bacteria by incubating them at 37 °C with shaking at 200
-                  <i>r.p.m.</i> for 12 hours.<br>
-                  2. Inoculate the revived bacteria at 2% concentration into 10 mL of LB medium and shake
-                  at 37 °C for around 2 hours until the OD<sub>600</sub> values reaches 0.6-0.8.<br>
-                  3. Incubate the above bacteria separately at 4 °C, 15 °C, and 37 °C, each with shaking at
-                  200 r.p.m. .<br>
-                  4. Use Tecan Infinite M200 microplate reader to measure the green fluorescence intensity
-                  and
-                  OD<sub>600</sub> values at 2 hours, 4 hours, and 6 hours.<br>
-                  <em><small>Note: Excitation wavelength: 488 <i>nm</i>, Emission wavelength: 530
-                      <i>nm</i>.</small></em><br>
-                  5. Calculate the ratio of green fluorescence intensity to OD<sub>600</sub> data.<br>
+                <p>1. Bacteria culture is inoculated into LB liquid mediums at 2% (v/v) and kept at 37 °C, 200 rpm
+                  overnight. <br>
+                  2. Bacteria culture from step 1 is inoculated into LB liquid mediums at 2% (v/v) and kept at 37 °C,
+                  200 rpm until the OD600 of bacteria culture reached at 0.6~0.8. <br>
+                  3. 0.5 mM IPTG is added into bacteria culture to induce the expression of sfGFP at 18 °C for 20 hours.
+                  When the OD<sub>6</sub>. <br>
+                  4. After 10 hours, 0.25% arabinose is added into bacteria culture to initiate autolysis system
+                  expression. <br>
+                  5. The fluorescence intensity of the bacteria culture is measured immediately by Tecan Infinite M200
+                  microplate reader. <br>
+                  6. The bacteria culture is centrifuge at 6500 rpm for 10 minutes and then measured the fluorescence
+                  intensity of the supernatant by Tecan Infinite M200 microplate reader. <br>
+                  7. After 10 hours, the fluorescence intensity of the bacteria culture and the supernatant are measured
+                  again. <br>
+                  8. The lysis efficiency is calculated by dividing the fluorescence intensity of the supernatant by the
+                  fluorescence intensity of the bacteria culture. <br>
+
                 </p>
               </div>
             </div>
           </div>
 
+          <div class="panel">
+            <div class="panel-heading" role="tab" id="heading14">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse14" aria-expanded="false"
+                  aria-controls="collapse14">
+                  <i>Note</i>
+                </a>
+              </h4>
+            </div>
+            <div id="collapse14" class="panel-collapse collapse" role="tabpanel">
+              <div class="panel-body">
+                <p>
+                  <i>
+                    To further improve the autolysis efficiency of the E. coli FLSA system, the following two methods
+                    can be applied: <br>
+                    1. When inducing the Fhud-T7Lysozyme-SsrA module with 0.25% arabinose, add 0.5% Triton X-100 to the
+                    culture (add Triton X-100 along with arabinose). <br>
+                    2. Adjust the pH of the induced culture medium to 8.0 using 2 M NaOH ( before adding arabinose), and
+                    then shake at 25°C for 30 minutes. Analyze the sfGFP distribution with a microplate reader and 10%
+                    SDS-PAGE. Quantify the band intensity using ImageJ. Define the lysis or release efficiency as the
+                    percentage of the target protein in the supernatant divided by the total target protein in the
+                    culture. <br>
 
+                  </i>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
+        <div id="accordion-Det" class="accordion">
+          <div class="myPage-paragraph-headline-h3 expstep_name">Verification of the Surface Display System </div>
+          <div class="panel">
+            <div class="panel-heading" role="tab" id="heading15">
+              <h4 class="panel-title">
+                <a role="button" class="collapsed" data-toggle="collapse" href="#collapse15" aria-expanded="true"
+                  aria-controls="collapse15">
+                  Materials & Apparatus
+                </a>
+              </h4>
+            </div>
+            <div id="collapse10" class="panel-collapse collapse" role="tabpanel">
+              <div class="panel-body">
+                <p>- LB liquid medium chloramphenicol <br>
+                  - Chloramphenicol (34 mg/mL) <br>
+                  - PBS buffer (pH 7.5) <br>
+                  - L-arabinose stock solution (20% (w/v)) <br>
+                  - Tecan Infinite M200 microplate reader <br>
+                  - Centrifuge <br>
+                  - HisTag-Spytag-GFP <br>
+
+
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading" role="tab" id="heading16">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse16" aria-expanded="false"
+                  aria-controls="collapse16">
+                  Protocol
+                </a>
+              </h4>
+            </div>
+            <div id="collapse16" class="panel-collapse collapse" role="tabpanel">
+              <div class="panel-body">
+                <p>1. Bacteria culture is inoculated into LB liquid mediums at 2% (v/v) and kept at 37 °C, 200 rpm
+                  overnight. <br>
+                  2. Bacteria culture from step 1 is inoculated into LB liquid mediums at 2% (v/v) and kept at 37 °C,
+                  200 rpm until the OD600 of bacteria culture reached at 0.6~0.8. <br>
+                  3. 0.2% arabinose is added into bacteria culture to induce the expression of INPNC-HisTag-SpyCatcher
+                  in E. coli BL21 (DE3) at 37 °C for 12 hours. <br>
+                  4. 0.2 mg/mL HisTag-Spytag-GFP is added into bacteria culture and kept at 37 °C, 200 rpm for 12 hours.
+                  <br>
+                  5. 1 mL of bacteria culture is centrifuged at 6500 rpm for 5 minutes, then 1 mL fresh LB liquid medium
+                  was used to resuspend the precipitate, repeat 2 times for centrifugation and suspension under the same
+                  conditions. <br>
+                  6. Then the fluorescence intensity of the precipitate is measured by Tecan Infinite M200 microplate
+                  reader. <br>
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="accordion-Det" class="accordion">
+          <div class="myPage-paragraph-headline-h3 expstep_name">Spot Assay for Kill Switch</div>
+          <div class="panel">
+            <div class="panel-heading" role="tab" id="heading17">
+              <h4 class="panel-title">
+                <a role="button" class="collapsed" data-toggle="collapse" href="#collapse17" aria-expanded="true"
+                  aria-controls="collapse17">
+                  Requirements
+                </a>
+              </h4>
+            </div>
+            <div id="collapse10" class="panel-collapse collapse" role="tabpanel">
+              <div class="panel-body">
+                <p>- LB liquid medium <br>
+                  - Ampicillin (100 mg/mL) <br>
+                  - Self-made blue-light illumination device <br>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading" role="tab" id="heading18">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" href="#collapse18" aria-expanded="false"
+                  aria-controls="collapse18">
+                  Protocol
+                </a>
+              </h4>
+            </div>
+            <div id="collapse18" class="panel-collapse collapse" role="tabpanel">
+              <div class="panel-body">
+                <p>1. Bacteria culture is inoculated into LB liquid medium at 2% (v/v) and kept at 37 °C, 200 rpm
+                  overnight (12-16 hours). <br>
+                  2. The overnight culture from step 1 is inoculated into LB liquid mediums at 2% (v/v) and kept at 37
+                  °C, 200 rpm.Two groups are set: one group (ILLUMINATION)is exposed to blue light (with a relative
+                  light intensity of 250) and the other group (DARKNESS) is kept in darkness. <br>
+                  <i>Note: Each group should have three parallel cultures.</i> <br>
+                  3. After culturing for 6 hours, 20 &#181;L of the bacteria culture is taken and mixed thoroughly with 180
+                  &#181;L of fresh LB medium containing the same antibiotic concentration. <br>
+                  4. 20 μL of the diluted culture is taken and mixed with another 180 μL of fresh LB medium with the
+                  same antibiotic concentration. Repeat this dilution process 6 times, resulting in 7 dilution levels. <br>
+                  5. 5 μL of each diluted culture is taken and spotted onto pre-prepared solid plates containing the
+                  same antibiotic concentration. Then the plates are incubated at 37 °C for 12 hours. <br>
+                  6. The survival ratio is calculated. First, the colony-forming units (CFU)/mL is calculated: CFU/mL =
+                  colony count × dilution factor / 0.005 mL (a single dilution has a dilution factor of 10, two
+                  dilutions would be 102, and so on). The survival ratio (log10) is calculated as: log10[(CFU/mL of the
+                  ILLUMINATION group)/(CFU/mL of the DARKNESS group)]. <br>
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
       </div>
-
-
       <!--Reference的写法-->
       <div class="myPage-paragraph" id="section5">
         <h2 class="myPage-paragraph-headline-h2">5.标题5</h2>
@@ -504,16 +628,21 @@
           <div class="myPage-paragraph-fig-description"><b>9-26test</b>
           </div>
         </div>
-        <ol class="myPage-paragraph-reference">
-          <li>最后就是reference的部分</li>
-          <li>写几个ref就是写几个li标签</li>
-          <li>只要注意用的是li标签就好了</li>
-        </ol>
+        <div class="myPage-paragraph-fig"></div>
+        <img src="https://static.igem.wiki/teams/5136/9-26test2.png" alt="">
+        <div class="myPage-paragraph-fig-description"><b>9-26test2</b>
+        </div>
       </div>
-
-
+      <ol class="myPage-paragraph-reference">
+        <li>最后就是reference的部分</li>
+        <li>写几个ref就是写几个li标签</li>
+        <li>只要注意用的是li标签就好了</li>
+      </ol>
     </div>
+
+
   </div>
+</div>
 
 </div>
 
