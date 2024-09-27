@@ -5,7 +5,46 @@
 
 <link rel="stylesheet" href="{{ url_for('static', filename = 'css2024/members.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename = 'font/font.css') }}">
+<style>
+    .go-to-attribution {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        /* 字体大小 */
+        color: #365e50;
+        /* 文字颜色 */
+        font-weight: bold;
+        /* 字体加粗 */
+        text-decoration: none;
+        /* 去掉下划线 */
+        margin: 50px 0;
+        /* 上下外边距 */
+        position: relative;
+        /* 相对定位用于箭头效果 */
+        transition: color 0.3s ease;
+        /* 颜色渐变效果 */
+    }
 
+    .go-to-attribution img {
+        width: 50px;
+        /* 图片的宽度 */
+        margin-left: 20px;
+        /* 图片和文字的距离 */
+        transition: transform 0.3s ease;
+        /* 图片平移动画 */
+    }
+
+    .go-to-attribution:hover {
+        color: #534f7a;
+        /* 悬停时的文字颜色 */
+    }
+
+    .go-to-attribution:hover img {
+        transform: translateX(10px);
+        /* 悬停时箭头图片平移效果 */
+    }
+</style>
 <!--loading-->
 <div id="loader-wrapper">
     <div id="loader">
@@ -1099,7 +1138,10 @@
     </div>
 
 </div>
-
+<a href="https://2023.igem.wiki/xmu-china/attributions" class="go-to-attribution">
+    Go to our attribution
+    <img src="https://static.igem.wiki/teams/5136/parts-table-icon/jt.png" alt="Arrow">
+</a>
 <script>
     $(window).on('load', function () {
         // 延迟 1 秒后执行以下代码
