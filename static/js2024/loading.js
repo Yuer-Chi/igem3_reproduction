@@ -20,26 +20,33 @@
 // },100);
 // }
 
-document.addEventListener("DOMContentLoaded", function () {
-    loadingFade();
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//     loadingFade();
+// });
 
-function loadingFade() {
-    var opacity = 1;
-    var loadingPage = document.getElementById('loader-wrapper');
+// function loadingFade() {
+//     var opacity = 1;
+//     var loadingPage = document.getElementById('loader-wrapper');
     
-    if (!loadingPage) {
-        console.error('Element with id "loader-wrapper" not found.');
-        return;  // 如果没有找到元素，直接返回
-    }
+//     if (!loadingPage) {
+//         console.error('Element with id "loader-wrapper" not found.');
+//         return;  // 如果没有找到元素，直接返回
+//     }
 
-    var time = setInterval(function () {
-        if (opacity <= 0) {
-            clearInterval(time);
-            loadingPage.remove();
-        } else {
-            loadingPage.style.opacity = opacity;
-            opacity -= 0.05;
-        }
-    }, 50);
-}
+//     var time = setInterval(function () {
+//         if (opacity <= 0) {
+//             clearInterval(time);
+//             loadingPage.remove();
+//         } else {
+//             loadingPage.style.opacity = opacity;
+//             opacity -= 0.05;
+//         }
+//     }, 50);
+// }
+$(window).on('load', function () {
+    // 当页面完全加载后，添加 'loaded' 类到 body，触发CSS动画
+    $('body').addClass('loaded');
+
+    // 如果不需要加载文字，可以移除这个元素
+    $('#loader-wrapper .load_title').remove();
+});
