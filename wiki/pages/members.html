@@ -27,22 +27,19 @@
     }
 
     .go-to-attribution img {
-        width: 50px;
-        /* 图片的宽度 */
-        margin-left: 20px;
-        /* 图片和文字的距离 */
+        position: relative;
+        left: 0;
+        width: 10vw;
+        transform: translateX(3vw);
         transition: transform 0.3s ease;
-        /* 图片平移动画 */
     }
 
     .go-to-attribution:hover {
         color: #534f7a;
-        /* 悬停时的文字颜色 */
     }
 
     .go-to-attribution:hover img {
-        transform: translateX(10px);
-        /* 悬停时箭头图片平移效果 */
+        transform: translateX(6vw);
     }
 </style>
 <!--loading-->
@@ -1138,10 +1135,10 @@
     </div>
 
 </div>
-<div class="container-member" style="min-height: 20vh;">
-    <a href="https://2023.igem.wiki/xmu-china/attributions" class="go-to-attribution"></a>
-    Go to our attribution
-    <img src="https://static.igem.wiki/teams/5136/parts-table-icon/jt.png" alt="Arrow">
+<div class="container-member">
+    <a href="https://2023.igem.wiki/xmu-china/attributions" class="go-to-attribution">
+        Go to our attribution
+        <img src="https://static.igem.wiki/teams/5136/parts-table-icon/jt.png" alt="Arrow">
     </a>
 </div>
 
