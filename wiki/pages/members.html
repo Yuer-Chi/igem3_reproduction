@@ -5,81 +5,7 @@
 
 <link rel="stylesheet" href="{{ url_for('static', filename = 'css2024/members.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename = 'font/font.css') }}">
-<style>
-    #loader-wrapper {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 999999999999;
-    }
 
-    #loader {
-        display: grid;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: 1001;
-    }
-
-    .loader-img {
-        display: grid;
-    }
-
-    /*给loader*/
-    .loader-img::before {
-        content: '';
-        width: 0;
-    }
-
-    .loader-img img {
-        margin: 0 auto;
-        max-width: 50%;
-    }
-
-    #loader-wrapper .loader-section {
-        position: fixed;
-        top: 0;
-        width: 51%;
-        height: 100%;
-        background: #f8f0de;
-        z-index: 1000;
-        transform: translateX(0);
-        /* 初始状态，未移动 */
-    }
-
-    #loader-wrapper .loader-section.section-left {
-        left: 0;
-    }
-
-    #loader-wrapper .loader-section.section-right {
-        right: 0;
-    }
-
-    /* 页面加载完成后，loader-section向左右移动退出 */
-    .loaded #loader-wrapper .loader-section.section-left {
-        transform: translateX(-100%);
-        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-    }
-
-    .loaded #loader-wrapper .loader-section.section-right {
-        transform: translateX(100%);
-        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-    }
-
-    /* 隐藏loader */
-    .loaded #loader {
-        opacity: 0;
-        transition: all 0.3s ease-out;
-    }
-
-    /* 隐藏整个loader-wrapper */
-    .loaded #loader-wrapper {
-        visibility: hidden;
-        transform: translateY(-100%);
-        transition: all 0.3s 1s ease-out;
-    }
-</style>
 <!--loading-->
 <div id="loader-wrapper">
     <div id="loader">
@@ -1176,14 +1102,14 @@
 <script src="{{ url_for('static', filename = 'js2024/jquery-3.5.1.min.js') }}"></script>
 <script>
     $(window).on('load', function () {
-    // 延迟 1 秒后执行以下代码
-    setTimeout(function() {
-        $('body').addClass('loaded');
-        
-        // 如果不需要加载文字，可以移除这个元素
-        $('#loader-wrapper .load_title').remove();
-    }, 1000); // 1000 毫秒 = 1 秒
-});
+        // 延迟 1 秒后执行以下代码
+        setTimeout(function () {
+            $('body').addClass('loaded');
+
+            // 如果不需要加载文字，可以移除这个元素
+            $('#loader-wrapper .load_title').remove();
+        }, 1000); // 1000 毫秒 = 1 秒
+    });
 
 
 </script>
