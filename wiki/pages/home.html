@@ -1,183 +1,242 @@
 {% extends "layout-home.html" %}
 
 {% block title %}Home{% endblock %}
-{% block lead %}<b>Welcome to iGEM 2024!</b> Your team has been approved and you are ready to start the iGEM season!{% endblock %}
+{% block lead %}<b>Welcome to iGEM 2024!</b> Your team has been approved and you are ready to start the iGEM season!{%
+endblock %}
 
 {% block page_content %}
-    <!-- 主体部分 -->
-    <div class="container">
-        <!-- banner-page -->
-        <div class="banner" id="hoverArea" style="cursor: pointer;">
-            <div id="triangle"></div>
-            <div class="bannerbox">
-                <div class="bg1">
-                    <img src="https://static.igem.wiki/teams/5136/home/page1-bg.png" alt="" style="width: 100vw;height: 87vh;">
-                </div>
-                <div class="bg2">
-                    <img src="https://static.igem.wiki/teams/5136/home/dog.gif" alt="" style="width: 50vw;height: 60vh;">
-                </div>
-                <div class="logo">
-                    <img src="https://static.igem.wiki/teams/5136/home/witch.png" alt="" style="height: 70vh;top: 25vh;position: absolute;z-index: 4;">
-                    <img src="https://static.igem.wiki/teams/5136/home/reparo.png" alt="" style="height: 30vh; top:50vh;position: absolute;left: 30vw;z-index: 4;">
-                </div>
+<!-- 主体部分 -->
+<div class="container">
+    <div id="loader-wrapper">
+        <div id="loader">
+            <div class="loader-img">
+                <img src="https://static.igem.wiki/teams/5136/load.gif">
             </div>
         </div>
-
-        <!-- main content -->
-        <div class="page">
-            <div class="page-container">
-                <div style="width: 35vw;position: relative;left: 15vw;top: 20vh;">
-                    <p>
-                        The deteriorating climate crisis triggered by high <span class="emphasize">greenhouse gas (GHG)</span> emissions has led to retreated Arctic ice sheets, rising sea levels, El Ninos and many other climate disasters worldwide. According to statistics, <span class="emphasize">54 billion</span> tons of carbon dioxide are emitted globally every year, with a concentration <span class="emphasize">50%</span> higher than in the pre-industrial era.
-                    </p>
-                </div>
-                <img src="https://static.igem.wiki/teams/5136/home/earth.png" alt="" style="width: 30vw;position: relative;top: -45vh;left: 55vw;" class="earth">
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- banner-page -->
+    <div class="banner" id="hoverArea" style="cursor: pointer;">
+        <div id="triangle"></div>
+        <div class="bannerbox">
+            <div class="bg1">
+                <img src="https://static.igem.wiki/teams/5136/home/page1-bg.png" alt=""
+                    style="width: 100vw;height: 87vh;">
             </div>
-
-            <div class="gas1" style="z-index: 51;">
-                <img src="https://static.igem.wiki/teams/5136/home/co2.png" alt="" style="height: 10vh;position: relative;z-index: 51;left: 60%;" class="co2 gas-animation">
-                <img src="https://static.igem.wiki/teams/5136/home/o2.png" alt="" style="height: 10vh;z-index: 52;position: relative;left: 10%;top: 30vh;"class="o2 gas-animation">
-                <img src="https://static.igem.wiki/teams/5136/home/smoke.png" alt=""style="height: 25vh;position: relative;left: 25vw;z-index: 50;top: 0vh;"class="smoke gas-animation">
+            <div class="bg2">
+                <img src="https://static.igem.wiki/teams/5136/home/dog.gif" alt="" style="width: 50vw;height: 60vh;">
             </div>
-
-            <div class="page-container">
-                <img src="https://static.igem.wiki/teams/5136/home/tree1.png" alt="" id="slideforest" style="height: 80vh;position: relative;width: 55%;" >
-                <div style="position: relative;width: 40%;left: 55%;top: -50vh;">
-                    <p>
-                        In this context, forests, known as the 'lungs of the earth', can provide critical support for alleviating the climate crisis by converting carbon dioxide into oxygen through natural carbon capture mechanisms.
-                    </p>
-                </div>
-            </div>
-
-            <div class="page-container">
-                <div style="width: 25%;position: relative;left: 15vw;top: 30vh;">
-                    <p>
-                        However, nearly <span class="emphasize">13 million</span> hectares of forests are destroyed each year as a result of human activity.
-                    </p>
-                </div>
-                <img src="https://static.igem.wiki/teams/5136/home/wood.png" alt="" style="position: relative;width: 50%;left: 40%;top: -10vh;">
-                <div class="co2container">
-                    <img src="https://static.igem.wiki/teams/5136/home/co2.png" alt="" id="center-image">
-                </div>
-            </div>
-            
-            <div class="page-container">
-                <img src="https://static.igem.wiki/teams/5136/home/papermaking.png" alt="" style="position: relative;top: 20vh;left: 10vw;width: 35vw;">
-                <div style="position: relative;left: 50vw;width: 40vw;top: -40vh;">
-                    <p>
-                        As a major application for forest resources, the paper industry has a constant demand for wood. Paper, one of the Four Great Inventions of ancient China, acted as a carrier of knowledge and information spread to the world through the Silk Road, increasing economic and cultural exchanges among countries and promoting the progress of humans.
-                    </p>
-                </div>
-            </div>
-
-            <div class="page-container">
-                <div style="width: 45%;position: relative;left: 10vw;width: 40vw;top: 20vh;">
-                   <p>
-                    Against the backdrop of economic globalization, the demand for paper in modern society has continued to grow, leading to the cutting down of a large number of trees, disrupting the ecological balance of nature and exacerbating the climate crisis.
-                   </p>
-                </div>
-                <img src="https://static.igem.wiki/teams/5136/home/paper.png" alt="" style="position: relative;left: 50vw;top: -30vh;width: 40vw;" >
-            </div>
-            
-            <div class="page-container">
-                <img src="https://static.igem.wiki/teams/5136/home/circle.png" alt="" style="position: relative;left: 10vw;top: 10vh;width: 35vw;">
-                <div style="position: relative;top: -40vh;left: 50vw;width: 40vw;">
-                    <p>
-                        Fortunately, it is feasible to turn waste paper into fresh paper, which attracts our attention gradually. Therefore, we hope to make contribution to reduce deforestation and ameliorate the climate crisis by enhancing the cyclic utilization of paper.
-                    </p>
-                </div>
-            </div>
-            
-            <div class="page-container">
-                <div style="position: relative;">
-                    <div style="position: absolute;width: 75vw;left: 2vw;text-align: center;top: 20vh;" class="tianping">
-                        <h2 style="background: #6d5b93;color: white;font-size: 3vh;line-height: 5vh;border-radius: 10px;margin: 10px;">
-                            According to statistics, producing recycled paper by waste paper greatly benefits the earth.
-                        </h2>
-                        <p id="p1">
-                            Reuse 1 ton of waste paper saves 17 <span style="color: #aabc8b;">trees</span>
-                        </p>
-                        <p id="p2">
-                            Reuse 1 ton of waste paper saves 100 tons of <span style="color: #b8c3e7;">water</span>
-                        </p>
-                        <p id="p3">
-                            Reuse 1 ton of waste paper saves 600 kWh of <span style="color: #d5932d;">electricity</span>
-                        </p>
-                        <p id="p4">
-                            Reuse 1 ton of waste paper saves 11.37 tons of <span style="color: #6e5e9c;">carbon dioxide</span>.
-                        </p>
-                    </div>
-                    <div class="tp">
-                        <img src="https://static.igem.wiki/teams/5136/home/tianping.png" alt="" style="position: absolute;width: 25vw;left: 75vw;top: 20vh;">
-                        <img src="https://static.igem.wiki/teams/5136/home/tp1.png" alt="" style="width: 25vw;position: absolute;left: 74vw;top: 40vh;" id="tp-carousel">
-                    </div>
-                </div>
-            </div>
-
-            <div class="page-container">
-                <img src="https://static.igem.wiki/teams/5136/home/papertree.png" alt="" style="position: relative;top: 0;left: 10vw;width: 35vw;">
-                <div style="position: relative;top: -40vh;left: 50vw;width: 40vw;">
-                    <p>
-                        However, the difficulty and low utilization rate of the waste paper recycling process are serious obstacles to the sustainable utilization of forest resources.
-                    </p>
-                </div>
-            </div>
-
-            <div class="page-container">
-                <div style="position: relative;left: 10vw;top: 10vh;width: 35vw;">
-                    <p>
-                        Over the past decade, China's waste paper recycling rate has maintained at ~50%, while the utilization rate of waste paper has decreased from 72.5% (2014) to 52.4% (2023).
-                    </p>
-                </div>
-                <img src="https://static.igem.wiki/teams/5136/home/data-bg.png" alt="" style="height: 60vh;position: relative;left: 45vw;width: 50vw;top: -35vh;">
-                <div class="title" style="position: relative;width: 28vw;left: 52vw;top: -85vh;"> 
-                        <p style="font-size: 1.5vw;">
-                            China's waste paper <span style="color: #bea7c5;">utilization rate</span> from 2014 to 2023
-                        </p>
-                        <div id="carousel" style="position: relative;top: 5vh;">72.5% in 2014</div>
-                </div>
-            </div>
-
-            <div class="page-container">
-                <img src="https://static.igem.wiki/teams/5136/home/factory.png" alt="" style="position: relative;left: 10vw;width: 40vw;">
-                <div style="position: relative;left: 53vw;width: 40vw;top: -55vh;">
-                    <p>
-                        In the paper industry, the recovery and reuse of waste paper mainly relies on a conventional chemical-driven deinking technological process, which is the most intractable problem in the recycling industry because it demands a substantial amount of chemicals, with serious impacts on the environment and workers' health.
-                    </p>
-                </div>
-            </div>
-
-            <div class="page-container">
-                <div style="position: relative;top: 10vh;left: 10vw;width: 40vw;">
-                    <p>
-                        With this in mind, we are committed to finding a more eco-friendly, economical and safe alternative method. Our project focuses on tackling the challenges of high cost, environmental pollution and health risks in the current deinking process. We also proposed a standard operating procedure (SOP) for the synthetic biology-dominated deinking technological process: REPARO.
-                    </p>
-                </div>
-                <img src="https://static.igem.wiki/teams/5136/home/chem.png" alt="" style="position: relative;top: -60vh;left: 50vw;width: 35vw;">
-            </div>
-
-            <div class="page-container">
-                <img src="https://static.igem.wiki/teams/5136/home/circulate.png" alt="" style="position: relative;left: 10vw;width: 35vw;top: 10vh;">
-                <div style="position: relative;width: 40vw;left: 50vw;top: -50vh;">
-                    <p>
-                        To ameliorate the climate crisis, our project focuses on investigating the current situation and problems of waste paper recycling, providing an unprecedented answer to the bottleneck of recycle utilization, and arousing broad public concern on resource recycling and climate crisis.
-                    </p>
-                </div>
-            </div>
-
-            <div class="page-container">
-                <div style="position: relative;top: 40vh;width: 50vw;left: 10vw;">
-                    <p>
-                        Within the REPARO project, we will continue to optimize the paper deinking and wastewater reprocessing technological process to propose future solutions for eliminating handwriting on writing paper.
-                    </p>
-                </div>
-                <img src="https://static.igem.wiki/teams/5136/home/think.png" alt="" style="position: relative;top: -30vh;left: 25vw;width: 65vw;z-index: 6;">
-                <div class="think-lunbo" style="position: relative;top: -95vh;z-index: 7;left: 30vw;">
-                    <img src="https://static.igem.wiki/teams/5136/home/think1.png" alt="" style="width: 20vw;" id="slideshow">
-                </div>
+            <div class="logo">
+                <img src="https://static.igem.wiki/teams/5136/home/witch.png" alt=""
+                    style="height: 70vh;top: 25vh;position: absolute;z-index: 4;">
+                <img src="https://static.igem.wiki/teams/5136/home/reparo.png" alt=""
+                    style="height: 30vh; top:50vh;position: absolute;left: 30vw;z-index: 4;">
             </div>
         </div>
     </div>
+
+    <!-- main content -->
+    <div class="page">
+        <div class="page-container">
+            <div style="width: 35vw;position: relative;left: 15vw;top: 20vh;">
+                <p>
+                    The deteriorating climate crisis triggered by high <span class="emphasize">greenhouse gas
+                        (GHG)</span> emissions has led to retreated Arctic ice sheets, rising sea levels, El Ninos and
+                    many other climate disasters worldwide. According to statistics, <span class="emphasize">54
+                        billion</span> tons of carbon dioxide are emitted globally every year, with a concentration
+                    <span class="emphasize">50%</span> higher than in the pre-industrial era.
+                </p>
+            </div>
+            <img src="https://static.igem.wiki/teams/5136/home/earth.png" alt=""
+                style="width: 30vw;position: relative;top: -45vh;left: 55vw;" class="earth">
+        </div>
+
+        <div class="gas1" style="z-index: 51;">
+            <img src="https://static.igem.wiki/teams/5136/home/co2.png" alt=""
+                style="height: 10vh;position: relative;z-index: 51;left: 60%;" class="co2 gas-animation">
+            <img src="https://static.igem.wiki/teams/5136/home/o2.png" alt=""
+                style="height: 10vh;z-index: 52;position: relative;left: 10%;top: 30vh;" class="o2 gas-animation">
+            <img src="https://static.igem.wiki/teams/5136/home/smoke.png" alt=""
+                style="height: 25vh;position: relative;left: 25vw;z-index: 50;top: 0vh;" class="smoke gas-animation">
+        </div>
+
+        <div class="page-container">
+            <img src="https://static.igem.wiki/teams/5136/home/tree1.png" alt="" id="slideforest"
+                style="height: 80vh;position: relative;width: 55%;">
+            <div style="position: relative;width: 40%;left: 55%;top: -50vh;">
+                <p>
+                    In this context, forests, known as the 'lungs of the earth', can provide critical support for
+                    alleviating the climate crisis by converting carbon dioxide into oxygen through natural carbon
+                    capture mechanisms.
+                </p>
+            </div>
+        </div>
+
+        <div class="page-container">
+            <div style="width: 25%;position: relative;left: 15vw;top: 30vh;">
+                <p>
+                    However, nearly <span class="emphasize">13 million</span> hectares of forests are destroyed each
+                    year as a result of human activity.
+                </p>
+            </div>
+            <img src="https://static.igem.wiki/teams/5136/home/wood.png" alt=""
+                style="position: relative;width: 50%;left: 40%;top: -10vh;">
+            <div class="co2container">
+                <img src="https://static.igem.wiki/teams/5136/home/co2.png" alt="" id="center-image">
+            </div>
+        </div>
+
+        <div class="page-container">
+            <img src="https://static.igem.wiki/teams/5136/home/papermaking.png" alt=""
+                style="position: relative;top: 20vh;left: 10vw;width: 35vw;">
+            <div style="position: relative;left: 50vw;width: 40vw;top: -40vh;">
+                <p>
+                    As a major application for forest resources, the paper industry has a constant demand for wood.
+                    Paper, one of the Four Great Inventions of ancient China, acted as a carrier of knowledge and
+                    information spread to the world through the Silk Road, increasing economic and cultural exchanges
+                    among countries and promoting the progress of humans.
+                </p>
+            </div>
+        </div>
+
+        <div class="page-container">
+            <div style="width: 45%;position: relative;left: 10vw;width: 40vw;top: 20vh;">
+                <p>
+                    Against the backdrop of economic globalization, the demand for paper in modern society has continued
+                    to grow, leading to the cutting down of a large number of trees, disrupting the ecological balance
+                    of nature and exacerbating the climate crisis.
+                </p>
+            </div>
+            <img src="https://static.igem.wiki/teams/5136/home/paper.png" alt=""
+                style="position: relative;left: 50vw;top: -30vh;width: 40vw;">
+        </div>
+
+        <div class="page-container">
+            <img src="https://static.igem.wiki/teams/5136/home/circle.png" alt=""
+                style="position: relative;left: 10vw;top: 10vh;width: 35vw;">
+            <div style="position: relative;top: -40vh;left: 50vw;width: 40vw;">
+                <p>
+                    Fortunately, it is feasible to turn waste paper into fresh paper, which attracts our attention
+                    gradually. Therefore, we hope to make contribution to reduce deforestation and ameliorate the
+                    climate crisis by enhancing the cyclic utilization of paper.
+                </p>
+            </div>
+        </div>
+
+        <div class="page-container">
+            <div style="position: relative;">
+                <div style="position: absolute;width: 75vw;left: 2vw;text-align: center;top: 20vh;" class="tianping">
+                    <h2
+                        style="background: #6d5b93;color: white;font-size: 3vh;line-height: 5vh;border-radius: 10px;margin: 10px;">
+                        According to statistics, producing recycled paper by waste paper greatly benefits the earth.
+                    </h2>
+                    <p id="p1">
+                        Reuse 1 ton of waste paper saves 17 <span style="color: #aabc8b;">trees</span>
+                    </p>
+                    <p id="p2">
+                        Reuse 1 ton of waste paper saves 100 tons of <span style="color: #b8c3e7;">water</span>
+                    </p>
+                    <p id="p3">
+                        Reuse 1 ton of waste paper saves 600 kWh of <span style="color: #d5932d;">electricity</span>
+                    </p>
+                    <p id="p4">
+                        Reuse 1 ton of waste paper saves 11.37 tons of <span style="color: #6e5e9c;">carbon
+                            dioxide</span>.
+                    </p>
+                </div>
+                <div class="tp">
+                    <img src="https://static.igem.wiki/teams/5136/home/tianping.png" alt=""
+                        style="position: absolute;width: 25vw;left: 75vw;top: 20vh;">
+                    <img src="https://static.igem.wiki/teams/5136/home/tp1.png" alt=""
+                        style="width: 25vw;position: absolute;left: 74vw;top: 40vh;" id="tp-carousel">
+                </div>
+            </div>
+        </div>
+
+        <div class="page-container">
+            <img src="https://static.igem.wiki/teams/5136/home/papertree.png" alt=""
+                style="position: relative;top: 0;left: 10vw;width: 35vw;">
+            <div style="position: relative;top: -40vh;left: 50vw;width: 40vw;">
+                <p>
+                    However, the difficulty and low utilization rate of the waste paper recycling process are serious
+                    obstacles to the sustainable utilization of forest resources.
+                </p>
+            </div>
+        </div>
+
+        <div class="page-container">
+            <div style="position: relative;left: 10vw;top: 10vh;width: 35vw;">
+                <p>
+                    Over the past decade, China's waste paper recycling rate has maintained at ~50%, while the
+                    utilization rate of waste paper has decreased from 72.5% (2014) to 52.4% (2023).
+                </p>
+            </div>
+            <img src="https://static.igem.wiki/teams/5136/home/data-bg.png" alt=""
+                style="height: 60vh;position: relative;left: 45vw;width: 50vw;top: -35vh;">
+            <div class="title" style="position: relative;width: 28vw;left: 52vw;top: -85vh;">
+                <p style="font-size: 1.5vw;">
+                    China's waste paper <span style="color: #bea7c5;">utilization rate</span> from 2014 to 2023
+                </p>
+                <div id="carousel" style="position: relative;top: 5vh;">72.5% in 2014</div>
+            </div>
+        </div>
+
+        <div class="page-container">
+            <img src="https://static.igem.wiki/teams/5136/home/factory.png" alt=""
+                style="position: relative;left: 10vw;width: 40vw;">
+            <div style="position: relative;left: 53vw;width: 40vw;top: -55vh;">
+                <p>
+                    In the paper industry, the recovery and reuse of waste paper mainly relies on a conventional
+                    chemical-driven deinking technological process, which is the most intractable problem in the
+                    recycling industry because it demands a substantial amount of chemicals, with serious impacts on the
+                    environment and workers' health.
+                </p>
+            </div>
+        </div>
+
+        <div class="page-container">
+            <div style="position: relative;top: 10vh;left: 10vw;width: 40vw;">
+                <p>
+                    With this in mind, we are committed to finding a more eco-friendly, economical and safe alternative
+                    method. Our project focuses on tackling the challenges of high cost, environmental pollution and
+                    health risks in the current deinking process. We also proposed a standard operating procedure (SOP)
+                    for the synthetic biology-dominated deinking technological process: REPARO.
+                </p>
+            </div>
+            <img src="https://static.igem.wiki/teams/5136/home/chem.png" alt=""
+                style="position: relative;top: -60vh;left: 50vw;width: 35vw;">
+        </div>
+
+        <div class="page-container">
+            <img src="https://static.igem.wiki/teams/5136/home/circulate.png" alt=""
+                style="position: relative;left: 10vw;width: 35vw;top: 10vh;">
+            <div style="position: relative;width: 40vw;left: 50vw;top: -50vh;">
+                <p>
+                    To ameliorate the climate crisis, our project focuses on investigating the current situation and
+                    problems of waste paper recycling, providing an unprecedented answer to the bottleneck of recycle
+                    utilization, and arousing broad public concern on resource recycling and climate crisis.
+                </p>
+            </div>
+        </div>
+
+        <div class="page-container">
+            <div style="position: relative;top: 40vh;width: 50vw;left: 10vw;">
+                <p>
+                    Within the REPARO project, we will continue to optimize the paper deinking and wastewater
+                    reprocessing technological process to propose future solutions for eliminating handwriting on
+                    writing paper.
+                </p>
+            </div>
+            <img src="https://static.igem.wiki/teams/5136/home/think.png" alt=""
+                style="position: relative;top: -30vh;left: 25vw;width: 65vw;z-index: 6;">
+            <div class="think-lunbo" style="position: relative;top: -95vh;z-index: 7;left: 30vw;">
+                <img src="https://static.igem.wiki/teams/5136/home/think1.png" alt="" style="width: 20vw;"
+                    id="slideshow">
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- banner hover -->
 <script>
@@ -226,8 +285,8 @@
 
         // 更新三角形位置
         const triangle = document.getElementById('triangle');
-            triangle.style.left = `${xpos}px`; // 三角形相对于鼠标位置偏移
-            triangle.style.top = `${ypos}px`; // 三角形相对于鼠标位置偏移
+        triangle.style.left = `${xpos}px`; // 三角形相对于鼠标位置偏移
+        triangle.style.top = `${ypos}px`; // 三角形相对于鼠标位置偏移
     }
 
     const hoverArea = document.getElementById('hoverArea');
@@ -241,8 +300,8 @@
     hoverArea.addEventListener('mousemove', Mouse);
 
     hoverArea.addEventListener('click', () => {
-    window.location.href = '#pv'; // 替换为实际目标链接
-});
+        window.location.href = '#pv'; // 替换为实际目标链接
+    });
 </script>
 
 <!-- earth滚动 -->
@@ -258,30 +317,30 @@
         // 获取图片的位置
         const imageRect = image.getBoundingClientRect();
         const windowHeight = window.innerHeight;
-        
+
         // 图片开始进入视窗时的高度，和完全出现在视窗中的高度
-        const imageTop = imageRect.top+100;
+        const imageTop = imageRect.top + 100;
         const imageBottom = imageRect.bottom;
 
         // 当图片的顶部出现在视窗内时开始旋转，底部到达视窗底部时旋转结束
         if (imageTop < windowHeight && imageBottom > 0) {
             // 计算图片出现在视窗中的比例 (0 到 1 之间)
-            const progress = Math.min(1, Math.max(0, (windowHeight - imageTop)*1.8 / (imageRect.height + windowHeight)));
-            
+            const progress = Math.min(1, Math.max(0, (windowHeight - imageTop) * 1.8 / (imageRect.height + windowHeight)));
+
             // 根据滚动进度计算旋转角度，最多旋转 180 度
             const rotation = progress * 180;
 
             // 应用旋转效果
             image.style.transform = `rotate(${rotation}deg)`;
 
-            if (rotation >= 180 ) {
-                    // 激活气体动画
-                    co2.classList.add('active-co2');
-                    o2.classList.add('active-o2');
-                    smoke.classList.add('active-smoke');
-                    //hasActivated = true; // 确保动画只触发一次
-                }
-            else{
+            if (rotation >= 180) {
+                // 激活气体动画
+                co2.classList.add('active-co2');
+                o2.classList.add('active-o2');
+                smoke.classList.add('active-smoke');
+                //hasActivated = true; // 确保动画只触发一次
+            }
+            else {
                 //hasActivated = false;
                 co2.classList.remove('active-co2');
                 o2.classList.remove('active-o2');
@@ -332,55 +391,55 @@
 
     const startAnimation = () => {
         let count = 0;
-    const interval = setInterval(() => {
-        if (count >= numberOfImages) {
-            clearInterval(interval);
-            return;
-        }
+        const interval = setInterval(() => {
+            if (count >= numberOfImages) {
+                clearInterval(interval);
+                return;
+            }
 
-        // 创建新的图片元素
-        const newImage = document.createElement('img');
-        newImage.src = centerImage.src;
-        newImage.style.position = 'absolute';
-        newImage.style.height = '8vh';
-        newImage.style.top = '50%';
-        newImage.style.left = '50%';
-        newImage.style.transform = 'translate(-50%, -50%)';
-        newImage.style.opacity = '0';
+            // 创建新的图片元素
+            const newImage = document.createElement('img');
+            newImage.src = centerImage.src;
+            newImage.style.position = 'absolute';
+            newImage.style.height = '8vh';
+            newImage.style.top = '50%';
+            newImage.style.left = '50%';
+            newImage.style.transform = 'translate(-50%, -50%)';
+            newImage.style.opacity = '0';
 
-        // 动态生成图片的随机位置偏移
-        const randomX = Math.floor(Math.random() * 800 - 600); 
-        const randomY = -Math.floor(Math.random() * 400 - 200); 
+            // 动态生成图片的随机位置偏移
+            const randomX = Math.floor(Math.random() * 800 - 600);
+            const randomY = -Math.floor(Math.random() * 400 - 200);
 
-        // 使用 CSS 变量传递偏移值
-        newImage.style.setProperty('--x', `${randomX}px`);
-        newImage.style.setProperty('--y', `${randomY}px`);
+            // 使用 CSS 变量传递偏移值
+            newImage.style.setProperty('--x', `${randomX}px`);
+            newImage.style.setProperty('--y', `${randomY}px`);
 
-        // 添加动画类
-        newImage.style.animation = 'expand 2s ease-out forwards';
+            // 添加动画类
+            newImage.style.animation = 'expand 2s ease-out forwards';
 
-        // 将新的图片元素添加到容器中
-        container.appendChild(newImage);
+            // 将新的图片元素添加到容器中
+            container.appendChild(newImage);
 
-        count++;
-    }, intervalTime);
+            count++;
+        }, intervalTime);
     };
 
-    
-     // 使用 Intersection Observer 观察图片容器是否进入视口
-     const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    // 当图片容器进入视口时触发动画
-                    startAnimation();
-                    // 停止观察，防止动画重复触发
-                    observer.unobserve(container);
-                }
-            });
-        });
 
-        // 开始观察容器元素
-        observer.observe(container);
+    // 使用 Intersection Observer 观察图片容器是否进入视口
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // 当图片容器进入视口时触发动画
+                startAnimation();
+                // 停止观察，防止动画重复触发
+                observer.unobserve(container);
+            }
+        });
+    });
+
+    // 开始观察容器元素
+    observer.observe(container);
 </script>
 
 
@@ -388,49 +447,49 @@
 <!-- 天平图片轮播 -->
 <script>
     // 定义一个包含图片路径的数组
-const imagestp = [
-    "https://static.igem.wiki/teams/5136/home/tp1.png",
-    "https://static.igem.wiki/teams/5136/home/tp2.png",
-    "https://static.igem.wiki/teams/5136/home/tp3.png",
-    "https://static.igem.wiki/teams/5136/home/tp4.png"
-];
+    const imagestp = [
+        "https://static.igem.wiki/teams/5136/home/tp1.png",
+        "https://static.igem.wiki/teams/5136/home/tp2.png",
+        "https://static.igem.wiki/teams/5136/home/tp3.png",
+        "https://static.igem.wiki/teams/5136/home/tp4.png"
+    ];
 
-// 获取第二个 img 元素
-const carouselImg = document.getElementById('tp-carousel');
+    // 获取第二个 img 元素
+    const carouselImg = document.getElementById('tp-carousel');
 
-// 获取所有 p 标签
-const pElements = [
-    document.getElementById('p1'),
-    document.getElementById('p2'),
-    document.getElementById('p3'),
-    document.getElementById('p4')
-];
+    // 获取所有 p 标签
+    const pElements = [
+        document.getElementById('p1'),
+        document.getElementById('p2'),
+        document.getElementById('p3'),
+        document.getElementById('p4')
+    ];
 
-// 设置当前图片索引
-let currentImageIndex = 0;
+    // 设置当前图片索引
+    let currentImageIndex = 0;
 
-// 定义一个函数来切换图片
-function changeImage() {
-    // 先让图片淡出
-    carouselImg.style.opacity = 0;
+    // 定义一个函数来切换图片
+    function changeImage() {
+        // 先让图片淡出
+        carouselImg.style.opacity = 0;
 
-    // 等待 500 毫秒后更新图片，并淡入
-    setTimeout(() => {
-        // 移除所有 p 标签的 active 类
-        pElements.forEach(p => p.classList.remove('active'));
+        // 等待 500 毫秒后更新图片，并淡入
+        setTimeout(() => {
+            // 移除所有 p 标签的 active 类
+            pElements.forEach(p => p.classList.remove('active'));
 
-        currentImageIndex = (currentImageIndex + 1) % imagestp.length;
-        carouselImg.src = imagestp[currentImageIndex];
+            currentImageIndex = (currentImageIndex + 1) % imagestp.length;
+            carouselImg.src = imagestp[currentImageIndex];
 
-        // 激活与当前图片对应的 p 标签
-        pElements[currentImageIndex].classList.add('active');
-        carouselImg.style.opacity = 1;
-    }, 500); // 与 CSS 中的过渡时间匹配
-}
+            // 激活与当前图片对应的 p 标签
+            pElements[currentImageIndex].classList.add('active');
+            carouselImg.style.opacity = 1;
+        }, 500); // 与 CSS 中的过渡时间匹配
+    }
 
 
-// 启动定时器，每隔3秒切换一次图片
-setInterval(changeImage, 3000);
+    // 启动定时器，每隔3秒切换一次图片
+    setInterval(changeImage, 3000);
 
 </script>
 
@@ -441,15 +500,15 @@ setInterval(changeImage, 3000);
         { value: "", year: 2023, percentage: 52.4 },
         { value: "A decline of 20.1%", year: null, percentage: null }
     ];
-    
+
     let dataIndex = 0;
     const displayTime = 1000; // 文本停留时间
     const transitionTime = 500; // 过渡时间
     let isAnimationStarted = false; // 控制动画是否已开始
-    
+
     function updateText() {
         const carousel = document.getElementById('carousel');
-    
+
         // 如果是第一幕，停留更长时间
         if (dataIndex === 0) {
             setTimeout(() => {
@@ -459,16 +518,16 @@ setInterval(changeImage, 3000);
             startTransition();
         }
     }
-    
+
     function startTransition() {
         const carousel = document.getElementById('carousel');
         carousel.classList.add('fade-outt');
-    
+
         setTimeout(() => {
             const { value } = texts[dataIndex];
             carousel.textContent = value;
             carousel.classList.remove('fade-outt');
-    
+
             if (dataIndex === 0) {
                 animateText(texts[dataIndex].percentage, texts[dataIndex + 1].percentage, texts[dataIndex].year, texts[dataIndex + 1].year);
             } else {
@@ -477,23 +536,23 @@ setInterval(changeImage, 3000);
             }
         }, transitionTime); // 等待过渡时间
     }
-    
+
     function animateText(startPercentage, endPercentage, startYear, endYear) {
         const carousel = document.getElementById('carousel');
-    
+
         let duration = 2000; // 动画持续时间
         let startTime = null;
-    
+
         function animate(time) {
             if (!startTime) startTime = time;
             const elapsed = time - startTime;
-    
+
             const progress = Math.min(elapsed / duration, 1);
             const currentPercentage = (startPercentage + (endPercentage - startPercentage) * progress).toFixed(1); // 保留一位小数
             const currentYear = startYear + (endYear - startYear) * progress;
-    
+
             carousel.textContent = `${currentPercentage}% in ${Math.round(currentYear)}`;
-    
+
             if (progress < 1) {
                 requestAnimationFrame(animate);
             } else {
@@ -503,50 +562,50 @@ setInterval(changeImage, 3000);
                 }, displayTime);
             }
         }
-    
+
         requestAnimationFrame(animate);
     }
-    
+
     function handleIntersection(entries) {
         if (entries[0].isIntersecting && !isAnimationStarted) {
             isAnimationStarted = true;
             updateText(); // 启动动画
         }
     }
-    
+
     // 创建观察者实例
     const observer1 = new IntersectionObserver(handleIntersection, { threshold: 0.1 });
     const carousel = document.getElementById('carousel');
     observer1.observe(carousel);
-    </script>
+</script>
 
-    <!-- think轮播 -->
-    <script>
-const thinkimg = [
-    'https://static.igem.wiki/teams/5136/home/think1.png',
-    'https://static.igem.wiki/teams/5136/home/think2.png',
-    'https://static.igem.wiki/teams/5136/home/think3.png'
-];
+<!-- think轮播 -->
+<script>
+    const thinkimg = [
+        'https://static.igem.wiki/teams/5136/home/think1.png',
+        'https://static.igem.wiki/teams/5136/home/think2.png',
+        'https://static.igem.wiki/teams/5136/home/think3.png'
+    ];
 
-let thinkindex = 0;
-const slideshow = document.getElementById('slideshow');
+    let thinkindex = 0;
+    const slideshow = document.getElementById('slideshow');
 
-function showImage(index) {
-    thinkindex = (index + thinkimg.length) % thinkimg.length; // 循环显示
-    slideshow.style.opacity = 0; // Fade out
-    setTimeout(() => {
-        slideshow.src = thinkimg[thinkindex]; // 切换图片
-        slideshow.style.opacity = 1; // Fade in
-    }, 1000); // 与CSS过渡时间匹配
-}
+    function showImage(index) {
+        thinkindex = (index + thinkimg.length) % thinkimg.length; // 循环显示
+        slideshow.style.opacity = 0; // Fade out
+        setTimeout(() => {
+            slideshow.src = thinkimg[thinkindex]; // 切换图片
+            slideshow.style.opacity = 1; // Fade in
+        }, 1000); // 与CSS过渡时间匹配
+    }
 
-function startSlideshow() {
-    setInterval(() => {
-        showImage(thinkindex + 1);
-    }, 3000); // 每3秒切换一次
-}
+    function startSlideshow() {
+        setInterval(() => {
+            showImage(thinkindex + 1);
+        }, 3000); // 每3秒切换一次
+    }
 
-document.addEventListener('DOMContentLoaded', startSlideshow);
+    document.addEventListener('DOMContentLoaded', startSlideshow);
 
-    </script>
+</script>
 {% endblock %}
