@@ -1176,12 +1176,15 @@
 <script src="{{ url_for('static', filename = 'js2024/jquery-3.5.1.min.js') }}"></script>
 <script>
     $(window).on('load', function () {
-        // 当页面完全加载后，添加 'loaded' 类到 body，触发CSS动画
+    // 延迟 1 秒后执行以下代码
+    setTimeout(function() {
         $('body').addClass('loaded');
-
+        
         // 如果不需要加载文字，可以移除这个元素
         $('#loader-wrapper .load_title').remove();
-    });
+    }, 1000); // 1000 毫秒 = 1 秒
+});
+
 
 </script>
 <!-- <script src="{{ url_for('static', filename = 'js2024/loading.js') }}"></script> -->
