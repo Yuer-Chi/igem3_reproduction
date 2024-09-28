@@ -608,4 +608,23 @@ endblock %}
     document.addEventListener('DOMContentLoaded', startSlideshow);
 
 </script>
+
+<!-- 页面块渐渐出现 -->
+<script>
+    const containers = document.querySelectorAll('.page-container');
+
+    const observerr = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.4 // 控制观察的触发点，可以调整为更大的值
+    });
+
+    containers.forEach(container => {
+      observerr.observe(container);
+    });
+  </script>
 {% endblock %}
