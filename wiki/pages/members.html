@@ -391,8 +391,11 @@
     <div class="pv-text">This is the video title</div> <!-- 添加文字元素 -->
     <div class="pv">
         <div class="video-container">
-            <iframe id="videoFrame" title="XMU-China: Final (2023) [English]" width="560" height="315"
+            <!-- <iframe id="videoFrame" title="XMU-China: Final (2023) [English]" width="560" height="315"
                 src="https://video.igem.org/videos/embed/09a9bcc3-a354-456d-826e-2dae27645d5d?title=0&amp;warningTitle=0"
+                frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe> -->
+            <iframe id="videoFrame" title="XMU-China: Final (2023) [English]" width="560" height="315"
+                src="https://video.igem.org/w/3c27QLSa3o8NHm722ronfy"
                 frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
         </div>
     </div>
@@ -1135,7 +1138,8 @@
 
 </div>
 <div class="container-member" style="min-height: 10vh;justify-content: flex-end;">
-    <a href="{{ url_for('pages', page='attributions') }}" class="go-to-attribution" style="transform: translateX(-7vw);">
+    <a href="{{ url_for('pages', page='attributions') }}" class="go-to-attribution"
+        style="transform: translateX(-7vw);">
         Go to our attribution
         <img src="https://static.igem.wiki/teams/5136/parts-table-icon/jt.png" alt="Arrow">
     </a>
