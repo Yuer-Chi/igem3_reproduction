@@ -1,6 +1,6 @@
 
 
-<div class="menu">
+<div class="menu" id="fixed-element">
 
     <div class="toggle">
         <i class="fa fa-angle-double-up"></i>
@@ -60,3 +60,17 @@
         <a href="https://gitlab.igem.org/2024/xmu-china"><p style="font-size: 2vh;">The repository used to create this website is available at https://gitlab.igem.org/2024/xmu-china.</p></a>
     </div>
 </div>
+<script>
+    window.addEventListener('scroll', function() {
+        var scrollY = window.scrollY || window.pageYOffset;
+        var viewportHeight = window.innerHeight;
+        var fixedElement = document.getElementById('fixed-element');
+
+        // 当页面滚动超过 100vh 时，显示该元素
+        if (scrollY > viewportHeight) {
+            fixedElement.style.display = 'flex';
+        } else {
+            fixedElement.style.display = 'none';
+        }
+    });
+</script>
