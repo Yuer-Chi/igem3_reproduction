@@ -47,7 +47,7 @@ a {
     top: 0;
     width: 51%;
     height: 100%;
-    background: #deecec;
+    background: #f8f0de;
     z-index: 1000;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -429,8 +429,8 @@ a {
     color: #534f7a;
     font-family: Aaargh;
     font-size: 35px;
-    padding-bottom: 10px;
-    padding-top: 40px;
+    padding-bottom: 4vh;
+    padding-top: 5vh;
     font-weight: bold;
 }
 

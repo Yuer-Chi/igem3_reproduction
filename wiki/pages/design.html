@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 
-{% block title %}design{% endblock %}
+{% block title %}Design{% endblock %}
 {% block lead %}Innovative educational tools and outreach activities have the ability to establish a two-way dialogue
 with new communities by discussing public values and the science behind synthetic biology.{% endblock %}
 
@@ -13,7 +13,15 @@ with new communities by discussing public values and the science behind syntheti
 
 
 
-
+<div id="loader-wrapper">
+  <div id="loader">
+    <div class="loader-img">
+      <img src="https://static.igem.wiki/teams/5136/load.gif">
+    </div>
+  </div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
 <div class="container">
 
   <!--loading-->
@@ -30,13 +38,10 @@ with new communities by discussing public values and the science behind syntheti
           <a href="#section2" class="sidebar-link" data-section="section2">Solutions</a>
         </div>
         <div class="left-bar-right-item">
-          <a href="#section3" class="sidebar-link" data-section="section3">小标题和小小标题</a>
+          <a href="#section3" class="sidebar-link" data-section="section3">Future Expectations</a>
         </div>
         <div class="left-bar-right-item">
-          <a href="#section4" class="sidebar-link" data-section="section4">超链接的写法</a>
-        </div>
-        <div class="left-bar-right-item">
-          <a href="#section5" class="sidebar-link" data-section="section5">reference的写法</a>
+          <a href="#section4" class="sidebar-link" data-section="section4">References</a>
         </div>
       </div>
     </div>
@@ -62,7 +67,7 @@ with new communities by discussing public values and the science behind syntheti
           </h1>
         </div>
 
-        <!---文字段落--->
+        <!---Background--->
         <div class="myPage-paragraph" id="section1">
           <h2 class="myPage-paragraph-headline-h2">Background</h2>
           <!-- 记住这里的h2就是标题 -->
@@ -79,12 +84,12 @@ with new communities by discussing public values and the science behind syntheti
           </p>
         </div>
 
-        <!---插图演示--->
+        <!---Solutions--->
         <div class="myPage-paragraph" id="section2">
           <h2 class="myPage-paragraph-headline-h2">Solutions</h2>
 
 
-          <h3 class="myPage-paragraph-headline-h3">1.Enzymatic deinking</h3>
+          <h3 class="myPage-paragraph-headline-h3">1. Enzymatic deinking</h3>
           <p class="myPage-paragraph-content">
             Deinking of waste paper is to <b>destroy the adhesion</b> of the ink to the fiber through a certain method,
             according
@@ -119,7 +124,8 @@ with new communities by discussing public values and the science behind syntheti
           </p>
           <div class="myPage-paragraph-fig">
             <img src="https://static.igem.wiki/teams/5136/design/design-fig1.png" alt="">
-            <div class="myPage-paragraph-fig-description"><b>Fig.1 process of enzymatic deinking</b>
+            <div class="myPage-paragraph-fig-description"><b>Fig.1 Schematic diagram of the enzymatic deinking
+                process</b>
             </div>
           </div>
           <h5 class="myPage-paragraph-headline-h5">Cellulase</h5>
@@ -141,7 +147,7 @@ with new communities by discussing public values and the science behind syntheti
             alkaline breakage of conjugated side chains of lignin and other colored substances such as azo dyes through
             nucleophilic reaction, increasing the hydrophilicity of the reaction products, which can be easily removed
             in the subsequent washing process to achieve the purpose of bleaching (7). We investigated several
-            monooxygenases, including OleTJE from <i>Jeotgalicoccus</i> sp. ATCC 8456 (8), CYP199A4 from
+            monooxygenases, including OleT<sub>JE</sub> from <i>Jeotgalicoccus</i> sp. ATCC 8456 (8), CYP199A4 from
             <i>Rhodopseudomonas
               palustris</i> (9) and SfmD from <i>Streptomyces lavendulae</i> NRRL 11002 (10) to determine the best for
             deinking of
@@ -161,15 +167,16 @@ with new communities by discussing public values and the science behind syntheti
             Currently in industry, deinking flotation is the preferred method for removing printed ink from paper during
             the recycling process. The process is based on the difference between hydrophilic and hydrophobic inks, in
             which the latter can be removed from the pulp suspension by adhering to bubbles (14). However, this method
-            will cause a certain loss of fiber, thus lowering the recovery rate. Therefore, we chose to use limonene, a
-            hydrophobic solvent that can be biosynthesized (15), to extract the ink in the pulp after enzymatic
-            deinking, overcoming the shortage of flotation method that carries away a large amount of pulp fibers so as
-            to minimize the loss of fibers.
+            will cause a certain loss of fiber, thus lowering the recovery rate. Therefore, we decided to implement
+            extraction via a certain hydrophobic solvent rather than floatation during the deinking process. We chose
+            limonene, a solvent that can be biosynthesized (15), from a range of candidates to extract the ink in the
+            pulp after enzymatic deinking (Figure 2), overcoming the shortage of flotation method that carries away a
+            large amount of pulp fibers so as to minimize the loss of fibers.
           </p>
           <div class="myPage-paragraph-fig">
-            <img src="https://static.igem.wiki/teams/5136/design/design-fig2.png" alt="">
+            <img src="https://static.igem.wiki/teams/5136/design/design-2.jpg" alt="">
             <div class="myPage-paragraph-fig-description">
-              <b>Fig.2 extraction process of using limonene</b>
+              <b>Fig.2 Schematic diagram of the extraction process by using limonene.</b>
             </div>
           </div>
           <h4 class="myPage-paragraph-headline-h4">1.3 Enzyme obtainment </h4>
@@ -184,15 +191,11 @@ with new communities by discussing public values and the science behind syntheti
             secrete
             the target protein into the extracellular circumstance.
           </p>
-          <div class="myPage-paragraph-fig">
-            <img src="https://static.igem.wiki/teams/5136/design/design-fig3.png" alt="">
-            <div class="myPage-paragraph-fig-description">
-              <b>Fig.3</b>
-            </div>
-          </div>
+
           <h5 class="myPage-paragraph-headline-h5">Autolytic system</h5>
           <p class="myPage-paragraph-content">
             It is reported that the <i>E. coli</i> autolytic system FLSA (FhuD-lysozyme-SsrA mediated autolytic system)
+            (Figure 3)
             can
             efficiently release target proteins from cells, so we chose to use this system to realize the release of
             deinking enzymes after production (16). This system integrates the Sec-Tat dual pathway signal peptide FhuD,
@@ -205,7 +208,7 @@ with new communities by discussing public values and the science behind syntheti
           <div class="myPage-paragraph-fig">
             <img src="https://static.igem.wiki/teams/5136/design/design-fig4.png" alt="">
             <div class="myPage-paragraph-fig-description">
-              <b>Fig.4</b>
+              <b>Fig.3 Schematic diagram of the E. coli FLSA system.</b>
             </div>
           </div>
           <h5 class="myPage-paragraph-headline-h5">Signal peptide</h5>
@@ -220,58 +223,78 @@ with new communities by discussing public values and the science behind syntheti
             our <a style="font-weight: bolder;text-decoration: none;"
               href="{{ url_for('pages', page='model') }}">Model</a> page).
           </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/design/design-fig3.png" alt="">
+            <div class="myPage-paragraph-fig-description">
+              <b>Fig.4 Schematic diagram of the signal peptide-dependent secretion of deinking enzymes</b>
+            </div>
+          </div>
           <h3 class="myPage-paragraph-headline-h3">2.Harmless treatment of wastewater</h3>
           <p class="myPage-paragraph-content">
             After enzymatic deinking, many chemical bonds between ink and paper are destroyed, which leads ink to enter
             the deinking wastewater. However, there are a variety of soluble heavy metals in the ink that are not
-            destroyed in the recycling process of waste paper, including lead (Pb), chromium (Cr), cadmium (Cd) and
+            destroyed in the recycling process of waste paper (17), including lead (Pb), chromium (Cr), cadmium (Cd) and
             mercury (Hg). As a result, the deinking wastewater cannot be discharged directly, and a demand of removal of
-            heavy metal ions has been placed on the harmless treatment of wastewater. Therefore, in order to remove
-            heavy metals from wastewater, we decide to use metallothioneins (MTs) to band them through surface display
-            or add transporter.
+            heavy metal ions has been placed on the harmless treatment of wastewater. In order to remove heavy metals
+            from
+            wastewater, we decided to use <b>metallothioneins (MTs)</b> to bind them <i>via</i> the strategy of surface
+            display
+            or
+            co-expression with the <b>transporter</b> of specific metal ions (Figure 5).
           </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/design/design-fig5.png" alt="">
+            <div class="myPage-paragraph-fig-description">
+              <b>Fig.5 Schematic diagram of the heavy metal bioremediation <i>via</i> metallothioneins surface displayed
+                or co-expressed with specific transporter.</b>
+            </div>
+          </div>
           <h4 class="myPage-paragraph-headline-h4">2.1 Metallothionein</h4>
           <p class="myPage-paragraph-content">
             <b>Metallothioneins</b> are a class of low molecular weight and cysteine-rich metal-binding proteins, while
             one
             metallothionein can bind 6-9 heavy metal ions. Common metallothioneins can bind divalent heavy metal ions
-            generally, but lack the function of treating hexavalent chromium (Cr6+). However, human metallothionein Mt2A
-            and MT3 have adsorption capacity for both common metal ions and Cr6+ ions (17), which can be heterogeneously
+            generally, but lack the function of treating hexavalent chromium (Cr<sup>6+</sup>). However, human
+            metallothionein Mt2A
+            and MT3 have adsorption capacity for both common metal ions and Cr<sup>6+</sup> ions (18), which can be
+            heterogeneously
             expressed in engineered bacteria for wastewater treatment. Therefore, for distinct treatment situations, we
             decided to construct engineered bacteria to express metallothioneins in two different patterns: the one is
             to display the metallothioneins on the surface of engineered bacteria, while the other is to express the
             metallothioneins intracellularly accompanied with the transporter of heavy metal ions.
           </p>
-          <div class="myPage-paragraph-fig">
-            <img src="https://static.igem.wiki/teams/5136/design/design-fig5.png" alt="">
-            <div class="myPage-paragraph-fig-description">
-              <b>Fig.5</b>
-            </div>
-          </div>
-          <h5 class="myPage-paragraph-headline-h5">Surface display</h5>
+
+          <h5 class="myPage-paragraph-headline-h5">Surface Display</h5>
           <p class="myPage-paragraph-content">
             It was reported that displaying metallothioneins on the surface of engineered bacteria could improve the
-            efficiency of adsorbing heavy metal ions , which might be attributed to the expanded contact area with the
+            efficiency of adsorbing heavy metal ions (19), which might be attributed to the expanded contact area with
+            the
             meatal ions. Additionally, this strategy offers certain portability to subsequent treatment of engineered
             bacteria to recycle heavy metals. Based on these, we chose the classic <B>INPNC surface display system</B> ,
             which
-            has been proven to display various proteins efficiently (18), to anchor metallothioneins (MT2A and MT3) on
+            has been proven to display various proteins efficiently (20), to anchor metallothioneins (MT2A and MT3) on
             the surface of engineered bacteria.
           </p>
           <h5 class="myPage-paragraph-headline-h5">Transporter</h5>
           <p class="myPage-paragraph-content">
             Even though better performance on absorbing various heavy metal ions was observed when surface displayed,
-            the metallothioneins showed low efficiency on absorbing Cd2+ . To tackle this challenge, the
+            the metallothioneins showed low efficiency on absorbing Cd<sup>2+</sup> (21). To tackle this challenge, the
             metallothioneins is designed to be expressed intracellularly rather than displayed on the surface of the
-            engineered bacteria, while a Cd2+ transporter will be co-expressed in the same bacteria to transport Cd2+
-            into the cells, thus achieving the bioremediation of Cd2+ (19).
+            engineered bacteria, while a Cd<sup>2+</sup> transporter will be co-expressed in the same bacteria to
+            transport Cd2+
+            into the cells, thus achieving the bioremediation of Cd<sup>2+</sup> (22).
           </p>
           <p class="myPage-paragraph-content">
-            <b>MntA</b> , an endogenous protein in <i>Escherichia coli</i> , plays the role to transport Mn2+ and Cd2+
+            <b>MntA</b> , an endogenous protein in <i>Escherichia coli</i> , plays the role to transport Mn<sup>2+</sup>
+            and Cd<sup>2+</sup>
             into the
-            bacteria, whose transporting efficiency for Cd2+ will not be interfered by other metal ions except Mn2+
-            (reduced to 20% of the original) (20). Given the extremely low concentration of Mn2+ in wastewater and the
-            presence of many other heavy metal ions (21), we decided to overexpress this transporter to meet our needs.
+            bacteria, whose transporting efficiency for Cd<sup>2+</sup> will not be interfered by other metal ions
+            except
+            Mn<sup>2+</sup>
+            (reduced to 20% of the original) (23). Given the extremely low concentration of Mn<sup>2+</sup> in
+            wastewater
+            and the
+            presence of many other heavy metal ions (17), we decided to overexpress this transporter to meet our needs.
           </p>
           <h4 class="myPage-paragraph-headline-h4">2.2 Biosafety</h4>
           <p class="myPage-paragraph-content">
@@ -280,7 +303,7 @@ with new communities by discussing public values and the science behind syntheti
               style="font-weight: bolder;text-decoration: none;"
               href="{{ url_for('pages', page='implementation') }}">Proposed Implementation</a> page), which will pose a
             threat to the environment and biodiversity indeed once unwanted
-            survival and accumulation of the engineered bacteria happens (22). Considering biosafety, we designed a kill
+            survival and accumulation of the engineered bacteria happens (24). Considering biosafety, we designed a kill
             switch for biocontainment of the engineered bacteria. For not adding extra chemicals (such as various
             inducers) into the wastewater, we decided to design a <b>light-triggered kill switch</b> to realize the
             "suicide"
@@ -291,9 +314,9 @@ with new communities by discussing public values and the science behind syntheti
           </p>
           <p class="myPage-paragraph-content">
             At present, many optogenetic systems that have been developed in prokaryotes mainly respond to the
-            wavelength of blue light rather than other colors of light in the visible spectrum (23). Besides, these blue
+            wavelength of blue light rather than other colors of light in the visible spectrum (25). Besides, these blue
             light responding-optogenetic systems generally utilize FMN or FAD as the chromophore of photosensor, which
-            can be synthesized by the bacteria naturally (24). Taking this advantage, no additional chromophore synthase
+            can be synthesized by the bacteria naturally (26). Taking this advantage, no additional chromophore synthase
             genes need to be cloned and introduced into the engineered bacteria, which remains more space for the
             functional exogenous genes in a single cell. For these reasons, we decided to select a suitable system that
             respond to the blue light to build the kill switch. Finally, the blue light-induced <b>eLightOn system</b>
@@ -301,121 +324,194 @@ with new communities by discussing public values and the science behind syntheti
             chosen: in the dark, <b>LexRO</b> dimerizes and binds to the promoter <b>pColE408</b> to inhibit its
             transcription; while
             under blue light illumination, the LexRO dimer dissociates from the promoter and thus initiates the
-            expression of gene downstream (25). The eLightOn system showed a better performance over the other existing
+            expression of gene downstream (27). The eLightOn system showed a better performance over the other existing
             single-component bacterial light-activated expression systems, with benefits including a high ON/OFF ratio
             of >500-fold, a high activation level, fast activation kinetics, and/or good adaptability to different
-            promoters and <i>E. coli</i> strains (25).
+            promoters and <i>E. coli</i> strains (27).
           </p>
           <p class="myPage-paragraph-content">
-            <b><i>ccdB</i></b> , a gene encoding the toxin that interferes with the activity of DNA gyrase (26), is
+            <b><i>ccdB</i></b> , a gene encoding the toxin that interferes with the activity of DNA gyrase (28), is
             placed under the
             control of promoter pColE408 to confer the killing effect as a blue light-induced pattern. In addition, to
             reduce the growth burden caused by the potential leaky expression of toxin, an antitoxin gene <i>ccdA</i> is
-            introduced as well, which is designed to be controlled by a weak constitutive engineering promoter p2)-114v.
+            introduced as well, which is designed to be controlled by a weak constitutive engineering promoter p2)-114v
+            (Figure 6A).
             And therefore, once the expression level of CcdB upon blue light illumination exceeds that of CcdA, the
-            engineered bacteria will be killed due to the toxicity of CcdB.
+            engineered bacteria will be killed due to the toxicity of CcdB (Figure 6B).
           </p>
           <div class="myPage-paragraph-fig">
-            <img src="https://static.igem.wiki/teams/5136/design/design-fig6.png" alt="">
+            <img src="https://static.igem.wiki/teams/5136/design/design-6.png" alt="">
             <div class="myPage-paragraph-fig-description">
-              <b>Fig.6</b>
+              <b>Fig.6 Blue light-induced biocontainment</b><br>
+              <b>(A) The gene circuit of LexRO/pColE408-regulated kill switch</b><br>
+              <b>(B) Schematic diagram of blue light-triggered killing of the engineered bacteria</b>
             </div>
           </div>
 
         </div>
 
-        <!---小标题和小小标题--->
+        <!---Future Expectations --->
         <div class="myPage-paragraph" id="section3">
-          <h2 class="myPage-paragraph-headline-h2">以下还没录入（09/24）</h2>
-
-          <h3 class="myPage-paragraph-headline-h3">5.1 小标题</h3>
+          <h2 class="myPage-paragraph-headline-h2">Future Expectations</h2>
           <p class="myPage-paragraph-content">
-            这里展示一下小标题，，页面中的标题用的是h2，小标题用的是h3，小小标题用的是h4。
+            In daily life, people's needs for handwriting erasure are extensive and diverse. However, our current design
+            is mainly focused on the deinking of pulp in the printing plant, so we hope to develop a product that can
+            easily remove handwriting in daily life according to the deinking principle referred before.
           </p>
-
-          <h3 class="myPage-paragraph-headline-h3">5.2 还是小标题</h3>
-          <h4 class="myPage-paragraph-headline-h4">1. 小小标题</h4>
           <p class="myPage-paragraph-content">
-            比如这里就有小小标题
+            The ink used in daily handwriting is mainly composed of <b>hydrophobic pigments</b> and <b>binders</b>, so
+            using a better
+            hydrophobic solvent may be possible to achieve the removal of handwriting. Our pre-experiments showed that
+            the
+            microemulsion consisting of surfactant sodium dodecyl sulfate (SDS) and limonene had a good effect on
+            dissolving ink and removed the handwriting to a certain extent. Considering environmental protection, we
+            hope
+            to choose rhamnolipid, a kind of surfactant that can be biosynthesized and easily degraded (15), accompanied
+            with limonene to form microemulsion to achieve handwriting removal (Figure 7).
           </p>
-          <h4 class="myPage-paragraph-headline-h4">2. 另一个小小标题</h4>
-          <p class="myPage-paragraph-content">
-            同上
-          </p>
-
-        </div>
-
-        <!---超链接的写法--->
-        <div class="myPage-paragraph" id="section4">
-          <h2 class="myPage-paragraph-headline-h2">4.标题4</h2>
-          <p class="myPage-paragraph-content">
-            这里主要是展示一下超链接要怎么用，像接下来这个 <a style="font-weight: bolder;text-decoration: none;"
-              href="{{ url_for('pages', page='hardware') }}">Hardware</a>,
-            就是跳转到我们网页的其他页面的格式，如果我跳转到其他网页的话比如<a style="font-weight: bolder;text-decoration: none;"
-              href="https://www.baidu.com/">百度</a>的话,
-            就是这种格式。
-          </p>
-
-          <div id="accordion-Det" class="accordion">
-            <div class="myPage-paragraph-headline-h3 expstep_name">CspA mRNA Experiment</div>
-            <div class="panel">
-              <div class="panel-heading" role="tab" id="heading51">
-                <h4 class="panel-title">
-                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse51" aria-expanded="true"
-                    aria-controls="collapse51">
-                    Requirements
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse51" class="panel-collapse collapse" role="tabpanel">
-                <div class="panel-body">
-                  <p>● LB liquid medium<br>
-                    ● Tecan Infinite M200 microplate reader<br>
-                  </p>
-                </div>
-              </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/design/design-7.jpg" alt="">
+            <div class="myPage-paragraph-fig-description">
+              <b>Fig.6 Schematic diagram of the mechanism of handwriting removal</b>
             </div>
-            <div class="panel">
-              <div class="panel-heading" role="tab" id="heading52">
-                <h4 class="panel-title">
-                  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse52" aria-expanded="false"
-                    aria-controls="collapse52">
-                    Protocol
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse52" class="panel-collapse collapse" role="tabpanel">
-                <div class="panel-body">
-                  <p>1. Revive the transformed bacteria by incubating them at 37 °C with shaking at 200
-                    <i>r.p.m.</i> for 12 hours.<br>
-                    2. Inoculate the revived bacteria at 2% concentration into 10 mL of LB medium and shake
-                    at 37 °C for around 2 hours until the OD<sub>600</sub> values reaches 0.6-0.8.<br>
-                    3. Incubate the above bacteria separately at 4 °C, 15 °C, and 37 °C, each with shaking at
-                    200 r.p.m. .<br>
-                    4. Use Tecan Infinite M200 microplate reader to measure the green fluorescence intensity
-                    and
-                    OD<sub>600</sub> values at 2 hours, 4 hours, and 6 hours.<br>
-                    <em><small>Note: Excitation wavelength: 488 <i>nm</i>, Emission wavelength: 530
-                        <i>nm</i>.</small></em><br>
-                    5. Calculate the ratio of green fluorescence intensity to OD<sub>600</sub> data.<br>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-
           </div>
-
+          <p class="myPage-paragraph-content">
+            Additionally, for improving the recycling ability of the microemulsion, we intend to utilize adsorbents to
+            adsorb the ink that is dissolved in the microemulsion after being removed from the paper. The adsorption
+            materials containing chitosan as the main component can adsorb ink molecules through both physical and
+            chemical effects while have the advantages of low toxicity, excellent biocompatibility and low cost over the
+            traditional polymer hydrogel (29). Therefore, this kind of materials is chosen as the adsorbent conferring
+            the
+            reusability for the microemulsion, thus assisting the removal of daily handwriting.
+          </p>
         </div>
 
 
-        <!--Reference的写法-->
-        <div class="myPage-paragraph" id="section5">
-          <h2 class="myPage-paragraph-headline-h2">5.标题5</h2>
+
+        <!--Reference-->
+        <div class="myPage-paragraph" id="section4">
+          <h2 class="myPage-paragraph-headline-h2">References</h2>
           <ol class="myPage-paragraph-reference">
-            <li>最后就是reference的部分</li>
-            <li>写几个ref就是写几个li标签</li>
-            <li>只要注意用的是li标签就好了</li>
+            <li>X. Zhang, Y. Xue, Research Progress of Deinking Technology for Waste Paper Pulping. Shandong Paper
+              Society
+              (2012). (in Chinese)
+            </li>
+            <li>A. Singh, L. M. Varghese, R. D. Yadav, R. Mahajan, A Pollution Reducing Enzymatic Deinking Approach for
+              Recycling of Mixed Office Waste Paper. Environ. Sci. Pollut. Res. Int. 27, 45814-45823 (2020).
+            </li>
+            <li>D. E. Tsatsis, D. K. Papachristos, K. A. Valta, A. G. Vlyssides, D. G. Economides, Enzymatic Deinking
+              for
+              Recycling of Office Waste Paper. J. Environ. Chem. Eng. 5, 1744-1753 (2017).
+            </li>
+            <li>A. Saxena, P. Singh Chauhan, Role of Various Enzymes for Deinking Paper: A Review. Crit. Rev.
+              Biotechnol.
+              37, 598-612 (2017).
+            </li>
+            <li>B. Wu et al., Processivity and Enzymatic Mechanism of a Multifunctional Family 5 Endoglucanase from
+              Bacillus subtilis BS-5 with Potential Applications in the Saccharification of Cellulosic Substrates.
+              Biotechnol. Biofuels 11, 20 (2018).
+            </li>
+            <li>
+              E. G. Hrycay, S. M. Bandiera, The Monooxygenase, Peroxidase, and Peroxygenase Properties of Cytochrome
+              P450.
+              Arch. Biochem. Biophys. 522, 71-89 (2012).
+            </li>
+            <li>K. Shen, G. Fang, F. Chu, Application of Hydrogen Peroxide in the Pulp and Paper Industry. Paper
+              Chemicals, 19-23 (2005). (in Chinese)
+            </li>
+            <li>
+              Y. Jiang et al., Establishing an Enzyme Cascade for One-Pot Production of Alpha-Olefins from Low-Cost
+              Triglycerides and Oils without Exogenous H2O2 Addition. Biotechnol. Biofuels 13, 52 (2020).
+            </li>
+            <li>
+              P. Zhao et al., Crucial Gating Residues Govern the Enhancement of Peroxygenase Activity in an Engineered
+              Cytochrome P450 O-Demethylase. Chem. Sci. 15, 8062-8070 (2024).
+            </li>
+            <li>
+              I. Shin et al., A Novel Catalytic Heme Cofactor in SfmD with a Single Thioether Bond and a Bis-His Ligand
+              Set Revealed by a De Novo Crystal Structural and Spectroscopic Study. Chem. Sci. 12, 3984-3998 (2021).
+            </li>
+            <li>
+              L. Arregui et al., Laccases: Structure, Function, and Potential Application in Water Bioremediation.
+              Microb.
+              Cell Fact. 18, 200 (2019).
+            </li>
+            <li>S. Sondhi et al., An Extracellular Thermo-Alkali-Stable Laccase from Bacillus tequilensis SN4, with a
+              Potential to Biobleach Softwood Pulp. 3 Biotech. 5, 175-185 (2015).</li>
+            <li>V. Gupta, S. Balda, N. Gupta, N. Capalash, P. Sharma, Functional Substitution of Domain 3 (T1 Copper
+              Center) of a Novel Laccase with Cu Ions. Int. J. Biol. Macromol. 123, 1052-1061 (2019).</li>
+            <li>
+              S. Jamnicki Hanzer, B. Lozo, L. Barušić, Producing Direct Food Packaging Using Deinked Office Paper
+              Grades—Deinkability and Food Contact Suitability Evaluation. Sustainability 13, 12550 (2021).
+            </li>
+            <li>
+              X. Kong et al., Efficient Synthesis of Limonene in Saccharomyces cerevisiae Using Combinatorial Metabolic
+              Engineering Strategies. J. Agric. Food Chem. 71, 7752-7764 (2023).
+            </li>
+            <li>
+              F. Zhang et al., Development of a Bacterial FhuD-Lysozyme-SsrA Mediated Autolytic (FLSA) System for
+              Effective Release of Intracellular Products. ACS Synth. Biol. 12, 196-202 (2023).
+            </li>
+            <li>
+              Y. He, Study on the Toxicity and Key Toxicants of Waste-Paper Effluents and Sludge. Master's Thesis
+              (2012).
+              (in Chinese)
+            </li>
+            <li>
+              Ş. Akkurt, M. Oğuz, A. Alkan Uçkun, Bioreduction and Bioremoval of Hexavalent Chromium by Genetically
+              Engineered Strains (Escherichia coli Mt2A and Escherichia coli Mt3). World J. Microbiol. Biotechnol. 38,
+              45
+              (2022).
+            </li>
+            <li>
+              M. Valls, S. Atrian, V. de Lorenzo, L. A. Fernández, Engineering a Mouse Metallothionein on the Cell
+              Surface of Ralstonia eutropha CH34 for Immobilization of Heavy Metals in Soil. Nat. Biotechnol. 18,
+              661-665
+              (2000).
+            </li>
+            <li>
+              E. van Bloois, R. T. Winter, H. Kolmar, M. W. Fraaije, Decorating Microbes: Surface Display of Proteins on
+              Escherichia coli. Trends Biotechnol. 29, 79-86 (2011).
+            </li>
+            <li>
+              X. Deng, X. E. Yi, G. Liu, Cadmium Removal from Aqueous Solution by Gene-Modified Escherichia coli JM109.
+              J. Hazard. Mater. 139, 340-344 (2007).
+            </li>
+            <li>
+              Z. Hao, S. Chen, D. B. Wilson, Cloning, Expression, and Characterization of Cadmium and Manganese Uptake
+              Genes from Lactobacillus plantarum. Appl. Environ. Microbiol. 65, 4746-4752 (1999).
+            </li>
+            <li>
+              S. K. Kim, B. S. Lee, D. B. Wilson, E. K. Kim, Selective Cadmium Accumulation Using Recombinant
+              Escherichia
+              coli. J. Biosci. Bioeng. 99, 109-114 (2005).
+            </li>
+            <li>
+              F. Stirling, P. A. Silver, Controlling the Implementation of Transgenic Microbes: Are We Ready for What
+              Synthetic Biology Has to Offer? Mol. Cell 78, 614-623 (2020).
+            </li>
+            <li>
+              R. Ohlendorf, A. Moglich, Light-Regulated Gene Expression in Bacteria: Fundamentals, Advances, and
+              Perspectives. Front. Bioeng. Biotechnol. 10, 1029403 (2022).
+            </li>
+            <li>
+              A. Baumschlager, M. Khammash, Synthetic Biological Approaches for Optogenetics and Tools for
+              Transcriptional
+              Light-Control in Bacteria. Adv. Biol. 5, e2000256 (2021).
+            </li>
+            <li>
+              X. Li et al., A Single-Component Light Sensor System Allows Highly Tunable and Direct Activation of Gene
+              Expression in Bacterial Cells. Nucleic Acids Res. 48, e33 (2020).
+            </li>
+            <li>
+              P. Bernard, M. Couturier, Cell Killing by the F Plasmid CcdB Protein Involves Poisoning of
+              DNA-Topoisomerase
+              II Complexes. J. Mol. Biol. 226, 735-745 (1992).
+            </li>
+            <li>
+              Muryeti, E. B. Mulyani, E. Sinurat, Adsorption of Carbon Black Using Chitosan in the Deinking Process.
+              Procedia Chem. 17, 106-110 (2015).
+            </li>
           </ol>
         </div>
       </div>
@@ -424,28 +520,6 @@ with new communities by discussing public values and the science behind syntheti
   </div>
 
   <div style="margin-bottom: 100px;"></div>
-  <script>
-    // jQuery to handle the collapse toggle and style changes
-    $(document).ready(function () {
-      $('#accordion-Det .panel-title a').click(function () {
-        var targetId = $(this).attr('href');
-        // Toggle the collapse
-        $(targetId).collapse('toggle');
-
-        // Event for collapse show
-        $(targetId).on('shown.bs.collapse', function () {
-          $(this).prev().find('a').removeClass('collapsed').addClass('expanded');
-        });
-
-        // Event for collapse hide
-        $(targetId).on('hidden.bs.collapse', function () {
-          $(this).prev().find('a').removeClass('expanded').addClass('collapsed');
-        });
-
-        return false; // Prevent the default behavior of the anchor
-      });
-    });
-  </script>
 
 </div>
 

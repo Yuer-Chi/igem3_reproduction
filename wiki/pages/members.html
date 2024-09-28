@@ -5,11 +5,48 @@
 
 <link rel="stylesheet" href="{{ url_for('static', filename = 'css2024/members.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename = 'font/font.css') }}">
+<style>
+    .go-to-attribution {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        /* 字体大小 */
+        color: #6a5e93;
+        /* 文字颜色 */
+        font-weight: bold;
+        /* 字体加粗 */
+        text-decoration: none;
+        /* 去掉下划线 */
+        margin: 50px 0;
+        /* 上下外边距 */
+        position: relative;
+        /* 相对定位用于箭头效果 */
+        transition: color 0.3s ease;
+        /* 颜色渐变效果 */
+    }
+
+    .go-to-attribution img {
+        position: relative;
+        left: 0;
+        width: 10vw;
+        transform: translateX(3vw);
+        transition: transform 0.3s ease;
+    }
+
+    .go-to-attribution:hover {
+        color: #534f7a;
+    }
+
+    .go-to-attribution:hover img {
+        transform: translateX(6vw);
+    }
+</style>
 <!--loading-->
 <div id="loader-wrapper">
     <div id="loader">
         <div class="loader-img">
-            <img src="https://static.igem.wiki/teams/4907/wiki/background/loading.png">
+            <img src="https://static.igem.wiki/teams/5136/load.gif">
         </div>
     </div>
     <div class="loader-section section-left"></div>
@@ -217,7 +254,7 @@
                         </div>
                         <!-- 反面 -->
                         <div class="fan-top"
-                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/zyh-sbqs.jpeg');">
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/yyf-njs.jpeg');">
                             <!-- <div class="character">反面</div>
                             <div class="romaji">B</div> -->
                         </div>
@@ -689,8 +726,8 @@
                         </div>
                     </div>
                 </a>
-                
-            
+
+
             </div>
 
         </div>
@@ -781,7 +818,7 @@
                             </div>
                         </div>
                     </div>
-                </a>            
+                </a>
             </div>
             <div class="row" style="margin-top:20px">
 
@@ -870,12 +907,12 @@
                         </div>
                     </div>
                 </a>
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
 
 
             </div>
@@ -965,12 +1002,12 @@
                         </div>
                     </div>
                 </a>
-                
 
-                
-                
-                
-                
+
+
+
+
+
             </div>
 
         </div>
@@ -1097,5 +1134,25 @@
     </div>
 
 </div>
-<script src="{{ url_for('static', filename = 'js2024/loading.js') }}"></script>
+<div class="container-member" style="min-height: 10vh;justify-content: flex-end;">
+    <a href="{{ url_for('pages', page='attributions') }}" class="go-to-attribution" style="transform: translateX(-7vw);">
+        Go to our attribution
+        <img src="https://static.igem.wiki/teams/5136/parts-table-icon/jt.png" alt="Arrow">
+    </a>
+</div>
+
+<script>
+    $(window).on('load', function () {
+        // 延迟 1 秒后执行以下代码
+        setTimeout(function () {
+            $('body').addClass('loaded');
+
+            // 如果不需要加载文字，可以移除这个元素
+            $('#loader-wrapper .load_title').remove();
+        }, 1000); // 1000 毫秒 = 1 秒
+    });
+
+
+</script>
+<!-- <script src="{{ url_for('static', filename = 'js2024/loading.js') }}"></script> -->
 {% endblock %}

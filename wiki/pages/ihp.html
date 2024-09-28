@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 
-{% block title %}design{% endblock %}
+{% block title %}IHP{% endblock %}
 {% block lead %}Innovative educational tools and outreach activities have the ability to establish a two-way dialogue
 with new communities by discussing public values and the science behind synthetic biology.{% endblock %}
 
@@ -15,7 +15,15 @@ with new communities by discussing public values and the science behind syntheti
 
 
 <div class="container">
-
+    <div id="loader-wrapper">
+        <div id="loader">
+            <div class="loader-img">
+                <img src="https://static.igem.wiki/teams/5136/load.gif">
+            </div>
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
     <!--loading-->
 
     <!--侧边导航栏-->
@@ -30,10 +38,10 @@ with new communities by discussing public values and the science behind syntheti
                     <a href="#section2" class="sidebar-link" data-section="section2">Background</a>
                 </div>
                 <div class="left-bar-right-item">
-                    <a href="#section3" class="sidebar-link" data-section="section3">Project design</a>
+                    <a href="#section3" class="sidebar-link" data-section="section3">Project Design</a>
                 </div>
                 <div class="left-bar-right-item">
-                    <a href="#section4" class="sidebar-link" data-section="section4">Project design improvement</a>
+                    <a href="#section4" class="sidebar-link" data-section="section4">Project Design Improvement</a>
                 </div>
                 <div class="left-bar-right-item">
                     <a href="#section5" class="sidebar-link" data-section="section5">Feedback</a>
@@ -57,12 +65,13 @@ with new communities by discussing public values and the science behind syntheti
                 <div class="myPage-headline">
                     <h1 class="myPage-headline-content">
                         <span style="color: #867a77">.</span>
-                        <span style="color: #483b53;font-family: Aaargh;">Integrated Human Practices</span>
+                        <span style="color: #483b53;font-family: Aaargh;font-size: 50px;">Integrated Human
+                            Practices</span>
                         <span style="color: #867a77">.</span>
                     </h1>
                 </div>
 
-                <!---文字段落--->
+                <!---Overview--->
                 <div class="myPage-paragraph" id="section1">
                     <h2 class="myPage-paragraph-headline-h2">Overview</h2>
                     <!-- 记住这里的h2就是标题 -->
@@ -83,7 +92,7 @@ with new communities by discussing public values and the science behind syntheti
                         full scope of the
                         problem, find effective solutions, and arouse broad public concern.
                     </p>
-                    <h3 class="myPage-paragraph-headline-h3">Investigating the current situation and problems</h3>
+                    <h3 class="myPage-paragraph-headline-h3">1. Investigating the current situation and problems</h3>
                     <p class="myPage-paragraph-content">
                         After discussions with Professor Liang, we recognized the vital role of trees in global climate
                         regulation. Due to their long growth cycles, trees recover slowly after large-scale
@@ -102,19 +111,19 @@ with new communities by discussing public values and the science behind syntheti
                         Thus, our project
                         focuses on developing a <b>green and sustainable method</b> to overcome this problem.
                     </p>
-                    <h3 class="myPage-paragraph-headline-h3">Exploring an unprecedented answer</h3>
+                    <h3 class="myPage-paragraph-headline-h3">2. Exploring an unprecedented answer</h3>
                     <p class="myPage-paragraph-content">
                         To make paper recycling more environmentally friendly and cost-effective, we plan to optimize
                         the industrial waste paper recycling process using synthetic biology techniques. We developed
-                        and refined our project through interviews with experts from both academia and industry. (1)
-                        After consulting with Professor <b>Yang Liulin</b> and <b>Lin Chen</b>, we designed a
+                        and refined our project through interviews with experts from both academia and industry. After
+                        consulting with Professor <b>Yang Liulin</b> and <b>Lin Chen</b>, we designed a
                         multienzyme system
                         consisting of <b>lipase</b>, <b>laccase</b>, and <b>monooxygenase</b> to remove the ink from the
-                        pulp. (2) We
+                        pulp. We
                         consulted with Ms. <b>Zhuang Xiaoyan</b>, and she pointed out that using an autolysis system in
                         industrial applications would require large amounts of expensive inducers, making it
                         cost-prohibitive. She recommended using <b>signal peptides</b> instead, which skip the expensive
-                        protein purification and/or inducers. (3) Based on our enterprise survey, we discovered that
+                        protein purification and/or inducers. Based on our enterprise survey, we discovered that
                         deinking flotation is the preferred method for removing printed ink from paper during the
                         recycling process. However, this method will cause a loss of fiber, thus lowering the recovery
                         rate. To address this issue, we consulted Associate Professor <b>Sha Yong</b>, an expert in
@@ -126,7 +135,7 @@ with new communities by discussing public values and the science behind syntheti
                         refine
                         our research continually.
                     </p>
-                    <h3 class="myPage-paragraph-headline-h3">Arousing broad public concern</h3>
+                    <h3 class="myPage-paragraph-headline-h3">3. Arousing broad public concern</h3>
                     <p class="myPage-paragraph-content">
                         Furthermore, we have actively engaged with the public to <b>raise awareness</b> about recycling.
                         We
@@ -145,7 +154,7 @@ with new communities by discussing public values and the science behind syntheti
 
                 </div>
 
-                <!---插图演示--->
+                <!---Background--->
                 <div class="myPage-paragraph" id="section2">
                     <h2 class="myPage-paragraph-headline-h2">Background</h2>
                     <p class="myPage-paragraph-content">
@@ -181,12 +190,12 @@ with new communities by discussing public values and the science behind syntheti
 
                 </div>
 
-                <!---小标题和小小标题--->
+                <!---Project Design- Investigating the Current Situation and Problems--->
                 <div class="myPage-paragraph" id="section3">
-                    <h2 class="myPage-paragraph-headline-h2">Project design -Investigating the current situation and
-                        problems</h2>
+                    <h2 class="myPage-paragraph-headline-h2">Project Design- Investigating the Current Situation and
+                        Problems</h2>
 
-                    <h3 class="myPage-paragraph-headline-h3">1.Brainstorming</h3>
+                    <h3 class="myPage-paragraph-headline-h3">1. Brainstorming</h3>
                     <p class="myPage-paragraph-content">
                         Based on a preliminary understanding of the relationship between climate crisis and paper
                         manufacturing, our team initiated many brainstorming sessions to discuss the project design.
@@ -211,10 +220,9 @@ with new communities by discussing public values and the science behind syntheti
                         So, we carried out some <b>Human Practices</b> to find answers to our doubts.
                     </p>
 
-                    <h3 class="myPage-paragraph-headline-h3">2.Theoretical and practical investigation</h3>
-                    <h4 class="myPage-paragraph-headline-h4">2.1What important role do forests play in climate
+                    <h3 class="myPage-paragraph-headline-h3">2. Theoretical and Practical Investigation</h3>
+                    <h4 class="myPage-paragraph-headline-h4">2.1 What important role do forests play in climate
                         regulation?</h4>
-                    <!-- <h5 class="myPage-paragraph-headline-h5">小小小标题</h5> -->
                     <p class="myPage-paragraph-content">
                         After searching for information from the literature, we found that forests are vital in
                         regulating the global climate. They absorb large amounts of carbon dioxide, which helps slow
@@ -234,15 +242,12 @@ with new communities by discussing public values and the science behind syntheti
                         and help mitigate the climate crisis.
                     </p>
                     <div class="myPage-paragraph-fig">
-                        <img src="https://static.igem.wiki/teams/5136/ihp/ihp-fig2.png" alt="">
+                        <img src="https://static.igem.wiki/teams/5136/ihp-1/fig-2.png" alt="" style="max-width: 600px;">
                         <div class="myPage-paragraph-fig-description"><b>Fig.2 Members of XMU-China discussed with
                                 Assistant Professor Liang Dan</b>
                         </div>
                     </div>
-                    <h4 class="myPage-paragraph-headline-h4">2.2How does paper production impact the climate and
-                        environment?</h4>
-
-                    <h4 class="myPage-paragraph-headline-h4">2.2How does paper production impact the climate and
+                    <h4 class="myPage-paragraph-headline-h4">2.2 How does paper production impact the climate and
                         environment?</h4>
                     <p class="myPage-paragraph-content">
                         It is known that paper production and consumption require the felling of many trees. In 2023,
@@ -260,12 +265,12 @@ with new communities by discussing public values and the science behind syntheti
                             environmental pollution to address future climate challenges better</b>.
                     </p>
                     <div class="myPage-paragraph-fig">
-                        <img src="https://static.igem.wiki/teams/5136/ihp/ihp-fig3.png" alt="">
+                        <img src="https://static.igem.wiki/teams/5136/ihp-1/fig-3.png" alt="" >
                         <div class="myPage-paragraph-fig-description"><b>Fig.3 Members of XMU-China communicated with
                                 staff of Zhangzhou Municipal Ecology and Environment Bureau</b>
                         </div>
                     </div>
-                    <h4 class="myPage-paragraph-headline-h4">2.3Can paper be recycled?</h4>
+                    <h4 class="myPage-paragraph-headline-h4">2.3 Can paper be recycled?</h4>
                     <p class="myPage-paragraph-content">
                         <b>Of course!</b> We got a clear answer at the Xiamen Low-Value Recyclable Sorting Center. In
                         cities
@@ -289,12 +294,12 @@ with new communities by discussing public values and the science behind syntheti
                         management and positively impacting environment worldwide.
                     </p>
                     <div class="myPage-paragraph-fig">
-                        <img src="https://static.igem.wiki/teams/5136/ihp/ihp-fig4.png" alt="">
+                        <img src="https://static.igem.wiki/teams/5136/ihp-1/fig-4.png" alt="" style="max-width: 700px;">
                         <div class="myPage-paragraph-fig-description"><b>Fig.4 Members of XMU-China communicated with
                                 staff of Xiamen Low-Value Recyclable Sorting Center </b>
                         </div>
                     </div>
-                    <h4 class="myPage-paragraph-headline-h4">2.4How does paper recycling contribute to addressing the
+                    <h4 class="myPage-paragraph-headline-h4">2.4 How does paper recycling contribute to addressing the
                         climate crisis?</h4>
                     <p class="myPage-paragraph-content">
                         We further conducted a field investigation at Quanzhou Nine Dragons Paper Co., Ltd.. The staff
@@ -317,7 +322,7 @@ with new communities by discussing public values and the science behind syntheti
                     <p class="myPage-paragraph-content">
                         (4) Recycle 1 ton of waste paper could reduce the emission of 11.37 tons of carbon dioxide.
                     </p>
-                    <h4 class="myPage-paragraph-headline-h4">2.5What is the current status of paper recycling? What is
+                    <h4 class="myPage-paragraph-headline-h4">2.5 What is the current status of paper recycling? What is
                         the main challenge?</h4>
                     <p class="myPage-paragraph-content">
                         To better understand this issue, we visited the Fuxing Renew able Resources Recycling Store, a
@@ -356,12 +361,12 @@ with new communities by discussing public values and the science behind syntheti
                         contamination.
                     </p>
                     <div class="myPage-paragraph-fig">
-                        <img src="https://static.igem.wiki/teams/5136/ihp/ihp-fig5.png" alt="">
+                        <img src="https://static.igem.wiki/teams/5136/ihp-1/fig-5.png" alt="" style="max-width: 700px;">
                         <div class="myPage-paragraph-fig-description"><b>Fig.5 Members of XMU-China communicated with
                                 relevant staffs of Quanzhou Nine Dragons Paper Co., Ltd.</b>
                         </div>
                     </div>
-                    <h3 class="myPage-paragraph-headline-h3">3.Summary</h3>
+                    <h3 class="myPage-paragraph-headline-h3">3. Summary</h3>
                     <p class="myPage-paragraph-content">
                         After the serious Human Practices with the professor and staff in street waste recycling
                         stations, the government sector, and paper enterprises, we explore the comprehensive information
@@ -378,11 +383,11 @@ with new communities by discussing public values and the science behind syntheti
                     </p>
                 </div>
 
-                <!---超链接的写法--->
+                <!---Project Design Improvement- Exploring an Unprecedented Answer--->
                 <div class="myPage-paragraph" id="section4">
-                    <h2 class="myPage-paragraph-headline-h2">Project design improvement -Exploring an unprecedented
-                        answer</h2>
-                    <h3 class="myPage-paragraph-headline-h3">1.Pulp Deinking</h3>
+                    <h2 class="myPage-paragraph-headline-h2">Project Design Improvement- Exploring an Unprecedented
+                        Answer</h2>
+                    <h3 class="myPage-paragraph-headline-h3">1. Pulp Deinking</h3>
                     <p class="myPage-paragraph-content">
                         To better understand the current state of paper recycling, we visited the Xiamen Renewable
                         Resources Industry Association. The senior staff told us, “Removing the stains, especially ink,
@@ -397,8 +402,8 @@ with new communities by discussing public values and the science behind syntheti
                         climate crisis.
                     </p>
                     <div class="myPage-paragraph-fig">
-                        <img src="https://static.igem.wiki/teams/5136/ihp/ihp-fig6.png" alt="">
-                        <div class="myPage-paragraph-fig-description"><b>Fig.6 Members of XMU-China visited the Xiamen
+                        <img src="https://static.igem.wiki/teams/5136/ihp-2/fig-7.png" alt="" style="max-width: 700px;">
+                        <div class="myPage-paragraph-fig-description"><b>Fig.7 Members of XMU-China visited the Xiamen
                                 Renewable Resources Industry Association</b>
                         </div>
                     </div>
@@ -416,8 +421,8 @@ with new communities by discussing public values and the science behind syntheti
                         design by <b>adding cellulase to the enzyme system</b>.
                     </p>
                     <div class="myPage-paragraph-fig">
-                        <img src="https://static.igem.wiki/teams/5136/ihp/ihp-fig7.png" alt="">
-                        <div class="myPage-paragraph-fig-description"><b>Fig.7 Associate Professor Yang Liulin from the
+                        <img src="https://static.igem.wiki/teams/5136/ihp-2/fig-8.png" alt="" style="max-width: 700px;">
+                        <div class="myPage-paragraph-fig-description"><b>Fig.8 Associate Professor Yang Liulin from the
                                 College of Chemistry and Chemical Engineering at Xiamen University</b>
                         </div>
                     </div>
@@ -433,8 +438,8 @@ with new communities by discussing public values and the science behind syntheti
                         effective variants.
                     </p>
                     <div class="myPage-paragraph-fig">
-                        <img src="https://static.igem.wiki/teams/5136/ihp/ihp-fig8.png" alt="">
-                        <div class="myPage-paragraph-fig-description"><b>Fig.8 Members of XMU-China were talking with
+                        <img src="https://static.igem.wiki/teams/5136/ihp-2/fig-9.png" alt="" style="max-width: 600px;">
+                        <div class="myPage-paragraph-fig-description"><b>Fig.9 Members of XMU-China were talking with
                                 Associate Professor Ling Chen</b>
                         </div>
                     </div>
@@ -455,8 +460,8 @@ with new communities by discussing public values and the science behind syntheti
                         advice, we tested various signal peptides and selected the most effective one.
                     </p>
                     <div class="myPage-paragraph-fig">
-                        <img src="https://static.igem.wiki/teams/5136/ihp/ihp-fig9.png" alt="">
-                        <div class="myPage-paragraph-fig-description"><b>Fig.9 Members of XMU-China discussed with Ms.
+                        <img src="https://static.igem.wiki/teams/5136/ihp-2/fig10.png" alt="" style="max-width: 600px;">
+                        <div class="myPage-paragraph-fig-description"><b>Fig.10 Members of XMU-China discussed with Ms.
                                 Zhuang Xiaoyan</b>
                         </div>
                     </div>
@@ -479,12 +484,12 @@ with new communities by discussing public values and the science behind syntheti
                             of fibers</b>. Upon testing, we observed a significant improvement in the deinking process.
                     </p>
                     <div class="myPage-paragraph-fig">
-                        <img src="https://static.igem.wiki/teams/5136/ihp/ihp-fig10.png" alt="">
-                        <div class="myPage-paragraph-fig-description"><b>Fig.10 Members of XMU-China were talking with
+                        <img src="https://static.igem.wiki/teams/5136/ihp-3/fig11.png" alt="" style="max-width: 600px;">
+                        <div class="myPage-paragraph-fig-description"><b>Fig.11 Members of XMU-China were talking with
                                 Associate Professor Sha Yong</b>
                         </div>
                     </div>
-                    <h3 class="myPage-paragraph-headline-h3">2.Safety</h3>
+                    <h3 class="myPage-paragraph-headline-h3">2. Safety</h3>
                     <p class="myPage-paragraph-content">
                         In previous conversations with staff at Quanzhou Nine Dragons Paper Co., Ltd., we learned that
                         sterilization processes commonly used in enterprises include UV and filtration. However, these
@@ -504,10 +509,10 @@ with new communities by discussing public values and the science behind syntheti
                 </div>
 
 
-                <!--Reference的写法-->
+                <!--Feedback- Arousing Broad Public Concern-->
                 <div class="myPage-paragraph" id="section5">
-                    <h2 class="myPage-paragraph-headline-h2">Feedback -Arousing broad public concern</h2>
-                    <h3 class="myPage-paragraph-headline-h3">1.Communicate with paper mills to evaluate strategy</h3>
+                    <h2 class="myPage-paragraph-headline-h2">Feedback- Arousing Broad Public Concern</h2>
+                    <h3 class="myPage-paragraph-headline-h3">1. Communicate with Paper Mills to Evaluate Strategy</h3>
                     <p class="myPage-paragraph-content">
                         At the end of the season, we revisited Quanzhou Nine Dragons Paper Co., Ltd. to present our
                         proposal and seek feedback. They evaluated our approach based on compatibility, treatment
@@ -521,11 +526,35 @@ with new communities by discussing public values and the science behind syntheti
                             highlight the advantages of cross-disciplines in solving practical problems.</b>
                     </p>
                     <div class="myPage-paragraph-fig">
-                        <img src="https://static.igem.wiki/teams/5136/ihp/ihp-fig11.jpg" alt="">
-                        <div class="myPage-paragraph-fig-description"><b>Fig.11 Members of XMU-China revisited Quanzhou
+                        <img src="https://static.igem.wiki/teams/5136/ihp-3/fig13.jpg" alt="">
+                        <div class="myPage-paragraph-fig-description"><b>Fig.13 Members of XMU-China revisited Quanzhou
                                 Nine Dragons Paper Co., Ltd.</b>
                         </div>
                     </div>
+                    <h3 class="myPage-paragraph-headline-h3">Raise Public Awareness of Environmental Protection</h3>
+                    <p class="myPage-paragraph-content">
+                        During our discussions with the staff at Xiamen Low-Value Recyclable Sorting Center, we found
+                        that the public needs more awareness about the importance of waste paper sorting. We organized
+                        educational activities at the Xiamen Science and Technology Museum and Yanwu Primary School to
+                        arouse broad public concern. During this science popularization education, we introduced the
+                        development and applications of synthetic biology and highlighted the importance of paper
+                        recycling. <b>We also engaged children with interactive games to spark their interest in
+                            synthetic
+                            biology and encouraged the public to pay more attention to the recycling of paper and other
+                            renewable resources</b>. Additionally, we posted relevant articles on social media to
+                        encourage more
+                        people to participate in environmental protection efforts, contributing to addressing the
+                        climate crisis.
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp-4/fig14.jpg" alt="">
+                        <div class="myPage-paragraph-fig-description"><b>Fig.14 Members of XMU-China promoted synthetic biology to the public</b>
+                        </div>
+                    </div>
+                    <h3 class="myPage-paragraph-headline-h3">Life Cycle Assessment</h3>
+                    <p class="myPage-paragraph-content">
+                        在完成项目后......
+                    </p>
                 </div>
 
 

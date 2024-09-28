@@ -9,7 +9,15 @@
 <script src="{{ url_for('static', filename = 'js2024/jquery-3.5.1.min.js') }}"></script>
 <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
 
-
+<div id="loader-wrapper">
+  <div id="loader">
+      <div class="loader-img">
+          <img src="https://static.igem.wiki/teams/5136/load.gif">
+      </div>
+  </div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
 <div class="container">
 
   <!--loading-->
@@ -54,7 +62,7 @@
 
         <!---文字段落--->
         <div class="myPage-paragraph" id="section1">
-          <h2 class="myPage-paragraph-headline-h2">Commom Experiment</h2>
+          <h2 class="myPage-paragraph-headline-h2">Commom Experiment</h2><br><br>
           <h3 class="myPage-paragraph-headline-h3">molecular cloning handbook</h3>
           <div id="accordion-Det" class="accordion">
             <div class="panel">
@@ -86,7 +94,7 @@
 
         <!---插图演示--->
         <div class="myPage-paragraph" id="section2">
-          <h2 class="myPage-paragraph-headline-h2">Enzymatic Deinking</h2>
+          <h2 class="myPage-paragraph-headline-h2">Enzymatic Deinking</h2><br><br>
           <div id="accordion-Det" class="accordion">
             <div class="myPage-paragraph-headline-h3 expstep_name">Protein Purification</div>
             <div class="panel">
@@ -426,7 +434,7 @@
 
         <!---小标题和小小标题--->
         <div class="myPage-paragraph" id="section3">
-          <h2 class="myPage-paragraph-headline-h2">Harmless Treatment of Wastewater</h2>
+          <h2 class="myPage-paragraph-headline-h2">Harmless Treatment of Wastewater</h2><br><br>
           <div id="accordion-Det" class="accordion">
             <div class="myPage-paragraph-headline-h3 expstep_name">Lysis Efficiency Measurement of Autolysis System
             </div>

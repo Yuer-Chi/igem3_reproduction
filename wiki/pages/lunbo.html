@@ -10,8 +10,111 @@
     <link rel="stylesheet" href="{{ url_for('static', filename = 'css2024/members.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename = 'font/font.css') }}">
 </head>
+<style>
+    .chromeframe {
+        margin: 0.2em 0;
+        background: #ccc;
+        color: #000;
+        padding: 0.2em 0;
+    }
+
+    #loader-wrapper {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999999999999;
+    }
+
+    #loader {
+        display: grid;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1001;
+    }
+
+    .loader-img {
+        display: grid;
+    }
+
+    /*给loader*/
+    .loader-img::before {
+        content: '';
+        width: 0;
+    }
+
+    .loader-img img {
+        margin: 0 auto;
+        max-width: 50%;
+    }
+
+
+    #loader-wrapper .loader-section {
+        position: fixed;
+        top: 0;
+        width: 51%;
+        height: 100%;
+        background: #f8f0de;
+        z-index: 1000;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    #loader-wrapper .loader-section.section-left {
+        left: 0;
+    }
+
+    #loader-wrapper .loader-section.section-right {
+        right: 0;
+    }
+
+    /* Loaded */
+    .loaded #loader-wrapper .loader-section.section-left {
+        height: 100%;
+        -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        transform: translateX(-100%);
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    .loaded #loader-wrapper .loader-section.section-right {
+        height: 100%;
+        -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        transform: translateX(100%);
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+        transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+
+    .loaded #loader {
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+    }
+
+    .loaded #loader-wrapper {
+        visibility: hidden;
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+        -webkit-transition: all 0.3s 1s ease-out;
+        transition: all 0.3s 1s ease-out;
+    }
+</style>
 
 <body>
+    <div id="loader-wrapper">
+        <div id="loader">
+            <div class="loader-img">
+                <img src="https://static.igem.wiki/teams/5136/load.gif">
+            </div>
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
     <button class="back-button" onclick="window.history.back();"></button>
     <div class="lunbo">
         <i class="iconfont icon-arrow-up-bold" id="up-btn" onclick="slideToPrev()">
@@ -29,7 +132,7 @@
                     <div class="photo-back"
                         style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/kyh-hh.jpeg');">
                     </div>
-                    <p class="card-name-yishu"  >The Empress</p>
+                    <p class="card-name-yishu">The Empress</p>
                 </div>
                 <div class="jianjie">
                     <div class="card-title">
@@ -51,7 +154,7 @@
                     <div class="photo-back"
                         style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/xcx-xx.jpeg');">
                     </div>
-                    <p class="card-name-yishu"  >The Star</p>
+                    <p class="card-name-yishu">The Star</p>
                 </div>
                 <div class="jianjie">
                     <div class="card-title">
@@ -73,7 +176,7 @@
                     <div class="photo-back"
                         style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/lzm-mss.jpeg');">
                     </div>
-                    <p class="card-name-yishu"  >The Magician</p>
+                    <p class="card-name-yishu">The Magician</p>
                 </div>
                 <div class="jianjie">
                     <div class="card-title">
@@ -95,7 +198,7 @@
                     <div class="photo-back"
                         style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/mzy-ddr.jpeg');">
                     </div>
-                    <p class="card-name-yishu"  >The Hanged Man
+                    <p class="card-name-yishu">The Hanged Man
                     </p>
                 </div>
                 <div class="jianjie">
@@ -118,7 +221,7 @@
                     <div class="photo-back"
                         style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/lj-myzl.jpeg');">
                     </div>
-                    <p class="card-name-yishu"  >The Wheel of
+                    <p class="card-name-yishu">The Wheel of
                         Fortune</p>
                 </div>
                 <div class="jianjie">
@@ -141,7 +244,7 @@
                     <div class="photo-back"
                         style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/yyf-njs.jpeg');">
                     </div>
-                    <p class="card-name-yishu"  >The High
+                    <p class="card-name-yishu">The High
                         Priestess</p>
                 </div>
                 <div class="jianjie">
@@ -164,7 +267,7 @@
                     <div class="photo-back"
                         style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/zxx-gt.jpeg');">
                     </div>
-                    <p class="card-name-yishu"  >The Tower</p>
+                    <p class="card-name-yishu">The Tower</p>
                 </div>
                 <div class="jianjie">
                     <div class="card-title">
@@ -186,7 +289,7 @@
                     <div class="photo-back"
                         style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/jrh-ty.jpeg');">
                     </div>
-                    <p class="card-name-yishu"  >The Sun</p>
+                    <p class="card-name-yishu">The Sun</p>
                 </div>
                 <div class="jianjie">
                     <div class="card-title">
@@ -208,7 +311,7 @@
                     <div class="photo-back"
                         style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/lxr-sp.jpeg');">
                     </div>
-                    <p class="card-name-yishu"  >Judgement</p>
+                    <p class="card-name-yishu">Judgement</p>
                 </div>
                 <div class="jianjie">
                     <div class="card-title">
@@ -230,7 +333,7 @@
                     <div class="photo-back"
                         style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/crq-ss.jpeg');">
                     </div>
-                    <p class="card-name-yishu"  >Death</p>
+                    <p class="card-name-yishu">Death</p>
                 </div>
                 <div class="jianjie">
                     <div class="card-title">
@@ -252,7 +355,7 @@
                     <div class="photo-back"
                         style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/fmz-qzgw.jpeg');">
                     </div>
-                    <p class="card-name-yishu"  >King of Wands</p>
+                    <p class="card-name-yishu">King of Wands</p>
                 </div>
                 <div class="jianjie">
                     <div class="card-title">
@@ -274,7 +377,7 @@
                     <div class="photo-back"
                         style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/zyh-sbqs.jpeg');">
                     </div>
-                    <p class="card-name-yishu"  >Knight of Cups
+                    <p class="card-name-yishu">Knight of Cups
                     </p>
                 </div>
                 <div class="jianjie">
@@ -297,7 +400,7 @@
                     <div class="photo-back"
                         style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/zy-yl.jpeg');">
                     </div>
-                    <p class="card-name-yishu"  >The Moon</p>
+                    <p class="card-name-yishu">The Moon</p>
                 </div>
                 <div class="jianjie">
                     <div class="card-title">
@@ -319,7 +422,7 @@
                     <div class="photo-back"
                         style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/wjw-lr.jpeg');">
                     </div>
-                    <p class="card-name-yishu"  >The Lovers</p>
+                    <p class="card-name-yishu">The Lovers</p>
                 </div>
                 <div class="jianjie">
                     <div class="card-title">
@@ -342,6 +445,8 @@
             <div id="clock-table"></div>
         </div>
     </div>
+    <script src="{{ url_for('static', filename = 'js2024/jquery-3.5.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js2024/loading.js') }}"></script>
     <script>
 
         let imageUrls = [
