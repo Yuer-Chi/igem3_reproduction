@@ -84,7 +84,7 @@
 
  
   .follow{
-      width: 30%;
+      width: 35%;
       position: relative;
       right: -48%;
       top: -5vh;
@@ -93,7 +93,7 @@
   }
 
   .follow img{
-      height: 9vh;
+      width: 7vw;
       margin-top: 3vh;
       margin-left: 1vh;
   }
@@ -104,20 +104,21 @@
   }
 
   .follow img:hover{
-      height: 10vh;
+      width: 8vw;
       transition: all 0.3s;
   }
 
   .follow .logo{
       position: relative;
       left: 17%;
+      width: 30vw;
   }
 
   .claim{
       position: absolute;
       bottom: 0;
-      
       width: 100%;
+      margin-top: 3vh;
   }
 
   .claim p{
