@@ -232,9 +232,9 @@
                 </div>
             </div>
 
-            
 
-            
+
+
 
             <div class="card">
                 <div class="photo-wrapper">
@@ -369,7 +369,7 @@
                 </div>
             </div>
 
-            
+
             <div class="card">
                 <div class="photo-wrapper">
                     <div class="photo-front"
@@ -455,13 +455,13 @@
             "https://static.igem.wiki/teams/5136/member-tlp-1/xcx-xx.jpeg",
             "https://static.igem.wiki/teams/5136/member-tlp-1/zy-yl.jpeg",
             "https://static.igem.wiki/teams/5136/member-tlp-2/wjw-lr.jpeg",
-            "https://static.igem.wiki/teams/5136/member-tlp-1/zxx-gt.jpeg",          
+            "https://static.igem.wiki/teams/5136/member-tlp-1/zxx-gt.jpeg",
             "https://static.igem.wiki/teams/5136/member-tlp-1/jrh-ty.jpeg",
             "https://static.igem.wiki/teams/5136/member-tlp-1/lxr-sp.jpeg",
             "https://static.igem.wiki/teams/5136/member-tlp-1/yyf-njs.jpeg",
             "https://static.igem.wiki/teams/5136/member-tlp-1/crq-ss.jpeg",
             "https://static.igem.wiki/teams/5136/member-tlp-2/fmz-qzgw.jpeg",
-            "https://static.igem.wiki/teams/5136/member-tlp-2/zyh-sbqs.jpeg",           
+            "https://static.igem.wiki/teams/5136/member-tlp-2/zyh-sbqs.jpeg",
             "https://static.igem.wiki/teams/5136/member-tlp-1/lzm-mss.jpeg",
             "https://static.igem.wiki/teams/5136/member-tlp-1/mzy-ddr.jpeg",
             "https://static.igem.wiki/teams/5136/member-tlp-1/lj-myzl.jpeg",
@@ -551,6 +551,16 @@
             // 根据角度旋转时钟表盘
             clock.style.transform = `rotate(${degree}deg)`;
         }
+
+        window.onload = function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const slides = parseInt(urlParams.get('slides')) || 0; // 默认值为0
+
+            for (let i = 0; i < slides; i++) {
+                slideToNext();
+            }
+        };
+
     </script>
 </body>
 
