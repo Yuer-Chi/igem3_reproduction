@@ -59,24 +59,27 @@ what has been done by others.{% endblock %}
 
         <!---文字段落--->
         <div class="myPage-paragraph" id="section1">
-          <h2 class="myPage-paragraph-headline-h2">Attribution form</h2>
+          <h2 class="myPage-paragraph-headline-h2" style="margin-bottom: 50px;">Attribution form</h2>
           <!-- 记住这里的h2就是标题 -->
           <div class="myPage-paragraph-content">
-            <script type="text/javascript">
-              // Listen to size change and update form height
-              window.addEventListener("message", function (e) {
-                if (e.origin === "https://teams.igem.org") {
-                  const { type, data } = JSON.parse(e.data);
-                  if (type === "igem-attribution-form") {
-                    const element = document.getElementById("igem-attribution-form");
-                    element.style.height = `${data + 100}px`;
+            <div class="row mt-4">
+              <script type="text/javascript">
+                // Listen to size change and update form height
+                window.addEventListener("message", function (e) {
+                  if (e.origin === "https://teams.igem.org") {
+                    const { type, data } = JSON.parse(e.data);
+                    if (type === "igem-attribution-form") {
+                      const element = document.getElementById("igem-attribution-form");
+                      element.style.height = `${data + 100}px`;
+                    }
                   }
-                }
-              });
-            </script>
-            <iframe style='width: 100%' id="igem-attribution-form" src="https://teams.igem.org/wiki/5136/attributions">
-              >
-            </iframe>
+                });
+              </script>
+              <iframe style='border: none; width: 100%' id="igem-attribution-form" src="https://teams.igem.org/wiki/5136/attributions">
+                >
+              </iframe>
+            </div>
+            
           </div>
 
         </div>
