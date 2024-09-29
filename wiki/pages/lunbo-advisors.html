@@ -564,6 +564,15 @@
             // 根据角度旋转时钟表盘
             clock.style.transform = `rotate(${degree}deg)`;
         }
+
+        window.onload = function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const slides = parseInt(urlParams.get('slides')) || 0; // 默认值为0
+
+            for (let i = 0; i < slides; i++) {
+                slideToNext();
+            }
+        };
     </script>
 </body>
 
