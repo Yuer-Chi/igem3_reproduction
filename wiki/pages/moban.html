@@ -15,7 +15,15 @@ with new communities by discussing public values and the science behind syntheti
 
 
 <div class="container">
-
+  <div id="loader-wrapper">
+    <div id="loader">
+      <div class="loader-img">
+        <img src="https://static.igem.wiki/teams/5136/load-new.gif">
+      </div>
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
   <!--loading-->
 
   <!--侧边导航栏-->
@@ -204,7 +212,7 @@ with new communities by discussing public values and the science behind syntheti
           </ol>
         </div>
 
-        
+
       </div>
     </div>
 
@@ -214,25 +222,25 @@ with new communities by discussing public values and the science behind syntheti
   <script>
     // jQuery to handle the collapse toggle and style changes
     $(document).ready(function () {
-        $('#accordion-Det .panel-title a').click(function () {
-            var targetId = $(this).attr('href');
-            // Toggle the collapse
-            $(targetId).collapse('toggle');
+      $('#accordion-Det .panel-title a').click(function () {
+        var targetId = $(this).attr('href');
+        // Toggle the collapse
+        $(targetId).collapse('toggle');
 
-            // Event for collapse show
-            $(targetId).on('shown.bs.collapse', function () {
-                $(this).prev().find('a').removeClass('collapsed').addClass('expanded');
-            });
-
-            // Event for collapse hide
-            $(targetId).on('hidden.bs.collapse', function () {
-                $(this).prev().find('a').removeClass('expanded').addClass('collapsed');
-            });
-
-            return false; // Prevent the default behavior of the anchor
+        // Event for collapse show
+        $(targetId).on('shown.bs.collapse', function () {
+          $(this).prev().find('a').removeClass('collapsed').addClass('expanded');
         });
+
+        // Event for collapse hide
+        $(targetId).on('hidden.bs.collapse', function () {
+          $(this).prev().find('a').removeClass('expanded').addClass('collapsed');
+        });
+
+        return false; // Prevent the default behavior of the anchor
+      });
     });
-</script>
+  </script>
 
 </div>
 
