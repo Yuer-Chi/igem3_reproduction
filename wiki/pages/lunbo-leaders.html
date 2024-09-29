@@ -117,10 +117,10 @@
     <button class="back-button" onclick="window.history.back();"></button>
 
     <div class="lunbo">
-        <i class="iconfont icon-arrow-up-bold" id="up-btn" onclick="slideToPrev()">
+        <i class="iconfont icon-arrow-up-bold" id="up-btn" onclick="slideToPrev()" style="display: none;">
             <div style="transform: rotate(-90deg);">&gt</div>
         </i>
-        <i class="iconfont icon-arrow-down-bold" id="down-btn" onclick="slideToNext()">
+        <i class="iconfont icon-arrow-down-bold" id="down-btn" onclick="slideToNext()" style="display: block;">
             <div style="transform: rotate(-90deg);">&lt</div>
         </i>
 
@@ -272,6 +272,8 @@
             });
             // 调用旋转时钟表盘函数
             clockRotate(offset * 24);
+            document.getElementById("up-btn").style.display = (offset === maxOffset) ? "none" : "block";
+            document.getElementById("down-btn").style.display = "block";
         }
         // 向后切换卡片
         function slideToNext() {
@@ -280,6 +282,8 @@
                 slide.style.transform = `translateY(${offset * 100}%)`;
             });
             clockRotate(offset * 24);
+            document.getElementById("down-btn").style.display = (offset === minOffset) ? "none" : "block";
+            document.getElementById("up-btn").style.display = "block";
         }
         // 旋转时钟表盘
         function clockRotate(degree) {
