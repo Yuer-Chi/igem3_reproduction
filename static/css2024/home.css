@@ -99,7 +99,7 @@ position: relative;
 height: 80vh;
 width: 100vw;
 opacity: 0;
-transition: opacity 0.5s ease, transform 0.5s ease;
+transition: opacity 1s ease, transform 1s ease;
 }
 
 .page-container.visible {
