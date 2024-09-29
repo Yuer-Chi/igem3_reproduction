@@ -1,0 +1,239 @@
+{% extends "layout.html" %}
+
+{% block title %}SOP{% endblock %}
+{% block lead %}Innovative educational tools and outreach activities have the ability to establish a two-way dialogue
+with new communities by discussing public values and the science behind synthetic biology.{% endblock %}
+
+{% block page_content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css2024/experiments.css') }}">
+
+<script src="{{ url_for('static', filename = 'js2024/jquery-3.5.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
+
+
+
+
+<div class="container">
+
+  <!--loading-->
+
+  <!--侧边导航栏-->
+  <div class="myScrollspy">
+    <!-- 文字导航 -->
+    <div class="left-bar">
+      <div class="left-bar-right">
+        <div class="left-bar-right-item">
+          <a href="#section1" class="sidebar-link" data-section="section1">文字段落</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section2" class="sidebar-link" data-section="section2">插图演示</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section3" class="sidebar-link" data-section="section3">小标题和小小标题</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section4" class="sidebar-link" data-section="section4">超链接的写法</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section5" class="sidebar-link" data-section="section5">reference的写法</a>
+        </div>
+      </div>
+    </div>
+    <!-- 底部插图 -->
+    <div class="left-bar-bg">
+      <img src="https://static.igem.wiki/teams/5136/cbl-img.png" alt="">
+    </div>
+    <!-- 进度条 -->
+    <div class="scroll-bar"></div>
+  </div>
+
+  <!--以下就是正文段落-->
+  <div class="myPage">
+    <div class="myPage-main">
+      <div style="height: 100px;position:relative;"></div>
+      <div class="myPage-main-content">
+        <!---大标题--->
+        <div class="myPage-headline">
+          <h1 class="myPage-headline-content">
+            <span style="color: #867a77">.</span>
+            <span style="color: #483b53;font-family: Aaargh;">这个页面的大标题</span>
+            <span style="color: #867a77">.</span>
+          </h1>
+        </div>
+
+        <!---文字段落--->
+        <div class="myPage-paragraph" id="section1">
+          <h2 class="myPage-paragraph-headline-h2">1.标题1</h2>
+          <!-- 记住这里的h2就是标题 -->
+          <p class="myPage-paragraph-content">
+            开始文字，若需要分段，请复制这个class=myPage-paragraph-content的p标签。
+          </p>
+          <p class="myPage-paragraph-content">
+            接上面的分段，就像这样，同时如果有需要有<b>粗体</b>或者<i>斜体</i>，请记得加上b和i的标签。
+          </p>
+
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/11.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 1</b>
+            </div>
+          </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/22.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 2</b>
+            </div>
+          </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5135/33.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 3</b>
+            </div>
+          </div>
+        </div>
+
+        <!---插图演示--->
+        <div class="myPage-paragraph" id="section2">
+          <h2 class="myPage-paragraph-headline-h2">2.标题2</h2>
+          <p class="myPage-paragraph-content">
+            这里就是展示一下如何插入图片，图片的格式就是一张图片，可以说png，jpg等等格式都没问题。
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/4907/wiki/description/description-fig1.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 1这里就是写备注就好了</b>
+            </div>
+          </div>
+          <h3 class="myPage-paragraph-headline-h3">5.2 还是小标题</h3>
+          <h4 class="myPage-paragraph-headline-h4">1. 小小标题</h4>
+          <p class="myPage-paragraph-content">
+            <a style="font-weight: bolder;text-decoration: none;" href="https://www.baidu.com/">百度</a>
+            就是这种格式。
+          </p>
+        </div>
+
+        <!---小标题和小小标题--->
+        <div class="myPage-paragraph" id="section3">
+          <h2 class="myPage-paragraph-headline-h2">3.标题3</h2>
+
+          <h3 class="myPage-paragraph-headline-h3">5.1 小标题</h3>
+          <p class="myPage-paragraph-content">
+            这里展示一下小标题，，页面中的标题用的是h2，小标题用的是h3，小小标题用的是h4。
+          </p>
+
+          <h3 class="myPage-paragraph-headline-h3">5.2 还是小标题</h3>
+          <h4 class="myPage-paragraph-headline-h4">1. 小小标题</h4>
+          <p class="myPage-paragraph-content">
+            比如这里就有小小标题
+          </p>
+          <h4 class="myPage-paragraph-headline-h4">2. 另一个小小标题</h4>
+          <p class="myPage-paragraph-content">
+            同上
+          </p>
+
+        </div>
+
+        <!---超链接的写法--->
+        <div class="myPage-paragraph" id="section4">
+          <h2 class="myPage-paragraph-headline-h2">4.标题4</h2>
+          <p class="myPage-paragraph-content">
+            这里主要是展示一下超链接要怎么用，像接下来这个 <a style="font-weight: bolder;text-decoration: none;"
+              href="{{ url_for('pages', page='hardware') }}">Hardware</a>,
+            就是跳转到我们网页的其他页面的格式，如果我跳转到其他网页的话比如<a style="font-weight: bolder;text-decoration: none;"
+              href="https://www.baidu.com/">百度</a>的话,
+            就是这种格式。
+          </p>
+
+          <div id="accordion-Det" class="accordion">
+            <div class="myPage-paragraph-headline-h3 expstep_name">CspA mRNA Experiment</div>
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading51">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse51" aria-expanded="true"
+                    aria-controls="collapse51">
+                    Requirements
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse51" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>● LB liquid medium<br>
+                    ● Tecan Infinite M200 microplate reader<br>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading52">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse52" aria-expanded="false"
+                    aria-controls="collapse52">
+                    Protocol
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse52" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>1. Revive the transformed bacteria by incubating them at 37 °C with shaking at 200
+                    <i>r.p.m.</i> for 12 hours.<br>
+                    2. Inoculate the revived bacteria at 2% concentration into 10 mL of LB medium and shake
+                    at 37 °C for around 2 hours until the OD<sub>600</sub> values reaches 0.6-0.8.<br>
+                    3. Incubate the above bacteria separately at 4 °C, 15 °C, and 37 °C, each with shaking at
+                    200 r.p.m. .<br>
+                    4. Use Tecan Infinite M200 microplate reader to measure the green fluorescence intensity
+                    and
+                    OD<sub>600</sub> values at 2 hours, 4 hours, and 6 hours.<br>
+                    <em><small>Note: Excitation wavelength: 488 <i>nm</i>, Emission wavelength: 530
+                        <i>nm</i>.</small></em><br>
+                    5. Calculate the ratio of green fluorescence intensity to OD<sub>600</sub> data.<br>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+        <!--Reference的写法-->
+        <div class="myPage-paragraph" id="section5">
+          <h2 class="myPage-paragraph-headline-h2">5.标题5</h2>
+          <ol class="myPage-paragraph-reference">
+            <li>最后就是reference的部分</li>
+            <li>写几个ref就是写几个li标签</li>
+            <li>只要注意用的是li标签就好了</li>
+          </ol>
+        </div>
+
+        
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-bottom: 100px;"></div>
+  <script>
+    // jQuery to handle the collapse toggle and style changes
+    $(document).ready(function () {
+        $('#accordion-Det .panel-title a').click(function () {
+            var targetId = $(this).attr('href');
+            // Toggle the collapse
+            $(targetId).collapse('toggle');
+
+            // Event for collapse show
+            $(targetId).on('shown.bs.collapse', function () {
+                $(this).prev().find('a').removeClass('collapsed').addClass('expanded');
+            });
+
+            // Event for collapse hide
+            $(targetId).on('hidden.bs.collapse', function () {
+                $(this).prev().find('a').removeClass('expanded').addClass('collapsed');
+            });
+
+            return false; // Prevent the default behavior of the anchor
+        });
+    });
+</script>
+
+</div>
+
+{% endblock %}
