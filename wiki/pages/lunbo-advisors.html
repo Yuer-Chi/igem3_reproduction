@@ -109,7 +109,7 @@
     <div id="loader-wrapper">
         <div id="loader">
             <div class="loader-img">
-                <img src="https://static.igem.wiki/teams/5136/load.gif">
+                <img src="https://static.igem.wiki/teams/5136/load-new.gif">
             </div>
         </div>
         <div class="loader-section section-left"></div>
@@ -117,10 +117,10 @@
     </div>
     <button class="back-button" onclick="window.history.back();"></button>
     <div class="lunbo">
-        <i class="iconfont icon-arrow-up-bold" id="up-btn" onclick="slideToPrev()">
+        <i class="iconfont icon-arrow-up-bold" id="up-btn" onclick="slideToPrev()" style="display: none;">
             <div style="transform: rotate(-90deg);">&gt</div>
         </i>
-        <i class="iconfont icon-arrow-down-bold" id="down-btn" onclick="slideToNext()">
+        <i class="iconfont icon-arrow-down-bold" id="down-btn" onclick="slideToNext()" style="display: block;">
             <div style="transform: rotate(-90deg);">&lt</div>
         </i>
         <div id="content">
@@ -546,6 +546,8 @@
             });
             // 调用旋转时钟表盘函数
             clockRotate(offset * 24);
+            document.getElementById("up-btn").style.display = (offset === maxOffset) ? "none" : "block";
+            document.getElementById("down-btn").style.display = "block";
         }
         // 向后切换卡片
         function slideToNext() {
@@ -554,12 +556,23 @@
                 slide.style.transform = `translateY(${offset * 100}%)`;
             });
             clockRotate(offset * 24);
+            document.getElementById("down-btn").style.display = (offset === minOffset) ? "none" : "block";
+            document.getElementById("up-btn").style.display = "block";
         }
         // 旋转时钟表盘
         function clockRotate(degree) {
             // 根据角度旋转时钟表盘
             clock.style.transform = `rotate(${degree}deg)`;
         }
+
+        window.onload = function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const slides = parseInt(urlParams.get('slides')) || 0; // 默认值为0
+
+            for (let i = 0; i < slides; i++) {
+                slideToNext();
+            }
+        };
     </script>
 </body>
 

@@ -6,6 +6,10 @@
 <link rel="stylesheet" href="{{ url_for('static', filename = 'css2024/members.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename = 'font/font.css') }}">
 <style>
+    .vjs-poster {
+        background-image: url('https://static.igem.wiki/teams/5136/notebook/new.png');
+    }
+
     .go-to-attribution {
         display: flex;
         justify-content: center;
@@ -46,7 +50,7 @@
 <div id="loader-wrapper">
     <div id="loader">
         <div class="loader-img">
-            <img src="https://static.igem.wiki/teams/5136/load.gif">
+            <img src="https://static.igem.wiki/teams/5136/load-new.gif">
         </div>
     </div>
     <div class="loader-section section-left"></div>
@@ -388,15 +392,16 @@
 
 </div>
 <div class="container-member" style="flex-direction: column;">
-    <div class="pv-text">This is the video title</div> <!-- 添加文字元素 -->
+    <div class="pv-text">Welcome to XMU-China</div> <!-- 添加文字元素 -->
     <div class="pv">
         <div class="video-container">
             <!-- <iframe id="videoFrame" title="XMU-China: Final (2023) [English]" width="560" height="315"
                 src="https://video.igem.org/videos/embed/09a9bcc3-a354-456d-826e-2dae27645d5d?title=0&amp;warningTitle=0"
                 frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe> -->
-            <iframe id="videoFrame" title="XMU-China: Team members introduction (2024) [English]" width="560" height="315"
-                src="https://video.igem.org/videos/embed/11bc25d2-e547-46d8-9e40-f573d28a6620" frameborder="0"
-                allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+            <iframe id="videoFrame" title="XMU-China: Team members introduction (2024) [English]" width="560"
+                height="315" src="https://video.igem.org/videos/embed/11bc25d2-e547-46d8-9e40-f573d28a6620"
+                frameborder="0" allowfullscreen=""
+                sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
         </div>
     </div>
     <div class="corner-image left-corner"></div>
@@ -417,7 +422,7 @@
         <div class="grid-pin">
             <!-- 行元素 -->
             <div class="row" style="margin-top:20px">
-                <a href="{{ url_for('pages', page='lunbo-leaders') }}">
+                <a href="{{ url_for('pages', page='lunbo-leaders') }}?slides=0">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(-4deg);">
                         <div class="pro-card-pin" style="width: 210px;height: 280px;">
                             <div class="zheng-body"
@@ -435,7 +440,7 @@
                     </div>
                 </a>
 
-                <a href="{{ url_for('pages', page='lunbo-leaders') }}">
+                <a href="{{ url_for('pages', page='lunbo-leaders') }}?slides=1">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(6deg);">
                         <div class="pro-card-pin" style="width: 210px;height: 280px;">
                             <div class="zheng-body"
@@ -478,7 +483,7 @@
         <div class="grid-pin">
             <!-- 行元素 -->
             <div class="row" style="margin-top:20px">
-                <a href="{{ url_for('pages', page='lunbo') }}">
+                <a href="{{ url_for('pages', page='lunbo') }}?slides=0">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(-4deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
@@ -497,7 +502,7 @@
                 </a>
 
                 <!-- <a href="{{ url_for('pages', page='lunbo') }}"></a> -->
-                <a href="{{ url_for('pages', page='lunbo') }}">
+                <a href="{{ url_for('pages', page='lunbo') }}?slides=1">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(6deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
@@ -514,83 +519,41 @@
                         </div>
                     </div>
                 </a>
-                <a href="{{ url_for('pages', page='lunbo') }}">
+                <a href="{{ url_for('pages', page='lunbo') }}?slides=2">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(-9deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
-                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/lzm-mss.jpeg');">
-                                <!-- <div class="character">魔术师</div>
-                                <div class="romaji">刘子墨</div> -->
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/zy-yl.jpeg');">
+                                <!-- <div class="character">月亮</div>
+                                <div class="romaji">章艺</div> -->
                             </div>
                             <!-- 反面 -->
                             <div class="fan-body"
-                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/lzm.jpeg');">
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/zy.jpeg');">
                                 <!-- <div class="character">反面</div>
                                 <div class="romaji">B</div> -->
                             </div>
                         </div>
                     </div>
                 </a>
-                <a href="{{ url_for('pages', page='lunbo') }}">
+                <a href="{{ url_for('pages', page='lunbo') }}?slides=3">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(3deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
-                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/mzy-ddr.jpeg');">
-                                <!-- <div class="character">倒吊人</div>
-                                <div class="romaji">莫正杨</div> -->
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/wjw-lr.jpeg');">
+                                <!-- <div class="character">恋人</div>
+                                <div class="romaji">王婧雯</div> -->
                             </div>
                             <!-- 反面 -->
                             <div class="fan-body"
-                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/mzy.jpeg');">
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/wjw.jpeg');">
                                 <!-- <div class="character">反面</div>
                                 <div class="romaji">B</div> -->
                             </div>
                         </div>
                     </div>
                 </a>
-                <a href="{{ url_for('pages', page='lunbo') }}">
-                    <div class="pro-card-wrapper-pin" style="transform: rotate(-4deg)">
-                        <div class="pro-card-pin">
-                            <div class="zheng-body"
-                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/lj-myzl.jpeg');">
-                                <!-- <div class="character">命运之轮</div>
-                                <div class="romaji">李佳</div> -->
-                            </div>
-                            <!-- 反面 -->
-                            <div class="fan-body"
-                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/lj.jpeg');">
-                                <!-- <div class="character">反面</div>
-                                <div class="romaji">B</div> -->
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-
-
-
-
-            </div>
-            <div class="row" style="margin-top:20px">
-
-                <a href="{{ url_for('pages', page='lunbo') }}">
-                    <div class="pro-card-wrapper-pin" style="transform: rotate(10deg)">
-                        <div class="pro-card-pin">
-                            <div class="zheng-body"
-                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/yyf-njs.jpeg');">
-                                <!-- <div class="character">女祭司</div>
-                                <div class="romaji">尹艺霏</div> -->
-                            </div>
-                            <!-- 反面 -->
-                            <div class="fan-body"
-                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/yyf.jpeg');">
-                                <!-- <div class="character">反面</div>
-                                <div class="romaji">B</div> -->
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="{{ url_for('pages', page='lunbo') }}">
+                <a href="{{ url_for('pages', page='lunbo') }}?slides=4">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(-3deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
@@ -607,7 +570,17 @@
                         </div>
                     </div>
                 </a>
-                <a href="{{ url_for('pages', page='lunbo') }}">
+
+
+
+
+
+            </div>
+            <div class="row" style="margin-top:20px">
+
+
+
+                <a href="{{ url_for('pages', page='lunbo') }}?slides=5">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(-8deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
@@ -624,8 +597,8 @@
                         </div>
                     </div>
                 </a>
-                <a href="{{ url_for('pages', page='lunbo') }}">
-                    <div class="pro-card-wrapper-pin" style="transform: rotate(4deg)">
+                <a href="{{ url_for('pages', page='lunbo') }}?slides=6">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(6deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
                                 style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/lxr-sp.jpeg');">
@@ -641,8 +614,26 @@
                         </div>
                     </div>
                 </a>
-                <a href="{{ url_for('pages', page='lunbo') }}">
+                <a href="{{ url_for('pages', page='lunbo') }}?slides=7">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(-6deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/yyf-njs.jpeg');">
+                                <!-- <div class="character">女祭司</div>
+                                <div class="romaji">尹艺霏</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/yyf.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="{{ url_for('pages', page='lunbo') }}?slides=8">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(3deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
                                 style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/crq-ss.jpeg');">
@@ -661,7 +652,7 @@
 
             </div>
             <div class="row" style="margin-top:20px">
-                <a href="{{ url_for('pages', page='lunbo') }}">
+                <a href="{{ url_for('pages', page='lunbo') }}?slides=9">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(-4deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
@@ -678,7 +669,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="{{ url_for('pages', page='lunbo') }}">
+                <a href="{{ url_for('pages', page='lunbo') }}?slides=10">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(6deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
@@ -695,34 +686,51 @@
                         </div>
                     </div>
                 </a>
-                <a href="{{ url_for('pages', page='lunbo') }}">
+                <a href="{{ url_for('pages', page='lunbo') }}?slides=11">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(-9deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
-                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/zy-yl.jpeg');">
-                                <!-- <div class="character">月亮</div>
-                                <div class="romaji">章艺</div> -->
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/lzm-mss.jpeg');">
+                                <!-- <div class="character">魔术师</div>
+                                <div class="romaji">刘子墨</div> -->
                             </div>
                             <!-- 反面 -->
                             <div class="fan-body"
-                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/zy.jpeg');">
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/lzm.jpeg');">
                                 <!-- <div class="character">反面</div>
                                 <div class="romaji">B</div> -->
                             </div>
                         </div>
                     </div>
                 </a>
-                <a href="{{ url_for('pages', page='lunbo') }}">
+                <a href="{{ url_for('pages', page='lunbo') }}?slides=12">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(3deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
-                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/wjw-lr.jpeg');">
-                                <!-- <div class="character">恋人</div>
-                                <div class="romaji">王婧雯</div> -->
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/mzy-ddr.jpeg');">
+                                <!-- <div class="character">倒吊人</div>
+                                <div class="romaji">莫正杨</div> -->
                             </div>
                             <!-- 反面 -->
                             <div class="fan-body"
-                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/wjw.jpeg');">
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/mzy.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="{{ url_for('pages', page='lunbo') }}?slides=13">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(-4deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/lj-myzl.jpeg');">
+                                <!-- <div class="character">命运之轮</div>
+                                <div class="romaji">李佳</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/lj.jpeg');">
                                 <!-- <div class="character">反面</div>
                                 <div class="romaji">B</div> -->
                             </div>
@@ -754,7 +762,7 @@
         <div class="grid-pin">
             <!-- 行元素 -->
             <div class="row" style="margin-top:20px">
-                <a href="{{ url_for('pages', page='lunbo-advisors') }}">
+                <a href="{{ url_for('pages', page='lunbo-advisors') }}?slides=0">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(-4deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
@@ -771,7 +779,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="{{ url_for('pages', page='lunbo-advisors') }}">
+                <a href="{{ url_for('pages', page='lunbo-advisors') }}?slides=1">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(-9deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
@@ -788,7 +796,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="{{ url_for('pages', page='lunbo-advisors') }}">
+                <a href="{{ url_for('pages', page='lunbo-advisors') }}?slides=2">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(3deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
@@ -805,7 +813,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="{{ url_for('pages', page='lunbo-advisors') }}">
+                <a href="{{ url_for('pages', page='lunbo-advisors') }}?slides=3">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(-4deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
@@ -825,7 +833,7 @@
             </div>
             <div class="row" style="margin-top:20px">
 
-                <a href="{{ url_for('pages', page='lunbo-advisors') }}">
+                <a href="{{ url_for('pages', page='lunbo-advisors') }}?slides=4">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(10deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
@@ -842,7 +850,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="{{ url_for('pages', page='lunbo-advisors') }}">
+                <a href="{{ url_for('pages', page='lunbo-advisors') }}?slides=5">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(-3deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
@@ -859,7 +867,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="{{ url_for('pages', page='lunbo-advisors') }}">
+                <a href="{{ url_for('pages', page='lunbo-advisors') }}?slides=6">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(-8deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
@@ -876,7 +884,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="{{ url_for('pages', page='lunbo-advisors') }}">
+                <a href="{{ url_for('pages', page='lunbo-advisors') }}?slides=7">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(-6deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
@@ -893,7 +901,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="{{ url_for('pages', page='lunbo-advisors') }}">
+                <a href="{{ url_for('pages', page='lunbo-advisors') }}?slides=8">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(4deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
@@ -920,7 +928,7 @@
 
             </div>
             <div class="row" style="margin-top:20px">
-                <a href="{{ url_for('pages', page='lunbo-advisors') }}">
+                <a href="{{ url_for('pages', page='lunbo-advisors') }}?slides=9">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(-4deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
@@ -937,7 +945,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="{{ url_for('pages', page='lunbo-advisors') }}">
+                <a href="{{ url_for('pages', page='lunbo-advisors') }}?slides=10">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(6deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
@@ -954,7 +962,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="{{ url_for('pages', page='lunbo-advisors') }}">
+                <a href="{{ url_for('pages', page='lunbo-advisors') }}?slides=11">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(-9deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
@@ -971,7 +979,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="{{ url_for('pages', page='lunbo-advisors') }}">
+                <a href="{{ url_for('pages', page='lunbo-advisors') }}?slides=12">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(3deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
@@ -988,7 +996,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="{{ url_for('pages', page='lunbo-advisors') }}">
+                <a href="{{ url_for('pages', page='lunbo-advisors') }}?slides=13">
                     <div class="pro-card-wrapper-pin" style="transform: rotate(-4deg)">
                         <div class="pro-card-pin">
                             <div class="zheng-body"
@@ -1029,51 +1037,60 @@
         <div class="grid-pin">
             <!-- 行元素 -->
             <div class="row" style="margin-top:20px">
-                <div class="pro-card-wrapper-pin" style="transform: rotate(-4deg)">
-                    <div class="pro-card-pin" style="width: 210px;height: 280px;">
-                        <div class="zheng-body"
-                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/cjh-yz.jpeg');">
-                            <!-- <div class="character">愚者</div>
-                            <div class="romaji">陈俊宏</div> -->
-                        </div>
-                        <!-- 反面 -->
-                        <div class="fan-body"
-                            style="background-image: url('https://static.igem.wiki/teams/5136/member-ins-pi/cjh.jpeg');">
-                            <!-- <div class="character">反面</div>
-                            <div class="romaji">B</div> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="pro-card-wrapper-pin" style="transform: rotate(1deg)">
-                    <div class="pro-card-pin" style="width: 210px;height: 280px;">
-                        <div class="zheng-body"
-                            style="background-image: url('https://static.igem.wiki/teams/5136/member-ins-pi/llx-card.jpeg');">
-                            <!-- <div class="character">正面</div>
-                            <div class="romaji">廖浪兴</div> -->
-                        </div>
-                        <!-- 反面 -->
-                        <div class="fan-body"
-                            style="background-image: url('https://static.igem.wiki/teams/5136/member-ins-pi/llx.jpeg');">
-                            <!-- <div class="character">反面</div>
-                            <div class="romaji">B</div> -->
+                <a href="{{ url_for('pages', page='lunbo-instructors') }}?slides=0">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(-4deg)">
+                        <div class="pro-card-pin" style="width: 210px;height: 280px;">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/cjh-yz.jpeg');">
+                                <!-- <div class="character">愚者</div>
+                                <div class="romaji">陈俊宏</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ins-pi/cjh.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="pro-card-wrapper-pin" style="transform: rotate(6deg)">
-                    <div class="pro-card-pin" style="width: 210px;height: 280px;">
-                        <div class="zheng-body"
-                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/hjc-yz.jpeg');">
-                            <!-- <div class="character">隐者</div>
-                            <div class="romaji">黄佳城</div> -->
-                        </div>
-                        <!-- 反面 -->
-                        <div class="fan-body"
-                            style="background-image: url('https://static.igem.wiki/teams/5136/member-ins-pi/hjc.jpeg');">
-                            <!-- <div class="character">反面</div>
-                            <div class="romaji">B</div> -->
+                </a>
+
+                <a href="{{ url_for('pages', page='lunbo-instructors') }}?slides=1">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(1deg)">
+                        <div class="pro-card-pin" style="width: 210px;height: 280px;">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ins-pi/llx-card.jpeg');">
+                                <!-- <div class="character">正面</div>
+                                <div class="romaji">廖浪兴</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ins-pi/llx.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
+
+                <a href="{{ url_for('pages', page='lunbo-instructors') }}?slides=2">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(6deg)">
+                        <div class="pro-card-pin" style="width: 210px;height: 280px;">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/hjc-yz.jpeg');">
+                                <!-- <div class="character">隐者</div>
+                                <div class="romaji">黄佳城</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ins-pi/hjc.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
 
             </div>
 
@@ -1096,37 +1113,42 @@
         <div class="grid-pin">
             <!-- 行元素 -->
             <div class="row" style="margin-top:20px">
-                <div class="pro-card-wrapper-pin" style="transform: rotate(-4deg)">
-                    <div class="pro-card-pin" style="width: 210px;height: 280px;">
-                        <div class="zheng-body"
-                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/hwj-sj.jpeg');">
-                            <!-- <div class="character">世界</div>
-                            <div class="romaji">洪文晶</div> -->
-                        </div>
-                        <!-- 反面 -->
-                        <div class="fan-body"
-                            style="background-image: url('https://static.igem.wiki/teams/5136/member-ins-pi/hwj.jpeg');">
-                            <!-- <div class="character">反面</div>
-                            <div class="romaji">B</div> -->
+                <a href="{{ url_for('pages', page='lunbo-pi') }}?slides=0">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(-4deg)">
+                        <div class="pro-card-pin" style="width: 210px;height: 280px;">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/hwj-sj.jpeg');">
+                                <!-- <div class="character">世界</div>
+                                <div class="romaji">洪文晶</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ins-pi/hwj.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
+                <a href="{{ url_for('pages', page='lunbo-pi') }}?slides=1">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(6deg)">
+                        <div class="pro-card-pin" style="width: 210px;height: 280px;">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/zah-zy.jpeg');">
+                                <!-- <div class="character">正义</div>
+                                <div class="romaji">张瑷珲</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ins-pi/zah.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
 
-                <div class="pro-card-wrapper-pin" style="transform: rotate(6deg)">
-                    <div class="pro-card-pin" style="width: 210px;height: 280px;">
-                        <div class="zheng-body"
-                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/zah-zy.jpeg');">
-                            <!-- <div class="character">正义</div>
-                            <div class="romaji">张瑷珲</div> -->
-                        </div>
-                        <!-- 反面 -->
-                        <div class="fan-body"
-                            style="background-image: url('https://static.igem.wiki/teams/5136/member-ins-pi/zah.jpeg');">
-                            <!-- <div class="character">反面</div>
-                            <div class="romaji">B</div> -->
-                        </div>
-                    </div>
-                </div>
+
 
             </div>
 
