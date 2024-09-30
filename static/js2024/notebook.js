@@ -6,7 +6,7 @@ var winWidth = $(window).width();
 var ratio = winWidth / 1920;
 var played = [0,0,0,0, 0,0,0,0  ,0,0,0,0  ,0,0,0,0];
 var vara = [];
-var bodyFontSize = Math.max(16 * ratio, 10);
+// var bodyFontSize = Math.max(16 * ratio, 10);
 $("body").css("font-size", bodyFontSize + "px");
 
 //  此处修改
