@@ -300,7 +300,7 @@ endblock %}
     hoverArea.addEventListener('mousemove', Mouse);
 
     hoverArea.addEventListener('click', () => {
-        window.location.href = 'https://video.igem.org/videos/embed/5ff37219-b999-42de-9e26-d4ac301762b3'; // 替换为实际目标链接
+        window.location.href = '{{ url_for('pages', page='pv') }}'; // 替换为实际目标链接
     });
 </script>
 
