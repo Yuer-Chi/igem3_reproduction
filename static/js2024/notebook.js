@@ -115,8 +115,23 @@ vara[20] = new Vara(
     "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
     []
 );
+vara[21] = new Vara(
+    "#vara-container22",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[22] = new Vara(
+    "#vara-container23",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[23] = new Vara(
+    "#vara-container24",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
 
-vara[19].ready(function() {
+vara[22].ready(function() {
     $(".front:not(.last)").click(function() {
         let ix = $(this)
             .parent(".paper")
@@ -152,7 +167,7 @@ vara[19].ready(function() {
         // 点击back，如果.back的父元素.paper的index为0，则该页面设置为关闭
         if ($(this).parent(".paper").index() == 0) {
             $(".book").removeClass("open");
-            $(".ten-11").removeClass("open");// 这里关闭最后一面
+            $(".ten-13").removeClass("open");// 这里关闭最后一面
         }
         $(this).parent(".paper").removeClass("open");
     });

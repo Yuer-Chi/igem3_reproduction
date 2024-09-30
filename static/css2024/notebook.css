@@ -24,7 +24,7 @@
     bottom: 10%;
     margin: auto;
     width: 35rem;
-    height:31rem;
+    height:80vh;
 }
 .book .side {
     width: 3em;
@@ -202,72 +202,90 @@
 .book .open.ten-12 .backnote {
     transform: translateZ(-21px);
 }
+.book .open.ten-13 .backnote {
+    transform: translateZ(-22px);
+}
+.book .open.ten-14 .backnote {
+    transform: translateZ(-23px);
+}
+.book .open.ten-15 .backnote {
+    transform: translateZ(-24px);
+}
 
 .book  .first {
-    z-index: 21;
+    z-index: 50;
 }
 .book   .second {
-    z-index: 20;
+    z-index: 49;
 }
 .book   .third {
-    z-index: 19;
+    z-index: 48;
 }
 .book   .fourth {
-    z-index: 18;
+    z-index: 47;
 }
 .book   .five {
-    z-index: 17;
+    z-index: 46;
 }
 .book   .six {
-    z-index: 16;
+    z-index: 45;
 }
 .book   .seven {
-    z-index: 15;
+    z-index: 44;
 }
 .book   .eight {
-    z-index: 14;
+    z-index: 43;
 }
 .book   .nine {
-    z-index: 13;
+    z-index: 42;
 }
 .book   .ten {
-    z-index: 12;
+    z-index: 41;
 }
 .book   .ten-1 {
-    z-index: 11;
+    z-index: 40;
 }
 .book   .ten-2 {
-    z-index: 10;
+    z-index: 39;
 }
 .book   .ten-3 {
-    z-index: 9;
+    z-index: 38;
 }
 .book   .ten-4 {
-    z-index: 8;
+    z-index: 37;
 }
 .book   .ten-5 {
-     z-index: 7;
+     z-index: 36;
  }
 .book   .ten-6 {
-    z-index: 6;
+    z-index: 35;
 }
 .book   .ten-7 {
-    z-index: 5;
+    z-index: 34;
 }
 .book   .ten-8 {
-     z-index: 4;
+     z-index: 33;
  }
 .book   .ten-9 {
-    z-index: 3;
+    z-index: 32;
 }
 .book   .ten-10 {
-    z-index: 2;
+    z-index: 31;
 }
 .book   .ten-11 {
-    z-index: 1;
+    z-index: 30;
 }
 .book   .ten-12 {
-    z-index: 0;
+    z-index: 29;
+}
+.book   .ten-13 {
+    z-index: 28;
+}
+.book   .ten-14 {
+    z-index: 27;
+}
+.book   .ten-15 {
+    z-index: 26;
 }
 
 
