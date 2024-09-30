@@ -392,7 +392,8 @@ a {
     padding-top: 40px;
     text-align: center;
     padding-bottom: 30px;
-    border-bottom: 0.3rem solid #867a77;
+    /* border-bottom: 0.3rem solid #867a77; */
+    border-bottom: 0.3rem solid #8768cd;
     width: 90%;
     left: 5%;
 }
@@ -417,7 +418,8 @@ a {
     font-size: 45px;
     display: inline-block;
     padding-bottom: 10px;
-    border-bottom: 0.25rem solid #867a77;
+    /* border-bottom: 0.25rem solid #867a77; */
+    border-bottom: 0.3rem solid #8768cd;
     font-weight: bold;
 }
 
@@ -586,7 +588,7 @@ a {
 .myPage-paragraph-reference li {
     margin-bottom: 10px;
     word-wrap: break-word;
-    word-break: break-all;
+    /* word-break: break-all; */
     /* 设置长单词的换行方式 */
 }
 
