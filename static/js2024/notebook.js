@@ -116,7 +116,7 @@ vara[20] = new Vara(
     []
 );
 
-vara[18].ready(function() {
+vara[19].ready(function() {
     $(".front:not(.last)").click(function() {
         let ix = $(this)
             .parent(".paper")
