@@ -200,6 +200,11 @@
     transform: translateZ(-20px);
 }
 
+/* 1 */
+.book .open.ten-12 .backnote {
+    transform: translateZ(-21px);
+}
+
 .book .paper .first {
     z-index: 21;
 }
@@ -264,6 +269,10 @@
     z-index: 1;
 }
 
+/* 2 */
+.book .paper .ten-12 {
+    z-index: 0;
+}
 
 
 .book .second-page #vara-container {
@@ -390,6 +399,10 @@
     transform: translateZ(1px);
 }
 
+/* 3 */
+.book .paper.ten-11 .front {
+    transform: translateZ(0px);
+}
 
 .diary-picture{
     text-align: center;
