@@ -87,13 +87,13 @@
     -webkit-transform: translateZ(0px);
     transform: translateZ(0px);
 }
-.book .first .page {
+.book .num-1 .page {
     background-color: #f1f1f1;
     background-image: url("https://static.igem.wiki/teams/5136/notebook/notebooklogo.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.book .first .page.front:after {
+.book .num-1 .page.front:after {
     position: absolute;
     content: "";
     width: 50%;
@@ -106,7 +106,7 @@
     transform-origin: 0 50%;
     background: #e1e1e1;
 }
-.book.first.paper.backnote {
+.book.num-1.paper.backnote {
     background-color:#f1f1f1 ;
 }
 .book .intro {
@@ -131,165 +131,317 @@
     color: #fff;
     word-break: break-all;
 }
-.book .paper:not(.first) .page {
+.book .paper:not(.num-1) .page {
     background-color: #f1f1f1;
     background-image: linear-gradient(#e1e1e1 0.1em, transparent 0.1em);
     background-size: 100% 2.5em;
 }
-.book .paper:not(.first) .backnote {
+.book .paper:not(.num-1) .backnote {
     background: #f1f1f1;
 }
-.book .open.second .backnote {
+.book .open.num-2 .backnote {
     transform: translateZ(-1px);
 }
-.book .open.third .backnote {
+.book .open.num-3 .backnote {
     transform: translateZ(-2px);
 }
-.book .open.fourth .backnote {
+.book .open.num-4 .backnote {
     transform: translateZ(-3px);
 }
-.book .open.five .backnote {
+.book .open.num-5 .backnote {
     transform: translateZ(-4px);
 }
-.book .open.six .backnote {
+.book .open.num-6 .backnote {
     transform: translateZ(-5px);
 }
-.book .open.seven .backnote {
+.book .open.num-7 .backnote {
     transform: translateZ(-6px);
 }
-.book .open.eight .backnote {
+.book .open.num-8 .backnote {
     transform: translateZ(-7px);
 }
-.book .open.nine .backnote {
+.book .open.num-9 .backnote {
     transform: translateZ(-8px);
 }
-.book .open.ten .backnote {
+.book .open.num-10 .backnote {
     transform: translateZ(-9px);
 }
-.book .open.ten-1 .backnote {
+.book .open.num-11 .backnote {
      transform: translateZ(-10px);
 }
-.book .open.ten-2 .backnote {
+.book .open.num-12 .backnote {
     transform: translateZ(-11px);
 }
-.book .open.ten-3 .backnote {
+.book .open.num-13 .backnote {
     transform: translateZ(-12px);
 }
-.book .open.ten-4 .backnote {
+.book .open.num-14 .backnote {
     transform: translateZ(-13px);
 }
-.book .open.ten-5 .backnote {
+.book .open.num-15 .backnote {
     transform: translateZ(-14px);
 }
-.book .open.ten-6 .backnote {
+.book .open.num-16 .backnote {
     transform: translateZ(-15px);
 }
-.book .open.ten-7 .backnote {
+.book .open.num-17 .backnote {
     transform: translateZ(-16px);
 }
-.book .open.ten-8 .backnote {
+.book .open.num-18 .backnote {
     transform: translateZ(-17px);
 }
-.book .open.ten-9 .backnote {
+.book .open.num-19 .backnote {
     transform: translateZ(-18px);
 }
-.book .open.ten-10 .backnote {
+.book .open.num-20 .backnote {
     transform: translateZ(-19px);
 }
-.book .open.ten-11 .backnote {
+.book .open.num-21 .backnote {
     transform: translateZ(-20px);
 }
-.book .open.ten-12 .backnote {
+.book .open.num-22 .backnote {
     transform: translateZ(-21px);
 }
-.book .open.ten-13 .backnote {
+.book .open.num-23 .backnote {
     transform: translateZ(-22px);
 }
-.book .open.ten-14 .backnote {
+.book .open.num-24 .backnote {
     transform: translateZ(-23px);
 }
-.book .open.ten-15 .backnote {
+.book .open.num-25 .backnote {
     transform: translateZ(-24px);
 }
+.book .open.num-26 .backnote {
+    transform: translateZ(-25px);
+}
+.book .open.num-27 .backnote {
+    transform: translateZ(-26px);
+}
+.book .open.num-28 .backnote {
+    transform: translateZ(-27px);
+}
+.book .open.num-29 .backnote {
+    transform: translateZ(-28px);
+}
+.book .open.num-30 .backnote {
+    transform: translateZ(-29px);
+}
+.book .open.num-31 .backnote {
+    transform: translateZ(-30px);
+}
+.book .open.num-32 .backnote {
+    transform: translateZ(-31px);
+}
+.book .open.num-33 .backnote {
+    transform: translateZ(-32px);
+}
+.book .open.num-34 .backnote {
+    transform: translateZ(-33px);
+}
+.book .open.num-35 .backnote {
+    transform: translateZ(-34px);
+}
+.book .open.num-36 .backnote {
+    transform: translateZ(-35px);
+}
+.book .open.num-37 .backnote {
+    transform: translateZ(-36px);
+}
+.book .open.num-38 .backnote {
+    transform: translateZ(-37px);
+}
+.book .open.num-39 .backnote {
+    transform: translateZ(-38px);
+}
+.book .open.num-40 .backnote {
+    transform: translateZ(-39px);
+}
+.book .open.num-41 .backnote {
+    transform: translateZ(-40px);
+}
+.book .open.num-42 .backnote {
+    transform: translateZ(-41px);
+}
+.book .open.num-43 .backnote {
+    transform: translateZ(-42px);
+}
+.book .open.num-44 .backnote {
+    transform: translateZ(-43px);
+}
+.book .open.num-45 .backnote {
+    transform: translateZ(-44px);
+}
+.book .open.num-46 .backnote {
+    transform: translateZ(-45px);
+}
+.book .open.num-47 .backnote {
+    transform: translateZ(-46px);
+}
+.book .open.num-48 .backnote {
+    transform: translateZ(-47px);
+}
+.book .open.num-49 .backnote {
+    transform: translateZ(-48px);
+}
+.book .open.num-50 .backnote {
+    transform: translateZ(-49px);
+}
 
-.book  .first {
-    z-index: 50;
+
+
+.book  .num-1 {
+    z-index: 100;
 }
-.book   .second {
-    z-index: 49;
+.book   .num-2 {
+    z-index: 99;
 }
-.book   .third {
-    z-index: 48;
+.book   .num-3 {
+    z-index: 98;
 }
-.book   .fourth {
-    z-index: 47;
+.book   .num-4 {
+    z-index: 97;
 }
-.book   .five {
-    z-index: 46;
+.book   .num-5 {
+    z-index: 96;
 }
-.book   .six {
-    z-index: 45;
+.book   .num-6 {
+    z-index: 95;
 }
-.book   .seven {
-    z-index: 44;
+.book   .num-7 {
+    z-index: 94;
 }
-.book   .eight {
-    z-index: 43;
+.book   .num-8 {
+    z-index: 93;
 }
-.book   .nine {
-    z-index: 42;
+.book   .num-9 {
+    z-index: 92;
 }
-.book   .ten {
-    z-index: 41;
+.book   .num-10 {
+    z-index: 91;
 }
-.book   .ten-1 {
-    z-index: 40;
+.book   .num-11 {
+    z-index: 90;
 }
-.book   .ten-2 {
-    z-index: 39;
+.book   .num-12 {
+    z-index: 89;
 }
-.book   .ten-3 {
-    z-index: 38;
+.book   .num-13 {
+    z-index: 88;
 }
-.book   .ten-4 {
-    z-index: 37;
+.book   .num-14 {
+    z-index: 87;
 }
-.book   .ten-5 {
-     z-index: 36;
+.book   .num-15 {
+     z-index: 86;
  }
-.book   .ten-6 {
-    z-index: 35;
+.book   .num-16 {
+    z-index: 85;
 }
-.book   .ten-7 {
-    z-index: 34;
+.book   .num-17 {
+    z-index: 84;
 }
-.book   .ten-8 {
-     z-index: 33;
+.book   .num-18 {
+     z-index: 83;
  }
-.book   .ten-9 {
-    z-index: 32;
+.book   .num-19 {
+    z-index: 82;
 }
-.book   .ten-10 {
-    z-index: 31;
+.book   .num-20 {
+    z-index: 81;
 }
-.book   .ten-11 {
-    z-index: 30;
+.book   .num-21 {
+    z-index: 80;
 }
-.book   .ten-12 {
-    z-index: 29;
+.book   .num-22 {
+    z-index: 79;
 }
-.book   .ten-13 {
-    z-index: 28;
+.book   .num-23 {
+    z-index: 78;
 }
-.book   .ten-14 {
-    z-index: 27;
+.book   .num-24 {
+    z-index: 77;
 }
-.book   .ten-15 {
-    z-index: 26;
+.book   .num-25 {
+     z-index: 76;
+ }
+.book   .num-26 {
+    z-index: 75;
+}
+.book   .num-27 {
+    z-index: 74;
+}
+.book   .num-28 {
+     z-index: 73;
+ }
+.book   .num-29 {
+    z-index: 72;
+}
+.book   .num-30 {
+    z-index: 71;
+}
+.book   .num-31 {
+    z-index: 70;
+}
+.book   .num-32 {
+    z-index: 69;
+}
+.book   .num-33 {
+    z-index: 68;
+}
+.book   .num-34 {
+     z-index: 67;
+ }
+.book   .num-35 {
+    z-index: 66;
+}
+.book   .num-36 {
+    z-index: 65;
+}
+.book   .num-37 {
+     z-index: 64;
+ }
+.book   .num-38 {
+    z-index: 63;
+}
+.book   .num-39 {
+    z-index: 62;
+}
+.book   .num-40 {
+    z-index: 61;
+}
+.book   .num-41 {
+    z-index: 60;
+}
+.book   .num-42 {
+    z-index: 59;
+}
+.book   .num-43 {
+    z-index: 58;
+}
+.book   .num-44 {
+    z-index: 57;
+}
+.book   .num-45 {
+    z-index: 56;
+}
+.book   .num-46 {
+    z-index: 55;
+}
+.book   .num-47 {
+    z-index: 54;
+}
+.book   .num-48 {
+    z-index: 53;
+}
+.book   .num-49 {
+    z-index: 52;
+}
+.book   .num-50 {
+    z-index: 51;
 }
 
 
-.book .second-page #vara-container {
+.book .num-2-page #vara-container {
     width: 100%;
     height: 100%;
     padding: 1em;
@@ -335,7 +487,7 @@
     .diary-content,.diary-title{
         font-size: 5px;
     }
-    .book .first .page{
+    .book .num-1 .page{
         background-size:100% 110%
     }
 }
@@ -352,68 +504,155 @@
     }
 }
 
-.book .paper.first .front {
-    transform: translateZ(20px);
+.book .paper.num-1 .front {
+    transform: translateZ(100px);
 }
-.book .paper.second .front {
-    transform: translateZ(19px);
+.book .paper.num-2 .front {
+    transform: translateZ(99px);
 }
-.book .paper.third .front {
-    transform: translateZ(18px);
+.book .paper.num-3 .front {
+    transform: translateZ(98px);
 }
-.book .paper.fourth .front {
-    transform: translateZ(17px);
+.book .paper.num-4 .front {
+    transform: translateZ(97px);
 }
-.book .paper.five .front {
-    transform: translateZ(16px);
+.book .paper.num-5 .front {
+    transform: translateZ(96px);
 }
-.book .paper.six .front {
-    transform: translateZ(15px);
+.book .paper.num-6 .front {
+    transform: translateZ(95px);
 }
-.book .paper.seven .front {
-    transform: translateZ(14px);
+.book .paper.num-7 .front {
+    transform: translateZ(94px);
 }
-.book .paper.eight .front {
-    transform: translateZ(13px);
+.book .paper.num-8 .front {
+    transform: translateZ(93px);
 }
-.book .paper.nine .front {
-    transform: translateZ(12px);
+.book .paper.num-9 .front {
+    transform: translateZ(92px);
 }
-.book .paper.ten .front {
-    transform: translateZ(11px);
+.book .paper.num-10 .front {
+    transform: translateZ(91px);
 }
-.book .paper.ten-1 .front {
-    transform: translateZ(10px);
+.book .paper.num-11 .front {
+    transform: translateZ(90px);
 }
-.book .paper.ten-2 .front {
-    transform: translateZ(9px);
+.book .paper.num-12 .front {
+    transform: translateZ(89px);
 }
-.book .paper.ten-3 .front {
-    transform: translateZ(8px);
+.book .paper.num-13 .front {
+    transform: translateZ(88px);
 }
-.book .paper.ten-4 .front {
-    transform: translateZ(7px);
+.book .paper.num-14 .front {
+    transform: translateZ(87px);
 }
-.book .paper.ten-5 .front {
-    transform: translateZ(6px);
+.book .paper.num-15 .front {
+    transform: translateZ(86px);
 }
-.book .paper.ten-6 .front {
-    transform: translateZ(5px);
+.book .paper.num-16 .front {
+    transform: translateZ(85px);
 }
-.book .paper.ten-7 .front {
-    transform: translateZ(4px);
+.book .paper.num-17 .front {
+    transform: translateZ(84px);
 }
-.book .paper.ten-8 .front {
-    transform: translateZ(3px);
+.book .paper.num-18 .front {
+    transform: translateZ(83px);
 }
-.book .paper.ten-9 .front {
-    transform: translateZ(2px);
+.book .paper.num-19 .front {
+    transform: translateZ(82px);
 }
-.book .paper.ten-10 .front {
-    transform: translateZ(1px);
+.book .paper.num-20 .front {
+    transform: translateZ(81px);
 }
-.book .paper.ten-11 .front {
-    transform: translateZ(0px);
+.book .paper.num-21 .front {
+    transform: translateZ(80px);
+}
+.book .paper.num-22 .front {
+    transform: translateZ(79px);
+}
+.book .paper.num-23 .front {
+    transform: translateZ(78px);
+}
+.book .paper.num-24 .front {
+    transform: translateZ(77px);
+}
+.book .paper.num-25 .front {
+    transform: translateZ(76px);
+}
+.book .paper.num-26 .front {
+    transform: translateZ(75px);
+}
+.book .paper.num-27 .front {
+    transform: translateZ(74px);
+}
+.book .paper.num-28 .front {
+    transform: translateZ(73px);
+}
+.book .paper.num-29 .front {
+    transform: translateZ(72px);
+}
+.book .paper.num-30 .front {
+    transform: translateZ(71px);
+}
+.book .paper.num-31 .front {
+    transform: translateZ(70px);
+}
+.book .paper.num-32 .front {
+    transform: translateZ(69px);
+}
+.book .paper.num-33 .front {
+    transform: translateZ(68px);
+}
+.book .paper.num-34 .front {
+    transform: translateZ(67px);
+}
+.book .paper.num-35 .front {
+    transform: translateZ(66px);
+}
+.book .paper.num-36 .front {
+    transform: translateZ(65px);
+}
+.book .paper.num-37 .front {
+    transform: translateZ(64px);
+}
+.book .paper.num-38 .front {
+    transform: translateZ(63px);
+}
+.book .paper.num-39 .front {
+    transform: translateZ(62px);
+}
+.book .paper.num-40 .front {
+    transform: translateZ(61px);
+}
+.book .paper.num-41 .front {
+    transform: translateZ(60px);
+}
+.book .paper.num-42 .front {
+    transform: translateZ(59px);
+}
+.book .paper.num-43 .front {
+    transform: translateZ(58px);
+}
+.book .paper.num-44 .front {
+    transform: translateZ(57px);
+}
+.book .paper.num-45 .front {
+    transform: translateZ(56px);
+}
+.book .paper.num-46 .front {
+    transform: translateZ(55px);
+}
+.book .paper.num-47 .front {
+    transform: translateZ(54px);
+}
+.book .paper.num-48 .front {
+    transform: translateZ(53px);
+}
+.book .paper.num-49 .front {
+    transform: translateZ(52px);
+}
+.book .paper.num-50 .front {
+    transform: translateZ(51px);
 }
 
 .diary-picture{

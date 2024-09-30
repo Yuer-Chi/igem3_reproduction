@@ -130,8 +130,147 @@ vara[23] = new Vara(
     "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
     []
 );
+vara[24] = new Vara(
+    "#vara-container25",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[25] = new Vara(
+    "#vara-container24",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[26] = new Vara(
+    "#vara-container25",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[27] = new Vara(
+    "#vara-container26",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[28] = new Vara(
+    "#vara-container27",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[29] = new Vara(
+    "#vara-container28",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[30] = new Vara(
+    "#vara-container29",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[31] = new Vara(
+    "#vara-container30",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[32] = new Vara(
+    "#vara-container31",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[33] = new Vara(
+    "#vara-container32",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[34] = new Vara(
+    "#vara-container33",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[35] = new Vara(
+    "#vara-container34",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[36] = new Vara(
+    "#vara-container35",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[37] = new Vara(
+    "#vara-container36",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[38] = new Vara(
+    "#vara-container37",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[39] = new Vara(
+    "#vara-container38",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[40] = new Vara(
+    "#vara-container39",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[41] = new Vara(
+    "#vara-container40",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[42] = new Vara(
+    "#vara-container41",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[43] = new Vara(
+    "#vara-container42",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[44] = new Vara(
+    "#vara-container43",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[45] = new Vara(
+    "#vara-container44",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[46] = new Vara(
+    "#vara-container45",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[47] = new Vara(
+    "#vara-container46",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[48] = new Vara(
+    "#vara-container47",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[49] = new Vara(
+    "#vara-container48",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[50] = new Vara(
+    "#vara-container49",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
 
-vara[22].ready(function() {
+
+
+
+
+vara[49].ready(function() {
     $(".front:not(.last)").click(function() {
         let ix = $(this)
             .parent(".paper")
