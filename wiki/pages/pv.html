@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://static.igem.wiki/teams/5136/favicon.png" />
     <title>PV | XMU-China - IGEM 2024</title>
+    <link href="{{ url_for('static', filename = 'css2024/theme.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename = 'js2024/jquery-3.5.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename = 'js2024/loading.js') }}"></script>
 </head>
 <style>
     .back-button {
@@ -49,6 +52,15 @@ body{
 }
 </style>
 <body>
+    <div id="loader-wrapper">
+        <div id="loader">
+            <div class="loader-img">
+                <img src="https://static.igem.wiki/teams/5136/load-new.gif">
+            </div>
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
     <button class="back-button" onclick="window.history.back();"></button>
     <div class="pv-text">XMU-China - IGEM 2024 PV</div>
     <iframe title="XMU-China: The Magic: &quot;REPARO&quot; (2024) - Project Promotion [English]"  src="https://video.igem.org/videos/embed/5ff37219-b999-42de-9e26-d4ac301762b3" frameborder="20" allowfullscreen="true" sandbox="allow-same-origin allow-scripts allow-popups allow-forms" style="position: absolute;width: 70vw;left: 15vw;height: 39vw;top: 15vh;"></iframe>
