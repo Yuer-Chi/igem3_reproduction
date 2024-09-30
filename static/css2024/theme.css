@@ -588,7 +588,7 @@ a {
 .myPage-paragraph-reference li {
     margin-bottom: 10px;
     word-wrap: break-word;
-    word-break: break-all;
+    /* word-break: break-all; */
     /* 设置长单词的换行方式 */
 }
 
