@@ -199,71 +199,76 @@
 .book .open.ten-11 .backnote {
     transform: translateZ(-20px);
 }
+.book .open.ten-12 .backnote {
+    transform: translateZ(-21px);
+}
 
-.book .paper .first {
+.book  .first {
     z-index: 21;
 }
-.book .paper .second {
+.book   .second {
     z-index: 20;
 }
-.book .paper .third {
+.book   .third {
     z-index: 19;
 }
-.book .paper .fourth {
+.book   .fourth {
     z-index: 18;
 }
-.book .paper .five {
+.book   .five {
     z-index: 17;
 }
-.book .paper .six {
+.book   .six {
     z-index: 16;
 }
-.book .paper .seven {
+.book   .seven {
     z-index: 15;
 }
-.book .paper .eight {
+.book   .eight {
     z-index: 14;
 }
-.book .paper .nine {
+.book   .nine {
     z-index: 13;
 }
-.book .paper .ten {
+.book   .ten {
     z-index: 12;
 }
-.book .paper .ten-1 {
+.book   .ten-1 {
     z-index: 11;
 }
-.book .paper .ten-2 {
+.book   .ten-2 {
     z-index: 10;
 }
-.book .paper .ten-3 {
+.book   .ten-3 {
     z-index: 9;
 }
-.book .paper .ten-4 {
+.book   .ten-4 {
     z-index: 8;
 }
-.book .paper .ten-5 {
+.book   .ten-5 {
      z-index: 7;
  }
-.book .paper .ten-6 {
+.book   .ten-6 {
     z-index: 6;
 }
-.book .paper .ten-7 {
+.book   .ten-7 {
     z-index: 5;
 }
-.book .paper .ten-8 {
+.book   .ten-8 {
      z-index: 4;
  }
-.book .paper .ten-9 {
+.book   .ten-9 {
     z-index: 3;
 }
-.book .paper .ten-10 {
+.book   .ten-10 {
     z-index: 2;
 }
-.book .paper .ten-11 {
+.book   .ten-11 {
     z-index: 1;
 }
-
+.book   .ten-12 {
+    z-index: 0;
+}
 
 
 .book .second-page #vara-container {
@@ -389,7 +394,9 @@
 .book .paper.ten-10 .front {
     transform: translateZ(1px);
 }
-
+.book .paper.ten-11 .front {
+    transform: translateZ(0px);
+}
 
 .diary-picture{
     text-align: center;

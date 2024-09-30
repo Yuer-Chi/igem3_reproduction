@@ -110,8 +110,13 @@ vara[19] = new Vara(
     "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
     []
 );
+vara[20] = new Vara(
+    "#vara-container21",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
 
-vara[18].ready(function() {
+vara[19].ready(function() {
     $(".front:not(.last)").click(function() {
         let ix = $(this)
             .parent(".paper")
