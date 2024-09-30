@@ -285,7 +285,7 @@ vara[49].ready(function() {
                 played[ix] = 1;
                 if (i == "link") {
                     var group = o.container;
-                    var rect = vara[15].createNode("rect", {
+                    var rect = vara[1].createNode("rect", {
                         x: 0,
                         y: 0,
                         width: o.container.getBoundingClientRect().width,
