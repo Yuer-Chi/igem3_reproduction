@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 
-{% block title %}LAC{% endblock %}
+{% block title %}LCA{% endblock %}
 {% block lead %}Innovative educational tools and outreach activities have the ability to establish a two-way dialogue
 with new communities by discussing public values and the science behind synthetic biology.{% endblock %}
 
@@ -24,19 +24,25 @@ with new communities by discussing public values and the science behind syntheti
     <div class="left-bar">
       <div class="left-bar-right">
         <div class="left-bar-right-item">
-          <a href="#section1" class="sidebar-link" data-section="section1">文字段落</a>
+          <a href="#section1" class="sidebar-link" data-section="section1">没有标题的第一部分</a>
         </div>
         <div class="left-bar-right-item">
-          <a href="#section2" class="sidebar-link" data-section="section2">插图演示</a>
+          <a href="#section2" class="sidebar-link" data-section="section2">Pretreatment</a>
         </div>
         <div class="left-bar-right-item">
-          <a href="#section3" class="sidebar-link" data-section="section3">小标题和小小标题</a>
+          <a href="#section3" class="sidebar-link" data-section="section3">Deinking</a>
         </div>
         <div class="left-bar-right-item">
-          <a href="#section4" class="sidebar-link" data-section="section4">超链接的写法</a>
+          <a href="#section4" class="sidebar-link" data-section="section4">Waste Treatment</a>
         </div>
         <div class="left-bar-right-item">
-          <a href="#section5" class="sidebar-link" data-section="section5">reference的写法</a>
+          <a href="#section5" class="sidebar-link" data-section="section5">Conclusion</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section5" class="sidebar-link" data-section="section5">The whole life of paper</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section5" class="sidebar-link" data-section="section5">References</a>
         </div>
       </div>
     </div>
@@ -57,37 +63,74 @@ with new communities by discussing public values and the science behind syntheti
         <div class="myPage-headline">
           <h1 class="myPage-headline-content">
             <span style="color: #867a77">.</span>
-            <span style="color: #483b53;font-family: Aaargh;">这个页面的大标题</span>
+            <span style="color: #483b53;font-family: Aaargh;">Life Cycle Assessment</span>
             <span style="color: #867a77">.</span>
           </h1>
         </div>
 
         <!---文字段落--->
         <div class="myPage-paragraph" id="section1">
-          <h2 class="myPage-paragraph-headline-h2">1.标题1</h2>
+          <h2 class="myPage-paragraph-headline-h2">没有标题的第一部分</h2>
           <!-- 记住这里的h2就是标题 -->
           <p class="myPage-paragraph-content">
-            开始文字，若需要分段，请复制这个class=myPage-paragraph-content的p标签。
+            Compared to direct incineration or landfilling of the waste paper, recycling can significantly reduce carbon
+            emissions and it accounts for only 20-30% of incineration emissions and 70-80% of landfill emissions (1). We
+            need a quantitative evaluation to further understand how much our project can contribute to reducing carbon
+            emissions.
           </p>
           <p class="myPage-paragraph-content">
-            接上面的分段，就像这样，同时如果有需要有<b>粗体</b>或者<i>斜体</i>，请记得加上b和i的标签。
+            Life Cycle Assessment (LCA) is a comprehensive method used to evaluate the environmental impacts of a
+            product or process from its inception toc disposal (from “cradle” to “grave”). In the context of waste paper
+            recycling, LCA examines every stage, including raw material extraction, production, usage, and end-of-life
+            treatment (2). By quantifying factors like energy consumption, greenhouse gas emissions, and waste
+            generation, this assessment provide a holistic view of environmental impact. LCA shows that in the pulp and
+            paper industry, production processes contribute to over half of the total carbon emissions (3) (Figure 1).
+            Therefore, reducing emissions at this stage is critical. Using data from our experiments as well as relevant
+            researches and databases, we calculated and compared the carbon emissions of enzymatic and chemical deinking
+            methods in recycled paper production.
           </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/lca/lca-fig1.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 1 Distribution of carbon footprint in paper and pulp
+                industry.</b>
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            Our waste paper production process is divided into three parts: Pretreatment, Deinking, and Waste Treatment.
+            The calculation boundaries include all the inputs and outputs in these three parts, including chemical
+            reagent/enzymes production, electricity consumption, and post-deinking waste treatment. The calculation
+            equations are as follows:
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="" alt="">
+            <div class="myPage-paragraph-fig-description"><b>这里是数学公式</b>
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            Where C_T is the total carbon emission (kg CO2eq), C_P is the carbon emission (kg CO2eq) in pretreatment
+            process, C_D is the deinking carbon emission (kg CO2eq) and C_W is the carbon emission (kg CO2eq) in waste
+            treatment. Carbon emission in each step (C_i) is calculated with input amount (I_ij) and its carbon emission
+            factor (α_ij). Specific carbon emission factors are as follows:
+          </p>
+          <div class="myPage-paragraph-table-div" style="text-align: center">
+            <table class="myPage-paragraph-table">
+              <tbody>
+                <tr>
+                  <th style="width:30%;">Type</th>
+                  <th style="width:50%;">Carbon emission factor</th>
+                  <th style="width:20%;">Source</th>
+                </tr>
+                <tr>
+                  <td>Electricity</td>
+                  <td>0.53 kg CO2eq/kwh</td>
+                  <td>(4)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-          <div class="myPage-paragraph-fig">
-            <img src="https://static.igem.wiki/teams/5136/11.png" alt="">
-            <div class="myPage-paragraph-fig-description"><b>Figure 1</b>
-            </div>
-          </div>
-          <div class="myPage-paragraph-fig">
-            <img src="https://static.igem.wiki/teams/5136/22.png" alt="">
-            <div class="myPage-paragraph-fig-description"><b>Figure 2</b>
-            </div>
-          </div>
-          <div class="myPage-paragraph-fig">
-            <img src="https://static.igem.wiki/teams/5135/33.png" alt="">
-            <div class="myPage-paragraph-fig-description"><b>Figure 3</b>
-            </div>
-          </div>
+
+        
         </div>
 
         <!---插图演示--->
@@ -204,7 +247,7 @@ with new communities by discussing public values and the science behind syntheti
           </ol>
         </div>
 
-        
+
       </div>
     </div>
 
@@ -214,25 +257,25 @@ with new communities by discussing public values and the science behind syntheti
   <script>
     // jQuery to handle the collapse toggle and style changes
     $(document).ready(function () {
-        $('#accordion-Det .panel-title a').click(function () {
-            var targetId = $(this).attr('href');
-            // Toggle the collapse
-            $(targetId).collapse('toggle');
+      $('#accordion-Det .panel-title a').click(function () {
+        var targetId = $(this).attr('href');
+        // Toggle the collapse
+        $(targetId).collapse('toggle');
 
-            // Event for collapse show
-            $(targetId).on('shown.bs.collapse', function () {
-                $(this).prev().find('a').removeClass('collapsed').addClass('expanded');
-            });
-
-            // Event for collapse hide
-            $(targetId).on('hidden.bs.collapse', function () {
-                $(this).prev().find('a').removeClass('expanded').addClass('collapsed');
-            });
-
-            return false; // Prevent the default behavior of the anchor
+        // Event for collapse show
+        $(targetId).on('shown.bs.collapse', function () {
+          $(this).prev().find('a').removeClass('collapsed').addClass('expanded');
         });
+
+        // Event for collapse hide
+        $(targetId).on('hidden.bs.collapse', function () {
+          $(this).prev().find('a').removeClass('expanded').addClass('collapsed');
+        });
+
+        return false; // Prevent the default behavior of the anchor
+      });
     });
-</script>
+  </script>
 
 </div>
 
