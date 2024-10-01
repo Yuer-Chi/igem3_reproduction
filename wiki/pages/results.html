@@ -10,10 +10,11 @@
 <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
 
 <style>
-  .sidebar-link{
+  .sidebar-link {
     font-size: 15px;
   }
-  .sidebar-link.current{
+
+  .sidebar-link.current {
     font-size: 20px;
   }
 </style>
@@ -130,14 +131,229 @@
         <!---文字段落--->
         <div class="myPage-paragraph" id="section1">
           <h2 class="myPage-paragraph-headline-h2">1 Overview</h2>
+          <p class="myPage-paragraph-content">
+            Deinking is the bottleneck for waste paper recycling, which requires a substantial amount of toxic
+            chemicals. It also releases poisonous organic agents and heavy metals that may cause environmental
+            contamination and expensive disposal costs.
+            Our project, REPARO, focuses on developing an unprecedented solution based on synthetic biology, which could
+            serve as a viable alternative to the chemical method on the industry scale. We have successfully established
+            a screening method for enzymes with high deinking efficiency based on the grayscale value changes.
+            Leveraging the monooxygenase CYP199A4 and its mutants reported in the literature, we have identified a
+            monooxygenase with high efficiency in deinking, a significant milestone in the wastepaper recycling process.
+            This, combined with a rapid screening method, structure-activity analysis, and saturation mutation, has led
+            us to the CYP199A4 mutant T253A, which exhibits superior deinking performance. By characterizing classic
+            signal peptides, we proved that LMT has a high secretion efficiency. It realized the continuous secretion of
+            CYP199A4 T253E with significant deinking performance. Furthermore, we expanded the application in erasing
+            the handwriting based on the combination of crosslinked chitosan and rhamnolipid. Beyond that, displaying
+            the metallothioneins on the surface of engineered bacteria could successfully reduce the heavy metal ion
+            Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> in the wastewater. Finally, we proved that the scheme we designed
+            is reasonable and feasible, which
+            paves the way for its application at an industrial scale.
+
+          </p>
         </div>
 
         <div class="myPage-paragraph" id="section2">
           <h2 class="myPage-paragraph-headline-h2">Highlight</h2>
+          <p class="myPage-paragraph-content">
+            Develop a screen method and explore the enzymes mutants with the best deinking performance.
+          </p>
+          <p class="myPage-paragraph-content">
+            Continuous secretion of CYP199A4 T253E with significant deinking performance.
+          </p>
+          <p class="myPage-paragraph-content">
+            Construct surface display system to significantly absorb heavy metal ion.
+          </p>
+          <p class="myPage-paragraph-content">
+            Verification of the functionality and effectiveness of the suicide switch
+          </p>
         </div>
 
         <div class="myPage-paragraph" id="section3">
           <h2 class="myPage-paragraph-headline-h2">2 Screen enzymes with the best deinking performance</h2>
+          <h3 class="myPage-paragraph-headline-h3">2.1 Deinking blank system</h3>
+          <p class="myPage-paragraph-content">
+            The deinking blank system consisted of a 50 mL pulp with 1 g Na<sub>2</sub>SiO<sub>3</sub>, and 1.67 mL
+            H<sub>2</sub>O<sub>2</sub> (Ref.), which is same
+            in each deinking method. Pulp was produced by the paper that printed the same article, ensuring the same ink
+            concentration. The pulp preparation referred to standard operating procedure (see <a
+              style="font-weight: bolder;text-decoration: none;" href="{{ url_for('pages', page='sop') }}">SOP</a> for
+            more details).
+            Then, limonene (see <a style="font-weight: bolder;text-decoration: none;"
+              href="{{ url_for('pages', page='design') }}">design</a> and <a
+              style="font-weight: bolder;text-decoration: none;"
+              href="{{ url_for('pages', page='human-practices') }}">IHP</a> for more details) was selected from many
+            hydrophobic solvents to extract
+            the ink from the mixture after the reaction. The suction filtration was carried out through the Buchner
+            funnel to remove the water and dry it in ovens. Take a picture for the paper cake after drying, and read the
+            gray value through the written program by automatically selecting (see <a
+              style="font-weight: bolder;text-decoration: none;" href="{{ url_for('pages', page='sop') }}">SOP</a> for
+            more details). These
+            processes were summarized to a standard operating procedure (see <a
+              style="font-weight: bolder;text-decoration: none;" href="{{ url_for('pages', page='sop') }}">SOP</a> for
+            more details). It was worth noting
+            that the higher the gray value, the better the deinking effect. The experimental results showed that the
+            deinking effect was almost invalid for <b>the deinking blank system, which was set as the negative
+              control</b>.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/1.jpg" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 1 The gray scale value of the paper cake deinked by
+                deinking negative control system.</b>
+            </div>
+          </div>
+          <h3 class="myPage-paragraph-headline-h3">2.2 Chemical method.</h3>
+          <p class="myPage-paragraph-content">
+            Currently, chemical deinking is the classical method used in industry (see <a
+              style="font-weight: bolder;text-decoration: none;"
+              href="{{ url_for('pages', page='human-practices') }}">IHP</a> for more details), which was
+            selected as a positive control. In the chemical method, 1 g NaOH was added to the deinking blank system and
+            reacted at 30 °C for 30 min. After the standard operating procedure (see <a
+              style="font-weight: bolder;text-decoration: none;" href="{{ url_for('pages', page='sop') }}">SOP</a> for
+            more details), read the
+            gray scale value automatically. The experimental results showed a high value of the gray scale (Figure 2),
+            demonstrating that the chemical method exhibit a remarkable effect in deinking.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/2.jpg" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 2 The gray value of the paper cake deinked by
+                chemical method.</b>
+            </div>
+          </div>
+          <h3 class="myPage-paragraph-headline-h3">2.3 Enzymatic method</h3>
+          <h4 class="myPage-paragraph-headline-h4">2.3.1 Cellulase</h4>
+          <p class="myPage-paragraph-content">
+            The plasmid BBa_K5136026 was transformed into E. coli BL21(DE3), then the positive transformants were
+            selected by kanamycin and confirmed by colony PCR (Figure 3A) and gene sequencing. The plasmid verified by
+            sequencing was successfully transformed into E. coli BL21(DE3).
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/3.png" alt="">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 3 A. DNA gel electrophoresis of the colony PCR products of BBa_K5136026_pET-28a(+) in <i>E.
+                  coli</i>
+                BL21(DE3). Target bands (1518 bp) can be observed at the position between 1000 bp and 2000 bp. B.
+                SDS-PAGE
+                analysis of cellulase EG5C protein. Target bands (56.1 kDa) can be observed at the position around 52
+                kDa.</b>
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            After being cultivated and induced by 0.5 mM IPTG, the GE AKTA Prime Plus FPLC System was employed to
+            collect purified protein from the lysate supernatant. Cellulase was verified by sodium dodecyl sulfate
+            (SDS)-12% (wt/vol) polyacrylamide gel electrophoresis (PAGE) and Coomassie blue staining (Figure 3B).
+          </p>
+          <p class="myPage-paragraph-content">
+            After purification, we harvest the cellulase EG5C successfully. 1 mL cellulase (0.2 mg/mL) was added in the
+            deinking blank system and reacted at 60 °C for 60 min. After the standard operating procedure (see <a
+              style="font-weight: bolder;text-decoration: none;" href="{{ url_for('pages', page='sop') }}">SOP</a> for
+            more details), read the gray scale value automatically. The experimental results showed that the gray scale
+            value is higher than that of deinking blank system (negative control), while lower than that of chemical
+            method (positive control). So, cellulase has the ability to remove ink, but the is still insufficient
+            compared with the chemical deinking (Figure 4).
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/4.jpg" alt="">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 4 The gray scale value of paper cake deinked with cellulase.</b>
+            </div>
+          </div>
+          <h4 class="myPage-paragraph-headline-h4">2.3.2 Laccase</h4>
+          <p class="myPage-paragraph-content">
+            The plasmid BBa_K5136027 was transformed into E. coli BL21(DE3), then the positive transformants were
+            selected by kanamycin and confirmed by colony PCR and gene sequencing. The plasmid verified by sequencing
+            was successfully transformed into E. coli BL21(DE3).
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/5.png" alt="">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 5 A. DNA gel electrophoresis of the colony PCR products of BBa_K5136027_pET-28a(+) in <i>E.
+                  coli</i>
+                BL21(DE3). Target bands (1659 bp) can be observed at the position between 1000 bp and 2000 bp. B.
+                SDS-PAGE analysis of laccase-his protein. Target bands (62.6 kDa) can be observed at the position around
+                66 kDa.</b>
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            After being cultivated and induced by 0.03 mM IPTG and 0.5 mM CuSO4, the GE AKTA Prime Plus FPLC System was
+            employed to collect purified protein from the lysate supernatant. Laccase was verified by sodium dodecyl
+            sulfate (SDS)-12% (wt/vol) polyacrylamide gel electrophoresis (PAGE) and Coomassie blue staining.
+          </p>
+          <p class="myPage-paragraph-content">
+            After purification, we harvest the laccase successfully. 1 mL laccase (0.2 mg/mL) was added to the deinking
+            blank system and reacted at 70 °C for 60 min. After the standard operating procedure (see <a
+              style="font-weight: bolder;text-decoration: none;" href="{{ url_for('pages', page='sop') }}">SOP</a> for
+            more
+            details), read the gray scale value automatically. The experimental results show that the waste paper
+            treated with cellulase alone exhibits a similar gray scale value to cellulase. So, laccase also has the
+            ability to remove ink, but is still insufficient compared with chemical deinking.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/6.jpg" alt="">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 6 The gray scale value of paper cake deinked with laccase.</b>
+            </div>
+          </div>
+          <h4 class="myPage-paragraph-headline-h4">2.3.3 Monooxygenase (P450)</h4>
+          <p class="myPage-paragraph-content">
+            The engineering bacteria were cultivated and induced by 0.03 mM IPTG, the GE AKTA Prime Plus FPLC System was
+            employed to collect purified protein from the lysate supernatant. P450 was verified by sodium dodecyl
+            sulfate (SDS)-12% (wt/vol) polyacrylamide gel electrophoresis (PAGE) and Coomassie blue staining.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/7.png" alt="">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 7 SDS-PAGE analysis of P450 CYP102A1 protein. Target bands (117.8 kDa) can be observed at the
+                position around 95 kDa.</b>
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            After purification, we harvest P450 successfully. 1 mL P450 (0.35 mg/mL) and 0.012 mg NADPH was added in the
+            deinking blank system and reacted at 30 °C for 60 min. After standard operating procedure (see <a
+              style="font-weight: bolder;text-decoration: none;" href="{{ url_for('pages', page='sop') }}">SOP</a> for
+            more
+            details), read the gray scale value automatically. The gray scale value treated by P450 was slightly higher
+            than that of cellulase and laccase (Figure 8).
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/8-p450.jpg" alt="">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 8 The gray scale value of paper cake deinked with P450 CYP102A1.</b>
+            </div>
+          </div>
+          <h4 class="myPage-paragraph-headline-h4">2.3.4 Multienzymes</h4>
+          <p class="myPage-paragraph-content">
+            We try to investigate the deinking using multienzymes, coupling the function of two enzymes with different
+            functions. For one combination, 1 mL cellulase (0.2 mg/mL) and 1 mL laccase (0.2 mg/mL) were added in the
+            deinking blank system and reacted at 65 °C (the average of the two optimal temperatures) for 60 min. Because
+            the optimal temperature of cellulase (60 °C) varies from that of P450 (30 °C), for the other combination, we
+            first added 1 mL cellulase (0.2 mg/mL) to the deinking blank system and reacted at 60 °C for 60 min. After
+            the reaction, 1 mL P450 (0.35 mg/mL) was added and reacted at 30 °C for 60 min. After the standard operating
+            procedure (see <a style="font-weight: bolder;text-decoration: none;"
+              href="{{ url_for('pages', page='sop') }}">SOP</a> for more details), read the gray scale value
+            automatically. The experimental results
+            showed that there was no obvious improvement in the gray scale value in the two multienzymes compared with
+            that of a single enzyme. We found that gray scale value of waste paper treated by monooxygenase was the
+            highest one among the enzymes. Therefore, we hope to conduct further research on monooxygenase to optimize
+            the deinking effect of waste paper enzymes.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/9.jpg" alt="">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 9 The gray scale value of paper cake deinked with cellulase and laccase.</b>
+            </div>
+          </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/10-p450.jpg" alt="">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 10 The gray value of paper cake deinked with cellulase and P450.</b>
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            Based on the above experimental results, we found that monooxygenase plays an important role in the deinking
+            of waste paper. Therefore, we hope to conduct further research on monooxygenase to optimize the deinking
+            effect of waste paper.
+          </p>
         </div>
 
         <div class="myPage-paragraph" id="section4">
