@@ -92,99 +92,26 @@
           <p class="myPage-paragraph-content">
             接上面的分段，就像这样，同时如果有需要有<b>粗体</b>或者<i>斜体</i>，请记得加上b和i的标签。
 
-                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                    <semantics>
-                      <mrow>
-                        <mi>M</mi>
-                        <mi>S</mi>
-                        <msub>
-                          <mi>E</mi>
-                          <mi>u</mi>
-                        </msub>
-                        <mo>=</mo>
-                        <mfrac>
-                          <mn>1</mn>
-                          <mi>n</mi>
-                        </mfrac>
-                        <mstyle displaystyle="true">
-                          <munderover>
-                            <mo>&#x2211;</mo>
-                            <mrow>
-                              <mi>i</mi>
-                              <mo>=</mo>
-                              <mn>1</mn>
-                            </mrow>
-                            <mi>n</mi>
-                          </munderover>
-                          <mrow>
-                            <msup>
-                              <mrow>
-                                <mo stretchy="false">[</mo>
-                                <msub>
-                                  <mi>u</mi>
-                                  <mi>i</mi>
-                                </msub>
-                                <mo>&#x2212;</mo>
-                                <mi>N</mi>
-                                <mi>N</mi>
-                                <mo stretchy="false">(</mo>
-                                <msub>
-                                  <mi>x</mi>
-                                  <mi>i</mi>
-                                </msub>
-                                <mo>,</mo>
-                                <msub>
-                                  <mi>t</mi>
-                                  <mi>i</mi>
-                                </msub>
-                                <mo>;</mo>
-                                <mi>&#x3B8;</mi>
-                                <mo stretchy="false">)</mo>
-                                <mo stretchy="false">]</mo>
-                              </mrow>
-                              <mn>2</mn>
-                            </msup>
-                          </mrow>
-                        </mstyle>
-                      </mrow>
-                    </semantics>
-                  
-
-                  </math>
-
-$$
-\frac{dX_{D}}{dt} = k_{T}X_{V}\left( {1 - \frac{X_{V} + X_{D}}{X_{T,max}}} \right) - \left( {\frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right) - k_{d}} \right)X_{V} - k_{dXd}X_{D}
-\tag{1}
-$$
-
-
-
-
 
 $$
 X_{T} = X_{V} + X_{D}
-\tag{1}
 $$
 
 $$
 \frac{dX_{V}}{dt} = \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)X_{V} - k_{d}X_{V}
-\tag{2}
 $$
 
 $$
 \frac{dX_{D}}{dt} = k_{T}X_{V}\left( {1 - \frac{X_{V} + X_{D}}{X_{T,max}}} \right) - \left( {\frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right) - k_{d}} \right)X_{V} - k_{dXd}X_{D}
-\tag{3}
 $$
 
 $$
 \frac{dX_{lys}}{dt} = k_{dXd}X_{D}
-\tag{4}
 $$
 
 
 $$
 \frac{dS}{dt} = \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)\frac{1}{Y_{Xv/s}}X_{V} - k_{ds}S
-\tag{5}
 $$
 
 
@@ -192,7 +119,6 @@ $$
 
 $$
 \frac{dP}{dt} = \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)\frac{1}{Y_{P/Xv}}X_{V} - k_{dp}P
-\tag{6}
 $$
 
 
@@ -201,31 +127,27 @@ Sec System
 
 
 
+
 $$
 \frac{dRNA}{dt} = k_{1} - k_{d1}RNA
-\tag{7}
 $$
 
 $$
 \frac{dP_{c}}{dt} = k_{2}RNA - k_{d2}P_{c} - \alpha P_{c}
-\tag{8}
 $$
 
 $$
 \frac{dP_{p}}{dt} = \alpha P_{c} - k_{d3}P_{p} - \beta P_{p}
-\tag{9}
 $$
 
 $$
-\frac{dP_{l}}{dt} = \beta P_{p} - k_{d4}P_{l} - \gamma P_{l} - \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right) \frac{X_{V}}{X_{V} + X_{D}}P_{l} - k_{dXd}\frac{X_{D}}{X_{V} + X_{D}}P_{l}
-\tag{10}
+\frac{dP_{l}}{dt} = \beta P_{p} - k_{d4}P_{l} - \gamma P_{l} - \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)\frac{X_{V}}{X_{V} + X_{D}}P_{l} - k_{dXd}\frac{X_{D}}{X_{V} + X_{D}}P_{l} 
 $$
 
 
 
 $$
 \frac{dP_{M}}{dt} = \gamma P_{l}X_{V}d_{1} + k_{dXd}X_{D}P_{l}d_{2} + \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)X_{V}P_{l}d_{3}
-\tag{11}
 $$
 
 
@@ -235,27 +157,22 @@ Tat System
 
 $$
 \frac{dRNA}{dt} = k_{1} - k_{d1}RNA
-\tag{12}
 $$
 
 $$
 \frac{dP_{c}}{dt} = k_{2}RNA - k_{d2}P_{c} - \beta P_{c}
-\tag{13}
 $$
 
 $$
 \frac{dP_{l}}{dt} = \beta P_{c} - k_{d4}P_{l} - \alpha P_{l} - k_{dXd} \frac {X_{D}}{X_{V} + X_{D}} P_{l}
-\tag{14}
 $$
 
 $$
 \frac{dP_{p}}{dt} = \alpha P_{c} - k_{d3}P_{p} - \gamma P_{p} - \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)\frac{X_{V}}{X_{V} + X_{D}}P_{p} - k_{dXd}\frac{X_{D}}{X_{V} + X_{D}}P_{p}
-\tag{15}
 $$
 
 $$
 \frac{dP_{M}}{dt} = \gamma P_{p}X_{V}d_{1} + k_{dXd}X_{D}P_{l}d_{2} + \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)X_{V}P_{p}d_{3} + k_{dXd}X_{D}P_{p}d_{4}
-\tag{16}
 $$
 
 
