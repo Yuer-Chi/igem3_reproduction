@@ -32,20 +32,15 @@ with new communities by discussing public values and the science behind syntheti
     <div class="left-bar">
       <div class="left-bar-right">
         <div class="left-bar-right-item">
-          <a href="#section1" class="sidebar-link" data-section="section1">文字段落</a>
+          <a href="#section1" class="sidebar-link" data-section="section1">Deinking</a>
         </div>
         <div class="left-bar-right-item">
-          <a href="#section2" class="sidebar-link" data-section="section2">插图演示</a>
+          <a href="#section2" class="sidebar-link" data-section="section2">Enzyme Release System</a>
         </div>
         <div class="left-bar-right-item">
-          <a href="#section3" class="sidebar-link" data-section="section3">小标题和小小标题</a>
+          <a href="#section3" class="sidebar-link" data-section="section3">Life Cycle Assessment</a>
         </div>
-        <div class="left-bar-right-item">
-          <a href="#section4" class="sidebar-link" data-section="section4">超链接的写法</a>
-        </div>
-        <div class="left-bar-right-item">
-          <a href="#section5" class="sidebar-link" data-section="section5">reference的写法</a>
-        </div>
+        
       </div>
     </div>
     <!-- 底部插图 -->
@@ -65,152 +60,221 @@ with new communities by discussing public values and the science behind syntheti
         <div class="myPage-headline">
           <h1 class="myPage-headline-content">
             <span style="color: #867a77">.</span>
-            <span style="color: #483b53;font-family: Aaargh;">这个页面的大标题</span>
+            <span style="color: #483b53;font-family: Aaargh;">Proof of Concept</span>
             <span style="color: #867a77">.</span>
           </h1>
         </div>
 
-        <!---文字段落--->
+        <!---Deinking--->
         <div class="myPage-paragraph" id="section1">
-          <h2 class="myPage-paragraph-headline-h2">1.标题1</h2>
+          <h2 class="myPage-paragraph-headline-h2">Deinking</h2>
           <!-- 记住这里的h2就是标题 -->
+          <h3 class="myPage-paragraph-headline-h3">1. Introduction</h3>
           <p class="myPage-paragraph-content">
-            开始文字，若需要分段，请复制这个class=myPage-paragraph-content的p标签。
+            Our understanding of human practices (see <a style="font-weight: bolder;text-decoration: none;"
+              href="{{ url_for('pages', page='human-practices') }}">IHP</a> for more details) reveals significant issues
+            in the wastepaper
+            recycling industry, such as high energy consumption and severe pollution. The enzymatic method, with its
+            potential to ensure effective deinking while avoiding the environmental pollution caused by chemical
+            reagents, emerges as a promising solution. However, the limited application of this method due to the low
+            catalytic efficiency of enzymes and the extensive screening workload presents a challenge. <b>To address
+              this,
+              we have developed a rapid screening method based on the gray scale to identify enzymes with the best
+              deinking effect, thereby promoting the industrial application of enzymes</b>. In this section, we present
+            the
+            characterization of the selected enzymes, which could serve as a viable alternative to the chemical method.
           </p>
+          <h3 class="myPage-paragraph-headline-h3">2. CYP199A4 T253A can significantly remove ink</h3>
           <p class="myPage-paragraph-content">
-            接上面的分段，就像这样，同时如果有需要有<b>粗体</b>或者<i>斜体</i>，请记得加上b和i的标签。
+            0.6 g NaOH, 0.6 g Na2SiO3, and 1.0 mL H2O2 were added to 30 mL pulp with 1% concentration, and the final
+            concentration of monooxygenase CYP199A4 T253A was 1 μM. After the reaction at 30°C for 60 min, limonene was
+            added to the pulp for ink extraction, finally draining by using a Buchner funnel. The recycled paper is
+            imaged after draining, and the gray scale value is read by a written program. The higher the gray scale
+            value, the better the deinking effect is proved, which means the whiter the paper is observed, the less ink
+            remains (see the SOP for details). Based on the screen and analysis, we found that the 252 residue was the
+            targeted position that contributed to the deinking. So, saturation mutation on the 252 position was carried
+            out to harvest the best mutant. As shown in Figure 1, the gray scale value of some mutants increased by 50%
+            at least, in which 252A shows the best performance in deinking. As shown in the picture from the microscope
+            (Figure 2), the paper treated with CYP199A4 T253A (Figure 2A) has minimal ink residue among these enzymes.
+            The paper is relatively white, and the observed lifting effect has reached 100% of the Negative (Figure 2
+            Negative). The deinking enhancement effect is defined as
           </p>
 
           <div class="myPage-paragraph-fig">
-            <img src="https://static.igem.wiki/teams/5136/11.png" alt="">
-            <div class="myPage-paragraph-fig-description"><b>Figure 1</b>
+            <img src="https://static.igem.wiki/teams/5136/poc/gs.png" alt="">
+          </div>
+          <p class="myPage-paragraph-content">
+            Experimental results showed (Figure 1) that the deinking effect of mutant CYP199A4 T253A was the most
+            prominent, with an average increase of 105%.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/poc/fig1.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 1 Comparison of deinking promotion effects of
+                CYP199A4 series mutants.</b>
             </div>
           </div>
           <div class="myPage-paragraph-fig">
-            <img src="https://static.igem.wiki/teams/5136/22.png" alt="">
-            <div class="myPage-paragraph-fig-description"><b>Figure 2</b>
+            <img src="https://static.igem.wiki/teams/5136/poc/fig2.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 2 Ultra-high resolution microscope imaging of
+                CYP199A4 series mutants.</b>
             </div>
           </div>
-          <div class="myPage-paragraph-fig">
-            <img src="https://static.igem.wiki/teams/5135/33.png" alt="">
-            <div class="myPage-paragraph-fig-description"><b>Figure 3</b>
-            </div>
-          </div>
+          <h3 class="myPage-paragraph-headline-h3">3. Conclusion</h3>
+          <p class="myPage-paragraph-content">
+            We have successfully established a screening method for enzymes with high deinking efficiency based on the
+            gray scale value changes. Leveraging the monooxygenase CYP199A4 and its mutants reported in the literature,
+            we have identified a monooxygenase with high efficiency in deinking, a significant milestone in the
+            wastepaper recycling process (see <a style="font-weight: bolder;text-decoration: none;"
+              href="{{ url_for('pages', page='design') }}">Design</a> for more details). This, combined with a rapid
+            screening method,
+            structure-activity analysis, and saturation mutation, has led us to the <b>CYP199A4 mutant T253A</b> (see <a
+              style="font-weight: bolder;text-decoration: none;"
+              href="{{ url_for('pages', page='part-collection') }}">Part Collection</a> for more details), which
+            exhibits superior deinking performance. In our proposed implementation,
+            these enzymes will be introduced into the industrial pulping environment, and further characterization will
+            focus on the efficiency and stability of the enzyme release system.
+             
+
+          </p>
         </div>
 
-        <!---插图演示--->
+        <!---Enzyme Release System--->
         <div class="myPage-paragraph" id="section2">
-          <h2 class="myPage-paragraph-headline-h2">2.标题2</h2>
+          <h2 class="myPage-paragraph-headline-h2">Enzyme Release System</h2>
+
+          <h3 class="myPage-paragraph-headline-h3">1. Introduction</h3>
           <p class="myPage-paragraph-content">
-            这里就是展示一下如何插入图片，图片的格式就是一张图片，可以说png，jpg等等格式都没问题。
+            In practical applications, the high-performance deinking enzymes we have identified must be directly applied
+            to large-scale pulp deinking reactors. However, both protein purification and the inducers-dependent E. coli
+            autolytic system FLSA (FhuD-T7 lysozyme-SsrA mediated autolytic system, see <a
+              style="font-weight: bolder;text-decoration: none;" href="{{ url_for('pages', page='design') }}">Design</a>
+            for more details) can be
+            costly. In addition, the FLSA system can also lead to the production of a large number of miscellaneous
+            proteins, which can affect the deinking effect of the target enzyme. To address these challenges and ensure
+            the practicality of our research, we have decided to use a cost-effective approach. We will use the signal
+            peptide to directly secret the enzyme outside the cell (see <a
+              style="font-weight: bolder;text-decoration: none;" href="{{ url_for('pages', page='design') }}">Design</a>
+            for more details), thereby bypassing the
+            protein purification step and avoiding the use of inducers. Combined with constitutive promoters, this
+            approach will significantly reduce the operation steps and costs, making our method more practical for
+            industrial application. In this section, we aim to characterize the effectiveness of releasing target
+            proteins and select the most efficient and stable signal peptide.
+          </p>
+          <h3 class="myPage-paragraph-headline-h3">2. The LMT has the best secretory efficiency</h3>
+          <p class="myPage-paragraph-content">
+            Eight classic signal peptides, such as LMT, PelB, OmpA, OsmY, YebF, AIgen, TorA, and HlyA, were used to
+            construct the signal peptide-GFP fusion protein. The contribution values of secretion, leakage, and cleavage
+            processes to the fluorescence of supernatants were used to characterize the secretion efficiency of signal
+            peptides, exploring their secretion dynamics. As shown in Figure 3, at a low cell lysis rate, GFP secreted
+            by the LMT makes a more significant contribution to the supernatant fluorescence, proving that <b>the LMT
+              exhibits the best secretion efficiency under low metabolic pressure</b>.
           </p>
           <div class="myPage-paragraph-fig">
-            <img src="https://static.igem.wiki/teams/4907/wiki/description/description-fig1.png" alt="">
-            <div class="myPage-paragraph-fig-description"><b>Figure 1这里就是写备注就好了</b>
+            <img src="https://static.igem.wiki/teams/5136/poc/fig3.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 3 Fluorescent source proportion of supernatant.</b>
             </div>
           </div>
-          <h3 class="myPage-paragraph-headline-h3">5.2 还是小标题</h3>
-          <h4 class="myPage-paragraph-headline-h4">1. 小小标题</h4>
+          <h3 class="myPage-paragraph-headline-h3">3. Secretion-deinking coupling</h3>
           <p class="myPage-paragraph-content">
-            <a style="font-weight: bolder;text-decoration: none;" href="https://www.baidu.com/">百度</a>
-            就是这种格式。
+            We have proved that some CYP199A4 mutants showed stronger deinking, and LMT showed a good secretion effect.
+            So, we try to verify the deinking efficiency of CYP199A4 mutants secreted to the supernatant by the LMT. The
+            engineered bacteria were cultured at 25°C, and the supernatant culture was taken at 12 h, 18 h, 24 h, and 36
+            h, respectively, using SDS-PAGE to demonstrate that the fusion protein could be successfully secreted into
+            the supernatant. Gray scale value analysis was performed on the bands, proving that the concentration of
+            LMT-CYP199A4 T253E in the culture supernatant gradually increased with time (Figure 4A). At the same time,
+            the supernatant from the culture in 36 hours was used for the pulp deinking experiment (see <a
+              style="font-weight: bolder;text-decoration: none;" href="{{ url_for('pages', page='sop') }}">SOP</a> for
+            more
+            details), and the results are shown in Figure 4B. As shown in the picture from the microscope, LMT-CYP199A4
+            T253E in the supernatant showed a perfect deinking effect, with an increase effect of 71.7%. <b>The above
+              results showed that LMT signal peptide could secrete CYP199A4 T253E to the extracellular environment
+              continuously, which further exhibits the perfect performance in removing the ink from the pulp</b>.
           </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/poc/fig4.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 4 Characterization of His tag-LMT-CYP199A4
+                T253E.</b>
+            </div>
+            <div class="myPage-paragraph-fig-description"><b>(A) SDS-PAGE analysis (left) and gray scale value analysis
+                (right) of the supernatant at different times.</b>
+            </div>
+            <div class="myPage-paragraph-fig-description"><b>(B) Deinking characterization of His tag-LMT-CYP199A4 T253E
+                (BBa_K5136047) from the supernatant (left) and microscope image (right).</b>
+            </div>
+          </div>
+          <h3 class="myPage-paragraph-headline-h3">4. Conclusion</h3>
+          <p class="myPage-paragraph-content">
+            By characterizing classic signal peptides, we proved that LMT has a high secretion efficiency. It can
+            realize the continuous secretion of CYP199A4 T253E with significant deinking performance. Finally, we proved
+            that the scheme we designed is reasonable and feasible, which paves the way for its application at an
+            industrial scale.
+          </p>
+
         </div>
 
-        <!---小标题和小小标题--->
+        <!---Life Cycle Assessment--->
         <div class="myPage-paragraph" id="section3">
-          <h2 class="myPage-paragraph-headline-h2">3.标题3</h2>
+          <h2 class="myPage-paragraph-headline-h2">Life Cycle Assessment</h2>
 
-          <h3 class="myPage-paragraph-headline-h3">5.1 小标题</h3>
+          <h3 class="myPage-paragraph-headline-h3">1. Introduce</h3>
           <p class="myPage-paragraph-content">
-            这里展示一下小标题，，页面中的标题用的是h2，小标题用的是h3，小小标题用的是h4。
+            <b>Life Cycle Assessment (LCA)</b> is a comprehensive method used to evaluate the environmental influence of
+            a
+            product or process from inception to disposal (from "cradle" to "grave"), enabling a more complete
+            assessment of the contribution of our projects to the emission reduction of wastepaper recycling industry
+            processes. In this part, we will combine experimental data and related studies to quantify energy
+            consumption, greenhouse gas emissions, and waste generation. By calculating and comparing the carbon
+            emissions of the enzymatic method and chemical method in recycled paper production, we comprehensively
+            evaluate the contribution of our project to emission reduction.
           </p>
-
-          <h3 class="myPage-paragraph-headline-h3">5.2 还是小标题</h3>
-          <h4 class="myPage-paragraph-headline-h4">1. 小小标题</h4>
+          <h3 class="myPage-paragraph-headline-h3">2. Emission reduction contribution of recycled paper production</h3>
           <p class="myPage-paragraph-content">
-            比如这里就有小小标题
+            We calculated the input/output process of recycled paper production without considering the difference in
+            carbon emissions caused by the pretreatment process. We considered the carbon emissions from the production
+            of chemical reagents in the deinking process, the respiratory volume of enzyme-producing bacteria, and the
+            corresponding electricity consumption. <b>The results showed that the carbon emissions were reduced by the
+              enzymatic deinking method by 30.7% compared with the chemical deinking method</b>. The waste treatment
+            process
+            considers the chemical oxygen demand (COD), biochemical oxygen demand (BOD), suspended solids (SS), and
+            other harmful substances in the wastewater. Compared with the chemical method, the carbon emission of the
+            wastewater treated by the enzymatic method is reduced by 50%. The overall emission reduction optimization
+            degree of the final scheme is 21.1% (Figure 5), which highlights that the enzymatic method has more
+            advantages in reducing carbon emissions than the classical chemical method, and it can be a more sustainable
+            alternative to wastepaper deinking in the future.
           </p>
-          <h4 class="myPage-paragraph-headline-h4">2. 另一个小小标题</h4>
-          <p class="myPage-paragraph-content">
-            同上
-          </p>
-
-        </div>
-
-        <!---超链接的写法--->
-        <div class="myPage-paragraph" id="section4">
-          <h2 class="myPage-paragraph-headline-h2">4.标题4</h2>
-          <p class="myPage-paragraph-content">
-            这里主要是展示一下超链接要怎么用，像接下来这个 <a style="font-weight: bolder;text-decoration: none;"
-              href="{{ url_for('pages', page='hardware') }}">Hardware</a>,
-            就是跳转到我们网页的其他页面的格式，如果我跳转到其他网页的话比如<a style="font-weight: bolder;text-decoration: none;"
-              href="https://www.baidu.com/">百度</a>的话,
-            就是这种格式。
-          </p>
-
-          <div id="accordion-Det" class="accordion">
-            <div class="myPage-paragraph-headline-h3 expstep_name">CspA mRNA Experiment</div>
-            <div class="panel">
-              <div class="panel-heading" role="tab" id="heading51">
-                <h4 class="panel-title">
-                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse51" aria-expanded="true"
-                    aria-controls="collapse51">
-                    Requirements
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse51" class="panel-collapse collapse" role="tabpanel">
-                <div class="panel-body">
-                  <p>● LB liquid medium<br>
-                    ● Tecan Infinite M200 microplate reader<br>
-                  </p>
-                </div>
-              </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/poc/fig5.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 5 Overall carbon emissions and distribution.</b>
             </div>
-            <div class="panel">
-              <div class="panel-heading" role="tab" id="heading52">
-                <h4 class="panel-title">
-                  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse52" aria-expanded="false"
-                    aria-controls="collapse52">
-                    Protocol
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse52" class="panel-collapse collapse" role="tabpanel">
-                <div class="panel-body">
-                  <p>1. Revive the transformed bacteria by incubating them at 37 °C with shaking at 200
-                    <i>r.p.m.</i> for 12 hours.<br>
-                    2. Inoculate the revived bacteria at 2% concentration into 10 mL of LB medium and shake
-                    at 37 °C for around 2 hours until the OD<sub>600</sub> values reaches 0.6-0.8.<br>
-                    3. Incubate the above bacteria separately at 4 °C, 15 °C, and 37 °C, each with shaking at
-                    200 r.p.m. .<br>
-                    4. Use Tecan Infinite M200 microplate reader to measure the green fluorescence intensity
-                    and
-                    OD<sub>600</sub> values at 2 hours, 4 hours, and 6 hours.<br>
-                    <em><small>Note: Excitation wavelength: 488 <i>nm</i>, Emission wavelength: 530
-                        <i>nm</i>.</small></em><br>
-                    5. Calculate the ratio of green fluorescence intensity to OD<sub>600</sub> data.<br>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-
           </div>
+          <h3 class="myPage-paragraph-headline-h3">3. Conclusion</h3>
+          <p class="myPage-paragraph-content">
+            Through life cycle evaluation, we have successfully evaluated our project's contribution to reducing the
+            emission of recycled paper production. Therefore, our project is expected to be applied to industrial
+            production in the future to reduce the carbon emission generated by the paper-making process with an
+            efficient, low-energy consumption, and environmentally friendly deinking process.
+          </p>
+          <h3 class="myPage-paragraph-headline-h3">4. Future</h3>
+
+          <p class="myPage-paragraph-content">
+            We have successfully demonstrated that the monooxygenase <b>CYP199A4 T253A has a good deinking effect while
+              demonstrating that the LMT has the best secretion efficiency</b>. Using constitutive promoters, we can
+            achieve
+            the requirements of low cost and high efficiency on an industrial scale. We also characterized the
+            combination of LMT and CYP199A4 T253E, proving that LMT-CYP199A4 T253E can achieve secretion-deinking
+            coupling. Due to time constraints, we regret not presenting the secretion-deinking effect of LMT- CYP199A4
+            T253A (the best variant, see <a style="font-weight: bolder;text-decoration: none;"
+              href="{{ url_for('pages', page='part-collection') }}">Part Collection</a>) in our wiki, but <b>the
+              deinking
+              result is sufficient to prove
+              the feasibility and efficiency of our project design concept. In the future, we will show our best results
+              in the promotion video or presentation</b>.
+          </p>
+
 
         </div>
 
-
-        <!--Reference的写法-->
-        <div class="myPage-paragraph" id="section5">
-          <h2 class="myPage-paragraph-headline-h2">5.标题5</h2>
-          <ol class="myPage-paragraph-reference">
-            <li>最后就是reference的部分</li>
-            <li>写几个ref就是写几个li标签</li>
-            <li>只要注意用的是li标签就好了</li>
-          </ol>
-        </div>
+        
 
 
       </div>
@@ -219,28 +283,6 @@ with new communities by discussing public values and the science behind syntheti
   </div>
 
   <div style="margin-bottom: 100px;"></div>
-  <script>
-    // jQuery to handle the collapse toggle and style changes
-    $(document).ready(function () {
-      $('#accordion-Det .panel-title a').click(function () {
-        var targetId = $(this).attr('href');
-        // Toggle the collapse
-        $(targetId).collapse('toggle');
-
-        // Event for collapse show
-        $(targetId).on('shown.bs.collapse', function () {
-          $(this).prev().find('a').removeClass('collapsed').addClass('expanded');
-        });
-
-        // Event for collapse hide
-        $(targetId).on('hidden.bs.collapse', function () {
-          $(this).prev().find('a').removeClass('expanded').addClass('collapsed');
-        });
-
-        return false; // Prevent the default behavior of the anchor
-      });
-    });
-  </script>
 
 </div>
 
