@@ -127,134 +127,134 @@
         <div class="myPage-paragraph" id="section2">
           <h2 class="myPage-paragraph-headline-h2">Cycle 1: Verifying the function of FhuD-GGG Iinker-T7 Lysozyme 119V-SsrA mediated autolytic system (BBa_K5136031)</h2>
           <!-- 记住这里的h2就是标题 -->
-          <div class="myPage-paragraph" id="section2-1">
-            <h2 class="myPage-paragraph-headline-h2">Design</h2>
-            <!-- 记住这里的h2就是标题 -->
-            <p class="myPage-paragraph-content">
-              In the autolytic system FLSA (FhuD-T7 lysozyme-SsrA mediated autolytic system), T7 lysozyme will reach the peptidoglycan layer in periplasmic space with the assistance of Sec-Tat dual pathway signal peptide FhuD to permeabilize the host inner membrane, resulting in the degradation of the peptidoglycan framework to cause cell collapse. While the degron, SsrA tag, was fused to the C-terminal of T7 lysozyme for alleviating the undesired lysis of host cells caused by leaking T7 lysozyme (1).
-            </p>
-            <p class="myPage-paragraph-content">
-              For determining the efficiency of FLSA autolytic system to release 
-              intracellularly produced recombinant proteins, we chose the superfolder green 
-              fluorescent protein (sfGFP) as the reporter (2) so that the released amount 
-              could be easily measured as fluorescence intensity. Therefore, the <b>sfGFP 
-              release efficiency</b> is defined as <b>the ratio of fluorescence intensity of 
-              cultural supernatant to that of bacterial culture</b>.
-            </p>
-          </div>
+          
+          <h2 class="myPage-paragraph-headline-h3"id="section2-1">Design</h2>
+          <!-- 记住这里的h2就是标题 -->
+          <p class="myPage-paragraph-content">
+            In the autolytic system FLSA (FhuD-T7 lysozyme-SsrA mediated autolytic system), T7 lysozyme will reach the peptidoglycan layer in periplasmic space with the assistance of Sec-Tat dual pathway signal peptide FhuD to permeabilize the host inner membrane, resulting in the degradation of the peptidoglycan framework to cause cell collapse. While the degron, SsrA tag, was fused to the C-terminal of T7 lysozyme for alleviating the undesired lysis of host cells caused by leaking T7 lysozyme (1).
+          </p>
+          <p class="myPage-paragraph-content">
+            For determining the efficiency of FLSA autolytic system to release 
+            intracellularly produced recombinant proteins, we chose the superfolder green 
+            fluorescent protein (sfGFP) as the reporter (2) so that the released amount 
+            could be easily measured as fluorescence intensity. Therefore, the <b>sfGFP 
+            release efficiency</b> is defined as <b>the ratio of fluorescence intensity of 
+            cultural supernatant to that of bacterial culture</b>.
+          </p>
+        
+        
+        
+          <h2 class="myPage-paragraph-headline-h3"id="section2-2">Build</h2>
+          <!-- 记住这里的h2就是标题 -->
+          <p class="myPage-paragraph-content">
+            First, the two parts, FhuD signal peptide and T7 lysozyme 119V 
+            (<a style="font-weight: bolder;text-decoration: none;"
+            href="https://www.ncbi.nlm.nih.gov/protein/NP_041973.1">NP_041973.1</a>), were linked by a flexible linker (GGGGS)<sub>3</sub> 
+            (GGG, in short) (3). Following that, the SsrA tag was fused to the 
+            C-terminal of T7 lysozyme, generating a basic part of coding 
+            sequence (<a style="font-weight: bolder;text-decoration: none;"
+            href="https://parts.igem.org/Part:BBa_K5136031">BBa_K5136031</a>).
+          </p>
 
-          <div class="myPage-paragraph" id="section2-2">
-            <h2 class="myPage-paragraph-headline-h2">Build</h2>
-            <!-- 记住这里的h2就是标题 -->
-            <p class="myPage-paragraph-content">
-              First, the two parts, FhuD signal peptide and T7 lysozyme 119V 
-              (<a style="font-weight: bolder;text-decoration: none;"
-              href="https://www.ncbi.nlm.nih.gov/protein/NP_041973.1">NP_041973.1</a>), were linked by a flexible linker (GGGGS)<sub>3</sub> 
-              (GGG, in short) (3). Following that, the SsrA tag was fused to the 
-              C-terminal of T7 lysozyme, generating a basic part of coding 
-              sequence (<a style="font-weight: bolder;text-decoration: none;"
-              href="https://parts.igem.org/Part:BBa_K5136031">BBa_K5136031</a>).
-            </p>
+          <p class="myPage-paragraph-content">
+            There were four basic parts assembled into the vector pSB1C3 (Figure 1A) 
+            <i>via</i> Gibson assembly: <i>L</i>-arabinose inducible promoter (<a style="font-weight: bolder;text-decoration: none;"
+            href="http://parts.igem.org/Part:BBa_I0500">BBa_I0500</a>), 
+            RBS (<a style="font-weight: bolder;text-decoration: none;"
+            href="http://parts.igem.org/Part:BBa_B0034">BBa_B0034</a>), FhuD-GGG Iinker-T7 lysozyme 119V-SsrA coding sequence 
+            (<a style="font-weight: bolder;text-decoration: none;"
+            href="https://parts.igem.org/Part:BBa_K5136031">BBa_K5136031</a>) and terminator (<a style="font-weight: bolder;text-decoration: none;"
+            href="http://parts.igem.org/Part:BBa_B0015">BBa_B0015</a>). Assembly product was 
+            subsequently transformed into <i>E. coli</i> DH10β. Then the positive 
+            transformants were selected by chloramphenicol and confirmed by colony 
+            PCR (Figure 1B) and sequencing.
+          </p>
 
-            <p class="myPage-paragraph-content">
-              There were four basic parts assembled into the vector pSB1C3 (Figure 1A) 
-              <i>via</i> Gibson assembly: <i>L</i>-arabinose inducible promoter (<a style="font-weight: bolder;text-decoration: none;"
-              href="http://parts.igem.org/Part:BBa_I0500">BBa_I0500</a>), 
-              RBS (<a style="font-weight: bolder;text-decoration: none;"
-              href="http://parts.igem.org/Part:BBa_B0034">BBa_B0034</a>), FhuD-GGG Iinker-T7 lysozyme 119V-SsrA coding sequence 
-              (<a style="font-weight: bolder;text-decoration: none;"
-              href="https://parts.igem.org/Part:BBa_K5136031">BBa_K5136031</a>) and terminator (<a style="font-weight: bolder;text-decoration: none;"
-              href="http://parts.igem.org/Part:BBa_B0015">BBa_B0015</a>). Assembly product was 
-              subsequently transformed into <i>E. coli</i> DH10β. Then the positive 
-              transformants were selected by chloramphenicol and confirmed by colony 
-              PCR (Figure 1B) and sequencing.
-            </p>
-
-            <div class="myPage-paragraph-fig">
-              <img src="https://static.igem.wiki/teams/5136/engineer-success/1.png" alt="">
-              <div class="myPage-paragraph-fig-description"><b>Figure 1 FhuD-GGG Iinker-T7 lysozyme 119V-SsrA mediated autolytic system. (A) </b>
-                The gene circuit of the FhuD-GGG Iinker-T7 lysozyme 119V-SsrA mediated autolytic system (BBa_K5136221). <b>(B) </b>
-                Agarose gel electrophoresis of the colony PCR products of BBa_K5136221_pSB1C3 in E. coli DH10β. Target bands (2332 bp) can be observed at the position between 2000 bp and 3000 bp.
-              </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/engineer-success/1.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 1 FhuD-GGG Iinker-T7 lysozyme 119V-SsrA mediated autolytic system. (A) </b>
+              The gene circuit of the FhuD-GGG Iinker-T7 lysozyme 119V-SsrA mediated autolytic system (BBa_K5136221). <b>(B) </b>
+              Agarose gel electrophoresis of the colony PCR products of BBa_K5136221_pSB1C3 in E. coli DH10β. Target bands (2332 bp) can be observed at the position between 2000 bp and 3000 bp.
             </div>
-
-            <p class="myPage-paragraph-content">
-              Afterwards, the reporter plasmid (sfgfp_pET-28a(+), laboratory stock) and 
-              the correct autolytic plasmid (<a style="font-weight: bolder;text-decoration: none;"
-              href="https://parts.igem.org/cgi/partsdb/dna_info.cgi?part=BBa_K5136221">BBa_K5136221</a>_pSB1C3) were co-transformed 
-              into <i>E. coli</i> BL21(DE3). While the I0500_pSB1C3 (laboratory stock) was set 
-              as the control and co-transformed with the reporter plasmid into <i>E. coli</i> 
-              BL21(DE3) to obtain the control strain. Correct dual-plasmid transformants 
-              were selected by chloramphenicol and kanamycin.
-            </p>
           </div>
 
-          <div class="myPage-paragraph" id="section2-3">
-            <h2 class="myPage-paragraph-headline-h2">Test</h2>
-            <!-- 记住这里的h2就是标题 -->
-            <p class="myPage-paragraph-content">
-              For obtaining recombinant proteins (sfGFP) <i>via</i> the FLSA autolytic system, 
-              the <i>E. coli</i> BL21(DE3) strain harboring <a style="font-weight: bolder;text-decoration: none;"
-              href="https://parts.igem.org/cgi/partsdb/dna_info.cgi?part=BBa_K5136221">BBa_K5136221</a>_pSB1C3 and 
-              <i>sfgfp</i>_pET-28a(+) was firstly induced to intracellularly produce sfGFP by 
-              adding isopropyl-<i>β</i>-D-thiogalactopyranoside (IPTG). After <b>10 hours′ induction 
-              for accumulating sfGFP</b>, the second inducer <i>L</i>-arabinose was added to trigger 
-              the autolytic system. The fluorescence intensity (λ<sub>ex</sub> = 475 nm, λ<sub>em</sub> = 515 nm) 
-              of bacterial culture and supernatant were measured and the release efficiency 
-              was calculated after <b>autolysis for 16 hours</b>. (See detailed protocol in our 
-              <a style="font-weight: bolder;text-decoration: none;"
-              href="{{ url_for('pages', page='experiments') }}">Experiments</a> page)
-            </p>
+          <p class="myPage-paragraph-content">
+            Afterwards, the reporter plasmid (sfgfp_pET-28a(+), laboratory stock) and 
+            the correct autolytic plasmid (<a style="font-weight: bolder;text-decoration: none;"
+            href="https://parts.igem.org/cgi/partsdb/dna_info.cgi?part=BBa_K5136221">BBa_K5136221</a>_pSB1C3) were co-transformed 
+            into <i>E. coli</i> BL21(DE3). While the I0500_pSB1C3 (laboratory stock) was set 
+            as the control and co-transformed with the reporter plasmid into <i>E. coli</i> 
+            BL21(DE3) to obtain the control strain. Correct dual-plasmid transformants 
+            were selected by chloramphenicol and kanamycin.
+          </p>
+        
 
-            <div class="myPage-paragraph-fig">
-              <img src="https://static.igem.wiki/teams/5136/engineer-success/2.png" alt="">
-              <div class="myPage-paragraph-fig-description"><b>Figure 2 sfGFP release efficiency of the E. coli FhuD-lysozyme-SsrA mediated autolytic system. </b>
-                The original FLSA system showed a 2.3 times release efficiency of the control (I0500).
-              </div>
+        
+          <h2 class="myPage-paragraph-headline-h3"id="section2-3">Test</h2>
+          <!-- 记住这里的h2就是标题 -->
+          <p class="myPage-paragraph-content">
+            For obtaining recombinant proteins (sfGFP) <i>via</i> the FLSA autolytic system, 
+            the <i>E. coli</i> BL21(DE3) strain harboring <a style="font-weight: bolder;text-decoration: none;"
+            href="https://parts.igem.org/cgi/partsdb/dna_info.cgi?part=BBa_K5136221">BBa_K5136221</a>_pSB1C3 and 
+            <i>sfgfp</i>_pET-28a(+) was firstly induced to intracellularly produce sfGFP by 
+            adding isopropyl-<i>β</i>-D-thiogalactopyranoside (IPTG). After <b>10 hours′ induction 
+            for accumulating sfGFP</b>, the second inducer <i>L</i>-arabinose was added to trigger 
+            the autolytic system. The fluorescence intensity (λ<sub>ex</sub> = 475 nm, λ<sub>em</sub> = 515 nm) 
+            of bacterial culture and supernatant were measured and the release efficiency 
+            was calculated after <b>autolysis for 16 hours</b>. (See detailed protocol in our 
+            <a style="font-weight: bolder;text-decoration: none;"
+            href="{{ url_for('pages', page='experiments') }}">Experiments</a> page)
+          </p>
+
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/engineer-success/2.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 2 sfGFP release efficiency of the E. coli FhuD-lysozyme-SsrA mediated autolytic system. </b>
+              The original FLSA system showed a 2.3 times release efficiency of the control (I0500).
             </div>
-
-            <p class="myPage-paragraph-content">
-              The release efficiency of the original FLSA system (FhuD-GGG linker-T7 lysozyme 119V-SsrA) was higher than that of the control group, indicating that the system functioned indeed. However, the low release efficiency (~6%) might hinder the further and practical implementation of this autolytic system.
-            </p>
           </div>
 
-          <div class="myPage-paragraph" id="section2-4">
-            <h2 class="myPage-paragraph-headline-h2">Learn</h2>
-            <!-- 记住这里的h2就是标题 -->
-            <p class="myPage-paragraph-content">
-              The original FLSA autolytic system (FhuD-GGG linker-T7 lysozyme 119V-SsrA) 
-              suffered from low release efficiency. Since the T7 lysozyme plays a key role 
-              in degrading the peptidoglycan framework to cause cell collapse, we then 
-              focused on the sequence of T7 lysozyme we used in the experiments. In addition 
-              to the amidase activity, the T7 lysozyme was identified to inhibit the T7 RNA 
-              polymerase, thus regulating the transcription level of T7 promoter (4). 
-              Therefore, a well-known plasmid, pLysS (<a style="font-weight: bolder;text-decoration: none;"
-              href="https://www.ncbi.nlm.nih.gov/nuccore/HB865373.1">GenBank: HB865373.1</a>), which contained 
-              the coding sequence of T7 lysozyme, was constructed to improve the inducible 
-              T7 expression system in <i>E. coli</i> BL21(DE3), especially for some toxic proteins 
-              due to the lower leakage resulting from the inhibition of T7 RNA polymerase 
-              (5). We then performed sequence alignment of the T7 lysozyme encoding on the 
-              pLysS to the sequence we used (<a style="font-weight: bolder;text-decoration: none;"
-              href="https://www.ncbi.nlm.nih.gov/protein/NP_041973.1">NP_041973.1</a>) and found difference of a single 
-              residue at the 119<sup>th</sup> site (Figure 3). Even though no evidence showed the 
-              residue at this site will affect either the activity of amidase or inhibitor 
-              of T7 RNA polymerase (6), we wonder whether the change at this site (V to G) 
-              contribute to the improved release efficiency of FLSA autolytic system or not.
-            </p>
+          <p class="myPage-paragraph-content">
+            The release efficiency of the original FLSA system (FhuD-GGG linker-T7 lysozyme 119V-SsrA) was higher than that of the control group, indicating that the system functioned indeed. However, the low release efficiency (~6%) might hinder the further and practical implementation of this autolytic system.
+          </p>
+        
 
-            <div class="myPage-paragraph-fig">
-              <img src="https://static.igem.wiki/teams/5136/engineer-success/3.png" alt="">
-              <div class="myPage-paragraph-fig-description"><b>Figure 3 Sequence alignment between NP_041973.1 and the T7 lysozyme sequence encoding on pLysS, where the different residue is highlight in green.</b>
-              </div>
+        
+          <h2 class="myPage-paragraph-headline-h3"id="section2-4">Learn</h2>
+          <!-- 记住这里的h2就是标题 -->
+          <p class="myPage-paragraph-content">
+            The original FLSA autolytic system (FhuD-GGG linker-T7 lysozyme 119V-SsrA) 
+            suffered from low release efficiency. Since the T7 lysozyme plays a key role 
+            in degrading the peptidoglycan framework to cause cell collapse, we then 
+            focused on the sequence of T7 lysozyme we used in the experiments. In addition 
+            to the amidase activity, the T7 lysozyme was identified to inhibit the T7 RNA 
+            polymerase, thus regulating the transcription level of T7 promoter (4). 
+            Therefore, a well-known plasmid, pLysS (<a style="font-weight: bolder;text-decoration: none;"
+            href="https://www.ncbi.nlm.nih.gov/nuccore/HB865373.1">GenBank: HB865373.1</a>), which contained 
+            the coding sequence of T7 lysozyme, was constructed to improve the inducible 
+            T7 expression system in <i>E. coli</i> BL21(DE3), especially for some toxic proteins 
+            due to the lower leakage resulting from the inhibition of T7 RNA polymerase 
+            (5). We then performed sequence alignment of the T7 lysozyme encoding on the 
+            pLysS to the sequence we used (<a style="font-weight: bolder;text-decoration: none;"
+            href="https://www.ncbi.nlm.nih.gov/protein/NP_041973.1">NP_041973.1</a>) and found difference of a single 
+            residue at the 119<sup>th</sup> site (Figure 3). Even though no evidence showed the 
+            residue at this site will affect either the activity of amidase or inhibitor 
+            of T7 RNA polymerase (6), we wonder whether the change at this site (V to G) 
+            contribute to the improved release efficiency of FLSA autolytic system or not.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/engineer-success/3.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 3 Sequence alignment between NP_041973.1 and the T7 lysozyme sequence encoding on pLysS, where the different residue is highlight in green.</b>
             </div>
           </div>
         </div>
 
+        
+        
+
         <div class="myPage-paragraph" id="section3">
           <h2 class="myPage-paragraph-headline-h2">Cycle 2: Changing a single residue of T7 lysozyme for FLSA system (BBa_K5136032)</h2>
           <!-- 记住这里的h2就是标题 -->
-          <div class="myPage-paragraph" id="section3-1">
-            <h2 class="myPage-paragraph-headline-h2">Design and Build</h2>
+          <h2 class="myPage-paragraph-headline-h3" id="section3-1">Design and Build</h2>
             <!-- 记住这里的h2就是标题 -->
             <p class="myPage-paragraph-content">
               We isolated the pLysS plasmid from the commercial strain BL21(DE3) pLysS. 
@@ -282,7 +282,154 @@
             <p class="myPage-paragraph-content">
               Afterwards, the reporter plasmid and the correct autolytic plasmid (<a style="font-weight: bolder;text-decoration: none;" href="https://parts.igem.org/Part:BBa_K5136222">BBa_K5136222 </a>_pSB1C3) were co-transformed into <i>E. coli</i> BL21(DE3) and the correct dual-plasmid transformants were selected by chloramphenicol and kanamycin.
             </p>
+          
+            <h2 class="myPage-paragraph-headline-h3" id="section3-2">Test</h2>
+            <!-- 记住这里的h2就是标题 -->
+            <p class="myPage-paragraph-content">
+              The experimental procedures are as mentioned in Cycle 1. 
+            </p>
+
+            <div class="myPage-paragraph-fig">
+              <img src="https://static.igem.wiki/teams/5136/engineer-success/5.png" alt="">
+              <div class="myPage-paragraph-fig-description">
+                <b>Figure 5 sfGFP release efficiency of the E. coli FhuD-lysozyme-SsrA mediated autolytic system, in which the 119th residue of T7 lysozyme was changed to Glycine. </b>The FLSA (119G) system showed a 5.2 times release efficiency of the control (I0500).
+              </div>
+            </div>
+
+            <p class="myPage-paragraph-content">
+              Interestingly, changing the valine residue to glycine residue at the 119<sup>th</sup> site of T7 lysozyme does not impair the lysis effect of FLSA autolytic system but improves the sfGFP release efficiency to ~15% (Figure 5).
+            </p>
+
+            <h2 class="myPage-paragraph-headline-h3" id="section3-3">Learn</h2>
+            <!-- 记住这里的h2就是标题 -->
+            <p class="myPage-paragraph-content">
+              The V119G variant of T7 lysozyme presented a better performance when played the role 
+              to cause cell collapse, which implied that this change of a single residue 
+              might promote the amidase activity of T7 lysozyme whereas the influence of 
+              119<sup>th</sup> residue has not been reported. The effect of this site should be 
+              further verified and the mechanism need to be explored in the future. However, 
+              this improvement inspired us that other sequences in the FhuD-lysozyme-SsrA 
+              fusion may also affect the efficiency of FLSA autolytic system. Given the case 
+              of last season that the linker between signal peptide (Kpsp) and the cargo (GFP) 
+              has an nonnegligible influence on the folding of cargo 
+              (<a style="font-weight: bolder;text-decoration: none;"
+              href="https://2023.igem.wiki/xmu-china/engineering">Engineering Success of XMU-China 2023</a>), we turned to investigate whether the change of linker between FhuD and T7 lysozyme will have a positive effect on improving the release efficiency or not.
+            </p>
+        </div>
+
+        <div class="my-paragraph" id="section4">
+          <h2 class="myPage-paragraph-headline-h2">Cycle 3: Changing the linker between FhuD signal peptide and T7 lysozyme for FLSA system (BBa_K5136030)</h2>
+          <h2 class="myPage-paragraph-headline-h3" id="section4-1">Design and Build</h2>
+            <!-- 记住这里的h2就是标题 -->
+            <p class="myPage-paragraph-content">
+              We replaced the GGG linker ((GGGGS)<sub>3</sub>) with “TSSSIASSSPSSVAGS” 
+              (TSS in short), a linker we have used in various surface display system 
+              (<a style="font-weight: bolder;text-decoration: none;"
+              href="https://2020.igem.org/Team:XMU-China/Parts">Parts of XMU-China 2020</a> and 
+              <a style="font-weight: bolder;text-decoration: none;"
+              href="https://2022.igem.wiki/xmu-china/parts">Parts of XMU-China 2022</a>). 
+              Linker change was achieved in the coding sequence of FhuD-GGG linker-T7 
+              lysozyme 119G-SsrA <i>via</i> Gibson assembly, thus generating 
+              <a style="font-weight: bolder;text-decoration: none;"
+              href="https://parts.igem.org/Part:BBa_K5136220">BBa_K5136220</a> on 
+              pSB1C3 vector (Figure 6A). Positive transformants were selected by 
+              chloramphenicol and confirmed by colony PCR and sequencing (Figure 6B). 
+              Then, the reporter plasmid and the correct autolytic plasmid 
+              (<a style="font-weight: bolder;text-decoration: none;"
+              href="https://parts.igem.org/Part:BBa_K5136220">BBa_K5136220</a>_pSB1C3) were co-transformed into <i>E. coli</i> BL21(DE3) and the correct dual-plasmid transformants were selected like before. 
+            </p>
+
+            <div class="myPage-paragraph-fig">
+              <img src="https://static.igem.wiki/teams/5136/engineer-success/6.png" alt="">
+              <div class="myPage-paragraph-fig-description">
+                <b>Figure 6 FhuD-TSS Iinker-T7 lysozyme 119G-SsrA mediated autolytic system. (A) </b>
+                The gene circuit of the FhuD-TSS Iinker-T7 lysozyme 119G-SsrA mediated autolytic system (BBa_K5136220). 
+                <b>(B) </b>Agarose gel electrophoresis of the colony PCR products of BBa_K5136220_pSB1C3 in E. coli DH10β. Target bands (2335bp) can be observed at the position between 2000 bp and 3000 bp.
+              </div>
+            </div>
+
+            <h2 class="myPage-paragraph-headline-h3" id="section4-2">Test</h2>
+            <!-- 记住这里的h2就是标题 -->
+            <p class="myPage-paragraph-content">
+              The experimental procedures are as mentioned in Cycle 1. 
+            </p>
+
+            <div class="myPage-paragraph-fig">
+              <img src="https://static.igem.wiki/teams/5136/engineer-success/7.png" alt="">
+              <div class="myPage-paragraph-fig-description">
+                <b>Figure 7 sfGFP release efficiency of the <i>E. coli</i> FhuD-lysozyme-SsrA mediated autolytic system, in which the GGG linker was changed to TSS linker. </b>
+                The FLSA (119G, TSS linker) system showed a 7.9 times release efficiency of the control (I0500).
+              </div>
+            </div>
+            <p class="myPage-paragraph-content">
+              The alternative FLSA system which harboring TSS linker between FhuD signal peptide and T7 lysozyme had an improved sfGFP release efficiency of ~22% (Figure 7), which again emphasizes the significance of linker sequence between different functional elements (7).
+            </p>
+
+            <h2 class="myPage-paragraph-headline-h3" id="section4-3">Learn</h2>
+            <!-- 记住这里的h2就是标题 -->
+            <p class="myPage-paragraph-content">
+              Changing the linker sequence between the signal peptide and recombinant protein to be secreted might affect both the folding of cargo and the secretion efficiency (8). Depending on the secretion pathway, useful machinery of protein-folding enhancers in the periplasm could be accessible (9). The dual-pathway signal peptide FhuD, possessing both Sec- and Tat- pathway properties, might help solve the folding issue of lysozymes (1). Anyway, the better-performed TSS linker contributes to the improvement of release efficiency of the FLSA autolytic system, even though the mechanism is elusive and need to be further investigated.
+            </p>
+        </div>
+
+        <div class="my-paragraph" id="section5">
+          <h2 class="myPage-paragraph-headline-h2">Conclusion</h2>
+          <p class="myPage-paragraph-content">
+            For realizing the purification-free obtainment of target proteins, the deinking enzymes in our case, we implemented an autolytic system named FLSA (FhuD-T7 lysozyme-SsrA mediated autolytic system) to lysis the microbial cell factory after the target proteins are produced and accumulated. The original FLSA (FhuD-GGG Iinker-T7 lysozyme 119V-SsrA) suffered from low release efficiency. For optimizing the effect of FLSA system, we changed a single residue on the sequence of T7 lysozyme (V119G) to obtain an improved release efficiency from ~6% to ~15% at first. Then we replaced the linker between FhuD and T7 lysozyme with the one we used in 2020 and 2022 seasons, thus finally achieved a <b>considerable</b> release efficiency about 22% (Figure 8). This improved FLSA system will assist the release of deinking enzymes, offering a promising method for obtaining target proteins without purification, which is critical to lower the cost of paper recycling industry.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/engineer-success/8.png" alt="">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 8 Comparison of the sfGFP release efficiency of various engineered FLSA systems.</b>
+            </div>
           </div>
+          <p class="myPage-paragraph-content">
+            Engineering a biological system cannot be easy, we need to pay our all 
+            attention to it and move towards success through experiments and 
+            feedback step by step. Here, we have tried to demonstrate how we 
+            <b>engineered the sequence of FLSA</b> to <b>improve the release efficiency of 
+            autolytic system</b> through successive iterations of the <b>DBTL</b> 
+            (<b>D</b>esign-<b>B</b>uild-<b>T</b>est-<b>L</b>earn) cycle (Figure 9).
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/engineer-success/9.png" alt="">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 9 Summary of the different engineering steps completed before reaching the goal of obtaining efficient autolytic system.</b>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-paragraph" id="section6">
+          <h2 class="myPage-paragraph-headline-h2">References</h2>
+          <ol class="myPage-paragraph-reference">
+            <li>
+              1.	F. Zhang et al., Development of a Bacterial FhuD-lysozyme-SsrA Mediated Autolytic (FLSA) System for Effective Release of Intracellular Products. ACS Synth. Biol. 12, 196-202 (2023).
+            </li>
+            <li>
+              2.	J. D. Pedelacq, S. Cabantous, Development and Applications of Superfolder and Split Fluorescent Protein Detection Systems in Biology. Int. J. Mol. Sci. 20, 14 (2019).
+            </li>
+            <li>
+              3.	D. Wen, S. F. Foley, X. L. Hronowski, S. Gu, W. Meier, Discovery and Investigation of O-xylosylation in Engineered Proteins Containing a (GGGS)n Linker. Anal. Chem. 85, 4805-4812 (2013).
+            </li>
+            <li>
+              4.	B. A. Moffatt, F. W. Studier, T7 Lysozyme Inhibits Transcription by T7 RNA Polymerase. Cell 49, 221-227 (1987).
+            </li>
+            <li>
+              5.	F. W. Studier, Use of Bacteriophage T7 lysozyme to Improve an Inducible T7 Expression System. J. Mol. Biol. 219, 37-44 (1991).
+            </li>
+            <li>
+              6.	X. Cheng, X. Zhang, J. W. Pflugrath, F. W. Studier, The Structure of Bacteriophage T7 Lysozyme, a Zinc Amidase and an Inhibitor of T7 RNA Polymerase. Proc. Natl. Acad. Sci. U S A 91, 4034-4038 (1994).
+            </li>
+            <li>
+              7.	X. Chen, J. L. Zaro, W. C. Shen, Fusion Protein Linkers: Property, Design and Functionality. Adv. Drug. Deliv. Rev. 65, 1357-1369 (2013).
+            </li>
+            <li>
+              8.	M. J. Burggraaf et al., Optimization of Secretion and Surface Localization of Heterologous Ova Protein in Mycobacteria by Using Lipy as a Carrier. Microb. Cell. Fact. 18, 44 (2019).
+            </li>
+            <li>
+              9.	L. A. Burdette, S. A. Leach, H. T. Wong, D. Tullman-Ercek, Developing Gram-negative Bacteria for the Secretion of Heterologous Proteins. Microb. Cell. Fact. 17, 196 (2018).
+            </li>
+          </ol>
         </div>
       </div>
     </div>
