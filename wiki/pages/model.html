@@ -156,84 +156,7 @@
           </p>
 
 
-
-          $$
-          X_{T} = X_{V} + X_{D}
-          $$
           
-          $$
-          \frac{dX_{V}}{dt} = \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)X_{V} - k_{d}X_{V}
-          $$
-          
-          $$
-          \frac{dX_{D}}{dt} = k_{T}X_{V}\left( {1 - \frac{X_{V} + X_{D}}{X_{T,max}}} \right) - \left( {\frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right) - k_{d}} \right)X_{V} - k_{dXd}X_{D}
-          $$
-          
-          $$
-          \frac{dX_{lys}}{dt} = k_{dXd}X_{D}
-          $$
-          
-          $$
-          \frac{dS}{dt} = \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)\frac{1}{Y_{Xv/s}}X_{V} - k_{ds}S
-          $$
-          
-          
-          
-          $$
-          \frac{dP}{dt} = \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)\frac{1}{Y_{P/Xv}}X_{V} - k_{dp}P
-          $$
-          
-          
-          Sec System
-          
-          
-          
-          $$
-          \frac{dRNA}{dt} = k_{1} - k_{d1}RNA
-          $$
-          
-          $$
-          \frac{dP_{c}}{dt} = k_{2}RNA - k_{d2}P_{c} - \alpha P_{c}
-          $$
-          
-          $$
-          \frac{dP_{p}}{dt} = \alpha P_{c} - k_{d3}P_{p} - \beta P_{p}
-          $$
-          
-          $$
-          \frac{dP_{l}}{dt} = \beta P_{p} - k_{d4}P_{l} - \gamma P_{l} - \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)\frac{X_{V}}{X_{V} + X_{D}}P_{l} - k_{dXd}\frac{X_{D}}{X_{V} + X_{D}}P_{l} 
-          $$
-          
-          
-          $$
-          \frac{dP_{M}}{dt} = \gamma P_{l}X_{V}d_{1} + k_{dXd}X_{D}P_{l}d_{2} + \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)X_{V}P_{l}d_{3}
-          $$
-          
-          Tat System
-          
-          
-          $$
-          \frac{dRNA}{dt} = k_{1} - k_{d1}RNA
-          $$
-          
-          $$
-          \frac{dP_{c}}{dt} = k_{2}RNA - k_{d2}P_{c} - \beta P_{c}
-          $$
-          
-          $$
-          \frac{dP_{l}}{dt} = \beta P_{c} - k_{d4}P_{l} - \alpha P_{l} - k_{dXd} \frac {X_{D}}{X_{V} + X_{D}} P_{l}
-          $$
-          
-          $$
-          \frac{dP_{p}}{dt} = \alpha P_{c} - k_{d3}P_{p} - \gamma P_{p} - \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)\frac{X_{V}}{X_{V} + X_{D}}P_{p} - k_{dXd}\frac{X_{D}}{X_{V} + X_{D}}P_{p}
-          $$
-          
-          $$
-          \frac{dP_{M}}{dt} = \gamma P_{p}X_{V}d_{1} + k_{dXd}X_{D}P_{l}d_{2} + \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)X_{V}P_{p}d_{3} + k_{dXd}X_{D}P_{p}d_{4}
-          $$
-          
-
-
         </div>
 
 
@@ -257,7 +180,7 @@
           </p>
 
 
-          <h3 class="myPage-paragraph-headline-h3">Intuition</h3>
+          <h3 class="myPage-paragraph-headline-h3">1. Intuition</h3>
 
           
           <p class="myPage-paragraph-content">
@@ -271,12 +194,7 @@
             thus the model can distinguish the real signal peptide-driven secretion part for extracellular secretion rate constant estimation 
             and investigate the interactive effect between signal peptide and growth cell. 
             The macro-level model in the fermentation aspect is employed for the description of three different cell types 
-            while the micro-level models from the molecular biology level model three sources that contribute to the fluorescence in the supernatant. 
-            It is worth mentioning that 
-            the key point to connect the macro-level model and the micro-level model is 
-            the consideration of physical quantity of volume changes due to the transition between different spaces during secretion, 
-            which is quite different from the model of pulse-chase analysis (XMU-China 2021).
-            
+            while the micro-level models from the molecular biology level model three sources that contribute to the fluorescence in the supernatant.            
             </p>
 
 
@@ -289,12 +207,360 @@
           </div>
 
 
+        <h3 class="myPage-paragraph-headline-h3">2. Macro-Level Model</h3>
+  
 
+
+        <p class="myPage-paragraph-content">
+            
+          A equation system based on modified Logistic 
+          and Monod models was employed to model for the quantity of viable, dead, and lysed cells as follows.          
+        
+        </p>
+
+        <p class="myPage-paragraph-content">
+        $$
+        X_{T} = X_{V} + X_{D}
+        $$
+        </p>
+        
+        <p class="myPage-paragraph-content"></p>
+
+        <p class="myPage-paragraph-content">
+        $$
+        \frac{dX_{V}}{dt} = \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)X_{V} - k_{d}X_{V}
+        $$
+        </p>
+
+        <p class="myPage-paragraph-content"></p>
+
+
+
+        <p class="myPage-paragraph-content">
+        $$
+        \frac{dX_{D}}{dt} = k_{T}X_{V}\left( {1 - \frac{X_{V} + X_{D}}{X_{T,max}}} \right) - \left( {\frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right) - k_{d}} \right)X_{V} - k_{dXd}X_{D}
+        $$
+        </p>
+        
+        <p class="myPage-paragraph-content"></p>
+
+        <p class="myPage-paragraph-content">
+        $$
+        \frac{dX_{lys}}{dt} = k_{dXd}X_{D}
+        $$
+        </p>
+
+        <p class="myPage-paragraph-content">
+        
+        
+        with $t$ the time (h), 
+        $X_T$ the total cell density (OD<sub>600</sub>), 
+        $X_V$ the viable cell density (OD<sub>600</sub>), 
+        $X_D$ the dead cell density (OD<sub>600</sub>), 
+        $X_{lys}$ the lysed cell density (OD<sub>600</sub>), 
+        $\mu_{max}$ the maximum specific growth rate (1/h), 
+        $K_S$ the saturation constant (1/h), 
+        $X_{v,max}$ the viable cell carrying capacity (OD<sub>600</sub>), 
+        $k_d$ the specific death rate of viable cells which have no contribution to product (1/h), 
+        $k_T$ the intrinsic growth rate in logistic equation (1/h), 
+        $X_{T,max}$ the total cell carrying capacity (OD<sub>600</sub>), 
+        $k_{dXd}$ the specific lysis rate of dead cells (1/h). 
+        $S$ is the concentration of growth-limiting substrate (g/L), 
+        which is the nitrogen source (tryptone) in our work since the task is related to protein, 
+        the growth-associated product. 
+        Thus, the following two equations was written to describe both substrate and product concentration:
+
+        </p>
+
+
+        <p class="myPage-paragraph-content">
+          $$
+          \frac{dS}{dt} = \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)\frac{1}{Y_{Xv/s}}X_{V} - k_{ds}S
+          $$
+          </p>
+          
+          <p class="myPage-paragraph-content"></p>
+  
+          <p class="myPage-paragraph-content">
+            $$
+            \frac{dP}{dt} = \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)\frac{1}{Y_{P/Xv}}X_{V} - k_{dp}P
+            $$
+          </p>
+  
+          <p class="myPage-paragraph-content"></p>
+  
+      
+
+          <p class="myPage-paragraph-content">
+        
+        
+          with $S$ the concentration of substrates (g/L), 
+          $P$ the concentration of products (a. u.), 
+          $Y_{Xv/s}$ the maximum biomass and product yield based on growth-limiting substrate (g/L/OD<sub>600</sub>), 
+          $k_{ds}$ the specific degradation and dilution rate of substrate (1/h), 
+          $Y_{P/Xv}$ the maximum product yield based on substrate (g/L/OD<sub>600</sub>), 
+          $k_{ds}$ the specific degradation and dilution rate of product (1/h). 
+
+    
+          </p>
+    
+
+          <p class="myPage-paragraph-content">
+
+          Six equations aboved constructed the macro-level model from 
+          the fermentation aspect to calculate three different kinds of cells' concentration 
+          ($X_V$, $X_D$, and $X_{lys}$) 
+          according to the data measured from 
+          the total cell density $X_T$ and the concentration of 
+          products $P$ (the fluorescence of culture in this work), 
+          which can be used to estimate the fluorescence of supernatant in the micro-level model.
+
+
+          </p>
+
+
+
+          <h3 class="myPage-paragraph-headline-h3">3. Micro-Level Model</h3>
+
+
+          <p class="myPage-paragraph-content">
+
+            The micro-level model is created to describe the protein's entire life cycle from transcription to degradation as well as the signal peptide-mediated secretion at the molecular biology level. 
+            However, the micro-level model varies once the signal peptide is changed since the protein maturation happens in different areas of the cell according to the peptide type (Figure 3).
+  
+            </p>
+        
+        
+
+            <div class="myPage-paragraph-fig">
+              <img src="https://static.igem.wiki/teams/5136/model/figure-3.png" alt="" style="max-width: 500px;" >
+              <div class="myPage-paragraph-fig-description">
+                <b>Figure 3 The secretion mechanisms of Sec pathway and Tat pathway.</b>
+              </div>
+            </div>
+  
+            <p class="myPage-paragraph-content"></p>
+
+
+
+
+            <h4 class="myPage-paragraph-headline-h4">3.1 For Sec Pathway </h4>
+  
+
+            <p class="myPage-paragraph-content"></p>
+
+            <p class="myPage-paragraph-content">
+
+              For Sec pathway (left in Fig. 3), 
+              a soluble molecular chaperone protein named SecB binds to the recombinant protein's signal peptide or other features of its incompletely folded structure. 
+              The bound protein is then delivered to SecA, a protein acts as both a receptor and a translocating ATPase that is associated with the cytoplasm membrane. 
+              The Sec-recombinant protein complex forms a translocation complex with SecY/SecE/SecG (SecYEG). 
+              The protein is conducted by the energy released from ATP hydrolysis and PMF (proton motive force). 
+              The SecDF complex (YajC is an accessory protein) plays the role as the signal peptidase (SPase) to cleave the signal peptide in the final stage of translocation. 
+              Then the protein maturation will happen in the periplasm space finally. 
+              Thus, the micro-level model for Sec pathway-related signal peptide will be written based on mass action law and macro-level model as follows:
+              
+            </p>
+
+            <p class="myPage-paragraph-content"></p>
+
+            <p class="myPage-paragraph-content">
+            $$
+            \frac{dRNA}{dt} = k_{1} - k_{d1}RNA
+            $$
+            </p>
+
+            <p class="myPage-paragraph-content"></p>
+
+            <p class="myPage-paragraph-content">
+            $$
+            \frac{dP_{c}}{dt} = k_{2}RNA - k_{d2}P_{c} - \alpha P_{c}
+            $$
+            </p>
+
+            <p class="myPage-paragraph-content"></p>
+
+            <p class="myPage-paragraph-content">
+
+            $$
+            \frac{dP_{p}}{dt} = \alpha P_{c} - k_{d3}P_{p} - \beta P_{p}
+            $$
+            
+            </p>
+
+            <p class="myPage-paragraph-content"></p>
+
+
+            <p class="myPage-paragraph-content">
+
+            $$
+            \frac{dP_{l}}{dt} = \beta P_{p} - k_{d4}P_{l} - \gamma P_{l} - \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)\frac{X_{V}}{X_{V} + X_{D}}P_{l} - k_{dXd}\frac{X_{D}}{X_{V} + X_{D}}P_{l} 
+            $$
+            
+            </p>
+            
+            <p class="myPage-paragraph-content"></p>
+
+
+            <p class="myPage-paragraph-content">
+            $$
+            \frac{dP_{M}}{dt} = \gamma P_{l}X_{V}d_{1} + k_{dXd}X_{D}P_{l}d_{2} + \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)X_{V}P_{l}d_{3}
+            $$
+            </p>
+
+            <p class="myPage-paragraph-content"></p>
+
+
+            <p class="myPage-paragraph-content">
+            with $RNA$ the intensity of target protein's mRNA (g/L/OD<sub>600</sub>), 
+            $P_c$ the intensity of unmature protein in cytoplasm space (a. u./OD<sub>600</sub>), 
+            $P_p$ the intensity of unmature protein in periplasm space (a. u./OD<sub>600</sub>), 
+            $P_l$ the intensity of mature protein in periplasm space (a. u./OD<sub>600</sub>), 
+            $P_M$ the concentration of mature protein in medium space (a. u. ), 
+            $k_1$ the specific translation rate (g/L/OD<sub>600</sub>/h), 
+            $k_{d1}$ the specific degradation and dilution rate of RNA (1/h), 
+            $k_2$ the specific transcription rate (g/L/OD<sub>600</sub>/h), 
+            $k_{d2}$ the specific degradation and dilution rate of $P_c$ (1/h), 
+            $\alpha$ the translocation rate from cytoplasm space to periplasm space (1/h), 
+            $k_{d3}$ the specific degradation and dilution rate of $P_p$ (1/h), 
+            $\beta$ the protein maturation rate (1/h), 
+            $k_{d4}$ the specific degradation and dilution rate of $P_l$ (1/h), 
+            $\gamma$ the translocation rate from periplasm space to medium space (1/h), 
+            $d_i\ (i=1,2,3,4\cdots)$ the dilution rate due to the volume change between different space (1/h).
+            </p>
+
+
+            <p class="myPage-paragraph-content"></p>
+
+
+
+
+
+
+
+
+            <h4 class="myPage-paragraph-headline-h4">3.2 For Tat Pathway </h4>
+
+
+            <p class="myPage-paragraph-content"></p>
+
+            <p class="myPage-paragraph-content">
+
+
+            The Tat pathway is commonly used for those proteins that contain two consecutive and highly conserved arginine residues in their leader peptides. 
+            On the Tat pathway (right in Fig. 3), 
+            the protein is fully synthesized and folds in the cytoplasm where it can bind specific cofactors. 
+            The signal peptide is then recognized by TatC in the TatBC complex. 
+            Signal peptide binding promotes association of the complex with TatA oligomers at the expense of PMF. 
+            Protein translocation occurs through a channel formed by TatA and possibly TatE oligomers. 
+            Thus, the micro-level model for Tat pathway-related signal peptide will be written based on mass action law and macro-level model as follows:
+
+            </p>
+
+
+            <p class="myPage-paragraph-content"></p>
+          
+
+            <p class="myPage-paragraph-content">
+
+            $$
+            \frac{dRNA}{dt} = k_{1} - k_{d1}RNA
+            $$
+
+            </p>
+            
+
+            <p class="myPage-paragraph-content"></p>
+
+
+            <p class="myPage-paragraph-content">
+            $$
+            \frac{dP_{c}}{dt} = k_{2}RNA - k_{d2}P_{c} - \beta P_{c}
+            $$
+            
+            </p>
+
+            <p class="myPage-paragraph-content"></p>
+
+
+            <p class="myPage-paragraph-content">
+
+            $$
+            \frac{dP_{l}}{dt} = \beta P_{c} - k_{d4}P_{l} - \alpha P_{l} - k_{dXd} \frac {X_{D}}{X_{V} + X_{D}} P_{l}
+            $$
+            
+            </p>
+
+
+            <p class="myPage-paragraph-content"></p>
+
+
+            <p class="myPage-paragraph-content">
+
+            $$
+            \frac{dP_{p}}{dt} = \alpha P_{c} - k_{d3}P_{p} - \gamma P_{p} - \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)\frac{X_{V}}{X_{V} + X_{D}}P_{p} - k_{dXd}\frac{X_{D}}{X_{V} + X_{D}}P_{p}
+            $$
+
+            </p>
+            
+
+            <p class="myPage-paragraph-content"></p>
+
+
+
+            <p class="myPage-paragraph-content">
+
+            $$
+            \frac{dP_{M}}{dt} = \gamma P_{p}X_{V}d_{1} + k_{dXd}X_{D}P_{l}d_{2} + \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)X_{V}P_{p}d_{3} + k_{dXd}X_{D}P_{p}d_{4}
+            $$
+  
+          </p>
+
+
+            <p class="myPage-paragraph-content"></p>
+
+
+
+            <p class="myPage-paragraph-content">
+
+
+              with RNA the intensity of target protein's mRNA (g/L/OD600), 
+              $P_c$ the intensity of unmature protein in cytoplasm space (a. u./OD600), 
+              $P_l$ the intensity of mature protein in cytoplasm space (a. u./OD600), 
+              $P_p$ the intensity of mature protein in periplasm space (a. u./OD600), 
+              $P_M$ the concentration of mature protein in medium space (a. u. ), 
+
+              $k_1$ the specific translation rate (g/L/OD<sub>600</sub>/h), 
+              $k_{d1}$ the specific degradation and dilution rate of $RNA$ (1/h), 
+              $k_2$ the specific transcription rate (g/L/OD<sub>600</sub>/h), 
+              $k_{d2}$ the specific degradation and dilution rate of $P_c$ (1/h), 
+              $\alpha$ the translocation rate from cytoplasm space to periplasm space (1/h), 
+              $k_{d3}$ the specific degradation and dilution rate of $P_p$ (1/h), 
+              $\beta$ the protein maturation rate (1/h), 
+              $k_{d4}$ the specific degradation and dilution rate of $P_l$ (1/h), 
+              $\gamma$ the translocation rate from periplasm space to medium space (1/h), 
+              $d_i\ (i=1,2,3,4\cdots)$ the dilution rate due to the volume change between different space (1/h).
   
 
 
 
+
+
+
+
+            </p>
+
+
+
+
+
+
+
         </div>
+
+
+
+
 
         <!---Future Expectations --->
         <div class="myPage-paragraph" id="section3">
