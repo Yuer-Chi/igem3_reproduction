@@ -265,12 +265,87 @@ vara[50] = new Vara(
     "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
     []
 );
+vara[51] = new Vara(
+    "#vara-container50",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[52] = new Vara(
+    "#vara-container51",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[53] = new Vara(
+    "#vara-container52",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[54] = new Vara(
+    "#vara-container53",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[55] = new Vara(
+    "#vara-container54",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[56] = new Vara(
+    "#vara-container55",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[57] = new Vara(
+    "#vara-container56",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[58] = new Vara(
+    "#vara-container57",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[59] = new Vara(
+    "#vara-container58",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[60] = new Vara(
+    "#vara-container59",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[61] = new Vara(
+    "#vara-container60",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[62] = new Vara(
+    "#vara-container61",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[63] = new Vara(
+    "#vara-container62",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[64] = new Vara(
+    "#vara-container63",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
+vara[65] = new Vara(
+    "#vara-container64",
+    "https://static.igem.wiki/teams/4907/wiki/notebook/vara-addition.json",
+    []
+);
 
 
 
 
 
-vara[49].ready(function() {
+vara[64].ready(function() {
     $(".front:not(.last)").click(function() {
         let ix = $(this)
             .parent(".paper")

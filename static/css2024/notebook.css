@@ -287,6 +287,51 @@
 .book .open.num-50 .backnote {
     transform: translateZ(-49px);
 }
+.book .open.num-51 .backnote {
+    transform: translateZ(-50px);
+}
+.book .open.num-52 .backnote {
+    transform: translateZ(-51px);
+}
+.book .open.num-53 .backnote {
+    transform: translateZ(-52px);
+}
+.book .open.num-54 .backnote {
+    transform: translateZ(-53px);
+}
+.book .open.num-55 .backnote {
+    transform: translateZ(-54px);
+}
+.book .open.num-56 .backnote {
+    transform: translateZ(-55px);
+}
+.book .open.num-57 .backnote {
+    transform: translateZ(-56px);
+}
+.book .open.num-58 .backnote {
+    transform: translateZ(-57px);
+}
+.book .open.num-59 .backnote {
+    transform: translateZ(-58px);
+}
+.book .open.num-60 .backnote {
+    transform: translateZ(-59px);
+}
+.book .open.num-61 .backnote {
+    transform: translateZ(-60px);
+}
+.book .open.num-62 .backnote {
+    transform: translateZ(-61px);
+}
+.book .open.num-63 .backnote {
+    transform: translateZ(-62px);
+}
+.book .open.num-64 .backnote {
+    transform: translateZ(-63px);
+}
+.book .open.num-65 .backnote {
+    transform: translateZ(-64px);
+}
 
 
 
@@ -439,6 +484,51 @@
 }
 .book   .num-50 {
     z-index: 51;
+}
+.book .num-51 {
+    z-index: 50;
+}
+.book .num-52 {
+    z-index: 49;
+}
+.book .num-53 {
+    z-index: 48;
+}
+.book .num-54 {
+    z-index: 47;
+}
+.book .num-55 {
+    z-index: 46;
+}
+.book .num-56 {
+    z-index: 45;
+}
+.book .num-57 {
+    z-index: 44;
+}
+.book .num-58 {
+    z-index: 43;
+}
+.book .num-59 {
+    z-index: 42;
+}
+.book .num-60 {
+    z-index: 41;
+}
+.book .num-61 {
+    z-index: 40;
+}
+.book .num-62 {
+    z-index: 39;
+}
+.book .num-63 {
+    z-index: 38;
+}
+.book .num-64 {
+    z-index: 37;
+}
+.book .num-65 {
+    z-index: 36;
 }
 
 
@@ -654,6 +744,51 @@
 }
 .book .paper.num-50 .front {
     transform: translateZ(51px);
+}
+.book .paper.num-51 .front {
+    transform: translateZ(50px);
+}
+.book .paper.num-52 .front {
+    transform: translateZ(49px);
+}
+.book .paper.num-53 .front {
+    transform: translateZ(48px);
+}
+.book .paper.num-54 .front {
+    transform: translateZ(47px);
+}
+.book .paper.num-55 .front {
+    transform: translateZ(46px);
+}
+.book .paper.num-56 .front {
+    transform: translateZ(45px);
+}
+.book .paper.num-57 .front {
+    transform: translateZ(44px);
+}
+.book .paper.num-58 .front {
+    transform: translateZ(43px);
+}
+.book .paper.num-59 .front {
+    transform: translateZ(42px);
+}
+.book .paper.num-60 .front {
+    transform: translateZ(41px);
+}
+.book .paper.num-61 .front {
+    transform: translateZ(40px);
+}
+.book .paper.num-62 .front {
+    transform: translateZ(39px);
+}
+.book .paper.num-63 .front {
+    transform: translateZ(38px);
+}
+.book .paper.num-64 .front {
+    transform: translateZ(37px);
+}
+.book .paper.num-65 .front {
+    transform: translateZ(36px);
 }
 
 .diary-picture{
