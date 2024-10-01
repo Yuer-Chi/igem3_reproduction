@@ -5,23 +5,218 @@
 
 {% block page_content %}
 
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Silver Medal Criterion #1</h4>
-      <p>Demonstrate engineering success in a part of your project by going through at least one iteration of the engineering design cycle. This achievement should be distinct from your Contribution for Bronze.</p>
-      <div class="myPage-paragraph-fig">
-            <img src="https://static.igem.wiki/teams/5136/try1.png" alt="">
-            <div class="myPage-paragraph-fig-description"><b>Figure 1 Schematic diagram of the enzymatic deinking
-                process.</b>
-            </div>
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css2024/experiments.css') }}">
+
+<script src="{{ url_for('static', filename = 'js2024/jquery-3.5.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
+
+
+
+
+<div class="container">
+  <div id="loader-wrapper">
+    <div id="loader">
+      <div class="loader-img">
+        <img src="https://static.igem.wiki/teams/5136/load-new.gif">
+      </div>
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <!--loading-->
+
+  <!--侧边导航栏-->
+  <div class="myScrollspy">
+    <!-- 文字导航 -->
+    <div class="left-bar">
+      <div class="left-bar-right">
+        <div class="left-bar-right-item">
+          <a href="#section1" class="sidebar-link" data-section="section1">Overview</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section2" class="sidebar-link" data-section="section2">Cycle 1</a>
+        </div>
+        <div class="left-bar-right-item" style="transform: translateX(2rem);">
+          <a href="#section2-1" class="sidebar-link-two" data-section="section2-1">Design</a>
+        </div>
+        <div class="left-bar-right-item" style="transform: translateX(2rem);">
+          <a href="#section2-2" class="sidebar-link-two" data-section="section2-2">Build</a>
+        </div>
+        <div class="left-bar-right-item" style="transform: translateX(2rem);">
+          <a href="#section2-3" class="sidebar-link-two" data-section="section2-3">Test</a>
+        </div>
+        <div class="left-bar-right-item" style="transform: translateX(2rem);">
+          <a href="#section2-4" class="sidebar-link-two" data-section="section2-4">Learn</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section3" class="sidebar-link" data-section="section3">Cycle 2</a>
+        </div>
+        <div class="left-bar-right-item" style="transform: translateX(2rem);">
+          <a href="#section3-1" class="sidebar-link-two" data-section="section3-1">Design and Build</a>
+        </div>
+        <div class="left-bar-right-item" style="transform: translateX(2rem);">
+          <a href="#section3-2" class="sidebar-link-two" data-section="section3-2">Test</a>
+        </div>
+        <div class="left-bar-right-item" style="transform: translateX(2rem);">
+          <a href="#section3-3" class="sidebar-link-two" data-section="section3-3">Learn</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section4" class="sidebar-link" data-section="section4">Cycle 3</a>
+        </div>
+        <div class="left-bar-right-item" style="transform: translateX(2rem);">
+          <a href="#section4-1" class="sidebar-link-two" data-section="section4-1">Design and Build</a>
+        </div>
+        <div class="left-bar-right-item" style="transform: translateX(2rem);">
+          <a href="#section4-2" class="sidebar-link-two" data-section="section4-2">Test</a>
+        </div>
+        <div class="left-bar-right-item" style="transform: translateX(2rem);">
+          <a href="#section4-3" class="sidebar-link-two" data-section="section4-3">Learn</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section5" class="sidebar-link" data-section="section5">Conclusion</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section6" class="sidebar-link" data-section="section6">References</a>
+        </div>
+      </div>
+    </div>
+    <!-- 底部插图 -->
+    <div class="left-bar-bg">
+      <img src="https://static.igem.wiki/teams/5136/cbl-fix.png" alt="">
+    </div>
+    <!-- 进度条 -->
+    <div class="scroll-bar"></div>
+  </div>
+
+  <!--以下就是正文段落-->
+  <div class="myPage">
+    <div class="myPage-main">
+      <div style="height: 100px;position:relative;"></div>
+      <div class="myPage-main-content">
+        <!---大标题--->
+        <div class="myPage-headline">
+          <h1 class="myPage-headline-content">
+            <span style="color: #8768cd">.</span>
+            <span style="color: #483b53;font-family: Aaargh;">Engineering Success</span>
+            <span style="color: #8768cd">.</span>
+          </h1>
+        </div>
+
+        <!---文字段落--->
+        <div class="myPage-paragraph" id="section1">
+          <h2 class="myPage-paragraph-headline-h2">Overview</h2>
+          <!-- 记住这里的h2就是标题 -->
+          <p class="myPage-paragraph-content">
+            This year, XMU-China focused on the optimization of industrial processes for 
+            waste paper treatment and had made significant progress in this field 
+            (See more details in our <a style="font-weight: bolder;text-decoration: none;"
+            href="{{ url_for('pages', page='description') }}">Description</a> page). It is relatively easy to produce 
+            target proteins by engineered bacteria in the laboratory and purify it, however 
+            in industry, the additional purification process will greatly increase the cost 
+            of paper recycling. During this season, some successful engineering iterations 
+            for obtaining target proteins without the need of purification, particularly 
+            using the <i>E. coli</i> autolytic system FLSA (FhuD-T7 lysozyme-SsrA mediated 
+            autolytic system) in enzymes production and releasing, have been achieved. 
+            All the related data are recorded below and we hope it will be helpful for 
+            other iGEM teams and SynBio community if they meet the related issue of 
+            obtaining recombinant proteins from microbial cell factories by means of 
+            purification-free technology.
+          </p>
+        </div>
+
+        <div class="myPage-paragraph" id="section2">
+          <h2 class="myPage-paragraph-headline-h2">Cycle 1: Verifying the function of FhuD-GGG Iinker-T7 Lysozyme 119V-SsrA mediated autolytic system (BBa_K5136031)</h2>
+          <!-- 记住这里的h2就是标题 -->
+          <div class="myPage-paragraph" id="section2-1">
+            <h2 class="myPage-paragraph-headline-h2">Design</h2>
+            <!-- 记住这里的h2就是标题 -->
+            <p class="myPage-paragraph-content">
+              In the autolytic system FLSA (FhuD-T7 lysozyme-SsrA mediated autolytic system), T7 lysozyme will reach the peptidoglycan layer in periplasmic space with the assistance of Sec-Tat dual pathway signal peptide FhuD to permeabilize the host inner membrane, resulting in the degradation of the peptidoglycan framework to cause cell collapse. While the degron, SsrA tag, was fused to the C-terminal of T7 lysozyme for alleviating the undesired lysis of host cells caused by leaking T7 lysozyme (1).
+            </p>
+            <p class="myPage-paragraph-content">
+              For determining the efficiency of FLSA autolytic system to release 
+              intracellularly produced recombinant proteins, we chose the superfolder green 
+              fluorescent protein (sfGFP) as the reporter (2) so that the released amount 
+              could be easily measured as fluorescence intensity. Therefore, the <b>sfGFP 
+              release efficiency</b> is defined as <b>the ratio of fluorescence intensity of 
+              cultural supernatant to that of bacterial culture</b>.
+            </p>
           </div>
 
-      <p>If you plan to show engineering success by creating a new Part that has been shown to work as expected, you must document your contribution on the Part's Main Page on the <a href="https://parts.igem.org/Main_Page">Registry</a> for your team to be eligible for this criteria.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/medals">2024 Medals Page</a> for more information.</p>
-    </div>
-  </div>
-</div>
+          <div class="myPage-paragraph" id="section2-1">
+            <h2 class="myPage-paragraph-headline-h2">Build</h2>
+            <!-- 记住这里的h2就是标题 -->
+            <p class="myPage-paragraph-content">
+              First, the two parts, FhuD signal peptide and T7 lysozyme 119V 
+              (<a style="font-weight: bolder;text-decoration: none;"
+              href="https://www.ncbi.nlm.nih.gov/protein/NP_041973.1">NP_041973.1</a>), were linked by a flexible linker (GGGGS)<sub>3</sub> 
+              (GGG, in short) (3). Following that, the SsrA tag was fused to the 
+              C-terminal of T7 lysozyme, generating a basic part of coding 
+              sequence (<a style="font-weight: bolder;text-decoration: none;"
+              href="https://parts.igem.org/Part:BBa_K5136031">BBa_K5136031</a>).
+            </p>
+
+            <p class="myPage-paragraph-content">
+              There were four basic parts assembled into the vector pSB1C3 (Figure 1A) 
+              <i>via</i> Gibson assembly: <i>L</i>-arabinose inducible promoter (<a style="font-weight: bolder;text-decoration: none;"
+              href="http://parts.igem.org/Part:BBa_I0500">BBa_I0500</a>), 
+              RBS (<a style="font-weight: bolder;text-decoration: none;"
+              href="http://parts.igem.org/Part:BBa_B0034">BBa_B0034</a>), FhuD-GGG Iinker-T7 lysozyme 119V-SsrA coding sequence 
+              (<a style="font-weight: bolder;text-decoration: none;"
+              href="https://parts.igem.org/Part:BBa_K5136031">BBa_K5136031</a>) and terminator (<a style="font-weight: bolder;text-decoration: none;"
+              href="http://parts.igem.org/Part:BBa_B0015">BBa_B0015</a>). Assembly product was 
+              subsequently transformed into <i>E. coli</i> DH10β. Then the positive 
+              transformants were selected by chloramphenicol and confirmed by colony 
+              PCR (Figure 1B) and sequencing.
+            </p>
+
+            <div class="myPage-paragraph-fig">
+              <img src="https://static.igem.wiki/teams/5136/engineer-success/1.png" alt="">
+              <div class="myPage-paragraph-fig-description"><b>Figure 1 FhuD-GGG Iinker-T7 lysozyme 119V-SsrA mediated autolytic system. (A) </b>
+                The gene circuit of the FhuD-GGG Iinker-T7 lysozyme 119V-SsrA mediated autolytic system (BBa_K5136221). <b>(B) </b>
+                Agarose gel electrophoresis of the colony PCR products of BBa_K5136221_pSB1C3 in E. coli DH10β. Target bands (2332 bp) can be observed at the position between 2000 bp and 3000 bp.
+              </div>
+            </div>
+
+            <p class="myPage-paragraph-content">
+              Afterwards, the reporter plasmid (sfgfp_pET-28a(+), laboratory stock) and 
+              the correct autolytic plasmid (<a style="font-weight: bolder;text-decoration: none;"
+              href="https://parts.igem.org/cgi/partsdb/dna_info.cgi?part=BBa_K5136221">BBa_K5136221</a>_pSB1C3) were co-transformed 
+              into <i>E. coli</i> BL21(DE3). While the I0500_pSB1C3 (laboratory stock) was set 
+              as the control and co-transformed with the reporter plasmid into <i>E. coli</i> 
+              BL21(DE3) to obtain the control strain. Correct dual-plasmid transformants 
+              were selected by chloramphenicol and kanamycin.
+            </p>
+          </div>
+
+          <div class="myPage-paragraph" id="section2-2">
+            <h2 class="myPage-paragraph-headline-h2">Test</h2>
+            <!-- 记住这里的h2就是标题 -->
+            <p class="myPage-paragraph-content">
+              For obtaining recombinant proteins (sfGFP) <i>via</i> the FLSA autolytic system, 
+              the <i>E. coli</i> BL21(DE3) strain harboring <a style="font-weight: bolder;text-decoration: none;"
+              href="https://parts.igem.org/cgi/partsdb/dna_info.cgi?part=BBa_K5136221">BBa_K5136221</a>_pSB1C3 and 
+              <i>sfgfp</i>_pET-28a(+) was firstly induced to intracellularly produce sfGFP by 
+              adding isopropyl-<i>β</i>-D-thiogalactopyranoside (IPTG). After <b>10 hours′ induction 
+              for accumulating sfGFP</b>, the second inducer <i>L</i>-arabinose was added to trigger 
+              the autolytic system. The fluorescence intensity (λ<sub>ex</sub> = 475 nm, λ<sub>em</sub> = 515 nm) 
+              of bacterial culture and supernatant were measured and the release efficiency 
+              was calculated after <b>autolysis for 16 hours</b>. (See detailed protocol in our 
+              <a style="font-weight: bolder;text-decoration: none;"
+              href="{{ url_for('pages', page='experiments') }}">Experiments</a> page)
+            </p>
+
+            <div class="myPage-paragraph-fig">
+              <img src="https://static.igem.wiki/teams/5136/engineer-success/2.png" alt="">
+              <div class="myPage-paragraph-fig-description"><b>Figure 2 sfGFP release efficiency of the E. coli FhuD-lysozyme-SsrA mediated autolytic system. </b>
+                The original FLSA system showed a 2.3 times release efficiency of the control (I0500).
+              </div>
+            </div>
+
+            <p class="myPage-paragraph-content">
+              The release efficiency of the original FLSA system (FhuD-GGG linker-T7 lysozyme 119V-SsrA) was higher than that of the control group, indicating that the system functioned indeed. However, the low release efficiency (~6%) might hinder the further and practical implementation of this autolytic system.
+            </p>
+          </div>
+        </div>
 
 {% endblock %}
