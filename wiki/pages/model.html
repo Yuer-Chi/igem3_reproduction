@@ -194,7 +194,11 @@
             thus the model can distinguish the real signal peptide-driven secretion part for extracellular secretion rate constant estimation 
             and investigate the interactive effect between signal peptide and growth cell. 
             The macro-level model in the fermentation aspect is employed for the description of three different cell types 
-            while the micro-level models from the molecular biology level model three sources that contribute to the fluorescence in the supernatant.            
+            while the micro-level models from the molecular biology level model three sources that contribute to the fluorescence in the supernatant. 
+            It is worth mentioning that the key point to connect the macro-level model and the micro-level model is 
+            the consideration of the physical quantity of volume changes due to the transition between different spaces during secretion, 
+            as well as the transition between concentration and density, 
+            which is quite different from the model of pulse-chase analysis (XMU-China, 2021).
             </p>
 
 
@@ -542,18 +546,47 @@
               $d_i\ (i=1,2,3,4\cdots)$ the dilution rate due to the volume change between different space (1/h).
   
 
-
-
-
-
-
-
             </p>
 
 
 
 
+            <p class="myPage-paragraph-content"></p>
 
+
+
+            <h4 class="myPage-paragraph-headline-h4">3.3 Comparision Between Micro-Level Model for Sec Pathway and Tat Pathway</h4>
+
+
+            <p class="myPage-paragraph-content"></p>
+
+
+            <p class="myPage-paragraph-content">
+
+
+            The micro-level models describe the three main resources which form the supernatant fluorescence (Figure 2): <br><br>
+
+            <b>(1) Secretion</b>: 
+            
+            $$\gamma X_{V}P_{mature~}$$
+            
+            <b>(2) Leakiness</b>: 
+
+            $$\frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)X_{V}P_{mature~}$$
+
+            <b>(3) Release</b>: 
+
+            $$k_{dXd}X_{D}P_{mature~}$$
+            
+            with the $d_i$ representing the dilution effect due to the volume change between different space. 
+            
+            Meanwhile, the different protein maturation areas of different pathway, cytoplasm space for Sec pathway and periplasm space for Tat pathway, will produce different compositions of $P_{mature\ }$ in different math formulas, 
+            
+            as well as differnet meaning of $P_p$ and $P_l$, 
+            
+            resulting in the different minimization goals for different signal peptides in the parameters fitting task. 
+
+          </p>
 
 
         </div>
