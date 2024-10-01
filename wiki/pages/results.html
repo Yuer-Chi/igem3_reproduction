@@ -11,7 +11,7 @@
 
 <style>
   .sidebar-link {
-    font-size: 15px;
+    font-size: 2vh;
   }
 
   .sidebar-link.current {
@@ -517,9 +517,6 @@
                 <td><i>CYP199A4 T253S</i>-His tag</td>
               </tr>
               <tr>
-                <td>
-                  <img src="https://static.igem.wiki/teams/5136/parts-table-icon/jt.png" slt="">
-                </td>
                 <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136003">BBa_K5136003</a></td>
                 <td>coding</td>
                 <td><i>CYP199A4 T253A</i>-His tag</td>
@@ -798,7 +795,8 @@
           <div class="myPage-paragraph-fig">
             <img src=" " alt="">
             <div class="myPage-paragraph-fig-description">
-              <b>Figure 23 Characterization of His tag-LMT-CYP199A4 T253E.</b> (<b>A</b>) SDS-PAGE analysis (left) and gray scale
+              <b>Figure 23 Characterization of His tag-LMT-CYP199A4 T253E.</b> (<b>A</b>) SDS-PAGE analysis (left) and
+              gray scale
               value analysis (right) of the supernatant at different times. (<b>B</b>) Deinking characterization of His
               tag-LMT-CYP199A4 T253E (BBa_K5136047) from the supernatant (left) and microscope image (right).
             </div>
@@ -808,6 +806,128 @@
         <div class="myPage-paragraph" id="section9">
           <h2 class="myPage-paragraph-headline-h2">7 Display the metallothioneins on the surface of the cell to absorb
             heavy metal ion</h2>
+          <h3 class="myPage-paragraph-headline-h3">7.1 The surface display efficiency of INPNC</h3>
+          <p class="myPage-paragraph-content">
+            To verify whether INPNC can display target protein on the surface of bacteria, we introduced the Spy system,
+            which consists of SpyCatcher and SpyTag. SpyCatcher is an engineered split fragment of the
+            fibronectin-binding protein (FbaB) in Streptococcus pyogenes, and SpyTag is a peptide tag that could
+            steadily bind to SpyCatcher by forming an isopeptide bond. In our project, SpyCatcher was fused with INPNC
+            and SpyTag was fused with GFP. Then, His tag-SpyTag-GFP was added to the medium containing the engineered
+            bacteria, which express the fused protein INPNC-His tag-SpyCatcher. By monitoring the fluorescence intensity
+            of bacteria, we can verify if INPNC could anchor target proteins on the cell surface.
+          </p>
+          <p class="myPage-paragraph-content">
+            The His tag-SpyTag-GFP coding sequence (BBa_K5136034) was assembled into the expression vector pET-28a(+) by
+            Gibson assembly (Figure 24A). The constructed plasmid was transformed into E. coli BL21(DE3), then the
+            positive transformants were selected by chloramphenicol and confirmed by colony PCR and sequencing. Target
+            bands (953 bp) can be observed at the position around 1000 bp (Figure 24B). After that, the bacteria were
+            cultivated and induced by 0.5 mM IPTG at 25 °C, and then the GE AKTA Prime Plus FPLC System was employed to
+            get purified protein His tag-SpyTag-GFP from the lysate supernatant. Purified protein was verified by sodium
+            dodecyl sulfate (SDS)-10% (wt/vol) polyacrylamide gel electrophoresis (PAGE) and Coomassie blue staining. As
+            shown in the gel image (Figure 24C), the target protein (29 kDa) can be observed at the position around 30
+            kDa on the purified protein lanes (FR).
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/24.jpg" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 24 Constructing and purifying His tag-SpyTag-GFP
+                fused protein.</b>
+              <b>A. </b>the expression gene circuits for expressing SpyTag-GFP.
+              <b>B. </b>DNA gel electrophoresis of the colony PCR products of BBa_K5136034_pET-28a(+) in E.
+              coli BL21(DE3). C. SDS-PAGE analysis of His tag-SpyTag-GFP.
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            The promoter (BBa_I0500), RBS (BBa_B0034), INPNC-His tag-SpyCatcher coding sequence (BBa_K5136035), and
+            terminator (BBa_B0015) were used to construct a composite part BBa_K5136224, which was then assembled into
+            the expression vector pSB1C3 by standard assembly. The constructed plasmid was transformed into E.
+            coli BL21(DE3), then the positive transformants were selected by chloramphenicol and confirmed by colony PCR
+            (Figure 25B) and sequencing. Target bands (2974 bp) can be observed at the position around 3000 bp.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/25.jpg" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 25 Constructing INPNC-His tag-SpyCatcher fused
+                protein.</b>
+              <b>A. </b>the expression gene circuits for INPNC displaying SpyCatcher on the surface of E. coli
+              BL21(DE3).
+              <b>B. </b>DNA gel electrophoresis of the colony PCR products of Bba_K5136224_pSB1C3 in E. coli BL21(DE3).
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            After being induced with 0.2%(w/v) arabinose for 12 hours,
+            the E. coli BL21(DE3) culture solution (express INPNC-His
+            tag-SpyCatcher) was incubated with His tag-SpyTag-GFP at 37 °C in
+            the shaker. After cultivation for 12 hours, the culture was
+            centrifuged to get the precipitate. Then, the precipitate was
+            washed and resuspended in the PBS buffer (see <a style="font-weight: bolder;text-decoration: none;"
+              href="{{ url_for('pages', page='experiments') }}">Experiment</a> for more details). As shown in Figure 26,
+            the fluorescence intensity of the resuspension sample in the experimental group (INPNC-His
+            tag-SpyCatcher_pSB1C3) was significantly higher than that of the control group (I0500_pSB1C3). In addition,
+            we can also observe significant fluorescence from precipitation in the experiment group, while the control
+            group was contrary (Figure 27). These results indicated the combination between HisTag-SpyTag-GFP and the
+            INPNC-HisTag-SpyCatcher displayed on the surface of E. coli BL21(DE3), demonstrating that INPNC exhibits
+            excellent capacity to anchor target proteins on the cell membrane.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/26.jpg" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 26 Fluorescence intensity of samples after culturing
+                12 hours.</b>
+            </div>
+          </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/27.jpg" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 27 Samples placed under blue light after culturing
+                12 h.</b>
+            </div>
+          </div>
+
+          <h3 class="myPage-paragraph-headline-h3">7.2 Absorb heavy metal by engineered bacteria</h3>
+          <p class="myPage-paragraph-content">
+            <b>Surface-displayed metallothionein adsorbs Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup></b>
+          </p>
+          <p class="myPage-paragraph-content">
+            In order to adsorb heavy metal ions in the wastewater after deinking, we chose metallothioneins (MTs) MT2A
+            and MT3 to treat the wastewater. In addition, to increase the contact area between MTs and heavy metal ions,
+            we utilized the anchor protein INPNC to display MTs on the surface of bacteria. The composite part
+            (BBa_K5136226), which expresses the fused protein INPNC-linker-MT3-linker-MT2A with the induction of
+            L-arabinose was introduced into the backbone plasmid (pSB1C3) through standard assembly. The constructed
+            plasmid was transformed into E. coli BL21(DE3), then the positive transformants were selected by
+            chloramphenicol and confirmed by colony PCR (Figure 28) and sequencing. Target bands (4464 bp) can be
+            observed at the position around 5000 bp (Figure 28).
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/28.jpg" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 28 Colony PCR of BBa_K5136230_pSB1C3 in E.
+                coli BL21(DE3).</b>
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            After being cultivated and induced by 0.2% <i>L</i>-arabinose at 37 °C
+            for 4 hours, the engineered bacteria were cultured in the M9 medium
+            containing K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub> (5 mg/L) for 24 hours. A bit of the supernatant
+            of the bacterial cultures was collected at 0 hour and 24 hours, and was
+            pre-treated with dibenzoylphenyl dihydrazine (DPC). Then, the residual
+            amount of Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> in the supernatant was determined by the RGB value
+            measured,
+            which can be calculated based on a standard curve of Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> in Figure 29
+            (please see <a style="font-weight: bolder;text-decoration: none;"
+              href="{{ url_for('pages', page='experiments') }}">Experiment</a> for details). As shown in Figure 229, the
+            Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> in
+            the culture medium at the 24 hours was significantly lower than the initial value.
+            It indicated that the engineered bacteria could successfully reduce the heavy
+            metal ion Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> in the wastewater.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/20.jpg" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 20 Standard curve of
+                Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> (R<sup>2</sup>=0.987)</b>.
+            </div>
+          </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/30.jpg" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 30 Concentration of
+                Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> in the culture medium after 0 h and 24 h.</b>
+            </div>
+          </div>
         </div>
 
         <div class="myPage-paragraph" id="section10">
@@ -817,14 +937,91 @@
 
         <div class="myPage-paragraph" id="section11">
           <h2 class="myPage-paragraph-headline-h2">9 Further explorations</h2>
+          <p class="myPage-paragraph-content">
+            In life and work, wrong words and misprints are often present in precious and important paper documents,
+            such as contracts, archives, and examination papers. Reconstructing these documents will take a lot of time,
+            cost and manpower. So, we want to expand the application of deinking for these papers with wrong words,
+            which may save paper, time and money.
+          </p>
+          <h3 class="myPage-paragraph-headline-h3">9.1 Erasure performance of diluted ink</h3>
+          <p class="myPage-paragraph-content">
+            In life and work, wrong words and misprints are often present in precious and important paper documents,
+            such as contracts, archives, and examination papers. Reconstructing these documents will take a lot of time,
+            cost and manpower. So, we want to expand the application of deinking for these papers with wrong words,
+            which may save paper, time and money.
+          </p>
+          <p class="myPage-paragraph-content">
+            Test the effect of some surfactants on removing ink. On each 1 cm×1 cm sheet of paper, 15 μL of diluted
+            MG6128 gel pen ink was painted uniformly. After drying in the air for 3 minutes, the papers were placed in 2
+            mL centrifuge tubes containing 1-mL reaction solution. The tubes were then placed in a metal bath (at 25 °C,
+            1000 rpm) and shaken for 10 minutes. The absorbance (at OD=400) of the post-reaction solution was measured
+            and calculated on standard curves to obtain the ink content, and then the ink removal rate was calculated.
+            The experimental results indicate that
+            <b>both SDS and rhamnolipid exhibit significant performance</b> in removing ink compared to the control
+            group (Figure 31).
+          </p>
+          <p class="myPage-paragraph-content">
+            这里放公式removal rate
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/31.jpg" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 31 Removal rates of 2.5wt% SDS、2.5wt% rhamnolipid
+                and water.
+            </div>
+          </div>
+          <h3 class="myPage-paragraph-headline-h3">9.2Erasure performance of handwriting</h3>
+          <p class="myPage-paragraph-content">
+            Conduct a series of erasure experiments on the ink marks of ballpoint pens. A machine wrote the same Chinese
+            characters on the paper, then cut them into strips and placed them in a 12-well plate with the reactant
+            solution. The total measurement lasted for 1 hour, and we observed the erasure performance every 15 minutes.
+            The fade of the Chinese characters is obvious when 2.5 wt% SDS and 0.4 (v/v)% limonene are used together,
+            and erasure performance increases with the reaction time.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/32.jpg" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 32 Comparison of elimination effect between blank
+                and experimental group.
+            </div>
+          </div>
+          <h3 class="myPage-paragraph-headline-h3">9.3 Adsorption efficiency of crosslinked chitosan</h3>
+          <p class="myPage-paragraph-content">
+            We also tried to remove the ink by adsorbing crosslinked chitosan. 0.1 g of crosslinked chitosan was added
+            to 1 mL of diluted ink solution. The adsorption efficiency was characterized by the decrease in the
+            solution's absorbance. The experimental results indicated that crosslinked chitosan exhibits a significant
+            adsorption function on both ballpoint and gel pen ink.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/33.jpg" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 33 The adsorption rates of chitosan to ballpoint pen
+                ink were calculated as time progressed.
+            </div>
+          </div>
         </div>
 
         <div class="myPage-paragraph" id="section12">
           <h2 class="myPage-paragraph-headline-h2">10 Conclusion</h2>
+          <p class="myPage-paragraph-content">
+            In our REPARO project, we designed and developed an unprecedented deinking method based on synthetic
+            biology, which could serve as a viable alternative to the chemical method on the industry scale. The
+            implementation of our REPARO project holds immense potential to propel technological advancement and
+            industrial upgrading within the waste paper recycling industry. Our project aims to introduce advanced
+            biotechnology and environmental protection concepts to enhance the entire industry's production efficiency,
+            product quality, and environmental protection level, thereby strengthening the industry's competitiveness
+            and promoting the development of the circular economy.
+          </p>
         </div>
 
         <div class="myPage-paragraph" id="section13">
           <h2 class="myPage-paragraph-headline-h2">11 Future Prospects</h2>
+          <p class="myPage-paragraph-content">
+            In the foreseeable future, we aim to comprehensively characterize the deinking efficacy achieved through the
+            synergistic use of diverse deinking enzymes and explore the optimal conditions that maximize the performance
+            of each enzyme. Concurrently, we aim to validate the deinking capabilities further when our autolytic system
+            is integrated with deinking enzymes, and verify the deinking capabilities of the exogenous secretion system,
+            activated by the Anderson promoter, in conjunction with these enzymes. Importantly, we are committed to
+            continuously optimizing the design and verification processes of our erasing product, demonstrating our
+            dedication to the creation of a convenient, efficient, and practical erasing product for everyday use.
+          </p>
         </div>
 
         <!-- <div class="myPage-paragraph" id="section14">
