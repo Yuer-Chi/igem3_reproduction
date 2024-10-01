@@ -59,7 +59,7 @@
           <a href="#section7" class="sidebar-link" data-section="section7">References</a>
         </div> -->
         <div class="left-bar-right-item">
-          <a href="#section8" class="sidebar-link" data-section="section8">6 Secretion system</a>
+          <a href="#section8" class="sidebar-link" data-section="section8">6 Secrete monooxygenase</a>
         </div>
         <div class="left-bar-right-item">
           <a href="#section9" class="sidebar-link" data-section="section9">7 Display system</a>
@@ -228,7 +228,7 @@
             sequencing was successfully transformed into E. coli BL21(DE3).
           </p>
           <div class="myPage-paragraph-fig">
-            <img src="https://static.igem.wiki/teams/5136/result/3.png" alt="">
+            <img src="https://static.igem.wiki/teams/5136/result/3.png" alt="" style="max-width: 700px;">
             <div class="myPage-paragraph-fig-description">
               <b>Figure 3 A. DNA gel electrophoresis of the colony PCR products of BBa_K5136026_pET-28a(+) in <i>E.
                   coli</i>
@@ -265,7 +265,7 @@
             was successfully transformed into E. coli BL21(DE3).
           </p>
           <div class="myPage-paragraph-fig">
-            <img src="https://static.igem.wiki/teams/5136/result/5.png" alt="">
+            <img src="https://static.igem.wiki/teams/5136/result/5.png" alt="" style="max-width: 700px;">
             <div class="myPage-paragraph-fig-description">
               <b>Figure 5 A. DNA gel electrophoresis of the colony PCR products of BBa_K5136027_pET-28a(+) in <i>E.
                   coli</i>
@@ -358,6 +358,294 @@
 
         <div class="myPage-paragraph" id="section4">
           <h2 class="myPage-paragraph-headline-h2">3 Screen the monooxygenase with higher deinking efficacy</h2>
+          <p class="myPage-paragraph-content">
+            NADPH is an expensive coenzyme (428.7 $/g), which propels us to give up the way to use the NADPH-dependent
+            P450 in the waste paper deinking. After reviewing the literature, we chose three kinds of monooxygenases,
+            CYP199A4, OleT<sub>JE</sub> and SfmD and their mutants, which use H<sub>2</sub>O<sub>2</sub> as an electron
+            donor. The targeted sequence was
+            inserted in pET-28a(+) to construct circuits, which were transformed into E. coli BL21(DE3) to express each
+            enzyme. The positive transformants were confirmed by kanamycin, colony PCR, and sequencing. After being
+            cultivated and induced by 0.5 mM IPTG at 20 °C, the induction of CYP199A4 requires the addition of
+            δ-aminolevulinic acid hydrochloride (0.5 mM), the GE AKTA Prime Plus FPLC System was employed to get
+            purified protein from the lysate supernatant. SDS-PAGE and Coomassie blue staining were used to verify the
+            expression of the target protein.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/11.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 11 DNA gel electrophoresis of the colony PCR
+                products of CYP199A4, OleTJE and SfmD and their mutants_ pET-28a(+) in E. coli BL21(DE3). Target bands
+                (1412 bp) can be observed between 1000 bp and 2000 bp.</b>
+            </div>
+          </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/12.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 12 SDS-PAGE analysis of CYP199A4, OleTJE and SfmD
+                and their mutants. Target bands (about 48.6 kDa) can be observed between 42 kDa and 52 kDa.</b>
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            1 mL monooxygenase (0.2 mg/mL) was added in the deinking blank system and reacted at 30 °C (the average of
+            the two optimal temperatures) for 60 min. After the standard operating procedure (see <a
+              style="font-weight: bolder;text-decoration: none;" href="{{ url_for('pages', page='sop') }}">SOP</a> for
+            more details),
+            read the gray scale value automatically. As shown in (Figure 13), the pulp treated by SfmD-277F showed a
+            slight increase in ΔGray scale value compared to that of wild type. However, the value decreased
+            significantly in the mutant of OleT than that of the wild type. The pulp treated by CYP199A4-253E exhibited
+            the <b>highest ΔGray scale value</b>, which was increased by more than ten-fold compared to the wild-type
+            enzyme.
+            As shown in the picture from the microscope (Figure 14), the paper treated with CYP199A4 T253E (Figure 14)
+            has minimal ink residue among these enzymes, demonstrating the <b>highest deinking efficiency</b>.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src=" " alt="">
+            <div class="myPage-paragraph-fig-description"><b>ΔGray scale的公式</b>
+            </div>
+          </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/13.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 13 Comparison of the Relative Gray Scale of
+                different monooxygenases and their mutants.</b>
+            </div>
+          </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/14.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 14 Pulp Recycled Paper under a High-resolution
+                Microscope, the percentage is the value obtained by dividing by the Gray of negative.</b>
+            </div>
+          </div>
+          <table class="myPage-paragraph-table">
+            <tbody>
+              <tr>
+                <th style="width:20%;">Name</th>
+                <th>Type</th>
+                <th style="width:50%;">Description</th>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136020">BBa_K5136020</a></td>
+                <td>coding</td>
+                <td><i>SfmD WT</i></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136021">BBa_K5136021</a></td>
+                <td>coding</td>
+                <td><i>SfmD 277F</i></td>
+              </tr>
+              <tr>
+              <tr>
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136023">BBa_K5136023</a></td>
+                <td>coding</td>
+                <td><i>OleT<sub>JE</sub></i></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136024">BBa_K5136024</a></td>
+                <td>coding</td>
+                <td><i>OleT<sub>JE</sub> 236ser 100lys 166lys</i></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136025">BBa_K5136025</a></td>
+                <td>coding</td>
+                <td><i>OleT<sub>JE</sub> 236ser 360lys 167lys</i></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136000">BBa_K5136000</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 WT</i>-His tag</td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136001">BBa_K5136001</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253E</i>-His tag</td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136002">BBa_K5136002</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253S</i>-His tag</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="myPage-paragraph-content">
+            The experimental results showed that CYP199A4 and its mutants exhibited the best deinking efficiency.
+            Therefore, we carried out saturation mutagenesis at position T253 of CYP199A4, aiming to screen the enzyme
+            with the best deinking effect. The step for circuit construction, induced expression, and protein
+            purification were conducted with the same conditions for CYP199A4 WT and mutants, which were detailed
+            described in the part page below.
+          </p>
+          <p class="myPage-paragraph-content">
+            The targeted sequences were inserted in pET-28a(+) to construct circuits, which were transformed into E.
+            coli BL21(DE3) to express each enzyme. The positive transformants were confirmed by kanamycin, colony PCR,
+            and sequencing. After being cultivated and induced by the addition of IPTG (0.2 mM) and δ-aminolevulinic
+            acid hydrochloride (0.5 mM) at 20 °C, the GE AKTA Prime Plus FPLC System was employed to get purified
+            protein from the lysate supernatant. SDS-PAGE and Coomassie blue staining were used to verify the expression
+            of the target protein.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/15.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 15 DNA gel electrophoresis of the colony PCR
+                products of CYP199A4 and its mutants_ pET-28a(+) in E. coli BL21(DE3). Target bands (1412 bp) can be
+                observed between 1000 bp and 2000 bp.</b>
+            </div>
+          </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/16.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 16 SDS-PAGE analysis of CYP199A4, its mutants.
+                Target bands (about 48.8 kDa) can be observed between 42 kDa and 52 kDa.</b>
+            </div>
+          </div>
+          <table class="myPage-paragraph-table">
+            <tbody>
+              <tr>
+                <th style="width:20%;">Name</th>
+                <th>Type</th>
+                <th style="width:50%;">Description</th>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136000">BBa_K5136000</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 WT</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136001">BBa_K5136001</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253E</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136002">BBa_K5136002</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253S</i>-His tag</td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="https://static.igem.wiki/teams/5136/parts-table-icon/jt.png" slt="">
+                </td>
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136003">BBa_K5136003</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253A</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136004">BBa_K5136004</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253R</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136005">BBa_K5136005</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253N</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136006">BBa_K5136006</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253D</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136007">BBa_K5136007</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253C</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136008">BBa_K5136008</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253Q</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136009">BBa_K5136009</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253W</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136010">BBa_K5136010</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253G</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136011">BBa_K5136011</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253H</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136012">BBa_K5136012</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253I</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136013">BBa_K5136013</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253L</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136014">BBa_K5136014</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253K</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136015">BBa_K5136015</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253M</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136016">BBa_K5136016</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253F</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136017">BBa_K5136017</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253P</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136018">BBa_K5136018</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253V</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136019">BBa_K5136019</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253Y</i>-His tag</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="myPage-paragraph-content">
+            Based on the results from the preliminary experiment, many enzymes exhibit excellent deinking performance,
+            resulting in the saturation of the grayscale value. Thus, each enzyme was diluted from 0.2 mg/mL to 0.05
+            mg/mL. 1 mL of each monooxygenase (0.05 mg/mL) was added to the deinking blank system and reacted at 30 °C
+            (the average of the two optimal temperatures) for 60 min. After the standard operating procedure (see <a
+              style="font-weight: bolder;text-decoration: none;" href="{{ url_for('pages', page='sop') }}">SOP</a>
+            for more details), read the gray scale value automatically. As shown in Figure 17, the gray scale value of
+            some mutants increased by 50% at least, in which 253A shows the best performance in deinking. As shown in
+            the picture from the microscope (Figure 18), the paper treated with CYP199A4 T253A (Figure 18) has minimal
+            ink residue among these enzymes. The paper is relatively white, and the observed effect has reached 1.06
+            times higher than chemical deinking (Figure 18 chemical method).
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/17.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 17 Comparison of the Relative Gray Scale of
+                different monooxygenases and their mutants.</b>
+            </div>
+          </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/18.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 18 Pulp Recycled Paper under a High-resolution
+                Microscope, the percentage is the value obtained by dividing by the Gray of A.</b>
+            </div>
+          </div>
         </div>
 
         <div class="myPage-paragraph" id="section5">
