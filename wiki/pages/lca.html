@@ -39,10 +39,10 @@ with new communities by discussing public values and the science behind syntheti
           <a href="#section5" class="sidebar-link" data-section="section5">Conclusion</a>
         </div>
         <div class="left-bar-right-item">
-          <a href="#section5" class="sidebar-link" data-section="section5">The whole life of paper</a>
+          <a href="#section6" class="sidebar-link" data-section="section6">The whole life of paper</a>
         </div>
         <div class="left-bar-right-item">
-          <a href="#section5" class="sidebar-link" data-section="section5">References</a>
+          <a href="#section7" class="sidebar-link" data-section="section7">References</a>
         </div>
       </div>
     </div>
@@ -125,125 +125,205 @@ with new communities by discussing public values and the science behind syntheti
                   <td>0.53 kg CO2eq/kwh</td>
                   <td>(4)</td>
                 </tr>
+                <tr>
+                  <td>NaOH</td>
+                  <td>2.5 kg CO2eq/kg</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>H2O2</td>
+                  <td>2.3 kg CO2eq/kg</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Na2SiO3</td>
+                  <td>1.5 kg CO2eq/kg</td>
+                  <td>Ecoinvent3</td>
+                </tr>
+                <tr>
+                  <td>Yeast extract</td>
+                  <td>1.5 kg CO2eq/kg</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Tryptone</td>
+                  <td>2.1 kg CO2eq/kg</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Enzyme producing E. coli BL21</td>
+                  <td>34.7 mmol CO2/h per g [dw]</td>
+                  <td>(6)</td>
+                </tr>
+                <tr>
+                  <td>COD/BOD</td>
+                  <td>1.375 kg CO2eq/kg</td>
+                  <td>China Products Carbon</td>
+                </tr>
+                <tr>
+                  <td>Suspended solids</td>
+                  <td>422.4 kg CO2eq/t</td>
+                  <td>Footprint Factors Database</td>
+                </tr>
               </tbody>
             </table>
-          </div>
-
-
-        
-        </div>
-
-        <!---插图演示--->
-        <div class="myPage-paragraph" id="section2">
-          <h2 class="myPage-paragraph-headline-h2">2.标题2</h2>
-          <p class="myPage-paragraph-content">
-            这里就是展示一下如何插入图片，图片的格式就是一张图片，可以说png，jpg等等格式都没问题。
-          </p>
-          <div class="myPage-paragraph-fig">
-            <img src="https://static.igem.wiki/teams/4907/wiki/description/description-fig1.png" alt="">
-            <div class="myPage-paragraph-fig-description"><b>Figure 1这里就是写备注就好了</b>
+            <div class="myPage-paragraph-fig-description">
+              <b>Table 1 Carbon emission factors used in our calculation.</b>
             </div>
           </div>
-          <h3 class="myPage-paragraph-headline-h3">5.2 还是小标题</h3>
-          <h4 class="myPage-paragraph-headline-h4">1. 小小标题</h4>
+
+
+
+        </div>
+
+        <!---Pretreatment--->
+        <div class="myPage-paragraph" id="section2">
+          <h2 class="myPage-paragraph-headline-h2">Pretreatment</h2>
           <p class="myPage-paragraph-content">
-            <a style="font-weight: bolder;text-decoration: none;" href="https://www.baidu.com/">百度</a>
-            就是这种格式。
+            This part involves mixing waste paper with water to generate pulp, primarily consuming electrical energy.
+            Based on our machine's power and the average carbon emission factor of the China's power grid (4), the CO2
+            emissions were calculated and the result is 17.6 g CO2eq/100 mL pulp.
           </p>
         </div>
 
-        <!---小标题和小小标题--->
+        <!---Deinking--->
         <div class="myPage-paragraph" id="section3">
-          <h2 class="myPage-paragraph-headline-h2">3.标题3</h2>
+          <h2 class="myPage-paragraph-headline-h2">Deinking</h2>
 
-          <h3 class="myPage-paragraph-headline-h3">5.1 小标题</h3>
           <p class="myPage-paragraph-content">
-            这里展示一下小标题，，页面中的标题用的是h2，小标题用的是h3，小小标题用的是h4。
+            After pulp preparation, chemical reagents or enzymes are added to the pulp to separate ink from the pulp.
+            Stirring was applied to facilitate better reaction. We calculated the carbon emission of chemical reagents'
+            production (5), the respiration of enzyme-producing bacteria (6), and the corresponding electricity
+            consumption. Results indicate that enzymatic deinking (22.6 g CO2eq/100 mL pulp) reduces carbon emissions by
+            30.7% compared to chemical methods (32.6 g CO2eq/100 mL pulp). The reduction is mainly due to the decreased
+            chemical reagent usage and the high efficiency of enzymes.
           </p>
-
-          <h3 class="myPage-paragraph-headline-h3">5.2 还是小标题</h3>
-          <h4 class="myPage-paragraph-headline-h4">1. 小小标题</h4>
-          <p class="myPage-paragraph-content">
-            比如这里就有小小标题
-          </p>
-          <h4 class="myPage-paragraph-headline-h4">2. 另一个小小标题</h4>
-          <p class="myPage-paragraph-content">
-            同上
-          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/lca/lca-fig2.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 2 Carbon emission in deinking process.</b>
+            </div>
+          </div>
 
         </div>
 
         <!---超链接的写法--->
         <div class="myPage-paragraph" id="section4">
-          <h2 class="myPage-paragraph-headline-h2">4.标题4</h2>
+          <h2 class="myPage-paragraph-headline-h2">Waste Treatment</h2>
           <p class="myPage-paragraph-content">
-            这里主要是展示一下超链接要怎么用，像接下来这个 <a style="font-weight: bolder;text-decoration: none;"
-              href="{{ url_for('pages', page='hardware') }}">Hardware</a>,
-            就是跳转到我们网页的其他页面的格式，如果我跳转到其他网页的话比如<a style="font-weight: bolder;text-decoration: none;"
-              href="https://www.baidu.com/">百度</a>的话,
-            就是这种格式。
+            The deinking process generates large amount of wastewater (7). The waste treatment process deals with
+            harmful substances in wastewater such as chemical oxygen demand (COD), biochemical oxygen demand (BOD), and
+            suspended solids (SS). Enzymatic methods significantly reduce COD and BOD compared to chemical methods due
+            to lower chemical reagent usage (8). Additionally, the alkaline condition of chemical methods leads to fiber
+            breakage, reducing fiber recovery rate and increasing SS (9). These SS becomes deinking sludge during
+            wastewater treatment, which, when landfilled or incinerated, also generates considerable amount of CO2.
+            Overall, wastewater treated with enzymatic methods results in 54.2% lower carbon emissions compared to
+            chemical methods.
           </p>
-
-          <div id="accordion-Det" class="accordion">
-            <div class="myPage-paragraph-headline-h3 expstep_name">CspA mRNA Experiment</div>
-            <div class="panel">
-              <div class="panel-heading" role="tab" id="heading51">
-                <h4 class="panel-title">
-                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse51" aria-expanded="true"
-                    aria-controls="collapse51">
-                    Requirements
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse51" class="panel-collapse collapse" role="tabpanel">
-                <div class="panel-body">
-                  <p>● LB liquid medium<br>
-                    ● Tecan Infinite M200 microplate reader<br>
-                  </p>
-                </div>
-              </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/lca/lca-fig3.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 3 Post-deinking waste of chemical and enzymatic
+                methods.</b>
             </div>
-            <div class="panel">
-              <div class="panel-heading" role="tab" id="heading52">
-                <h4 class="panel-title">
-                  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse52" aria-expanded="false"
-                    aria-controls="collapse52">
-                    Protocol
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse52" class="panel-collapse collapse" role="tabpanel">
-                <div class="panel-body">
-                  <p>1. Revive the transformed bacteria by incubating them at 37 °C with shaking at 200
-                    <i>r.p.m.</i> for 12 hours.<br>
-                    2. Inoculate the revived bacteria at 2% concentration into 10 mL of LB medium and shake
-                    at 37 °C for around 2 hours until the OD<sub>600</sub> values reaches 0.6-0.8.<br>
-                    3. Incubate the above bacteria separately at 4 °C, 15 °C, and 37 °C, each with shaking at
-                    200 r.p.m. .<br>
-                    4. Use Tecan Infinite M200 microplate reader to measure the green fluorescence intensity
-                    and
-                    OD<sub>600</sub> values at 2 hours, 4 hours, and 6 hours.<br>
-                    <em><small>Note: Excitation wavelength: 488 <i>nm</i>, Emission wavelength: 530
-                        <i>nm</i>.</small></em><br>
-                    5. Calculate the ratio of green fluorescence intensity to OD<sub>600</sub> data.<br>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-
           </div>
 
         </div>
 
-
-        <!--Reference的写法-->
         <div class="myPage-paragraph" id="section5">
-          <h2 class="myPage-paragraph-headline-h2">5.标题5</h2>
+          <h2 class="myPage-paragraph-headline-h2">Conclusion</h2>
+          <p class="myPage-paragraph-content">
+            The enzymatic deinking method demonstrates a substantial reduction in carbon emissions (21.1%, compared to
+            chemical methods) across all stages of recycled paper production.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/lca/lca-fig4.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 4 Overall carbon emission and distribution.</b>
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            In addition to carbon emission, we also calculated the economic costs of chemical and enzymatic methods. We
+            assessed the costs of electricity and chemical reagents consumed throughout the entire production process.
+            The results indicate that the use of enzymatic methods can reduce the production cost of recycled paper by
+            31.9%.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/lca/lca-fig5.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 5 Economic cost of chemical and enzymatic
+                methods</b>
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            In conclusion, our enzymatic deinking method reduced both economic and emission cost, highlighting our
+            method's potential as a more sustainable alternative to traditional chemical methods.
+          </p>
+        </div>
+
+        <div class="myPage-paragraph" id="section6">
+          <h2 class="myPage-paragraph-headline-h2">The whole life of paper</h2>
+          <p class="myPage-paragraph-content">
+            When employing different deinking methods, the properties of recycled paper, such as brightness and fiber
+            strength, exhibit notable variations (10). Our experimental results indicate that although both methods
+            reduce the brightness of recycled paper compared to virgin pulp paper, the paper treated with the enzymatic
+            method is approximately 5% brighter than that treated with the chemical method. Considering multiple
+            recycling scenarios, the number of recycling cycles for paper can be described by the following equation:c
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src=" " alt="">
+            <div class="myPage-paragraph-fig-description"><b>这是一个数学公式</b>
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            Where β is the percentage of brightness reduction and e the base of natural logarithm.
+            For chemical deinking β is 0.27 and for enzymatic deinking β is 0.23. The calculation shows that recycling
+            cycles for paper using chemical deinking is 3 and for enzymatic method the number is 4, leading to extra
+            cost of raw material for chemical method.
+          </p>
+        </div>
+
+        <!--References-->
+        <div class="myPage-paragraph" id="section7">
+          <h2 class="myPage-paragraph-headline-h2">References</h2>
           <ol class="myPage-paragraph-reference">
-            <li>最后就是reference的部分</li>
-            <li>写几个ref就是写几个li标签</li>
-            <li>只要注意用的是li标签就好了</li>
+            <li>
+              H. Merrild, A. Damgaard, T. H. Christensen, Life cycle assessment of waste paper management: The
+              importance of technology data and system boundaries in assessing recycling and incineration. Resources,
+              Conservation and Recycling 52, 1391-1398 (2008).
+            </li>
+            <li>
+              C. M. Defalque, F. A. S. Marins, A. F. da Silva, E. Y. A. Rodríguez, A review of waste paper recycling
+              networks focusing on quantitative methods and sustainability. Journal of Material Cycles and Waste
+              Management 23, 55-76 (2021).
+            </li>
+            <li>
+              T. A. F. P. Association, "Printing & Writing Papers Life-Cycle Assessment Summary Report," (2009).
+            </li>
+            <li>
+              B. Cai et al., China high resolution emission database (CHRED) with point emission sources, gridded
+              emission data, and supplementary socioeconomic data. Resources, Conservation and Recycling 129, 232-239
+              (2018).
+            </li>
+            <li>
+              A. Provost-Savard, R. Legros, G. Majeau-Bettez, Parametrized regionalization of paper recycling life-cycle
+              assessment. Waste Management 156, 84-96 (2023).
+            </li>
+            <li>
+              K. B. Andersen, K. von Meyenburg, Are growth rates of Escherichia coli in batch cultures limited by
+              respiration? J Bacteriol 144, 114-123 (1980).
+            </li>
+            <li>
+              S. Badar, I. H. Farooqi. (2012).
+            </li>
+            <li>
+              S. Mondal et al., Biodeinking of waste papers using combinatorial fungal enzymes and subsequent production
+              of butanol from effluent. Bioresource Technology 353, 127078 (2022).
+            </li>
+            <li>
+              S. e. al, Industrial trial results on enzymatic deinking and fiber modification of old newsprint with
+              cellulase from aspergillus L22. China Pulp & Paper Industry, 20-22 (2001).
+            </li>
+            <li>
+              A. Kumar, D. Dutt, A comparative study of conventional chemical deinking and environment-friendly
+              bio-deinking of mixed office wastepaper. Scientific African 12, e00793 (2021).
+            </li>
           </ol>
         </div>
 
@@ -254,28 +334,6 @@ with new communities by discussing public values and the science behind syntheti
   </div>
 
   <div style="margin-bottom: 100px;"></div>
-  <script>
-    // jQuery to handle the collapse toggle and style changes
-    $(document).ready(function () {
-      $('#accordion-Det .panel-title a').click(function () {
-        var targetId = $(this).attr('href');
-        // Toggle the collapse
-        $(targetId).collapse('toggle');
-
-        // Event for collapse show
-        $(targetId).on('shown.bs.collapse', function () {
-          $(this).prev().find('a').removeClass('collapsed').addClass('expanded');
-        });
-
-        // Event for collapse hide
-        $(targetId).on('hidden.bs.collapse', function () {
-          $(this).prev().find('a').removeClass('expanded').addClass('collapsed');
-        });
-
-        return false; // Prevent the default behavior of the anchor
-      });
-    });
-  </script>
 
 </div>
 
