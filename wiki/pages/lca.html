@@ -23,9 +23,9 @@ with new communities by discussing public values and the science behind syntheti
     <!-- 文字导航 -->
     <div class="left-bar">
       <div class="left-bar-right">
-        <div class="left-bar-right-item">
+        <!-- <div class="left-bar-right-item">
           <a href="#section1" class="sidebar-link" data-section="section1">没有标题的第一部分</a>
-        </div>
+        </div> -->
         <div class="left-bar-right-item">
           <a href="#section2" class="sidebar-link" data-section="section2">Pretreatment</a>
         </div>
@@ -70,7 +70,7 @@ with new communities by discussing public values and the science behind syntheti
 
         <!---文字段落--->
         <div class="myPage-paragraph" id="section1">
-          <h2 class="myPage-paragraph-headline-h2">没有标题的第一部分</h2>
+          <!-- <h2 class="myPage-paragraph-headline-h2">没有标题的第一部分</h2> -->
           <!-- 记住这里的h2就是标题 -->
           <p class="myPage-paragraph-content">
             Compared to direct incineration or landfilling of the waste paper, recycling can significantly reduce carbon
@@ -79,7 +79,7 @@ with new communities by discussing public values and the science behind syntheti
             emissions.
           </p>
           <p class="myPage-paragraph-content">
-            Life Cycle Assessment (LCA) is a comprehensive method used to evaluate the environmental impacts of a
+            <b>Life Cycle Assessment</b> (LCA) is a comprehensive method used to evaluate the environmental impacts of a
             product or process from its inception toc disposal (from “cradle” to “grave”). In the context of waste paper
             recycling, LCA examines every stage, including raw material extraction, production, usage, and end-of-life
             treatment (2). By quantifying factors like energy consumption, greenhouse gas emissions, and waste
@@ -96,7 +96,7 @@ with new communities by discussing public values and the science behind syntheti
             </div>
           </div>
           <p class="myPage-paragraph-content">
-            Our waste paper production process is divided into three parts: Pretreatment, Deinking, and Waste Treatment.
+            Our waste paper production process is divided into three parts: <b>Pretreatment</b>, <b>Deinking</b>, and <b>Waste Treatment</b>.
             The calculation boundaries include all the inputs and outputs in these three parts, including chemical
             reagent/enzymes production, electricity consumption, and post-deinking waste treatment. The calculation
             equations are as follows:
@@ -107,10 +107,10 @@ with new communities by discussing public values and the science behind syntheti
             </div>
           </div>
           <p class="myPage-paragraph-content">
-            Where C_T is the total carbon emission (kg CO2eq), C_P is the carbon emission (kg CO2eq) in pretreatment
-            process, C_D is the deinking carbon emission (kg CO2eq) and C_W is the carbon emission (kg CO2eq) in waste
-            treatment. Carbon emission in each step (C_i) is calculated with input amount (I_ij) and its carbon emission
-            factor (α_ij). Specific carbon emission factors are as follows:
+            Where C<sub>T</sub> is the total carbon emission (kg CO<sub>2</sub>eq), C<sub>P</sub> is the carbon emission (kg CO<sub>2</sub>eq) in pretreatment
+            process, C<sub>D</sub> is the deinking carbon emission (kg CO<sub>2</sub>eq) and C<sub>W</sub> is the carbon emission (kg CO<sub>2</sub>eq) in waste
+            treatment. Carbon emission in each step (C<sub>i</sub>) is calculated with input amount (I<sub>ij</sub>) and its carbon emission
+            factor (α<sub>ij</sub>). Specific carbon emission factors are as follows:
           </p>
           <div class="myPage-paragraph-table-div" style="text-align: center">
             <table class="myPage-paragraph-table">
@@ -122,47 +122,47 @@ with new communities by discussing public values and the science behind syntheti
                 </tr>
                 <tr>
                   <td>Electricity</td>
-                  <td>0.53 kg CO2eq/kwh</td>
+                  <td>0.53 kg CO<sub>2</sub>eq/kwh</td>
                   <td>(4)</td>
                 </tr>
                 <tr>
                   <td>NaOH</td>
-                  <td>2.5 kg CO2eq/kg</td>
+                  <td>2.5 kg CO<sub>2</sub>eq/kg</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>H2O2</td>
-                  <td>2.3 kg CO2eq/kg</td>
+                  <td>2.3 kg CO<sub>2</sub>eq/kg</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>Na2SiO3</td>
-                  <td>1.5 kg CO2eq/kg</td>
+                  <td>1.5 kg CO<sub>2</sub>eq/kg</td>
                   <td>Ecoinvent3</td>
                 </tr>
                 <tr>
                   <td>Yeast extract</td>
-                  <td>1.5 kg CO2eq/kg</td>
+                  <td>1.5 kg CO<sub>2</sub>eq/kg</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>Tryptone</td>
-                  <td>2.1 kg CO2eq/kg</td>
+                  <td>2.1 kg CO<sub>2</sub>eq/kg</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td>Enzyme producing E. coli BL21</td>
-                  <td>34.7 mmol CO2/h per g [dw]</td>
+                  <td>34.7 mmol CO<sub>2</sub>/h per g [dw]</td>
                   <td>(6)</td>
                 </tr>
                 <tr>
                   <td>COD/BOD</td>
-                  <td>1.375 kg CO2eq/kg</td>
+                  <td>1.375 kg CO<sub>2</sub>eq/kg</td>
                   <td>China Products Carbon</td>
                 </tr>
                 <tr>
                   <td>Suspended solids</td>
-                  <td>422.4 kg CO2eq/t</td>
+                  <td>422.4 kg CO<sub>2</sub>eq/t</td>
                   <td>Footprint Factors Database</td>
                 </tr>
               </tbody>
@@ -181,8 +181,8 @@ with new communities by discussing public values and the science behind syntheti
           <h2 class="myPage-paragraph-headline-h2">Pretreatment</h2>
           <p class="myPage-paragraph-content">
             This part involves mixing waste paper with water to generate pulp, primarily consuming electrical energy.
-            Based on our machine's power and the average carbon emission factor of the China's power grid (4), the CO2
-            emissions were calculated and the result is 17.6 g CO2eq/100 mL pulp.
+            Based on our machine's power and the average carbon emission factor of the China's power grid (4), the CO<sub>2</sub>
+            emissions were calculated and the result is 17.6 g CO<sub>2</sub>eq/100 mL pulp.
           </p>
         </div>
 
@@ -194,8 +194,8 @@ with new communities by discussing public values and the science behind syntheti
             After pulp preparation, chemical reagents or enzymes are added to the pulp to separate ink from the pulp.
             Stirring was applied to facilitate better reaction. We calculated the carbon emission of chemical reagents'
             production (5), the respiration of enzyme-producing bacteria (6), and the corresponding electricity
-            consumption. Results indicate that enzymatic deinking (22.6 g CO2eq/100 mL pulp) reduces carbon emissions by
-            30.7% compared to chemical methods (32.6 g CO2eq/100 mL pulp). The reduction is mainly due to the decreased
+            consumption. Results indicate that enzymatic deinking (22.6 g CO<sub>2</sub>eq/100 mL pulp) reduces carbon emissions by
+            30.7% compared to chemical methods (32.6 g CO<sub>2</sub>eq/100 mL pulp). The reduction is mainly due to the decreased
             chemical reagent usage and the high efficiency of enzymes.
           </p>
           <div class="myPage-paragraph-fig">
@@ -215,7 +215,7 @@ with new communities by discussing public values and the science behind syntheti
             suspended solids (SS). Enzymatic methods significantly reduce COD and BOD compared to chemical methods due
             to lower chemical reagent usage (8). Additionally, the alkaline condition of chemical methods leads to fiber
             breakage, reducing fiber recovery rate and increasing SS (9). These SS becomes deinking sludge during
-            wastewater treatment, which, when landfilled or incinerated, also generates considerable amount of CO2.
+            wastewater treatment, which, when landfilled or incinerated, also generates considerable amount of CO<sub>2</sub>.
             Overall, wastewater treated with enzymatic methods results in 54.2% lower carbon emissions compared to
             chemical methods.
           </p>
@@ -243,7 +243,7 @@ with new communities by discussing public values and the science behind syntheti
             In addition to carbon emission, we also calculated the economic costs of chemical and enzymatic methods. We
             assessed the costs of electricity and chemical reagents consumed throughout the entire production process.
             The results indicate that the use of enzymatic methods can reduce the production cost of recycled paper by
-            31.9%.
+            <b>31.9%</b>.
           </p>
           <div class="myPage-paragraph-fig">
             <img src="https://static.igem.wiki/teams/5136/lca/lca-fig5.png" alt="">
@@ -326,11 +326,8 @@ with new communities by discussing public values and the science behind syntheti
             </li>
           </ol>
         </div>
-
-
       </div>
     </div>
-
   </div>
 
   <div style="margin-bottom: 100px;"></div>
