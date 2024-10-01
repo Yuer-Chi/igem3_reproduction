@@ -111,7 +111,7 @@
             waste paper treatment and had made significant progress in this field 
             (See more details in our <a style="font-weight: bolder;text-decoration: none;"
             href="{{ url_for('pages', page='description') }}">Description</a> page). It is relatively easy to produce 
-            target proteins by engineered bacteria in the laboratory and purify it, however 
+            target proteins by engineered bacteria and purify them in the laboratory, however 
             in industry, the additional purification process will greatly increase the cost 
             of paper recycling. During this season, some successful engineering iterations 
             for obtaining target proteins without the need of purification, particularly 
@@ -143,7 +143,7 @@
             </p>
           </div>
 
-          <div class="myPage-paragraph" id="section2-1">
+          <div class="myPage-paragraph" id="section2-2">
             <h2 class="myPage-paragraph-headline-h2">Build</h2>
             <!-- 记住这里的h2就是标题 -->
             <p class="myPage-paragraph-content">
@@ -189,7 +189,7 @@
             </p>
           </div>
 
-          <div class="myPage-paragraph" id="section2-2">
+          <div class="myPage-paragraph" id="section2-3">
             <h2 class="myPage-paragraph-headline-h2">Test</h2>
             <!-- 记住这里的h2就是标题 -->
             <p class="myPage-paragraph-content">
@@ -218,6 +218,71 @@
             </p>
           </div>
 
+          <div class="myPage-paragraph" id="section2-4">
+            <h2 class="myPage-paragraph-headline-h2">Learn</h2>
+            <!-- 记住这里的h2就是标题 -->
+            <p class="myPage-paragraph-content">
+              The original FLSA autolytic system (FhuD-GGG linker-T7 lysozyme 119V-SsrA) 
+              suffered from low release efficiency. Since the T7 lysozyme plays a key role 
+              in degrading the peptidoglycan framework to cause cell collapse, we then 
+              focused on the sequence of T7 lysozyme we used in the experiments. In addition 
+              to the amidase activity, the T7 lysozyme was identified to inhibit the T7 RNA 
+              polymerase, thus regulating the transcription level of T7 promoter (4). 
+              Therefore, a well-known plasmid, pLysS (<a style="font-weight: bolder;text-decoration: none;"
+              href="https://www.ncbi.nlm.nih.gov/nuccore/HB865373.1">GenBank: HB865373.1</a>), which contained 
+              the coding sequence of T7 lysozyme, was constructed to improve the inducible 
+              T7 expression system in <i>E. coli</i> BL21(DE3), especially for some toxic proteins 
+              due to the lower leakage resulting from the inhibition of T7 RNA polymerase 
+              (5). We then performed sequence alignment of the T7 lysozyme encoding on the 
+              pLysS to the sequence we used (<a style="font-weight: bolder;text-decoration: none;"
+              href="https://www.ncbi.nlm.nih.gov/protein/NP_041973.1">NP_041973.1</a>) and found difference of a single 
+              residue at the 119<sup>th</sup> site (Figure 3). Even though no evidence showed the 
+              residue at this site will affect either the activity of amidase or inhibitor 
+              of T7 RNA polymerase (6), we wonder whether the change at this site (V to G) 
+              contribute to the improved release efficiency of FLSA autolytic system or not.
+            </p>
+
+            <div class="myPage-paragraph-fig">
+              <img src="https://static.igem.wiki/teams/5136/engineer-success/3.png" alt="">
+              <div class="myPage-paragraph-fig-description"><b>Figure 3 Sequence alignment between NP_041973.1 and the T7 lysozyme sequence encoding on pLysS, where the different residue is highlight in green.</b>
+              </div>
+            </div>
+          </div>
+
+          <div class="myPage-paragraph" id="section3">
+            <h2 class="myPage-paragraph-headline-h2">Cycle 2: Changing a single residue of T7 lysozyme for FLSA system (BBa_K5136032)</h2>
+            <!-- 记住这里的h2就是标题 -->
+            <div class="myPage-paragraph" id="section3-1">
+              <h2 class="myPage-paragraph-headline-h2">Design and Build</h2>
+              <!-- 记住这里的h2就是标题 -->
+              <p class="myPage-paragraph-content">
+                We isolated the pLysS plasmid from the commercial strain BL21(DE3) pLysS. 
+                Then the coding sequence of T7 lysozyme (119G) was amplified and cloned to 
+                replace the original T7 lysozyme sequence (119V) on 
+                <a style="font-weight: bolder;text-decoration: none;" 
+                href="https://parts.igem.org/Part:BBa_K5136221">BBa_K5136221 </a>pSB1C3 <i>via</i> 
+                Gibson assembly so as to generate  <a style="font-weight: bolder;text-decoration: none;"
+                href="https://parts.igem.org/Part:BBa_K5136222">BBa_K5136222</a> pSB1C3 (Figure 4A). 
+                The assembly product was transformed into <i>E. coli</i> DH10β. 
+                Then the positive transformants were selected by chloramphenicol and 
+                confirmed by colony PCR (Figure 4B) and sequencing.
+              </p>
+  
+              <div class="myPage-paragraph-fig">
+                <img src="https://static.igem.wiki/teams/5136/engineer-success/4.png" alt="">
+                <div class="myPage-paragraph-fig-description"><b>Figure 4 FhuD-GGG Iinker-T7 lysozyme 119G-SsrA mediated autolytic system. (A) </b>
+                  The gene circuit of the FhuD-GGG Iinker-T7 lysozyme 119G-SsrA mediated autolytic 
+                  system (BBa_K5136222). <b>(B)</b> Agarose gel electrophoresis of the colony PCR 
+                  products of BBa_K5136222_pSB1C3 in <i>E. coli</i> DH10β. Target bands (2332 bp) can be 
+                  observed at the position between 2000 bp and 3000 bp.
+                </div>
+              </div>
+
+              <p class="myPage-paragraph-content">
+                Afterwards, the reporter plasmid and the correct autolytic plasmid (<a style="font-weight: bolder;text-decoration: none;" href="https://parts.igem.org/Part:BBa_K5136222">BBa_K5136222 </a>_pSB1C3) were co-transformed into <i>E. coli</i> BL21(DE3) and the correct dual-plasmid transformants were selected by chloramphenicol and kanamycin.
+              </p>
+            </div>
+          </div>
 
         </div>
       </div>
