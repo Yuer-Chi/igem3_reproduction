@@ -40,7 +40,7 @@ with new communities by discussing public values and the science behind syntheti
         <div class="left-bar-right-item">
           <a href="#section3" class="sidebar-link" data-section="section3">Life Cycle Assessment</a>
         </div>
-        
+
       </div>
     </div>
     <!-- 底部插图 -->
@@ -86,15 +86,18 @@ with new communities by discussing public values and the science behind syntheti
           </p>
           <h3 class="myPage-paragraph-headline-h3">2. CYP199A4 T253A can significantly remove ink</h3>
           <p class="myPage-paragraph-content">
-            0.6 g NaOH, 0.6 g Na2SiO3, and 1.0 mL H2O2 were added to 30 mL pulp with 1% concentration, and the final
+            0.6 g NaOH, 0.6 g Na<sub>2</sub>SiO<sub>3</sub>, and 1.0 mL H<sub>2</sub>O<sub>2</sub> were added to 30 mL
+            pulp with 1% concentration, and the final
             concentration of monooxygenase CYP199A4 T253A was 1 μM. After the reaction at 30°C for 60 min, limonene was
-            added to the pulp for ink extraction, finally draining by using a Buchner funnel. The recycled paper is
+            added to the pulp for ink extraction, finally draining by using a Büchner funnel. The recycled paper is
             imaged after draining, and the gray scale value is read by a written program. The higher the gray scale
             value, the better the deinking effect is proved, which means the whiter the paper is observed, the less ink
-            remains (see the SOP for details). Based on the screen and analysis, we found that the 252 residue was the
-            targeted position that contributed to the deinking. So, saturation mutation on the 252 position was carried
+            remains (see the <a style="font-weight: bolder;text-decoration: none;"
+              href="{{ url_for('pages', page='sop') }}">SOP</a> for details). Based on the screen and analysis, we found
+            that the 253 residue was the
+            targeted position that contributed to the deinking. So, saturation mutation on the 253 position was carried
             out to harvest the best mutant. As shown in Figure 1, the gray scale value of some mutants increased by 50%
-            at least, in which 252A shows the best performance in deinking. As shown in the picture from the microscope
+            at least, in which 253A shows the best performance in deinking. As shown in the picture from the microscope
             (Figure 2), the paper treated with CYP199A4 T253A (Figure 2A) has minimal ink residue among these enzymes.
             The paper is relatively white, and the observed lifting effect has reached 100% of the Negative (Figure 2
             Negative). The deinking enhancement effect is defined as
@@ -108,13 +111,13 @@ with new communities by discussing public values and the science behind syntheti
             prominent, with an average increase of 105%.
           </p>
           <div class="myPage-paragraph-fig">
-            <img src="https://static.igem.wiki/teams/5136/poc/fig1.png" alt="">
+            <img src="https://static.igem.wiki/teams/5136/poc/fig1.png" alt="" style="max-width: 600px;">
             <div class="myPage-paragraph-fig-description"><b>Figure 1 Comparison of deinking promotion effects of
                 CYP199A4 series mutants.</b>
             </div>
           </div>
           <div class="myPage-paragraph-fig">
-            <img src="https://static.igem.wiki/teams/5136/poc/fig2.png" alt="">
+            <img src="https://static.igem.wiki/teams/5136/poc/fig2.png" alt="" style="max-width: 700px;">
             <div class="myPage-paragraph-fig-description"><b>Figure 2 Ultra-high resolution microscope imaging of
                 CYP199A4 series mutants.</b>
             </div>
@@ -145,7 +148,8 @@ with new communities by discussing public values and the science behind syntheti
           <h3 class="myPage-paragraph-headline-h3">1. Introduction</h3>
           <p class="myPage-paragraph-content">
             In practical applications, the high-performance deinking enzymes we have identified must be directly applied
-            to large-scale pulp deinking reactors. However, both protein purification and the inducers-dependent E. coli
+            to large-scale pulp deinking reactors. However, both protein purification and the inducers-dependent <i>E.
+              coli</i>
             autolytic system FLSA (FhuD-T7 lysozyme-SsrA mediated autolytic system, see <a
               style="font-weight: bolder;text-decoration: none;" href="{{ url_for('pages', page='design') }}">Design</a>
             for more details) can be
@@ -163,14 +167,15 @@ with new communities by discussing public values and the science behind syntheti
           <h3 class="myPage-paragraph-headline-h3">2. The LMT has the best secretory efficiency</h3>
           <p class="myPage-paragraph-content">
             Eight classic signal peptides, such as LMT, PelB, OmpA, OsmY, YebF, AIgen, TorA, and HlyA, were used to
-            construct the signal peptide-GFP fusion protein. The contribution values of secretion, leakage, and cleavage
+            construct the signal peptide-sfGFP fusion protein. The contribution values of secretion, leakage, and
+            cleavage
             processes to the fluorescence of supernatants were used to characterize the secretion efficiency of signal
-            peptides, exploring their secretion dynamics. As shown in Figure 3, at a low cell lysis rate, GFP secreted
+            peptides, exploring their secretion dynamics. As shown in Figure 3, at a low cell lysis rate, sfGFP secreted
             by the LMT makes a more significant contribution to the supernatant fluorescence, proving that <b>the LMT
               exhibits the best secretion efficiency under low metabolic pressure</b>.
           </p>
           <div class="myPage-paragraph-fig">
-            <img src="https://static.igem.wiki/teams/5136/poc/fig3.png" alt="">
+            <img src="https://static.igem.wiki/teams/5136/poc/fig3.png" alt="" style="max-width: 600px;">
             <div class="myPage-paragraph-fig-description"><b>Figure 3 Fluorescent source proportion of supernatant.</b>
             </div>
           </div>
@@ -192,14 +197,14 @@ with new communities by discussing public values and the science behind syntheti
           </p>
           <div class="myPage-paragraph-fig">
             <img src="https://static.igem.wiki/teams/5136/poc/fig4.png" alt="">
-            <div class="myPage-paragraph-fig-description"><b>Figure 4 Characterization of His tag-LMT-CYP199A4
-                T253E.</b>
-            </div>
-            <div class="myPage-paragraph-fig-description"><b>(A) SDS-PAGE analysis (left) and gray scale value analysis
-                (right) of the supernatant at different times.</b>
-            </div>
-            <div class="myPage-paragraph-fig-description"><b>(B) Deinking characterization of His tag-LMT-CYP199A4 T253E
-                (BBa_K5136047) from the supernatant (left) and microscope image (right).</b>
+            <div class="myPage-paragraph-fig-description">
+              <b>
+                Figure 4 Characterization of His tag-LMT-CYP199A4 T253E.<br>
+                (A) SDS-PAGE analysis (left) and gray scale value analysis
+                (right) of the supernatant at different times.<br>
+                (B) Deinking characterization of His tag-LMT-CYP199A4 T253E
+                (BBa_K5136047) from the supernatant (left) and microscope image (right).
+              </b>
             </div>
           </div>
           <h3 class="myPage-paragraph-headline-h3">4. Conclusion</h3>
@@ -216,7 +221,7 @@ with new communities by discussing public values and the science behind syntheti
         <div class="myPage-paragraph" id="section3">
           <h2 class="myPage-paragraph-headline-h2">Life Cycle Assessment</h2>
 
-          <h3 class="myPage-paragraph-headline-h3">1. Introduce</h3>
+          <h3 class="myPage-paragraph-headline-h3">1. Introduction</h3>
           <p class="myPage-paragraph-content">
             <b>Life Cycle Assessment (LCA)</b> is a comprehensive method used to evaluate the environmental influence of
             a
@@ -236,14 +241,14 @@ with new communities by discussing public values and the science behind syntheti
               enzymatic deinking method by 30.7% compared with the chemical deinking method</b>. The waste treatment
             process
             considers the chemical oxygen demand (COD), biochemical oxygen demand (BOD), suspended solids (SS), and
-            other harmful substances in the wastewater. Compared with the chemical method, the carbon emission of the
-            wastewater treated by the enzymatic method is reduced by 50%. The overall emission reduction optimization
-            degree of the final scheme is 21.1% (Figure 5), which highlights that the enzymatic method has more
+            other harmful substances in the wastewater. <b>Compared with the chemical method, the carbon emission of the
+              wastewater treated by the enzymatic method is reduced by 50%. The overall emission reduction optimization
+              degree of the final scheme is 21.1%</b> (Figure 5), which highlights that the enzymatic method has more
             advantages in reducing carbon emissions than the classical chemical method, and it can be a more sustainable
             alternative to wastepaper deinking in the future.
           </p>
           <div class="myPage-paragraph-fig">
-            <img src="https://static.igem.wiki/teams/5136/poc/fig5.png" alt="">
+            <img src="https://static.igem.wiki/teams/5136/poc/fig5.png" alt="" style="max-width: 700px;">
             <div class="myPage-paragraph-fig-description"><b>Figure 5 Overall carbon emissions and distribution.</b>
             </div>
           </div>
@@ -274,7 +279,7 @@ with new communities by discussing public values and the science behind syntheti
 
         </div>
 
-        
+
 
 
       </div>
