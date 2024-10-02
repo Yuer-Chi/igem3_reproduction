@@ -185,7 +185,7 @@
           
           <p class="myPage-paragraph-content">
             
-            The cell is growing continually, 
+            The cell is growing continuously, 
             several sources contribute to the fluorescence measured from the supernatant (Figure 2), 
             including translocation system-driven protein secretion, 
             periplasmic space leakiness from cell division, 
@@ -193,7 +193,7 @@
             which call for a detailed model for the quantity of viable, dead, and lysed cells 
             thus the model can distinguish the real signal peptide-driven secretion part for extracellular secretion rate constant estimation 
             and investigate the interactive effect between signal peptide and growth cell. 
-            The macro-level model in the fermentation aspect is employed for the description of three different cell types 
+            The macro-level model in the fermentation aspect is employed for the description of three different cell types, 
             while the micro-level models from the molecular biology level model three sources that contribute to the fluorescence in the supernatant. 
             It is worth mentioning that the key point to connect the macro-level model and the micro-level model is 
             the consideration of the physical quantity of volume changes due to the transition between different spaces during secretion, 
@@ -217,7 +217,7 @@
 
         <p class="myPage-paragraph-content">
             
-          A equation system based on modified Logistic 
+          An equation system based on modified Logistic 
           and Monod models was employed to model for the quantity of viable, dead, and lysed cells as follows.          
         
         </p>
@@ -311,7 +311,7 @@
 
           <p class="myPage-paragraph-content">
 
-          Six equations aboved constructed the macro-level model from 
+          Six equations above constructed the macro-level model from 
           the fermentation aspect to calculate three different kinds of cells' concentration 
           ($X_V$, $X_D$, and $X_{lys}$) 
           according to the data measured from 
@@ -555,7 +555,7 @@
 
 
 
-            <h4 class="myPage-paragraph-headline-h4">3.3 Comparision Between Micro-Level Model for Sec Pathway and Tat Pathway</h4>
+            <h4 class="myPage-paragraph-headline-h4">3.3 Comparison Between Micro-Level Model for Sec Pathway and Tat Pathway</h4>
 
 
             <p class="myPage-paragraph-content"></p>
@@ -578,9 +578,9 @@
 
             $$k_{dXd}X_{D}P_{mature~}$$
             
-            with the $d_i$ representing the dilution effect due to the volume change between different space. 
+            with the $d_i$ representing the dilution effect due to the volume change between different spaces. 
             
-            Meanwhile, the different protein maturation areas of different pathway, cytoplasm space for Sec pathway and periplasm space for Tat pathway, will produce different compositions of $P_{mature\ }$ in different parts, 
+            Meanwhile, the different protein maturation areas of different pathways, cytoplasm space for Sec pathway and periplasm space for Tat pathway, will produce different compositions of $P_{mature\ }$ in different parts, 
             
             as well as differnet meaning of $P_p$ and $P_l$, 
             
@@ -624,7 +624,7 @@
 
           <p class="myPage-paragraph-content">
 
-            To solve the model, some experiment data should be collected and used for parameter fitting. For macro-level model, both Sec pathway 
+            To solve the model, some experiment data should be collected and used for parameters fitting. For macro-level model, both Sec pathway 
             and Tat pathway signal peptides have the same minimization goal: 
             
 
@@ -960,7 +960,7 @@
 <p class="myPage-paragraph-content"></p>
 
 
-<p class="myPage-paragraph-content"> A alternative minimization goal for Tat pathway also can be used, but it may introduce some bias to the estimated parameters: </p>
+<p class="myPage-paragraph-content"> An alternative minimization goal for Tat pathway can also be used, but it may introduce some bias to the estimated parameters: </p>
 
 
 <p class="myPage-paragraph-content">
@@ -1282,7 +1282,7 @@ With a <b>considerable $\alpha$ value</b> (Figure 4H) and <b>proper metabolic bu
 
   <p class="myPage-paragraph-content">
 
-    Coupling with signal peptides, the multi-scale model predicites the phenomenoa about secretion kinetic in those four regions qualitatively: 
+    Coupling with signal peptides, the multi-scale model predicts the phenomenon about secretion kinetics in those four regions qualitatively: 
     <br>
     <br>
     <b>(1) Class 1</b>: High metabolic burden-induced cell death result in high secretion effiency and low total protein synthesis; 
@@ -1291,7 +1291,7 @@ With a <b>considerable $\alpha$ value</b> (Figure 4H) and <b>proper metabolic bu
     <br>
     <b>(3) Class 3</b>: Medium metabolic burden result in high total protein synthesis, thus the secretion efficiency of the signal peptides is the main barrier here; 
     <br>
-    <b>(4) Class 4</b>: Low metabolic burden results in low total protein synthesis, thus the signal peptides can translocate all the proteins and high secretion efficiency is achieved.
+    <b>(4) Class 4</b>: Low expression strength results in low total protein synthesis, thus the signal peptides can translocate all the proteins and high secretion efficiency is achieved.
     <br>
     <br>
     Thus, some exapmle in different classes, which is pointed out in Figure 7, was selected and tested (Figure 8).
@@ -1324,13 +1324,6 @@ With a <b>considerable $\alpha$ value</b> (Figure 4H) and <b>proper metabolic bu
 
 
 
-  
-
-
-
-
-
-
 
   <p class="myPage-paragraph-content">
 
@@ -1351,7 +1344,8 @@ With a <b>considerable $\alpha$ value</b> (Figure 4H) and <b>proper metabolic bu
   If the system continues, very few bacteria will survive, thus more future secretion in the following time can't be guaranteed.
   Those observations are highly consistent with the prediction qualitatively in the four kinds of Anderson promoters in Figure 7 using our multi-scale model. 
   By trading off, 
-  BBa_K5136202 with promoter <b>J23104 has the most appropriate secretion efficiency, which has enough proteins storage in the cells that can be secrete into actual environment quickly</b>.
+  BBa_K5136202 with promoter <b>J23104 has the most appropriate secretion efficiency, which has enough proteins storage in the intracellular 
+  that can be secrete into extracellular environment quickly with the help of secretion, leakiness, and lysis</b>.
 
 </p>
 
@@ -1372,11 +1366,15 @@ With a <b>considerable $\alpha$ value</b> (Figure 4H) and <b>proper metabolic bu
 
           <p class="myPage-paragraph-content">
 
-            
+          For our project, the MUSES mathematically describe the relationship between the amount of secreted recombinant protein and time in the natural state of our engineered bacteria 
+          and explore the secretion efficiency of different signal peptides that we used, 
+          thus choosing the best combination of signal peptide and Anderson promoter to optimize the economic cost of our deinking process.
+
+
           </p>
           
           <p class="myPage-paragraph-content">
-            Unlike pulse-chase analysis, 
+            For the synthetic biology community,
             the MUSES mehtod estimates parameters based on data collected during continuous cell growth, 
             which is more practical for real-world applications since industrial processes do not halt cell growth. 
             Additionally, the MUSES method simplifies analysis by eliminating the need for high-frequency sampling (5-10 minutes/sample versus 1-2 hours/sample) and complex operations. 
@@ -1403,13 +1401,10 @@ With a <b>considerable $\alpha$ value</b> (Figure 4H) and <b>proper metabolic bu
 
             <br>
 
-            <li>X. Zhang, Y. Xue, Research Progress of Deinking Technology for Waste Paper Pulping. Shandong Paper
-              Society
-              (2012). (in Chinese)
+            <li>M.N.M. Fuad, Applying Logistic and Monod models in a single equations system framework for cell culture growth modeling and estimation, (2020). https://doi.org/10.22541/au.160647305.55974012/v1.
             </li>
             <li>
-              A. Singh, L. M. Varghese, R. D. Yadav, R. Mahajan, A Pollution Reducing Enzymatic Deinking Approach for
-              Recycling of Mixed Office Waste Paper. Environ. Sci. Pollut. Res. Int. 27, 45814-45823 (2020).
+              R. Freudl, Signal peptides for recombinant protein secretion in bacterial expression systems, Microb. Cell Factories 17 (2018) 52. https://doi.org/10.1186/s12934-018-0901-3.
             </li>
 
           </ol>
