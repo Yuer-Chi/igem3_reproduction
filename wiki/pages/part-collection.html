@@ -40,6 +40,9 @@ with new communities by discussing public values and the science behind syntheti
         <div class="left-bar-right-item">
           <a href="#section3" class="sidebar-link" data-section="section3">Deinking enzymes</a>
         </div>
+        <div class="left-bar-right-item">
+          <a href="#section4" class="sidebar-link" data-section="section4">Conclusion</a>
+        </div>
       </div>
     </div>
     <!-- 底部插图 -->
@@ -94,18 +97,18 @@ with new communities by discussing public values and the science behind syntheti
             select signaling peptides from different secretion pathways to simplify 
             their production or purification of proteins according to their needs. 
             (see <a style="font-weight: bolder;text-decoration: none;"
-            href="{{ url_for('pages', page='model') }}">Modeling</a> for more details) 
+            href="{{ url_for('pages', page='model') }}">Model</a> for more details) 
           </p>
           <p class="myPage-paragraph-content">
             To test the functions of these signal peptides, we constructed fusion proteins of these 8 signal peptides with sfGFP and performed a series of characterization experiments. In addition, we performed modeling analysis for the secretion kinetics of the signal peptides to investigate the exocytosis efficiency of the different signal peptides as well as the metabolic pressure on cell growth.
           </p>
           <p class="myPage-paragraph-content">
             According to the experimental results and modeling results, the signal peptides AIgen and OmpA had less metabolic pressure on the strain, but the secretion effect was average, and the products mainly originated from the leakage and dead cell lysis; the signal peptides PelB and OsmY had a heavier metabolic burden on the strain and the secretion effect was poor; and the signal peptide YebF had a heavier metabolic burden on the strain as well but the exocytosis effect was OK. Happily, the exocytosis peptide LMT has quite good exocytosis efficiency and less effect on the metabolic load of the strain, which meets our needs well. (Please see our <a style="font-weight: bolder;text-decoration: none;"
-            href="{{ url_for('pages', page='model') }}">modeling</a> page) 
+            href="{{ url_for('pages', page='model') }}">Model</a> page) 
           </p>
           <p class="myPage-paragraph-content">
             In addition, in order to further obtain better exocytosis, we also used 6 different Anderson promoters with LMT-sfGFP fusion proteins constituting the composite part, and quantitatively characterized their exocytosis efficiency to determine the most efficient promoter combination. (Please see our <a style="font-weight: bolder;text-decoration: none;"
-            href="{{ url_for('pages', page='results') }}">RESULTS</a> page).
+            href="{{ url_for('pages', page='results') }}">Results</a> page).
           </p>
           <p class="myPage-paragraph-content">
             We have detailed our design and recorded all experimental data into the registry. We believe that our collection of parts will be of value in guiding the design and characterization of future IGEM teams, when they need to find a suitable exocytosis peptide that will help them produce proteins.
@@ -170,8 +173,13 @@ with new communities by discussing public values and the science behind syntheti
           <h2 class="myPage-paragraph-headline-h2">Deinking Enzymes</h2>
           <p class="myPage-paragraph-content">
             We designed an efficient and stable biological deinking enzyme system, which includes cellulase, monooxygenase, and laccase. (See our <a style="font-weight: bolder;text-decoration: none;"
-            href="{{ url_for('pages', page='design') }}">design</a> page for more details.) After preliminary experiments, we found that monooxygenase plays a key role in this system. (See our results page for details.). Therefore, we focused on comparing the deinking efficiencies of several monooxygenase enzymes and designing relevant mutations to further improve their performance.
+            href="{{ url_for('pages', page='design') }}">Design</a> page for more details.) After preliminary experiments, we found that monooxygenase plays a key role in this system. (See our results page for details.). Therefore, we focused on comparing the deinking efficiencies of several monooxygenase enzymes and designing relevant mutations to further improve their performance.
           </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/homeimg/pc-f1.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 1 Collection of deinking enzymes (CODE), including various monooxygenases that functions in the reaction step in pulp deinking SOP in lab.</b>
+            </div>
+          </div>
           <p class="myPage-paragraph-content">
             Monooxygenase is an oxidoreductase that catalyzes the insertion of a single oxygen 
             atom into an organic substrate, which causes alkaline breakage of conjugated 
@@ -180,17 +188,17 @@ with new communities by discussing public values and the science behind syntheti
             CYP199A4, SfmD, and OleT<sub>JE</sub>, and the deinking ability of them and their mutants 
             were characterized by our pulp deinking experiments. 
             (See our <a style="font-weight: bolder;text-decoration: none;"
-            href="{{ url_for('pages', page='results') }}">RESULT</a> page for more details.) 
+            href="{{ url_for('pages', page='results') }}">Results</a> page for more details.) 
             <b>The experimental results showed that CYP199A4 and its mutants had the best deinking efficiency, and its mutant increased significantly compared with the wild type.</b>
           </p>
           <p class="myPage-paragraph-content">
             Therefore, we saturated mutation at locus 253 of CYP199A4 and characterized its deinking effect and enzyme activity by deinking assay and enzyme activity test, among which CYP199A4 253A mutant showed the best effect 
             (See our <a style="font-weight: bolder;text-decoration: none;"
-            href="{{ url_for('pages', page='results') }}">RESULT</a> page for more details.)
+            href="{{ url_for('pages', page='results') }}">Results</a> page for more details.)
           </p>
           <div class="myPage-paragraph-fig">
             <img src="https://static.igem.wiki/teams/5136/result/17.png" alt="">
-            <div class="myPage-paragraph-fig-description"><b>Figure 1 Comparison of the Relative Gray Scale of CYP199A4 and its mutants.</b>
+            <div class="myPage-paragraph-fig-description"><b>Figure 2 Comparison of the Relative Gray Scale of CYP199A4 and its mutants.</b>
             </div>
           </div>
           <p class="myPage-paragraph-content">
@@ -349,13 +357,13 @@ with new communities by discussing public values and the science behind syntheti
           <!-- 记住这里的h2就是标题 -->
           <p class="myPage-paragraph-content">
             Through our parts production, we have searched for an efficient and less costly way to produce deinking enzymes to deink waste paper to regenerate new, high-quality paper. (See our <a style="font-weight: bolder;text-decoration: none;"
-            href="{{ url_for('pages', page='implementation') }}">implementation</a> page)
+            href="{{ url_for('pages', page='implementation') }}">Implementation</a> page)
           </p>
           <p class="myPage-paragraph-content">
             Through our parts collection, we hope to enable all igem teams and researchers worldwide to obtain signal peptides that meet their needs quickly, link them to their target proteins, and produce the intended proteins efficiently and easily. We also hope that future teams attempting to study deinking can easily obtain the required deinking enzymes for further modification or mechanistic studies. We are eager to provide our parts collection to future iGEM teams.
           </p>
         </div>
-        
+
       </div>
     </div>
   </div>
