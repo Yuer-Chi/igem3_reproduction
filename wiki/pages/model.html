@@ -194,7 +194,11 @@
             thus the model can distinguish the real signal peptide-driven secretion part for extracellular secretion rate constant estimation 
             and investigate the interactive effect between signal peptide and growth cell. 
             The macro-level model in the fermentation aspect is employed for the description of three different cell types 
-            while the micro-level models from the molecular biology level model three sources that contribute to the fluorescence in the supernatant.            
+            while the micro-level models from the molecular biology level model three sources that contribute to the fluorescence in the supernatant. 
+            It is worth mentioning that the key point to connect the macro-level model and the micro-level model is 
+            the consideration of the physical quantity of volume changes due to the transition between different spaces during secretion, 
+            as well as the transition between concentration and density, 
+            which is quite different from the model of pulse-chase analysis (XMU-China, 2021).
             </p>
 
 
@@ -524,10 +528,10 @@
             <p class="myPage-paragraph-content">
 
 
-              with RNA the intensity of target protein's mRNA (g/L/OD600), 
-              $P_c$ the intensity of unmature protein in cytoplasm space (a. u./OD600), 
-              $P_l$ the intensity of mature protein in cytoplasm space (a. u./OD600), 
-              $P_p$ the intensity of mature protein in periplasm space (a. u./OD600), 
+              with RNA the intensity of target protein's mRNA (g/L/<sub>600</sub>), 
+              $P_c$ the intensity of unmature protein in cytoplasm space (a. u./<sub>600</sub>), 
+              $P_l$ the intensity of mature protein in cytoplasm space (a. u./<sub>600</sub>), 
+              $P_p$ the intensity of mature protein in periplasm space (a. u./<sub>600</sub>), 
               $P_M$ the concentration of mature protein in medium space (a. u. ), 
 
               $k_1$ the specific translation rate (g/L/OD<sub>600</sub>/h), 
@@ -542,13 +546,58 @@
               $d_i\ (i=1,2,3,4\cdots)$ the dilution rate due to the volume change between different space (1/h).
   
 
-
-
-
-
-
-
             </p>
+
+
+
+
+            <p class="myPage-paragraph-content"></p>
+
+
+
+            <h4 class="myPage-paragraph-headline-h4">3.3 Comparision Between Micro-Level Model for Sec Pathway and Tat Pathway</h4>
+
+
+            <p class="myPage-paragraph-content"></p>
+
+
+            <p class="myPage-paragraph-content">
+
+
+            The micro-level models describe the three main resources which form the supernatant fluorescence (Figure 2): <br><br>
+
+            <b>(1) Secretion</b>: 
+            
+            $$\gamma X_{V}P_{mature~}$$
+            
+            <b>(2) Leakiness</b>: 
+
+            $$\frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)X_{V}P_{mature~}$$
+
+            <b>(3) Release</b>: 
+
+            $$k_{dXd}X_{D}P_{mature~}$$
+            
+            with the $d_i$ representing the dilution effect due to the volume change between different space. 
+            
+            Meanwhile, the different protein maturation areas of different pathway, cytoplasm space for Sec pathway and periplasm space for Tat pathway, will produce different compositions of $P_{mature\ }$ in different parts, 
+            
+            as well as differnet meaning of $P_p$ and $P_l$, 
+            
+            resulting in the different minimization goals for different signal peptides in the parameters fitting task. 
+
+
+
+
+          </p>
+
+
+
+
+
+
+
+
 
 
 
@@ -564,12 +613,501 @@
 
         <!---Future Expectations --->
         <div class="myPage-paragraph" id="section3">
-          <h2 class="myPage-paragraph-headline-h2">Future Expectations</h2>
+          <h2 class="myPage-paragraph-headline-h2">Implementation</h2>
+
+
+
+
+          <h3 class="myPage-paragraph-headline-h3">Experiments Design and Parameters Fitting</h3>
+
+
+          <p class="myPage-paragraph-content">
+
+            To solve the model, some experiment data should be collected and used for parameter fitting. For macro-level model, both Sec pathway 
+            and Tat pathway signal peptides have the same minimization goal: 
+            
+
+          </p>
+        
+
+
+          <p class="myPage-paragraph-content"></p>
+
+
+
+          
+
+          <p class="myPage-paragraph-content">
+
+
+            <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <mfrac>
+                  <mn>1</mn>
+                  <mi>N</mi>
+                </mfrac>
+                <msup>
+                  <mrow>
+                    <mo stretchy="true" form="prefix">(</mo>
+                    <mrow>
+                      <msub>
+                        <msub>
+                          <mi>X</mi>
+                          <mi>T</mi>
+                        </msub>
+                        <mrow>
+                          <mi>e</mi>
+                          <mi>x</mi>
+                          <mi>p</mi>
+                        </mrow>
+                      </msub>
+                      <mo>-</mo>
+                      <msub>
+                        <msub>
+                          <mi>X</mi>
+                          <mi>T</mi>
+                        </msub>
+                        <mrow>
+                          <mi>m</mi>
+                          <mi>o</mi>
+                          <mi>d</mi>
+                          <mi>e</mi>
+                          <mi>l</mi>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                    <mo stretchy="true" form="postfix">)</mo>
+                  </mrow>
+                  <mn>2</mn>
+                </msup>
+                <mo>+</mo>
+                <mfrac>
+                  <mn>1</mn>
+                  <mi>N</mi>
+                </mfrac>
+                <msup>
+                  <mrow>
+                    <mo stretchy="true" form="prefix">(</mo>
+                    <mrow>
+                      <msub>
+                        <mi>P</mi>
+                        <mrow>
+                          <mi>e</mi>
+                          <mi>x</mi>
+                          <mi>p</mi>
+                        </mrow>
+                      </msub>
+                      <mo>-</mo>
+                      <msub>
+                        <mi>P</mi>
+                        <mrow>
+                          <mi>m</mi>
+                          <mi>o</mi>
+                          <mi>d</mi>
+                          <mi>e</mi>
+                          <mi>l</mi>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                    <mo stretchy="true" form="postfix">)</mo>
+                  </mrow>
+                  <mn>2</mn>
+                </msup>
+              </mrow>
+            </math>
+
+
+          </p>
+
+            <p class="myPage-paragraph-content"></p>
+
+            <p class="myPage-paragraph-content">
+
+              For micro-level model, the minimization goal of Sec pathway can be written as: 
+
+
+
+            </p>
+
+
+            <p class="myPage-paragraph-content"></p>
+            
+            <p class="myPage-paragraph-content">
+
+          <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mfrac>
+                <mn>1</mn>
+                <mi>N</mi>
+              </mfrac>
+              <msup>
+                <mrow>
+                  <mo stretchy="true" form="prefix">(</mo>
+                  <mrow>
+                    <msub>
+                      <msub>
+                        <mi>P</mi>
+                        <mi>p</mi>
+                      </msub>
+                      <mrow>
+                        <mi>e</mi>
+                        <mi>x</mi>
+                        <mi>p</mi>
+                      </mrow>
+                    </msub>
+                    <mo>-</mo>
+                    <msub>
+                      <msub>
+                        <mi>P</mi>
+                        <mi>p</mi>
+                      </msub>
+                      <mrow>
+                        <mi>m</mi>
+                        <mi>o</mi>
+                        <mi>d</mi>
+                        <mi>e</mi>
+                        <mi>l</mi>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                  <mo stretchy="true" form="postfix">)</mo>
+                </mrow>
+                <mn>2</mn>
+              </msup>
+              <mo>+</mo>
+              <mfrac>
+                <mn>1</mn>
+                <mi>N</mi>
+              </mfrac>
+              <msup>
+                <mrow>
+                  <mo stretchy="true" form="prefix">(</mo>
+                  <mrow>
+                    <msub>
+                      <msub>
+                        <mi>P</mi>
+                        <mi>M</mi>
+                      </msub>
+                      <mrow>
+                        <mi>e</mi>
+                        <mi>x</mi>
+                        <mi>p</mi>
+                      </mrow>
+                    </msub>
+                    <mo>-</mo>
+                    <msub>
+                      <msub>
+                        <mi>P</mi>
+                        <mi>M</mi>
+                      </msub>
+                      <mrow>
+                        <mi>m</mi>
+                        <mi>o</mi>
+                        <mi>d</mi>
+                        <mi>e</mi>
+                        <mi>l</mi>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                  <mo stretchy="true" form="postfix">)</mo>
+                </mrow>
+                <mn>2</mn>
+              </msup>
+            </mrow>
+          </math>
+
+        </p>
+
+
+        <p class="myPage-paragraph-content"></p>
+
+
+
+        <p class="myPage-paragraph-content">
+
+          while the minimization goal of Tat pathway has another expression forms as: 
+
+        </p>
+
+        <p class="myPage-paragraph-content">
+
+
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mfrac>
+      <mn>1</mn>
+      <mi>N</mi>
+    </mfrac>
+    <msup>
+      <mrow>
+        <mo stretchy="true" form="prefix">(</mo>
+        <mrow>
+          <msub>
+            <msub>
+              <mi>P</mi>
+              <mi>p</mi>
+            </msub>
+            <mrow>
+              <mi>e</mi>
+              <mi>x</mi>
+              <mi>p</mi>
+            </mrow>
+          </msub>
+          <mo>-</mo>
+          <msub>
+            <msub>
+              <mi>P</mi>
+              <mi>p</mi>
+            </msub>
+            <mrow>
+              <mi>m</mi>
+              <mi>o</mi>
+              <mi>d</mi>
+              <mi>e</mi>
+              <mi>l</mi>
+            </mrow>
+          </msub>
+        </mrow>
+        <mo stretchy="true" form="postfix">)</mo>
+      </mrow>
+      <mn>2</mn>
+    </msup>
+    <mo>+</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mi>N</mi>
+    </mfrac>
+    <msup>
+      <mrow>
+        <mo stretchy="true" form="prefix">(</mo>
+        <mrow>
+          <msub>
+            <msub>
+              <mi>P</mi>
+              <mi>l</mi>
+            </msub>
+            <mrow>
+              <mi>e</mi>
+              <mi>x</mi>
+              <mi>p</mi>
+            </mrow>
+          </msub>
+          <mo>-</mo>
+          <msub>
+            <msub>
+              <mi>P</mi>
+              <mi>l</mi>
+            </msub>
+            <mrow>
+              <mi>m</mi>
+              <mi>o</mi>
+              <mi>d</mi>
+              <mi>e</mi>
+              <mi>l</mi>
+            </mrow>
+          </msub>
+        </mrow>
+        <mo stretchy="true" form="postfix">)</mo>
+      </mrow>
+      <mn>2</mn>
+    </msup>
+    <mo>+</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mi>N</mi>
+    </mfrac>
+    <msup>
+      <mrow>
+        <mo stretchy="true" form="prefix">(</mo>
+        <mrow>
+          <msub>
+            <msub>
+              <mi>P</mi>
+              <mi>M</mi>
+            </msub>
+            <mrow>
+              <mi>e</mi>
+              <mi>x</mi>
+              <mi>p</mi>
+            </mrow>
+          </msub>
+          <mo>-</mo>
+          <msub>
+            <msub>
+              <mi>P</mi>
+              <mi>M</mi>
+            </msub>
+            <mrow>
+              <mi>m</mi>
+              <mi>o</mi>
+              <mi>d</mi>
+              <mi>e</mi>
+              <mi>l</mi>
+            </mrow>
+          </msub>
+        </mrow>
+        <mo stretchy="true" form="postfix">)</mo>
+      </mrow>
+      <mn>2</mn>
+    </msup>
+  </mrow>
+</math>
+
+</p>
+
+
+<p class="myPage-paragraph-content"></p>
+
+
+<p class="myPage-paragraph-content"> A alternative minimization goal for Tat pathway also can be used, with the bias may being introduced to the </p>
+
+
+<p class="myPage-paragraph-content">
+
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mfrac>
+      <mn>1</mn>
+      <mi>N</mi>
+    </mfrac>
+    <msup>
+      <mrow>
+        <mo stretchy="true" form="prefix">(</mo>
+        <mrow>
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>P</mi>
+                <mrow>
+                  <mi>e</mi>
+                  <mi>x</mi>
+                  <mi>p</mi>
+                </mrow>
+              </msub>
+              <mo>-</mo>
+              <msub>
+                <msub>
+                  <mi>P</mi>
+                  <mi>M</mi>
+                </msub>
+                <mrow>
+                  <mi>e</mi>
+                  <mi>x</mi>
+                  <mi>p</mi>
+                </mrow>
+              </msub>
+            </mrow>
+            <msub>
+              <msub>
+                <mi>X</mi>
+                <mi>T</mi>
+              </msub>
+              <mrow>
+                <mi>e</mi>
+                <mi>x</mi>
+                <mi>p</mi>
+              </mrow>
+            </msub>
+          </mfrac>
+          <mo>-</mo>
+          <msub>
+            <msub>
+              <mi>P</mi>
+              <mi>l</mi>
+            </msub>
+            <mrow>
+              <mi>m</mi>
+              <mi>o</mi>
+              <mi>d</mi>
+              <mi>e</mi>
+              <mi>l</mi>
+            </mrow>
+          </msub>
+          <mo>-</mo>
+          <msub>
+            <msub>
+              <mi>P</mi>
+              <mi>p</mi>
+            </msub>
+            <mrow>
+              <mi>m</mi>
+              <mi>o</mi>
+              <mi>d</mi>
+              <mi>e</mi>
+              <mi>l</mi>
+            </mrow>
+          </msub>
+        </mrow>
+        <mo stretchy="true" form="postfix">)</mo>
+      </mrow>
+      <mn>2</mn>
+    </msup>
+    <mo>+</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mi>N</mi>
+    </mfrac>
+    <msup>
+      <mrow>
+        <mo stretchy="true" form="prefix">(</mo>
+        <mrow>
+          <msub>
+            <msub>
+              <mi>P</mi>
+              <mi>M</mi>
+            </msub>
+            <mrow>
+              <mi>e</mi>
+              <mi>x</mi>
+              <mi>p</mi>
+            </mrow>
+          </msub>
+          <mo>-</mo>
+          <msub>
+            <msub>
+              <mi>P</mi>
+              <mi>M</mi>
+            </msub>
+            <mrow>
+              <mi>m</mi>
+              <mi>o</mi>
+              <mi>d</mi>
+              <mi>e</mi>
+              <mi>l</mi>
+            </mrow>
+          </msub>
+        </mrow>
+        <mo stretchy="true" form="postfix">)</mo>
+      </mrow>
+      <mn>2</mn>
+    </msup>
+  </mrow>
+</math>
+
+</p>
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           <p class="myPage-paragraph-content">
             In daily life, people's needs for handwriting erasure are extensive and diverse. However, our current design
             is mainly focused on the deinking of pulp in the printing plant, so we hope to develop a product that can
             easily remove handwriting in daily life according to the deinking principle referred before.
           </p>
+          
           <p class="myPage-paragraph-content">
             The ink used in daily handwriting is mainly composed of <b>hydrophobic pigments</b> and <b>binders</b>, so
             using a better
@@ -581,12 +1119,14 @@
             to choose rhamnolipid, a kind of surfactant that can be biosynthesized and easily degraded (15), accompanied
             with limonene to form microemulsion to achieve handwriting removal (Figure 7).
           </p>
+          
           <div class="myPage-paragraph-fig">
             <img src="https://static.igem.wiki/teams/5136/design/design-7.jpg" alt="">
             <div class="myPage-paragraph-fig-description">
               <b>Figure 7 Schematic diagram of the mechanism of handwriting removal.</b>
             </div>
           </div>
+          
           <p class="myPage-paragraph-content">
             Additionally, for improving the recycling ability of the microemulsion, we intend to utilize adsorbents to
             adsorb the ink that is dissolved in the microemulsion after being removed from the paper. The adsorption
@@ -596,12 +1136,68 @@
             the
             reusability for the microemulsion, thus assisting the removal of daily handwriting.
           </p>
+
         </div>
 
 
 
-        <!--Reference-->
+
+
+
+
+        <!---Future Expectations --->
         <div class="myPage-paragraph" id="section4">
+          <h2 class="myPage-paragraph-headline-h2">Implementation</h2>
+
+          <p class="myPage-paragraph-content">
+            In daily life, people's needs for handwriting erasure are extensive and diverse. However, our current design
+            is mainly focused on the deinking of pulp in the printing plant, so we hope to develop a product that can
+            easily remove handwriting in daily life according to the deinking principle referred before.
+          </p>
+          
+          <p class="myPage-paragraph-content">
+            The ink used in daily handwriting is mainly composed of <b>hydrophobic pigments</b> and <b>binders</b>, so
+            using a better
+            hydrophobic solvent may be possible to achieve the removal of handwriting. Our pre-experiments showed that
+            the
+            microemulsion consisting of surfactant sodium dodecyl sulfate (SDS) and limonene had a good effect on
+            dissolving ink and removed the handwriting to a certain extent. Considering environmental protection, we
+            hope
+            to choose rhamnolipid, a kind of surfactant that can be biosynthesized and easily degraded (15), accompanied
+            with limonene to form microemulsion to achieve handwriting removal (Figure 7).
+          </p>
+          
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/design/design-7.jpg" alt="">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 7 Schematic diagram of the mechanism of handwriting removal.</b>
+            </div>
+          </div>
+          
+          <p class="myPage-paragraph-content">
+            Additionally, for improving the recycling ability of the microemulsion, we intend to utilize adsorbents to
+            adsorb the ink that is dissolved in the microemulsion after being removed from the paper. The adsorption
+            materials containing chitosan as the main component can adsorb ink molecules through both physical and
+            chemical effects while have the advantages of low toxicity, excellent biocompatibility and low cost over the
+            traditional polymer hydrogel (29). Therefore, this kind of materials is chosen as the adsorbent conferring
+            the
+            reusability for the microemulsion, thus assisting the removal of daily handwriting.
+          </p>
+          
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <!--Reference-->
+        <div class="myPage-paragraph" id="section5">
           <h2 class="myPage-paragraph-headline-h2">References</h2>
           <ol class="myPage-paragraph-reference">
             <li>X. Zhang, Y. Xue, Research Progress of Deinking Technology for Waste Paper Pulping. Shandong Paper
