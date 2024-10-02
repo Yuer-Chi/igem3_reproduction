@@ -614,7 +614,7 @@
         <!---Future Expectations --->
         <div class="myPage-paragraph" id="section3">
 
-          <h2 class="myPage-paragraph-headline-h2">Implementation and Results</h2>
+          <h2 class="myPage-paragraph-headline-h2">Implementation</h2>
 
 
 
@@ -1323,24 +1323,9 @@ With a <b>considerable $\alpha$ value</b> (Figure 4H) and <b>proper metabolic bu
 
 
 
-  <p class="myPage-paragraph-content">
 
-    Coupling with signal peptides, the multi-scale model predicites the phenomenoa about secretion kinetic in those four regions qualitatively: 
-    <br>
-    <br>
-    <b>(1) Class 1</b>: High metabolic burden-induced cell death result in high secretion effiency and low total protein synthesis; 
-    <br>
-    <b>(2) Class 2</b>: Transition area ; 
-    <br>
-    <b>(3) Class 3</b>: Medium metabolic burden result in high total protein synthesis, thus the secretion efficiency of the signal peptides is the main barrier here; 
-    <br>
-    <b>(4) Class 4</b>: Low metabolic burden results in low total protein synthesis, thus the signal peptides can translocate all the proteins and high secretion efficiency is achieved.
-    <br>
-    <br>
-    Thus, some exapmle in different classes, which is pointed out in Figure 7, was selected and tested (Figure 8).
+  
 
-
-  </p>
 
 
 
@@ -1349,34 +1334,26 @@ With a <b>considerable $\alpha$ value</b> (Figure 4H) and <b>proper metabolic bu
 
   <p class="myPage-paragraph-content">
 
-    Coupling with signal peptides, the multi-scale model predicites the phenomenoa about secretion kinetic in those four regions qualitatively: 
-    <br>
-    <br>
-    <b>(1) Class 1</b>: High metabolic burden-induced cell death result in high secretion effiency and low total protein synthesis; 
-    <br>
-    <b>(2) Class 2</b>: Transition area ; 
-    <br>
-    <b>(3) Class 3</b>: Medium metabolic burden result in high total protein synthesis, thus the secretion efficiency of the signal peptides is the main barrier here; 
-    <br>
-    <b>(4) Class 4</b>: Low metabolic burden results in low total protein synthesis, thus the signal peptides can translocate all the proteins and high secretion efficiency is achieved.
-    <br>
-    <br>
-    Thus, some exapmle in different classes, which is pointed out in Figure 7, was selected and tested (Figure 8).
 
+  By measuring the fluorescence intensity in the supernatant of each circuit, 
+  we can quantitatively analyze the secretion of the LMT signal peptide under different promoter strength and thus evaluate its performance (Figure 8A).
+    
+  We find that this follows the exponential kinetics (Figure 8B) with high R<sup>2</sup>, which is consistent with the T7-mediated secretion (Figure 1A). 
+    
+  
+  Interestingly, when we compared the secretion efficiency at 30 hours (Figure 8C), we found that high secretion efficiency does not mean high protein content in supernatant and culture (Figure 8D). 
+  Although the secretion efficiency of weak promoter and the strong promoter were both higher, 
+  the group of weak promoter could fully realize extracellular secretion due to its low efficiency and less protein production by the exosystem, 
+  but the amount of protein in supernatant was less (Figure 8C-E, J23103 and J23114). 
+  For strong promoters, although the amount of protein secreted is large, 
+  the total fluorescence is low, indicating that the metabolic burden is heavy, 
+  which affects the survival rate (Figure 8C-E, J23100). 
+  If the system continues, very few bacteria will survive, thus more future secretion in the following time can't be guaranteed.
+  Those observations are highly consistent with the prediction qualitatively in the four kinds of Anderson promoters in Figure 7 using our multi-scale model. 
+  By trading off, 
+  BBa_K5136202 with promoter <b>J23104 has the most appropriate secretion efficiency, which has enough proteins storage in the cells that can be secrete into actual environment quickly</b>.
 
-  </p>
-
-
-
-
-
-
-
-
-
-
-
-
+</p>
 
   </div>
 
@@ -1388,43 +1365,25 @@ With a <b>considerable $\alpha$ value</b> (Figure 4H) and <b>proper metabolic bu
 
         <!---Future Expectations --->
         <div class="myPage-paragraph" id="section4">
-          <h2 class="myPage-paragraph-headline-h2">Implementation</h2>
+          <h2 class="myPage-paragraph-headline-h2">Discussion</h2>
+
+          <p class="myPage-paragraph-content"></p>
+
 
           <p class="myPage-paragraph-content">
-            In daily life, people's needs for handwriting erasure are extensive and diverse. However, our current design
-            is mainly focused on the deinking of pulp in the printing plant, so we hope to develop a product that can
-            easily remove handwriting in daily life according to the deinking principle referred before.
+
+            
           </p>
           
           <p class="myPage-paragraph-content">
-            The ink used in daily handwriting is mainly composed of <b>hydrophobic pigments</b> and <b>binders</b>, so
-            using a better
-            hydrophobic solvent may be possible to achieve the removal of handwriting. Our pre-experiments showed that
-            the
-            microemulsion consisting of surfactant sodium dodecyl sulfate (SDS) and limonene had a good effect on
-            dissolving ink and removed the handwriting to a certain extent. Considering environmental protection, we
-            hope
-            to choose rhamnolipid, a kind of surfactant that can be biosynthesized and easily degraded (15), accompanied
-            with limonene to form microemulsion to achieve handwriting removal (Figure 7).
-          </p>
-          
-          <div class="myPage-paragraph-fig">
-            <img src="https://static.igem.wiki/teams/5136/design/design-7.jpg" alt="">
-            <div class="myPage-paragraph-fig-description">
-              <b>Figure 7 Schematic diagram of the mechanism of handwriting removal.</b>
-            </div>
-          </div>
-          
-          <p class="myPage-paragraph-content">
-            Additionally, for improving the recycling ability of the microemulsion, we intend to utilize adsorbents to
-            adsorb the ink that is dissolved in the microemulsion after being removed from the paper. The adsorption
-            materials containing chitosan as the main component can adsorb ink molecules through both physical and
-            chemical effects while have the advantages of low toxicity, excellent biocompatibility and low cost over the
-            traditional polymer hydrogel (29). Therefore, this kind of materials is chosen as the adsorbent conferring
-            the
-            reusability for the microemulsion, thus assisting the removal of daily handwriting.
-          </p>
-          
+            Unlike pulse-chase analysis, 
+            the MUSES mehtod estimates parameters based on data collected during continuous cell growth, 
+            which is more practical for real-world applications since industrial processes do not halt cell growth. 
+            Additionally, the MUSES method simplifies analysis by eliminating the need for high-frequency sampling (5-10 minutes/sample versus 1-2 hours/sample) and complex operations. 
+            The multi-scale model highlights the importance of balancing metabolic stress and secretion efficiency for optimal performance, 
+            which provides a more comprehensive understanding of signal peptide secretion kinetics,
+            shedding light on the characterization and quantification of the signal peptide research area afterward.          </p>
+                    
         </div>
 
 
@@ -1441,6 +1400,9 @@ With a <b>considerable $\alpha$ value</b> (Figure 4H) and <b>proper metabolic bu
         <div class="myPage-paragraph" id="section5">
           <h2 class="myPage-paragraph-headline-h2">References</h2>
           <ol class="myPage-paragraph-reference">
+
+            <br>
+
             <li>X. Zhang, Y. Xue, Research Progress of Deinking Technology for Waste Paper Pulping. Shandong Paper
               Society
               (2012). (in Chinese)
@@ -1449,125 +1411,7 @@ With a <b>considerable $\alpha$ value</b> (Figure 4H) and <b>proper metabolic bu
               A. Singh, L. M. Varghese, R. D. Yadav, R. Mahajan, A Pollution Reducing Enzymatic Deinking Approach for
               Recycling of Mixed Office Waste Paper. Environ. Sci. Pollut. Res. Int. 27, 45814-45823 (2020).
             </li>
-            <li>D. E. Tsatsis, D. K. Papachristos, K. A. Valta, A. G. Vlyssides, D. G. Economides, Enzymatic Deinking
-              for
-              Recycling of Office Waste Paper. J. Environ. Chem. Eng. 5, 1744-1753 (2017).
-            </li>
-            <li>
-              A. Saxena, P. Singh Chauhan, Role of Various Enzymes for Deinking Paper: A Review. Crit. Rev.
-              Biotechnol.
-              37, 598-612 (2017).
-            </li>
-            <li>
-              B. Wu et al., Processivity and Enzymatic Mechanism of a Multifunctional Family 5 Endoglucanase from
-              Bacillus subtilis BS-5 with Potential Applications in the Saccharification of Cellulosic Substrates.
-              Biotechnol. Biofuels 11, 20 (2018).
-            </li>
-            <li>
-              E. G. Hrycay, S. M. Bandiera, The Monooxygenase, Peroxidase, and Peroxygenase Properties of Cytochrome
-              P450.
-              Arch. Biochem. Biophys. 522, 71-89 (2012).
-            </li>
-            <li>
-              K. Shen, G. Fang, F. Chu, Application of Hydrogen Peroxide in the Pulp and Paper Industry. Paper
-              Chemicals, 19-23 (2005). (in Chinese)
-            </li>
-            <li>
-              Y. Jiang et al., Establishing an Enzyme Cascade for One-Pot Production of Alpha-Olefins from Low-Cost
-              Triglycerides and Oils without Exogenous H<sub>2</sub>O<sub>2</sub> Addition. Biotechnol. Biofuels 13, 52
-              (2020).
-            </li>
-            <li>
-              P. Zhao et al., Crucial Gating Residues Govern the Enhancement of Peroxygenase Activity in an Engineered
-              Cytochrome P450 O-Demethylase. Chem. Sci. 15, 8062-8070 (2024).
-            </li>
-            <li>
-              I. Shin et al., A Novel Catalytic Heme Cofactor in SfmD with a Single Thioether Bond and a Bis-His Ligand
-              Set Revealed by a De Novo Crystal Structural and Spectroscopic Study. Chem. Sci. 12, 3984-3998 (2021).
-            </li>
-            <li>
-              L. Arregui et al., Laccases: Structure, Function, and Potential Application in Water Bioremediation.
-              Microb.
-              Cell Fact. 18, 200 (2019).
-            </li>
-            <li>
-              S. Sondhi et al., An Extracellular Thermo-Alkali-Stable Laccase from Bacillus tequilensis SN4, with a
-              Potential to Biobleach Softwood Pulp. 3 Biotech. 5, 175-185 (2015).</li>
-            <li>
-              V. Gupta, S. Balda, N. Gupta, N. Capalash, P. Sharma, Functional Substitution of Domain 3 (T1 Copper
-              Center) of a Novel Laccase with Cu Ions. Int. J. Biol. Macromol. 123, 1052-1061 (2019).</li>
-            <li>
-              S. Jamnicki Hanzer, B. Lozo, L. Barušić, Producing Direct Food Packaging Using Deinked Office Paper
-              Grades—Deinkability and Food Contact Suitability Evaluation. Sustainability 13, 12550 (2021).
-            </li>
-            <li>
-              X. Kong et al., Efficient Synthesis of Limonene in Saccharomyces cerevisiae Using Combinatorial Metabolic
-              Engineering Strategies. J. Agric. Food Chem. 71, 7752-7764 (2023).
-            </li>
-            <li>
-              F. Zhang et al., Development of a Bacterial FhuD-Lysozyme-SsrA Mediated Autolytic (FLSA) System for
-              Effective Release of Intracellular Products. ACS Synth. Biol. 12, 196-202 (2023).
-            </li>
-            <li>
-              Y. He, Study on the Toxicity and Key Toxicants of Waste-Paper Effluents and Sludge. Master's Thesis
-              (2012).
-              (in Chinese)
-            </li>
-            <li>
-              Ş. Akkurt, M. Oğuz, A. Alkan Uçkun, Bioreduction and Bioremoval of Hexavalent Chromium by Genetically
-              Engineered Strains (Escherichia coli Mt2A and Escherichia coli Mt3). World J. Microbiol. Biotechnol. 38,
-              45
-              (2022).
-            </li>
-            <li>
-              M. Valls, S. Atrian, V. de Lorenzo, L. A. Fernández, Engineering a Mouse Metallothionein on the Cell
-              Surface of Ralstonia eutropha CH34 for Immobilization of Heavy Metals in Soil. Nat. Biotechnol. 18,
-              661-665
-              (2000).
-            </li>
-            <li>
-              E. van Bloois, R. T. Winter, H. Kolmar, M. W. Fraaije, Decorating Microbes: Surface Display of Proteins on
-              Escherichia coli. Trends Biotechnol. 29, 79-86 (2011).
-            </li>
-            <li>
-              X. Deng, X. E. Yi, G. Liu, Cadmium Removal from Aqueous Solution by Gene-Modified Escherichia coli JM109.
-              J. Hazard. Mater. 139, 340-344 (2007).
-            </li>
-            <li>
-              Z. Hao, S. Chen, D. B. Wilson, Cloning, Expression, and Characterization of Cadmium and Manganese Uptake
-              Genes from Lactobacillus plantarum. Appl. Environ. Microbiol. 65, 4746-4752 (1999).
-            </li>
-            <li>
-              S. K. Kim, B. S. Lee, D. B. Wilson, E. K. Kim, Selective Cadmium Accumulation Using Recombinant
-              Escherichia
-              coli. J. Biosci. Bioeng. 99, 109-114 (2005).
-            </li>
-            <li>
-              F. Stirling, P. A. Silver, Controlling the Implementation of Transgenic Microbes: Are We Ready for What
-              Synthetic Biology Has to Offer? Mol. Cell 78, 614-623 (2020).
-            </li>
-            <li>
-              R. Ohlendorf, A. Moglich, Light-Regulated Gene Expression in Bacteria: Fundamentals, Advances, and
-              Perspectives. Front. Bioeng. Biotechnol. 10, 1029403 (2022).
-            </li>
-            <li>
-              A. Baumschlager, M. Khammash, Synthetic Biological Approaches for Optogenetics and Tools for
-              Transcriptional
-              Light-Control in Bacteria. Adv. Biol. 5, e2000256 (2021).
-            </li>
-            <li>
-              X. Li et al., A Single-Component Light Sensor System Allows Highly Tunable and Direct Activation of Gene
-              Expression in Bacterial Cells. Nucleic Acids Res. 48, e33 (2020).
-            </li>
-            <li>
-              P. Bernard, M. Couturier, Cell Killing by the F Plasmid CcdB Protein Involves Poisoning of
-              DNA-Topoisomerase
-              II Complexes. J. Mol. Biol. 226, 735-745 (1992).
-            </li>
-            <li>
-              Muryeti, E. B. Mulyani, E. Sinurat, Adsorption of Carbon Black Using Chitosan in the Deinking Process.
-              Procedia Chem. 17, 106-110 (2015).
-            </li>
+
           </ol>
         </div>
       </div>
