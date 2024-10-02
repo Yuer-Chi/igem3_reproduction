@@ -821,6 +821,43 @@
             secretion efficiency for the extracellular expression of recombinant proteins, making it a competitive
             alternative compared to other commonly used signal peptides in <i>E. coli</i>.
           </p>
+          <p class="myPage-paragraph-content">
+            <b>Highest Secretion Efficiency and Proper Metabolic Burden of LMT Signal Peptide.</b>
+          </p>
+          <p class="myPage-paragraph-content">
+            The secretion kinetics of various signal peptides from both the Sec pathway (LMT, PelB, OmpA, OsmY, YebF, and AIgen) and the Tat pathway (TorA) were analyzed with our multi-scale model (see <a style="font-weight: bolder;text-decoration: none;"
+            href="{{ url_for('pages', page='Model') }}">model</a>   for more details). The two secretion kinetic parameters, α and γ, describe translocation rate from the cytoplasm to the periplasm and secretion efficiency (Figure 21A-B), respectively. LMT, a newly discovered signal peptide by Team XUM-China 2021 with excellent intrinsic secretion kinetic parameters, had a γ value that is 6.55-45.44 times higher than the others, indicating the highest secretion efficiency. With a considerable α value and proper metabolic burden, LMT achieved the highest supernatant fluorescence (Figure 20B). While the percentages of secretion, leakiness, and lysis, which are three primary contributors to supernatant fluorescence, changed dynamically with cell growth. This dynamic resulted in varying proportions of supernatant fluorescence among different signal peptides by the end of the experiment (Figure 21C). 
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/21.png" alt="" style="max-width: 70vw;">
+            <div class="myPage-paragraph-fig-description"><b>Figure 21 The model fitting results.  </b> (<b>A</b>) Estimated α for different signal peptides. (<b>B</b>) Estimated γ for different signal peptides.  (<b>C</b>) The percentage of different sources contributes to the supernatant fluorescence. 
+              
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            <b>LMT-mediated Secretion under Constitutive Expression for Optimal Economic Cost.</b>
+          </p>
+        
+         <p class="myPage-paragraph-content">
+          We constructed circuits driven by promoters of different strengths (J23100, J23103, J23104, J23106, J23110, J23114), each containing RiboJ-B0034-LMT-linker-sfgfp-B0010.
+         </p>
+         <p class="myPage-paragraph-content">
+          By measuring the fluorescence intensity in the supernatant of each circuit, we can quantitatively analyze the secretion of the LMT signal peptide under different promoter strengths and thus evaluate its performance (Figure 22A).
+         </p>
+         <p class="myPage-paragraph-content">
+          We find that this follows index kinetics, which is consistent with the T7-mediated secretion. As shown in Figure 3A, secretion efficiency is affected by many factors, but not positively related to promoter strength (Figure 22B).
+         </p>
+         <p class="myPage-paragraph-content">
+          To ensure that these results reflect actual secretion rather than differences in cell growth, we measured fluorescence intensity data in 30 h of culture (Figure 22C) and supernatant (Figure 22D), and calculated the secretion efficiency (supernatant/culture) (Figure 22E).
+         </p>
+         <div class="myPage-paragraph-fig">
+          <img src="https://static.igem.wiki/teams/5136/result/22.png" alt="" style="max-width: 70vw;">
+          <div class="myPage-paragraph-fig-description"><b>Figure 22 Characterization of LMT secretion performance with diffenent Anderson promoters.</b> (<b>A</b>) Secretion Kinetic. (<b>B</b>) Fitting Result. (<b>C</b>) Secretion efficiencies. (<b>D</b>) Fluorescence intensity of supernatant. (<b>E</b>) Culture fluorescence intensity.
+          </div>
+         </div>
+         <p class="myPage-paragraph-content">
+          Interestingly, when we compared the secretion efficiency at 30 hours, we found that high secretion efficiency does not mean high protein content in supernatant and culture. Although the secretion efficiency of weak promoter and the strong promoter were both higher, the weak promoter could fully realize extracellular secretion due to its low efficiency and less protein production by the exosystem, but the amount of protein in supernatant was less. For strong promoters, although the amount of protein secreted is large, the total fluorescence is low, indicating that the metabolic burden is heavy, which affects the survival rate. If the detection continues, very few bacteria will survive. Also we use multi-scale model to deconstruct the dynamic secretion process of signal peptides accurately. The experimental results aligned well with the model's predictions (see <a style="font-weight: bolder;text-decoration: none;"href="{{ url_for('pages', page='Model') }}">model</a> for more details). By trading off, BBa_K5136202 with promoter J23104 has the most appropriate secretion efficiency. 
+         </p>
         </div>
 
         <!-- <div class="myPage-paragraph" id="section7">
