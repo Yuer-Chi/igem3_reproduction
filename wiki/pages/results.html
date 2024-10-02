@@ -167,7 +167,7 @@
           <h3 class="myPage-paragraph-headline-h3">2.1 Deinking blank system</h3>
           <p class="myPage-paragraph-content">
             The deinking blank system consisted of a 50 mL pulp with 1 g Na<sub>2</sub>SiO<sub>3</sub>, and 1.67 mL
-            H<sub>2</sub>O<sub>2</sub> (Ref.), which is same
+            H<sub>2</sub>O<sub>2</sub> (1), which is same
             in each deinking method. Pulp was produced by the paper that printed the same article, ensuring the same ink
             concentration. The pulp preparation referred to standard operating procedure (see <a
               style="font-weight: bolder;text-decoration: none;" href="{{ url_for('pages', page='sop') }}">SOP</a> for
@@ -332,10 +332,11 @@
             procedure (see <a style="font-weight: bolder;text-decoration: none;"
               href="{{ url_for('pages', page='sop') }}">SOP</a> for more details), read the gray scale
             automatically. The experimental results
-            showed that there was no obvious improvement in the gray scale in the two multienzymes compared with
+            showed that there was no obvious improvement (Figure 9 and 10) in the gray scale in the two multienzymes
+            compared with
             that of a single enzyme. We found that gray scale of waste paper treated by monooxygenase was the
-            highest one among the enzymes. Therefore, we hope to conduct further research on monooxygenase to optimize
-            the deinking effect of waste paper enzymes.
+            highest one among the enzymes. Therefore, we hope to conduct further research on monooxygenase to obtain the
+            enzymes with better deinking performance.
           </p>
           <div class="myPage-paragraph-fig">
             <img src="https://static.igem.wiki/teams/5136/result/9.jpg" alt="">
@@ -349,35 +350,34 @@
               <b>Figure 10 The gray scale of paper cake deinked with cellulase and P450.</b>
             </div>
           </div>
-          <p class="myPage-paragraph-content">
+          <!-- <p class="myPage-paragraph-content">
             Based on the above experimental results, we found that monooxygenase plays an important role in the deinking
             of waste paper. Therefore, we hope to conduct further research on monooxygenase to optimize the deinking
             effect of waste paper.
-          </p>
+          </p> -->
         </div>
 
         <div class="myPage-paragraph" id="section4">
           <h2 class="myPage-paragraph-headline-h2">3 Screen the monooxygenase with higher deinking efficacy</h2>
           <p class="myPage-paragraph-content">
             NADPH is an expensive coenzyme (428.7 $/g), which propels us to give up the way to use the NADPH-dependent
-            P450 in the waste paper deinking. After reviewing the literature, we chose three kinds of monooxygenases,
+            monooxygenases in the waste paper deinking. After reviewing the literature, we chose three kinds of
+            monooxygenases,
             CYP199A4, OleT<sub>JE</sub> and SfmD and their mutants, which use H<sub>2</sub>O<sub>2</sub> as an electron
             donor. The targeted sequence was
             inserted in pET-28a(+) to construct circuits, which were transformed into <i>E. coli</i> BL21(DE3) to
             express each
-            enzyme. The positive transformants were confirmed by kanamycin, colony PCR, and sequencing. After being
+            enzyme. The positive transformants were confirmed by kanamycin, colony PCR (Figure 11), and sequencing. After being
             cultivated and induced by 0.5 mM IPTG at 20 °C, the induction of CYP199A4 requires the addition of
             δ-aminolevulinic acid hydrochloride (0.5 mM), the GE AKTA Prime Plus FPLC System was employed to get
             purified protein from the lysate supernatant. SDS-PAGE and Coomassie blue staining were used to verify the
-            expression of the target protein.
+            expression of the target protein (Figure 12).
           </p>
           <div class="myPage-paragraph-fig">
             <img src="https://static.igem.wiki/teams/5136/result/11.png" alt="" style="max-width: 70vw;">
-            <div class="myPage-paragraph-fig-description"><b>Figure 11 DNA gel electrophoresis of the colony PCR
-                products of CYP199A4, OleT<sub>JE</sub> and SfmD and their mutants_ pET-28a(+) in <i>E. coli</i>
-                BL21(DE3). Target
-                bands
-                (1412 bp) can be observed between 1000 bp and 2000 bp.</b>
+            <div class="myPage-paragraph-fig-description"><b>Figure 11 DNA gel electrophoresis of the colony PCR products
+              of CYP199A4 (A), SfmD (B) and OleTJE (C) and their mutants_ pET-28a(+) in E. coli BL21(DE3). Target bands
+              (1412 bp) can be observed between 1000 bp and 2000 bp.</b>
             </div>
           </div>
           <div class="myPage-paragraph-fig">
@@ -633,7 +633,8 @@
             (the average of the two optimal temperatures) for 60 min. After the standard operating procedure (see <a
               style="font-weight: bolder;text-decoration: none;" href="{{ url_for('pages', page='sop') }}">SOP</a>
             for more details), read the gray scale automatically. As shown in Figure 17, the gray scale of
-            some mutants increased by 50% at least, in which CYP199A4 T253A shows the best performance in deinking. As shown in
+            some mutants increased by 50% at least, in which CYP199A4 T253A shows the best performance in deinking. As
+            shown in
             the picture from the microscope (Figure 18), the paper treated with CYP199A4 T253A (Figure 18) has minimal
             ink residue among these enzymes. The paper is relatively white, and the observed effect has reached 1.06
             times higher than chemical deinking (Figure 18 chemical method).
@@ -658,15 +659,15 @@
             Protein purification was a tedious procedure that also costs a lot of money. We attempted to construct
             engineered bacteria based on synthetic biology to address the release of target proteins, which could skip
             the protein purification step. Therefore, we obtained a modified LLSA system (please see <a
-              style="font-weight: bolder;text-decoration: none;"
-              href="{{ url_for('pages', page='design') }}">Design</a> and
+              style="font-weight: bolder;text-decoration: none;" href="{{ url_for('pages', page='design') }}">Design</a>
+            and
             <a style="font-weight: bolder;text-decoration: none;"
               href="{{ url_for('pages', page='engineering') }}">Engineering Success</a> for details) from the <i>E.
               coli</i> autolytic system FLSA (FhuD-T7 lysozyme-SsrA
             mediated
-            autolytic system) (1). The system is designed to ensure that the target proteins can be efficiently produced
+            autolytic system) (2). The system is designed to ensure that the target proteins can be efficiently produced
             and smoothly released outside the cell, thus simplifying the process of obtaining the target proteins and
-            decreasing the treatment process cost (FLSA) (1). For the functional validation of both autolytic modules,
+            decreasing the treatment process cost (FLSA) (2). For the functional validation of both autolytic modules,
             it is of utmost importance to assess the protein release capacity.
           </p>
           <p class="myPage-paragraph-content">
@@ -726,7 +727,7 @@
             bacterial cells (<a style="font-weight: bolder;text-decoration: none;"
               href="https://2021.igem.org/Team:XMU-China">XMU-China 2021</a>). Given the variety of engineered signal
             peptides and corresponding
-            translocation systems developed for secretory production of heterologous proteins in <i>E. coli</i> (1), we
+            translocation systems developed for secretory production of heterologous proteins in <i>E. coli</i> (3), we
             sought
             to compare the performance of the LMT sequence against other commonly used signal peptides. Specifically,
             several signal peptides or translocation systems associated with the Type II Secretion System
@@ -734,9 +735,9 @@
             the Type I Secretion System (T1SS), were selected and fused to the reporter protein sfGFP. The sequences of
             the various signal peptides are provided in Table 1. Most of the secretion systems utilized in this
             comparative analysis contain critical N-terminal regions necessary for recognition and function within the
-            translocation machinery (2), which resulted in N-terminal fusions with sfGFP. However, the HlyABD secretion
+            translocation machinery (4), which resulted in N-terminal fusions with sfGFP. However, the HlyABD secretion
             system, which belongs to T1SS, requires the C-terminal sequence of HlyA, as well as the heterologous
-            expression of HlyB and HlyD as assistants (3, 4). Therefore, a C-terminal fusion of sfGFP with HlyA was
+            expression of HlyB and HlyD as assistants (5, 6). Therefore, a C-terminal fusion of sfGFP with HlyA was
             constructed.
           </p>
           <p class="myPage-paragraph-content">
@@ -762,12 +763,12 @@
             exhibited higher secretion efficiencies than any other signal peptides, including the newly discovered LMT
             sequence, which ranked third. YebF also performed well in the comparison (Figure 20A). Most of the other
             signal peptides exhibited secretion efficiencies below 2.5%. These findings demonstrate the variability in
-            secretion efficiencies among different signal peptides, despite the long-term usage of some of them (1).
+            secretion efficiencies among different signal peptides, despite the long-term usage of some of them (3).
           </p>
           <p class="myPage-paragraph-content">
             Interestingly, certain groups showed lower calculated secretion efficiencies than the sfGFP control group
             (which lacked a signal peptide, No SP). This may be due to the rapid growth and high levels of cytoplasmic
-            sfGFP expression driven by the strong T7 promoter in <i>E. coli</i> BL21(DE3) (5). The normalized
+            sfGFP expression driven by the strong T7 promoter in <i>E. coli</i> BL21(DE3) (7). The normalized
             fluorescence
             intensity of the sfGFP-only (No SP) culture was much higher than that of sfGFP fusions with signal peptides,
             suggesting that even minor leakage due to cell growth or lysis contributed significantly to the fluorescence
@@ -785,15 +786,15 @@
             host cells, possibly explaining the larger error bars associated with their calculated secretion
             efficiencies (Figure 20A). Additionally, the normalized fluorescence intensities in all groups with signal
             peptides were reduced (Figure 20B), potentially due to adverse effects on sfGFP folding caused by the fusion
-            with signal peptides (6).
+            with signal peptides (8).
           </p>
           <p class="myPage-paragraph-content">
             Classic signal peptides such as PelB and TorA, which direct recombinant proteins to the periplasmic space,
-            exhibited relatively low efficiency for extracellular translocation (Figure 20A) (7). Similarly, OmpA,
+            exhibited relatively low efficiency for extracellular translocation (Figure 20A) (9). Similarly, OmpA,
             another well-known signal peptide, showed poor efficiency for recombinant protein secretion, unlike YebF and
-            OsmY, which also mediate extracellular expression (8). Notably, the artificial intelligence-generated signal
+            OsmY, which also mediate extracellular expression (10). Notably, the artificial intelligence-generated signal
             peptide AIgen, which functions efficiently in Bacillus subtilis, performed poorly in exporting recombinant
-            proteins from <i>E. coli</i> (Figure 20A) (9). However, the OD<sub>600</sub> values for the AIgen group
+            proteins from <i>E. coli</i> (Figure 20A) (11). However, the OD<sub>600</sub> values for the AIgen group
             suggested no
             significant growth burden (Figure 20B).
           </p>
@@ -933,7 +934,8 @@
             and MT3 to treat the wastewater. In addition, to increase the contact area between MTs and heavy metal ions,
             we utilized the anchor protein INPNC to display MTs on the surface of bacteria. The composite part
             (BBa_K5136226), which expresses the fused protein INPNC-linker-MT3-linker-MT2A with the induction of
-            <i>L</i>-arabinose was introduced into the backbone plasmid (pSB1C3) through standard assembly. The constructed
+            <i>L</i>-arabinose was introduced into the backbone plasmid (pSB1C3) through standard assembly. The
+            constructed
             plasmid was transformed into <i>E. coli</i> BL21(DE3), then the positive transformants were selected by
             chloramphenicol and confirmed by colony PCR (Figure 28) and sequencing. Target bands (4464 bp) can be
             observed at the position around 5000 bp (Figure 28).
@@ -949,7 +951,7 @@
             for 4 h, the engineered bacteria were cultured in the M9 medium
             containing K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub> (5 mg/L) for 24 h. A bit of the supernatant
             of the bacterial cultures was collected at 0 h and 24 h, and was
-            pre-treated with dibenzoylphenyl dihydrazine (DPC). Then, the residual
+            pre-treated with 1,5-diphenylcarbazide (DPC). Then, the residual
             amount of Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> in the supernatant was determined by the RGB value
             measured,
             which can be calculated based on a standard curve of Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> in Figure 29
@@ -1009,7 +1011,8 @@
           </p>
           <div class="myPage-paragraph-fig">
             <img src="https://static.igem.wiki/teams/5136/result/31.jpg" alt="">
-            <div class="myPage-paragraph-fig-description"><b>Figure 31 Removal rates of 2.5% (w/w) SDS, 2.5% (w/w) rhamnolipid
+            <div class="myPage-paragraph-fig-description"><b>Figure 31 Removal rates of 2.5% (w/w) SDS, 2.5% (w/w)
+                rhamnolipid
                 and water.</b>
             </div>
           </div>
