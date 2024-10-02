@@ -528,10 +528,10 @@
             <p class="myPage-paragraph-content">
 
 
-              with RNA the intensity of target protein's mRNA (g/L/<sub>600</sub>), 
-              $P_c$ the intensity of unmature protein in cytoplasm space (a. u./<sub>600</sub>), 
-              $P_l$ the intensity of mature protein in cytoplasm space (a. u./<sub>600</sub>), 
-              $P_p$ the intensity of mature protein in periplasm space (a. u./<sub>600</sub>), 
+              with RNA the intensity of target protein's mRNA (g/L/OD<sub>600</sub>), 
+              $P_c$ the intensity of unmature protein in cytoplasm space (a. u./OD<sub>600</sub>), 
+              $P_l$ the intensity of mature protein in cytoplasm space (a. u./OD<sub>600</sub>), 
+              $P_p$ the intensity of mature protein in periplasm space (a. u./OD<sub>600</sub>), 
               $P_M$ the concentration of mature protein in medium space (a. u. ), 
 
               $k_1$ the specific translation rate (g/L/OD<sub>600</sub>/h), 
@@ -613,7 +613,7 @@
 
         <!---Future Expectations --->
         <div class="myPage-paragraph" id="section3">
-          <h2 class="myPage-paragraph-headline-h2">Implementation</h2>
+          <h2 class="myPage-paragraph-headline-h2">Implementation and Results</h2>
 
 
 
@@ -959,7 +959,7 @@
 <p class="myPage-paragraph-content"></p>
 
 
-<p class="myPage-paragraph-content"> A alternative minimization goal for Tat pathway also can be used, with the bias may being introduced to the </p>
+<p class="myPage-paragraph-content"> A alternative minimization goal for Tat pathway also can be used, but it may introduce some bias to the estimated parameters: </p>
 
 
 <p class="myPage-paragraph-content">
@@ -1086,6 +1086,144 @@
 
 </p>
 
+<p class="myPage-paragraph-content"></p>
+
+
+<p class="myPage-paragraph-content">
+
+  Once the minimization goals are confirmed, the fluorescence data and biomass data can be collected using standard protocols. 
+
+</p>
+
+
+
+
+<p class="myPage-paragraph-content">
+
+
+
+When performing the parameters fitting task with programming, 
+only the data collected in logarithmic phase was used to ensure the stable metabolic state and parameters. 
+The measured fluorescence data was normalized to the interval from 0 to 2, which will be helpful for weight balancing between different terms in minimization goals for both micro-level model and macro-level model. 
+The two secretion kinetic parameters, $\alpha$ and $\gamma$, are first-order terms in the ODE, which can be recovered by rescale operation after fitting to eliminate the effect of normalization. 
+Besides, a two-stage fitting schedule was employed to get the accurate parameters: 
+(1) the genetic algorithm is used to search the near-optimal values for unknown parameters first; 
+(2) the result of the genetic algorithm works as the initial guess for trust region constrained algorithms to optimize a better fitting. 
+
+
+
+</p>
+
+
+
+
+
+<h3 class="myPage-paragraph-headline-h3">Highest Secretion Efficiency and Proper Metabolic Burden of LMT signal peptide</h3>
+
+
+
+<p class="myPage-paragraph-content">
+
+
+The secretion kinetics of various signal peptides from both the Sec pathway (LMT, PelB, OmpA, OsmY, YebF, and AIgen) and the Tat pathway (TorA) were analyzed (Figure 4). 
+The high average R<sup>2</sup> values for each signal peptide (<u>LMT: 0.994, PelB: 0.993, OmpA: 0.987, OsmY: 0.933, YebF: 0.989, TorA: 0.975, AIgen: 0.988</u>) 
+confirm the accuracy of the multi-scale model in capturing secretion kinetics and demonstrate the successful application of the MUSES method. 
+The experimental results aligned well with the model's predictions (Figure 4A-G), 
+indicating that the multi-scale estimation method effectively deconstructs the dynamic secretion process of signal peptides, 
+avoiding the need for pulse-chase experiments. 
+In the subsequent discussion, emphasis was placed on the Sec pathway, since the TorA (Tat pathway) show quite low secretion efficiency here (Figure 1B).
+
+</p>
+
+<div class="myPage-paragraph-fig">
+  <img src="https://static.igem.wiki/teams/5136/model/figure-4.png" alt="" style="max-width: 1500px;" >
+  <div class="myPage-paragraph-fig-description">
+    <b>Figure 4 The model fitting results.</b> The experimental data and model predictions comparisons of different signal peptides: 
+    (<b>A</b>) LMT; (<b>B</b>) PelB; (<b>C</b>) OmpA; (<b>D</b>) OsmY; (<b>E</b>) YebF; (<b>F</b>) TorA; (<b>G</b>) AIgen. 
+    (<b>H</b>) Estimated $\alpha$ and $\gamma$ for different signal peptides.
+  </div>
+</div>
+
+
+
+
+<p class="myPage-paragraph-content">
+
+The percentages of secretion, leakiness, and lysis, 
+which are three primary contributors to supernatant fluorescence, changed dynamically with cell growth (Figure 5A-G). 
+Initially, the secretion part contributed the most to the supernatant fluorescence, 
+but as the culture medium's environment deteriorated due to metabolic waste, the lysis part increased, and the secretion one decreased. 
+Leakiness plateaued quickly because the data used for estimation were collected during the logarithmic growth phase, 
+and leakiness is the only factor related to cell growth. 
+This dynamic resulted in varying proportions of supernatant fluorescence among different signal peptides by the end of the experiment (Figure 5H). 
+However, AIgen and OmpA groups did not follow this trend due to the combination of a high $\alpha$ value (translocation rate from the cytoplasm to the periplasm) 
+and a relatively low $\gamma$ value (secretion efficiency). Both groups had high OD<sub>600</sub>, 
+and leakiness and lysis contributed the most to their fluorescence. 
+The OmpA group, with a higher $\alpha$ value than the AIgen group (Figure 4H), 
+had more immature proteins translocating to the periplasm and maturing, 
+resulting in higher supernatant fluorescence compared to AIgen group.
+
+</p>
+
+<div class="myPage-paragraph-fig">
+  <img src="https://static.igem.wiki/teams/5136/model/figure-5.png" alt="" style="max-width: 1500px;" >
+  <div class="myPage-paragraph-fig-description">
+    <b>Figure 5 The percentage changing of three sources that contribute to the supernatant fluorescence in different signal peptides: </b> 
+    (<b>A</b>) LMT; (<b>B</b>) PelB; (<b>C</b>) OmpA; (<b>D</b>) OsmY; (<b>E</b>) YebF; (<b>F</b>) TorA; (<b>G</b>) AIgen. 
+    (<b>H</b>) The percentage of different sources contribute to the supernatant fluorescence.
+  </div>
+</div>
+
+
+<p class="myPage-paragraph-content">
+
+Among the Sec pathway signal peptides, 
+The PelB group's lysis part contributed about 50% of its supernatant fluorescence (Figure 5H), 
+which was attributed to cell death caused by high metabolic burden (Figure 1C, lowest OD<sub>600</sub>). 
+This also influenced the normalized fluorescence intensity of the culture, 
+leading to lower supernatant fluorescence (Figure 1C). 
+The OsmY group's low supernatant fluorescence was due to similar reasons (Figure 1C), 
+with its lowest $\alpha$ value making it the group with the lowest supernatant fluorescence (Figure 4H). 
+YebF experienced metabolic stress too, resulting in lower normalized fluorescence intensity and OD<sub>600</sub>, 
+though its higher $\alpha$ value, nearly 1.5 times that of OsmY group (Figure 4H), 
+contributed to slightly higher supernatant fluorescence (Figure 1C). 
+<b>LMT</b>, a newly discovered signal peptide by Team XUM-China 2021 with excellent intrinsic secretion kinetic parameters, 
+had <b>a $\gamma$ value that is 6.55-45.44 times higher</b> than the others in Sec pathway (Figure 4H), 
+indicating <b>the highest secretion efficiency</b>. 
+With a <b>considerable $\alpha$ value</b> (Figure 4H) and <b>proper metabolic burden</b>, LMT achieved the <b>highest supernatant fluorescence</b> (Figure 1C).
+
+
+</p>
+
+
+<p class="myPage-paragraph-content">
+
+  LMT, a newly discovered signal peptide by Team XUM-China 2021 with excellent intrinsic secretion kinetic parameters, 
+  had a $\gamma$ value that is 6.55-45.44 times higher than the others in Sec pathway (Figure 4H), 
+  indicating the highest secretion efficiency. 
+  With a considerable $\alpha$ value (Figure 4H) and proper metabolic burden, LMT achieved the highest supernatant fluorescence (Figure 1C).
+  
+  
+  </p>
+
+
+
+
+
+
+  <div class="myPage-paragraph-fig">
+    <img src="https://static.igem.wiki/teams/5136/part/ljc/6.png" alt="" style="max-width: 1500px;" >
+    <div class="myPage-paragraph-fig-description">
+      <b>Figure 9 Characterization of His tag-LMT-CYP199A4 T253E. </b> 
+      (<b>A</b>) SDS-PAGE analysis (left) and gray scale value analysis (right) of the supernatant at different times. 
+      (<b>B</b>) Deinking characterization of His tag-LMT-CYP199A4 T253E (BBa_K5136047).
+    </div>
+  </div>
+  
+
+
+
+
 
 </p>
 
@@ -1102,40 +1240,6 @@
 
 
 
-          <p class="myPage-paragraph-content">
-            In daily life, people's needs for handwriting erasure are extensive and diverse. However, our current design
-            is mainly focused on the deinking of pulp in the printing plant, so we hope to develop a product that can
-            easily remove handwriting in daily life according to the deinking principle referred before.
-          </p>
-          
-          <p class="myPage-paragraph-content">
-            The ink used in daily handwriting is mainly composed of <b>hydrophobic pigments</b> and <b>binders</b>, so
-            using a better
-            hydrophobic solvent may be possible to achieve the removal of handwriting. Our pre-experiments showed that
-            the
-            microemulsion consisting of surfactant sodium dodecyl sulfate (SDS) and limonene had a good effect on
-            dissolving ink and removed the handwriting to a certain extent. Considering environmental protection, we
-            hope
-            to choose rhamnolipid, a kind of surfactant that can be biosynthesized and easily degraded (15), accompanied
-            with limonene to form microemulsion to achieve handwriting removal (Figure 7).
-          </p>
-          
-          <div class="myPage-paragraph-fig">
-            <img src="https://static.igem.wiki/teams/5136/design/design-7.jpg" alt="">
-            <div class="myPage-paragraph-fig-description">
-              <b>Figure 7 Schematic diagram of the mechanism of handwriting removal.</b>
-            </div>
-          </div>
-          
-          <p class="myPage-paragraph-content">
-            Additionally, for improving the recycling ability of the microemulsion, we intend to utilize adsorbents to
-            adsorb the ink that is dissolved in the microemulsion after being removed from the paper. The adsorption
-            materials containing chitosan as the main component can adsorb ink molecules through both physical and
-            chemical effects while have the advantages of low toxicity, excellent biocompatibility and low cost over the
-            traditional polymer hydrogel (29). Therefore, this kind of materials is chosen as the adsorbent conferring
-            the
-            reusability for the microemulsion, thus assisting the removal of daily handwriting.
-          </p>
 
         </div>
 
