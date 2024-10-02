@@ -367,7 +367,8 @@
             donor. The targeted sequence was
             inserted in pET-28a(+) to construct circuits, which were transformed into <i>E. coli</i> BL21(DE3) to
             express each
-            enzyme. The positive transformants were confirmed by kanamycin, colony PCR (Figure 11), and sequencing. After being
+            enzyme. The positive transformants were confirmed by kanamycin, colony PCR (Figure 11), and sequencing.
+            After being
             cultivated and induced by 0.5 mM IPTG at 20 °C, the induction of CYP199A4 requires the addition of
             δ-aminolevulinic acid hydrochloride (0.5 mM), the GE AKTA Prime Plus FPLC System was employed to get
             purified protein from the lysate supernatant. SDS-PAGE and Coomassie blue staining were used to verify the
@@ -375,16 +376,20 @@
           </p>
           <div class="myPage-paragraph-fig">
             <img src="https://static.igem.wiki/teams/5136/result/11.png" alt="" style="max-width: 70vw;">
-            <div class="myPage-paragraph-fig-description"><b>Figure 11 DNA gel electrophoresis of the colony PCR products
-              of CYP199A4 (A), SfmD (B) and OleTJE (C) and their mutants_ pET-28a(+) in E. coli BL21(DE3). Target bands
-              (1412 bp) can be observed between 1000 bp and 2000 bp.</b>
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 11 DNA gel electrophoresis of the colony PCR products of CYP199A4 (A), SfmD (B) and OleTJE (C)
+                and
+                their mutants_ pET-28a(+) in <i>E. coli</i> BL21(DE3)</b>. Target bands (1412 bp) can be observed
+              between 1000 bp and
+              2000 bp.
             </div>
           </div>
           <div class="myPage-paragraph-fig">
             <img src="https://static.igem.wiki/teams/5136/result/12.png" alt="" style="max-width: 70vw;">
-            <div class="myPage-paragraph-fig-description"><b>Figure 12 SDS-PAGE analysis of CYP199A4, OleT<sub>JE</sub>
-                and SfmD
-                and their mutants. Target bands (about 48.6 kDa) can be observed between 42 kDa and 52 kDa.</b>
+            <div class="myPage-paragraph-fig-description"><b>Figure 12 SDS-PAGE analysis of CYP199A4 (A), SfmD (B), and
+                OleT<sub>JE</sub> (C, D, and E) and their mutants</b>. Target bands (about 48.6 kDa) can be observed
+              between 42 kDa and
+              52 kDa.
             </div>
           </div>
           <p class="myPage-paragraph-content">
@@ -792,7 +797,8 @@
             Classic signal peptides such as PelB and TorA, which direct recombinant proteins to the periplasmic space,
             exhibited relatively low efficiency for extracellular translocation (Figure 20A) (9). Similarly, OmpA,
             another well-known signal peptide, showed poor efficiency for recombinant protein secretion, unlike YebF and
-            OsmY, which also mediate extracellular expression (10). Notably, the artificial intelligence-generated signal
+            OsmY, which also mediate extracellular expression (10). Notably, the artificial intelligence-generated
+            signal
             peptide AIgen, which functions efficiently in Bacillus subtilis, performed poorly in exporting recombinant
             proteins from <i>E. coli</i> (Figure 20A) (11). However, the OD<sub>600</sub> values for the AIgen group
             suggested no
@@ -979,6 +985,160 @@
         <div class="myPage-paragraph" id="section10">
           <h2 class="myPage-paragraph-headline-h2">8 Verification of the functionality and effectiveness of the kill
             switch</h2>
+
+          <p class="myPage-paragraph-content">
+            Facing the threat that the unwanted survival and accumulation of engineered bacteria might happen once they
+            escape to opening environment(12), we designed a light-triggered kill switch for biocontainment of the
+            engineered bacteria. Rather than responding to some chemical inducers, the light-triggered kill switch will
+            be turned to ON state after the engineered bacteria is exposed to the light illumination of specific
+            wavelength. We chose a blue light-inducible optogenetic system, LexRO/pColE408(13), to control the
+            expression of CcdB toxin, in which an additional expression module of CcdA antitoxin was incorporated as
+            well to neutralize the leaky toxin when the kill switch is in OFF state. (See more details in our Design
+            page)
+          </p>
+          <p class="myPage-paragraph-content">
+            Here, we firstly characterized the cytotoxicity of CcdB toxin and the blue light-inducible performance of
+            LexRO/pColE408 system respectively, and then tested the killing effect of the blue light-induced kill
+            switch. Further optimization for improving the killing effect of the switch was also tried primarily.
+          </p>
+          <h3 class="myPage-paragraph-headline-h3">8.1 Cytotoxicity of CcdB</h3>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/31.png" alt="">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 31 Cytotoxicity verification of CcdB toxin</b>. (<b>A</b>) The gene circuit to characterize the
+              cytotoxicity
+              of CcdB (BBa_K5136236) on pSB4A5 vector. (<b>B</b>) Agarose gel electrophoresis of the colony PCR products
+              of
+              BBa_K5136236_pSB4A5 and BBa_I0500_pSB4A5 in <i>E. coli</i> BL21(DE3) Δ<i>ara</i>BAD. (<b>C</b>) Cell
+              viability was measured by
+              CFU count and is displayed as a ratio of cells with <i>L</i>-arabinose to cells with <i>D</i>-glucose.
+              <i>p</i>-value: 0.0007
+              (***).
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            Various toxin-antitoxin (TA) systems have been widely utilized and engineered to construct kill switch for
+            biocontainment. CcdB toxin of the CcdB-CcdA TA system, interferes with the activity of DNA gyrase and thus
+            causes cell death(14), which will play the critical role of killing engineered bacteria. To verify the
+            cytotoxicity of CcdB toxin used in the kill switch, we firstly constructed a gene circuit that the toxin
+            encoding gene ccdB was placed downstream the L-arabinose inducible promoter (araC/pBAD, BBa_I0500) on the
+            pSB4A5 vector. For convenience, the expression module of CcdA controlled by a weak constitutive engineering
+            promoter p2)-114v was integrated into the circuit as well (Figure XA), generating the composite part
+            BBa_K5136236. While BBa_I0500 only on the pSB4A5 was set as control.
+          </p>
+          <p class="myPage-paragraph-content">
+            Cytotoxicity tests were implemented in a BL21(DE3) strain in which the araBAD genes were knocked out
+            (ΔaraBAD) in our lab before for minimizing the influence of L-arabinose metabolism. After transformation,
+            positive transformants were selected and confirmed by colony PCR (Figure XB) and sequencing. Spot assay(15)
+            was performed for characterizing the killing effect (See more details in our Experiments page), while cell
+            viability was measured by colony forming unit (CFU) count and is displayed as a ratio of cells with
+            L-arabinose to cells with D-glucose (survival ratio), in which the D-glucose could suppress the L-arabinose
+            inducible promoter. Upon adding the inducer L-arabinose, the CcdB toxin (ccdBA) produced ~6 logs of killing
+            for 6 hours' culture (Figure XC), which indicated the cytotoxicity of CcdB.
+          </p>
+          <h3 class="myPage-paragraph-headline-h3">8.2 LexRO activates promoter pColE408 upon blue light illumination
+          </h3>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/32.png" alt="">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 32 Characterization of blue light-induced LexRO/pColE408</b>. (<b>A</b>) The gene circuit to
+              characterize blue
+              light-responding performance of LexRO/pColE408 system (BBa_K5136237) on pSB4A5 vector. (<b>B</b>) Agarose
+              gel
+              electrophoresis of the colony PCR products of BBa_K5136237_pSB4A5 in <i>E. coli</i> BL21(DE3). (<b>C</b>)
+              The relative
+              fluorescence units (RFU) of bacterial culture subtracted the background fluorescence of growth media,
+              resulting in the RFU<sub>mCherry</sub>. <i>p</i>-value: 0.0029 (**).
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            We turned to characterize the blue light-responding performance of LexRO/pColE408 optogenetic system used in
+            the kill switch. The photosensor LexRO was controlled by a medium constitutive promoter J23106 and a medium
+            RBS SD7 (13) (BBa_K5136045 ), while the mCherry fluorescent protein (BBa_J06504 ) was chosen as the reporter
+            under the control of promoter pColE408 (BBa_K5136044 ) (Figure YA), thus generating the composite part
+            BBa_K5136237 on the pSB4A5 vector. BL21(DE3) was used to characterize this optogenetic system, and positive
+            transformants were selected and confirmed by colony PCR (Figure YB) and sequencing.
+          </p>
+          <p class="myPage-paragraph-content">
+            Characterization was carried out in a self-made blue light (460 nm) illumination device. After cultured for
+            about 17 hours upon blue light illumination (with a relative light intensity of 250) or kept in dark
+            condition, red fluorescence intensity (λex = 585 nm, λem = 615 nm) and OD600 were measured. The normalized
+            fluorescence intensity of “Light” group showed a significant higher value than that of “Dark” group (about 2
+            times), indicating that this optogenetic system could be induced by blue light (Figure YC) indeed.
+          </p>
+          <h3 class="myPage-paragraph-headline-h3">8.3 Blue light-induced kill switch characterization</h3>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/33.png" alt="">
+            <div class="myPage-paragraph-fig-description">
+              Figure 33 Characterization of blue light-induced kill switch. (A) The gene circuit of blue light-induced
+              kill switch (BBa_K5136231) on pSB4A5 vector. (B) Agarose gel electrophoresis of the colony PCR products of
+              BBa_K5136231_pSB4A5 (Kill Switch) and BBa_K5136234_pSB4A5 (Control) in E. coli BL21(DE3). (C) Cell
+              viability was measured by CFU count and is displayed as a ratio of cells exposed to blue light to cells
+              kept in dark condition. p-value: 0.0085 (**) for D/L, 0.0077 (**) for L.
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            After verifying the cytotoxicity of CcdB and blue light-inducible performance of LexRO/pColE408 system, we
+            built the blue light-induced kill switch (BBa_K5136231), in which the toxin-antitoxin module is controlled
+            by promoter pColE408 and LexRO is constitutively expressed as in BBa_K5136237 (Figure ZA). While the LexRO
+            expression module only (BBa_K5136234) on the pSB4A5 was set as the control. Positive transformants were
+            selected and confirmed by colony PCR (Figure ZB) and sequencing after transformed to BL21(DE3).
+          </p>
+          <p class="myPage-paragraph-content">
+            Spot assay was also performed after cultured upon blue light illumination or kept in dark condition. A blue
+            light illumination-dependent killing effect was observed, which indicates that this blue light-induced kill
+            switch functioned to kill engineered bacteria when exposed to blue light (Figure ZC). Besides, when exposed
+            to blue light for whole period (6 hours, “L”), the kill switch exhibited a slightly stronger killing effect
+            than exposed to blue light for a shorter time (kept in dark for 2 hours 25 min first then switched on the
+            blue light for 3 hours 35 min, “D/L”), which implied that the killing of engineered bacteria might be
+            illuminating time-dependent.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/34.png" alt="">
+            <div class="myPage-paragraph-fig-description">
+              Figure 34 Optimization of blue light-induced kill switch. (A) Optimized blue light-induced kill switch
+              (BBa_K5136235) on pSB4A5 vector. The RBS of LexRO was changed to SD17. (B) Agarose gel electrophoresis of
+              the colony PCR products of BBa_K5136235_pSB4A5 in E. coli BL21(DE3). (C) Cell viability was measured by
+              CFU count and is displayed as a ratio of cells exposed to blue light to cells kept in dark condition.
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            Although we have verified the blue light-dependent killing effect of the kill switch, we still tried to
+            optimize the gene circuit for further improving the killing effect. Since lower LexRO content were more
+            sensitive to light illumination(13), we then changed the RBS of LexRO in the gene circuit to a weaker one
+            (SD17, BBa_K5136049) to see whether this would improve the effect of killing or not, resulting in the
+            generation of BBa_K5136235 composite part on pSB4A5 vector (Figure XXA). Colony PCR (Figure XXB) and
+            sequencing were performed again to confirm the positive transformants of BL21(DE3). Similar test was done to
+            the alternative kill switch. When lower the expression of LexRO, a slight decrease on survival ratio was
+            obtained for the kill switch (Figure XXC), indicating that the strategy for optimizing the kill switch might
+            be available and feasible.
+          </p>
+          <h3 class="myPage-paragraph-headline-h3">8.4 Conclusions</h3>
+          <p class="myPage-paragraph-content">
+            Developing a biocontainment system to response physical factors(16) (such as light or temperature) takes the
+            advantage over chemical factors (such as various inducers) of no need to add any substances into the culture
+            or reaction systems, which is adapted to our deinking system. It is reported that the LexRO/pColE408
+            optogenetic system showed a better performance over the other existing single-component bacterial
+            light-activated expression systems(13). Even though the design of LexRO/pColE408-regulated kill switch has
+            been proposed before (Tsinghua iGEM 2020), however, it is the first time for this optogenetic system to be
+            utilized and tested in constructing kill switch in actual. We achieved ~2 logs of killing within 6 hours
+            when exposing the engineered bacteria to blue light illumination with a light intensity that would not
+            impair the cell growth.
+          </p>
+          <p class="myPage-paragraph-content">
+            Besides, we tried to optimize the kill switch by altering the RBS of LexRO to lower its intracellular
+            content and obtained a decreased survival ratio. Compared to present kill switches controlled by some other
+            blue light-responding systems such as pDawn(17,18) or EL222/pBLind(19), further engineering of our
+            LexRO/pColE408-regulated kill switch should be implemented to achieve a better killing effect. As the
+            induction characteristics of this system is highly related to the expression level of LexRO(13), a feasible
+            way to optimize has been proposed according to our experimental results.
+          </p>
+          <p class="myPage-paragraph-content">
+            In summary, our modular verifications and engineering iterations of constructing the blue light-induced kill
+            switch contributed to the biosafety of our REPARO project (See more information in our Proposed
+            Implementation page), and we hope this design of biocontainment system will provide valuable experience to
+            other iGEM teams and SynBio community.
+          </p>
         </div>
 
         <div class="myPage-paragraph" id="section11">
@@ -1077,6 +1237,90 @@
 
         <div class="myPage-paragraph" id="section15">
           <h2 class="myPage-paragraph-headline-h2">References</h2>
+          <ol class="myPage-paragraph-reference">
+            <li>
+              Jamnicki Hanzer S, Lozo B, Barušić L. Producing Direct Food Packaging Using Deinked Office Paper
+              Grades—Deinkability and Food Contact Suitability Evaluation. Sustainability. 2021; 13(22):12550.
+            </li>
+            <li>
+              F. Zhang et al., Development of a Bacterial FhuD-lysozyme-SsrA Mediated Autolytic (flsa) System for
+              Effective Release of Intracellular Products. ACS Synth Biol 12, 196-202 (2023).
+            </li>
+            <li>
+              R. Freudl, Signal Peptides for Recombinant Protein Secretion in Bacterial Expression Systems. Microb. Cell
+              Fact. 17, 52 (2018).
+            </li>
+            <li>
+              H. Owji, N. Nezafat, M. Negahdaripour, A. Hajiebrahimi, Y. Ghasemi, A Comprehensive Review of Signal
+              Peptides: Structure, Roles, and Applications. Eur. J. Cell Biol. 97, 422-441 (2018).
+            </li>
+            <li>
+              B. D. Tzschaschel, C. A. Guzmán, K. N. Timmis, V. D. Lorenzo, An Escherichia coli Hemolysin Transport
+              System-based Vector for the Export of Polypeptides: Export of Shiga-like Toxin IIeb Subunit by Salmonella
+              Typhimurium aroA. Nat. Biotechnol. 14, 765-769 (1996).
+            </li>
+            <li>
+              L. A. Fernández, I. Sola, L. Enjuanes, V. De Lorenzo, Specific Secretion of Active Single-chain Fv
+              Antibodies into the Supernatants of Escherichia coli Cultures by Use of the Hemolysin System. Appl.
+              Environ. Microbiol. 66, 5024–5029 (2000).
+            </li>
+            <li>
+              S.-I. Tan, I.-S. Ng, New Insight into Plasmid-driven T7 RNA Polymerase in Escherichia coli and Use as a
+              Genetic Amplifier for a Biosensor. ACS Synth. Biol. 9, 613–622 (2020).
+            </li>
+            <li>
+              B. J. Feilmeier, G. Iseminger, D. Schroeder, H. Webber, G. J. Phillips, Green Fluorescent Protein
+              Functions as a Reporter for Protein Localization in Escherichia coli. J. Bacteriol. 182, 4068–4076 (2000).
+            </li>
+            <li>
+              F. J. M. Mergulhão, D. K. Summers, G. A. Monteiro, Recombinant Protein Secretion in Escherichia coli.
+              Biotechnol. Adv. 23, 177–202 (2005).
+            </li>
+            <li>
+              Boock, J.T., Waraho-Zhmayev, D., Mizrachi, D., DeLisa, M.P. (2015). Beyond the Cytoplasm of Escherichia
+              coli: Localizing Recombinant Proteins Where You Want Them. In: García-Fruitós, E. (eds) Insoluble
+              Proteins. Methods in Molecular Biology, vol 1258. Humana Press, New York, NY.
+            </li>
+            <li>
+              Z. Wu, K. K. Yang, M. J. Liszka, A. Lee, A. Batzilla, D. Wernick, D. P. Weiner, F. H. Arnold, Signal
+              Peptides Generated by Attention-based Neural Networks. ACS Synth. Biol. 9, 2154–2161 (2020).
+            </li>
+            <li>
+              H. An et al., TEX264 Is an Endoplasmic Reticulum-Resident ATG8-Interacting Protein Critical for ER
+              Remodeling during Nutrient Stress. Molecular Cell 74, 891-908.e810 (2019).
+            </li>
+            <li>
+              Li X, Zhang C, Xu X, Miao J, Yao J, Liu R, Zhao Y, Chen X, Yang Y. A Single-component Light Sensor System
+              Allows Highly Tunable and Direct Activation of Gene Expression in Bacterial Cells. Nucleic Acids Res. 2020
+              Apr 6;48(6):e33
+            </li>
+            <li>
+              Bernard P, Couturier M. Cell Killing by the F Plasmid CcdB Protein Involves Poisoning of DNA-topoisomerase
+              II complexes. J Mol Biol. 1992 Aug 5;226(3):735-45.
+            </li>
+            <li>
+              Chan CT, Lee JW, Cameron DE, Bashor CJ, Collins JJ. 'Deadman' and 'Passcode' Microbial Kill Switches for
+              Bacterial Containment. Nat. Chem. Biol. 2016 Feb;12(2):82-6.
+            </li>
+            <li>
+              Choi J, Ahn J, Bae J, Koh M. Recent Synthetic Biology Approaches for Temperature- and Light-Controlled
+              Gene Expression in Bacterial Hosts. Molecules. 2022 Oct 11;27(20):6798.
+            </li>
+            <li>
+              Lalwani MA, Kawabe H, Mays RL, Hoffman SM, Avalos JL. Optogenetic Control of Microbial Consortia
+              Populations for Chemical Production. ACS Synth Biol. 2021 Aug 20;10(8):2015-2029.
+            </li>
+            <li>
+              Zhang Y, Xue X, Fang M, Pang G, Xing Y, Zhang X, Li L, Chen Q, Wang Y, Chang J, Zhao P, Wang H.
+              Upconversion Optogenetic Engineered Bacteria System for Time-Resolved Imaging Diagnosis and
+              Light-Controlled Cancer Therapy. ACS Appl Mater Interfaces. 2022 Oct 19;14(41):46351-46361.
+            </li>
+            <li>
+              Han C, Zhang X, Pang G, Zhang Y, Pan H, Li L, Cui M, Liu B, Kang R, Xue X, Sun T, Liu J, Chang J, Zhao P,
+              Wang H. Hydrogel Microcapsules Containing Engineered Bacteria for Sustained Production and Release of
+              Protein Drugs. Biomaterials. 2022 Aug;287:121619.
+            </li>
+          </ol>
         </div>
 
 
