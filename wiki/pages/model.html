@@ -613,6 +613,7 @@
 
         <!---Future Expectations --->
         <div class="myPage-paragraph" id="section3">
+
           <h2 class="myPage-paragraph-headline-h2">Implementation and Results</h2>
 
 
@@ -1207,9 +1208,9 @@ With a <b>considerable $\alpha$ value</b> (Figure 4H) and <b>proper metabolic bu
   <b>Now, this basic part (BBa_K5136047) 
   designed by combining the high throughput screening and multi-scale signal peptides secretion kinetics, 
   is a crucial part of our part collection</b>.
-  </p>
 
 
+</p>
 
 
 
@@ -1236,19 +1237,63 @@ With a <b>considerable $\alpha$ value</b> (Figure 4H) and <b>proper metabolic bu
 
 
 
+<p class="myPage-paragraph-content">
 
+  Previous LMT-mediated secretion work in our project is based on T7 promoter, 
+  requiring the addition of IPTG to induce the expression of the fusion protein of our deinking enzyme and LMT signal peptide. 
+  The IPTG has a toxic effect on cells, which is also expensive in industrial-scale applications. 
+  Thus, <b>designing the LMT-mediated secretion system under constitutive expression is essential for the implementation of REPARO by eliminating the extra cost (inducer for example) to achieve optimal economic cost</b>.
+  
+</p>
+
+<p class="myPage-paragraph-content">
+
+  The multi-scale model reveals that the proper combination of metabolic stress and secretion efficiency 
+  contributes to the final secretion performance in the natural growth state of engineered bacteria, both of which are indispensable. 
+  When the secretion system is controlled by the constitutive promoter, 
+  <b>this principle will be more crucial since the metabolic stress induced by the signal peptides exists from beginning to end.</b> 
+  Austin_UTexas 2019 measured all the metabolic burden and expression strength of the Anderson promoters, 
+  where we try to select several representative one to investigate and verify our multi-scale model, 
+  guiding the design of LMT-mediated secretion system compiling under constitutive expression.
+
+</p>
+
+
+<p class="myPage-paragraph-content">
+
+  A Gaussian mixture model was employed to cluster all the data pair of metabolic burden and expression stress for Anderson promoters to four main classes (Figure 7): 
+  <b>(1) Class 1</b>: high expression strength with high metabolic burden; 
+  <b>(2) Class 2</b>: medium expression strength with high metabolic burden; 
+  <b>(3) Class 3</b>: medium expression strength with medium metabolic burden; 
+  <b>(4) Class 4</b>: low expression strength with low metabolic burden.
+
+</p>
 
 
 
   <div class="myPage-paragraph-fig">
     <img src="https://static.igem.wiki/teams/5136/model/figure-7.png" alt="" style="max-width: 500px;" >
     <div class="myPage-paragraph-fig-description">
-      <b>Figure 7 Characterization of His tag-LMT-CYP199A4 T253E. </b> 
+      <b>Figure 7 Cluster result of Anderson promoters in both metabolic burden and expression strength. </b> 
 
     </div>
   </div>
   
 
+  <p class="myPage-paragraph-content">
+
+    Coupling with signal peptides, the multi-scale model predicites the phenomenoa about secretion kinetic in those four regions qualitatively: 
+    <br>
+    <b>(1) Class 1</b>: High metabolic burden-induced cell death result in high secretion effiency and low total protein synthesis; 
+    <br>
+    <b>(2) Class 2</b>: Transition area ; 
+    <br>
+    <b>(3) Class 3</b>: Medium metabolic burden result in high total protein synthesis, thus the secretion efficiency of the signal peptides is the main barrier here; 
+    <br>
+    <b>(4) Class 4</b>: Low metabolic burden results in low total protein synthesis, thus the signal peptides can translocate all the proteins and high secretion efficiency is achieved.
+  
+  </p>
+  
 
 
 
@@ -1276,7 +1321,6 @@ With a <b>considerable $\alpha$ value</b> (Figure 4H) and <b>proper metabolic bu
 
 
 
-</p>
 
 
 
@@ -1292,7 +1336,8 @@ With a <b>considerable $\alpha$ value</b> (Figure 4H) and <b>proper metabolic bu
 
 
 
-        </div>
+
+  </div>
 
 
 
