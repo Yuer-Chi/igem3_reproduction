@@ -42,7 +42,7 @@
       width: 40%;
       height: 15vh;
       top: 23vh;
-      left: 2%;
+      left: 5%;
       text-align: center;
       font-size: 4.5vh;
       font-weight: bolder;
@@ -64,8 +64,8 @@
       position: relative;
       width: 40%;
       height: 15vh;
-      top: 30vh;
-      left: 2%;
+      top: 28vh;
+      left: 5%;
       text-align: left;
       font-size: 3.5vh;
       font-weight: bolder;
@@ -84,9 +84,9 @@
 
  
   .follow{
-      width: 35%;
+      width: 38%;
       position: relative;
-      right: -48%;
+      right: -50%;
       top: -5vh;
       font-size: 5.5vh;
       font-weight: bold;
@@ -95,12 +95,13 @@
   .follow img{
       width: 7vw;
       margin-top: 3vh;
-      margin-left: 1vh;
+      margin-right: 2vh;
   }
 
   .follow span{
       display: block;
       margin-bottom: 1vh;
+      margin-left: 3vw;
   }
 
   .follow img:hover{
@@ -116,12 +117,14 @@
 
   .claim{
       position: absolute;
-      bottom: 0;
+      bottom: 1.5vh;
       width: 100%;
-      margin-top: 3vh;
+      margin-top: 2vh;
   }
 
   .claim p{
     font-size: 2vh;
     line-height: 3vh;
+    text-align: center;
   }
+
