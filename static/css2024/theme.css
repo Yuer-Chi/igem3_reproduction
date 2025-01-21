@@ -351,14 +351,14 @@ a {
 
 .myPage-main-content {
     position: relative;
-    width: 85%;
+    width: 87%;
     margin: auto;
     text-align: justify;
 }
 
 .myPage-padding {
     position: absolute;
-    width: 5%;
+    width: 2%;
     height: 100%;
     right: 0;
     background-color: #e0ebeb;
