@@ -132,3 +132,54 @@
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
+.navbar .menu{
+  display:none;
+}
+
+/* 页面自适应 */
+@media (max-width: 768px) {
+  .nav-links img{
+      display: none;
+  }
+  .navbar .logo .img1 img{
+    margin-top: 2vh;
+    margin-left: 1vw;
+    height: 7vh;
+}
+.navbar .logo .img2 img{
+    margin-top: -2vh;
+    margin-left: 0.2vw;
+    height: 6vh;
+}
+  .navbar .menu{
+    display:block;
+    background-color: transparent;
+    color: #cec3ed;
+    font-size: 8vw;
+    border:none;
+    position:fixed;
+    top:-6.5vh;
+    right: -3vw;
+    cursor: pointer;
+  }
+  .nav-links{
+    background-color: #4a3c61;
+    position:fixed;
+    flex-direction: column;
+    width: 100vw;
+    margin-left: -1vh;
+    top:-100%;
+    text-align: center;
+  }
+  .nav-links.activate{
+    top:13vh;;
+  }
+  .dropdown:hover .dropdown-menu {
+    width: 110vw;
+    margin-left:-49vw;
+    position: absolute;
+    display: block;
+  }
+
+}
