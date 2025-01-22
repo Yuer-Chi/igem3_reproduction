@@ -1,0 +1,130 @@
+/* 清除浏览器默认格式 */
+* {
+    margin: 0;
+    padding: 0;
+    /* 内减模式 */
+    box-sizing: border-box;
+    font-family: MyFont,Lora,Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* 清除浮动 */
+  .clearfix::before,
+  .clearfix::after {
+    content: '';
+    display: table;
+  }
+
+  .clearfix::after {
+    clear: both;
+  }
+
+  .footer{
+      width: 100%;
+      height: 69.8vh;
+      background-image:  url('https://static.igem.wiki/teams/5136/header-footer-img/footer-bg.png'),url('https://static.igem.wiki/teams/5136/header-footer-img/footer-top.png'),url('https://static.igem.wiki/teams/5136/home/bg-white.jpg');
+      background-position: bottom center, top center,center center; /* 第一张图在顶部居中，第二张图在底部居中 */
+      background-size: 100% 50vh, 100% 20vh,cover; /* 图片宽度100%，高度自动 */
+      background-repeat: no-repeat, no-repeat, no-repeat; /* 防止背景图片重复 */
+      position: relative;
+  }
+
+  .xmu{
+      position: relative;
+      width: 40%;
+      height: 15vh;
+      top: 23vh;
+      left: 5%;
+      text-align: center;
+      font-size: 4.5vh;
+      font-weight: bolder;
+      display: flex;
+      align-items: center;
+      
+  }
+
+  .xmu span{
+      margin-left: 2%;
+      margin-right: 2%;
+  }
+
+  .xmu img{
+      height: 15vh;
+  }
+
+  .position{
+      position: relative;
+      width: 40%;
+      height: 15vh;
+      top: 28vh;
+      left: 5%;
+      text-align: left;
+      font-size: 3.5vh;
+      font-weight: bolder;
+      display: flex;
+      align-items: center;
+  }
+
+  .position span{
+      margin-left: 2%;
+      margin-right: 2%;
+  }
+
+  .position img{
+      height: 15vh;
+  }
+
+ 
+  .follow{
+      width: 38%;
+      position: relative;
+      right: -50%;
+      top: -5vh;
+      font-size: 5.5vh;
+      font-weight: bold;
+  }
+
+  .follow img{
+      width: 7vw;
+      margin-top: 3vh;
+      margin-right: 2vh;
+  }
+
+  .follow span{
+      display: block;
+      margin-bottom: 1vh;
+      margin-left: 3vw;
+  }
+
+  .follow img:hover{
+      width: 8vw;
+      transition: all 0.3s;
+  }
+
+  .follow .logo{
+      position: relative;
+      left: 17%;
+      width: 30vw;
+  }
+
+  .claim{
+      position: absolute;
+      bottom: 1.5vh;
+      width: 100%;
+      margin-top: 2vh;
+  }
+
+  .claim p{
+    font-size: 2vh;
+    line-height: 3vh;
+    text-align: center;
+  }
+

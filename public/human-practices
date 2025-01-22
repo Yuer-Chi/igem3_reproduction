@@ -1,0 +1,975 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://static.igem.wiki/teams/5136/favicon.png" />
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+  <!-- Bootstrap CSS -->
+  <!-- <link href="static/bootstrap.min.css" rel="stylesheet"> -->
+
+  <!-- Custom CSS -->
+  <!-- <link href="static/style.css" rel="stylesheet"> -->
+  <link href="static/css2024/footer.css" rel="stylesheet">
+  <link href="static/css2024/header.css" rel="stylesheet">
+  <link href="static/css2024/top.css" rel="stylesheet">
+  <link href="static/css2024/theme.css" rel="stylesheet">
+  <link href="static/css2024/footer-small.css" rel="stylesheet">
+  
+  <!-- loading -->
+  <script src="static/js2024/jquery-3.5.1.min.js"></script>
+  <script src="static/js2024/loading.js"></script>
+  <!-- <link rel="stylesheet" href="static/css/loading.css"> -->
+
+  <!-- <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/font/font.css">
+    <link rel="stylesheet" href="static/css/loading.css">
+
+    <script src="static/js/loading.js"></script>
+    <script src="static/js/fontsize.js"></script> -->
+  <title>IHP | XMU-China - iGEM 2024</title>
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+        <div class="logo">
+            <div class="img1">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/logo.png" alt="Logo">
+            </div>
+            <div class="img2">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/logo-word.png" alt="logo">
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="home">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/home.png" alt="Home Icon">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#team">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/team.png" alt="Team Icon">
+                        <span>TEAM</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="members">Members</a></li>
+                        <li><a href="attributions">Attributions</a></li>
+                        <li><a href="notebook">Notebook</a></li>
+                        <li><a href="experiments">Experiments</a></li>
+                        <li><a href="safety">Safety</a></li>
+                        <li><a href="collaborations">Collaborations</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#project">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/project.png" alt="Project Icon">
+                        <span>PROJECT</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="description">Description</a></li>
+                        <li><a href="design">Design</a></li>
+                        <li><a href="engineering">Engineering Success</a></li>
+                        <li><a href="results">Results</a></li>
+                        <li><a href="poc">Proof of Concept</a></li>
+                        <li><a href="implementation">Proposed Implementation</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#drylab">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/drylab.png" alt="DryLab Icon">
+                        <span>DRYLAB</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="model">Model</a></li>
+                        <li><a href="sop">SOP</a></li>
+                        <li><a href="lca">LCA</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#parts">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/parts.png" alt="Parts Icon">
+                        <span>PARTS</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="parts">Parts</a></li>
+                        <li><a href="contribution">Contribution</a></li>
+                        <li><a href="part-collection">Parts Collection</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#hp">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/hp.png" alt="Hp Icon">
+                        <span>HP</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hp">Human Practices</a></li>
+                        <li><a href="human-practices">Integrated Human Practices</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#award">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/award.png" alt="Award Icon">
+                        <span>AWARD</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="human-practices">Integrated Human Practices</a></li>
+                        <li><a href="model">Model</a></li>
+                        <li><a href="part-collection">Parts Collection</a></li>
+                    </ul>
+                </div>
+            </li> 
+            <li>
+                <div class="dropdown">
+                    <a href="#game">
+                        <img src="https://raw.githubusercontent.com/Yuer-Chi/slaythespire_web/main/static/images/relic.png" alt="">
+                        <span>GAME</span>
+                        
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="description_game">Description</a></li>
+                        <li><a href="#team2">Characters</a></li>
+                        <li><a href="#team3">Encyclopedia</a></li>
+                        <li><a href="#team4">Joke</a></li>
+                        <li><a href="#team5">Achievements</a></li>
+                    </ul>
+                </div>
+            </li>    
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- 
+    <div class="header">
+        <img src="https://static.igem.wiki/teams/5136/layout/head.png" alt="" class="head">
+        <ul>
+            <li><a href=" home"><img src="https://static.igem.wiki/teams/5136/logos/1.png" alt=""><p>HOME</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/2.png" alt=""><p>TEAM</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/3.png" alt=""><p>DRY LAB</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/4.png" alt=""><p>WET LAB</p></a></li>
+            <li><a href="description"><img src="https://static.igem.wiki/teams/5136/logos/5.png" alt=""><p>PROJECT</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/6.png" alt=""><p>AWARDS</p></a></li>
+        </ul>
+    </div> -->
+
+  <!-- Header -->
+  <!--  <header class="bg-hero py-5 mb-5">-->
+  <!--    <div class="container h-100">-->
+  <!--      <div class="row h-100 align-items-center">-->
+  <!--        <div class="col-lg-12">-->
+  <!--          <h1 class="display-4 text-white mt-5 mb-2">IHP</h1>-->
+  <!--	        <p class="lead mb-5 text-white-50">Innovative educational tools and outreach activities have the ability to establish a two-way dialogue
+with new communities by discussing public values and the science behind synthetic biology.</p>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </header>-->
+
+  <!-- Page Content -->
+  <div class="container">
+    
+
+<link rel="stylesheet" href="static/css2024/experiments.css">
+
+<script src="static/js2024/jquery-3.5.1.min.js"></script>
+<script src="static/bootstrap.bundle.min.js"></script>
+
+
+
+
+<div class="container">
+    <div id="loader-wrapper">
+        <div id="loader">
+            <div class="loader-img">
+                <img src="https://static.igem.wiki/teams/5136/load-new.gif">
+            </div>
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!--loading-->
+
+    <!--侧边导航栏-->
+    <div class="myScrollspy">
+        <!-- 文字导航 -->
+        <div class="left-bar">
+            <div class="left-bar-right">
+                <div class="left-bar-right-item">
+                    <a href="#section1" class="sidebar-link" data-section="section1">Overview</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a href="#section2" class="sidebar-link" data-section="section2">Background</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a href="#section3" class="sidebar-link" data-section="section3">Project Design</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a href="#section4" class="sidebar-link" data-section="section4">Project Design Improvement</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a href="#section5" class="sidebar-link" data-section="section5">Feedback</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a href="#section6" class="sidebar-link" data-section="section6">Summary and Prospect</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a href="#section7" class="sidebar-link" data-section="section7">References</a>
+                </div>
+            </div>
+        </div>
+        <!-- 底部插图 -->
+        <div class="left-bar-bg">
+            <img src="https://static.igem.wiki/teams/5136/cbl-fix.png" alt="">
+        </div>
+        <!-- 进度条 -->
+        <div class="scroll-bar"></div>
+    </div>
+
+    <!--以下就是正文段落-->
+    <div class="myPage">
+        <div class="myPage-main">
+            <div style="height: 100px;position:relative;"></div>
+            <div class="myPage-main-content">
+                <!---大标题--->
+                <div class="myPage-headline">
+                    <h1 class="myPage-headline-content">
+                        <span style="color: #8768cd">.</span>
+                        <span style="color: #483b53;font-family: Aaargh;font-size: 50px;">Integrated Human
+                            Practices</span>
+                        <span style="color: #8768cd">.</span>
+                    </h1>
+                </div>
+
+                <!---Overview--->
+                <div class="myPage-paragraph" id="section1">
+                    <h2 class="myPage-paragraph-headline-h2">Overview</h2>
+                    <!-- 记住这里的h2就是标题 -->
+                    <p class="myPage-paragraph-content">
+                        The ongoing <b>climate crisis</b> driven by high levels of carbon dioxide emissions has led to
+                        numerous
+                        disasters and heavy losses worldwide. Climate-related disasters, such as the alarming melting of
+                        glaciers, rising sea levels, and a surge in extreme weather events, have become increasingly
+                        frequent and severe over the years. According to incomplete data statistics, these catastrophic
+                        weather events resulted in significant economic losses and substantial human casualties,
+                        reaching
+                        nearly <b>$143 billion annually</b> and approximately <b>60,951 deaths</b> in the last 20 years
+                        (1). So,
+                        governments act to alleviate the climate crisis, and their efforts focus on two main strategies:
+                        <b>reducing the sources of greenhouse gas (GHG) emissions and improving carbon absorption</b>.
+                        Improving
+                        carbon absorption relies mostly on natural solutions. <b>The best way is to protect vegetation,
+                            especially forests</b>. Therefore, <b>Human Practices</b> are essential to understand the
+                        full scope of the
+                        problem, find effective solutions, and arouse broad public concern.
+                    </p>
+                    <h3 class="myPage-paragraph-headline-h3">1. Investigating the Current Situation and Problems</h3>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp-1/ihp-fig1.png" alt=""
+                            style="max-width: 700px;">
+                        <div class="myPage-paragraph-fig-description"><b>Figure 1 Summary of project design.</b>
+                        </div>
+                    </div>
+                    <p class="myPage-paragraph-content">
+                        After discussions with Assistant Professor <b>Liang Dan</b>, we recognized the vital role of
+                        trees in global climate
+                        regulation. Due to their long growth cycles, trees recover slowly after large-scale
+                        deforestation, which worsens the climate crisis. <b>So, promoting the recycling of renewable
+                            resources, especially paper, is the best way to protect forest resources and mitigate the
+                            climate crisis</b>. After consulting the reference, we know that <b>129.65-million-ton</b>
+                        paper products
+                        were produced in <b>2023</b>, which accounts for <b>39.5%</b> of total timber consumption in
+                        China (2), while the
+                        utilization rate of waste paper has <b>decreased from 72.5% (2014)</b> to <b>52.4% (2023)</b>
+                        (3).
+                        After a field
+                        survey of the paper enterprises, we learned that the inefficiency of deinking and pollution in
+                        the paper recycling process continues to limit paper recycling efforts significantly. For waste
+                        paper entering the recycling process, removing ink from the waste paper is the main intractable
+                        problem, including <b>high cost</b>, <b>environmental pollution</b>, and <b>health risks</b>.
+                        Thus, our project
+                        focuses on developing a <b>green and sustainable method</b> to overcome this problem.
+                    </p>
+                    <h3 class="myPage-paragraph-headline-h3">2. Exploring an Unprecedented Answer</h3>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp-1/ihp-fig2-102.png" alt=""
+                            style="max-width: 600px;">
+                        <div class="myPage-paragraph-fig-description"><b>Figure 2 Summary of project design
+                                improvement.</b>
+                        </div>
+                    </div>
+                    <p class="myPage-paragraph-content">
+                        To make paper recycling more environmentally friendly and cost-effective, we plan to optimize
+                        the industrial waste paper recycling process using synthetic biology techniques. We developed
+                        and refined our project through interviews with experts from both academia and industry. After
+                        consulting with Associate Professor <b>Yang Liulin</b> and <b>Ling Chen</b>, we selected an
+                        efficient deinking enzyme to remove the ink from the
+                        pulp. We
+                        consulted with Ms. <b>Zhuang Xiaoyan</b>, and she pointed out that using an autolysis system in
+                        industrial applications would require large amounts of expensive inducers, making it
+                        cost-prohibitive. She recommended using <b>signal peptides</b> instead, which skip the expensive
+                        protein purification and/or inducers. Based on our enterprise survey, we discovered that
+                        deinking flotation is the preferred method for removing printed ink from paper during the
+                        recycling process. However, this method will cause a loss of fibers, thus lowering the recovery
+                        rate. To address this issue, we consulted Associate Professor <b>Sha Yong</b>, an expert in
+                        petroleum
+                        extraction. He advised us to use a hydrophobic solvent to extract the ink. Therefore,
+                        we chose to use <b>limonene</b>, a hydrophobic solvent that can be biosynthesized, from many
+                        hydrophobic solvents to extract the ink in the pulp after enzymatic deinking. These <b>human
+                            practices have provided theoretical guidance for our project</b>, allowing us to enhance and
+                        refine
+                        our research continually.
+                    </p>
+                    <h3 class="myPage-paragraph-headline-h3">3. Arousing Broad Public Concern</h3>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp-4/ihp-fig12.png" alt=""
+                            style="max-width: 600px;">
+                        <div class="myPage-paragraph-fig-description"><b>Figure 3 Summary of feedback.</b>
+                        </div>
+                    </div>
+                    <p class="myPage-paragraph-content">
+                        Furthermore, we have actively engaged with the public to <b>raise awareness</b> about recycling.
+                        We
+                        conducted surveys to understand people's attitudes toward paper recycling and the use of
+                        recycled paper. We organized a <b>communication seminar</b> to introduce synthetic biology
+                        principles
+                        and techniques to the <b>paper enterprise staff</b>, deepening their understanding of synthetic
+                        biology. We also held <b>educational activities</b> at the <b>Xiamen Science and Technology
+                            Museum</b> and
+                        <b>Yanwu Primary School</b> to popularize the importance of recycling renewable resources. These
+                        efforts are not just about raising awareness, but also about fostering a sense of collective
+                        responsibility. We aim to encourage more people to <b>pay attention to the recycling of
+                            paper</b> and
+                        other renewable resources, working together to <b>mitigate the climate crisis</b>.
+                    </p>
+
+                </div>
+
+                <!---Background--->
+                <div class="myPage-paragraph" id="section2">
+                    <h2 class="myPage-paragraph-headline-h2">Background</h2>
+                    <p class="myPage-paragraph-content">
+                        The climate crisis, a pressing issue of our time, is primarily driven by greenhouse gas
+                        (GHG) emissions, such
+                        as carbon dioxide, trapping heat in the atmosphere. This results in global warming,
+                        leading to
+                        the alarming melting of glaciers, rising sea levels, and a surge in extreme weather events. The
+                        El Niño phenomenon, which has become increasingly erratic and destructive, is a stark example of
+                        these changes. It has caused severe flooding in countries like Peru and Ecuador in South
+                        America, and devastating droughts in places like Australia, Indonesia, and parts of Southeast
+                        Asia. These weather disasters have had profound impacts on agriculture, infrastructure, and
+                        national economies. <b>The global climate crisis is rapidly worsening</b>, with countries facing
+                        escalating crop failures, higher economic costs, and more frequent natural disasters.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        In response to this growing threat, governments worldwide have implemented various policies to
+                        mitigate the effects of climate change. One key initiative is the Paris Agreement, which aims to
+                        keep the increase in global average temperature well below 2 °C above pre-industrial levels.
+                        These efforts focus on two main strategies: <b>reducing the sources of greenhouse gas
+                            <b>(GHG)</b> emissions
+                            and
+                            improving carbon absorption</b>. Reducing emissions focuses on energy conservation and
+                        cutting
+                        emissions, like using energy more efficiently and switching to renewable sources such as solar
+                        and wind power. Improving carbon absorption relies mostly on natural solutions. <b>The best way
+                            is
+                            to protect vegetation, especially forests</b>. Therefore, many countries are now investing
+                        in
+                        reforestation projects and promoting sustainable land use to strengthen the Earth's natural
+                        ability to absorb emissions. However, the growth rate of wood is far from enough to meet the
+                        human demand for wood. <u><b>So, promoting the recycling of renewable resources, especially
+                                paper, is
+                                the best way to protect forest resources and mitigate the climate crisis.</b></u>
+                    </p>
+
+                </div>
+
+                <!---Project Design- Investigating the Current Situation and Problems--->
+                <div class="myPage-paragraph" id="section3">
+                    <h2 class="myPage-paragraph-headline-h2">Project Design</h2>
+
+                    <h3 class="myPage-paragraph-headline-h3">1. Brainstorming</h3>
+                    <p class="myPage-paragraph-content">
+                        Based on a preliminary understanding of the relationship between climate crisis and paper
+                        manufacturing, our team initiated many brainstorming sessions to discuss the project design.
+                        Some of the questions below are critical and should be ascertained first.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (1) What important role do forests play in climate regulation?
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (2) How does paper production impact the climate and environment?
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (3) Can paper be recycled?
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (4) How does paper recycling contribute to addressing the climate crisis?
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (5) What is the current status of paper recycling? What is the main challenge?
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        So, we carried out some <b>Human Practices</b> to find answers to our doubts.
+                    </p>
+
+                    <h3 class="myPage-paragraph-headline-h3">2. Theoretical and Practical Investigation</h3>
+                    <h4 class="myPage-paragraph-headline-h4">2.1 What important role do forests play in climate
+                        regulation?</h4>
+                    <p class="myPage-paragraph-content">
+                        After searching for information from the literature, we found that forests are vital in
+                        regulating the global climate. They absorb large amounts of carbon dioxide, which helps slow
+                        down global warming. Statistics indicate that forests absorb a net <b>7.6 billion metric
+                            tons</b> of
+                        carbon dioxide each year (4). However, in a discussion with Assistant Professor Liang Dan, he
+                        highlighted
+                        that about <b>13 million hectares</b> of forests are lost each year due to human activities,
+                        mainly for
+                        essential uses like paper production. The official data indicated that <b>129.65-million-ton</b>
+                        paper
+                        products were produced in 2023, which accounts for <b>39.5%</b> of total timber consumption in
+                        China
+                        (2), confirming the conclusion from Prof. Liang. This puts immense pressure on forest resources
+                        and worsens ecological imbalances and climate crises. Following his advice, we
+                        focused on investigating the <b>paper industry and paper recycling</b> to alleviate its
+                        dependence on
+                        forests and help mitigate the climate crisis.
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp-1/fig-2-new.png" alt=""
+                            style="max-width: 600px;">
+                        <div class="myPage-paragraph-fig-description"><b>Figure 4 Members of XMU-China discussed with
+                                Assistant Professor Liang Dan.</b>
+                        </div>
+                    </div>
+                    <h4 class="myPage-paragraph-headline-h4">2.2 How does paper production impact the climate and
+                        environment?</h4>
+                    <p class="myPage-paragraph-content">
+                        It is known that paper production and consumption require the felling of many trees. In 2023,
+                        China produced <b>129.65 million tons</b> of paper and paperboard, equivalent to cutting down
+                        over <b>20
+                            billion trees</b> (2). To better understand the impact of paper production on the climate
+                        and
+                        environment, we held discussions with the Zhangzhou Municipal Ecology and Environment Bureau.
+                        The Bureau staff noted that the paper industry not only accelerates the depletion of forest
+                        resources but also contributes significantly to carbon emissions and environmental pollution,
+                        such as black liquor waste and wastewater containing high levels of ammonia, nitrogen, and total
+                        phosphorus. Many paper enterprises have been classified as "pollutant discharging entities."
+                        This made us realize that the paper industry urgently needs to <b>adopt a more sustainable
+                            development approach, reducing its heavy dependence on forest resources and minimizing
+                            environmental pollution to address future climate challenges better</b>.
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp-1/fig-3.png" alt="" style="max-width: 700px;">
+                        <div class="myPage-paragraph-fig-description"><b>Figure 5 Members of XMU-China communicated with
+                                staff of Zhangzhou Municipal Ecology and Environment Bureau.</b>
+                        </div>
+                    </div>
+                    <h4 class="myPage-paragraph-headline-h4">2.3 Can paper be recycled?</h4>
+                    <p class="myPage-paragraph-content">
+                        <b>Of course!</b> We got a clear answer at the Xiamen Low-Value Recyclable Sorting Center. In
+                        cities
+                        like Xiamen and across China, <b>recycling renewable resources like paper is strongly encouraged
+                            to
+                            reduce waste and support sustainable development.</b>
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        The Xiamen Low-Value Recyclable Sorting Center is the first demonstration project for low-value
+                        recyclable materials in China. Ms. Liu, a staff member, explained that the center uses advanced
+                        technology to automatically identify and sort different types of waste, such as paper, plastics,
+                        and metals. This technology speeds up the recycling process and greatly reduces the amount of
+                        waste sent to landfills. The center focuses on recycling low-value materials like used paper,
+                        playing a key role in helping Xiamen become a more resource-efficient city.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        Ms. Liu also mentioned that both China and the international community are working to build a
+                        resource-efficient society. This project is not only part of China's environmental efforts but
+                        also
+                        contributes to global goals for sustainability. These initiatives are improving local waste
+                        management and positively impacting the environment worldwide.
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp-1/fig-4.png" alt="" style="max-width: 700px;">
+                        <div class="myPage-paragraph-fig-description"><b>Figure 6 Members of XMU-China communicated with
+                                the staff of Xiamen Low-Value Recyclable Sorting Center.</b>
+                        </div>
+                    </div>
+                    <h4 class="myPage-paragraph-headline-h4">2.4 How does paper recycling contribute to addressing the
+                        climate crisis?</h4>
+                    <p class="myPage-paragraph-content">
+                        We further conducted a field investigation at Nine Dragons Paper Limited. The staff
+                        explained that <b>recycling waste paper</b> can not only optimize the raw material structure and
+                        reduce environmental pollution but also significantly decrease petrochemical energy
+                        consumption, making it <b>an important way to promote the sustainable development of the
+                            paper industry</b>. According to statistics, producing recycled paper from waste paper
+                        greatly benefits
+                        the earth (5).
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (1) Recycling 1 ton of waste paper could save <b>17</b> trees.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (2) Recycling 1 ton of waste paper could save <b>100</b> tons of water.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (3) Recycling 1 ton of waste paper could save <b>600</b> kWh of electricity.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (4) Recycling 1 ton of waste paper could reduce the emission of <b>11.37</b> tons of carbon
+                        dioxide.
+                    </p>
+                    <h4 class="myPage-paragraph-headline-h4">2.5 What is the current status of paper recycling? What is
+                        the main challenge?</h4>
+
+                    <p class="myPage-paragraph-content">
+                        To better understand this issue, we visited the Fuxing Renewable Resources Recycling Store, a
+                        small recycling center, for an on-site investigation. The owner told us that small recycling
+                        centers like theirs can collect about 600 kg of waste paper daily, while larger recycling
+                        centers can collect up to 2000 kg of waste paper daily. The official data also indicated that
+                        <b>64.35 million tons</b> of paper pulp were produced from waste paper in 2023, accounting for
+                        54% of
+                        the total annual paper pulp production (2), while the utilization rate of waste paper has
+                        decreased
+                        from 72.5% (2014) to 52.4% (2023) (3). Thus, some bottlenecks challenge paper recycling.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        At the paper enterprise, the worker showed us the paper recycling process. For the waste paper
+                        entered into the recycling process, removing ink from the waste paper is the main intractable
+                        problem in the recycling industry. We summarize the issues, include but is not limited to the
+                        following points:
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (1) <b>High cost</b>: Plenty of water and chemical reagents were used to remove the ink from
+                        waste
+                        paper, and the effluent treatment also incurred many processing fees.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (2) <b>Environmental pollution</b>: The improper process mode (incinerate or landfill solid
+                        sludge) may
+                        result in severe pollution.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        (3) <b>Health risk</b>: Using many chemical reagents, such as hydrogen peroxide and sodium
+                        hydroxide,
+                        poses significant health risks to workers in paper enterprises.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        In conclusion, this conventional approach requires a substantial amount of toxic chemicals. It
+                        also releases poisonous organic agents and heavy metals that may cause environmental
+                        contamination.
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp-1/fig-5.png" alt="" style="max-width: 700px;">
+                        <div class="myPage-paragraph-fig-description"><b>Figure 7 Members of XMU-China communicated with
+                                relevant staff of Nine Dragons Paper Limited.</b>
+                        </div>
+                    </div>
+                    <h3 class="myPage-paragraph-headline-h3">3. Summary</h3>
+                    <p class="myPage-paragraph-content">
+                        After the serious Human Practices with the professors, staff in street waste recycling
+                        stations, the government sector, and paper enterprises, we explore the comprehensive information
+                        about paper recycling. As climate change continues to accelerate, the need to preserve our
+                        forests has never been more critical. Deforestation, driven by commercial purposes such as paper
+                        production, exacerbates this issue by the destruction of vital carbon sinks. Thus, Paper
+                        recycling is an effective way to protect the forests and mitigate the climate crisis. However,
+                        the current methods for pulp deinking and heavy metals treatment in recycled paper are
+                        inefficient and highly polluted, which are the key bottlenecks in improving the utilization rate
+                        of recycled pulp and realizing the greening of the paper production process. Therefore, by
+                        focusing on optimizing the pulp deinking and heavy metal treatment processes, we can improve the
+                        utilization rate of recycled pulp, reduce carbon emissions and environmental pollution, and
+                        provide a more effective solution to address environmental and climate crises.
+                    </p>
+                </div>
+
+                <!---Project Design Improvement- Exploring an Unprecedented Answer--->
+                <div class="myPage-paragraph" id="section4">
+
+                    <h2 class="myPage-paragraph-headline-h2">Project Design Improvement</h2>
+                    <!-- <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp-2/ihp-fig6.png" alt=""
+                            style="max-width: 700px;">
+                        <div class="myPage-paragraph-fig-description"><b>Figure 6 Summary of project design
+                                improvement.</b>
+                        </div>
+                    </div> -->
+                    <h3 class="myPage-paragraph-headline-h3">1. Pulp Deinking</h3>
+                    <p class="myPage-paragraph-content">
+                        To better understand the current state of paper recycling, we visited the Xiamen Renewable
+                        Resources Industry Association. The senior staff told us, “Removing the stains, especially ink,
+                        is a serious problem that blocks waste paper recycling for many enterprises.” Standard deinking
+                        methods, such as chemical and physical methods, are highly polluted and inefficient, affecting
+                        the quality and yield of recycled paper. This made us realize that the <b>low efficiency of
+                            deinking is a significant obstacle to waste paper recycling</b>. As a result, we began to
+                        consider
+                        the possibility of using synthetic biology technology to develop a more eco-friendly and
+                        efficient deinking method. By overcoming these challenges and optimizing key steps in the
+                        recycling process, we can promote paper recycling, reduce deforestation, and mitigate the
+                        climate crisis.
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp-2/fig-7.png" alt="" style="max-width: 700px;">
+                        <div class="myPage-paragraph-fig-description"><b>Figure 8 Members of XMU-China visited the
+                                Xiamen
+                                Renewable Resources Industry Association.</b>
+                        </div>
+                    </div>
+                    <p class="myPage-paragraph-content">
+                        <b>How do we optimize the process of removing ink from the pulp?</b>
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        Our survey found that the ink binder is the key factor contributing to the low deinking
+                        efficiency, as it causes the ink to adhere tightly to the pulp. To solve this problem, we
+                        considered using several enzymes as potential deinking agents, such as cellulase and laccase, to
+                        break down the ink binder and remove the ink. So, we consulted Associate Professor Yang Liulin,
+                        a polymer expert, to assess
+                        the
+                        feasibility of this approach. He pointed out that the current enzymatic methods struggle to
+                        break
+                        down the polymer resin in the ink binder efficiently. He further advised us to use cellulase to
+                        degrade the cellulose on the paper surface. Following his advice, we improved the original
+                        design by adding cellulase to the list of deinking agents.
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp-2/fig-8.png" alt="" style="max-width: 700px;">
+                        <div class="myPage-paragraph-fig-description"><b>Figure 9 Associate Professor Yang Liulin from
+                                the
+                                College of Chemistry and Chemical Engineering at Xiamen University.</b>
+                        </div>
+                    </div>
+                    <p class="myPage-paragraph-content">
+                        During the experiment, we found that the deinking effect of using cellulase and laccase was
+                        limited and did not meet our expectations. To find more effective enzymes, we consulted with
+                        Associate Professor Ling Chen. After analyzing the treatment system and the main components of
+                        the ink binder, he suggested using oxidases, such as monooxygenases, to degrade the ink binder
+                        partially. Following his advice, <b>the introduction of monooxygenase significantly improved the
+                            deinking effect</b>. Although it still did not fully meet our expectations, it showed great
+                        potential in pulp deinking. Therefore, we decided to explore different types of monooxygenases
+                        and perform saturation mutagenesis to harvest the most efficient ones and discover more
+                        effective variants.
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp-2/fig-9.png" alt="" style="max-width: 600px;">
+                        <div class="myPage-paragraph-fig-description"><b>Figure 10 Members of XMU-China were talking
+                                with
+                                Associate Professor Ling Chen.</b>
+                        </div>
+                    </div>
+                    <p class="myPage-paragraph-content">
+                        In our initial design, we considered using an autolysis system to release enzymes. To evaluate
+                        the feasibility of this approach, we consulted with Ms. Zhuang Xiaoyan. She pointed out that
+                        using an autolysis system in industrial applications would require large amounts of expensive
+                        inducers, making it cost-prohibitive. She recommended <b>using signal peptides instead</b>,
+                        which
+                        offers three key advantages. <b>Firstly</b>, it can secrete the target protein extracellularly
+                        and
+                        avoid the expensive protein purification procedure, significantly reducing production costs.
+                        <b>Secondly</b>, engineered bacteria can continuously release enzymes rather than undergoing
+                        one-time
+                        lysis, thus improving efficiency. <b>Lastly</b>, unlike the autolysis system, which poses a
+                        biosecurity
+                        risk by potentially releasing plasmids, signal peptides help minimize this risk. Based on her
+                        advice, we tested various signal peptides and selected the most effective one.
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp-2/fig10.png" alt="" style="max-width: 600px;">
+                        <div class="myPage-paragraph-fig-description"><b>Figure 11 Members of XMU-China discussed with
+                                Ms.
+                                Zhuang Xiaoyan.</b>
+                        </div>
+                    </div>
+                    <p class="myPage-paragraph-content">
+                        Based on our survey, we discovered that deinking flotation is the preferred method for removing
+                        printed ink from paper during the recycling process. The process is based on the difference
+                        between hydrophilic and hydrophobic inks, in which the latter can be removed from the pulp
+                        suspension by adhering to bubbles (6). However, this method will cause a loss of fibers, thus
+                        lowering the recovery rate. This problem was also verified by the senior staff in the paper
+                        enterprise. To address this issue, we consulted Associate Professor Sha Yong, an expert in
+                        petroleum extraction. He explained, "Because the scale of ink and pulp fibers is close to each
+                        other,
+                        flotation methods are difficult to separate them effectively. <b>Using a hydrophobic solvent to
+                            extract the ink might be possible</b>." Therefore, we chose to use limonene from
+                        many
+                        hydrophobic solvents to extract the ink in the pulp after enzymatic deinking. It can be
+                        synthesized through synthetic biology and fermentation engineering (7), <b>overcoming the
+                            shortage
+                            of flotation method that carries away a large number of pulp fibers so as to minimize the
+                            loss
+                            of fibers</b>. Upon testing, we observed a significant improvement in the deinking process.
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp-3/fig11.png" alt="" style="max-width: 600px;">
+                        <div class="myPage-paragraph-fig-description"><b>Figure 12 Members of XMU-China were talking
+                                with Associate Professor Sha Yong.</b>
+                        </div>
+                    </div>
+                    <h3 class="myPage-paragraph-headline-h3">2. Safety</h3>
+                    <p class="myPage-paragraph-content">
+                        In previous conversations with staff at Nine Dragons Paper Limited, we learned that
+                        sterilization processes commonly used in enterprises include UV and filtration. However, these
+                        processes do not fully meet biosafety standards, posing a potential risk of engineered bacteria
+                        escaping into the environment, which could threaten ecological health and biodiversity. We
+                        designed a light-triggered kill switch to avoid introducing additional chemicals into
+                        wastewater, such as various inducers. After deinking in a dark circumstance, the inbuilt kill
+                        switch will be turned to the “ON” state via exposure to a specific wavelength's light
+                        illumination to achieve the biocontainment goal. To evaluate the feasibility of the new solution
+                        in the industry, we revisited Nine Dragons Paper Limited at the end of the season.
+                        After introducing the method in detail to the relevant staff, the staff acknowledged its
+                        potential in terms of safety and flexibility. However, there were still concerns: “We need to
+                        ensure the reliability and stability of this solution in practical applications. Additionally,
+                        we must evaluate its impact on existing equipment and processes. If these issues can be
+                        addressed, we believe this proposal is worth pursuing further.”
+                    </p>
+                </div>
+
+
+                <!--Feedback- Arousing Broad Public Concern-->
+                <div class="myPage-paragraph" id="section5">
+                    <h2 class="myPage-paragraph-headline-h2">Feedback</h2>
+
+                    <h3 class="myPage-paragraph-headline-h3">1. Communicate with Paper Mills to Evaluate Strategy</h3>
+                    <p class="myPage-paragraph-content">
+                        At the end of the season, we revisited Nine Dragons Paper Limited to present our
+                        proposal and seek feedback. They evaluated our approach based on compatibility, treatment
+                        effectiveness, cost, and pollution control. During this process, we noticed that the company had
+                        an incomplete understanding of synthetic biology concepts and applications. To address this, we
+                        organized a communication seminar to introduce synthetic biology principles and techniques in
+                        depth. During the communication, we reported our research throughout the season to the company,
+                        in which we constructed an innovative and efficient method for deinking waste paper,
+                        continuously optimized the design and established standard operation procedures to solve
+                        practical problems. <b>This exchange has enhanced the understanding of synthetic biology and
+                            highlighted the advantages of cross-disciplines in solving practical problems.</b>
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp-3/fig13.jpg" alt="" style="max-width: 600px;">
+                        <div class="myPage-paragraph-fig-description"><b>Figure 13 Members of XMU-China revisited
+                                Nine Dragons Paper Limited.</b>
+                        </div>
+                    </div>
+                    <h3 class="myPage-paragraph-headline-h3">2. Raise Public Awareness of Environmental Protection</h3>
+                    <p class="myPage-paragraph-content">
+                        During our discussions with the staff at Xiamen Low-Value Recyclable Sorting Center, we found
+                        that the public needs more awareness about the importance of waste paper sorting. We organized
+                        educational activities at the Xiamen Science and Technology Museum and Yanwu Primary School to
+                        arouse broad public concern. During this science popularization education, we introduced the
+                        development and applications of synthetic biology and highlighted the importance of paper
+                        recycling. <b>We also engaged children with interactive games to spark their interest in
+                            synthetic
+                            biology and encouraged the public to pay more attention to the recycling of paper and other
+                            renewable resources</b>. Additionally, we posted relevant articles on social media to
+                        encourage more
+                        people to participate in environmental protection efforts, contributing to addressing the
+                        climate crisis.
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/ihp-4/ihp-fig14.png" alt=""
+                            style="max-width: 600px;">
+                        <div class="myPage-paragraph-fig-description"><b>Figure 14 Members of XMU-China promoted
+                                synthetic
+                                biology to the public.</b>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Summary and Prospect -->
+                <div class="myPage-paragraph" id="section6">
+                    <h2 class="myPage-paragraph-headline-h2">Summary and Prospect</h2>
+                    <p class="myPage-paragraph-content">
+                        Following Assistant Professor Liang Dan's suggestion, we used the life cycle assessment (LCA)
+                        method to calculate and compare the carbon emissions of enzymatic deinking and chemical deinking
+                        methods in recycled paper production (See more details in our <a
+                            style="font-weight: bolder;text-decoration: none;"
+                            href="lca">LCA</a> page). We want to evaluate the
+                        contribution of our project to
+                        the emission reduction of wastepaper recycling industry processes. The results indicate that the
+                        use of enzymatic methods can reduce carbon emissions by 21.1% and lower the production cost of
+                        recycled paper by 31.9%. Currently, we are in close collaboration with Professor Liang, and we
+                        value his input in discussing the LCA and the contribution of our project to global
+                        environmental sustainability.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        Throughout this process, we explored the root causes of the climate crisis, highlighting the
+                        critical importance of resource recycling and paper recovery. By collecting data and visiting
+                        enterprises, we gained important insights into industrial-scale paper recycling challenges,
+                        shaping our project design. The guidance from our professors during the experiments helped us
+                        refine our techniques, significantly improving our deinking results and bringing us closer to
+                        our objectives. This interdisciplinary collaboration not only sharpened our research skills but
+                        also deepened our understanding of the complexity of these issues. To promote our findings
+                        further, we actively engaged in public education, reaching out to employees, students, and other
+                        groups to spread awareness about synthetic biology and resource recycling. We hope to raise
+                        awareness of the climate crisis and encourage more people to get involved in sustainable
+                        development efforts, ultimately contributing to mitigating the climate crisis.
+                    </p>
+                </div>
+
+                <!-- Reference -->
+                <div class="myPage-paragraph" id="section7">
+                    <h2 class="myPage-paragraph-headline-h2">References</h2>
+                    <ol class="myPage-paragraph-reference">
+                        <li>
+                            R. Newman, I. Noy, The Global Costs of Extreme Weather that are Attributable to Climate
+                            Change. Nature Communications 14, 6103 (2023).
+                        </li>
+                        <li>
+                            China Paper Association, 2023 Annual Report of China's Paper Industry. (2024). (in Chinese)
+                        </li>
+                        <li>
+                            China Paper Association, 2022 Annual Report of China's Paper Industry. (2023). (in Chinese)
+                        </li>
+                        <li>
+                            N.L. Harris, D.A. Gibbs, A. Baccini, et al. Global Maps of Twenty-first Century Forest
+                            Carbon Fluxes. Nature Climate Change 11, 234-240 (2021).
+                        </li>
+                        <li>
+                            Y. Zhi, Y. Xiao, Z. Chen, Importing Recycled Waste Paper: A "yin-yang" Discussion on Saving
+                            Forest Resources and Pollution from Foreign Garbage. China Weekly 1, 46-53 (2016).
+                        </li>
+                        <li>
+                            S. Jamnicki Hanzer, B. Lozo, L. Barušić, Producing Direct Food Packaging Using Deinked
+                            Office Paper Grades—Deinkability and Food Contact Suitability Evaluation. Sustainability 13,
+                            12550 (2021).
+                        </li>
+                        <li>
+                            X. Kong et al., Efficient Synthesis of Limonene in Saccharomyces Cerevisiae Using
+                            Combinatorial Metabolic Engineering Strategies. Journal of Agricultural and Food Chemistry
+                            71, 7752-7764 (2023).
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="margin-bottom: 100px;"></div>
+</div>
+
+
+  </div>
+
+  <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+  
+    <!-- topbutton -->
+    <div class="menu">
+
+        <div class="toggle">
+            <i class="fa fa-angle-double-up"></i>
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-0.png" alt="" style="z-index: 100;">
+        </div>
+        <li style="--i:0">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:1">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:2">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:3">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:4">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:6">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:7">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+    </div>
+    
+    <div id="myFooter">
+        <!--  内容部分-->
+        <div class="footer-xiaohui">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-xmulogo.png" alt="">
+            <div class="footer-xiaoming">
+                Xiamen University
+            </div>
+        </div>
+        <div class="footer-didian">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-position.png" alt="">
+            <div class="footer-didianming">
+                Xiamen University, Fujian, China<br>
+                No.422, Siming South Road, Fujian, P.R.China 361005
+            </div>
+        </div>
+        <div class="footer-duihui">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-teamlogo-2024.png" alt="">
+        </div>
+        <div class="footer-follow">
+            <div class="footer-followus">
+                Follow Us
+            </div>
+            <div class="footer-wechat">
+                <a href="https://static.igem.wiki/teams/5136/header-footer-img/wechat.png">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wechat.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-facebook">
+                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FIGEM-XMU-China-1067638406629389">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-f.png" alt=""
+                     style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-ins">
+                <a href="https://www.instagram.com/xmu_china_igem">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-o.png" alt=""
+                    style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-weibo">
+                <a href="https://weibo.com/u/7482868083">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wb.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-twitter">
+                <a href="https://twitter.com/XMU_igem">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-x.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+        </div>
+        <!-- <div class="footer-bar"></div> -->
+        <div class="footer-contact">
+            <div class="footer-contactus">
+                Contact Us
+            </div>
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-mail.png" alt="">
+            <div class="footer-mail">
+                igem_xmu@163.com
+            </div>
+        </div>
+    </div>
+    
+
+  <!-- Bootstrap Bundle with Popper -->
+  
+  <script src="static/bootstrap.bundle.min.js"></script>
+  <script src="static/js2024/top.js"></script>
+  <script src="static/js2024/scroll.js"></script>
+</body>
+
+</html>

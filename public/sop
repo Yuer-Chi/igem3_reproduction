@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://static.igem.wiki/teams/5136/favicon.png" />
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+  <!-- Bootstrap CSS -->
+  <!-- <link href="static/bootstrap.min.css" rel="stylesheet"> -->
+
+  <!-- Custom CSS -->
+  <!-- <link href="static/style.css" rel="stylesheet"> -->
+  <link href="static/css2024/footer.css" rel="stylesheet">
+  <link href="static/css2024/header.css" rel="stylesheet">
+  <link href="static/css2024/top.css" rel="stylesheet">
+  <link href="static/css2024/theme.css" rel="stylesheet">
+  <link href="static/css2024/footer-small.css" rel="stylesheet">
+  
+  <!-- loading -->
+  <script src="static/js2024/jquery-3.5.1.min.js"></script>
+  <script src="static/js2024/loading.js"></script>
+  <!-- <link rel="stylesheet" href="static/css/loading.css"> -->
+
+  <!-- <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/font/font.css">
+    <link rel="stylesheet" href="static/css/loading.css">
+
+    <script src="static/js/loading.js"></script>
+    <script src="static/js/fontsize.js"></script> -->
+  <title>SOP | XMU-China - iGEM 2024</title>
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+        <div class="logo">
+            <div class="img1">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/logo.png" alt="Logo">
+            </div>
+            <div class="img2">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/logo-word.png" alt="logo">
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="home">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/home.png" alt="Home Icon">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#team">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/team.png" alt="Team Icon">
+                        <span>TEAM</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="members">Members</a></li>
+                        <li><a href="attributions">Attributions</a></li>
+                        <li><a href="notebook">Notebook</a></li>
+                        <li><a href="experiments">Experiments</a></li>
+                        <li><a href="safety">Safety</a></li>
+                        <li><a href="collaborations">Collaborations</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#project">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/project.png" alt="Project Icon">
+                        <span>PROJECT</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="description">Description</a></li>
+                        <li><a href="design">Design</a></li>
+                        <li><a href="engineering">Engineering Success</a></li>
+                        <li><a href="results">Results</a></li>
+                        <li><a href="poc">Proof of Concept</a></li>
+                        <li><a href="implementation">Proposed Implementation</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#drylab">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/drylab.png" alt="DryLab Icon">
+                        <span>DRYLAB</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="model">Model</a></li>
+                        <li><a href="sop">SOP</a></li>
+                        <li><a href="lca">LCA</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#parts">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/parts.png" alt="Parts Icon">
+                        <span>PARTS</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="parts">Parts</a></li>
+                        <li><a href="contribution">Contribution</a></li>
+                        <li><a href="part-collection">Parts Collection</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#hp">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/hp.png" alt="Hp Icon">
+                        <span>HP</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hp">Human Practices</a></li>
+                        <li><a href="human-practices">Integrated Human Practices</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#award">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/award.png" alt="Award Icon">
+                        <span>AWARD</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="human-practices">Integrated Human Practices</a></li>
+                        <li><a href="model">Model</a></li>
+                        <li><a href="part-collection">Parts Collection</a></li>
+                    </ul>
+                </div>
+            </li> 
+            <li>
+                <div class="dropdown">
+                    <a href="#game">
+                        <img src="https://raw.githubusercontent.com/Yuer-Chi/slaythespire_web/main/static/images/relic.png" alt="">
+                        <span>GAME</span>
+                        
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="description_game">Description</a></li>
+                        <li><a href="#team2">Characters</a></li>
+                        <li><a href="#team3">Encyclopedia</a></li>
+                        <li><a href="#team4">Joke</a></li>
+                        <li><a href="#team5">Achievements</a></li>
+                    </ul>
+                </div>
+            </li>    
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- 
+    <div class="header">
+        <img src="https://static.igem.wiki/teams/5136/layout/head.png" alt="" class="head">
+        <ul>
+            <li><a href=" home"><img src="https://static.igem.wiki/teams/5136/logos/1.png" alt=""><p>HOME</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/2.png" alt=""><p>TEAM</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/3.png" alt=""><p>DRY LAB</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/4.png" alt=""><p>WET LAB</p></a></li>
+            <li><a href="description"><img src="https://static.igem.wiki/teams/5136/logos/5.png" alt=""><p>PROJECT</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/6.png" alt=""><p>AWARDS</p></a></li>
+        </ul>
+    </div> -->
+
+  <!-- Header -->
+  <!--  <header class="bg-hero py-5 mb-5">-->
+  <!--    <div class="container h-100">-->
+  <!--      <div class="row h-100 align-items-center">-->
+  <!--        <div class="col-lg-12">-->
+  <!--          <h1 class="display-4 text-white mt-5 mb-2">SOP</h1>-->
+  <!--	        <p class="lead mb-5 text-white-50">Innovative educational tools and outreach activities have the ability to establish a two-way dialogue
+with new communities by discussing public values and the science behind synthetic biology.</p>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </header>-->
+
+  <!-- Page Content -->
+  <div class="container">
+    
+
+<link rel="stylesheet" href="static/css2024/experiments.css">
+
+<script src="static/js2024/jquery-3.5.1.min.js"></script>
+<script src="static/bootstrap.bundle.min.js"></script>
+
+
+
+
+<div class="container">
+  <div id="loader-wrapper">
+    <div id="loader">
+      <div class="loader-img">
+        <img src="https://static.igem.wiki/teams/5136/load-new.gif">
+      </div>
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <!--loading-->
+
+  <!--侧边导航栏-->
+  <div class="myScrollspy">
+    <!-- 文字导航 -->
+    <div class="left-bar">
+      <div class="left-bar-right">
+        <div class="left-bar-right-item">
+          <a href="#section1" class="sidebar-link" data-section="section1">Overview</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section2" class="sidebar-link" data-section="section2">Description</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section3" class="sidebar-link" data-section="section3">SOP for Industrial Scale (Future Plan)</a>
+        </div>
+      </div>
+    </div>
+    <!-- 底部插图 -->
+    <div class="left-bar-bg">
+      <img src="https://static.igem.wiki/teams/5136/cbl-fix.png" alt="">
+    </div>
+    <!-- 进度条 -->
+    <div class="scroll-bar"></div>
+  </div>
+
+  <!--以下就是正文段落-->
+  <div class="myPage">
+    <div class="myPage-main">
+      <div style="height: 100px;position:relative;"></div>
+      <div class="myPage-main-content">
+        <!---大标题--->
+        <div class="myPage-headline">
+          <h1 class="myPage-headline-content">
+            <span style="color: #8768cd">.</span>
+            <span style="color: #483b53;font-family: Aaargh;">Standard Operating Procedure</span>
+            <span style="color: #8768cd">.</span>
+          </h1>
+        </div>
+
+        <!---文字段落--->
+        <div class="myPage-paragraph" id="section1">
+          <h2 class="myPage-paragraph-headline-h2">Overview</h2>
+          <p class="myPage-paragraph-content">
+            Our project, REPARO, is dedicated to addressing the challenges in the paper recycling process, including high costs, environmental pollution, and health risks. We have proposed and developed a standard operating procedure (SOP) for the technological process of signal peptide-mediated enzyme catalytic deinking. This innovative approach not only reduces carbon emissions but also mitigates the climate crisis. The potential impact of our work on reducing carbon emissions is significant, and we have also designed the SOP for the industrial scale, ensuring its widespread application.
+          </p>
+        </div>
+
+        <div class="myPage-paragraph" id="section2">
+          <h2 class="myPage-paragraph-headline-h2">Description</h2>
+          <p class="myPage-paragraph-content">
+            Pulp deinking is the most important and intractable procedure in the production of recycled paper. The waste paper recycling industry has used various hazardous chemicals for deinking, including NaOH, hydrogen peroxide, and sodium hypochlorite. This process not only results in an alkaline circumstance that will diminish the quality of the recycled pulp fibers and cause pollution to the eco-environment but also poses significant health risks to workers in the factory. Studies have shown that deinking using enzymes, the biological catalysts, can not only improve the strength of paper but also reduce the pollution of wastewater. However, this field of research currently lacks a set of scientifically formalized.
+          </p>
+          <p class="myPage-paragraph-content">
+            Our approach is not just theoretical. We have drawn from industrial processes to create a set of practical and operable pulp deinking process designs. These designs have been extensively explored, improved, and optimized, ensuring their practicality and applicability. We believe that this document can serve as a standard operating procedure for future teams interested in researching bio-enzymatic deinking, providing a reliable reference for their work.
+          </p>
+
+          <div id="accordion-Det" class="accordion">
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading1">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse1" aria-expanded="true"
+                    aria-controls="collapse1">
+                    Materials & Apparatus
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>- Paper<br>
+                    - Blender<br>
+                    - Drying Oven<br>
+                    - Stirrer<br>
+                    - Gel imaging system<br>
+                    - Deink-enzymes<br>
+                    - Büchner funnel and Büchne Flask<br>
+                    - Vacuum pumps
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading2">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="false"
+                    aria-controls="collapse2">
+                    Protocol
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>(1) Weighing: Weigh the paper and purified water to prepare 1% (w/v) pulp.<br>
+                    (2) Pulping: Use a blender to grind the sorted waste paper into fine pulp.<br>
+                    (3) Reaction: Sodium silicate is added to the pulp at a concentration of 2% (w/w), and the enzyme is added to a final concentration of 0.1 μM. The reaction is carried out for 30 min at the optimum temperature of the enzyme. <br>
+                    <span class="exp-note">
+                      <i>Note: The function of sodium silicate is to prevent the separated ink particles from being adsorbed to the pulp fiber again. A too-high or too-low concentration of enzyme will reduce the efficiency of deinking.</i>
+                    </span>
+                    (4) Separation: At the end of the reaction, add limonene to the system to a final concentration of 2% (v/v), shake gently, and let stand for 1 minute. Separate the upper ink layer from the lower pulp layer by adsorption or partitioning.<br>
+                    <span class="exp-note">
+                      <i>Note: At this time, it can be observed that the experimental group should have more ink droplets separated from the pulp upward during shaking.</i>
+                    </span>
+                    (5) De-watering: Filter the remaining pulp using a Büchner funnel, and dry the coarse paper sheet formed by filtering in an oven at 65 °C.<br>
+                    (6) Measurement: A scanning or photographing instrument is used to take pictures of the paper and measure its grayscale with our <a style="font-weight: bolder;text-decoration: none;"
+            href="https://gitlab.igem.org/2024/software-tools/xmu-china">Image Gray Read Tool</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/sop/fig1-t.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 1 Diagram of pulp deinking standard operating procedure in lab.</b>
+            </div>
+          </div>
+        </div>
+
+        <div class="myPage-paragraph" id="section3">
+          <h2 class="myPage-paragraph-headline-h2">SOP for Industrial Scale (Future Plan)</h2>
+          <p class="myPage-paragraph-content">
+            In the future, we envision the widespread application of our deinking process on an industrial scale. To prepare for this, we have designed a comprehensive SOP for the industrial scale. This future plan is a crucial part of our project, and we are eagerly anticipating its implementation.
+          </p>
+
+          <div id="accordion-Det" class="accordion">
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading1">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse3" aria-expanded="true"
+                    aria-controls="collapse3">
+                    Materials & Apparatus
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>- Paper<br>
+                    - Deink-enzymes<br>
+                    - Pulper<br>
+                    - Fourdrinier Machine<br>
+                    - Dry Machine
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading2">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" href="#collapse4" aria-expanded="false"
+                    aria-controls="collapse4">
+                    Protocol
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse4" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>(1) Weighing: Weigh the paper and water to prepare 1% (w/v) pulp.<br>
+                    (2) Pulping: Use a pulper to grind the sorted waste paper into fine pulp.<br>
+                    (3) Reaction: Sodium silicate is added to the pulp at a concentration of 2% (w/w), and the enzyme is added to a final concentration of 0.1 μM. The reaction was carried out for 30 min at the optimum enzyme temperature.<br>
+                    (4) Separation: Add limonene to the system to a final concentration at the end of the reaction. Separate the upper ink layer from the lower pulp layer.<br>
+                    (5) De-watering: Use a fourdrinier machine to make pulp into paper. Use a dry machine for paper drying.<br>
+                    (6) QC: Use a QCS (quality control system) to measure the final quality of the paper produced.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/sop/fig2-t-new.png" alt="" style="max-width: 80%;">
+            <div class="myPage-paragraph-fig-description"><b>Figure 2 Diagram of pulp deinking standard operating procedure in industry.</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-bottom: 100px;"></div>
+  <script>
+    // jQuery to handle the collapse toggle and style changes
+    $(document).ready(function () {
+      $('#accordion-Det .panel-title a').click(function () {
+        var targetId = $(this).attr('href');
+        // Toggle the collapse
+        $(targetId).collapse('toggle');
+
+        // Event for collapse show
+        $(targetId).on('shown.bs.collapse', function () {
+          $(this).prev().find('a').removeClass('collapsed').addClass('expanded');
+        });
+
+        // Event for collapse hide
+        $(targetId).on('hidden.bs.collapse', function () {
+          $(this).prev().find('a').removeClass('expanded').addClass('collapsed');
+        });
+
+        return false; // Prevent the default behavior of the anchor
+      });
+    });
+  </script>
+
+</div>
+
+
+  </div>
+
+  <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+  
+    <!-- topbutton -->
+    <div class="menu">
+
+        <div class="toggle">
+            <i class="fa fa-angle-double-up"></i>
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-0.png" alt="" style="z-index: 100;">
+        </div>
+        <li style="--i:0">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:1">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:2">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:3">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:4">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:6">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:7">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+    </div>
+    
+    <div id="myFooter">
+        <!--  内容部分-->
+        <div class="footer-xiaohui">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-xmulogo.png" alt="">
+            <div class="footer-xiaoming">
+                Xiamen University
+            </div>
+        </div>
+        <div class="footer-didian">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-position.png" alt="">
+            <div class="footer-didianming">
+                Xiamen University, Fujian, China<br>
+                No.422, Siming South Road, Fujian, P.R.China 361005
+            </div>
+        </div>
+        <div class="footer-duihui">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-teamlogo-2024.png" alt="">
+        </div>
+        <div class="footer-follow">
+            <div class="footer-followus">
+                Follow Us
+            </div>
+            <div class="footer-wechat">
+                <a href="https://static.igem.wiki/teams/5136/header-footer-img/wechat.png">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wechat.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-facebook">
+                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FIGEM-XMU-China-1067638406629389">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-f.png" alt=""
+                     style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-ins">
+                <a href="https://www.instagram.com/xmu_china_igem">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-o.png" alt=""
+                    style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-weibo">
+                <a href="https://weibo.com/u/7482868083">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wb.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-twitter">
+                <a href="https://twitter.com/XMU_igem">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-x.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+        </div>
+        <!-- <div class="footer-bar"></div> -->
+        <div class="footer-contact">
+            <div class="footer-contactus">
+                Contact Us
+            </div>
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-mail.png" alt="">
+            <div class="footer-mail">
+                igem_xmu@163.com
+            </div>
+        </div>
+    </div>
+    
+
+  <!-- Bootstrap Bundle with Popper -->
+  
+  <script src="static/bootstrap.bundle.min.js"></script>
+  <script src="static/js2024/top.js"></script>
+  <script src="static/js2024/scroll.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+/* 清除浏览器默认格式 */
+* {
+    margin: 0;
+    padding: 0;
+    /* 内减模式 */
+    box-sizing: border-box;
+    font-family: MyFont,Lora,Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* 清除浮动 */
+  .clearfix::before,
+  .clearfix::after {
+    content: '';
+    display: table;
+  }
+
+  .clearfix::after {
+    clear: both;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vw 1vw;
+    background-color: #4a3c61;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    height: 15vh;
+    position: fixed; 
+    top: 0; /* Ensure it sticks to the top */
+    left: 0;
+    width: 100%; /* Ensure it spans the full width of the viewport */
+    z-index: 1000; /* Optional: ensures the navbar stays on top of other content */
+  }
+
+.navbar .logo .img1 img{
+    margin-top: 3vh;
+    margin-left: 1vw;
+    height: 10vh;
+}
+
+.navbar .logo .img2 img{
+    margin-top: -2.5vh;
+    margin-left: 0.7vw;
+    height: 7vh;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: right;
+    margin-right: 7.2%;
+}
+
+.nav-links li {
+    margin-left: 2vw;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.3vw 0.3vw;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+}
+
+.nav-links img {
+    width: 5.5vw;
+    height: 8vh;
+}
+
+.nav-links span {
+    font-size: 1.5vh;
+    color: #fad395;
+    font-weight: bold;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #6a5e93;
+  width: 230%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1000;
+  padding: 5px 0;
+  border-radius: 10px;
+  
+}
+
+.dropdown-menu li {
+  list-style: none;
+  padding: 8px 12px;
+  text-align: center;
+  margin-left: 0;
+}
+
+.dropdown-menu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  color: #fad395;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}

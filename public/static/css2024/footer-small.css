@@ -1,0 +1,221 @@
+#myFooter {
+    height: 30vh;
+    z-index: 500;
+    position: relative;
+    left: 0;
+    background: linear-gradient(to right, #b3a7cd, #6a5e92, #3d1c71);
+    width: 100vw;
+    box-shadow: 0px -3px 10px;
+}
+
+/* 清除浏览器默认格式 */
+* {
+    margin: 0;
+    padding: 0;
+    /* 内减模式 */
+    box-sizing: border-box;
+    font-family: MyFont,Lora,Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* 清除浮动 */
+  .clearfix::before,
+  .clearfix::after {
+    content: '';
+    display: table;
+  }
+
+  .clearfix::after {
+    clear: both;
+  }
+.footer-xiaohui {
+    position: absolute;
+    left: 3%;
+    width: 45%;
+    height: 85%;
+    top: 5%;
+}
+
+
+.footer-xiaohui img {
+    position: absolute;
+    height: 45%;
+}
+
+.footer-xiaoming {
+    position: absolute;
+    left: 18%;
+    top: 15%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fad395;
+    font-family: Fashion;
+}
+
+.footer-didian {
+    position: absolute;
+    left: 3%;
+    width: 45%;
+    height: 35%;
+    top: 55%;
+}
+
+.footer-didian img {
+    position: absolute;
+    height: 100%;
+}
+
+.footer-didianming {
+    position: absolute;
+    left: 18%;
+    top: 15%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fad395;
+}
+
+.footer-duihui {
+    position: absolute;
+    left: 25%;
+    width: 45%;
+    height: 85%;
+    top: 7%;
+}
+
+.footer-duihui img {
+    position: absolute;
+    height: 45%;
+}
+
+.footer-follow {
+    position: absolute;
+    left: 40%;
+    width: 25%;
+    height: 85%;
+    top: 3%;
+    justify-content: center;
+}
+
+.footer-followus {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #fad395;
+}
+
+.footer-wechat {
+    position: absolute;
+    left: 10%;
+    height: 30%;
+    width: 17%;
+    top: 20%;
+}
+
+.footer-wechat:hover {
+    transform: scale(1.2);
+}
+
+.footer-facebook {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30%;
+    width: 17%;
+    top: 20%;
+}
+
+.footer-facebook:hover {
+    transform: translateX(-50%) scale(1.2);
+}
+
+.footer-ins {
+    position: absolute;
+    right: 10%;
+    height: 30%;
+    width: 17%;
+    top: 20%;
+}
+
+.footer-ins:hover {
+    transform: scale(1.2);
+}
+
+.footer-weibo {
+    position: absolute;
+    left: 25%;
+    height: 30%;
+    width: 17%;
+    top: 60%;
+}
+
+.footer-weibo:hover {
+    transform: scale(1.2);
+}
+
+.footer-twitter {
+    position: absolute;
+    right: 25%;
+    height: 30%;
+    width: 17%;
+    top: 60%;
+}
+
+.footer-twitter:hover {
+    transform: scale(1.2);
+}
+
+.footer-bar {
+    position: absolute;
+    top: 13%;
+    bottom: 13%;
+    left: 67%;
+    width: 0.5%;
+    background-color: #66805e;
+}
+
+.footer-contact {
+    position: absolute;
+    right: 12%;
+    width: 25%;
+    height: 85%;
+    top: 3%;
+    justify-content: center;
+}
+
+.footer-contact img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25%;
+    height: 45%;
+}
+
+.footer-contactus {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #fad395;
+    font-family: Fashion;
+}
+
+.footer-mail {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: #fad395;
+    font-family: Fashion;
+}

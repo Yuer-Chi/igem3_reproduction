@@ -1,0 +1,1000 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://static.igem.wiki/teams/5136/favicon.png" />
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+  <!-- Bootstrap CSS -->
+  <!-- <link href="static/bootstrap.min.css" rel="stylesheet"> -->
+
+  <!-- Custom CSS -->
+  <!-- <link href="static/style.css" rel="stylesheet"> -->
+  <link href="static/css2024/footer.css" rel="stylesheet">
+  <link href="static/css2024/header.css" rel="stylesheet">
+  <link href="static/css2024/top.css" rel="stylesheet">
+  <link href="static/css2024/theme.css" rel="stylesheet">
+  <link href="static/css2024/footer-small.css" rel="stylesheet">
+  
+  <!-- loading -->
+  <script src="static/js2024/jquery-3.5.1.min.js"></script>
+  <script src="static/js2024/loading.js"></script>
+  <!-- <link rel="stylesheet" href="static/css/loading.css"> -->
+
+  <!-- <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/font/font.css">
+    <link rel="stylesheet" href="static/css/loading.css">
+
+    <script src="static/js/loading.js"></script>
+    <script src="static/js/fontsize.js"></script> -->
+  <title>Model | XMU-China - iGEM 2024</title>
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+        <div class="logo">
+            <div class="img1">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/logo.png" alt="Logo">
+            </div>
+            <div class="img2">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/logo-word.png" alt="logo">
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="home">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/home.png" alt="Home Icon">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#team">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/team.png" alt="Team Icon">
+                        <span>TEAM</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="members">Members</a></li>
+                        <li><a href="attributions">Attributions</a></li>
+                        <li><a href="notebook">Notebook</a></li>
+                        <li><a href="experiments">Experiments</a></li>
+                        <li><a href="safety">Safety</a></li>
+                        <li><a href="collaborations">Collaborations</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#project">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/project.png" alt="Project Icon">
+                        <span>PROJECT</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="description">Description</a></li>
+                        <li><a href="design">Design</a></li>
+                        <li><a href="engineering">Engineering Success</a></li>
+                        <li><a href="results">Results</a></li>
+                        <li><a href="poc">Proof of Concept</a></li>
+                        <li><a href="implementation">Proposed Implementation</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#drylab">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/drylab.png" alt="DryLab Icon">
+                        <span>DRYLAB</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="model">Model</a></li>
+                        <li><a href="sop">SOP</a></li>
+                        <li><a href="lca">LCA</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#parts">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/parts.png" alt="Parts Icon">
+                        <span>PARTS</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="parts">Parts</a></li>
+                        <li><a href="contribution">Contribution</a></li>
+                        <li><a href="part-collection">Parts Collection</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#hp">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/hp.png" alt="Hp Icon">
+                        <span>HP</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hp">Human Practices</a></li>
+                        <li><a href="human-practices">Integrated Human Practices</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#award">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/award.png" alt="Award Icon">
+                        <span>AWARD</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="human-practices">Integrated Human Practices</a></li>
+                        <li><a href="model">Model</a></li>
+                        <li><a href="part-collection">Parts Collection</a></li>
+                    </ul>
+                </div>
+            </li> 
+            <li>
+                <div class="dropdown">
+                    <a href="#game">
+                        <img src="https://raw.githubusercontent.com/Yuer-Chi/slaythespire_web/main/static/images/relic.png" alt="">
+                        <span>GAME</span>
+                        
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="description_game">Description</a></li>
+                        <li><a href="#team2">Characters</a></li>
+                        <li><a href="#team3">Encyclopedia</a></li>
+                        <li><a href="#team4">Joke</a></li>
+                        <li><a href="#team5">Achievements</a></li>
+                    </ul>
+                </div>
+            </li>    
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- 
+    <div class="header">
+        <img src="https://static.igem.wiki/teams/5136/layout/head.png" alt="" class="head">
+        <ul>
+            <li><a href=" home"><img src="https://static.igem.wiki/teams/5136/logos/1.png" alt=""><p>HOME</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/2.png" alt=""><p>TEAM</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/3.png" alt=""><p>DRY LAB</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/4.png" alt=""><p>WET LAB</p></a></li>
+            <li><a href="description"><img src="https://static.igem.wiki/teams/5136/logos/5.png" alt=""><p>PROJECT</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/6.png" alt=""><p>AWARDS</p></a></li>
+        </ul>
+    </div> -->
+
+  <!-- Header -->
+  <!--  <header class="bg-hero py-5 mb-5">-->
+  <!--    <div class="container h-100">-->
+  <!--      <div class="row h-100 align-items-center">-->
+  <!--        <div class="col-lg-12">-->
+  <!--          <h1 class="display-4 text-white mt-5 mb-2">Model</h1>-->
+  <!--	        <p class="lead mb-5 text-white-50">Explain your model's assumptions, data, parameters, and results in a way that anyone could understand.</p>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </header>-->
+
+  <!-- Page Content -->
+  <div class="container">
+    
+
+<link rel="stylesheet" href="static/css2024/experiments.css">
+
+<script src="static/js2024/jquery-3.5.1.min.js"></script>
+<script src="static/bootstrap.bundle.min.js"></script>
+
+<script src="https://2021.igem.org/common/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+
+<script type="text/x-mathjax-config" async>
+  MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+
+<style>
+.MathJax nobr>span.math>span{border-left-width:0 !important};
+</style>
+
+
+
+<div id="loader-wrapper">
+  <div id="loader">
+    <div class="loader-img">
+      <img src="https://static.igem.wiki/teams/5136/load-new.gif">
+    </div>
+  </div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
+<div class="container">
+
+  <!--loading-->
+
+  <!--侧边导航栏-->
+  <div class="myScrollspy">
+    <!-- 文字导航 -->
+    <div class="left-bar">
+      <div class="left-bar-right">
+        
+        <div class="left-bar-right-item">
+          <a href="#section1" class="sidebar-link" data-section="section1">Introduction</a>
+        </div>
+        
+        <div class="left-bar-right-item">
+          <a href="#section2" class="sidebar-link" data-section="section2">Derivation</a>
+        </div>
+        
+        <div class="left-bar-right-item">
+          <a href="#section3" class="sidebar-link" data-section="section3">Implementation</a>
+        </div>
+
+        <div class="left-bar-right-item">
+          <a href="#section4" class="sidebar-link" data-section="section3">Discussion</a>
+        </div>
+
+        <div class="left-bar-right-item">
+          <a href="#section5" class="sidebar-link" data-section="section4">References</a>
+        </div>
+
+      </div>
+    </div>
+    <!-- 底部插图 -->
+    <div class="left-bar-bg">
+      <img src="https://static.igem.wiki/teams/5136/cbl-fix.png" alt="">
+    </div>
+    <!-- 进度条 -->
+    <div class="scroll-bar"></div>
+  </div>
+
+  <!--以下就是正文段落-->
+  <div class="myPage">
+    <div class="myPage-main">
+      <div style="height: 100px;position:relative;"></div>
+      <div class="myPage-main-content">
+        <!---大标题--->
+        <div class="myPage-headline">
+          <h1 class="myPage-headline-content">
+            <span style="color: #8768cd">.</span>
+            <span style="color: #483b53;font-family: Aaargh;">Model</span>
+            <span style="color: #8768cd">.</span>
+          </h1>
+        </div>
+
+        <!---Background--->
+        
+        
+        <div class="myPage-paragraph" id="section1">
+          <h2 class="myPage-paragraph-headline-h2">Introduction</h2>
+          <!-- 记住这里的h2就是标题 -->
+          
+          <p class="myPage-paragraph-content"></p>
+
+          <p class="myPage-paragraph-content">
+            Secretion of recombinant protein from engineered bacteria ties to two components: 
+            one is the <b>secretion machinery</b> of engineered bacteria, 
+            and the other is the <b>signal peptide</b> or signal sequence. 
+            The sequence of recombinant protein is obtained by fusing the sequence of protein of interest (POI) with the signal peptide, 
+            in most cases, at the N-terminal of POI. 
+            The type of signal peptide is accordance with the specific secretion pathway. 
+            In prokaryotic cells, for many application systems, 
+            there are two common secretion mechanisms of recombinant proteins: 
+            Type I secretion system (T1SS) and Type II secretion system (T2SS). 
+            More specially, T2SS contains more sub-type mechanisms, 
+            including the Sec (or SecB) pathway, 
+            SRP (signal recognition particle) pathway, 
+            and Tat (twin-arginine translocation) pathway. 
+          </p>
+
+
+          <p class="myPage-paragraph-content">
+            This year, XMU-China tested the performance of multiple signal peptides in the continued growth state of cells, 
+            resulting in distinct secretion kinetics compared to traditional logarithmic-shaped curves gained in pulse-chase experiments, 
+            the <b>exponential-shaped curve</b> indeed (Figure 1A). 
+            Some iGEM teams (Stuttgart 2017, IIT_Kanpur 2018) endeavor to build the kinetic landscape for the secretion in continued growth situations with the empirical formula, 
+            showing less understanding of the biological insight for the complexity of translocation. 
+            Not to mention that those teams failed in the reconstruction of logarithmic secretion kinetics. 
+            Now, it is time to develop a new mathematical model to <b>describe and analyze the secretion kinetics under the practical way in real-world engineering</b>.
+          </p>
+
+
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/model/figure-1.png" alt="" style="max-width: 800px;" >
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 1 Comparative tests of performance of multiple signal peptides.</b>
+              (<b>A</b>) Secretion kinetics of different groups. 
+              (<b>B</b>) Secretion efficiencies of different groups were calculated as time progressed. 
+              (<b>C</b>) The OD<sub>600</sub>, fluorescence intensity of supernatant and normalized culture fluorescence intensity of different groups after induction for 10 hours.
+            </div>
+          </div>
+
+          <p class="myPage-paragraph-content">
+            The original intention of this model was to <b>mathematically describe the relationship between the amount of secreted recombinant protein and time in the natural state of our engineered bacteria</b> 
+            and explore the secretion efficiency of different signal peptides that we used, 
+            thus choosing the best combination of signal peptide and Anderson promoter to <b>optimize the economic cost of our deinking process</b>. 
+            Such a modeling process was of great significance for us in implementing REPARO and part collection.
+          </p>
+
+
+          
+        </div>
+
+
+
+
+
+        <!---Solutions--->
+        <div class="myPage-paragraph" id="section2">
+          <h2 class="myPage-paragraph-headline-h2">Derivation</h2>
+
+
+          <p class="myPage-paragraph-content"></p>
+          
+          <p class="myPage-paragraph-content">
+          
+            Here, the <u>mu</u>lti-<u>sc</u>ale <u>es</u>timation (<b>MUSES</b>) is proposed for the secretion kinetics of signal peptides combined with both macro-level and micro-level models, 
+            focusing on an extremely practical situation in which the cell is in a natural growth state to provide guidelines for the design of related synthetic biosystem.      
+          
+          
+          
+          </p>
+
+
+
+
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/model/figure-2.png" alt="" style="max-width: 800px;" >
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 2 Three sources contribute to the supernatant fluorescence.</b>
+            </div>
+          </div>
+
+
+        <h3 class="myPage-paragraph-headline-h3">1. Macro-Level Model</h3>
+  
+
+
+        <p class="myPage-paragraph-content">
+            
+          An equation system based on modified Logistic 
+          and Monod models was employed to model for the quantity of viable, dead, and lysed cells as follows.          
+        
+        </p>
+
+        <p class="myPage-paragraph-content">
+        $$
+        X_{T} = X_{V} + X_{D}
+        $$
+        </p>
+        
+        <p class="myPage-paragraph-content"></p>
+
+        <p class="myPage-paragraph-content">
+        $$
+        \frac{dX_{V}}{dt} = \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)X_{V} - k_{d}X_{V}
+        $$
+        </p>
+
+        <p class="myPage-paragraph-content"></p>
+
+
+
+        <p class="myPage-paragraph-content">
+        $$
+        \frac{dX_{D}}{dt} = k_{T}X_{V}\left( {1 - \frac{X_{V} + X_{D}}{X_{T,max}}} \right) - \left( {\frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right) - k_{d}} \right)X_{V} - k_{dXd}X_{D}
+        $$
+        </p>
+        
+        <p class="myPage-paragraph-content"></p>
+
+        <p class="myPage-paragraph-content">
+        $$
+        \frac{dX_{lys}}{dt} = k_{dXd}X_{D}
+        $$
+        </p>
+
+        <p class="myPage-paragraph-content">
+        
+        
+        with $t$ the time (h), 
+        $X_T$ the total cell density (OD<sub>600</sub>), 
+        $X_V$ the viable cell density (OD<sub>600</sub>), 
+        $X_D$ the dead cell density (OD<sub>600</sub>), 
+        $X_{lys}$ the lysed cell density (OD<sub>600</sub>), 
+        $\mu_{max}$ the maximum specific growth rate (1/h), 
+        $K_S$ the saturation constant (1/h), 
+        $X_{v,max}$ the viable cell carrying capacity (OD<sub>600</sub>), 
+        $k_d$ the specific death rate of viable cells which have no contribution to product (1/h), 
+        $k_T$ the intrinsic growth rate in logistic equation (1/h), 
+        $X_{T,max}$ the total cell carrying capacity (OD<sub>600</sub>), 
+        $k_{dXd}$ the specific lysis rate of dead cells (1/h). 
+        $S$ is the concentration of growth-limiting substrate (g/L), 
+        which is the nitrogen source (tryptone) in our work since the task is related to protein, 
+        the growth-associated product. 
+        Thus, the following two equations was written to describe both substrate and product concentration:
+
+        </p>
+
+
+        <p class="myPage-paragraph-content">
+          $$
+          \frac{dS}{dt} = \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)\frac{1}{Y_{Xv/s}}X_{V} - k_{ds}S
+          $$
+          </p>
+          
+          <p class="myPage-paragraph-content"></p>
+  
+          <p class="myPage-paragraph-content">
+            $$
+            \frac{dP}{dt} = \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)\frac{1}{Y_{P/Xv}}X_{V} - k_{dp}P
+            $$
+          </p>
+  
+          <p class="myPage-paragraph-content"></p>
+  
+      
+
+          <p class="myPage-paragraph-content">
+        
+        
+          with $S$ the concentration of substrates (g/L), 
+          $P$ the concentration of products (a. u.), 
+          $Y_{Xv/s}$ the maximum biomass and product yield based on growth-limiting substrate (g/L/OD<sub>600</sub>), 
+          $k_{ds}$ the specific degradation and dilution rate of substrate (1/h), 
+          $Y_{P/Xv}$ the maximum product yield based on substrate (g/L/OD<sub>600</sub>), 
+          $k_{ds}$ the specific degradation and dilution rate of product (1/h). 
+
+    
+          </p>
+    
+
+
+
+
+          <h3 class="myPage-paragraph-headline-h3">2. Micro-Level Model</h3>
+
+
+        
+        
+
+            <div class="myPage-paragraph-fig">
+              <img src="https://static.igem.wiki/teams/5136/model/figure-3.png" alt="" style="max-width: 500px;" >
+              <div class="myPage-paragraph-fig-description">
+                <b>Figure 3 The secretion mechanisms of Sec pathway and Tat pathway.</b>
+              </div>
+            </div>
+  
+            <p class="myPage-paragraph-content"></p>
+
+
+
+
+            <h4 class="myPage-paragraph-headline-h4">3.1 For Sec Pathway </h4>
+  
+
+            <p class="myPage-paragraph-content"></p>
+
+            <p class="myPage-paragraph-content">
+
+              For Sec pathway (left in Fig. 3), 
+              a soluble molecular chaperone protein named SecB binds to the recombinant protein's signal peptide or other features of its incompletely folded structure. 
+              The bound protein is then delivered to SecA, a protein acts as both a receptor and a translocating ATPase that is associated with the cytoplasm membrane. 
+              The Sec-recombinant protein complex forms a translocation complex with SecY/SecE/SecG (SecYEG). 
+              The protein is conducted by the energy released from ATP hydrolysis and PMF (proton motive force). 
+              The SecDF complex (YajC is an accessory protein) plays the role as the signal peptidase (SPase) to cleave the signal peptide in the final stage of translocation. 
+              Then the protein maturation will happen in the periplasm space finally. 
+              Thus, the micro-level model for Sec pathway-related signal peptide will be written based on mass action law and macro-level model as follows:
+              
+            </p>
+
+            <p class="myPage-paragraph-content"></p>
+
+            <p class="myPage-paragraph-content">
+            $$
+            \frac{dRNA}{dt} = k_{1} - k_{d1}RNA
+            $$
+            </p>
+
+            <p class="myPage-paragraph-content"></p>
+
+            <p class="myPage-paragraph-content">
+            $$
+            \frac{dP_{c}}{dt} = k_{2}RNA - k_{d2}P_{c} - \alpha P_{c}
+            $$
+            </p>
+
+            <p class="myPage-paragraph-content"></p>
+
+            <p class="myPage-paragraph-content">
+
+            $$
+            \frac{dP_{p}}{dt} = \alpha P_{c} - k_{d3}P_{p} - \beta P_{p}
+            $$
+            
+            </p>
+
+            <p class="myPage-paragraph-content"></p>
+
+
+            <p class="myPage-paragraph-content">
+
+            $$
+            \frac{dP_{l}}{dt} = \beta P_{p} - k_{d4}P_{l} - \gamma P_{l} - \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)\frac{X_{V}}{X_{V} + X_{D}}P_{l} - k_{dXd}\frac{X_{D}}{X_{V} + X_{D}}P_{l} 
+            $$
+            
+            </p>
+            
+            <p class="myPage-paragraph-content"></p>
+
+
+            <p class="myPage-paragraph-content">
+            $$
+            \frac{dP_{M}}{dt} = \gamma P_{l}X_{V}d_{1} + k_{dXd}X_{D}P_{l}d_{2} + \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)X_{V}P_{l}d_{3}
+            $$
+            </p>
+
+            <p class="myPage-paragraph-content"></p>
+
+
+            <p class="myPage-paragraph-content">
+            with $RNA$ the intensity of target protein's mRNA (g/L/OD<sub>600</sub>), 
+            $P_c$ the intensity of unmature protein in cytoplasm space (a. u./OD<sub>600</sub>), 
+            $P_p$ the intensity of unmature protein in periplasm space (a. u./OD<sub>600</sub>), 
+            $P_l$ the intensity of mature protein in periplasm space (a. u./OD<sub>600</sub>), 
+            $P_M$ the concentration of mature protein in medium space (a. u. ), 
+            $k_1$ the specific translation rate (g/L/OD<sub>600</sub>/h), 
+            $k_{d1}$ the specific degradation and dilution rate of RNA (1/h), 
+            $k_2$ the specific transcription rate (g/L/OD<sub>600</sub>/h), 
+            $k_{d2}$ the specific degradation and dilution rate of $P_c$ (1/h), 
+            $\alpha$ the translocation rate from cytoplasm space to periplasm space (1/h), 
+            $k_{d3}$ the specific degradation and dilution rate of $P_p$ (1/h), 
+            $\beta$ the protein maturation rate (1/h), 
+            $k_{d4}$ the specific degradation and dilution rate of $P_l$ (1/h), 
+            $\gamma$ the translocation rate from periplasm space to medium space (1/h), 
+            $d_i\ (i=1,2,3,4\cdots)$ the dilution rate due to the volume change between different space (1/h).
+            </p>
+
+
+            <p class="myPage-paragraph-content"></p>
+
+
+
+
+
+
+
+
+            <h4 class="myPage-paragraph-headline-h4">3.2 For Tat Pathway </h4>
+
+
+            <p class="myPage-paragraph-content"></p>
+
+            <p class="myPage-paragraph-content">
+
+
+            The Tat pathway is commonly used for those proteins that contain two consecutive and highly conserved arginine residues in their leader peptides. 
+            On the Tat pathway (right in Fig. 3), 
+            the protein is fully synthesized and folds in the cytoplasm where it can bind specific cofactors. 
+            The signal peptide is then recognized by TatC in the TatBC complex. 
+            Signal peptide binding promotes association of the complex with TatA oligomers at the expense of PMF. 
+            Protein translocation occurs through a channel formed by TatA and possibly TatE oligomers. 
+            Thus, the micro-level model for Tat pathway-related signal peptide will be written based on mass action law and macro-level model as follows:
+
+            </p>
+
+
+            <p class="myPage-paragraph-content"></p>
+          
+
+            <p class="myPage-paragraph-content">
+
+            $$
+            \frac{dRNA}{dt} = k_{1} - k_{d1}RNA
+            $$
+
+            </p>
+            
+
+            <p class="myPage-paragraph-content"></p>
+
+
+            <p class="myPage-paragraph-content">
+            $$
+            \frac{dP_{c}}{dt} = k_{2}RNA - k_{d2}P_{c} - \beta P_{c}
+            $$
+            
+            </p>
+
+            <p class="myPage-paragraph-content"></p>
+
+
+            <p class="myPage-paragraph-content">
+
+            $$
+            \frac{dP_{l}}{dt} = \beta P_{c} - k_{d4}P_{l} - \alpha P_{l} - k_{dXd} \frac {X_{D}}{X_{V} + X_{D}} P_{l}
+            $$
+            
+            </p>
+
+
+            <p class="myPage-paragraph-content"></p>
+
+
+            <p class="myPage-paragraph-content">
+
+            $$
+            \frac{dP_{p}}{dt} = \alpha P_{c} - k_{d3}P_{p} - \gamma P_{p} - \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)\frac{X_{V}}{X_{V} + X_{D}}P_{p} - k_{dXd}\frac{X_{D}}{X_{V} + X_{D}}P_{p}
+            $$
+
+            </p>
+            
+
+            <p class="myPage-paragraph-content"></p>
+
+
+
+            <p class="myPage-paragraph-content">
+
+            $$
+            \frac{dP_{M}}{dt} = \gamma P_{p}X_{V}d_{1} + k_{dXd}X_{D}P_{l}d_{2} + \frac{\mu_{max}S}{K_{S} + S}\left( {1 - \frac{X_{V}}{X_{v,max}}} \right)X_{V}P_{p}d_{3} + k_{dXd}X_{D}P_{p}d_{4}
+            $$
+  
+          </p>
+
+
+            <p class="myPage-paragraph-content"></p>
+
+
+
+            <p class="myPage-paragraph-content">
+
+
+              with RNA the intensity of target protein's mRNA (g/L/OD<sub>600</sub>), 
+              $P_c$ the intensity of unmature protein in cytoplasm space (a. u./OD<sub>600</sub>), 
+              $P_l$ the intensity of mature protein in cytoplasm space (a. u./OD<sub>600</sub>), 
+              $P_p$ the intensity of mature protein in periplasm space (a. u./OD<sub>600</sub>), 
+              $P_M$ the concentration of mature protein in medium space (a. u. ), 
+
+              $k_1$ the specific translation rate (g/L/OD<sub>600</sub>/h), 
+              $k_{d1}$ the specific degradation and dilution rate of $RNA$ (1/h), 
+              $k_2$ the specific transcription rate (g/L/OD<sub>600</sub>/h), 
+              $k_{d2}$ the specific degradation and dilution rate of $P_c$ (1/h), 
+              $\alpha$ the translocation rate from cytoplasm space to periplasm space (1/h), 
+              $k_{d3}$ the specific degradation and dilution rate of $P_p$ (1/h), 
+              $\beta$ the protein maturation rate (1/h), 
+              $k_{d4}$ the specific degradation and dilution rate of $P_l$ (1/h), 
+              $\gamma$ the translocation rate from periplasm space to medium space (1/h), 
+              $d_i\ (i=1,2,3,4\cdots)$ the dilution rate due to the volume change between different space (1/h).
+  
+
+            </p>
+
+
+
+
+            <p class="myPage-paragraph-content"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+        <!---Future Expectations --->
+        <div class="myPage-paragraph" id="section3">
+
+          <h2 class="myPage-paragraph-headline-h2">Implementation</h2>
+
+
+
+
+
+<h3 class="myPage-paragraph-headline-h3">Highest Secretion Efficiency and Proper Metabolic Burden of LMT Signal Peptide</h3>
+
+
+
+<p class="myPage-paragraph-content">
+
+
+The secretion kinetics of various signal peptides from both the Sec pathway (LMT, PelB, OmpA, OsmY, YebF, and AIgen) and the Tat pathway (TorA) were analyzed (Figure 4). 
+The high average R<sup>2</sup> values for each signal peptide (<u>LMT: 0.994, PelB: 0.993, OmpA: 0.987, OsmY: 0.933, YebF: 0.989, TorA: 0.975, AIgen: 0.988</u>) 
+confirm the accuracy of the multi-scale model in capturing secretion kinetics and demonstrate the successful application of the MUSES method. 
+The experimental results aligned well with the model's predictions (Figure 4A-G), 
+indicating that the multi-scale estimation method effectively deconstructs the dynamic secretion process of signal peptides.
+
+</p>
+
+<div class="myPage-paragraph-fig">
+  <img src="https://static.igem.wiki/teams/5136/model/figure-4.png" alt="" style="max-width: 1500px;" >
+  <div class="myPage-paragraph-fig-description">
+    <b>Figure 4 The model fitting results.</b> The experimental data and model predictions comparisons of different signal peptides: 
+    (<b>A</b>) LMT; (<b>B</b>) PelB; (<b>C</b>) OmpA; (<b>D</b>) OsmY; (<b>E</b>) YebF; (<b>F</b>) TorA; (<b>G</b>) AIgen. 
+    (<b>H</b>) Estimated $\alpha$ and $\gamma$ for different signal peptides.
+  </div>
+</div>
+
+
+
+<p class="myPage-paragraph-content">
+
+  Thus LMT, the best signal peptide among all test groups, 
+  whose high secretion efficiency and low metabolic burden are confirmed with our multi-scale model, 
+  was chosen to test coupling with our deinking enzymes (the best one in the second screen cycle, CYP199A4 T253E). 
+  The SDS-PAGE proves the successful secretion of CYP199A4 T253E (Figure 6A), 
+  and the deinking characterization result achieved 64% performance of the high-concentration enzyme sampling prepared by ÄKTA/AKTA (Figure 6B), 
+  proving the functionality of our combination. 
+  <b>Now, this basic part (BBa_K5136047) 
+  designed by combining the high throughput screening and multi-scale signal peptides secretion kinetics, 
+  is a crucial part of our part collection</b>.
+
+
+</p>
+
+
+
+
+  <div class="myPage-paragraph-fig">
+    <img src="https://static.igem.wiki/teams/5136/part/ljc/6.png" alt="" style="max-width: 800px;" >
+    <div class="myPage-paragraph-fig-description">
+      <b>Figure 6 Characterization of His tag-LMT-CYP199A4 T253E. </b> 
+      (<b>A</b>) SDS-PAGE analysis (left) and gray scale value analysis (right) of the supernatant at different times. 
+      (<b>B</b>) Deinking characterization of His tag-LMT-CYP199A4 T253E (BBa_K5136047).
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+  <h3 class="myPage-paragraph-headline-h3">LMT-mediated Secretion under Constitutive Expression for Optimal Economic Cost</h3>
+
+
+
+
+
+<p class="myPage-paragraph-content">
+
+  Previous LMT-mediated secretion work in our project is based on T7 promoter, 
+  requiring the addition of IPTG to induce the expression of the fusion protein of our deinking enzyme and LMT signal peptide. 
+  The IPTG has a toxic effect on cells, which is also expensive in industrial-scale applications. 
+  Thus, <b>designing the LMT-mediated secretion system under constitutive expression is essential for the implementation of REPARO by eliminating the extra cost (inducer for example) to achieve optimal economic cost</b>.
+  
+</p>
+
+<p class="myPage-paragraph-content">
+
+    Thus, some exapmle in Anderson promoter was selected and tested (Figure 8).
+
+
+  </p>
+  
+
+
+
+
+
+
+  <div class="myPage-paragraph-fig">
+    <img src="https://static.igem.wiki/teams/5136/model/figure-8.png" alt="" style="max-width: 1000px;" >
+    <div class="myPage-paragraph-fig-description">
+      <b>Figure 8 Characterization of LMT secretion performance with diffenent Anderson promoters. </b> 
+      (<b>A</b>) Secretion Kinetic. 
+      (<b>B</b>) Fitting Result.
+      (<b>C</b>) Secretion efficiencies.
+      (<b>D</b>) Fluorescence intensity of supernatant.
+      (<b>E</b>) Culture fluorescence intensity.
+      
+
+    </div>
+  </div>
+  
+
+
+
+
+
+
+  <p class="myPage-paragraph-content">
+
+
+  By measuring the fluorescence intensity in the supernatant of each circuit, BBa_K5136202 with promoter <b>J23104 has the most appropriate secretion efficiency, which has enough proteins storage in the intracellular 
+  that can be secrete into extracellular environment quickly with the help of secretion, leakiness, and lysis</b>.
+
+</p>
+
+  </div>
+
+
+
+
+
+
+
+        <!---Future Expectations --->
+        <div class="myPage-paragraph" id="section4">
+          <h2 class="myPage-paragraph-headline-h2">Discussion</h2>
+
+          <p class="myPage-paragraph-content"></p>
+
+
+          <p class="myPage-paragraph-content">
+
+          For our project, the MUSES mathematically describe the relationship between the amount of secreted recombinant protein and time in the natural state of our engineered bacteria 
+          and explore the secretion efficiency of different signal peptides that we used, 
+          thus choosing the best combination of signal peptide and Anderson promoter to optimize the economic cost of our deinking process.
+
+
+          </p>
+          
+         
+                    
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <!--Reference-->
+        <div class="myPage-paragraph" id="section5">
+          <h2 class="myPage-paragraph-headline-h2">References</h2>
+          <ol class="myPage-paragraph-reference">
+
+            <br>
+
+            <li>M.N.M. Fuad, Applying Logistic and Monod models in a single equations system framework for cell culture growth modeling and estimation, (2020). https://doi.org/10.22541/au.160647305.55974012/v1.
+            </li>
+            <li>
+              R. Freudl, Signal peptides for recombinant protein secretion in bacterial expression systems, Microb. Cell Factories 17 (2018) 52. https://doi.org/10.1186/s12934-018-0901-3.
+            </li>
+
+          </ol>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-bottom: 100px;"></div>
+
+</div>
+
+
+
+  </div>
+
+  <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+  
+    <!-- topbutton -->
+    <div class="menu">
+
+        <div class="toggle">
+            <i class="fa fa-angle-double-up"></i>
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-0.png" alt="" style="z-index: 100;">
+        </div>
+        <li style="--i:0">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:1">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:2">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:3">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:4">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:6">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:7">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+    </div>
+    
+    <div id="myFooter">
+        <!--  内容部分-->
+        <div class="footer-xiaohui">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-xmulogo.png" alt="">
+            <div class="footer-xiaoming">
+                Xiamen University
+            </div>
+        </div>
+        <div class="footer-didian">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-position.png" alt="">
+            <div class="footer-didianming">
+                Xiamen University, Fujian, China<br>
+                No.422, Siming South Road, Fujian, P.R.China 361005
+            </div>
+        </div>
+        <div class="footer-duihui">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-teamlogo-2024.png" alt="">
+        </div>
+        <div class="footer-follow">
+            <div class="footer-followus">
+                Follow Us
+            </div>
+            <div class="footer-wechat">
+                <a href="https://static.igem.wiki/teams/5136/header-footer-img/wechat.png">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wechat.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-facebook">
+                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FIGEM-XMU-China-1067638406629389">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-f.png" alt=""
+                     style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-ins">
+                <a href="https://www.instagram.com/xmu_china_igem">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-o.png" alt=""
+                    style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-weibo">
+                <a href="https://weibo.com/u/7482868083">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wb.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-twitter">
+                <a href="https://twitter.com/XMU_igem">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-x.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+        </div>
+        <!-- <div class="footer-bar"></div> -->
+        <div class="footer-contact">
+            <div class="footer-contactus">
+                Contact Us
+            </div>
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-mail.png" alt="">
+            <div class="footer-mail">
+                igem_xmu@163.com
+            </div>
+        </div>
+    </div>
+    
+
+  <!-- Bootstrap Bundle with Popper -->
+  
+  <script src="static/bootstrap.bundle.min.js"></script>
+  <script src="static/js2024/top.js"></script>
+  <script src="static/js2024/scroll.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1479 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://static.igem.wiki/teams/5136/favicon.png" />
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+  <!-- Bootstrap CSS -->
+  <!-- <link href="static/bootstrap.min.css" rel="stylesheet"> -->
+
+  <!-- Custom CSS -->
+  <!-- <link href="static/style.css" rel="stylesheet"> -->
+  <link href="static/css2024/footer.css" rel="stylesheet">
+  <link href="static/css2024/header.css" rel="stylesheet">
+  <link href="static/css2024/top.css" rel="stylesheet">
+  <link href="static/css2024/theme.css" rel="stylesheet">
+  <link href="static/css2024/footer-small.css" rel="stylesheet">
+  
+  <!-- loading -->
+  <script src="static/js2024/jquery-3.5.1.min.js"></script>
+  <script src="static/js2024/loading.js"></script>
+  <!-- <link rel="stylesheet" href="static/css/loading.css"> -->
+
+  <!-- <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/font/font.css">
+    <link rel="stylesheet" href="static/css/loading.css">
+
+    <script src="static/js/loading.js"></script>
+    <script src="static/js/fontsize.js"></script> -->
+  <title>Members | XMU-China - iGEM 2024</title>
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+        <div class="logo">
+            <div class="img1">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/logo.png" alt="Logo">
+            </div>
+            <div class="img2">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/logo-word.png" alt="logo">
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="home">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/home.png" alt="Home Icon">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#team">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/team.png" alt="Team Icon">
+                        <span>TEAM</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="members">Members</a></li>
+                        <li><a href="attributions">Attributions</a></li>
+                        <li><a href="notebook">Notebook</a></li>
+                        <li><a href="experiments">Experiments</a></li>
+                        <li><a href="safety">Safety</a></li>
+                        <li><a href="collaborations">Collaborations</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#project">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/project.png" alt="Project Icon">
+                        <span>PROJECT</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="description">Description</a></li>
+                        <li><a href="design">Design</a></li>
+                        <li><a href="engineering">Engineering Success</a></li>
+                        <li><a href="results">Results</a></li>
+                        <li><a href="poc">Proof of Concept</a></li>
+                        <li><a href="implementation">Proposed Implementation</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#drylab">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/drylab.png" alt="DryLab Icon">
+                        <span>DRYLAB</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="model">Model</a></li>
+                        <li><a href="sop">SOP</a></li>
+                        <li><a href="lca">LCA</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#parts">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/parts.png" alt="Parts Icon">
+                        <span>PARTS</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="parts">Parts</a></li>
+                        <li><a href="contribution">Contribution</a></li>
+                        <li><a href="part-collection">Parts Collection</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#hp">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/hp.png" alt="Hp Icon">
+                        <span>HP</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hp">Human Practices</a></li>
+                        <li><a href="human-practices">Integrated Human Practices</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#award">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/award.png" alt="Award Icon">
+                        <span>AWARD</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="human-practices">Integrated Human Practices</a></li>
+                        <li><a href="model">Model</a></li>
+                        <li><a href="part-collection">Parts Collection</a></li>
+                    </ul>
+                </div>
+            </li> 
+            <li>
+                <div class="dropdown">
+                    <a href="#game">
+                        <img src="https://raw.githubusercontent.com/Yuer-Chi/slaythespire_web/main/static/images/relic.png" alt="">
+                        <span>GAME</span>
+                        
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="description_game">Description</a></li>
+                        <li><a href="#team2">Characters</a></li>
+                        <li><a href="#team3">Encyclopedia</a></li>
+                        <li><a href="#team4">Joke</a></li>
+                        <li><a href="#team5">Achievements</a></li>
+                    </ul>
+                </div>
+            </li>    
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- 
+    <div class="header">
+        <img src="https://static.igem.wiki/teams/5136/layout/head.png" alt="" class="head">
+        <ul>
+            <li><a href=" home"><img src="https://static.igem.wiki/teams/5136/logos/1.png" alt=""><p>HOME</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/2.png" alt=""><p>TEAM</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/3.png" alt=""><p>DRY LAB</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/4.png" alt=""><p>WET LAB</p></a></li>
+            <li><a href="description"><img src="https://static.igem.wiki/teams/5136/logos/5.png" alt=""><p>PROJECT</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/6.png" alt=""><p>AWARDS</p></a></li>
+        </ul>
+    </div> -->
+
+  <!-- Header -->
+  <!--  <header class="bg-hero py-5 mb-5">-->
+  <!--    <div class="container h-100">-->
+  <!--      <div class="row h-100 align-items-center">-->
+  <!--        <div class="col-lg-12">-->
+  <!--          <h1 class="display-4 text-white mt-5 mb-2">Members</h1>-->
+  <!--	        <p class="lead mb-5 text-white-50"></p>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </header>-->
+
+  <!-- Page Content -->
+  <div class="container">
+    
+
+
+<link rel="stylesheet" href="static/css2024/members.css">
+<link rel="stylesheet" href="static/font/font.css">
+<style>
+    .vjs-poster {
+        background-image: url('https://static.igem.wiki/teams/5136/notebook/new.png');
+    }
+
+    .go-to-attribution {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        /* 字体大小 */
+        color: #6a5e93;
+        /* 文字颜色 */
+        font-weight: bold;
+        /* 字体加粗 */
+        text-decoration: none;
+        /* 去掉下划线 */
+        margin: 50px 0;
+        /* 上下外边距 */
+        position: relative;
+        /* 相对定位用于箭头效果 */
+        transition: color 0.3s ease;
+        /* 颜色渐变效果 */
+    }
+
+    .go-to-attribution img {
+        position: relative;
+        left: 0;
+        width: 10vw;
+        transform: translateX(3vw);
+        transition: transform 0.3s ease;
+    }
+
+    .go-to-attribution:hover {
+        color: #534f7a;
+    }
+
+    .go-to-attribution:hover img {
+        transform: translateX(6vw);
+    }
+</style>
+<!--loading-->
+<div id="loader-wrapper">
+    <div id="loader">
+        <div class="loader-img">
+            <img src="https://static.igem.wiki/teams/5136/load-new.gif">
+        </div>
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+<div class="container-member">
+    <div class="hhh">
+        <!--loading-->
+        <!-- <div style="height: 100px;position: relative;;">112123131</div> -->
+        <!--Magic-navbar-->
+        <div class="grid-xie">
+            <!-- 行元素 -->
+            <div class="row">
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/cjh-yz.jpeg');">
+                            <!-- <div class="character">正面</div>
+                            <div class="romaji">A</div> -->
+                        </div>
+                        <!-- 反面 -->
+                        <div class="fan-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/lzm-mss.jpeg');">
+                            <!-- <div class="character">反面</div>
+                            <div class="romaji">B</div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/yyf-njs.jpeg');">
+                            <!-- <div class="character">正面</div>
+                            <div class="romaji">A</div> -->
+                        </div>
+                        <!-- 反面 -->
+                        <div class="fan-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/fmz-qzgw.jpeg');">
+                            <!-- <div class="character">反面</div>
+                            <div class="romaji">B</div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/hjc-yz.jpeg');">
+                            <!-- <div class="character">正面</div>
+                            <div class="romaji">A</div> -->
+                        </div>
+                        <!-- 反面 -->
+                        <div class="fan-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/hwj-sj.jpeg');">
+                            <!-- <div class="character">反面</div>
+                            <div class="romaji">B</div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/jrh-ty.jpeg');">
+                            <!-- <div class="character">正面</div>
+                            <div class="romaji">A</div> -->
+                        </div>
+                        <!-- 反面 -->
+                        <div class="fan-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/kyh-hh.jpeg');">
+                            <!-- <div class="character">反面</div>
+                            <div class="romaji">B</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- 单元格 -->
+                <div class="pro-card-wrapper-xie">
+                    <!-- 控制前、后翻转 -->
+                    <div class="pro-card">
+                        <!-- 正面 -->
+                        <div class="zheng-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/lj-myzl.jpeg');">
+                            <!-- <div class="character">正面</div>
+                            <div class="romaji">A</div> -->
+                        </div>
+                        <!-- 反面 -->
+                        <div class="fan-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/ljc-em.jpeg');">
+                            <!-- <div class="character">反面</div>
+                            <div class="romaji">B</div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/lxr-sp.jpeg');">
+                            <!-- <div class="character">正面</div>
+                            <div class="romaji">A</div> -->
+                        </div>
+                        <!-- 反面 -->
+                        <div class="fan-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/lzm-mss.jpeg');">
+                            <!-- <div class="character">反面</div>
+                            <div class="romaji">B</div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/mzy-ddr.jpeg');">
+                            <!-- <div class="character">正面</div>
+                            <div class="romaji">A</div> -->
+                        </div>
+                        <!-- 反面 -->
+                        <div class="fan-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/qlm-ll.jpeg');">
+                            <!-- <div class="character">反面</div>
+                            <div class="romaji">B</div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/shl-jh.jpeg');">
+                            <!-- <div class="character">正面</div>
+                            <div class="romaji">A</div> -->
+                        </div>
+                        <!-- 反面 -->
+                        <div class="fan-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/wjw-lr.jpeg');">
+                            <!-- <div class="character">反面</div>
+                            <div class="romaji">B</div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/xcx-xx.jpeg');">
+                            <!-- <div class="character">正面</div>
+                            <div class="romaji">A</div> -->
+                        </div>
+                        <!-- 反面 -->
+                        <div class="fan-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/xsh-xbqs.jpeg');">
+                            <!-- <div class="character">反面</div>
+                            <div class="romaji">B</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <!-- 单元格 -->
+                <div class="pro-card-wrapper-xie">
+                    <!-- 控制前、后翻转 -->
+                    <div class="pro-card">
+                        <!-- 正面 -->
+                        <div class="zheng-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/yyf-njs.jpeg');">
+                            <!-- <div class="character">正面</div>
+                            <div class="romaji">A</div> -->
+                        </div>
+                        <!-- 反面 -->
+                        <div class="fan-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/yyn-qzs.jpeg');">
+                            <!-- <div class="character">反面</div>
+                            <div class="romaji">B</div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/zah-zy.jpeg');">
+                            <!-- <div class="character">正面</div>
+                            <div class="romaji">A</div> -->
+                        </div>
+                        <!-- 反面 -->
+                        <div class="fan-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/zxx-gt.jpeg');">
+                            <!-- <div class="character">反面</div>
+                            <div class="romaji">B</div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/zy-yl.jpeg');">
+                            <!-- <div class="character">正面</div>
+                            <div class="romaji">A</div> -->
+                        </div>
+                        <!-- 反面 -->
+                        <div class="fan-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/yyf-njs.jpeg');">
+                            <!-- <div class="character">反面</div>
+                            <div class="romaji">B</div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/zyh-sbqs.jpeg');">
+                            <!-- <div class="character">正面</div>
+                            <div class="romaji">A</div> -->
+                        </div>
+                        <!-- 反面 -->
+                        <div class="fan-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/cjh-yz.jpeg');">
+                            <!-- <div class="character">反面</div>
+                            <div class="romaji">B</div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/crq-ss.jpeg');">
+                            <!-- <div class="character">正面</div>
+                            <div class="romaji">A</div> -->
+                        </div>
+                        <!-- 反面 -->
+                        <div class="fan-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/cyh-sbq.jpeg');">
+                            <!-- <div class="character">反面</div>
+                            <div class="romaji">B</div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/fmz-qzgw.jpeg');">
+                            <!-- <div class="character">正面</div>
+                            <div class="romaji">A</div> -->
+                        </div>
+                        <!-- 反面 -->
+                        <div class="fan-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/hjc-yz.jpeg');">
+                            <!-- <div class="character">反面</div>
+                            <div class="romaji">B</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/hwj-sj.jpeg');">
+                            <!-- <div class="character">正面</div>
+                            <div class="romaji">A</div> -->
+                        </div>
+                        <!-- 反面 -->
+                        <div class="fan-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/jrh-ty.jpeg');">
+                            <!-- <div class="character">反面</div>
+                            <div class="romaji">B</div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/kyh-hh.jpeg');">
+                            <!-- <div class="character">正面</div>
+                            <div class="romaji">A</div> -->
+                        </div>
+                        <!-- 反面 -->
+                        <div class="fan-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/lj-myzl.jpeg');">
+                            <!-- <div class="character">反面</div>
+                            <div class="romaji">B</div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="pro-card-wrapper-xie">
+                    <div class="pro-card">
+                        <div class="zheng-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/ljc-em.jpeg');">
+                            <!-- <div class="character">正面</div>
+                            <div class="romaji">A</div> -->
+                        </div>
+                        <!-- 反面 -->
+                        <div class="fan-top"
+                            style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-3/lxr-sp.jpeg');">
+                            <!-- <div class="character">反面</div>
+                            <div class="romaji">B</div> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="welcome">
+        <!-- <br><br><br><br><br> -->
+        <span style="font-family: Comic Sans Ms;">MEMBERS</span>
+
+        <div class="tiaozhuan" style="flex-direction: row;">
+
+            <div class="tiaozhuan-img" onclick="window.location.href='#section1';"
+                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/ljc-em.jpeg');">
+                <!-- <a href="#section1">members</a> -->
+            </div>
+            <div class="tiaozhuan-img" onclick="window.location.href='#section2';"
+                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/kyh-hh.jpeg');">
+                <!-- ADVISERS -->
+            </div>
+            <div class="tiaozhuan-img" onclick="window.location.href='#section3';"
+                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/xsh-xbqs.jpeg');">
+                <!-- Instructor -->
+            </div>
+            <div class="tiaozhuan-img" onclick="window.location.href='#section4';"
+                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/cjh-yz.jpeg');">
+                <!-- PI  -->
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="container-member" style="flex-direction: column;">
+    <div class="pv-text">Welcome to XMU-China</div> <!-- 添加文字元素 -->
+    <div class="pv">
+        <div class="video-container">
+            <!-- <iframe id="videoFrame" title="XMU-China: Final (2023) [English]" width="560" height="315"
+                src="https://video.igem.org/videos/embed/09a9bcc3-a354-456d-826e-2dae27645d5d?title=0&amp;warningTitle=0"
+                frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe> -->
+            <iframe id="videoFrame" title="XMU-China: Team members introduction (2024) [English]" width="560"
+                height="315" src="https://video.igem.org/videos/embed/11bc25d2-e547-46d8-9e40-f573d28a6620"
+                frameborder="0" allowfullscreen="true"
+                sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+        </div>
+    </div>
+    <div class="corner-image left-corner"></div>
+    <div class="corner-image right-corner"></div>
+
+</div>
+
+
+<div class="container-member" id="section1" style="scroll-margin-top: 8vw;">
+    <img src="https://static.igem.wiki/teams/5136/member-tlp-3/member-fy1.png" alt="" style="top: 10vh;">
+    <div class="fenlei">
+        <span style="font-size: 90px; font-family: Comic Sans Ms;">Leaders</span>
+    </div>
+    <div class="hhh-xie">
+        <!--loading-->
+        <!-- <div style="height: 100px;position: relative;;">112123131</div> -->
+        <!--Magic-navbar-->
+        <div class="grid-pin">
+            <!-- 行元素 -->
+            <div class="row" style="margin-top:20px">
+                <a href="lunbo-leaders?slides=0">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(-4deg);">
+                        <div class="pro-card-pin" style="width: 210px;height: 280px;">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/ljc-em.jpeg');">
+                                <!-- <div class="character">恶魔</div>
+                                <div class="romaji">吕锦程</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/ljc.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="lunbo-leaders?slides=1">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(6deg);">
+                        <div class="pro-card-pin" style="width: 210px;height: 280px;">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/zlh-bjs.jpeg');">
+                                <!-- <div class="character">宝剑Ⅳ</div>
+                                <div class="romaji">张琳昊</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/zlh.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- <div class="welcome">
+        
+        <span style="font-family: Comic Sans Ms;">MEMBERS</span>
+        <p style="font-family: Comic Sans Ms;">Welcome to XMU iGEM-2024</p>
+    </div> -->
+</div>
+<div class="container-member" id="section2">
+    <img src="https://static.igem.wiki/teams/5136/member-tlp-3/member-fy1.png" alt="">
+    <div class="fenlei">
+        <span style="font-size: 90px; font-family: Comic Sans Ms;">Members</span>
+    </div>
+    <div class="hhh-xie">
+        <!--loading-->
+        <!-- <div style="height: 100px;position: relative;;">112123131</div> -->
+        <!--Magic-navbar-->
+        <div class="grid-pin">
+            <!-- 行元素 -->
+            <div class="row" style="margin-top:20px">
+                <a href="lunbo?slides=0">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(-4deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/kyh-hh.jpeg');">
+                                <!-- <div class="character">皇后</div>
+                                <div class="romaji">康雨涵</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/kyh.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- <a href="lunbo"></a> -->
+                <a href="lunbo?slides=1">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(6deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/xcx-xx.jpeg');">
+                                <!-- <div class="character">星星</div>
+                                <div class="romaji">徐宸欣</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/xcx.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="lunbo?slides=2">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(-9deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/zy-yl.jpeg');">
+                                <!-- <div class="character">月亮</div>
+                                <div class="romaji">章艺</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/zy.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="lunbo?slides=3">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(3deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/wjw-lr.jpeg');">
+                                <!-- <div class="character">恋人</div>
+                                <div class="romaji">王婧雯</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/wjw.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="lunbo?slides=4">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(-3deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/zxx-gt.jpeg');">
+                                <!-- <div class="character">高塔</div>
+                                <div class="romaji">张晓晓</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/zxx.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+
+
+
+            </div>
+            <div class="row" style="margin-top:20px">
+
+
+
+                <a href="lunbo?slides=5">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(-8deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/jrh-ty.jpeg');">
+                                <!-- <div class="character">太阳</div>
+                                <div class="romaji">姜若晗</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/jrh.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="lunbo?slides=6">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(6deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/lxr-sp.jpeg');">
+                                <!-- <div class="character">审判</div>
+                                <div class="romaji">吕欣冉</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/lxr.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="lunbo?slides=7">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(-6deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/yyf-njs.jpeg');">
+                                <!-- <div class="character">女祭司</div>
+                                <div class="romaji">尹艺霏</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/yyf.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="lunbo?slides=8">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(3deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/crq-ss.jpeg');">
+                                <!-- <div class="character">死神</div>
+                                <div class="romaji">陈嵘琦</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/crq.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+            <div class="row" style="margin-top:20px">
+                <a href="lunbo?slides=9">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(-4deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/fmz-qzgw.jpeg');">
+                                <!-- <div class="character">权杖国王</div>
+                                <div class="romaji">方明正</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/fmz.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="lunbo?slides=10">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(6deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/zyh-sbqs.jpeg');">
+                                <!-- <div class="character">圣杯骑士</div>
+                                <div class="romaji">邹宇涵</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/zyh.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="lunbo?slides=11">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(-9deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/lzm-mss.jpeg');">
+                                <!-- <div class="character">魔术师</div>
+                                <div class="romaji">刘子墨</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/lzm.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="lunbo?slides=12">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(3deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/mzy-ddr.jpeg');">
+                                <!-- <div class="character">倒吊人</div>
+                                <div class="romaji">莫正杨</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/mzy.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="lunbo?slides=13">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(-4deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/lj-myzl.jpeg');">
+                                <!-- <div class="character">命运之轮</div>
+                                <div class="romaji">李佳</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-photo/lj.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+            </div>
+
+        </div>
+    </div>
+    <!-- <div class="welcome">
+        
+        <span style="font-family: Comic Sans Ms;">MEMBERS</span>
+        <p style="font-family: Comic Sans Ms;">Welcome to XMU iGEM-2024</p>
+    </div> -->
+</div>
+
+<div class="container-member" id="section3">
+    <img src="https://static.igem.wiki/teams/5136/member-tlp-3/member-fy1.png" alt="">
+    <div class="fenlei">
+        <span style="font-size: 90px; font-family: Comic Sans Ms;">Advisors</span>
+    </div>
+    <div class="hhh-xie">
+        <!--loading-->
+        <!-- <div style="height: 100px;position: relative;;">112123131</div> -->
+        <!--Magic-navbar-->
+        <div class="grid-pin">
+            <!-- 行元素 -->
+            <div class="row" style="margin-top:20px">
+                <a href="lunbo-advisors?slides=0">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(-4deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/hzy-bjhh.jpeg');">
+                                <!-- <div class="character">正面</div>
+                                <div class="romaji">韩子妍</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ad-photo/hzy.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="lunbo-advisors?slides=1">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(-9deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/qlm-ll.jpeg');">
+                                <!-- <div class="character">力量</div>
+                                <div class="romaji">邱丽敏</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ad-photo/qlm.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="lunbo-advisors?slides=2">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(3deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/cyh-sbq.jpeg');">
+                                <!-- <div class="character">正面</div>
+                                <div class="romaji">陈彦豪</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ad-photo/cyh.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="lunbo-advisors?slides=3">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(-4deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/yyn-qzs.jpeg');">
+                                <!-- <div class="character">权杖四</div>
+                                <div class="romaji">游燕楠</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ad-photo/yyn.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="row" style="margin-top:20px">
+
+                <a href="lunbo-advisors?slides=4">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(10deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/zcf-jz.jpeg');">
+                                <!-- <div class="character">节制</div>
+                                <div class="romaji">庄晨芳</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ad-photo/zcf.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="lunbo-advisors?slides=5">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(-3deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/shl-jh.jpeg');">
+                                <!-- <div class="character">教皇</div>
+                                <div class="romaji">宋泓霖</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ad-photo/shl.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="lunbo-advisors?slides=6">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(-8deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/yxy-card.jpeg');">
+                                <!-- <div class="character">正面</div>
+                                <div class="romaji">杨欣怡</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ad-photo/yxy.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="lunbo-advisors?slides=7">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(-6deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/lyh-card.jpeg');">
+                                <!-- <div class="character">无</div>
+                                <div class="romaji">卢一涵</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ad-photo/lyh.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="lunbo-advisors?slides=8">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(4deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/ctt-bjsc.png');">
+                                <!-- <div class="character">宝剑侍从</div>
+                                <div class="romaji">程坦坦</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ad-photo/ctt.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+
+
+
+
+
+
+            </div>
+            <div class="row" style="margin-top:20px">
+                <a href="lunbo-advisors?slides=9">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(-4deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/wlq-bjl.jpeg');">
+                                <!-- <div class="character">宝剑六</div>
+                                <div class="romaji">吴刘沁</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ad-photo/wlq.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="lunbo-advisors?slides=10">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(6deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/xsh-xbqs.jpeg');">
+                                <!-- <div class="character">星币骑士</div>
+                                <div class="romaji">徐苏杭</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ad-photo/xsh.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="lunbo-advisors?slides=11">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(-9deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/lh-card.jpeg');">
+                                <!-- <div class="character">星币五</div>
+                                <div class="romaji">李好</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ad-photo/lh.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="lunbo-advisors?slides=12">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(3deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/wky-xby.jpeg');">
+                                <!-- <div class="character">星币一</div>
+                                <div class="romaji">吴铠杨</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ad-photo/wky.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="lunbo-advisors?slides=13">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(-4deg)">
+                        <div class="pro-card-pin">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/yk-zc.jpeg');">
+                                <!-- <div class="character">战车</div>
+                                <div class="romaji">杨坤</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ad-photo/yk.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-member" id="section4" style="scroll-margin-top: 8vw;">
+    <img src="https://static.igem.wiki/teams/5136/member-tlp-3/member-fy1.png" alt=" " style="top: 10vh;">
+    <div class="fenlei">
+        <span style="font-size: 90px; font-family: Comic Sans Ms;">Instructors</span>
+    </div>
+    <div class="hhh-xie">
+        <!--loading-->
+        <!-- <div style="height: 100px;position: relative;;">112123131</div> -->
+        <!--Magic-navbar-->
+        <div class="grid-pin">
+            <!-- 行元素 -->
+            <div class="row" style="margin-top:20px">
+                <a href="lunbo-instructors?slides=0">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(-4deg)">
+                        <div class="pro-card-pin" style="width: 210px;height: 280px;">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/cjh-yz.jpeg');">
+                                <!-- <div class="character">愚者</div>
+                                <div class="romaji">陈俊宏</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ins-pi/cjh.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="lunbo-instructors?slides=1">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(1deg)">
+                        <div class="pro-card-pin" style="width: 210px;height: 280px;">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ins-pi/llx-card.jpeg');">
+                                <!-- <div class="character">正面</div>
+                                <div class="romaji">廖浪兴</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ins-pi/llx.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="lunbo-instructors?slides=2">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(6deg)">
+                        <div class="pro-card-pin" style="width: 210px;height: 280px;">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/hjc-yz.jpeg');">
+                                <!-- <div class="character">隐者</div>
+                                <div class="romaji">黄佳城</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ins-pi/hjc.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+</div>
+<div class="container-member" id="section5" style="scroll-margin-top: 8vw;">
+    <img src="https://static.igem.wiki/teams/5136/member-tlp-3/member-fy1.png" alt="" style="top: 10vh;">
+    <div class="fenlei">
+        <span style="font-size: 90px; font-family: Comic Sans Ms;">PI</span>
+    </div>
+    <div class="hhh-xie">
+        <!--loading-->
+        <!-- <div style="height: 100px;position: relative;;">112123131</div> -->
+        <!--Magic-navbar-->
+        <div class="grid-pin">
+            <!-- 行元素 -->
+            <div class="row" style="margin-top:20px">
+                <a href="lunbo-pi?slides=0">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(-4deg)">
+                        <div class="pro-card-pin" style="width: 210px;height: 280px;">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-2/hwj-sj.jpeg');">
+                                <!-- <div class="character">世界</div>
+                                <div class="romaji">洪文晶</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ins-pi/hwj.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="lunbo-pi?slides=1">
+                    <div class="pro-card-wrapper-pin" style="transform: rotate(6deg)">
+                        <div class="pro-card-pin" style="width: 210px;height: 280px;">
+                            <div class="zheng-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-tlp-1/zah-zy.jpeg');">
+                                <!-- <div class="character">正义</div>
+                                <div class="romaji">张瑷珲</div> -->
+                            </div>
+                            <!-- 反面 -->
+                            <div class="fan-body"
+                                style="background-image: url('https://static.igem.wiki/teams/5136/member-ins-pi/zah.jpeg');">
+                                <!-- <div class="character">反面</div>
+                                <div class="romaji">B</div> -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+</div>
+<div class="container-member" style="min-height: 10vh;justify-content: flex-end;">
+    <a href="attributions" class="go-to-attribution"
+        style="transform: translateX(-7vw);">
+        Go to our attribution
+        <img src="https://static.igem.wiki/teams/5136/parts-table-icon/jt.png" alt="Arrow">
+    </a>
+</div>
+
+<script>
+    $(window).on('load', function () {
+        // 延迟 1 秒后执行以下代码
+        setTimeout(function () {
+            $('body').addClass('loaded');
+
+            // 如果不需要加载文字，可以移除这个元素
+            $('#loader-wrapper .load_title').remove();
+        }, 1000); // 1000 毫秒 = 1 秒
+    });
+
+
+</script>
+<!-- <script src="static/js2024/loading.js"></script> -->
+
+  </div>
+
+  <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+  
+    <!-- topbutton -->
+    <div class="menu">
+
+        <div class="toggle">
+            <i class="fa fa-angle-double-up"></i>
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-0.png" alt="" style="z-index: 100;">
+        </div>
+        <li style="--i:0">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:1">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:2">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:3">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:4">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:6">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:7">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+    </div>
+    
+    <div id="myFooter">
+        <!--  内容部分-->
+        <div class="footer-xiaohui">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-xmulogo.png" alt="">
+            <div class="footer-xiaoming">
+                Xiamen University
+            </div>
+        </div>
+        <div class="footer-didian">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-position.png" alt="">
+            <div class="footer-didianming">
+                Xiamen University, Fujian, China<br>
+                No.422, Siming South Road, Fujian, P.R.China 361005
+            </div>
+        </div>
+        <div class="footer-duihui">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-teamlogo-2024.png" alt="">
+        </div>
+        <div class="footer-follow">
+            <div class="footer-followus">
+                Follow Us
+            </div>
+            <div class="footer-wechat">
+                <a href="https://static.igem.wiki/teams/5136/header-footer-img/wechat.png">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wechat.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-facebook">
+                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FIGEM-XMU-China-1067638406629389">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-f.png" alt=""
+                     style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-ins">
+                <a href="https://www.instagram.com/xmu_china_igem">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-o.png" alt=""
+                    style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-weibo">
+                <a href="https://weibo.com/u/7482868083">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wb.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-twitter">
+                <a href="https://twitter.com/XMU_igem">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-x.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+        </div>
+        <!-- <div class="footer-bar"></div> -->
+        <div class="footer-contact">
+            <div class="footer-contactus">
+                Contact Us
+            </div>
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-mail.png" alt="">
+            <div class="footer-mail">
+                igem_xmu@163.com
+            </div>
+        </div>
+    </div>
+    
+
+  <!-- Bootstrap Bundle with Popper -->
+  
+  <script src="static/bootstrap.bundle.min.js"></script>
+  <script src="static/js2024/top.js"></script>
+  <script src="static/js2024/scroll.js"></script>
+</body>
+
+</html>

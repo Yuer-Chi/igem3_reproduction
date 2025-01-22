@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://static.igem.wiki/teams/5136/favicon.png" />
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+  <!-- Bootstrap CSS -->
+  <!-- <link href="static/bootstrap.min.css" rel="stylesheet"> -->
+
+  <!-- Custom CSS -->
+  <!-- <link href="static/style.css" rel="stylesheet"> -->
+  <link href="static/css2024/footer.css" rel="stylesheet">
+  <link href="static/css2024/header.css" rel="stylesheet">
+  <link href="static/css2024/top.css" rel="stylesheet">
+  <link href="static/css2024/theme.css" rel="stylesheet">
+  <link href="static/css2024/footer-small.css" rel="stylesheet">
+  
+  <!-- loading -->
+  <script src="static/js2024/jquery-3.5.1.min.js"></script>
+  <script src="static/js2024/loading.js"></script>
+  <!-- <link rel="stylesheet" href="static/css/loading.css"> -->
+
+  <!-- <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/font/font.css">
+    <link rel="stylesheet" href="static/css/loading.css">
+
+    <script src="static/js/loading.js"></script>
+    <script src="static/js/fontsize.js"></script> -->
+  <title>LCA | XMU-China - iGEM 2024</title>
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+        <div class="logo">
+            <div class="img1">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/logo.png" alt="Logo">
+            </div>
+            <div class="img2">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/logo-word.png" alt="logo">
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="home">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/home.png" alt="Home Icon">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#team">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/team.png" alt="Team Icon">
+                        <span>TEAM</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="members">Members</a></li>
+                        <li><a href="attributions">Attributions</a></li>
+                        <li><a href="notebook">Notebook</a></li>
+                        <li><a href="experiments">Experiments</a></li>
+                        <li><a href="safety">Safety</a></li>
+                        <li><a href="collaborations">Collaborations</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#project">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/project.png" alt="Project Icon">
+                        <span>PROJECT</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="description">Description</a></li>
+                        <li><a href="design">Design</a></li>
+                        <li><a href="engineering">Engineering Success</a></li>
+                        <li><a href="results">Results</a></li>
+                        <li><a href="poc">Proof of Concept</a></li>
+                        <li><a href="implementation">Proposed Implementation</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#drylab">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/drylab.png" alt="DryLab Icon">
+                        <span>DRYLAB</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="model">Model</a></li>
+                        <li><a href="sop">SOP</a></li>
+                        <li><a href="lca">LCA</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#parts">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/parts.png" alt="Parts Icon">
+                        <span>PARTS</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="parts">Parts</a></li>
+                        <li><a href="contribution">Contribution</a></li>
+                        <li><a href="part-collection">Parts Collection</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#hp">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/hp.png" alt="Hp Icon">
+                        <span>HP</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hp">Human Practices</a></li>
+                        <li><a href="human-practices">Integrated Human Practices</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#award">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/award.png" alt="Award Icon">
+                        <span>AWARD</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="human-practices">Integrated Human Practices</a></li>
+                        <li><a href="model">Model</a></li>
+                        <li><a href="part-collection">Parts Collection</a></li>
+                    </ul>
+                </div>
+            </li> 
+            <li>
+                <div class="dropdown">
+                    <a href="#game">
+                        <img src="https://raw.githubusercontent.com/Yuer-Chi/slaythespire_web/main/static/images/relic.png" alt="">
+                        <span>GAME</span>
+                        
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="description_game">Description</a></li>
+                        <li><a href="#team2">Characters</a></li>
+                        <li><a href="#team3">Encyclopedia</a></li>
+                        <li><a href="#team4">Joke</a></li>
+                        <li><a href="#team5">Achievements</a></li>
+                    </ul>
+                </div>
+            </li>    
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- 
+    <div class="header">
+        <img src="https://static.igem.wiki/teams/5136/layout/head.png" alt="" class="head">
+        <ul>
+            <li><a href=" home"><img src="https://static.igem.wiki/teams/5136/logos/1.png" alt=""><p>HOME</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/2.png" alt=""><p>TEAM</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/3.png" alt=""><p>DRY LAB</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/4.png" alt=""><p>WET LAB</p></a></li>
+            <li><a href="description"><img src="https://static.igem.wiki/teams/5136/logos/5.png" alt=""><p>PROJECT</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/6.png" alt=""><p>AWARDS</p></a></li>
+        </ul>
+    </div> -->
+
+  <!-- Header -->
+  <!--  <header class="bg-hero py-5 mb-5">-->
+  <!--    <div class="container h-100">-->
+  <!--      <div class="row h-100 align-items-center">-->
+  <!--        <div class="col-lg-12">-->
+  <!--          <h1 class="display-4 text-white mt-5 mb-2">LCA</h1>-->
+  <!--	        <p class="lead mb-5 text-white-50">Innovative educational tools and outreach activities have the ability to establish a two-way dialogue
+with new communities by discussing public values and the science behind synthetic biology.</p>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </header>-->
+
+  <!-- Page Content -->
+  <div class="container">
+    
+
+<link rel="stylesheet" href="static/css2024/experiments.css">
+
+<script src="static/js2024/jquery-3.5.1.min.js"></script>
+<script src="static/bootstrap.bundle.min.js"></script>
+
+
+
+
+<div class="container">
+
+  <!--loading-->
+
+  <!--侧边导航栏-->
+  <div class="myScrollspy">
+    <!-- 文字导航 -->
+    <div class="left-bar">
+      <div class="left-bar-right">
+        <!-- <div class="left-bar-right-item">
+          <a href="#section1" class="sidebar-link" data-section="section1">没有标题的第一部分</a>
+        </div> -->
+        <div class="left-bar-right-item">
+          <a href="#section2" class="sidebar-link" data-section="section2">Pretreatment</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section3" class="sidebar-link" data-section="section3">Deinking</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section4" class="sidebar-link" data-section="section4">Waste Treatment</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section5" class="sidebar-link" data-section="section5">Conclusion</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section6" class="sidebar-link" data-section="section6">The Whole Life of Paper</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section7" class="sidebar-link" data-section="section7">References</a>
+        </div>
+      </div>
+    </div>
+    <!-- 底部插图 -->
+    <div class="left-bar-bg">
+      <img src="https://static.igem.wiki/teams/5136/cbl-fix.png" alt="">
+    </div>
+    <!-- 进度条 -->
+    <div class="scroll-bar"></div>
+  </div>
+
+  <!--以下就是正文段落-->
+  <div class="myPage">
+    <div class="myPage-main">
+      <div style="height: 100px;position:relative;"></div>
+      <div class="myPage-main-content">
+        <!---大标题--->
+        <div class="myPage-headline">
+          <h1 class="myPage-headline-content">
+            <span style="color: #867a77">.</span>
+            <span style="color: #483b53;font-family: Aaargh;">Life Cycle Assessment</span>
+            <span style="color: #867a77">.</span>
+          </h1>
+        </div>
+
+        <!---文字段落--->
+        <div class="myPage-paragraph" id="section1">
+          <!-- <h2 class="myPage-paragraph-headline-h2">没有标题的第一部分</h2> -->
+          <!-- 记住这里的h2就是标题 -->
+          <p class="myPage-paragraph-content">
+            Compared to direct incineration or landfilling of the waste paper, recycling can significantly reduce carbon
+            emissions and it accounts for only 20-30% of incineration emissions and 70-80% of landfill emissions (1). We
+            need a quantitative evaluation to further understand how much our project can contribute to reducing carbon
+            emissions.
+          </p>
+          <p class="myPage-paragraph-content">
+            <b>Life Cycle Assessment</b> (LCA) is a comprehensive method used to evaluate the environmental impacts of a
+            product or process from its inception toc disposal (from “cradle” to “grave”). In the context of waste paper
+            recycling, LCA examines every stage, including raw material extraction, production, usage, and end-of-life
+            treatment (2). By quantifying factors like energy consumption, greenhouse gas emissions, and waste
+            generation, this assessment provide a holistic view of environmental impact. LCA shows that in the pulp and
+            paper industry, production processes contribute to over half of the total carbon emissions (3) (Figure 1).
+            Therefore, reducing emissions at this stage is critical. Using data from our experiments as well as relevant
+            researches and databases, we calculated and compared the carbon emissions of enzymatic and chemical deinking
+            methods in recycled paper production.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/lca/lca-fig1.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 1 Distribution of carbon footprint in paper and pulp
+                industry.</b>
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            Our waste paper production process is divided into three parts: <b>Pretreatment</b>, <b>Deinking</b>, and <b>Waste Treatment</b>.
+            The calculation boundaries include all the inputs and outputs in these three parts, including chemical
+            reagent/enzymes production, electricity consumption, and post-deinking waste treatment. The calculation
+            equations are as follows:
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/lca/formula1.png" alt=""
+            style="max-width: 250px;">
+            <div class="myPage-paragraph-fig-description"><b> </b>
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            Where C<sub>T</sub> is the total carbon emission (kg CO<sub>2</sub>eq), C<sub>P</sub> is the carbon emission (kg CO<sub>2</sub>eq) in pretreatment
+            process, C<sub>D</sub> is the deinking carbon emission (kg CO<sub>2</sub>eq) and C<sub>W</sub> is the carbon emission (kg CO<sub>2</sub>eq) in waste
+            treatment. Carbon emission in each step (C<sub>i</sub>) is calculated with input amount (I<sub>ij</sub>) and its carbon emission
+            factor (α<sub>ij</sub>). Specific carbon emission factors are as follows:
+          </p>
+          <div class="myPage-paragraph-table-div" style="text-align: center">
+            <table class="myPage-paragraph-table">
+              <tbody>
+                <tr>
+                  <th style="width:30%;">Type</th>
+                  <th style="width:30%;">Carbon emission factor</th>
+                  <th style="width:40%;">Source</th>
+                </tr>
+                <tr>
+                  <td>Electricity</td>
+                  <td>0.53 kg CO<sub>2</sub>eq/kwh</td>
+                  <td>(4)</td>
+                </tr>
+                <tr>
+                  <td>NaOH</td>
+                  <td>2.5 kg CO<sub>2</sub>eq/kg</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>H<sub>2</sub>O<sub>2</sub></td>
+                  <td>2.3 kg CO<sub>2</sub>eq/kg</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Na<sub>2</sub>SiO<sub>3</sub></td>
+                  <td>1.5 kg CO<sub>2</sub>eq/kg</td>
+                  <td>Ecoinvent3</td>
+                </tr>
+                <tr>
+                  <td>Yeast extract</td>
+                  <td>1.5 kg CO<sub>2</sub>eq/kg</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Tryptone</td>
+                  <td>2.1 kg CO<sub>2</sub>eq/kg</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Enzyme producing <i>E. coli</i> BL21</td>
+                  <td>34.7 mmol CO<sub>2</sub>/h per g [dw]</td>
+                  <td>(6)</td>
+                </tr>
+                <tr>
+                  <td>COD/BOD</td>
+                  <td>1.375 kg CO<sub>2</sub>eq/kg</td>
+                  <td>China Products Carbon Footprint Factors Database</td>
+                </tr>
+                <tr>
+                  <td>Suspended solids</td>
+                  <td>422.4 kg CO<sub>2</sub>eq/t</td>
+                  <td>China Products Carbon Footprint Factors Database</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="myPage-paragraph-fig-description">
+              <b>Table 1 Carbon emission factors used in our calculation.</b>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <!---Pretreatment--->
+        <div class="myPage-paragraph" id="section2">
+          <h2 class="myPage-paragraph-headline-h2">Pretreatment</h2>
+          <p class="myPage-paragraph-content">
+            This part involves mixing waste paper with water to generate pulp, primarily consuming electrical energy.
+            Based on our machine's power and the average carbon emission factor of the China's power grid (4), the CO<sub>2</sub>
+            emissions were calculated and the result is 17.6 g CO<sub>2</sub>eq/100 mL pulp.
+          </p>
+        </div>
+
+        <!---Deinking--->
+        <div class="myPage-paragraph" id="section3">
+          <h2 class="myPage-paragraph-headline-h2">Deinking</h2>
+
+          <p class="myPage-paragraph-content">
+            After pulp preparation, chemical reagents or enzymes are added to the pulp to separate ink from the pulp.
+            Stirring was applied to facilitate better reaction. We calculated the carbon emission of chemical reagents'
+            production (5), the respiration of enzyme-producing bacteria (6), and the corresponding electricity
+            consumption. Results indicate that enzymatic deinking (22.6 g CO<sub>2</sub>eq/100 mL pulp) reduces carbon emissions by
+            30.7% compared to chemical methods (32.6 g CO<sub>2</sub>eq/100 mL pulp). The reduction is mainly due to the decreased
+            chemical reagent usage and the high efficiency of enzymes.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/lca/deinking.png" alt=""style="max-width: 400px;">
+            <div class="myPage-paragraph-fig-description"><b>Figure 2 Carbon emission in deinking process.</b>
+            </div>
+          </div>
+
+        </div>
+
+        <!---超链接的写法--->
+        <div class="myPage-paragraph" id="section4">
+          <h2 class="myPage-paragraph-headline-h2">Waste Treatment</h2>
+          <p class="myPage-paragraph-content">
+            The deinking process generates large amount of wastewater (7). The waste treatment process deals with
+            harmful substances in wastewater such as <b>chemical oxygen demand (COD)</b>, <b>biochemical oxygen demand (BOD)</b>, and
+            <b>suspended solids (SS)</b>. Enzymatic methods significantly reduce COD and BOD compared to chemical methods due
+            to lower chemical reagent usage (8). Additionally, the alkaline condition of chemical methods leads to fiber
+            breakage, reducing fiber recovery rate and increasing SS (9). These SS becomes deinking sludge during
+            wastewater treatment, which, when landfilled or incinerated, also generates considerable amount of CO<sub>2</sub>.
+            Overall, wastewater treated with enzymatic methods results in 54.2% lower carbon emissions compared to
+            chemical methods.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/lca/lca-fig3.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 3 Post-deinking waste of chemical and enzymatic
+                methods.</b>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="myPage-paragraph" id="section5">
+          <h2 class="myPage-paragraph-headline-h2">Conclusion</h2>
+          <p class="myPage-paragraph-content">
+            The enzymatic deinking method demonstrates a substantial reduction in carbon emissions (<b>21.1%</b>, compared to
+            chemical methods) across all stages of recycled paper production.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/lca/production-sum.png" alt=""style="max-width: 1000px;">
+            <div class="myPage-paragraph-fig-description"><b>Figure 4 Overall carbon emission and distribution.</b>
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            In addition to carbon emission, we also calculated the economic costs of chemical and enzymatic methods. We
+            assessed the costs of electricity and chemical reagents consumed throughout the entire production process.
+            The results indicate that the use of enzymatic methods can reduce the production cost of recycled paper by
+            <b>31.9%</b>.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/lca/money.png" alt=""style="max-width: 350px;">
+            <div class="myPage-paragraph-fig-description"><b>Figure 5 Economic cost of chemical and enzymatic
+                methods</b>
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            In conclusion, our enzymatic deinking method reduced both economic and emission cost, highlighting our
+            method's potential as a more sustainable alternative to traditional chemical methods.
+          </p>
+        </div>
+
+        <div class="myPage-paragraph" id="section6">
+          <h2 class="myPage-paragraph-headline-h2">The Whole Life of Paper</h2>
+          <p class="myPage-paragraph-content">
+            When employing different deinking methods, the properties of recycled paper, such as brightness and fiber
+            strength, exhibit notable variations (10). Our experimental results indicate that although both methods
+            reduce the brightness of recycled paper compared to virgin pulp paper, the paper treated with the enzymatic
+            method is approximately <a style="font-weight: bolder;text-decoration: none;"
+              href="results">5%</a> brighter than that treated with the chemical method. Considering multiple
+            recycling scenarios, the number of recycling cycles for paper can be described by the following equation:
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/lca/formula2.png" alt=""style="max-width: 250px;">
+            <div class="myPage-paragraph-fig-description"><b> </b>
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            Where β is the percentage of brightness reduction and <i>e</i> is the base of natural logarithm.
+            For chemical deinking β is 0.27 and for enzymatic deinking β is 0.23. The calculation shows that recycling
+            cycles for paper using chemical deinking is 3 and for enzymatic method the number is 4, leading to extra
+            cost of raw material for chemical method.
+          </p>
+        </div>
+
+        <!--References-->
+        <div class="myPage-paragraph" id="section7">
+          <h2 class="myPage-paragraph-headline-h2">References</h2>
+          <ol class="myPage-paragraph-reference">
+            <li>
+              H. Merrild, A. Damgaard, T. H. Christensen, Life cycle assessment of waste paper management: The
+              importance of technology data and system boundaries in assessing recycling and incineration. Resources,
+              Conservation and Recycling 52, 1391-1398 (2008).
+            </li>
+            <li>
+              C. M. Defalque, F. A. S. Marins, A. F. da Silva, E. Y. A. Rodríguez, A review of waste paper recycling
+              networks focusing on quantitative methods and sustainability. Journal of Material Cycles and Waste
+              Management 23, 55-76 (2021).
+            </li>
+            <li>
+              T. A. F. P. Association, "Printing & Writing Papers Life-Cycle Assessment Summary Report," (2009).
+            </li>
+            <li>
+              B. Cai et al., China high resolution emission database (CHRED) with point emission sources, gridded
+              emission data, and supplementary socioeconomic data. Resources, Conservation and Recycling 129, 232-239
+              (2018).
+            </li>
+            <li>
+              A. Provost-Savard, R. Legros, G. Majeau-Bettez, Parametrized regionalization of paper recycling life-cycle
+              assessment. Waste Management 156, 84-96 (2023).
+            </li>
+            <li>
+              K. B. Andersen, K. von Meyenburg, Are growth rates of Escherichia coli in batch cultures limited by
+              respiration? J Bacteriol 144, 114-123 (1980).
+            </li>
+            <li>
+              S. Badar, I. H. Farooqi. (2012).
+            </li>
+            <li>
+              S. Mondal et al., Biodeinking of waste papers using combinatorial fungal enzymes and subsequent production
+              of butanol from effluent. Bioresource Technology 353, 127078 (2022).
+            </li>
+            <li>
+              S. e. al, Industrial trial results on enzymatic deinking and fiber modification of old newsprint with
+              cellulase from aspergillus L22. China Pulp & Paper Industry, 20-22 (2001).
+            </li>
+            <li>
+              A. Kumar, D. Dutt, A comparative study of conventional chemical deinking and environment-friendly
+              bio-deinking of mixed office wastepaper. Scientific African 12, e00793 (2021).
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-bottom: 100px;"></div>
+
+</div>
+
+
+  </div>
+
+  <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+  
+    <!-- topbutton -->
+    <div class="menu">
+
+        <div class="toggle">
+            <i class="fa fa-angle-double-up"></i>
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-0.png" alt="" style="z-index: 100;">
+        </div>
+        <li style="--i:0">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:1">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:2">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:3">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:4">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:6">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:7">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+    </div>
+    
+    <div id="myFooter">
+        <!--  内容部分-->
+        <div class="footer-xiaohui">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-xmulogo.png" alt="">
+            <div class="footer-xiaoming">
+                Xiamen University
+            </div>
+        </div>
+        <div class="footer-didian">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-position.png" alt="">
+            <div class="footer-didianming">
+                Xiamen University, Fujian, China<br>
+                No.422, Siming South Road, Fujian, P.R.China 361005
+            </div>
+        </div>
+        <div class="footer-duihui">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-teamlogo-2024.png" alt="">
+        </div>
+        <div class="footer-follow">
+            <div class="footer-followus">
+                Follow Us
+            </div>
+            <div class="footer-wechat">
+                <a href="https://static.igem.wiki/teams/5136/header-footer-img/wechat.png">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wechat.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-facebook">
+                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FIGEM-XMU-China-1067638406629389">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-f.png" alt=""
+                     style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-ins">
+                <a href="https://www.instagram.com/xmu_china_igem">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-o.png" alt=""
+                    style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-weibo">
+                <a href="https://weibo.com/u/7482868083">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wb.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-twitter">
+                <a href="https://twitter.com/XMU_igem">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-x.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+        </div>
+        <!-- <div class="footer-bar"></div> -->
+        <div class="footer-contact">
+            <div class="footer-contactus">
+                Contact Us
+            </div>
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-mail.png" alt="">
+            <div class="footer-mail">
+                igem_xmu@163.com
+            </div>
+        </div>
+    </div>
+    
+
+  <!-- Bootstrap Bundle with Popper -->
+  
+  <script src="static/bootstrap.bundle.min.js"></script>
+  <script src="static/js2024/top.js"></script>
+  <script src="static/js2024/scroll.js"></script>
+</body>
+
+</html>

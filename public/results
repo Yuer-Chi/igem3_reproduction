@@ -1,0 +1,1677 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://static.igem.wiki/teams/5136/favicon.png" />
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+  <!-- Bootstrap CSS -->
+  <!-- <link href="static/bootstrap.min.css" rel="stylesheet"> -->
+
+  <!-- Custom CSS -->
+  <!-- <link href="static/style.css" rel="stylesheet"> -->
+  <link href="static/css2024/footer.css" rel="stylesheet">
+  <link href="static/css2024/header.css" rel="stylesheet">
+  <link href="static/css2024/top.css" rel="stylesheet">
+  <link href="static/css2024/theme.css" rel="stylesheet">
+  <link href="static/css2024/footer-small.css" rel="stylesheet">
+  
+  <!-- loading -->
+  <script src="static/js2024/jquery-3.5.1.min.js"></script>
+  <script src="static/js2024/loading.js"></script>
+  <!-- <link rel="stylesheet" href="static/css/loading.css"> -->
+
+  <!-- <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/font/font.css">
+    <link rel="stylesheet" href="static/css/loading.css">
+
+    <script src="static/js/loading.js"></script>
+    <script src="static/js/fontsize.js"></script> -->
+  <title>Results | XMU-China - iGEM 2024</title>
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+        <div class="logo">
+            <div class="img1">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/logo.png" alt="Logo">
+            </div>
+            <div class="img2">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/logo-word.png" alt="logo">
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="home">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/home.png" alt="Home Icon">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#team">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/team.png" alt="Team Icon">
+                        <span>TEAM</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="members">Members</a></li>
+                        <li><a href="attributions">Attributions</a></li>
+                        <li><a href="notebook">Notebook</a></li>
+                        <li><a href="experiments">Experiments</a></li>
+                        <li><a href="safety">Safety</a></li>
+                        <li><a href="collaborations">Collaborations</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#project">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/project.png" alt="Project Icon">
+                        <span>PROJECT</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="description">Description</a></li>
+                        <li><a href="design">Design</a></li>
+                        <li><a href="engineering">Engineering Success</a></li>
+                        <li><a href="results">Results</a></li>
+                        <li><a href="poc">Proof of Concept</a></li>
+                        <li><a href="implementation">Proposed Implementation</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#drylab">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/drylab.png" alt="DryLab Icon">
+                        <span>DRYLAB</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="model">Model</a></li>
+                        <li><a href="sop">SOP</a></li>
+                        <li><a href="lca">LCA</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#parts">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/parts.png" alt="Parts Icon">
+                        <span>PARTS</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="parts">Parts</a></li>
+                        <li><a href="contribution">Contribution</a></li>
+                        <li><a href="part-collection">Parts Collection</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#hp">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/hp.png" alt="Hp Icon">
+                        <span>HP</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hp">Human Practices</a></li>
+                        <li><a href="human-practices">Integrated Human Practices</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#award">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/award.png" alt="Award Icon">
+                        <span>AWARD</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="human-practices">Integrated Human Practices</a></li>
+                        <li><a href="model">Model</a></li>
+                        <li><a href="part-collection">Parts Collection</a></li>
+                    </ul>
+                </div>
+            </li> 
+            <li>
+                <div class="dropdown">
+                    <a href="#game">
+                        <img src="https://raw.githubusercontent.com/Yuer-Chi/slaythespire_web/main/static/images/relic.png" alt="">
+                        <span>GAME</span>
+                        
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="description_game">Description</a></li>
+                        <li><a href="#team2">Characters</a></li>
+                        <li><a href="#team3">Encyclopedia</a></li>
+                        <li><a href="#team4">Joke</a></li>
+                        <li><a href="#team5">Achievements</a></li>
+                    </ul>
+                </div>
+            </li>    
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- 
+    <div class="header">
+        <img src="https://static.igem.wiki/teams/5136/layout/head.png" alt="" class="head">
+        <ul>
+            <li><a href=" home"><img src="https://static.igem.wiki/teams/5136/logos/1.png" alt=""><p>HOME</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/2.png" alt=""><p>TEAM</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/3.png" alt=""><p>DRY LAB</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/4.png" alt=""><p>WET LAB</p></a></li>
+            <li><a href="description"><img src="https://static.igem.wiki/teams/5136/logos/5.png" alt=""><p>PROJECT</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/6.png" alt=""><p>AWARDS</p></a></li>
+        </ul>
+    </div> -->
+
+  <!-- Header -->
+  <!--  <header class="bg-hero py-5 mb-5">-->
+  <!--    <div class="container h-100">-->
+  <!--      <div class="row h-100 align-items-center">-->
+  <!--        <div class="col-lg-12">-->
+  <!--          <h1 class="display-4 text-white mt-5 mb-2">Results</h1>-->
+  <!--	        <p class="lead mb-5 text-white-50">You can describe the results of your project and your future plans here.</p>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </header>-->
+
+  <!-- Page Content -->
+  <div class="container">
+    
+
+
+<script src="static/js2024/jquery-3.5.1.min.js"></script>
+<script src="static/bootstrap.bundle.min.js"></script>
+
+<style>
+  .sidebar-link {
+    font-size: 2vh;
+  }
+
+  .sidebar-link.current {
+    font-size: 20px;
+  }
+</style>
+
+
+<div class="container">
+  <div id="loader-wrapper">
+    <div id="loader">
+      <div class="loader-img">
+        <img src="https://static.igem.wiki/teams/5136/load-new.gif">
+      </div>
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <!--loading-->
+
+  <!--侧边导航栏-->
+  <div class="myScrollspy">
+    <!-- 文字导航 -->
+    <div class="left-bar">
+      <div class="left-bar-right">
+        <div class="left-bar-right-item">
+          <a href="#section1" class="sidebar-link" data-section="section1">Overview</a>
+        </div>
+        <!-- <div class="left-bar-right-item">
+          <a href="#section2" class="sidebar-link" data-section="section2">Highlight</a>
+        </div> -->
+        <div class="left-bar-right-item">
+          <a href="#section3" class="sidebar-link" data-section="section3">Screen Enzymes</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section4" class="sidebar-link" data-section="section4">Screen Monooxygenase</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section5" class="sidebar-link" data-section="section5">Autolysis System</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section6" class="sidebar-link" data-section="section6">Secretion System</a>
+        </div>
+        <!-- <div class="left-bar-right-item">
+          <a href="#section7" class="sidebar-link" data-section="section7">References</a>
+        </div> -->
+        <div class="left-bar-right-item">
+          <a href="#section8" class="sidebar-link" data-section="section8">Secrete Monooxygenase</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section9" class="sidebar-link" data-section="section9">Display System</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section10" class="sidebar-link" data-section="section10">Kill Switch</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section11" class="sidebar-link" data-section="section11">Further Explorations</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section12" class="sidebar-link" data-section="section12">Conclusion</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section13" class="sidebar-link" data-section="section13">Future Prospects</a>
+        </div>
+        <!-- <div class="left-bar-right-item">
+          <a href="#section14" class="sidebar-link" data-section="section14">10	Conclusion</a>
+        </div> -->
+        <div class="left-bar-right-item">
+          <a href="#section15" class="sidebar-link" data-section="section15">References</a>
+        </div>
+      </div>
+    </div>
+    <!-- 底部插图 -->
+    <!-- <div class="left-bar-bg">
+      <img src="https://static.igem.wiki/teams/5136/cbl-fix.png" alt="">
+    </div> -->
+    <!-- 进度条 -->
+    <div class="scroll-bar"></div>
+  </div>
+
+  <!--以下就是正文段落-->
+  <div class="myPage">
+    <div class="myPage-main">
+      <div style="height: 100px;position:relative;"></div>
+      <div class="myPage-main-content">
+        <!---大标题--->
+        <div class="myPage-headline">
+          <h1 class="myPage-headline-content">
+            <span style="color: #8768cd">.</span>
+            <span style="color: #483b53;font-family: Aaargh;">Results</span>
+            <span style="color: #8768cd">.</span>
+          </h1>
+        </div>
+
+        <!-- <div class="myPage-paragraph" id="moban">
+          <h2 class="myPage-paragraph-headline-h2">正常用的标题比如1</h2>
+          <h3 class="myPage-paragraph-headline-h3">小标题比如2.1</h3>
+          <h4 class="myPage-paragraph-headline-h4">小小标题2.1.3</h4>
+          <h5 class="myPage-paragraph-headline-h5">特殊的小小小标题2.1.1.3</h5>
+          <p class="myPage-paragraph-content">
+            段落
+          </p>
+          <a style="font-weight: bolder;text-decoration: none;" href="https://www.baidu.com/">百度</a>
+          <a style="font-weight: bolder;text-decoration: none;"
+            href="hardware">Hardware</a>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/1.jpg" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 1</b>
+            </div>
+          </div>
+        </div> -->
+
+        <!---文字段落--->
+        <div class="myPage-paragraph" id="section1">
+          <h2 class="myPage-paragraph-headline-h2">1 Overview</h2>
+          <p class="myPage-paragraph-content">
+            Deinking is the bottleneck for waste paper recycling, which requires a substantial amount of toxic
+            chemicals. It also releases poisonous organic agents and heavy metals that may cause environmental
+            contamination and expensive disposal costs.</p>
+          <p class="myPage-paragraph-content">
+            Our project, REPARO, focuses on developing an unprecedented solution based on synthetic biology, which could
+            serve as a viable alternative to the chemical method on the industry scale. We have successfully established
+            a screening method for enzymes with high deinking efficiency based on the gray scale changes.
+            Leveraging the monooxygenase CYP199A4 and its mutants reported in the literature, we have identified a
+            monooxygenase with high efficiency in deinking, a significant milestone in the wastepaper recycling process.
+            This, combined with a rapid screening method, structure-activity analysis, and saturation mutation, has led
+            us to the CYP199A4 mutant T253A, which exhibits superior deinking performance. By characterizing classic
+            signal peptides, we proved that LMT has a high secretion efficiency. It realized the continuous secretion of
+            CYP199A4 T253E with significant deinking performance. Furthermore, we expanded the application in erasing
+            the handwriting based on the combination of crosslinked chitosan and rhamnolipid. Beyond that, displaying
+            the metallothioneins on the surface of engineered bacteria could successfully reduce the heavy metal ion
+            Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> in the wastewater. Finally, we proved that the scheme we designed
+            is reasonable and feasible, which
+            paves the way for its application at an industrial scale.
+
+          </p>
+        </div>
+
+        <div class="myPage-paragraph" id="section2">
+          <h2 class="myPage-paragraph-headline-h2" style="margin-bottom: 7vh;">Highlight</h2>
+          <h5 class="myPage-paragraph-headline-h5">Develop a screen method and explore the enzymes mutants with the best
+            deinking performance.</h5>
+          <h5 class="myPage-paragraph-headline-h5">Continuous secretion of CYP199A4 T253E with significant deinking
+            performance.</h5>
+          <h5 class="myPage-paragraph-headline-h5">Construct surface display system to significantly absorb heavy metal
+            ion.</h5>
+          <h5 class="myPage-paragraph-headline-h5">Construct a blue light-induced kill switch to achieve biocontainment.</h5>
+          <h5 class="myPage-paragraph-headline-h5">Propose multi-scale estimation (MUSES) for the secretion kinetics of signal peptides for real world engineering.</h5>
+        </div>
+
+        <div class="myPage-paragraph" id="section3">
+          <h2 class="myPage-paragraph-headline-h2">2 Screen Enzymes with the Best Deinking Performance</h2>
+          <h3 class="myPage-paragraph-headline-h3">2.1 Deinking Blank System</h3>
+          <p class="myPage-paragraph-content">
+            The deinking blank system consisted of a 50 mL pulp with 1 g Na<sub>2</sub>SiO<sub>3</sub>, and 1.67 mL
+            H<sub>2</sub>O<sub>2</sub> (1), which is the same
+            in each deinking method. Pulp was produced by the paper that printed the same article, ensuring the same ink
+            concentration. The pulp preparation referred to standard operating procedure (see <a
+              style="font-weight: bolder;text-decoration: none;" href="sop">SOP</a> for
+            more details).
+            Then, limonene (see <a style="font-weight: bolder;text-decoration: none;"
+              href="design">design</a> and <a
+              style="font-weight: bolder;text-decoration: none;"
+              href="human-practices">IHP</a> for more details) was selected from many
+            hydrophobic solvents to extract
+            the ink from the mixture after the reaction. The suction filtration was carried out through the Büchner
+            funnel to remove the water and dry it in ovens. Take a picture of the paper cake after drying, and read the
+            gray scale through the written program by automatically selecting (see <a
+              style="font-weight: bolder;text-decoration: none;" href="sop">SOP</a> for
+            more details). These
+            processes were summarized to a standard operating procedure (see <a
+              style="font-weight: bolder;text-decoration: none;" href="sop">SOP</a> for
+            more details). It was worth noting
+            that the higher the gray scale, the better the deinking effect. The experimental results showed that the
+            deinking effect was almost invalid for <b>the deinking blank system, which was set as the negative
+              control</b> (Figure 1).
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/1.jpg" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 1 The gray scale of the paper cake deinked by
+                deinking negative control system.</b>
+            </div>
+          </div>
+          <h3 class="myPage-paragraph-headline-h3">2.2 Chemical Method</h3>
+          <p class="myPage-paragraph-content">
+            Currently, chemical deinking is the classical method used in industry (see <a
+              style="font-weight: bolder;text-decoration: none;"
+              href="human-practices">IHP</a> for more details), which was
+            selected as a positive control. In the chemical method, 1 g NaOH was added to the deinking blank system and
+            reacted at 30 °C for 30 min. After the standard operating procedure (see <a
+              style="font-weight: bolder;text-decoration: none;" href="sop">SOP</a> for
+            more details), read the
+            gray scale automatically. The experimental results showed a high value of the gray scale (Figure 2),
+            demonstrating that the chemical method exhibits a remarkable effect in deinking.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/2.jpg" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 2 The gray scale of the paper cake deinked by
+                chemical method.</b>
+            </div>
+          </div>
+          <h3 class="myPage-paragraph-headline-h3">2.3 Enzymatic Method</h3>
+          <h4 class="myPage-paragraph-headline-h4">2.3.1 Cellulase</h4>
+          <p class="myPage-paragraph-content">
+
+            The plasmid <a style="font-weight: bolder;text-decoration: none;" href="http://parts.igem.org/Part:BBa_K5136026">BBa_K5136026</a> was
+            transformed into <i>E. coli</i> BL21(DE3), then the positive transformants were
+            selected by kanamycin and confirmed by colony PCR (Figure 3A) and gene sequencing. The plasmid verified by
+            sequencing was successfully transformed into <i>E. coli</i> BL21(DE3).
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/3.png" alt="" style="max-width: 70vw;">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 3</b> (<b>A</b>) DNA gel electrophoresis of the colony PCR products of
+              BBa_K5136026_pET-28a(+) in <i>E.
+                coli</i>
+              BL21(DE3). Target bands (1518 bp) can be observed at the position between 1000 bp and 2000 bp.
+              (<b>B</b>)
+              SDS-PAGE
+              analysis of cellulase EG5C protein. Target bands (56.1 kDa) can be observed at the position around 52
+              kDa.
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            After being cultivated and induced by 0.5 mM IPTG, the GE AKTA Prime Plus FPLC System was employed to
+            collect purified protein from the lysate supernatant. Cellulase was verified by sodium dodecyl sulfate
+            (SDS)-12% (wt/vol) polyacrylamide gel electrophoresis (PAGE) and Coomassie blue staining (Figure 3B).
+          </p>
+          <p class="myPage-paragraph-content">
+            After purification, we harvest the cellulase EG5C successfully. 1 mL cellulase (0.2 mg/mL) was added in the
+            deinking blank system and reacted at 60 °C for 60 min. After the standard operating procedure (see <a
+              style="font-weight: bolder;text-decoration: none;" href="sop">SOP</a> for
+            more details), read the gray scale automatically. The experimental results showed that the gray scale is
+            higher than that of deinking blank system (negative control), while lower than that of chemical
+            method (positive control). So, cellulase has the ability to remove ink, but there is still insufficient
+            compared with the chemical deinking (Figure 4).
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/4.jpg" alt="">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 4 The gray scale of paper cake deinked with cellulase.</b>
+            </div>
+          </div>
+          <h4 class="myPage-paragraph-headline-h4">2.3.2 Laccase</h4>
+          <p class="myPage-paragraph-content">
+            The plasmid <a style="font-weight: bolder;text-decoration: none;" href="http://parts.igem.org/Part:BBa_K5136027">BBa_K5136027</a> was
+            transformed into <i>E. coli</i> BL21(DE3), then the positive transformants were
+            selected by kanamycin and confirmed by colony PCR and gene sequencing. The plasmid verified by sequencing
+            was successfully transformed into <i>E. coli</i> BL21(DE3).
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/5.png" alt="" style="max-width: 70vw;">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 5</b> (<b>A</b>) DNA gel electrophoresis of the colony PCR products of
+              BBa_K5136027_pET-28a(+) in <i>E.
+                coli</i>
+              BL21(DE3). Target bands (1659 bp) can be observed at the position between 1000 bp and 2000 bp.
+              (<b>B</b>)
+              SDS-PAGE analysis of laccase-his protein. Target bands (62.6 kDa) can be observed at the position around
+              66 kDa.
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            After being cultivated and induced by 0.03 mM IPTG and 0.5 mM CuSO<sub>4</sub>, the GE AKTA Prime Plus FPLC
+            System was
+            employed to collect purified protein from the lysate supernatant. Laccase was verified by sodium dodecyl
+            sulfate (SDS)-12% (wt/vol) polyacrylamide gel electrophoresis (PAGE) and Coomassie blue staining.
+          </p>
+          <p class="myPage-paragraph-content">
+            After purification, we harvest the laccase successfully. 1 mL laccase (0.2 mg/mL) was added to the deinking
+            blank system and reacted at 70 °C for 60 min. After the standard operating procedure (see <a
+              style="font-weight: bolder;text-decoration: none;" href="sop">SOP</a> for
+            more
+            details), read the gray scale automatically. The experimental results show that the waste paper
+            treated with cellulase alone exhibits a similar gray scale to cellulase. So, laccase also has the
+            ability to remove ink, but is still insufficient compared with chemical deinking.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/6.jpg" alt="">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 6 The gray scale of paper cake deinked with laccase.</b>
+            </div>
+          </div>
+          <h4 class="myPage-paragraph-headline-h4">2.3.3 Monooxygenase (P450)</h4>
+          <p class="myPage-paragraph-content">
+            The engineering bacteria were cultivated and induced by 0.2 mM IPTG, the GE AKTA Prime Plus FPLC System was
+            employed to collect purified protein from the lysate supernatant. P450 was verified by sodium dodecyl
+            sulfate (SDS)-12% (wt/vol) polyacrylamide gel electrophoresis (PAGE) and Coomassie blue staining.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/7.png" alt="">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 7 SDS-PAGE analysis of P450 CYP102A1 protein. Target bands (117.8 kDa) can be observed at the
+                position around 95 kDa.</b>
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            After purification, we harvest P450 successfully. 1 mL P450 (0.35 mg/mL) and 0.012 mg NADPH were added in the
+            deinking blank system and reacted at 30 °C for 60 min. After standard operating procedure (see <a
+              style="font-weight: bolder;text-decoration: none;" href="sop">SOP</a> for
+            more
+            details), read the gray scale automatically. The gray scale treated by P450 was slightly higher
+            than that of cellulase and laccase (Figure 8).
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/8-p450.jpg" alt="">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 8 The gray scale of paper cake deinked with P450 CYP102A1.</b>
+            </div>
+          </div>
+          <h4 class="myPage-paragraph-headline-h4">2.3.4 Multienzymes</h4>
+          <p class="myPage-paragraph-content">
+            We try to investigate the deinking using multienzymes, coupling the function of two enzymes with different
+            functions. For one combination, 1 mL cellulase (0.2 mg/mL) and 1 mL laccase (0.2 mg/mL) were added in the
+            deinking blank system and reacted at 65 °C (the average of the two optimal temperatures) for 60 min. Because
+            the optimal temperature of cellulase (60 °C) varies from that of P450 (30 °C), for the other combination, we
+            first added 1 mL cellulase (0.2 mg/mL) to the deinking blank system at 60 °C for 60 min. After
+            the reaction, 1 mL P450 (0.35 mg/mL) was added and reacted at 30 °C for 60 min. After the standard operating
+            procedure (see <a style="font-weight: bolder;text-decoration: none;"
+              href="sop">SOP</a> for more details), read the gray scale
+            automatically. The experimental results
+            showed that there was no obvious improvement (Figure 9 and 10) in the gray scale in the two multienzymes
+            compared with
+            that of a single enzyme. We found that gray scale of waste paper treated by monooxygenase was the
+            highest one among the enzymes. Therefore, we hope to conduct further research on monooxygenase to obtain the
+            enzymes with better deinking performance.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/9.jpg" alt="">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 9 The gray scale of paper cake deinked with cellulase and laccase.</b>
+            </div>
+          </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/10-p450.jpg" alt="">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 10 The gray scale of paper cake deinked with cellulase and P450.</b>
+            </div>
+          </div>
+          <!-- <p class="myPage-paragraph-content">
+            Based on the above experimental results, we found that monooxygenase plays an important role in the deinking
+            of waste paper. Therefore, we hope to conduct further research on monooxygenase to optimize the deinking
+            effect of waste paper.
+          </p> -->
+        </div>
+
+        <div class="myPage-paragraph" id="section4">
+          <h2 class="myPage-paragraph-headline-h2">3 Screen the Monooxygenase with Higher Deinking Efficacy</h2>
+          <p class="myPage-paragraph-content">
+            NADPH is an expensive coenzyme (428.7 $/g), which propels us to give up the way to use the NADPH-dependent
+            monooxygenases in the waste paper deinking. After reviewing the literature, we chose three kinds of
+            monooxygenases,
+            CYP199A4, OleT<sub>JE</sub> and SfmD and their mutants, which use H<sub>2</sub>O<sub>2</sub> as an electron
+            donor. The targeted sequence was
+            inserted in pET-28a(+) to construct circuits (Table 1), which were transformed into <i>E. coli</i> BL21(DE3) to
+            express each
+            enzyme. The positive transformants were confirmed by kanamycin, colony PCR (Figure 11), and sequencing.
+            After being
+            cultivated and induced by 0.5 mM IPTG at 20 °C, the induction of CYP199A4 requires the addition of
+            δ-aminolevulinic acid hydrochloride (0.5 mM), the GE AKTA Prime Plus FPLC System was employed to get
+            purified protein from the lysate supernatant. SDS-PAGE and Coomassie blue staining were used to verify the
+            expression of the target protein (Figure 12).
+          </p>
+          
+          <div class="myPage-paragraph-fig-description"><b>Table 1 The part information of CYP199A4, OleT<sub>JE</sub> and SfmD and their mutants.</b>
+          </div>
+          <table class="myPage-paragraph-table" style="text-align: center">
+            <tbody>
+              <tr>
+                <th style="width:40%;">Name</th>
+                <th style="width:20%;">Type</th>
+                <th style="width:40%;">Description</th>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136020">BBa_K5136020</a></td>
+                <td>coding</td>
+                <td><i>SfmD WT</i></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136021">BBa_K5136021</a></td>
+                <td>coding</td>
+                <td><i>SfmD 277F</i></td>
+              </tr>
+              <tr>
+              <tr>
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136023">BBa_K5136023</a></td>
+                <td>coding</td>
+                <td><i>OleT<sub>JE</sub></i></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136024">BBa_K5136024</a></td>
+                <td>coding</td>
+                <td><i>OleT<sub>JE</sub> 236S 100K 166K</i></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136025">BBa_K5136025</a></td>
+                <td>coding</td>
+                <td><i>OleT<sub>JE</sub> 236S 360K 167K</i></td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136000">BBa_K5136000</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 WT</i>-His tag</td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136001">BBa_K5136001</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253E</i>-His tag</td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136002">BBa_K5136002</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253S</i>-His tag</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/11.png" alt="" style="max-width: 70vw;">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 11 DNA gel electrophoresis of the colony PCR products of CYP199A4 (A), SfmD (B) and OleTJE (C)
+                and
+                their mutants_ pET-28a(+) in <i>E. coli</i> BL21(DE3)</b>. Target bands (1412 bp) can be observed
+              between 1000 bp and
+              2000 bp.
+            </div>
+          </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/part/047/result-figure12.png" alt="" style="max-width: 70vw;">
+            <div class="myPage-paragraph-fig-description"><b>Figure 12 SDS-PAGE analysis of CYP199A4 (A), SfmD (B), and
+                OleT<sub>JE</sub> (C, D, and E) and their mutants</b>. Target bands (about 48.6 kDa) can be observed
+              between 42 kDa and
+              52 kDa.
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            1 mL monooxygenase (0.2 mg/mL) was added in the deinking blank system and reacted at 30 °C for 60 min. After the standard operating procedure (see <a
+              style="font-weight: bolder;text-decoration: none;" href="sop">SOP</a> for
+            more details),
+            read the gray scale automatically. As shown in Figure 13, the pulp treated by SfmD-277F showed a
+            slight increase in ΔGray scale value compared to that of wild type. However, the value decreased
+            significantly in the mutant of OleT<sub>JE</sub> than that of the wild type. The pulp treated by
+            CYP199A4 T253E exhibited
+            the <b>highest ΔGray scale value</b>, which was increased by more than ten-fold compared to the wild-type
+            enzyme.
+            As shown in the picture from the microscope (Figure 14), the paper treated with CYP199A4 T253E (Figure 14)
+            has minimal ink residue among these enzymes, demonstrating the <b>highest deinking efficiency</b>.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/formula1.png" alt="" style="max-width: 800px;">
+            <!-- <div class="myPage-paragraph-fig-description"><b>ΔGray scale的公式</b> -->
+          </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/13.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 13 Comparison of the Relative Gray Scale of
+                different monooxygenases and their mutants.</b>
+            </div>
+          </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/14.png" alt="" style="max-width: 70vw;">
+            <div class="myPage-paragraph-fig-description"><b>Figure 14 Pulp Recycled Paper under a High-resolution
+                Microscope, the percentage is the value obtained by dividing by the Gray of negative.</b>
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            The experimental results showed that CYP199A4 and its mutants exhibited the best deinking efficiency.
+            Therefore, we carried out saturation mutagenesis at position T253 of CYP199A4, aiming to screen the enzyme
+            with the best deinking effect. The steps for circuit construction, induced expression, and protein
+            purification were conducted with the same conditions for CYP199A4 WT and mutants, which were detailed
+            described in the part page below (Table 2).
+          </p>
+
+          <div class="myPage-paragraph-fig-description"><b>Table 2 The part information of CYP199A4 and its mutants.</b>
+          </div>
+          <table class="myPage-paragraph-table" style="text-align: center">
+            <tbody>
+              <tr>
+                <th style="width:40%;">Name</th>
+                <th style="width:20%;">Type</th>
+                <th style="width:40%;">Description</th>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136000">BBa_K5136000</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 WT</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136001">BBa_K5136001</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253E</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136002">BBa_K5136002</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253S</i>-His tag</td>
+              </tr>
+              <tr>
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136003">BBa_K5136003</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253A</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136004">BBa_K5136004</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253R</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136005">BBa_K5136005</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253N</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136006">BBa_K5136006</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253D</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136007">BBa_K5136007</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253C</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136008">BBa_K5136008</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253Q</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136009">BBa_K5136009</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253W</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136010">BBa_K5136010</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253G</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136011">BBa_K5136011</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253H</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136012">BBa_K5136012</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253I</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136013">BBa_K5136013</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253L</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136014">BBa_K5136014</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253K</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136015">BBa_K5136015</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253M</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136016">BBa_K5136016</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253F</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136017">BBa_K5136017</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253P</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136018">BBa_K5136018</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253V</i>-His tag</td>
+              </tr>
+              <tr>
+
+                <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136019">BBa_K5136019</a></td>
+                <td>coding</td>
+                <td><i>CYP199A4 T253Y</i>-His tag</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+
+          <p class="myPage-paragraph-content">
+            The targeted sequences were inserted in pET-28a(+) to construct circuits, which were transformed into <i>E.
+              coli</i> BL21(DE3) to express each enzyme. The positive transformants were confirmed by kanamycin, colony
+            PCR,
+            and sequencing. After being cultivated and induced by the addition of IPTG (0.2 mM) and δ-aminolevulinic
+            acid hydrochloride (0.5 mM) at 20 °C, the GE AKTA Prime Plus FPLC System was employed to get purified
+            protein from the lysate supernatant. SDS-PAGE and Coomassie blue staining were used to verify the expression
+            of the target protein.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/15.png" alt="" style="max-width: 70vw;">
+            <div class="myPage-paragraph-fig-description"><b>Figure 15 DNA gel electrophoresis of the colony PCR
+                products of CYP199A4 and its mutants_ pET-28a(+) in <i>E. coli</i> BL21(DE3).</b> Target bands (1412 bp) can
+                be
+                observed between 1000 bp and 2000 bp.
+            </div>
+          </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/16.png" alt="" style="max-width: 70vw;">
+            <div class="myPage-paragraph-fig-description"><b>Figure 16 SDS-PAGE analysis of CYP199A4, its mutants.</b>
+                Target bands (about 48.8 kDa) can be observed between 42 kDa and 52 kDa.
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            Based on the results from the preliminary experiment, many enzymes exhibit excellent deinking performance,
+            resulting in the saturation of the gray scale. Thus, each enzyme was diluted from 0.2 mg/mL to 0.05
+            mg/mL. 1 mL of each monooxygenase (0.05 mg/mL) was added to the deinking blank system and reacted at 30 °C for 60 min. After the standard operating procedure (see <a
+              style="font-weight: bolder;text-decoration: none;" href="sop">SOP</a>
+            for more details), read the gray scale automatically. As shown in Figure 17, the gray scale of
+            some mutants increased by 50% at least, in which CYP199A4 T253A shows the best performance in deinking. As
+            shown in
+            the picture from the microscope (Figure 18), the paper treated with CYP199A4 T253A (Figure 18) has minimal
+            ink residue among these enzymes. The paper is relatively white, and the observed effect has reached 1.06
+            times higher than chemical deinking (Figure 18 chemical method).
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/17.png" alt="" style="max-width: 70vw;">
+            <div class="myPage-paragraph-fig-description"><b>Figure 17 Comparison of the Relative Gray Scale of
+                CYP199A4 and its mutants.</b>
+            </div>
+          </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/18.png" alt="" style="max-width: 70vw;">
+            <div class="myPage-paragraph-fig-description"><b>Figure 18 Pulp Recycled Paper under a High-resolution
+                Microscope, the percentage is the value obtained by dividing by the Gray of A.</b>
+            </div>
+          </div>
+        </div>
+
+        <div class="myPage-paragraph" id="section5">
+          <h2 class="myPage-paragraph-headline-h2">4 The Effectiveness of An Autolysis System in Lysing Bacteria</h2>
+          <p class="myPage-paragraph-content">
+            Protein purification was a tedious procedure that also costs a lot of money. We attempted to construct
+            engineered bacteria based on synthetic biology to address the release of target proteins, which could skip
+            the protein purification step. Therefore, we obtained a modified LLSA system (please see <a
+              style="font-weight: bolder;text-decoration: none;" href="design">Design</a>
+            and
+            <a style="font-weight: bolder;text-decoration: none;"
+              href="engineering">Engineering Success</a> for details) from the <i>E.
+              coli</i> autolytic system FLSA (FhuD-T7 lysozyme-SsrA
+            mediated
+            autolytic system) (2). The system is designed to ensure that the target proteins can be efficiently produced
+            and smoothly released outside the cell, thus simplifying the process of obtaining the target proteins and
+            decreasing the treatment process cost (FLSA) (2). For the functional validation of both autolytic modules,
+            it is of utmost importance to assess the protein release capacity.
+          </p>
+          <p class="myPage-paragraph-content">
+            In order to verify whether the FLSA/LLSA autolytic system can release the target proteins to the
+            extracellular environment, we tried to optimize the gene sequences within the <i>E. coli</i> autolytic
+            system.
+            Using different signal peptides, linker and T7 lysozyme sequences, we assembled and constructed four
+            composite parts <a style="font-weight: bolder;text-decoration: none;" href="http://parts.igem.org/Part:BBa_K5136221">BBa_K5136221</a>, <a
+            style="font-weight: bolder;text-decoration: none;" href="http://parts.igem.org/Part:BBa_K5136222">BBa_K5136222</a>, <a style="font-weight: bolder;text-decoration: none;"
+              href="http://parts.igem.org/Part:BBa_K5136220">BBa_K5136220</a>, <a style="font-weight: bolder;text-decoration: none;"
+              href="http://parts.igem.org/Part:BBa_K5136223">BBa_K5136223</a>, which were assembled into the
+            expression vector pSB1C3 by standard assembly serving as the correct autolytic plasmids. Besides, we
+            constructed a basic part <a style="font-weight: bolder;text-decoration: none;" href="http://parts.igem.org/Part:BBa_K5136028">BBa_K5136028</a>
+            as a reporter gene and then
+            assembled it into the expression vector
+            pET-28a(+) by standard assembly, serving as the reporter plasmid (<i>sfgfp</i>_pET-28a(+), laboratory
+            stock).
+          </p>
+          <p class="myPage-paragraph-content">
+            Afterward, we co-transformed the reporter plasmid and the correct autolytic plasmid into <i>E. coli</i>
+            BL21(DE3),
+            and the cultures were grown overnight in the LB medium containing corresponding antibiotics. When the
+            OD<sub>600</sub>
+            value reaches 0.6-0.8, added 0.5 mM IPTG to induce sfGFP expression at 18 °C. After 10 h, 0.25%
+            <i>L</i>-arabinose was added to activate the autolytic system. The total fluorescence intensity was measured after
+            16 h of expression of the induced autolytic system, and the fluorescence intensity of the supernatant was
+            measured too. The ratio of the fluorescence intensity of the culture and supernatant was used to assess the
+            lysis efficiency of the FLSA system.
+          </p>
+          <p class="myPage-paragraph-content">
+            As shown in Figure 19, the ratio of supernatant fluorescence intensity to total fluorescence intensity in
+            the experiment group (<a style="font-weight: bolder;text-decoration: none;" href="http://parts.igem.org/Part:BBa_K5136221">BBa_K5136221</a>, <a
+            style="font-weight: bolder;text-decoration: none;" href="http://parts.igem.org/Part:BBa_K5136222">BBa_K5136222</a>, <a style="font-weight: bolder;text-decoration: none;"
+              href="http://parts.igem.org/Part:BBa_K5136220">BBa_K5136220</a>,
+            and <a style="font-weight: bolder;text-decoration: none;" href="http://parts.igem.org/Part:BBa_K5136223">BBa_K5136223</a>) was significantly
+            higher
+            than that of the control group, demonstrating that the autolytic system FLSA/LLSA can release target
+            proteins into the extracellular environment efficiently. Moreover, we achieved effective protein release by
+            optimizing the structural combinations of our autolytic system FLSA/LLSA. (please see <a style="font-weight: bolder;text-decoration: none;"
+            href="engineering">Engineering Success</a>
+            for details).
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/19-new.png" alt="" style="max-width: 50vw;">
+            <div class="myPage-paragraph-fig-description"><b>Figure 19 Comparison of the sfGFP release efficiency of
+                various engineered FLSA systems.</b>
+            </div>
+          </div>
+        </div>
+
+        <div class="myPage-paragraph" id="section6">
+          <h2 class="myPage-paragraph-headline-h2">5 The Secretion Efficiency of the Extracellular Secretion System</h2>
+          <p class="myPage-paragraph-content">
+            <b>Performance comparison of multiple signal peptides.</b>
+          </p>
+          <p class="myPage-paragraph-content">
+            The LMT sequence has been identified as a signal peptide capable of directing recombinant proteins out of
+            bacterial cells (<a style="font-weight: bolder;text-decoration: none;"
+              href="https://2021.igem.org/Team:XMU-China">XMU-China 2021</a>). Given the variety of engineered signal
+            peptides and corresponding
+            translocation systems developed for secretory production of heterologous proteins in <i>E. coli</i> (3), we
+            sought
+            to compare the performance of the LMT sequence against other commonly used signal peptides. Specifically,
+            several signal peptides or translocation systems associated with the Type II Secretion System
+            (T2SS)—including both the Sec-dependent system and the Twin-Arginine Translocation (TAT) system—as well as
+            the Type I Secretion System (T1SS), were selected and fused to the reporter protein sfGFP. The sequences of
+            the various signal peptides are provided in Table 1. Most of the secretion systems utilized in this
+            comparative analysis contain critical N-terminal regions necessary for recognition and function within the
+            translocation machinery (4), which resulted in N-terminal fusions with sfGFP. However, the HlyABD secretion
+            system, which belongs to T1SS, requires the C-terminal sequence of HlyA, as well as the heterologous
+            expression of HlyB and HlyD as assistants (5, 6). Therefore, a C-terminal fusion of sfGFP with HlyA was
+            constructed.
+          </p>
+          <p class="myPage-paragraph-content">
+            All signal peptide-sfGFP fusions were expressed under the control of the T7 promoter on the pET-28a(+)
+            vector in <i>E. coli</i> BL21(DE3) for parallel testing. Following induction, we monitored the fluorescence
+            intensity of the culture, the supernatant after centrifugation, and the OD<sub>600</sub> of each group over
+            time.
+            Secretion efficiency was calculated at each sampling point as the ratio of fluorescence intensity of
+            supernatant to culture.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/20.png" alt="" style="max-width: 70vw;">
+            <div class="myPage-paragraph-fig-description"><b>Figure 20 Comparative tests of performance of multiple
+                signal peptides.</b> (<b>A</b>) Secretion efficiencies of different groups were calculated as time
+              progressed. (<b>B</b>)
+              The OD<sub>600</sub>, fluorescence intensity of supernatant and normalized culture fluorescence intensity
+              of
+              different groups after induction for 10 h.
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            Our results revealed that both OsmY- and HlyA-mediated secretion, with the assistance of HlyB and HlyD,
+            exhibited higher secretion efficiencies than any other signal peptides, including the newly discovered LMT
+            sequence, which ranked third. YebF also performed well in the comparison (Figure 20A). Most of the other
+            signal peptides exhibited secretion efficiencies below 2.5%. These findings demonstrate the variability in
+            secretion efficiencies among different signal peptides, despite the long-term usage of some of them (3).
+          </p>
+          <p class="myPage-paragraph-content">
+            Interestingly, certain groups showed lower calculated secretion efficiencies than the sfGFP control group
+            (which lacked a signal peptide, No SP). This may be due to the rapid growth and high levels of cytoplasmic
+            sfGFP expression driven by the strong T7 promoter in <i>E. coli</i> BL21(DE3) (7). The normalized
+            fluorescence
+            intensity of the sfGFP-only (No SP) culture was much higher than that of sfGFP fusions with signal peptides,
+            suggesting that even minor leakage due to cell growth or lysis contributed significantly to the fluorescence
+            intensity in the supernatant (Figure 20B). In the case of the LMT signal peptide, despite producing only
+            half the total sfGFP as the no-signal-peptide group (No SP), the fluorescence intensity in the supernatant
+            was comparable to that of the control group and significantly higher than that of any other signal peptide
+            after 10 h of induction. This highlights the LMT sequence's efficiency in exporting recombinant proteins
+            out of the bacterial cells.
+          </p>
+          <p class="myPage-paragraph-content">
+            While OsmY- and HlyA-mediated secretion showed the highest secretion efficiencies, they also impaired cell
+            growth (reflected by the lowest OD<sub>600</sub> values) and reduced the normalized fluorescence intensity
+            in the
+            culture (Figure 20B). This indicates that overexpression of these systems places a metabolic burden on the
+            host cells, possibly explaining the larger error bars associated with their calculated secretion
+            efficiencies (Figure 20A). Additionally, the normalized fluorescence intensities in all groups with signal
+            peptides were reduced (Figure 20B), potentially due to adverse effects on sfGFP folding caused by the fusion
+            with signal peptides (8).
+          </p>
+          <p class="myPage-paragraph-content">
+            Classic signal peptides such as PelB and TorA, which direct recombinant proteins to the periplasmic space,
+            exhibited relatively low efficiency for extracellular translocation (Figure 20A) (9). Similarly, OmpA,
+            another well-known signal peptide, showed poor efficiency for recombinant protein secretion, unlike YebF and
+            OsmY, which also mediate extracellular expression (10). Notably, the artificial intelligence-generated
+            signal
+            peptide AIgen, which functions efficiently in <i>Bacillus subtilis</i>, performed poorly in exporting recombinant
+            proteins from <i>E. coli</i> (Figure 20A) (11). However, the OD<sub>600</sub> values for the AIgen group
+            suggested no
+            significant growth burden (Figure 20B).
+          </p>
+          <p class="myPage-paragraph-content">
+            In summary, our self-discovered LMT signal peptide showed a slight growth defect but achieved considerable
+            secretion efficiency for the extracellular expression of recombinant proteins, making it a competitive
+            alternative compared to other commonly used signal peptides in <i>E. coli</i>.
+          </p>
+          <p class="myPage-paragraph-content">
+            <b>Highest Secretion Efficiency and Proper Metabolic Burden of LMT Signal Peptide</b>
+          </p>
+          <p class="myPage-paragraph-content">
+            The secretion kinetics of various signal peptides from both the Sec pathway (LMT, PelB, OmpA, OsmY, YebF, and AIgen) and the Tat pathway (TorA) were analyzed with our multi-scale model (see <a style="font-weight: bolder;text-decoration: none;"
+            href="Model">model</a>   for more details). The two secretion kinetic parameters, α and γ, describe translocation rate from the cytoplasm to the periplasm and secretion efficiency (Figure 21A-B), respectively. LMT, a newly discovered signal peptide by Team XMU-China 2021 with excellent intrinsic secretion kinetic parameters, had a γ value that is 6.55-45.44 times higher than the others, indicating the highest secretion efficiency. With a considerable α value and proper metabolic burden, LMT achieved the highest supernatant fluorescence (Figure 20B). While the percentages of secretion, leakiness, and lysis, which are three primary contributors to supernatant fluorescence, changed dynamically with cell growth. This dynamic resulted in varying proportions of supernatant fluorescence among different signal peptides by the end of the experiment (Figure 21C). 
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/21.png" alt="" style="max-width: 70vw;">
+            <div class="myPage-paragraph-fig-description"><b>Figure 21 The model fitting results.  </b> (<b>A</b>) Estimated α for different signal peptides. (<b>B</b>) Estimated γ for different signal peptides.  (<b>C</b>) The percentage of different sources contributes to the supernatant fluorescence. 
+              
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            <b>LMT-mediated Secretion under Constitutive Expression for Optimal Economic Cost</b>
+          </p>
+        
+         <p class="myPage-paragraph-content">
+          We constructed circuits driven by promoters of different strengths (J23100, J23103, J23104, J23106, J23110, J23114), each containing RiboJ-B0034-LMT-linker-<i>sfgfp</i>-B0010.
+         </p>
+         <p class="myPage-paragraph-content">
+          By measuring the fluorescence intensity in the supernatant of each circuit, we can quantitatively analyze the secretion of the LMT signal peptide under different promoter strengths and thus evaluate its performance (Figure 22A).
+         </p>
+         <p class="myPage-paragraph-content">
+          We find that this follows exponential kinetics, which is consistent with the T7-mediated secretion. As shown in Figure 3A, secretion efficiency is affected by many factors, but not positively related to promoter strength (Figure 22B).
+         </p>
+         <p class="myPage-paragraph-content">
+          To ensure that these results reflect actual secretion rather than differences in cell growth, we measured fluorescence intensity data in 30 h of culture (Figure 22C) and supernatant (Figure 22D), and calculated the secretion efficiency (supernatant/culture) (Figure 22E).
+         </p>
+         <div class="myPage-paragraph-fig">
+          <img src="https://static.igem.wiki/teams/5136/result/22.png" alt="" style="max-width: 70vw;">
+          <div class="myPage-paragraph-fig-description"><b>Figure 22 Characterization of LMT secretion performance with different Anderson promoters.</b> (<b>A</b>) Secretion Kinetic. (<b>B</b>) Fitting Result. (<b>C</b>) Secretion efficiencies. (<b>D</b>) Fluorescence intensity of supernatant. (<b>E</b>) Culture fluorescence intensity.
+          </div>
+         </div>
+         <p class="myPage-paragraph-content">
+          Interestingly, when we compared the secretion efficiency at 30 h, we found that high secretion efficiency does not mean high protein content in supernatant and culture. Although the secretion efficiency of weak promoter and the strong promoter were both higher, the weak promoter could fully realize extracellular secretion due to its low efficiency and less protein production by the exosystem, but the amount of protein in supernatant was less. For strong promoters, although the amount of protein secreted is large, the total fluorescence is low, indicating that the metabolic burden is heavy, which affects the survival rate. If the detection continues, very few bacteria will survive. , we use multi-scale model to deconstruct the dynamic secretion process of signal peptides accurately. The experimental results aligned well with the model's predictions (see <a style="font-weight: bolder;text-decoration: none;"href="Model">model</a> for more details). By trading off, BBa_K5136202 with promoter J23104 has the most appropriate secretion efficiency. 
+         </p>
+        </div>
+
+        <!-- <div class="myPage-paragraph" id="section7">
+          <h2 class="myPage-paragraph-headline-h2">死去的References</h2>
+        </div> -->
+
+        <div class="myPage-paragraph" id="section8">
+          <h2 class="myPage-paragraph-headline-h2">6 The deinking efficiency of deinking enzymes secreted by signal
+            peptide</h2>
+          <p class="myPage-paragraph-content">
+            We have proved that some CYP199A4 mutants showed stronger deinking performance, and LMT showed a good secretion effect.
+            So, we try to verify the deinking efficiency of CYP199A4 mutants secreted to the supernatant by the LMT. The
+            engineered bacteria were cultured at 25 °C, and the supernatant culture was taken at 12 h, 18 h, 24 h, and
+            36
+            h, respectively, using SDS-PAGE to demonstrate that the fusion protein could be successfully secreted into
+            the supernatant. Gray scale analysis was performed on the bands, proving that the concentration of
+            LMT-CYP199A4 T253E in the culture supernatant gradually increased with time (Figure 23A). At the same time,
+            the supernatant from the culture in 36 h was used for the pulp deinking experiment (see <a style="font-weight: bolder;text-decoration: none;"
+            href="sop">SOP</a> for more
+            details), and the results are shown in Figure 23B. As shown in the picture from the microscope, LMT-CYP199A4
+            T253E in the supernatant showed a perfect deinking effect. <b>The above results showed that the LMT signal
+              peptide could secrete CYP199A4 T253E to the extracellular environment continuously, which further exhibits
+              the perfect performance in removing the ink from the pulp</b>.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/re-23.png" alt="" style="max-width: 50vw;">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 23 Characterization of His tag-LMT-CYP199A4 T253E.</b> (<b>A</b>) SDS-PAGE analysis (left) and gray scale value analysis (right) of the supernatant at different times. (<b>B</b>) Deinking characterization of His tag-LMT-CYP199A4 T253E (BBa_K5136047)..
+            </div>
+          </div>
+        </div>
+
+        <div class="myPage-paragraph" id="section9">
+          <h2 class="myPage-paragraph-headline-h2">7 Display the Metallothioneins on the Surface of the Cell to Adsorb
+            Heavy Metal Ions</h2>
+          <h3 class="myPage-paragraph-headline-h3">7.1 The Surface Display Efficiency of INPNC</h3>
+          <p class="myPage-paragraph-content">
+            To verify whether INPNC can display target protein on the surface of bacteria, we introduced the Spy system,
+            which consists of SpyCatcher and SpyTag. SpyCatcher is an engineered split fragment of the
+            fibronectin-binding protein (FbaB) in <i>Streptococcus pyogenes</i>, and SpyTag is a peptide tag that could
+            steadily bind to SpyCatcher by forming an isopeptide bond. In our project, SpyCatcher was fused with INPNC
+            and SpyTag was fused with GFP. Then, His tag-SpyTag-GFP was added to the medium containing the engineered
+            bacteria, which express the fused protein INPNC-His tag-SpyCatcher. By monitoring the fluorescence intensity
+            of bacteria, we can verify if INPNC could anchor target proteins on the cell surface.
+          </p>
+          <p class="myPage-paragraph-content">
+            The His tag-SpyTag-GFP coding sequence (<a style="font-weight: bolder;text-decoration: none;"
+              href="http://parts.igem.org/Part:BBa_K5136034">BBa_K5136034</a>) was assembled into the expression vector
+            pET-28a(+) by
+            Gibson assembly (Figure 24A). The constructed plasmid was transformed into <i>E. coli</i> BL21(DE3), then
+            the
+            positive transformants were selected by kanamycin and confirmed by colony PCR and sequencing. Target
+            bands (953 bp) can be observed at the position around 1000 bp (Figure 24B). After that, the bacteria were
+            cultivated and induced by 0.5 mM IPTG at 25 °C, and then the GE AKTA Prime Plus FPLC System was employed to
+            get purified protein His tag-SpyTag-GFP from the lysate supernatant. Purified protein was verified by sodium
+            dodecyl sulfate (SDS)-10% (wt/vol) polyacrylamide gel electrophoresis (PAGE) and Coomassie blue staining. As
+            shown in the gel image (Figure 24C), the target protein (29 kDa) can be observed at the position around 30
+            kDa on the purified protein lanes (FR).
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/re-24.png" alt="" style="max-width: 50vw;">
+            <div class="myPage-paragraph-fig-description"><b>Figure 24 Constructing and purifying His tag-SpyTag-GFP
+                fused protein.</b>
+              (<b>A</b>) the expression gene circuits for expressing SpyTag-GFP.
+              (<b>B</b>) DNA gel electrophoresis of the colony PCR products of BBa_K5136034_pET-28a(+) in <i>E.
+                coli</i> BL21(DE3). 
+                (<b>C</b>) SDS-PAGE analysis of His tag-SpyTag-GFP.
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            The promoter (<a style="font-weight: bolder;text-decoration: none;" href="http://parts.igem.org/Part:BBa_I0500">BBa_I0500</a>),
+            RBS (<a style="font-weight: bolder;text-decoration: none;" href="http://parts.igem.org/Part:BBa_B0034">BBa_B0034</a>), INPNC-His
+            tag-SpyCatcher coding sequence (<a style="font-weight: bolder;text-decoration: none;"
+              href="http://parts.igem.org/Part:BBa_K5136035">BBa_K5136035</a>), and
+            terminator (<a style="font-weight: bolder;text-decoration: none;" href="http://parts.igem.org/Part:BBa_B0015">BBa_B0015</a>)
+            were used to construct a composite part <a style="font-weight: bolder;text-decoration: none;"
+              href="http://parts.igem.org/Part:BBa_K5136224">BBa_K5136224</a>, which was then assembled into
+            the expression vector pSB1C3 by standard assembly. The constructed plasmid was transformed into <i>E.
+              coli</i> BL21(DE3), then the positive transformants were selected by chloramphenicol and confirmed by
+            colony PCR
+            (Figure 25B) and sequencing. Target bands (2974 bp) can be observed at the position around 3000 bp.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/re-25.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 25 Constructing INPNC-His tag-SpyCatcher fused
+                protein.</b>
+              (<b>A</b>) the expression gene circuits for INPNC displaying SpyCatcher on the surface of <i>E. coli</i>
+              BL21(DE3).
+              (<b>B</b>) DNA gel electrophoresis of the colony PCR products of Bba_K5136224_pSB1C3 in <i>E. coli</i>
+              BL21(DE3).
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            After being induced with 0.2% (w/v) <i>L</i>-arabinose for 12 h,
+            the <i>E. coli</i> BL21(DE3) culture solution (express INPNC-His
+            tag-SpyCatcher) was incubated with His tag-SpyTag-GFP at 37 °C in
+            the shaker. After cultivation for 12 h, the culture was
+            centrifuged to get the precipitate. Then, the precipitate was
+            washed and resuspended in the PBS buffer (see <a style="font-weight: bolder;text-decoration: none;"
+              href="experiments">Experiment</a> for more details). As shown in Figure 26,
+            the fluorescence intensity of the resuspension sample in the experimental group (INPNC-His
+            tag-SpyCatcher_pSB1C3) was significantly higher than that of the control group (I0500_pSB1C3). In addition,
+            we can also observe significant fluorescence from precipitation in the experiment group, while the control
+            group was contrary (Figure 27). These results indicated the combination between His Tag-SpyTag-GFP and the
+            INPNC-HisTag-SpyCatcher displayed on the surface of <i>E. coli</i> BL21(DE3), demonstrating that INPNC
+            exhibits
+            excellent capacity to anchor target proteins on the cell membrane.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/re-26.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 26 Fluorescence intensity of samples after culturing
+                12 h.</b>
+            </div>
+          </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/re-27.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 27 Samples placed under blue light after culturing
+                12 h.</b>
+            </div>
+          </div>
+
+          <h3 class="myPage-paragraph-headline-h3"><b>7.2 Surface-Displayed Metallothioneins Adsorb Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup></b></h3>
+          <p class="myPage-paragraph-content">
+            In order to adsorb heavy metal ions in the wastewater after deinking, we chose metallothioneins (MTs) MT2A
+            and MT3 to treat the wastewater. In addition, to increase the contact area between MTs and heavy metal ions,
+            we utilized the anchor protein INPNC to display MTs on the surface of bacteria. The composite part
+            (<a style="font-weight: bolder;text-decoration: none;"
+            href="https://parts.igem.org/Part:BBa_K5136226">BBa_K5136226</a>), which expresses the fused protein INPNC-linker-MT3-linker-MT2A with the induction of
+            <i>L</i>-arabinose was introduced into the backbone plasmid (pSB1C3) through standard assembly. The
+            constructed
+            plasmid was transformed into <i>E. coli</i> BL21(DE3), then the positive transformants were selected by
+            chloramphenicol and confirmed by colony PCR (Figure 28) and sequencing. Target bands (4464 bp) can be
+            observed at the position around 5000 bp (Figure 28).
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/re-28.png" alt="" style="max-width: 300px;">
+            <div class="myPage-paragraph-fig-description"><b>Figure 28 Colony PCR of BBa_K5136230_pSB1C3 in <i>E.
+                  coli</i> BL21(DE3).</b>
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            After being cultivated and induced by 0.2% <i>L</i>-arabinose at 37 °C
+            for 4 h, the engineered bacteria were cultured in the M9 medium
+            containing K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub> (5 mg/L) for 24 h. A bit of the supernatant
+            of the bacterial cultures was collected at 0 h and 24 h, and was
+            pre-treated with 1,5-diphenylcarbazide (DPC). Then, the residual
+            amount of Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> in the supernatant was determined by the RGB value
+            measured,
+            which can be calculated based on a standard curve of Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> in Figure 29
+            (please see <a style="font-weight: bolder;text-decoration: none;"
+              href="experiments">Experiment</a> for details). As shown in Figure 29, the
+            Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> in
+            the culture medium at the 24 h was significantly lower than the initial value.
+            It indicated that the engineered bacteria could successfully reduce the heavy
+            metal ion Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> in the wastewater.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/re-20-7.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 29 Standard curve of
+                Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> (R<sup>2</sup>=0.987)</b>.
+            </div>
+          </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/re-30.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 30 Concentration of
+                Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> in the culture medium after 0 h and 24 h.</b>
+            </div>
+          </div>
+        </div>
+
+        <div class="myPage-paragraph" id="section10">
+          <h2 class="myPage-paragraph-headline-h2">8 Verification of the Functionality and Effectiveness of the Kill
+            Switch</h2>
+
+          <p class="myPage-paragraph-content">
+            Facing the threat that the unwanted survival and accumulation of engineered bacteria might happen once they
+            escape to opening environment (12), we designed a light-triggered kill switch for biocontainment of the
+            engineered bacteria. Rather than responding to some chemical inducers, the light-triggered kill switch will
+            be turned to ON state after the engineered bacteria is exposed to the light illumination of specific
+            wavelength. We chose a blue light-inducible optogenetic system, LexRO/pColE408 (13), to control the
+            expression of CcdB toxin, in which an additional expression module of CcdA antitoxin was incorporated as
+            well to neutralize the leaky toxin when the kill switch is in OFF state. (See more details in our <a style="font-weight: bolder;text-decoration: none;"
+            href="design">Design</a>
+            page)
+          </p>
+          <p class="myPage-paragraph-content">
+            Here, we firstly characterized the cytotoxicity of CcdB toxin and the blue light-inducible performance of
+            LexRO/pColE408 system respectively, and then tested the killing effect of the blue light-induced kill
+            switch. Further optimization for improving the killing effect of the switch was also tried primarily.
+          </p>
+          <h3 class="myPage-paragraph-headline-h3">8.1 Cytotoxicity of CcdB</h3>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/31.png" alt="" style="max-width: 600px;">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 31 Cytotoxicity verification of CcdB toxin</b>. (<b>A</b>) The gene circuit to characterize the
+              cytotoxicity
+              of CcdB (BBa_K5136236) on pSB4A5 vector. (<b>B</b>) Agarose gel electrophoresis of the colony PCR products
+              of
+              BBa_K5136236_pSB4A5 and BBa_I0500_pSB4A5 in <i>E. coli</i> BL21(DE3) Δ<i>araBAD</i>. (<b>C</b>) Cell
+              viability was measured by
+              CFU count and is displayed as a ratio of cells with <i>L</i>-arabinose to cells with <i>D</i>-glucose.
+              <i>p</i>-value: 0.0007
+              (***).
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            Various toxin-antitoxin (TA) systems have been widely utilized and engineered to construct kill switch for
+            biocontainment. CcdB toxin of the CcdB-CcdA TA system, interferes with the activity of DNA gyrase and thus
+            causes cell death (14), which will play the critical role of killing engineered bacteria. To verify the
+            cytotoxicity of CcdB toxin used in the kill switch, we firstly constructed a gene circuit that the toxin
+            encoding gene <i>ccdB</i> was placed downstream the <i>L</i>-arabinose inducible promoter (<i>araC</i>/pBAD, <a style="font-weight: bolder;text-decoration: none;"
+            href="https://parts.igem.org/Part:BBa_I0500">BBa_I0500</a>) on the
+            pSB4A5 vector. For convenience, the expression module of CcdA controlled by a weak constitutive engineering
+            promoter p2)-114v was integrated into the circuit as well (Figure 31A), generating the composite part
+            <a style="font-weight: bolder;text-decoration: none;"
+            href="https://parts.igem.org/Part:BBa_K5136236">BBa_K5136236</a>. While BBa_I0500 only on the pSB4A5 was set as control.
+          </p>
+          <p class="myPage-paragraph-content">
+            Cytotoxicity tests were implemented in a BL21(DE3) strain in which the <i>araBAD</i> genes were knocked out
+            (Δ<i>araBAD</i>) in our lab before for minimizing the influence of <i>L</i>-arabinose metabolism. After transformation,
+            positive transformants were selected and confirmed by colony PCR (Figure 31B) and sequencing. Spot assay (15)
+            was performed for characterizing the killing effect (See more details in our <a style="font-weight: bolder;text-decoration: none;"
+            href="experiments">Experiments</a> page), while cell
+            viability was measured by colony forming unit (CFU) count and is displayed as <b>a ratio of cells with
+            <i>L</i>-arabinose to cells with <i>D</i>-glucose (survival ratio)</b>, in which the <i>D</i>-glucose could suppress the <i>L</i>-arabinose
+            inducible promoter. Upon adding the inducer <i>L</i>-arabinose, the CcdB toxin (<i>ccdBA</i>) produced ~6 logs of killing
+            for 6 hours' culture (Figure 31C), which indicated the cytotoxicity of CcdB.
+          </p>
+          <h3 class="myPage-paragraph-headline-h3">8.2 LexRO activates promoter pColE408 upon blue light illumination
+          </h3>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/32.png" alt="" style="max-width: 600px;">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 32 Characterization of blue light-induced LexRO/pColE408</b>. (<b>A</b>) The gene circuit to
+              characterize blue
+              light-responding performance of LexRO/pColE408 system (BBa_K5136237) on pSB4A5 vector. (<b>B</b>) Agarose
+              gel
+              electrophoresis of the colony PCR products of BBa_K5136237_pSB4A5 in <i>E. coli</i> BL21(DE3). (<b>C</b>)
+              The relative
+              fluorescence units (RFU) of bacterial culture subtracted the background fluorescence of growth media,
+              resulting in the RFU<sub>mCherry</sub>. <i>p</i>-value: 0.0029 (**).
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            We turned to characterize the blue light-responding performance of LexRO/pColE408 optogenetic system used in
+            the kill switch. The photosensor LexRO was controlled by a medium constitutive promoter J23106 and a medium
+            RBS SD7 (13) (<a style="font-weight: bolder;text-decoration: none;"
+            href="http://parts.igem.org/Part:BBa_K5136045">BBa_K5136045</a> ), while the mCherry fluorescent protein (<a style="font-weight: bolder;text-decoration: none;"
+            href="http://parts.igem.org/Part:BBa_J06504">BBa_J06504</a> ) was chosen as the reporter
+            under the control of promoter pColE408 (<a style="font-weight: bolder;text-decoration: none;"
+            href="http://parts.igem.org/Part:BBa_K5136044">BBa_K5136044</a> ) (Figure 32A), thus generating the composite part
+            <a style="font-weight: bolder;text-decoration: none;"
+            href="http://parts.igem.org/Part:BBa_K5136237">BBa_K5136237</a> on the pSB4A5 vector. BL21(DE3) was used to characterize this optogenetic system, and positive
+            transformants were selected and confirmed by colony PCR (Figure 32B) and sequencing.
+          </p>
+          <p class="myPage-paragraph-content">
+            Characterization was carried out in a self-made blue light (460 nm) illumination device. After cultured for
+            about 17 hours upon blue light illumination (with a relative light intensity of 250) or kept in dark
+            condition, red fluorescence intensity (<i>λ</i><sub>ex</sub> = 585 nm, <i>λ</i><sub>em</sub> = 615 nm) and OD<sub>600</sub> were measured. The normalized
+            fluorescence intensity of “Light” group showed a significant higher value than that of “Dark” group (about 2
+            times), indicating that this <b>optogenetic system could be induced by blue light</b> (Figure 32C) indeed.
+          </p>
+          <h3 class="myPage-paragraph-headline-h3">8.3 Blue Light-induced Kill Switch Characterization</h3>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/33.png" alt="" style="max-width: 600px;">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 33 Characterization of blue light-induced kill switch.</b> (<b>A</b>) The gene circuit of blue light-induced
+              kill switch (BBa_K5136231) on pSB4A5 vector. (<b>B</b>) Agarose gel electrophoresis of the colony PCR products of
+              BBa_K5136231_pSB4A5 (Kill Switch) and BBa_K5136234_pSB4A5 (Control) in <i>E. coli</i> BL21(DE3). (<b>C</b>) Cell
+              viability was measured by CFU count and is displayed as a ratio of cells exposed to blue light to cells
+              kept in dark condition. <i>p</i>-value: 0.0085 (**) for D/L, 0.0077 (**) for L.
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            After verifying the cytotoxicity of CcdB and blue light-inducible performance of LexRO/pColE408 system, we
+            built the blue light-induced kill switch (<a style="font-weight: bolder;text-decoration: none;"
+            href="https://parts.igem.org/wiki/index.php?title=Part:BBa_K5136231">BBa_K5136231</a>), in which the toxin-antitoxin module is controlled
+            by promoter pColE408 and LexRO is constitutively expressed as in <a style="font-weight: bolder;text-decoration: none;"
+            href="https://parts.igem.org/wiki/index.php?title=Part:BBa_K5136237">BBa_K5136237</a> (Figure 33A). While the LexRO
+            expression module only (<a style="font-weight: bolder;text-decoration: none;"
+            href="https://parts.igem.org/wiki/index.php?title=Part:BBa_K5136234">BBa_K5136234</a>) on the pSB4A5 was set as the control. Positive transformants were
+            selected and confirmed by colony PCR (Figure 33B) and sequencing after transformed to BL21(DE3).
+          </p>
+          <p class="myPage-paragraph-content">
+            Spot assay was also performed after cultured upon blue light illumination or kept in dark condition. A <b>blue
+            light illumination-dependent killing effect</b> was observed, which indicates that this blue light-induced kill
+            switch functioned to kill engineered bacteria when exposed to blue light (Figure 33C). Besides, when exposed
+            to blue light for whole period (6 hours, “L”), the kill switch exhibited a slightly stronger killing effect
+            than exposed to blue light for a shorter time (kept in dark for 2 hours 25 min first then switched on the
+            blue light for 3 hours 35 min, “D/L”), which implied that the killing of engineered bacteria might be
+            illuminating time-dependent.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/34.png" alt="" style="max-width: 600px;">
+            <div class="myPage-paragraph-fig-description">
+              <b>Figure 34 Optimization of blue light-induced kill switch.</b> (<b>A</b>) Optimized blue light-induced kill switch
+              (BBa_K5136235) on pSB4A5 vector. The RBS of LexRO was changed to SD17. (<b>B</b>) Agarose gel electrophoresis of
+              the colony PCR products of BBa_K5136235_pSB4A5 in <i>E. coli</i> BL21(DE3). (<b>C</b>) Cell viability was measured by
+              CFU count and is displayed as a ratio of cells exposed to blue light to cells kept in dark condition.
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            Although we have verified the blue light-dependent killing effect of the kill switch, we still tried to
+            optimize the gene circuit for further improving the killing effect. Since lower LexRO content were more
+            sensitive to light illumination (13), we then changed the RBS of LexRO in the gene circuit to a weaker one
+            (SD17, <a style="font-weight: bolder;text-decoration: none;"
+            href="http://parts.igem.org/Part:BBa_K5136049">BBa_K5136049</a>) to see whether this would improve the effect of killing or not, resulting in the
+            generation of <a style="font-weight: bolder;text-decoration: none;"
+            href="http://parts.igem.org/Part:BBa_K5136235">BBa_K5136235</a> composite part on pSB4A5 vector (Figure 34A). Colony PCR (Figure 34B) and
+            sequencing were performed again to confirm the positive transformants of BL21(DE3). Similar test was done to
+            the alternative kill switch. When lower the expression of LexRO, a slight decrease on survival ratio was
+            obtained for the kill switch (Figure 34C), indicating that the strategy for optimizing the kill switch might
+            be available and feasible.
+          </p>
+          <h3 class="myPage-paragraph-headline-h3">8.4 Conclusions</h3>
+          <p class="myPage-paragraph-content">
+            Developing a biocontainment system to response physical factors (16) (such as light or temperature) takes the
+            advantage over chemical factors (such as various inducers) of no need to add any substances into the culture
+            or reaction systems, which is adapted to our deinking system. It is reported that the LexRO/pColE408
+            optogenetic system showed a better performance over the other existing single-component bacterial
+            light-activated expression systems (13). Even though the design of LexRO/pColE408-regulated kill switch has
+            been proposed before (<a style="font-weight: bolder;text-decoration: none;"
+            href="https://2020.igem.org/Team:Tsinghua">Tsinghua iGEM 2020</a>), however, it is the first time for this optogenetic system to be
+            utilized and tested in constructing kill switch in actual. We achieved ~2 logs of killing within 6 hours
+            when exposing the engineered bacteria to blue light illumination with a light intensity that would not
+            impair the cell growth.
+          </p>
+          <p class="myPage-paragraph-content">
+            Besides, we tried to optimize the kill switch by altering the RBS of LexRO to lower its intracellular
+            content and obtained a decreased survival ratio. Compared to present kill switches controlled by some other
+            blue light-responding systems such as pDawn (17,18) or EL222/pBLind (19), further engineering of our
+            LexRO/pColE408-regulated kill switch should be implemented to achieve a better killing effect. As the
+            induction characteristics of this system is highly related to the expression level of LexRO (13), a feasible
+            way to optimize has been proposed according to our experimental results.
+          </p>
+          <p class="myPage-paragraph-content">
+            In summary, our modular verifications and engineering iterations of constructing the blue light-induced kill
+            switch contributed to the biosafety of our REPARO project (See more information in our <a style="font-weight: bolder;text-decoration: none;"
+            href="implementation">Proposed
+            Implementation</a> page), and we hope this design of biocontainment system will provide valuable experience to
+            other iGEM teams and SynBio community.
+          </p>
+        </div>
+
+        <div class="myPage-paragraph" id="section11">
+          <h2 class="myPage-paragraph-headline-h2">9 Further Explorations</h2>
+          <p class="myPage-paragraph-content">
+            In life and work, wrong words and misprints are often present in precious and important paper documents,
+            such as contracts, archives, and examination papers. Reconstructing these documents will take a lot of time,
+            cost and manpower. So, we want to expand the application of deinking for these papers with wrong words,
+            which may save paper, time and money.
+          </p>
+          <h3 class="myPage-paragraph-headline-h3">9.1 Erasure Performance of Diluted Ink</h3>
+          <p class="myPage-paragraph-content">
+          </p>
+          <p class="myPage-paragraph-content">
+            We test the effect of some surfactants on removing ink. On each 1 cm×1 cm sheet of paper, 15 μL of diluted
+            MG6128 gel pen ink was painted uniformly. After drying in the air for 3 minutes, the papers were placed in 2-mL centrifuge tubes containing 1 mL reaction solution. The tubes were then placed in a metal bath (at 25 °C,
+            1000 rpm) and shaken for 10 minutes. The absorbance (at OD<sub>400</sub> nm) of the post-reaction solution was measured
+            and calculated on standard curves to obtain the ink content, and then the ink removal rate was calculated.
+            The experimental results indicated that
+            <b>both SDS and rhamnolipid exhibit significant performance</b> in removing ink compared to the control
+            group (Figure 35).
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/formula2.png" alt="">
+            <!-- <div class="myPage-paragraph-fig-description"><b>Figure 1这里就是写备注就好了</b> -->
+          </div>
+          
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/35.png" alt="" style="max-width: 400px;">
+            <div class="myPage-paragraph-fig-description"><b>Figure 35 Ink removal rates of 2.5% (w/w) SDS, 2.5% (w/w)
+                rhamnolipid
+                and water.</b>
+            </div>
+          </div>
+          <h3 class="myPage-paragraph-headline-h3">9.2 Erasure Performance of Handwriting</h3>
+          <p class="myPage-paragraph-content">
+            We conduct a series of erasure experiments on the ink marks of ballpoint pens. A machine wrote the same Chinese
+            characters on the paper, then cut them into strips and placed them in a 12-well plate with the reactant
+            solution. The total measurement lasted for 1 h, and we observed the erasure performance every 15 minutes.
+            The fade of the Chinese characters was obvious when 2.5% (w/w) SDS and 0.4 (v/v)% limonene were used together,
+            and erasure performance increased with the reaction time.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/36.png" alt="" style="max-width: 800px;">
+            <div class="myPage-paragraph-fig-description"><b>Figure 36 Comparison of elimination effect between blank
+                and experimental group.</b>
+            </div>
+          </div>
+          <h3 class="myPage-paragraph-headline-h3">9.3 Adsorption Efficiency of Crosslinked Chitosan</h3>
+          <p class="myPage-paragraph-content">
+            We also tried to remove the ink by adsorbing crosslinked chitosan. 0.1 g of crosslinked chitosan was added
+            to 1 mL of diluted ink solution. The adsorption efficiency was characterized by the decrease in the
+            solution's absorbance. The experimental results indicated that crosslinked chitosan exhibits a significant
+            adsorption function on both ballpoint and gel pen ink.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/formula3.png" alt="" style="max-width: 700px;">
+            <!-- <div class="myPage-paragraph-fig-description"><b>formula3</b> -->
+          </div>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/37.png" alt="" style="max-width: 800px;">
+            <div class="myPage-paragraph-fig-description"><b>Figure 37 The adsorption rates of chitosan to ballpoint pen
+                ink were calculated as time progressed.</b>
+            </div>
+          </div>
+        </div>
+
+        <div class="myPage-paragraph" id="section12">
+          <h2 class="myPage-paragraph-headline-h2">10 Conclusion</h2>
+          <p class="myPage-paragraph-content">
+            In our REPARO project, we designed and developed an unprecedented deinking method based on synthetic
+            biology, which could serve as a viable alternative to the chemical method on the industry scale. The
+            implementation of our REPARO project holds immense potential to propel technological advancement and
+            industrial upgrading within the waste paper recycling industry. Our project aims to introduce advanced
+            biotechnology and environmental protection concepts to enhance the entire industry's production efficiency,
+            product quality, and environmental protection level, thereby strengthening the industry's competitiveness
+            and promoting the development of the circular economy.
+          </p>
+        </div>
+
+        <div class="myPage-paragraph" id="section13">
+          <h2 class="myPage-paragraph-headline-h2">11 Future Prospects</h2>
+          <p class="myPage-paragraph-content">
+            In the foreseeable future, we aim to comprehensively characterize the deinking efficacy achieved through the
+            synergistic use of diverse deinking enzymes and explore the optimal conditions that maximize the performance
+            of each enzyme. Concurrently, we aim to validate the deinking capabilities further when our autolytic system
+            is integrated with deinking enzymes, and verify the deinking capabilities of the exogenous secretion system,
+            activated by the Anderson promoter, in conjunction with these enzymes. Importantly, we are committed to
+            continuously optimizing the design and verification processes of our erasing product, demonstrating our
+            dedication to the creation of a convenient, efficient, and practical erasing product for everyday use.
+          </p>
+        </div>
+
+        <!-- <div class="myPage-paragraph" id="section14">
+          <h2 class="myPage-paragraph-headline-h2">死去的10</h2>
+        </div> -->
+
+        <div class="myPage-paragraph" id="section15">
+          <h2 class="myPage-paragraph-headline-h2">References</h2>
+          <ol class="myPage-paragraph-reference">
+            <li>
+              Jamnicki Hanzer S, Lozo B, Barušić L. Producing Direct Food Packaging Using Deinked Office Paper
+              Grades—Deinkability and Food Contact Suitability Evaluation. Sustainability. 2021; 13(22):12550.
+            </li>
+            <li>
+              F. Zhang et al., Development of a Bacterial FhuD-lysozyme-SsrA Mediated Autolytic (flsa) System for
+              Effective Release of Intracellular Products. ACS Synth Biol 12, 196-202 (2023).
+            </li>
+            <li>
+              R. Freudl, Signal Peptides for Recombinant Protein Secretion in Bacterial Expression Systems. Microb. Cell
+              Fact. 17, 52 (2018).
+            </li>
+            <li>
+              H. Owji, N. Nezafat, M. Negahdaripour, A. Hajiebrahimi, Y. Ghasemi, A Comprehensive Review of Signal
+              Peptides: Structure, Roles, and Applications. Eur. J. Cell Biol. 97, 422-441 (2018).
+            </li>
+            <li>
+              B. D. Tzschaschel, C. A. Guzmán, K. N. Timmis, V. D. Lorenzo, An Escherichia coli Hemolysin Transport
+              System-based Vector for the Export of Polypeptides: Export of Shiga-like Toxin IIeb Subunit by Salmonella
+              Typhimurium aroA. Nat. Biotechnol. 14, 765-769 (1996).
+            </li>
+            <li>
+              L. A. Fernández, I. Sola, L. Enjuanes, V. De Lorenzo, Specific Secretion of Active Single-chain Fv
+              Antibodies into the Supernatants of Escherichia coli Cultures by Use of the Hemolysin System. Appl.
+              Environ. Microbiol. 66, 5024–5029 (2000).
+            </li>
+            <li>
+              S.-I. Tan, I.-S. Ng, New Insight into Plasmid-driven T7 RNA Polymerase in Escherichia coli and Use as a
+              Genetic Amplifier for a Biosensor. ACS Synth. Biol. 9, 613–622 (2020).
+            </li>
+            <li>
+              B. J. Feilmeier, G. Iseminger, D. Schroeder, H. Webber, G. J. Phillips, Green Fluorescent Protein
+              Functions as a Reporter for Protein Localization in Escherichia coli. J. Bacteriol. 182, 4068–4076 (2000).
+            </li>
+            <li>
+              F. J. M. Mergulhão, D. K. Summers, G. A. Monteiro, Recombinant Protein Secretion in Escherichia coli.
+              Biotechnol. Adv. 23, 177–202 (2005).
+            </li>
+            <li>
+              Boock, J.T., Waraho-Zhmayev, D., Mizrachi, D., DeLisa, M.P. (2015). Beyond the Cytoplasm of Escherichia
+              coli: Localizing Recombinant Proteins Where You Want Them. In: García-Fruitós, E. (eds) Insoluble
+              Proteins. Methods in Molecular Biology, vol 1258. Humana Press, New York, NY.
+            </li>
+            <li>
+              Z. Wu, K. K. Yang, M. J. Liszka, A. Lee, A. Batzilla, D. Wernick, D. P. Weiner, F. H. Arnold, Signal
+              Peptides Generated by Attention-based Neural Networks. ACS Synth. Biol. 9, 2154–2161 (2020).
+            </li>
+            <li>
+              H. An, et al., TEX264 Is an Endoplasmic Reticulum-Resident ATG8-Interacting Protein Critical for ER Remodeling during Nutrient Stress. Molecular Cell 74, 891-908 (2019).
+            </li>
+            <li>
+              X. Li, C. Zhang, X. Xu, J. Miao, J. Yao, R. Liu, Y. Zhao, X. Chen, Yang Y. A Single-component Light Sensor System Allows Highly Tunable and Direct Activation of Gene Expression in Bacterial Cells. Nucleic Acids Res. 48(6), e33 (2020). 
+            </li>
+            <li>
+              P. Bernard, M. Couturier. Cell Killing by the F Plasmid CcdB Protein Involves Poisoning of DNA-topoisomerase II complexes. J. Mol. Biol. 226(3), 735-745 (1992). 
+            </li>
+            <li>
+             C. T. Chan, J. W. Lee, D. E. Cameron, C. J. Bashor, J. J. Collins. 'Deadman' and 'Passcode' Microbial Kill Switches for Bacterial Containment. Nat. Chem. Biol. 12(2), 82-86 (2016).
+            </li>
+            <li>
+              J. Choi, J. Ahn, J. Bae, M. Koh. Recent Synthetic Biology Approaches for Temperature- and Light-Controlled Gene Expression in Bacterial Hosts. Molecules. 27(20), 6798 (2022).
+            </li>
+            <li>
+              M. A. Lalwani, H. Kawabe, R. L. Mays, Hoffman SM, Avalos JL. Optogenetic Control of Microbial Consortia Populations for Chemical Production. ACS Synth. Biol. 10(8), 2015-2029 (2021).
+            </li>
+            <li>
+              Y. Zhang, X. Xue, M. Fang, G. Pang, Y. Xing, X. Zhang, L. Li, Q. Chen, Y. Wang, J. Chang, P. Zhao, H. Wang. Upconversion Optogenetic Engineered Bacteria System for Time-Resolved Imaging Diagnosis and Light-Controlled Cancer Therapy. ACS Appl. Mater. Interfaces 14(41), 46351-46361 (2022).
+            </li>
+            <li>
+              C. Han, X. Zhang, G. Pang, Y. Zhang, H. Pan, L. Li, M. Cui, B. Liu, R. Kang, X. Xue, T. Sun, J. Liu, J. Chang, P. Zhao, H. Wang. Hydrogel Microcapsules Containing Engineered Bacteria for Sustained Production and Release of Protein Drugs. Biomaterials 287, 121619 (2022).
+            </li>
+          </ol>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-bottom: 100px;"></div>
+
+</div>
+
+
+  </div>
+
+  <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+  
+    <!-- topbutton -->
+    <div class="menu">
+
+        <div class="toggle">
+            <i class="fa fa-angle-double-up"></i>
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-0.png" alt="" style="z-index: 100;">
+        </div>
+        <li style="--i:0">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:1">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:2">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:3">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:4">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:6">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:7">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+    </div>
+    
+    <div id="myFooter">
+        <!--  内容部分-->
+        <div class="footer-xiaohui">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-xmulogo.png" alt="">
+            <div class="footer-xiaoming">
+                Xiamen University
+            </div>
+        </div>
+        <div class="footer-didian">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-position.png" alt="">
+            <div class="footer-didianming">
+                Xiamen University, Fujian, China<br>
+                No.422, Siming South Road, Fujian, P.R.China 361005
+            </div>
+        </div>
+        <div class="footer-duihui">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-teamlogo-2024.png" alt="">
+        </div>
+        <div class="footer-follow">
+            <div class="footer-followus">
+                Follow Us
+            </div>
+            <div class="footer-wechat">
+                <a href="https://static.igem.wiki/teams/5136/header-footer-img/wechat.png">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wechat.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-facebook">
+                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FIGEM-XMU-China-1067638406629389">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-f.png" alt=""
+                     style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-ins">
+                <a href="https://www.instagram.com/xmu_china_igem">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-o.png" alt=""
+                    style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-weibo">
+                <a href="https://weibo.com/u/7482868083">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wb.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-twitter">
+                <a href="https://twitter.com/XMU_igem">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-x.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+        </div>
+        <!-- <div class="footer-bar"></div> -->
+        <div class="footer-contact">
+            <div class="footer-contactus">
+                Contact Us
+            </div>
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-mail.png" alt="">
+            <div class="footer-mail">
+                igem_xmu@163.com
+            </div>
+        </div>
+    </div>
+    
+
+  <!-- Bootstrap Bundle with Popper -->
+  
+  <script src="static/bootstrap.bundle.min.js"></script>
+  <script src="static/js2024/top.js"></script>
+  <script src="static/js2024/scroll.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,988 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://static.igem.wiki/teams/5136/favicon.png" />
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+  <!-- Bootstrap CSS -->
+  <!-- <link href="static/bootstrap.min.css" rel="stylesheet"> -->
+
+  <!-- Custom CSS -->
+  <!-- <link href="static/style.css" rel="stylesheet"> -->
+  <link href="static/css2024/footer.css" rel="stylesheet">
+  <link href="static/css2024/header.css" rel="stylesheet">
+  <link href="static/css2024/top.css" rel="stylesheet">
+  <link href="static/css2024/theme.css" rel="stylesheet">
+  <link href="static/css2024/footer-small.css" rel="stylesheet">
+  
+  <!-- loading -->
+  <script src="static/js2024/jquery-3.5.1.min.js"></script>
+  <script src="static/js2024/loading.js"></script>
+  <!-- <link rel="stylesheet" href="static/css/loading.css"> -->
+
+  <!-- <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/font/font.css">
+    <link rel="stylesheet" href="static/css/loading.css">
+
+    <script src="static/js/loading.js"></script>
+    <script src="static/js/fontsize.js"></script> -->
+  <title>Parts | XMU-China - iGEM 2024</title>
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+        <div class="logo">
+            <div class="img1">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/logo.png" alt="Logo">
+            </div>
+            <div class="img2">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/logo-word.png" alt="logo">
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="home">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/home.png" alt="Home Icon">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#team">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/team.png" alt="Team Icon">
+                        <span>TEAM</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="members">Members</a></li>
+                        <li><a href="attributions">Attributions</a></li>
+                        <li><a href="notebook">Notebook</a></li>
+                        <li><a href="experiments">Experiments</a></li>
+                        <li><a href="safety">Safety</a></li>
+                        <li><a href="collaborations">Collaborations</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#project">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/project.png" alt="Project Icon">
+                        <span>PROJECT</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="description">Description</a></li>
+                        <li><a href="design">Design</a></li>
+                        <li><a href="engineering">Engineering Success</a></li>
+                        <li><a href="results">Results</a></li>
+                        <li><a href="poc">Proof of Concept</a></li>
+                        <li><a href="implementation">Proposed Implementation</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#drylab">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/drylab.png" alt="DryLab Icon">
+                        <span>DRYLAB</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="model">Model</a></li>
+                        <li><a href="sop">SOP</a></li>
+                        <li><a href="lca">LCA</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#parts">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/parts.png" alt="Parts Icon">
+                        <span>PARTS</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="parts">Parts</a></li>
+                        <li><a href="contribution">Contribution</a></li>
+                        <li><a href="part-collection">Parts Collection</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#hp">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/hp.png" alt="Hp Icon">
+                        <span>HP</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hp">Human Practices</a></li>
+                        <li><a href="human-practices">Integrated Human Practices</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#award">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/award.png" alt="Award Icon">
+                        <span>AWARD</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="human-practices">Integrated Human Practices</a></li>
+                        <li><a href="model">Model</a></li>
+                        <li><a href="part-collection">Parts Collection</a></li>
+                    </ul>
+                </div>
+            </li> 
+            <li>
+                <div class="dropdown">
+                    <a href="#game">
+                        <img src="https://raw.githubusercontent.com/Yuer-Chi/slaythespire_web/main/static/images/relic.png" alt="">
+                        <span>GAME</span>
+                        
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="description_game">Description</a></li>
+                        <li><a href="#team2">Characters</a></li>
+                        <li><a href="#team3">Encyclopedia</a></li>
+                        <li><a href="#team4">Joke</a></li>
+                        <li><a href="#team5">Achievements</a></li>
+                    </ul>
+                </div>
+            </li>    
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- 
+    <div class="header">
+        <img src="https://static.igem.wiki/teams/5136/layout/head.png" alt="" class="head">
+        <ul>
+            <li><a href=" home"><img src="https://static.igem.wiki/teams/5136/logos/1.png" alt=""><p>HOME</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/2.png" alt=""><p>TEAM</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/3.png" alt=""><p>DRY LAB</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/4.png" alt=""><p>WET LAB</p></a></li>
+            <li><a href="description"><img src="https://static.igem.wiki/teams/5136/logos/5.png" alt=""><p>PROJECT</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/6.png" alt=""><p>AWARDS</p></a></li>
+        </ul>
+    </div> -->
+
+  <!-- Header -->
+  <!--  <header class="bg-hero py-5 mb-5">-->
+  <!--    <div class="container h-100">-->
+  <!--      <div class="row h-100 align-items-center">-->
+  <!--        <div class="col-lg-12">-->
+  <!--          <h1 class="display-4 text-white mt-5 mb-2">Parts</h1>-->
+  <!--	        <p class="lead mb-5 text-white-50"></p>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </header>-->
+
+  <!-- Page Content -->
+  <div class="container">
+    
+<meta name="format-detection" content="telephone=no" />
+
+<main style="overflow:hidden">
+  <!--loading-->
+  <!-- <div id="loader-wrapper">
+    <div id="loader">
+      <div class="loader-img">
+        <img src="https://static.igem.wiki/teams/4907/wiki/background/loading.png">
+      </div>
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div> -->
+
+  <!--Magic-navbar-->
+  <div id="loader-wrapper">
+    <div id="loader">
+      <div class="loader-img">
+        <img src="https://static.igem.wiki/teams/5136/load-new.gif">
+      </div>
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <div class="myScrollspy">
+    <div class="left-bar">
+      <div class="left-bar-right">
+        <div class="left-bar-right-item">
+          <a href="#section1" class="sidebar-link" data-section="section1">Overview</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section2" class="sidebar-link" data-section="section2">Basic Parts</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section3" class="sidebar-link" data-section="section3">Composite Parts</a>
+        </div>
+      </div>
+    </div>
+    <div class="left-bar-bg">
+      <img src="https://static.igem.wiki/teams/5136/cbl-fix.png" alt="">
+    </div>
+    <div class="scroll-bar"></div>
+  </div>
+
+  <!--content-->
+  <div class="myPage">
+    <!-- <div class="myPage-padding"></div> -->
+    <div class="myPage-main">
+      <div style="height: 100px;position:relative;"></div>
+      <div class="myPage-main-content" style="text-align: justify">
+        <div class="myPage-headline">
+          <h1 class="myPage-headline-content">
+            <span style="color: #8768cd">.</span>
+            <span style="color: #483b53;font-family: Aaargh;">Parts</span>
+            <span style="color: #8768cd">.</span>
+          </h1>
+          <div class="myPage-headline-divider"></div>
+        </div>
+        <div class="myPage-paragraph" id="section1">
+          <h2 class="myPage-paragraph-headline-h2">
+            Overview
+          </h2>
+          <div class="myPage-paragraph-table-div">
+            <div class="myPage-paragraph-content">
+              This year, among the 89 parts designed, 65 of them are basic parts and the rest are composite parts. All
+              of them are designed by ourselves, and most of them have been tested to insure their reliability. You can
+              click <a style="font-weight: bolder;text-decoration: none;"
+                href="design">here</a> to learn more about our project to see their
+              specific functions, or click on the part numbers when browse website.
+            </div>
+          </div>
+        </div>
+        <!---Basic Parts--->
+        <div class="myPage-paragraph" id="section2">
+          <h2 class="myPage-paragraph-headline-h2">
+            Basic Parts
+          </h2>
+          <div class="myPage-paragraph-content">
+            Among the 65 basic parts designed this year, <a style="font-weight: bolder;text-decoration: none;"
+              href="http://parts.igem.org/Part:BBa_K5136003">BBa_K5136003</a> is our favorite one that codes <i>CYP199A4
+              T253A</i>-His tag. Among all of monooxygenases we tested, the monooxygenase encoded by this gene has the
+            best
+            deinking effect. This monooxygenase can exhibit
+            excellent performance in related research conducted by other researchers and iGEM teams. Besides, many other
+            basic parts have also been designed to construct our project.
+          </div>
+          <div class="myPage-paragraph-table-div" style="text-align: center">
+            <table class="myPage-paragraph-table">
+              <tbody>
+                <tr>
+                  <th>Favorite</th>
+                  <th style="width:20%;">Name</th>
+                  <th>Type</th>
+                  <th style="width:50%;">Description</th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136000">BBa_K5136000</a></td>
+                  <td>coding</td>
+                  <td><i>CYP199A4 WT</i>-His tag</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136001">BBa_K5136001</a></td>
+                  <td>coding</td>
+                  <td><i>CYP199A4 T253E</i>-His tag</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136002">BBa_K5136002</a></td>
+                  <td>coding</td>
+                  <td><i>CYP199A4 T253S</i>-His tag</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="https://static.igem.wiki/teams/5136/parts-table-icon/jt.png" slt="">
+                  </td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136003">BBa_K5136003</a></td>
+                  <td>coding</td>
+                  <td><i>CYP199A4 T253A</i>-His tag</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136004">BBa_K5136004</a></td>
+                  <td>coding</td>
+                  <td><i>CYP199A4 T253R</i>-His tag</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136005">BBa_K5136005</a></td>
+                  <td>coding</td>
+                  <td><i>CYP199A4 T253N</i>-His tag</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136006">BBa_K5136006</a></td>
+                  <td>coding</td>
+                  <td><i>CYP199A4 T253D</i>-His tag</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136007">BBa_K5136007</a></td>
+                  <td>coding</td>
+                  <td><i>CYP199A4 T253C</i>-His tag</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136008">BBa_K5136008</a></td>
+                  <td>coding</td>
+                  <td><i>CYP199A4 T253Q</i>-His tag</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136009">BBa_K5136009</a></td>
+                  <td>coding</td>
+                  <td><i>CYP199A4 T253W</i>-His tag</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136010">BBa_K5136010</a></td>
+                  <td>coding</td>
+                  <td><i>CYP199A4 T253G</i>-His tag</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136011">BBa_K5136011</a></td>
+                  <td>coding</td>
+                  <td><i>CYP199A4 T253H</i>-His tag</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136012">BBa_K5136012</a></td>
+                  <td>coding</td>
+                  <td><i>CYP199A4 T253I</i>-His tag</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136013">BBa_K5136013</a></td>
+                  <td>coding</td>
+                  <td><i>CYP199A4 T253L</i>-His tag</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136014">BBa_K5136014</a></td>
+                  <td>coding</td>
+                  <td><i>CYP199A4 T253K</i>-His tag</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136015">BBa_K5136015</a></td>
+                  <td>coding</td>
+                  <td><i>CYP199A4 T253M</i>-His tag</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136016">BBa_K5136016</a></td>
+                  <td>coding</td>
+                  <td><i>CYP199A4 T253F</i>-His tag</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136017">BBa_K5136017</a></td>
+                  <td>coding</td>
+                  <td><i>CYP199A4 T253P</i>-His tag</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136018">BBa_K5136018</a></td>
+                  <td>coding</td>
+                  <td><i>CYP199A4 T253V</i>-His tag</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136019">BBa_K5136019</a></td>
+                  <td>coding</td>
+                  <td><i>CYP199A4 T253Y</i>-His tag</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136020">BBa_K5136020</a></td>
+                  <td>coding</td>
+                  <td><i>SfmD WT</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136021">BBa_K5136021</a></td>
+                  <td>coding</td>
+                  <td><i>SfmD 277F</i></td>
+                </tr>
+                <tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136023">BBa_K5136023</a></td>
+                  <td>coding</td>
+                  <td><i>OleT<sub>JE</sub></i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136024">BBa_K5136024</a></td>
+                  <td>coding</td>
+                  <td><i>OleT<sub>JE</sub> 236S 100K 166K</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136025">BBa_K5136025</a></td>
+                  <td>coding</td>
+                  <td><i>OleT<sub>JE</sub> 236S 360K 167K</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136026">BBa_K5136026</a></td>
+                  <td>coding</td>
+                  <td><i>cellulase EG5C</i>-His tag</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136027">BBa_K5136027</a></td>
+                  <td>coding</td>
+                  <td><i>laccase</i>-His tag</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136028">BBa_K5136028</a></td>
+                  <td>coding</td>
+                  <td><i>sfgfp</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136029">BBa_K5136029</a></td>
+                  <td>coding</td>
+                  <td>FhuD-TSS linker-<i>T7 lysozyme 119V</i>-SsrA</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136030">BBa_K5136030</a></td>
+                  <td>coding</td>
+                  <td>FhuD-TSS linker-<i>T7 lysozyme 119G</i>-SsrA</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136031">BBa_K5136031</a></td>
+                  <td>coding</td>
+                  <td>FhuD-GGG linker-<i>T7 lysozyme 119V</i>-SsrA</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136032">BBa_K5136032</a></td>
+                  <td>coding</td>
+                  <td>FhuD-GGG linker-<i>T7 lysozyme 119G</i>-SsrA</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136033">BBa_K5136033</a></td>
+                  <td>coding</td>
+                  <td>LMT-GGG linker-<i>T7 lysozyme 119G</i>-SsrA</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136034">BBa_K5136034</a></td>
+                  <td>coding</td>
+                  <td>His tag-SpyTag-<i>gfp</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136035">BBa_K5136035</a></td>
+                  <td>coding</td>
+                  <td>inpnc-His tag-SpyCatcher</td>
+                </tr>
+                
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136037">BBa_K5136037</a></td>
+                  <td>coding</td>
+                  <td><i>mt3</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136038">BBa_K5136038</a></td>
+                  <td>coding</td>
+                  <td><i>mt2a</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136039">BBa_K5136039</a></td>
+                  <td>coding</td>
+                  <td><i>mnta</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136040">BBa_K5136040</a></td>
+                  <td>coding</td>
+                  <td><i>gst</i>-linker-<i>mt2a</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136041">BBa_K5136041</a></td>
+                  <td>coding</td>
+                  <td><i>gst</i>-linker-crs5</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136042">BBa_K5136042</a></td>
+                  <td>coding</td>
+                  <td><i>LexRO</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136043">BBa_K5136043</a></td>
+                  <td>regulatory</td>
+                  <td>pHybrid 2)-114 version</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136044">BBa_K5136044</a></td>
+                  <td>regulatory</td>
+                  <td>pColE408-RBS</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136045">BBa_K5136045</a></td>
+                  <td>RBS</td>
+                  <td><i>SD7</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136047">BBa_K5136047</a></td>
+                  <td>coding</td>
+                  <td>LMT-linker-<i>CYP199A4 T253E</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136048">BBa_K5136048</a></td>
+                  <td>coding</td>
+                  <td>inpnc-linker-<i>mt3</i>-linker-<i>mt2a</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136049">BBa_K5136049</a></td>
+                  <td>RBS</td>
+                  <td>SD17</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136050">BBa_K5136050</a></td>
+                  <td>coding</td>
+                  <td>Algen-His tag-linker-<i>sfgfp</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136051">BBa_K5136051</a></td>
+                  <td>coding</td>
+                  <td>OsmY-His tag-linker-<i>sfgfp</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136052">BBa_K5136052</a></td>
+                  <td>coding</td>
+                  <td>OmpA-His tag-linker-<i>sfgfp</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136053">BBa_K5136053</a></td>
+                  <td>coding</td>
+                  <td>PelB-His tag-linker-<i>sfgfp</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136054">BBa_K5136054</a></td>
+                  <td>coding</td>
+                  <td>TorA-His tag-linker-<i>sfgfp</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136055">BBa_K5136055</a></td>
+                  <td>coding</td>
+                  <td>YebF-His tag-linker-<i>sfgfp</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136056">BBa_K5136056</a></td>
+                  <td>coding</td>
+                  <td>LMT-His tag-linker-<i>sfgfp</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136057">BBa_K5136057</a></td>
+                  <td>coding</td>
+                  <td><i>rfbD</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136058">BBa_K5136058</a></td>
+                  <td>coding</td>
+                  <td><i>rhlA</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136059">BBa_K5136059</a></td>
+                  <td>coding</td>
+                  <td><i>rhlB</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136060">BBa_K5136060</a></td>
+                  <td>coding</td>
+                  <td>Algen</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136061">BBa_K5136061</a></td>
+                  <td>coding</td>
+                  <td>OsmY</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136062">BBa_K5136062</a></td>
+                  <td>coding</td>
+                  <td>OmpA</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136063">BBa_K5136063</a></td>
+                  <td>coding</td>
+                  <td>PelB</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136064">BBa_K5136064</a></td>
+                  <td>coding</td>
+                  <td>TorA</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136065">BBa_K5136065</a></td>
+                  <td>coding</td>
+                  <td>YebF</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136066">BBa_K5136066</a></td>
+                  <td>coding</td>
+                  <td>LMT</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136067">BBa_K5136067</a></td>
+                  <td>coding</td>
+                  <td>HlyA</td>
+                </tr>
+               
+
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="myPage-paragraph" id="section3">
+          <!---Composite Parts--->
+          <h2 class="myPage-paragraph-headline-h2">
+            Composite Parts
+          </h2>
+          <div class="myPage-paragraph-content">
+            We have designed a series of composite parts this year, and most of them could be useful tools for our
+            design. Our favorite composite part is <a style="font-weight: bolder;text-decoration: none;"
+              href="http://parts.igem.org/Part:BBa_K5136202">BBa_K5136202</a>. This composite part demonstrates that the
+            combination
+            of the promoter J23104 and the signal peptide LMT can achieve the best secretion effect, providing strong
+            support for using signal peptide to obtain the deinking enzymes in our project.
+          </div>
+          <div class="myPage-paragraph-table-div" style="padding-bottom: 60px;text-align: center">
+            <table class="myPage-paragraph-table">
+              <tbody>
+                <tr>
+                  <th>Favorite</th>
+                  <th style="width:20%;">Name</th>
+                  <th>Type</th>
+                  <th style="width:50%;">Description</th>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136200">BBa_K5136200</a></td>
+                  <td>composite</td>
+                  <td>J23100-RiboJ-B0034-LMT-linker-<i>sfgfp</i>-B0010</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136201">BBa_K5136201</a></td>
+                  <td>composite</td>
+                  <td>J23103-RiboJ-B0034-LMT-linker-<i>sfgfp</i>-B0010</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="https://static.igem.wiki/teams/5136/parts-table-icon/jt.png" slt="">
+                  </td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136202">BBa_K5136202</a></td>
+                  <td>composite</td>
+                  <td>J23104-RiboJ-B0034-LMT-linker-<i>sfgfp</i>-B0010</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136203">BBa_K5136203</a></td>
+                  <td>composite</td>
+                  <td>J23106-RiboJ-B0034-LMT-linker-<i>sfgfp</i>-B0010</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136204">BBa_K5136204</a></td>
+                  <td>composite</td>
+                  <td>J23110-RiboJ-B0034-LMT-linker-<i>sfgfp</i>-B0010</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136205">BBa_K5136205</a></td>
+                  <td>composite</td>
+                  <td>J23114-RiboJ-B0034-LMT-linker-<i>sfgfp</i>-B0010</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136219">BBa_K5136219</a></td>
+                  <td>composite</td>
+                  <td>I0500-B0034-FhuD-TSS linker-<i>T7 lysozyme 119V</i>-SsrA-B0015</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136220">BBa_K5136220</a></td>
+                  <td>composite</td>
+                  <td>I0500-B0034-FhuD-TSS linker-<i>T7 lysozyme 119G</i>-SsrA-B0015</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136221">BBa_K5136221</a></td>
+                  <td>composite</td>
+                  <td>I0500-B0034-FhuD-GGG linker-<i>T7 lysozyme 119V</i>-SsrA-B0015</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136222">BBa_K5136222</a></td>
+                  <td>composite</td>
+                  <td>I0500-B0034-FhuD-GGG linker-<i>T7 lysozyme 119G</i>-SsrA-B0015</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136223">BBa_K5136223</a></td>
+                  <td>composite</td>
+                  <td>I0500-B0034-LMT-GGG linker-<i>T7 lysozyme 119G</i>-SsrA-B0015</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136224">BBa_K5136224</a></td>
+                  <td>composite</td>
+                  <td>I0500-B0034-inpnc-His tag-SpyCatcher-B0015</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136225">BBa_K5136225</a></td>
+                  <td>composite</td>
+                  <td>I0500-B0034-<i>mnta</i>-B0015</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136226">BBa_K5136226</a></td>
+                  <td>composite</td>
+                  <td>I0500-B0034-inpnc-linker-<i>mt3</i>-linker-<i>mt2a</i>-B0015</td>
+                </tr>
+                
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136228">BBa_K5136228</a></td>
+                  <td>composite</td>
+                  <td>I0500-B0034-<i>gst</i>-linker-<i>mt2a</i>-B0015</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136229">BBa_K5136229</a></td>
+                  <td>composite</td>
+                  <td>I0500-B0034-<i>gst</i>-linker-<i>crs5</i>-B0015</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136230">BBa_K5136230</a></td>
+                  <td>composite</td>
+                  <td>I0500-B0034-<i>mt3</i>-B0034-<i>mt2a</i>-B0015</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136231">BBa_K5136231</a></td>
+                  <td>composite</td>
+                  <td>J23106-SD7-<i>LexRO</i>-B0015-pColE408-<i>ccdB</i>-B0014-pHybrid 2)-114 version-B0034-<i>ccdA</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136232">BBa_K5136232</a></td>
+                  <td>composite</td>
+                  <td>I0500-B0034-<i>rhlA</i>-B0034-<i>rhlB</i>-B0015</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136233">BBa_K5136233</a></td>
+                  <td>composite</td>
+                  <td>J23100-<i>rfbD</i>-B0015</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136234">BBa_K5136234</a></td>
+                  <td>composite</td>
+                  <td>J23106-SD7-<i>LexRO</i>-B0015</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136235">BBa_K5136235</a></td>
+                  <td>composite</td>
+                  <td>J23106-SD17-<i>LexRO</i>-pColE408-<i>ccdB</i>-pHybrid 2)-114 version-B0034-<i>ccdA</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136236">BBa_K5136236</a></td>
+                  <td>composite</td>
+                  <td>I0500-B0034-<i>ccdB</i>-B0014-pHybrid 2)-114 version-B0034-<i>ccdA</i></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136237">BBa_K5136237</a></td>
+                  <td>composite</td>
+                  <td>J23106-SD7-<i>LexRO</i>-B0015-pColE408-<i>mCherry</i>-B0015</td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<script>
+  $(function () {
+    $("[data-toggle='popover']").popover({
+      animation: true,
+      html: true,//content中插入html代码
+      container: "body",
+      content: "<img src='https://static.igem.wiki/teams/4907/wiki/footer-icon/qrcode.jpg'>",//插入图片的路径及样式
+    });
+  });
+</script>
+
+
+
+  </div>
+
+  <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+  
+    <!-- topbutton -->
+    <div class="menu">
+
+        <div class="toggle">
+            <i class="fa fa-angle-double-up"></i>
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-0.png" alt="" style="z-index: 100;">
+        </div>
+        <li style="--i:0">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:1">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:2">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:3">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:4">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:6">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:7">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+    </div>
+    
+    <div id="myFooter">
+        <!--  内容部分-->
+        <div class="footer-xiaohui">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-xmulogo.png" alt="">
+            <div class="footer-xiaoming">
+                Xiamen University
+            </div>
+        </div>
+        <div class="footer-didian">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-position.png" alt="">
+            <div class="footer-didianming">
+                Xiamen University, Fujian, China<br>
+                No.422, Siming South Road, Fujian, P.R.China 361005
+            </div>
+        </div>
+        <div class="footer-duihui">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-teamlogo-2024.png" alt="">
+        </div>
+        <div class="footer-follow">
+            <div class="footer-followus">
+                Follow Us
+            </div>
+            <div class="footer-wechat">
+                <a href="https://static.igem.wiki/teams/5136/header-footer-img/wechat.png">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wechat.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-facebook">
+                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FIGEM-XMU-China-1067638406629389">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-f.png" alt=""
+                     style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-ins">
+                <a href="https://www.instagram.com/xmu_china_igem">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-o.png" alt=""
+                    style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-weibo">
+                <a href="https://weibo.com/u/7482868083">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wb.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-twitter">
+                <a href="https://twitter.com/XMU_igem">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-x.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+        </div>
+        <!-- <div class="footer-bar"></div> -->
+        <div class="footer-contact">
+            <div class="footer-contactus">
+                Contact Us
+            </div>
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-mail.png" alt="">
+            <div class="footer-mail">
+                igem_xmu@163.com
+            </div>
+        </div>
+    </div>
+    
+
+  <!-- Bootstrap Bundle with Popper -->
+  
+  <script src="static/bootstrap.bundle.min.js"></script>
+  <script src="static/js2024/top.js"></script>
+  <script src="static/js2024/scroll.js"></script>
+</body>
+
+</html>

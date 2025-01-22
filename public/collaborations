@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://static.igem.wiki/teams/5136/favicon.png" />
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+  <!-- Bootstrap CSS -->
+  <!-- <link href="static/bootstrap.min.css" rel="stylesheet"> -->
+
+  <!-- Custom CSS -->
+  <!-- <link href="static/style.css" rel="stylesheet"> -->
+  <link href="static/css2024/footer.css" rel="stylesheet">
+  <link href="static/css2024/header.css" rel="stylesheet">
+  <link href="static/css2024/top.css" rel="stylesheet">
+  <link href="static/css2024/theme.css" rel="stylesheet">
+  <link href="static/css2024/footer-small.css" rel="stylesheet">
+  
+  <!-- loading -->
+  <script src="static/js2024/jquery-3.5.1.min.js"></script>
+  <script src="static/js2024/loading.js"></script>
+  <!-- <link rel="stylesheet" href="static/css/loading.css"> -->
+
+  <!-- <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/font/font.css">
+    <link rel="stylesheet" href="static/css/loading.css">
+
+    <script src="static/js/loading.js"></script>
+    <script src="static/js/fontsize.js"></script> -->
+  <title>collaborations | XMU-China - iGEM 2024</title>
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+        <div class="logo">
+            <div class="img1">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/logo.png" alt="Logo">
+            </div>
+            <div class="img2">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/logo-word.png" alt="logo">
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="home">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/home.png" alt="Home Icon">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#team">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/team.png" alt="Team Icon">
+                        <span>TEAM</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="members">Members</a></li>
+                        <li><a href="attributions">Attributions</a></li>
+                        <li><a href="notebook">Notebook</a></li>
+                        <li><a href="experiments">Experiments</a></li>
+                        <li><a href="safety">Safety</a></li>
+                        <li><a href="collaborations">Collaborations</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#project">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/project.png" alt="Project Icon">
+                        <span>PROJECT</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="description">Description</a></li>
+                        <li><a href="design">Design</a></li>
+                        <li><a href="engineering">Engineering Success</a></li>
+                        <li><a href="results">Results</a></li>
+                        <li><a href="poc">Proof of Concept</a></li>
+                        <li><a href="implementation">Proposed Implementation</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#drylab">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/drylab.png" alt="DryLab Icon">
+                        <span>DRYLAB</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="model">Model</a></li>
+                        <li><a href="sop">SOP</a></li>
+                        <li><a href="lca">LCA</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#parts">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/parts.png" alt="Parts Icon">
+                        <span>PARTS</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="parts">Parts</a></li>
+                        <li><a href="contribution">Contribution</a></li>
+                        <li><a href="part-collection">Parts Collection</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#hp">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/hp.png" alt="Hp Icon">
+                        <span>HP</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hp">Human Practices</a></li>
+                        <li><a href="human-practices">Integrated Human Practices</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#award">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/award.png" alt="Award Icon">
+                        <span>AWARD</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="human-practices">Integrated Human Practices</a></li>
+                        <li><a href="model">Model</a></li>
+                        <li><a href="part-collection">Parts Collection</a></li>
+                    </ul>
+                </div>
+            </li> 
+            <li>
+                <div class="dropdown">
+                    <a href="#game">
+                        <img src="https://raw.githubusercontent.com/Yuer-Chi/slaythespire_web/main/static/images/relic.png" alt="">
+                        <span>GAME</span>
+                        
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="description_game">Description</a></li>
+                        <li><a href="#team2">Characters</a></li>
+                        <li><a href="#team3">Encyclopedia</a></li>
+                        <li><a href="#team4">Joke</a></li>
+                        <li><a href="#team5">Achievements</a></li>
+                    </ul>
+                </div>
+            </li>    
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- 
+    <div class="header">
+        <img src="https://static.igem.wiki/teams/5136/layout/head.png" alt="" class="head">
+        <ul>
+            <li><a href=" home"><img src="https://static.igem.wiki/teams/5136/logos/1.png" alt=""><p>HOME</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/2.png" alt=""><p>TEAM</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/3.png" alt=""><p>DRY LAB</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/4.png" alt=""><p>WET LAB</p></a></li>
+            <li><a href="description"><img src="https://static.igem.wiki/teams/5136/logos/5.png" alt=""><p>PROJECT</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/6.png" alt=""><p>AWARDS</p></a></li>
+        </ul>
+    </div> -->
+
+  <!-- Header -->
+  <!--  <header class="bg-hero py-5 mb-5">-->
+  <!--    <div class="container h-100">-->
+  <!--      <div class="row h-100 align-items-center">-->
+  <!--        <div class="col-lg-12">-->
+  <!--          <h1 class="display-4 text-white mt-5 mb-2">collaborations</h1>-->
+  <!--	        <p class="lead mb-5 text-white-50"></p>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </header>-->
+
+  <!-- Page Content -->
+  <div class="container">
+    
+
+<link rel="stylesheet" href="static/css2024/experiments.css">
+
+<script src="static/js2024/jquery-3.5.1.min.js"></script>
+<script src="static/bootstrap.bundle.min.js"></script>
+
+<style>
+    #hainan-link.current {
+        font-size: 24px;
+    }
+</style>
+
+<div id="loader-wrapper">
+    <div id="loader">
+        <div class="loader-img">
+            <img src="https://static.igem.wiki/teams/5136/load-new.gif">
+        </div>
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+<div class="container">
+
+    <!--loading-->
+
+    <!--侧边导航栏-->
+    <div class="myScrollspy">
+        <!-- 文字导航 -->
+        <div class="left-bar">
+            <div class="left-bar-right">
+                <div class="left-bar-right-item">
+                    <a href="#section1" class="sidebar-link" data-section="section1">Overview</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a href="#section2" class="sidebar-link" data-section="section2">HUBU-China</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a href="#section3" class="sidebar-link" data-section="section3">11<sup>th</sup> CCiC</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a id="hainan-link" href="#section4" class="sidebar-link" data-section="section4">Hainan-China &
+                        NJTech-China</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a href="#section5" class="sidebar-link" data-section="section5">Summary</a>
+                </div>
+            </div>
+        </div>
+        <!-- 底部插图 -->
+        <div class="left-bar-bg">
+            <img src="https://static.igem.wiki/teams/5136/cbl-fix.png" alt="">
+        </div>
+        <!-- 进度条 -->
+        <div class="scroll-bar"></div>
+    </div>
+
+    <!--以下就是正文段落-->
+    <div class="myPage">
+        <div class="myPage-main">
+            <div style="height: 100px;position:relative;"></div>
+            <div class="myPage-main-content">
+                <!---大标题--->
+                <div class="myPage-headline">
+                    <h1 class="myPage-headline-content">
+                        <span style="color: #8768cd">.</span>
+                        <span style="color: #483b53;font-family: Aaargh;">Collaborations</span>
+                        <span style="color: #8768cd">.</span>
+                    </h1>
+                </div>
+
+                <!---文字段落--->
+                <div class="myPage-paragraph" id="section1">
+                    <h2 class="myPage-paragraph-headline-h2">Overview</h2>
+                    <!-- 记住这里的h2就是标题 -->
+                    <p class="myPage-paragraph-content">
+                        We are delighted to find that this community is still full of surprise and energy. Every
+                        exchange feels like a sparkle that allows us to illuminate each other.
+                    </p>
+
+
+                </div>
+
+                <!---插图演示--->
+                <div class="myPage-paragraph" id="section2">
+                    <h2 class="myPage-paragraph-headline-h2">HUBU-China</h2>
+                    <p class="myPage-paragraph-content">
+                        Through the communication platform of the iGEM Chinese community, we received the exchange
+                        invitation of HUBU-China, which opened a happy exchange. This year, HUBU-China's project is to
+                        use plasmid delivery of RNAi to control agricultural pests efficiently. The excellent targeting
+                        performance of RNAi can avoid the non-specific killing of other organisms, and its instability
+                        also reduces the risk of environmental exposure. This made us realize that our project also
+                        needs to consider biosafety issues and environmental exposure risks more comprehensively. In
+                        addition, we shared our views on how to gain special prizes, coming away with a renewable
+                        understanding of how we can improve our project.
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/collaborations/fig1.jpg" alt="">
+                        <div class="myPage-paragraph-fig-description"><b>Figure 1 Group photo after the exchange.</b>
+                        </div>
+                    </div>
+                    <p class="myPage-paragraph-content">
+                        This exchange not only enhanced our understanding of each other's projects but also established
+                        precious friendships between the teams. Our subsequent story can be seen on CCiC.
+                    </p>
+                </div>
+
+                <!---小标题和小小标题--->
+                <div class="myPage-paragraph" id="section3">
+                    <h2 class="myPage-paragraph-headline-h2">11<sup>th</sup> CCiC</h2>
+
+                    <p class="myPage-paragraph-content">
+                        From July 11 to 14, 2024, we were invited to Xi'an Jiaotong-Liverpool University to attend the
+                        11th iGEMer Exchange Conference in China. Excellent iGEM teams from all over the country
+                        gathered at the conference. We interacted with Hainan-China, WHU-China, HUBU-China,
+                        Jiangnan-China and other teams to learn more about their creative design concepts, such as the
+                        selection of lytic protein. During communication, we received valuable suggestions from other
+                        teams and professors in various fields, such as on the properties of hydrogels under high heavy
+                        metal ion concentrations, prompting us to reflect on the rationality of using hydrogels in
+                        industry and actively explore new improvement schemes.
+                    </p>
+
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/collaborations/fig2.png" alt="">
+                        <div class="myPage-paragraph-fig-description"><b>Figure 2 Group photo of all participants.</b>
+                        </div>
+                    </div>
+
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/collaborations/fig3.jpg" alt=""
+                            style="max-width: 800px;">
+                        <div class="myPage-paragraph-fig-description"><b>Figure 3 Members interact with other teams.</b>
+                        </div>
+                    </div>
+                    <p class="myPage-paragraph-content">
+                        In summary, the heated discussions with other teams at this exchange provided us with important
+                        inspiration and brought us closer to our overall goal of optimizing the industrial processes for
+                        paper deinking.
+                    </p>
+
+                </div>
+
+                <!---超链接的写法--->
+                <div class="myPage-paragraph" id="section4">
+                    <h2 class="myPage-paragraph-headline-h2">Hainan-China & NJTech-China</h2>
+                    <p class="myPage-paragraph-content">
+                        After CCiC, we exchanged contact information with interested teams. We launched an online
+                        exchange on human practice with Hainan-China and NJTech-China. By sharing our experiences and
+                        plans from human practice, we gained a deeper insight into the relationship between the world
+                        and our project.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        The representatives of Hainan University highlighted their experiences of regular communication
+                        and cooperation with professors and enterprises, which enabled them to orient their project
+                        direction more accurately. The Nanjing University of Technology team members presented a
+                        publicity campaign designed for visually and hearing-impaired people, perfectly demonstrating
+                        the team's humanistic care and social responsibility. We shared some examples of how human
+                        practice helped us make design decisions logically and explained how human practice ran through
+                        the whole life cycle of our project.
+                    </p>
+                    <div class="myPage-paragraph-fig">
+                        <img src="https://static.igem.wiki/teams/5136/collaborations/fig4.jpg" alt="">
+                        <div class="myPage-paragraph-fig-description"><b>Figure 4 Communication between among the three
+                                teams.</b>
+                        </div>
+                    </div>
+                    <p class="myPage-paragraph-content">
+                        After that, we also had some in-depth exchanges on specific issues such as questionnaire
+                        surveys, activity planning and contacting potential interviewees. In the end, we shared our
+                        visions for the future of human practice, which made us feel more intensely the close connection
+                        between ourselves and the world.
+                    </p>
+                </div>
+
+
+                <!--Reference的写法-->
+                <div class="myPage-paragraph" id="section5">
+                    <h2 class="myPage-paragraph-headline-h2">Summary</h2>
+                    <p class="myPage-paragraph-content">
+                        Through these enjoyable exchanges, we gained an in-depth understanding of other teams, inspired
+                        by their valuable experiences and suggestions. It is obvious that if you want to go far, go
+                        together, which is the only way to keep the iGEM community alive and creative.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="margin-bottom: 100px;"></div>
+    <script>
+        // jQuery to handle the collapse toggle and style changes
+        $(document).ready(function () {
+            $('#accordion-Det .panel-title a').click(function () {
+                var targetId = $(this).attr('href');
+                // Toggle the collapse
+                $(targetId).collapse('toggle');
+
+                // Event for collapse show
+                $(targetId).on('shown.bs.collapse', function () {
+                    $(this).prev().find('a').removeClass('collapsed').addClass('expanded');
+                });
+
+                // Event for collapse hide
+                $(targetId).on('hidden.bs.collapse', function () {
+                    $(this).prev().find('a').removeClass('expanded').addClass('collapsed');
+                });
+
+                return false; // Prevent the default behavior of the anchor
+            });
+        });
+    </script>
+
+</div>
+
+
+  </div>
+
+  <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+  
+    <!-- topbutton -->
+    <div class="menu">
+
+        <div class="toggle">
+            <i class="fa fa-angle-double-up"></i>
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-0.png" alt="" style="z-index: 100;">
+        </div>
+        <li style="--i:0">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:1">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:2">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:3">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:4">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:6">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:7">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+    </div>
+    
+    <div id="myFooter">
+        <!--  内容部分-->
+        <div class="footer-xiaohui">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-xmulogo.png" alt="">
+            <div class="footer-xiaoming">
+                Xiamen University
+            </div>
+        </div>
+        <div class="footer-didian">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-position.png" alt="">
+            <div class="footer-didianming">
+                Xiamen University, Fujian, China<br>
+                No.422, Siming South Road, Fujian, P.R.China 361005
+            </div>
+        </div>
+        <div class="footer-duihui">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-teamlogo-2024.png" alt="">
+        </div>
+        <div class="footer-follow">
+            <div class="footer-followus">
+                Follow Us
+            </div>
+            <div class="footer-wechat">
+                <a href="https://static.igem.wiki/teams/5136/header-footer-img/wechat.png">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wechat.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-facebook">
+                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FIGEM-XMU-China-1067638406629389">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-f.png" alt=""
+                     style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-ins">
+                <a href="https://www.instagram.com/xmu_china_igem">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-o.png" alt=""
+                    style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-weibo">
+                <a href="https://weibo.com/u/7482868083">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wb.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-twitter">
+                <a href="https://twitter.com/XMU_igem">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-x.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+        </div>
+        <!-- <div class="footer-bar"></div> -->
+        <div class="footer-contact">
+            <div class="footer-contactus">
+                Contact Us
+            </div>
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-mail.png" alt="">
+            <div class="footer-mail">
+                igem_xmu@163.com
+            </div>
+        </div>
+    </div>
+    
+
+  <!-- Bootstrap Bundle with Popper -->
+  
+  <script src="static/bootstrap.bundle.min.js"></script>
+  <script src="static/js2024/top.js"></script>
+  <script src="static/js2024/scroll.js"></script>
+</body>
+
+</html>

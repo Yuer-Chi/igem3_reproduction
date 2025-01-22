@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://static.igem.wiki/teams/5136/favicon.png" />
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+  <!-- Bootstrap CSS -->
+  <!-- <link href="static/bootstrap.min.css" rel="stylesheet"> -->
+
+  <!-- Custom CSS -->
+  <!-- <link href="static/style.css" rel="stylesheet"> -->
+  <link href="static/css2024/footer.css" rel="stylesheet">
+  <link href="static/css2024/header.css" rel="stylesheet">
+  <link href="static/css2024/top.css" rel="stylesheet">
+  <link href="static/css2024/theme.css" rel="stylesheet">
+  <link href="static/css2024/footer-small.css" rel="stylesheet">
+  
+  <!-- loading -->
+  <script src="static/js2024/jquery-3.5.1.min.js"></script>
+  <script src="static/js2024/loading.js"></script>
+  <!-- <link rel="stylesheet" href="static/css/loading.css"> -->
+
+  <!-- <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/font/font.css">
+    <link rel="stylesheet" href="static/css/loading.css">
+
+    <script src="static/js/loading.js"></script>
+    <script src="static/js/fontsize.js"></script> -->
+  <title>Proposed Implementation | XMU-China - iGEM 2024</title>
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+        <div class="logo">
+            <div class="img1">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/logo.png" alt="Logo">
+            </div>
+            <div class="img2">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/logo-word.png" alt="logo">
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="home">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/home.png" alt="Home Icon">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#team">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/team.png" alt="Team Icon">
+                        <span>TEAM</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="members">Members</a></li>
+                        <li><a href="attributions">Attributions</a></li>
+                        <li><a href="notebook">Notebook</a></li>
+                        <li><a href="experiments">Experiments</a></li>
+                        <li><a href="safety">Safety</a></li>
+                        <li><a href="collaborations">Collaborations</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#project">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/project.png" alt="Project Icon">
+                        <span>PROJECT</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="description">Description</a></li>
+                        <li><a href="design">Design</a></li>
+                        <li><a href="engineering">Engineering Success</a></li>
+                        <li><a href="results">Results</a></li>
+                        <li><a href="poc">Proof of Concept</a></li>
+                        <li><a href="implementation">Proposed Implementation</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#drylab">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/drylab.png" alt="DryLab Icon">
+                        <span>DRYLAB</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="model">Model</a></li>
+                        <li><a href="sop">SOP</a></li>
+                        <li><a href="lca">LCA</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#parts">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/parts.png" alt="Parts Icon">
+                        <span>PARTS</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="parts">Parts</a></li>
+                        <li><a href="contribution">Contribution</a></li>
+                        <li><a href="part-collection">Parts Collection</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#hp">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/hp.png" alt="Hp Icon">
+                        <span>HP</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hp">Human Practices</a></li>
+                        <li><a href="human-practices">Integrated Human Practices</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#award">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/award.png" alt="Award Icon">
+                        <span>AWARD</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="human-practices">Integrated Human Practices</a></li>
+                        <li><a href="model">Model</a></li>
+                        <li><a href="part-collection">Parts Collection</a></li>
+                    </ul>
+                </div>
+            </li> 
+            <li>
+                <div class="dropdown">
+                    <a href="#game">
+                        <img src="https://raw.githubusercontent.com/Yuer-Chi/slaythespire_web/main/static/images/relic.png" alt="">
+                        <span>GAME</span>
+                        
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="description_game">Description</a></li>
+                        <li><a href="#team2">Characters</a></li>
+                        <li><a href="#team3">Encyclopedia</a></li>
+                        <li><a href="#team4">Joke</a></li>
+                        <li><a href="#team5">Achievements</a></li>
+                    </ul>
+                </div>
+            </li>    
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- 
+    <div class="header">
+        <img src="https://static.igem.wiki/teams/5136/layout/head.png" alt="" class="head">
+        <ul>
+            <li><a href=" home"><img src="https://static.igem.wiki/teams/5136/logos/1.png" alt=""><p>HOME</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/2.png" alt=""><p>TEAM</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/3.png" alt=""><p>DRY LAB</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/4.png" alt=""><p>WET LAB</p></a></li>
+            <li><a href="description"><img src="https://static.igem.wiki/teams/5136/logos/5.png" alt=""><p>PROJECT</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/6.png" alt=""><p>AWARDS</p></a></li>
+        </ul>
+    </div> -->
+
+  <!-- Header -->
+  <!--  <header class="bg-hero py-5 mb-5">-->
+  <!--    <div class="container h-100">-->
+  <!--      <div class="row h-100 align-items-center">-->
+  <!--        <div class="col-lg-12">-->
+  <!--          <h1 class="display-4 text-white mt-5 mb-2">Proposed Implementation</h1>-->
+  <!--	        <p class="lead mb-5 text-white-50">Innovative educational tools and outreach activities have the ability to establish a two-way dialogue
+with new communities by discussing public values and the science behind synthetic biology.</p>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </header>-->
+
+  <!-- Page Content -->
+  <div class="container">
+    
+
+<div class="container">
+    <div id="loader-wrapper">
+        <div id="loader">
+            <div class="loader-img">
+                <img src="https://static.igem.wiki/teams/5136/load-new.gif">
+            </div>
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!--loading-->
+
+    <!--侧边导航栏-->
+    <div class="myScrollspy">
+        <!-- 文字导航 -->
+        <div class="left-bar">
+            <div class="left-bar-right">
+                <div class="left-bar-right-item">
+                    <a href="#section1" class="sidebar-link" data-section="section1">Overview</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a href="#section2" class="sidebar-link" data-section="section2">Who Are the End Users?</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a href="#section3" class="sidebar-link" data-section="section3">Usage</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a href="#section4" class="sidebar-link" data-section="section4">Safety</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a href="#section5" class="sidebar-link" data-section="section5">Future Plan</a>
+                </div>
+                <div class="left-bar-right-item">
+                    <a href="#section6" class="sidebar-link" data-section="section6">References</a>
+                </div>
+
+            </div>
+        </div>
+        <!-- 底部插图 -->
+        <div class="left-bar-bg">
+            <img src="https://static.igem.wiki/teams/5136/cbl-fix.png" alt="">
+        </div>
+        <!-- 进度条 -->
+        <div class="scroll-bar"></div>
+    </div>
+
+    <!--以下就是正文段落-->
+    <div class="myPage">
+        <div class="myPage-main">
+            <div style="height: 100px;position:relative;"></div>
+            <div class="myPage-main-content">
+                <!---大标题--->
+                <div class="myPage-headline">
+                    <h1 class="myPage-headline-content">
+                        <span style="color: #8768cd">.</span>
+                        <span style="color: #483b53;font-family: Aaargh;">Implementation</span>
+                        <span style="color: #8768cd">.</span>
+                    </h1>
+                </div>
+
+                <!---Overview--->
+                <div class="myPage-paragraph" id="section1">
+                    <h2 class="myPage-paragraph-headline-h2">Overview</h2>
+                    <p class="myPage-paragraph-content">
+                        Forests play a crucial role in carbon sequestration, which helps slow global warming and
+                        mitigate the climate crisis. However, official data indicated that 129.65 million tons of paper
+                        products were produced in 2023, which accounts for 39.5% of total timber consumption in China.
+                        Thus, improving the efficiency of paper recycling and deinking can help save timber, protect
+                        forests, and alleviate the climate crisis.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        The current deinking methods demand a substantial amount of toxic chemicals. It further results
+                        in the release of poisonous organic agents and heavy metals that may cause environmental
+                        contamination, which are the critical bottlenecks in improving the utilization rate of recycled
+                        pulp and realizing the greening of the paper production process. We design an alternative
+                        solution based on synthetic biology (see <a style="font-weight: bolder;text-decoration: none;"
+                            href="design">Design</a> for details) with higher deinking
+                        efficiency and
+                        lower cost, facilitating the recycling of paper. Our project also provides a new way for the
+                        green transformation of related industries, proposing a new pathway to address the climate
+                        crisis.
+                    </p>
+                </div>
+
+                <!---Proposed Implementation--->
+                <div class="myPage-paragraph" id="section2">
+                    <h2 class="myPage-paragraph-headline-h2">Who Are the End Users?</h2>
+                    <p class="myPage-paragraph-content">
+                        Our project can be of great benefit to recycled paper enterprises and researchers.
+                    </p>
+                    <h3 class="myPage-paragraph-headline-h3">1. Recycled Paper Enterprise</h3>
+                    <p class="myPage-paragraph-content">
+                        Our project primarily targets the paper enterprise that uses waste paper as raw material.
+                        Currently, paper production is over-dependent on forests, which may lead to the forest resource
+                        crash and deteriorate climate crisis. The current waste paper recycling route still faces with
+                        many challenges, such as <b>high cost</b>, <b>environmental pollution</b>, and <b>health
+                            risks</b>
+                        (please refer to
+                        <a style="font-weight: bolder;text-decoration: none;"
+                            href="human-practices">IHP</a> for more information). Our project
+                        provided paper enterprise with a standard
+                        operating
+                        procedure, in which the chemical deinking process was replaced by the synthetic biology method.
+                        This innovative approach not only addresses the current challenges but also offers
+                        <b>economical</b>,
+                        <b>sustainable</b>, and <b>safe</b> waste paper recycling. In the future, the paper enterprise
+                        can
+                        use our
+                        technological process directly, reaping these benefits.
+                    </p>
+                    <h3 class="myPage-paragraph-headline-h3">2. Researchers</h3>
+                    <p class="myPage-paragraph-content">
+                        Our project developed an engineered strains which was used in industrial scale. So, we must take
+                        the cost into consideration that abandon the complex protein purification steps and inducible
+                        system. Instead, we designed a system using signal peptides to secrete enzymes extracellularly
+                        regulated by constitutive promoters. We systematically investigate the secretory performance
+                        between different signal peptides, such as Algen, Aly01, OmpA, PelB, TorA, YebF, and LMT, in
+                        which LMT was discovered in 2021 by our team (<a
+                            style="font-weight: bolder;text-decoration: none;"
+                            href="https://2021.igem.org/Team:XMU-China/Results">XMU-China 2021</a>,
+                        <a style="font-weight: bolder;text-decoration: none;"
+                            href="https://2023.igem.wiki/xmu-china/results">XMU-China 2023</a>). Among them, the LMT
+                        signal peptide (see
+                        <a style="font-weight: bolder;text-decoration: none;"
+                            href="model">Model</a> and
+                        <a style="font-weight: bolder;text-decoration: none;"
+                            href="parts">Parts</a>
+                        for details) showed the best performance in secreting proteins extracellularly in <i>E.
+                            coli</i>
+                        BL21 (DE3). Beyond that, we also investigated the combinations of constitutive promoter and LMT
+                        and selected the best one. This can be an invaluable platform for research groups (and iGEM
+                        teams) around the world to develop more and more engineered strains with secretion functions and
+                        to skip expensive protein purification procedures.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        Moreover, we have established a method for rapidly screening enzymes with high deinking
+                        efficiency, enabling us to swiftly identify targeted modification sites (see <a
+                            style="font-weight: bolder;text-decoration: none;"
+                            href="part-collection">Part Collection</a> for
+                        details). By integrating our efficient secretion system using the LMT signal peptide and
+                        optimized Anderson promoters, this comprehensive process is directly applicable by researchers
+                        for similar applications and developments. It provides new insights into enzyme engineering and
+                        synthetic biology, facilitating the production of high-quality recycled paper. Our parts
+                        collection serves as a valuable resource for future iGEM teams and researchers, expediting the
+                        efficient production and modification of target proteins.
+                    </p>
+
+
+
+
+                </div>
+
+                <!---Safety--->
+                <div class="myPage-paragraph" id="section3">
+                    <h2 class="myPage-paragraph-headline-h2">Usage</h2>
+                    <h3 class="myPage-paragraph-headline-h3">1. Deinking</h3>
+                    <p class="myPage-paragraph-content">
+                        We employ a groundbreaking approach, harnessing the power of engineered <i>E. coli</i> BL21
+                        (DE3) to
+                        express a variety of enzymes such as cellulase, monooxygenase, and laccase. These enzymes, with
+                        their diverse catalytic functions, enable high-efficiency deinking. Coupled with the signal
+                        peptide, the enzymes can be secreted extracellularly, eliminating the need for complex and
+                        costly protein purification operations. The supernatant, rich in LMT-CYP199A4 T253E, enhances the
+                        two-phase separation system, effectively separating ink from pulp.
+                    </p>
+                    <h3 class="myPage-paragraph-headline-h3">2. Extraction</h3>
+                    <p class="myPage-paragraph-content">
+                        Currently, deinking flotation is the preferred method for removing printed ink from paper during
+                        the recycling process in industry. <b>Unfortunately, this method will cause an inevitable loss
+                            of
+                            fiber, thus lowering the recovery rate.</b> Therefore, we develop the extraction method to
+                        remove
+                        the ink in the pulp after enzymatic deinking, increasing overall efficiency and reducing fiber
+                        loss. Limonene, a hydrophobic solvent that can be biosynthesized (1), effectively enhances ink
+                        separation efficiency, making the paper recycling process more environmentally friendly and
+                        efficient. So, we developed an alternate routing that extracted the ink in the pulp, overcoming
+                        the shortage of flotation method that carries away a large number of pulp fibers to minimize the
+                        loss of fibers.
+                    </p>
+                    <h3 class="myPage-paragraph-headline-h3">3. Recovery of Heavy Metals</h3>
+                    <p class="myPage-paragraph-content">
+                        To address heavy metal in the wastewater during deinking, we engineered <i>E. coli</i> BL21
+                        (DE3)
+                        with
+                        heavy metal ion adsorption capabilities (see <a
+                            style="font-weight: bolder;text-decoration: none;"
+                            href="design">Design</a> for details). We cultured and
+                        collected
+                        the
+                        engineered strains and introduced them into the wastewater treatment pool. After a certain
+                        period, heavy metal ions such as Cd<sup>2+</sup>, Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup>, and
+                        most divalent metal
+                        cations are enriched in the
+                        engineered bacteria. The bacteria, which settle to the bottom of the pool, are collected for
+                        further treatment and recovery of the heavy metals.
+                    </p>
+
+
+                </div>
+
+                <!---Challenges--->
+                <div class="myPage-paragraph" id="section4">
+                    <h2 class="myPage-paragraph-headline-h2">Safety</h2>
+                    <h3 class="myPage-paragraph-headline-h3">1. Kill Switch</h3>
+                    <p class="myPage-paragraph-content">
+                        To prevent engineered bacteria from escaping into the open environment and causing biosafety
+                        issues, we designed a blue light-activated kill switch. The switch is activated when exposed
+                        to blue light, triggering bacterial lysis and death. We treat the effluent with blue light to
+                        ensure complete elimination of the bacteria. This measure further ensures environmental safety
+                        by preventing uncontrolled bacterial spread.
+                    </p>
+                    <h3 class="myPage-paragraph-headline-h3">2. Risk Assessment</h3>
+                    <p class="myPage-paragraph-content">
+                        Given the use of engineered bacteria in our project, there are potential risks to public health
+                        and the environment. Therefore, before we implement our devices outside the laboratory, we
+                        conduct extensive testing to ensure the safety of our engineered bacteria for humans and the
+                        environment. This thorough risk assessment is a crucial part of our process, ensuring that
+                        safety is always a top priority.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        It is important to note that China has enacted a biosecurity law, which came into effect on
+                        April 15, 2021, and was updated in April 2024. This law establishes systems for biosecurity risk
+                        prevention and control, including risk monitoring and early warning, risk investigation and
+                        assessment, and information sharing. It also includes provisions to prevent and respond to
+                        specific biosecurity risks, such as major emerging infectious diseases, epidemics, and sudden
+                        outbreaks, and biotechnology research, development, and application. To ensure that our
+                        activities are in compliance with the law, we will be applying for the necessary permits and
+                        approvals if we proceed with our proposed implementation.
+                    </p>
+                </div>
+
+                <div class="myPage-paragraph" id="section5">
+                    <h2 class="myPage-paragraph-headline-h2">Future Plan</h2>
+                    <h3 class="myPage-paragraph-headline-h3">1. Patent Protection</h3>
+                    <p class="myPage-paragraph-content">
+                        Our technology has reached a maturity level that allows us to pursue patent protection for two
+                        key innovations: the enzyme secretion process using extracellular methods and the limonene
+                        extraction technique. These unique processes, which are at the forefront of our industry, will
+                        be safeguarded by patents, giving us a competitive edge. This protection will enable us to
+                        collaborate with industry partners and confidently expand our technological applications.
+                    </p>
+                    <h3 class="myPage-paragraph-headline-h3">2. Competitive Analysis and Cost Evaluation</h3>
+                    <p class="myPage-paragraph-content">
+                        We have conducted an in-depth competitive analysis and cost evaluation. Our findings highlight
+                        significant advantages over current methods, particularly in reducing high costs, environmental
+                        pollution, and health risks (see <a style="font-weight: bolder;text-decoration: none;"
+                            href="lca">LCA</a> for details). Our approach offers
+                        a more
+                        sustainable and economically viable solution, which is increasingly important as industries seek
+                        greener alternatives. By addressing these critical issues, we not only position ourselves as
+                        leaders in innovative and responsible paper recycling technologies but also confidence to lead
+                        investors of our future success.
+                    </p>
+                    <h3 class="myPage-paragraph-headline-h3">3. Scale-up Production and Market Entry</h3>
+                    <p class="myPage-paragraph-content">
+                        Our next step is establishing a company dedicated to scaling up production and conducting pilot
+                        and mid-scale trials. This will involve refining our processes and ensuring consistent quality
+                        and efficiency. We aim to build robust sales channels and actively promote our products at
+                        industry exhibitions to increase visibility and market penetration. Additionally, we will seek
+                        funding to enhance product performance and develop new products, ensuring our solutions remain
+                        at the forefront of the industry.
+                    </p>
+                    <p class="myPage-paragraph-content">
+                        By focusing on resource reuse and sustainability, our approach significantly reduces waste and
+                        conserves natural resources. Our innovative deinking process minimizes fiber loss and enables
+                        the recycling of paper into high-quality products. This contributes to a circular economy,
+                        promoting environmental responsibility and reducing the carbon footprint of the paper industry.
+                        Our unwavering commitment to sustainable practices not only benefits the environment but also
+                        meets the growing demand for eco-friendly solutions in the market, giving stakeholders
+                        confidence in our ethical practices.
+                    </p>
+                </div>
+
+                <div class="myPage-paragraph" id="section6">
+                    <h2 class="myPage-paragraph-headline-h2">References</h2>
+                    <ol class="myPage-paragraph-reference">
+                        <li>X. Kong et al., Efficient Synthesis of Limonene in Saccharomyces cerevisiae Using
+                            Combinatorial
+                            Metabolic Engineering Strategies. J. Agric. Food. Chem. 71, 7752-7764 (2023).
+                        </li>
+
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="margin-bottom: 100px;"></div>
+</div>
+
+
+  </div>
+
+  <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+  
+    <!-- topbutton -->
+    <div class="menu">
+
+        <div class="toggle">
+            <i class="fa fa-angle-double-up"></i>
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-0.png" alt="" style="z-index: 100;">
+        </div>
+        <li style="--i:0">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:1">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:2">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:3">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:4">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:6">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:7">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+    </div>
+    
+    <div id="myFooter">
+        <!--  内容部分-->
+        <div class="footer-xiaohui">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-xmulogo.png" alt="">
+            <div class="footer-xiaoming">
+                Xiamen University
+            </div>
+        </div>
+        <div class="footer-didian">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-position.png" alt="">
+            <div class="footer-didianming">
+                Xiamen University, Fujian, China<br>
+                No.422, Siming South Road, Fujian, P.R.China 361005
+            </div>
+        </div>
+        <div class="footer-duihui">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-teamlogo-2024.png" alt="">
+        </div>
+        <div class="footer-follow">
+            <div class="footer-followus">
+                Follow Us
+            </div>
+            <div class="footer-wechat">
+                <a href="https://static.igem.wiki/teams/5136/header-footer-img/wechat.png">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wechat.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-facebook">
+                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FIGEM-XMU-China-1067638406629389">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-f.png" alt=""
+                     style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-ins">
+                <a href="https://www.instagram.com/xmu_china_igem">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-o.png" alt=""
+                    style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-weibo">
+                <a href="https://weibo.com/u/7482868083">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wb.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-twitter">
+                <a href="https://twitter.com/XMU_igem">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-x.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+        </div>
+        <!-- <div class="footer-bar"></div> -->
+        <div class="footer-contact">
+            <div class="footer-contactus">
+                Contact Us
+            </div>
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-mail.png" alt="">
+            <div class="footer-mail">
+                igem_xmu@163.com
+            </div>
+        </div>
+    </div>
+    
+
+  <!-- Bootstrap Bundle with Popper -->
+  
+  <script src="static/bootstrap.bundle.min.js"></script>
+  <script src="static/js2024/top.js"></script>
+  <script src="static/js2024/scroll.js"></script>
+</body>
+
+</html>

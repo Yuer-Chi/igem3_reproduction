@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://static.igem.wiki/teams/5136/favicon.png" />
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+  <!-- Bootstrap CSS -->
+  <!-- <link href="static/bootstrap.min.css" rel="stylesheet"> -->
+
+  <!-- Custom CSS -->
+  <!-- <link href="static/style.css" rel="stylesheet"> -->
+  <link href="static/css2024/footer.css" rel="stylesheet">
+  <link href="static/css2024/header.css" rel="stylesheet">
+  <link href="static/css2024/top.css" rel="stylesheet">
+  <link href="static/css2024/theme.css" rel="stylesheet">
+  <link href="static/css2024/footer-small.css" rel="stylesheet">
+  
+  <!-- loading -->
+  <script src="static/js2024/jquery-3.5.1.min.js"></script>
+  <script src="static/js2024/loading.js"></script>
+  <!-- <link rel="stylesheet" href="static/css/loading.css"> -->
+
+  <!-- <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/font/font.css">
+    <link rel="stylesheet" href="static/css/loading.css">
+
+    <script src="static/js/loading.js"></script>
+    <script src="static/js/fontsize.js"></script> -->
+  <title>Part-Collection | XMU-China - iGEM 2024</title>
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+        <div class="logo">
+            <div class="img1">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/logo.png" alt="Logo">
+            </div>
+            <div class="img2">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/logo-word.png" alt="logo">
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="home">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/home.png" alt="Home Icon">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#team">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/team.png" alt="Team Icon">
+                        <span>TEAM</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="members">Members</a></li>
+                        <li><a href="attributions">Attributions</a></li>
+                        <li><a href="notebook">Notebook</a></li>
+                        <li><a href="experiments">Experiments</a></li>
+                        <li><a href="safety">Safety</a></li>
+                        <li><a href="collaborations">Collaborations</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#project">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/project.png" alt="Project Icon">
+                        <span>PROJECT</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="description">Description</a></li>
+                        <li><a href="design">Design</a></li>
+                        <li><a href="engineering">Engineering Success</a></li>
+                        <li><a href="results">Results</a></li>
+                        <li><a href="poc">Proof of Concept</a></li>
+                        <li><a href="implementation">Proposed Implementation</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#drylab">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/drylab.png" alt="DryLab Icon">
+                        <span>DRYLAB</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="model">Model</a></li>
+                        <li><a href="sop">SOP</a></li>
+                        <li><a href="lca">LCA</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#parts">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/parts.png" alt="Parts Icon">
+                        <span>PARTS</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="parts">Parts</a></li>
+                        <li><a href="contribution">Contribution</a></li>
+                        <li><a href="part-collection">Parts Collection</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#hp">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/hp.png" alt="Hp Icon">
+                        <span>HP</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hp">Human Practices</a></li>
+                        <li><a href="human-practices">Integrated Human Practices</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#award">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/award.png" alt="Award Icon">
+                        <span>AWARD</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="human-practices">Integrated Human Practices</a></li>
+                        <li><a href="model">Model</a></li>
+                        <li><a href="part-collection">Parts Collection</a></li>
+                    </ul>
+                </div>
+            </li> 
+            <li>
+                <div class="dropdown">
+                    <a href="#game">
+                        <img src="https://raw.githubusercontent.com/Yuer-Chi/slaythespire_web/main/static/images/relic.png" alt="">
+                        <span>GAME</span>
+                        
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="description_game">Description</a></li>
+                        <li><a href="#team2">Characters</a></li>
+                        <li><a href="#team3">Encyclopedia</a></li>
+                        <li><a href="#team4">Joke</a></li>
+                        <li><a href="#team5">Achievements</a></li>
+                    </ul>
+                </div>
+            </li>    
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- 
+    <div class="header">
+        <img src="https://static.igem.wiki/teams/5136/layout/head.png" alt="" class="head">
+        <ul>
+            <li><a href=" home"><img src="https://static.igem.wiki/teams/5136/logos/1.png" alt=""><p>HOME</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/2.png" alt=""><p>TEAM</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/3.png" alt=""><p>DRY LAB</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/4.png" alt=""><p>WET LAB</p></a></li>
+            <li><a href="description"><img src="https://static.igem.wiki/teams/5136/logos/5.png" alt=""><p>PROJECT</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/6.png" alt=""><p>AWARDS</p></a></li>
+        </ul>
+    </div> -->
+
+  <!-- Header -->
+  <!--  <header class="bg-hero py-5 mb-5">-->
+  <!--    <div class="container h-100">-->
+  <!--      <div class="row h-100 align-items-center">-->
+  <!--        <div class="col-lg-12">-->
+  <!--          <h1 class="display-4 text-white mt-5 mb-2">Part-Collection</h1>-->
+  <!--	        <p class="lead mb-5 text-white-50"></p>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </header>-->
+
+  <!-- Page Content -->
+  <div class="container">
+    
+
+<link rel="stylesheet" href="static/css2024/experiments.css">
+
+<script src="static/js2024/jquery-3.5.1.min.js"></script>
+<script src="static/bootstrap.bundle.min.js"></script>
+
+
+
+
+<div class="container">
+  <div id="loader-wrapper">
+    <div id="loader">
+      <div class="loader-img">
+        <img src="https://static.igem.wiki/teams/5136/load-new.gif">
+      </div>
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <!--loading-->
+
+  <!--侧边导航栏-->
+  <div class="myScrollspy">
+    <!-- 文字导航 -->
+    <div class="left-bar">
+      <div class="left-bar-right">
+        <div class="left-bar-right-item">
+          <a href="#section1" class="sidebar-link" data-section="section1">Overview</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section2" class="sidebar-link" data-section="section2">Secretion System</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section3" class="sidebar-link" data-section="section3">Deinking enzymes</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section4" class="sidebar-link" data-section="section4">Conclusion</a>
+        </div>
+      </div>
+    </div>
+    <!-- 底部插图 -->
+    <div class="left-bar-bg">
+      <img src="https://static.igem.wiki/teams/5136/cbl-fix.png" alt="">
+    </div>
+    <!-- 进度条 -->
+    <div class="scroll-bar"></div>
+  </div>
+
+  <!--以下就是正文段落-->
+  <div class="myPage">
+    <div class="myPage-main">
+      <div style="height: 100px;position:relative;"></div>
+      <div class="myPage-main-content">
+        <!---大标题--->
+        <div class="myPage-headline">
+          <h1 class="myPage-headline-content">
+            <span style="color: #8768cd">.</span>
+            <span style="color: #483b53;font-family: Aaargh;">Parts of Collection</span>
+            <span style="color: #8768cd">.</span>
+          </h1>
+        </div>
+
+        <!---文字段落--->
+        <div class="myPage-paragraph" id="section1">
+          <h2 class="myPage-paragraph-headline-h2">Overview</h2>
+          <!-- 记住这里的h2就是标题 -->
+          <p class="myPage-paragraph-content">
+            This year, our project is dedicated to a crucial task: enhancing the deinking efficiency of paper. This initiative is of paramount importance as it directly contributes to increasing the recycling rate of waste paper, thereby reducing deforestation and mitigating the climate crisis.
+          </p>
+          <p class="myPage-paragraph-content">
+            Through three rounds of rigorous screening, we have achieved a significant milestone: the successful identification of the most efficient deinking enzyme CYP199A4 253A from a range of deinking enzymes. This breakthrough could serve as a viable alternative to the chemical method on the industry scale. Additionally, our introduction of an efficient secretion system for the secretion of our deinking enzymes has made this project more competitive in terms of cost and efficiency, bypassing the protein purification step. To this end, our team conducted a series of characterization experiments on eight signal peptides (AIgen, HlyA, OmpA, PelB, TorA, YebF, OsmY, LMT), and selected the optimal signal peptide LMT considering both secretion efficiency and metabolic burden.
+          </p>
+          <p class="myPage-paragraph-content">
+            Finally, we combined the secretion system with the deinking enzyme, and the experimental results unequivocally demonstrated the feasibility of our concept. The idea of using the secretion system to obtain deinking enzymes and apply them in the deinking process is not just a theory, but a practical and achievable solution.
+          </p>
+          <p class="myPage-paragraph-content">
+            We have divided our parts collection into the following two subsets:
+          </p>
+        </div>
+
+        <div class="myPage-paragraph" id="section2">
+          <h2 class="myPage-paragraph-headline-h2">Secretion System</h2>
+          <!-- 记住这里的h2就是标题 -->
+          <p class="myPage-paragraph-content">
+            Signal peptides are short amino acid sequences on secreted proteins 
+            and are natural assistants in separating proteins from the cytoplasm. 
+            We selected eight signal peptides (AIgen, HlyA, OmpA, PelB, TorA, YebF, 
+            OsmY, LMT) for <i>E. coli</i>, which can direct target proteins to the periplasm. 
+            These 8 signaling peptides involve two secretion pathways, and researchers can 
+            select signaling peptides from different secretion pathways to simplify 
+            their production or purification of proteins according to their needs. 
+            (see <a style="font-weight: bolder;text-decoration: none;"
+            href="model">Model</a> for more details) 
+          </p>
+          <p class="myPage-paragraph-content">
+            To test the functions of these signal peptides, we constructed fusion proteins of these 8 signal peptides with sfGFP and performed a series of characterization experiments. In addition, we performed modeling analysis for the secretion kinetics of the signal peptides to investigate the exocytosis efficiency of the different signal peptides as well as the metabolic pressure on cell growth.
+          </p>
+          <p class="myPage-paragraph-content">
+            According to the experimental results and modeling results, the signal peptides AIgen and OmpA had less metabolic pressure on the strain, but the secretion effect was average, and the products mainly originated from the leakage and dead cell lysis; the signal peptides PelB and OsmY had a heavier metabolic burden on the strain and the secretion effect was poor; and the signal peptide YebF had a heavier metabolic burden on the strain as well but the exocytosis effect was OK. Happily, the exocytosis peptide LMT has quite good exocytosis efficiency and less effect on the metabolic load of the strain, which meets our needs well. (Please see our <a style="font-weight: bolder;text-decoration: none;"
+            href="model">Model</a> page) 
+          </p>
+          <p class="myPage-paragraph-content">
+            In addition, in order to further obtain better exocytosis, we also used 6 different Anderson promoters with LMT-sfGFP fusion proteins constituting the composite part, and quantitatively characterized their exocytosis efficiency to determine the most efficient promoter combination. (Please see our <a style="font-weight: bolder;text-decoration: none;"
+            href="results">Results</a> page).
+          </p>
+          <p class="myPage-paragraph-content">
+            We have detailed our design and recorded all experimental data into the registry. We believe that our collection of parts will be of value in guiding the design and characterization of future IGEM teams, when they need to find a suitable exocytosis peptide that will help them produce proteins.
+          </p>
+
+          <div class="myPage-paragraph-fig-description"><b>List 1 Parts of the signal peptides</b>
+          </div>
+          <div class="myPage-paragraph-table-div" style="text-align: center">
+            <table class="myPage-paragraph-table">
+              <tbody>
+                <tr>
+                  <th style="width:20%;">Part number</th>
+                  <th>Type</th>
+                  <th style="width:50%;">Description</th>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136060">BBa_K5136060</a></td>
+                  <td>coding</td>
+                  <td>Algen</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136061">BBa_K5136061</a></td>
+                  <td>coding</td>
+                  <td>OmpA</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136062">BBa_K5136062</a></td>
+                  <td>coding</td>
+                  <td>PelB</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136063">BBa_K5136063</a></td>
+                  <td>coding</td>
+                  <td>TorA</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136064">BBa_K5136064</a></td>
+                  <td>coding</td>
+                  <td>YebF</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136065">BBa_K5136065</a></td>
+                  <td>coding</td>
+                  <td>LMT</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136066">BBa_K5136066</a></td>
+                  <td>coding</td>
+                  <td>OsmY</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136067">BBa_K5136067</a></td>
+                  <td>composite</td>
+                  <td>HlyA</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="myPage-paragraph" id="section3">
+          <h2 class="myPage-paragraph-headline-h2">Deinking Enzymes</h2>
+          <p class="myPage-paragraph-content">
+            We designed an efficient and stable biological deinking enzyme system, which includes cellulase, monooxygenase, and laccase. (See our <a style="font-weight: bolder;text-decoration: none;"
+            href="design">Design</a> page for more details.) After preliminary experiments, we found that monooxygenase plays a key role in this system. Therefore, we focused on comparing the deinking efficiencies of several monooxygenase enzymes and designing relevant mutations to further improve their performance.
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/homeimg/pc-f1.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 1 Collection of deinking enzymes (CODE), including various monooxygenases that functions in the reaction step in pulp deinking SOP in lab.</b>
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            Monooxygenase is an oxidoreductase that catalyzes the insertion of a single oxygen 
+            atom into an organic substrate, which causes alkaline breakage of conjugated 
+            side chains of lignin and other colored substances. Therefore, we selected 
+            three highly active monooxygenases using H<sub>2</sub>O<sub>2</sub> as electron donor monooxygenases: 
+            CYP199A4, SfmD, and OleT<sub>JE</sub>, and the deinking ability of them and their mutants 
+            were characterized by our pulp deinking experiments. 
+            (See our <a style="font-weight: bolder;text-decoration: none;"
+            href="results">Results</a> page for more details.) 
+            <b>The experimental results showed that CYP199A4 and its mutants had the best deinking efficiency, and its mutant increased significantly compared with the wild type.</b>
+          </p>
+          <p class="myPage-paragraph-content">
+            Therefore, we saturated mutation at locus 253 of CYP199A4 and characterized its deinking effect and enzyme activity by deinking assay and enzyme activity test, among which CYP199A4 253A mutant showed the best effect 
+            (See our <a style="font-weight: bolder;text-decoration: none;"
+            href="results">Results</a> page for more details.)
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/17.png" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 2 Comparison of the Relative Gray Scale of CYP199A4 and its mutants.</b>
+            </div>
+          </div>
+          <p class="myPage-paragraph-content">
+            Finally, we constructed the fusion protein of LMT and CYP199A4 T253E and expressed it in <i>E. coli</i> BL21(DE3). Deinking reaction was carried out with culture medium supernatant. The experimental results are shown in Figure 1. Although CYP199A4 T253E is not the best deinking enzyme, the signal peptide and its component deinking system have shown very efficient deinking effect. This means that our parts collection is successful, and the signal peptide and deinking enzyme can be combined into an efficient deinking system.
+          </p>
+          <p class="myPage-paragraph-content">
+            We have detailed our design and recorded all experimental data in the registry. We believe that when future iGEM teams need to find an efficient deinking enzyme, our parts collection will be of value in guiding their design and characterization.
+          </p>
+          <div class="myPage-paragraph-fig-description"><b>List 2 Parts of the monooxygenase</b>
+          </div>
+          <div class="myPage-paragraph-table-div" style="text-align: center">
+            <table class="myPage-paragraph-table">
+              <tbody>
+                <tr>
+                  <th style="width:20%;">Part number</th>
+                  <th>Type</th>
+                  <th style="width:50%;">Description</th>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136000">BBa_K5136000</a></td>
+                  <td>coding</td>
+                  <td>CYP199A4 WT-his tag</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136001">BBa_K5136001</a></td>
+                  <td>coding</td>
+                  <td>CYP199A4 T253E-his tag</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136002">BBa_K5136002</a></td>
+                  <td>coding</td>
+                  <td>CYP199A4 T253S-his tag</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136003">BBa_K5136003</a></td>
+                  <td>coding</td>
+                  <td>CYP199A4 T253A-his tag</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136004">BBa_K5136004</a></td>
+                  <td>coding</td>
+                  <td>CYP199A4 T253R-his tag</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136005">BBa_K5136005</a></td>
+                  <td>coding</td>
+                  <td>CYP199A4 T253N-his tag</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136006">BBa_K5136006</a></td>
+                  <td>coding</td>
+                  <td>CYP199A4 T253D-his tag</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136007">BBa_K5136007</a></td>
+                  <td>coding</td>
+                  <td>CYP199A4 T253C-his tag</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136008">BBa_K5136008</a></td>
+                  <td>coding</td>
+                  <td>CYP199A4 T253Q-his tag</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136009">BBa_K5136009</a></td>
+                  <td>coding</td>
+                  <td>CYP199A4 T253W-his tag</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136010">BBa_K5136010</a></td>
+                  <td>coding</td>
+                  <td>CYP199A4 T253G-his tag</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136011">BBa_K5136011</a></td>
+                  <td>coding</td>
+                  <td>CYP199A4 T253H-his tag</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136012">BBa_K5136012</a></td>
+                  <td>coding</td>
+                  <td>CYP199A4 T253I-his tag</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136013">BBa_K5136013</a></td>
+                  <td>coding</td>
+                  <td>CYP199A4 T253L-his tag</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136014">BBa_K5136014</a></td>
+                  <td>coding</td>
+                  <td>CYP199A4 T253K-his tag</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136015">BBa_K5136015</a></td>
+                  <td>coding</td>
+                  <td>CYP199A4 T253M-his tag</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136016">BBa_K5136016</a></td>
+                  <td>coding</td>
+                  <td>CYP199A4 T253F-his tag</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136017">BBa_K5136017</a></td>
+                  <td>coding</td>
+                  <td>CYP199A4 T253P-his tag</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136018">BBa_K5136018</a></td>
+                  <td>coding</td>
+                  <td>CYP199A4 T253V-his tag</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136019">BBa_K5136019</a></td>
+                  <td>coding</td>
+                  <td>CYP199A4 T253Y-his tag</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136020">BBa_K5136020</a></td>
+                  <td>coding</td>
+                  <td>SfmD WT</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136021">BBa_K5136021</a></td>
+                  <td>coding</td>
+                  <td>SfmD 277F</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136023">BBa_K5136023</a></td>
+                  <td>coding</td>
+                  <td>OleT<sub>JE</sub></td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136024">BBa_K5136024</a></td>
+                  <td>coding</td>
+                  <td>OleT<sub>JE</sub> 236S 100K 166K</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K5136025">BBa_K5136025</a></td>
+                  <td>coding</td>
+                  <td>OleT<sub>JE</sub> 236S 360K 167K</td>
+                </tr>
+                <tr>
+                  <td><a target="_blank" href="http://parts.igem.org/Part:BBa_K51360">BBa_K51360</a></td>
+                  <td>coding</td>
+                  <td>LMT-linker-CYP199A4 T253E</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="myPage-paragraph" id="section4">
+          <h2 class="myPage-paragraph-headline-h2">Conclusion</h2>
+          <!-- 记住这里的h2就是标题 -->
+          <p class="myPage-paragraph-content">
+            Through our parts production, we have searched for an efficient and less costly way to produce deinking enzymes to deink waste paper to regenerate new, high-quality paper. (See our <a style="font-weight: bolder;text-decoration: none;"
+            href="implementation">Implementation</a> page)
+          </p>
+          <p class="myPage-paragraph-content">
+            Through our parts collection, we hope to enable all igem teams and researchers worldwide to obtain signal peptides that meet their needs quickly, link them to their target proteins, and produce the intended proteins efficiently and easily. We also hope that future teams attempting to study deinking can easily obtain the required deinking enzymes for further modification or mechanistic studies. We are eager to provide our parts collection to future iGEM teams.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-bottom: 100px;"></div>
+  <script>
+    // jQuery to handle the collapse toggle and style changes
+    $(document).ready(function () {
+      $('#accordion-Det .panel-title a').click(function () {
+        var targetId = $(this).attr('href');
+        // Toggle the collapse
+        $(targetId).collapse('toggle');
+
+        // Event for collapse show
+        $(targetId).on('shown.bs.collapse', function () {
+          $(this).prev().find('a').removeClass('collapsed').addClass('expanded');
+        });
+
+        // Event for collapse hide
+        $(targetId).on('hidden.bs.collapse', function () {
+          $(this).prev().find('a').removeClass('expanded').addClass('collapsed');
+        });
+
+        return false; // Prevent the default behavior of the anchor
+      });
+    });
+  </script>
+
+</div>
+
+
+  </div>
+
+  <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+  
+    <!-- topbutton -->
+    <div class="menu">
+
+        <div class="toggle">
+            <i class="fa fa-angle-double-up"></i>
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-0.png" alt="" style="z-index: 100;">
+        </div>
+        <li style="--i:0">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:1">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:2">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:3">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:4">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:6">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:7">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+    </div>
+    
+    <div id="myFooter">
+        <!--  内容部分-->
+        <div class="footer-xiaohui">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-xmulogo.png" alt="">
+            <div class="footer-xiaoming">
+                Xiamen University
+            </div>
+        </div>
+        <div class="footer-didian">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-position.png" alt="">
+            <div class="footer-didianming">
+                Xiamen University, Fujian, China<br>
+                No.422, Siming South Road, Fujian, P.R.China 361005
+            </div>
+        </div>
+        <div class="footer-duihui">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-teamlogo-2024.png" alt="">
+        </div>
+        <div class="footer-follow">
+            <div class="footer-followus">
+                Follow Us
+            </div>
+            <div class="footer-wechat">
+                <a href="https://static.igem.wiki/teams/5136/header-footer-img/wechat.png">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wechat.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-facebook">
+                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FIGEM-XMU-China-1067638406629389">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-f.png" alt=""
+                     style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-ins">
+                <a href="https://www.instagram.com/xmu_china_igem">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-o.png" alt=""
+                    style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-weibo">
+                <a href="https://weibo.com/u/7482868083">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wb.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-twitter">
+                <a href="https://twitter.com/XMU_igem">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-x.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+        </div>
+        <!-- <div class="footer-bar"></div> -->
+        <div class="footer-contact">
+            <div class="footer-contactus">
+                Contact Us
+            </div>
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-mail.png" alt="">
+            <div class="footer-mail">
+                igem_xmu@163.com
+            </div>
+        </div>
+    </div>
+    
+
+  <!-- Bootstrap Bundle with Popper -->
+  
+  <script src="static/bootstrap.bundle.min.js"></script>
+  <script src="static/js2024/top.js"></script>
+  <script src="static/js2024/scroll.js"></script>
+</body>
+
+</html>

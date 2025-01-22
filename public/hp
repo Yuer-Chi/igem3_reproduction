@@ -1,0 +1,1362 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://static.igem.wiki/teams/5136/favicon.png" />
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+  <!-- Bootstrap CSS -->
+  <!-- <link href="static/bootstrap.min.css" rel="stylesheet"> -->
+
+  <!-- Custom CSS -->
+  <!-- <link href="static/style.css" rel="stylesheet"> -->
+  <link href="static/css2024/footer.css" rel="stylesheet">
+  <link href="static/css2024/header.css" rel="stylesheet">
+  <link href="static/css2024/top.css" rel="stylesheet">
+  <link href="static/css2024/theme.css" rel="stylesheet">
+  <link href="static/css2024/footer-small.css" rel="stylesheet">
+  
+  <!-- loading -->
+  <script src="static/js2024/jquery-3.5.1.min.js"></script>
+  <script src="static/js2024/loading.js"></script>
+  <!-- <link rel="stylesheet" href="static/css/loading.css"> -->
+
+  <!-- <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/font/font.css">
+    <link rel="stylesheet" href="static/css/loading.css">
+
+    <script src="static/js/loading.js"></script>
+    <script src="static/js/fontsize.js"></script> -->
+  <title>Human Practices | XMU-China - iGEM 2024</title>
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+        <div class="logo">
+            <div class="img1">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/logo.png" alt="Logo">
+            </div>
+            <div class="img2">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/logo-word.png" alt="logo">
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="home">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/home.png" alt="Home Icon">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#team">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/team.png" alt="Team Icon">
+                        <span>TEAM</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="members">Members</a></li>
+                        <li><a href="attributions">Attributions</a></li>
+                        <li><a href="notebook">Notebook</a></li>
+                        <li><a href="experiments">Experiments</a></li>
+                        <li><a href="safety">Safety</a></li>
+                        <li><a href="collaborations">Collaborations</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#project">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/project.png" alt="Project Icon">
+                        <span>PROJECT</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="description">Description</a></li>
+                        <li><a href="design">Design</a></li>
+                        <li><a href="engineering">Engineering Success</a></li>
+                        <li><a href="results">Results</a></li>
+                        <li><a href="poc">Proof of Concept</a></li>
+                        <li><a href="implementation">Proposed Implementation</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#drylab">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/drylab.png" alt="DryLab Icon">
+                        <span>DRYLAB</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="model">Model</a></li>
+                        <li><a href="sop">SOP</a></li>
+                        <li><a href="lca">LCA</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#parts">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/parts.png" alt="Parts Icon">
+                        <span>PARTS</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="parts">Parts</a></li>
+                        <li><a href="contribution">Contribution</a></li>
+                        <li><a href="part-collection">Parts Collection</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#hp">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/hp.png" alt="Hp Icon">
+                        <span>HP</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hp">Human Practices</a></li>
+                        <li><a href="human-practices">Integrated Human Practices</a></li>
+                    </ul>
+                </div>
+
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="#award">
+                        <img src="https://static.igem.wiki/teams/5136/header-footer-img/award.png" alt="Award Icon">
+                        <span>AWARD</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="human-practices">Integrated Human Practices</a></li>
+                        <li><a href="model">Model</a></li>
+                        <li><a href="part-collection">Parts Collection</a></li>
+                    </ul>
+                </div>
+            </li> 
+            <li>
+                <div class="dropdown">
+                    <a href="#game">
+                        <img src="https://raw.githubusercontent.com/Yuer-Chi/slaythespire_web/main/static/images/relic.png" alt="">
+                        <span>GAME</span>
+                        
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="description_game">Description</a></li>
+                        <li><a href="#team2">Characters</a></li>
+                        <li><a href="#team3">Encyclopedia</a></li>
+                        <li><a href="#team4">Joke</a></li>
+                        <li><a href="#team5">Achievements</a></li>
+                    </ul>
+                </div>
+            </li>    
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- 
+    <div class="header">
+        <img src="https://static.igem.wiki/teams/5136/layout/head.png" alt="" class="head">
+        <ul>
+            <li><a href=" home"><img src="https://static.igem.wiki/teams/5136/logos/1.png" alt=""><p>HOME</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/2.png" alt=""><p>TEAM</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/3.png" alt=""><p>DRY LAB</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/4.png" alt=""><p>WET LAB</p></a></li>
+            <li><a href="description"><img src="https://static.igem.wiki/teams/5136/logos/5.png" alt=""><p>PROJECT</p></a></li>
+            <li><a href="#"><img src="https://static.igem.wiki/teams/5136/logos/6.png" alt=""><p>AWARDS</p></a></li>
+        </ul>
+    </div> -->
+
+  <!-- Header -->
+  <!--  <header class="bg-hero py-5 mb-5">-->
+  <!--    <div class="container h-100">-->
+  <!--      <div class="row h-100 align-items-center">-->
+  <!--        <div class="col-lg-12">-->
+  <!--          <h1 class="display-4 text-white mt-5 mb-2">Human Practices</h1>-->
+  <!--	        <p class="lead mb-5 text-white-50">Innovative educational tools and outreach activities have the ability to establish a two-way dialogue
+with new communities by discussing public values and the science behind synthetic biology.</p>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </header>-->
+
+  <!-- Page Content -->
+  <div class="container">
+    
+
+<link rel="stylesheet" href="static/css2024/experiments.css">
+
+<script src="static/js2024/jquery-3.5.1.min.js"></script>
+<script src="static/bootstrap.bundle.min.js"></script>
+
+
+
+
+<div class="container">
+  <div id="loader-wrapper">
+    <div id="loader">
+      <div class="loader-img">
+        <img src="https://static.igem.wiki/teams/5136/load-new.gif">
+      </div>
+    </div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <!--loading-->
+
+  <!--侧边导航栏-->
+  <div class="myScrollspy">
+    <!-- 文字导航 -->
+    <div class="left-bar">
+      <div class="left-bar-right">
+        <div class="left-bar-right-item">
+          <a href="#section1" class="sidebar-link" data-section="section1">Overview</a>
+        </div>
+        <div class="left-bar-right-item">
+          <a href="#section2" class="sidebar-link" data-section="section2">Practices</a>
+        </div>
+
+        <div class="left-bar-right-item">
+          <a href="#section5" class="sidebar-link" data-section="section5">Educations</a>
+        </div>
+      </div>
+    </div>
+    <!-- 底部插图 -->
+    <div class="left-bar-bg">
+      <img src="https://static.igem.wiki/teams/5136/cbl-fix.png" alt="">
+    </div>
+    <!-- 进度条 -->
+    <div class="scroll-bar"></div>
+  </div>
+
+  <!--以下就是正文段落-->
+  <div class="myPage">
+    <div class="myPage-main">
+      <div style="height: 100px;position:relative;"></div>
+      <div class="myPage-main-content">
+        <!---大标题--->
+        <div class="myPage-headline">
+          <h1 class="myPage-headline-content">
+            <span style="color: #8768cd">.</span>
+            <span style="color: #483b53;font-family: Aaargh;">Human Practices</span>
+            <span style="color: #8768cd">.</span>
+          </h1>
+        </div>
+
+        <!-- <div class="myPage-paragraph" id="moban">
+          <h2 class="myPage-paragraph-headline-h2">正常用的标题比如1</h2>
+          <h3 class="myPage-paragraph-headline-h3">小标题比如2.1</h3>
+          <h4 class="myPage-paragraph-headline-h4">小小标题2.1.3</h4>
+          <h5 class="myPage-paragraph-headline-h5">特殊的小小小标题2.1.1.3</h5>
+          <p class="myPage-paragraph-content">
+            段落
+          </p>
+          <a style="font-weight: bolder;text-decoration: none;" href="https://www.baidu.com/">百度</a>
+          <a style="font-weight: bolder;text-decoration: none;"
+            href="hardware">Hardware</a>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/result/1.jpg" alt="">
+            <div class="myPage-paragraph-fig-description"><b>Figure 1</b>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="myPage-paragraph" id="section1">
+          <h2 class="myPage-paragraph-headline-h2">Overview</h2>
+          <p class="myPage-paragraph-content">
+            This year, we focused on wastepaper recycling and optimizing the entire life cycle of paper products. These
+            efforts can help protect forests, reduce greenhouse gas (GHG) emissions from the paper industry, and
+            mitigate the climate crisis. In this regard, our human practice has carried out around specialists,
+            government departments, related enterprises, and users, including the development, production, supervision,
+            use, and recycling of paper. Our human practice work consists of <b>“WAND”</b> elements:
+          </p>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/hp/1.png" alt="" style="max-width: 800px;margin-top: 0px;">
+          </div>
+
+        </div>
+
+        <div class="myPage-paragraph" id="section2">
+          <h2 class="myPage-paragraph-headline-h2">Practices</h2>
+          <!-- 1 -->
+          <h3 class="myPage-paragraph-headline-h3">1. Interview a Young Environmentalist</h3>
+
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/hp/1hp-1.png" alt=""
+              style="max-width: 800px;margin-top: 0px;margin-bottom: 20px;">
+          </div>
+          <div id="accordion-Det" class="accordion">
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading1">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse1" aria-expanded="true"
+                    aria-controls="collapse1">
+                    Click this
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>
+                    <b>Will:</b><br>
+                    As we have noticed the importance of forests in alleviating the climate crisis, we interviewed a
+                    young environmentalist from Greenwild Association. Through this interview, we want to learn how
+                    environmentalists have adopted a more sensitive perspective on climate change in recent years and
+                    how they have made efforts to protect forests. <br>
+                    <b>Action:</b><br>
+                    <img src="https://static.igem.wiki/teams/5136/hp/3.jpg" alt=""
+                      style="position: relative;width: 80%;left: 12%;">
+                    <br>
+                    <!-- <span class="myPage-paragraph-fig-description"><b>Figure 1 The discussion about afforestation
+                        between a
+                        member of the Greenwild Association of XMU and a member of XMU-China 2024.</b>
+                    </span><br> -->
+                    <b>“Are there any projects in the past few years that have impressed you or inspired you, especially
+                      in forest conservation and the fight against climate change?”</b><br>
+                    “One of our members was involved in a forest restoration project in a county in Fujian Province. The
+                    forests there have been badly damaged by years of illegal logging, and flooding worsens it.
+                    Thankfully, after several years of afforestation, the trees began to stabilize the soil.” <br>
+                    <b>“From your perspective, what is the link between deforestation and global climate change? Does
+                      deforestation exacerbate extreme weather events?”</b><br>
+                    “We all know that deforestation is closely related to climate change. We're saying that forests are
+                    important carbon absorbers, which can reduce GHG emissions, and slow down global warming. If you cut
+                    down trees, you will increase the accumulation of greenhouse gases, leading to extreme weather. When
+                    it comes to floods, droughts, typhoons, and so on, it is also closely related to deforestation to
+                    some extent.”<br>
+                    <b>“What do you think are the biggest challenges in promoting sustainable forest management and
+                      conservation policies?”</b><br>
+                    “Benefits. For many areas, deforestation means short-term economic gains. It takes time to convince
+                    local communities of the long-term sustainability benefits, especially when the economic returns are
+                    less obvious. So, when promoting these policies, it needs environmental awareness and corresponding
+                    economic alternatives.”<br>
+                    <b>Notion:</b><br>
+                    Climate change is indeed linked to forests, and many people have been working on it continuously.
+                    However, it is more important to make people gain the reward of these actions so that it can better
+                    forest resource conservation.
+                    In terms of spreading awareness of environmental conservation, these relevant organizations or
+                    communities led by the young can spread the seeds of environmental protection to more people. <br>
+                    <b>Decision:</b> <br>
+                    To promote forest conservation, we need to learn more about how China is dealing with climate change
+                    in forest utilization and try to turn our project into a viable economic alternative. In this
+                    process, we also need to investigate further the public's understanding of paper products, which are
+                    timber's main applications, helping carry out relevant science popularization activities.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <h3 class="myPage-paragraph-headline-h3">2. Dan Liang</h3>
+
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/hp/2hp-1.png" alt=""
+              style="max-width: 800px;margin-top: 0px;margin-bottom: 20px;">
+          </div>
+          <div id="accordion-Det" class="accordion">
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading2">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse2" aria-expanded="true"
+                    aria-controls="collapse2">
+                    Click this
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>
+                    <b>Will:</b><br>
+                    From the interview with the Greenwild Association of XMU, we have acknowledged that deforestation is
+                    a way of earning income for many areas. However, we think forests do more than that, so we want to
+                    find out more about the global forest industry in the context of the climate crisis. <br>
+                    <b>Action:</b><br>
+
+                    We conducted an online interview with Prof. Liang. During the interview, he introduced the concept
+                    of
+                    forest ecosystem service and explained the ecological, economic, and social functions of forests. We
+                    learned that the utilization types of forests in China can be divided into public welfare forests
+                    and commercial forests. Public welfare forests mainly protect the ecological environment and
+                    maintain biodiversity, while commercial forests pay more attention to economic benefits. However,
+                    they are not opposites; they can be complementary and symbiotic through scientific management.<br>
+
+                    With the aim of professionally evaluating the potential of our project as a promising economic
+                    alternative for forest conservation, Prof. Liang recommended the <b>life cycle evaluation</b> (see
+                    in <a style="font-weight: bolder;text-decoration: none;"
+                      href="lca">LCA</a>) method
+                    for
+                    us. This comprehensive approach will allow us to assess our project's impact on energy saving and
+                    emission reduction in the paper industry, effectively bridging the gap between forestry and the
+                    paper industry.<br>
+
+                    <b>Notion:</b><br>
+                    From our analysis of China's policies and the discussion with Prof. Liang, we have observed a
+                    significant shift from industrial civilization to eco-civilization. This transition is a beacon of
+                    hope for forest conservation. By employing the life cycle evaluation, we can measure our project's
+                    contributions to reducing GHG emissions and protecting forest resources, thereby advancing the
+                    implementation of this inspiring concept.<br>
+
+                    <b>Decision:</b> <br>
+                    We learned more about the changes in China's forestry policies and their implications for addressing
+                    climate change. We decided to use a full <b>life cycle evaluation</b> to evaluate our project's
+                    contributions to the paper industry and forest conservation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <h3 class="myPage-paragraph-headline-h3">3. Zhangzhou Municipal Ecology and Environment Bureau</h3>
+          <p class="myPage-paragraph-content">
+            Zhangzhou Municipal Ecology and Environment Bureau is mainly responsible for monitoring and improving the
+            environmental quality of Zhangzhou and other environmental protection and management activities.
+          </p>
+          <div id="accordion-Det" class="accordion">
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading3">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse3" aria-expanded="true"
+                    aria-controls="collapse3">
+                    Click this
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>
+                    <b>Will:</b><br>
+                    We have come to understand that climate change is not just a distant threat, but a pressing issue
+                    that is directly linked to the survival of our forests. We are eager to visit the environmental
+                    monitoring department for a comprehensive investigation into how climate change and reforestation
+                    are impacting our daily lives.<br>
+                    <b>Action:</b><br>
+                    <img src="https://static.igem.wiki/teams/5136/hp/3hp-2.jpg" alt=""
+                      style="position: relative;width: 80%;left: 12%;">
+                    <!-- <span class="myPage-paragraph-fig-description"><b>Figure 2 The discussion about the climate crisis
+              between Zhangzhou Municipal Ecology and Environment Bureau and members of XMU-China 2024.</b>
+          </span><br> -->
+                    <img src="https://static.igem.wiki/teams/5136/hp/3hp-3.jpg" alt=""
+                      style="position: relative;width: 80%;left: 12%;">
+                    <br>
+                    <!-- <span class="myPage-paragraph-fig-description"><b>Figure 3 Members of XMU-China communicated with
+              staff of Zhangzhou Municipal Ecology and Environment Bureau.</b>
+          </span><br> -->
+
+                    We held discussions with the Zhangzhou Municipal Ecology and Environment Bureau. The staff told us
+                    that Zhangzhou has been affected by global warming recently, with frequent extreme weather such as
+                    typhoons, torrential rain, strong convection, drought, high temperature, and freezing damage.
+                    Meteorological disasters are generally severe, affecting the city's economic operation.<br>
+
+                    It is mentioned that carbon dioxide emission is the main cause of the greenhouse effect, deriving
+                    from thermal power generation, paper making, steel, and other industrial activities that consume
+                    large amounts of energy and materials. When it comes to the environmental impact of industry, we
+                    learned that the current paper industry pollution mainly includes ammonia nitrogen, total
+                    phosphorus, black alkali liquor, organic pollutants, etc., which are troublesome for relevant
+                    manufacturers. <br>
+
+                    <b>Notion:</b><br>
+                    After this survey, we realized that we needed to find the details of paper enterprises' wastepaper
+                    recycling and treatment processes. We also noticed that the Municipal Ecology and Environment Bureau
+                    was also making efforts to create a low-carbon community in the local area. This urges us to pay
+                    attention to the citizens and take subsequent actions.<br>
+
+                    <b>Decision:</b> <br>
+                    Through our discussions, we have gained a deeper understanding of climate change and have brought
+                    attention to the carbon emission and pollution problems in the paper industry. This has also sparked
+                    inspiration for us to conduct more extensive fieldwork on the potential for a low-carbon community.
+                    We believe that we can make significant strides towards a more sustainable future.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <h3 class="myPage-paragraph-headline-h3">4. Xiamen Low-Value Recyclable Sorting Center</h3>
+          <p class="myPage-paragraph-content">
+            The Low-Value Recyclable Sorting Center is responsible for the efficient and accurate automatic sorting of
+            low-value recyclables, mainly disposable boxes, Tetra Pak, express packages, etc. It represents the
+            eco-friendly mode of household waste recyclables in Xiamen.
+          </p>
+          <div id="accordion-Det" class="accordion">
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading4">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse4" aria-expanded="true"
+                    aria-controls="collapse4">
+                    Click this
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse4" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>
+                    <b>Will:</b><br>
+                    We hope to investigate the recycling and utilization of wastepaper further.<br>
+                    <b>Action:</b><br>
+                    <img src="https://static.igem.wiki/teams/5136/hp/4hp-1.jpg" alt=""
+                      style="position: relative;width: 80%;left: 12%;">
+                    <!-- <span class="myPage-paragraph-fig-description"><b>Figure 4 Members of XMU-China communicated with
+              staff Ms. Liu of the Xiamen Low-Value Recyclable Sorting Center.</b>
+          </span><br> -->
+
+                    <img src="https://static.igem.wiki/teams/5136/hp/4hp-2.jpg" alt=""
+                      style="position: relative;width: 80%;left: 12%;">
+                    <br>
+                    <!-- <span class="myPage-paragraph-fig-description"><b>Figure 5 the XMU-China 2024 and the staff.</b>
+          </span><br> -->
+
+
+                    We went to the Low-Value Recyclable Sorting Center in Xiamen to do research. Under the guidance of
+                    Ms. Liu, an enterprise staff member at this center, we observed and experienced the sorting and
+                    recycling processes on the spot. We found that most of the paper that entered the center had been
+                    polluted, and it was difficult to reclassify precisely.<br>
+
+                    The staff also said that the low-value mixed wastepaper could only be uniformly pulped and sent to
+                    downstream enterprises for downgrade treatment, bringing minimal economic benefits.<br>
+
+                    <b>Notion:</b><br>
+                    We realized that improving paper recycling methods and expanding recycling ways can not only relieve
+                    the burden on related enterprises but also turn trash into treasure, achieving sustainable
+                    development of the paper industry.<br>
+
+                    <b>Decision:</b> <br>
+                    We found that wastepaper faces the problem of high sorting costs but low recycling value. This made
+                    us plan relevant publicity activities to raise residents' awareness of wastepaper sorting and
+                    recycling.
+                    <br>
+
+                    Meanwhile, we also had a deeper understanding of paper recycling, which is important to the
+                    renewable resources industry and the city's waste treatment. So, we plan to conduct further research
+                    on high-quality wastepaper resources entering the market.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 5 -->
+          <h3 class="myPage-paragraph-headline-h3">5. Nine Dragons Paper Company Limited (Quanzhou City)</h3>
+
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/hp/5hp-1.png" alt=""
+              style="max-width: 800px;margin-top: 0px;margin-bottom: 20px;">
+          </div>
+          <div id="accordion-Det" class="accordion">
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading5">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse5" aria-expanded="true"
+                    aria-controls="collapse5">
+                    Click this
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse5" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>
+                    <b>Will:</b><br>
+                    We have learned about the paper industry's pollution problem and the difficulties of wastepaper
+                    classification and recycling. To further investigate the production process and post-treatment
+                    details of wastepaper recycling, we went to Nine Dragons Paper Company Limited in Quanzhou City for
+                    a field investigation.<br>
+                    <b>Action:</b><br>
+                    <img src="https://static.igem.wiki/teams/5136/hp/10.jpg" alt=""
+                      style="position: relative;width: 80%;left: 12%;">
+                    <br>
+                    <!-- <span class="myPage-paragraph-fig-description"><b>Figure 6 The exchange of XMU-China 2024 and the
+              Company’s staff.</b>
+          </span><br> -->
+
+                    The staff introduced the process of wastepaper recycling to us, which is mainly divided into pulping
+                    and papermaking. Although it is more environmentally friendly than wood pulp paper, recycling paper
+                    is still a
+                    relatively power-consuming process. The pulping and drying process consumes more electricity, which
+                    means more coal. <br>
+
+                    We also learned that most of the waste paper had been reccled for many times. In that case, the
+                    fiber
+                    treatment steps are more complicated, and the production efficiency is reduced, which is a common
+                    problem faced by China's recycled paper industry. Moreover, because the raw materials of recycled
+                    paper are generally waste office paper, the production process also needs to include the bleaching
+                    step, which not only consumes a lot of water and chemical reagents but also releases a variety of
+                    wastes, polluting the surrounding environment and bring adverse effects on the
+                    health of workers without properly handled.<br>
+
+                    After our introduction, the staff did not quite understand the usage of engineered bacteria
+                    in pulp making. They were worried that the metabolites of the bacteria themselves might adversely
+                    affect the quality of the pulp. The sterilization equipment in the factory was generally ultraviolet
+                    light or filter, which made it difficult to meet the needs of biosafety. So, the staff suggested
+                    that we continue to improve the biosafety part.<br>
+
+                    <b>Notion:</b><br>
+                    The cumbersome fiber processing, the excessive use of chemical reagents, and the large processing
+                    burden of wastewater are worthy of note, and these are the targets of our projects. To adapt to the
+                    industry's specific situation, we also need to optimize our biosafety. <br>
+
+                    <b>Decision:</b> <br>
+                    Communication with the company allowed us to further clarify the specific processing difficulties of
+                    the wastepaper recycling process. We are preparing a return visit to exchange ideas about our
+                    project.
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 6 -->
+          <h3 class="myPage-paragraph-headline-h3">6. Fuxing Renewable Resources Recycling Store (Xiamen City)</h3>
+          <p class="myPage-paragraph-content">
+            Fuxing Renewable Resources Recycling Store is a professional resource recycling processing point in Xiamen,
+            which plays an important role in the wastepaper recycling chain.
+          </p>
+          <div id="accordion-Det" class="accordion">
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading6">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse6" aria-expanded="true"
+                    aria-controls="collapse6">
+                    Click this
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse6" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>
+                    <b>Will:</b><br>
+                    After investigating the recycled paper industry, we hope to gain a more specific understanding of
+                    the upstream of the waste paper recycling chain, hence we went to the Fuxing Renewable Resources
+                    Recycling Store.<br>
+                    <b>Action:</b><br>
+
+                    The Store receives wastepaper from residents, scavengers, and sanitation workers, which can be up to
+                    a total of 600 kilograms per day. After sorting by staff, the wastepaper is sent to a downstream
+                    sorting center for compressing and packaging and finally sold to paper mills for
+                    reprocessing.<br>
+
+                    <b>Notion:</b><br>
+                    We observed that the amount of wastepaper in the recycling station is relatively stable and large,
+                    but this is in contradiction with the declining utilization rate of wastepaper in China (details in
+                    <a style="font-weight: bolder;text-decoration: none;"
+                      href="description">description</a>).<br>
+
+                    <b>Decision:</b> <br>
+                    According to this survey, we recognized that the low recycling rate of waste paper is not due to
+                    insufficient amounts of waste paper recycled, but rather a bottleneck that hinders the utilization
+                    of waste paper. To find out the real bottleneck of wastepaper recycling, we decided to seek relevant
+                    guilds to conduct in-depth research.
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 7 -->
+          <h3 class="myPage-paragraph-headline-h3">7. The Xiamen Renewable Resources Industry Association</h3>
+          <p class="myPage-paragraph-content">
+            The Xiamen Renewable Resources Industry Association (hereinafter referred to as "Association") is a
+            professional organization in the renewable resources industry in Xiamen. It is committed to promoting the
+            standardized development of the industry, playing an important role in environmental protection and
+            sustainable development.
+          </p>
+          <div id="accordion-Det" class="accordion">
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading7">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse7" aria-expanded="true"
+                    aria-controls="collapse7">
+                    Click this
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse7" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>
+                    <b>Will:</b><br>
+                    The interview with the Fuxing Renewable Resources Recycling Store provided new insights,
+                    highlighting the necessity of gaining a comprehensive understanding of the entire industry. To
+                    obtain more complete information, we recognized the need to connect with a network, such as an
+                    industry association, to investigate the paper recycling process.<br>
+                    <b>Action:</b><br>
+                    <img src="https://static.igem.wiki/teams/5136/hp/11.jpg" alt=""
+                      style="position: relative;width: 80%;left: 12%;">
+                    <br>
+                    <!-- <span class="myPage-paragraph-fig-description"><b>Figure 7 The members had an in-depth exchange with
+                        Ms. Zhang. </b>
+                    </span><br> -->
+
+                    We had an interview with Ms. Zhang, Deputy Secretary-General of the Association. We learned that
+                    different types of wastepaper differ in the degree of pollution and the purity of
+                    fibers. For example, the low-value mixed wastepaper will cause pollution due to the printing ink,
+                    adhesives, and other chemicals. This can increase the difficulty of recycling and affect the
+                    efficiency of recovery and the quality of recycled paper.<br>
+
+                    <b>Notion:</b><br>
+                    Verified by many investigations, we finally found the reason for the low utilization of wastepaper:
+                    the low deinking efficiency. To truly achieve efficient and eco-friendly wastepaper recycling, we
+                    need to optimize the deinking step to overcome the problems of the high cost and low quality of
+                    recycled paper.<br>
+
+                    <b>Decision:</b> <br>
+                    Through the investigation of wastepaper recycling in the market, we found that there are indeed
+                    difficulties in industrial paper recycling, and the key to solving them may be optimizing the
+                    deinking step. We also started to explore a more targeted scheme of synthetic biology.
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 8 -->
+          <h3 class="myPage-paragraph-headline-h3">8. Liulin Yang:</h3>
+
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/hp/8hp-1.png" alt=""
+              style="max-width: 800px;margin-top: 0px;margin-bottom: 20px;">
+          </div>
+          <div id="accordion-Det" class="accordion">
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading8">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse8" aria-expanded="true"
+                    aria-controls="collapse8">
+                    Click this
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse8" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>
+                    <b>Will:</b><br>
+                    We learned that ink contains ink binders, namely resin mixtures, helping the ink attach to the
+                    paper, which hinders our de-inking process. So, we planned to use PETase and lipase to destroy the
+                    ink binders. We want to know the feasibility of this strategy.<br>
+
+                    <b>Action:</b><br>
+
+                    We visited Prof. Yang and discussed the feasibility of our project with him. He said the
+                    degradation of polymeric resin by enzymes is currently very inefficient. So, it is recommended that
+                    we destroy the paper fibers in contact with ink to achieve the purpose of de-inking because
+                    destroying a small amount of cellulose on the surface is easier.<br>
+
+                    <b>Notion:</b><br>
+                    These suggestions successfully made us start to pay attention to cellulase. When faced with a
+                    difficult problem, we can think about the solution from a different angle.<br>
+
+                    <b>Decision:</b> <br>
+                    Considering the suggestion of Prof. Yang, we further evaluated the feasibility of PETase and finally
+                    decided to use cellulase instead of PETase.
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 9 -->
+          <h3 class="myPage-paragraph-headline-h3">9. Chen Ling</h3>
+
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/hp/9hp-1.png" alt=""
+              style="max-width: 800px;margin-top: 0px;margin-bottom: 20px;">
+          </div>
+          <div id="accordion-Det" class="accordion">
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading9">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse9" aria-expanded="true"
+                    aria-controls="collapse9">
+                    Click this
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse9" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>
+                    <b>Will:</b><br>
+                    After we realized that wastepaper recycling is facing the problem in the de-inking process, we
+                    desire to search for more effective enzymes in pulp de-inking.<br>
+
+                    <b>Action:</b><br>
+                    <img src="https://static.igem.wiki/teams/5136/hp/9hp-2.jpg" alt=""
+                      style="position: relative;width: 80%;left: 12%;">
+                    <br>
+                    <!-- <span class="myPage-paragraph-fig-description"><b>Figure 8 Members of XMU-China were talking with
+                        Associate Professor Ling Chen. </b>
+                    </span><br> -->
+
+                    During the experiments, we found that the de-inking effect of cellulase, lipase, and laccase was
+                    very limited. So we showed the specific details of chemical deinking to Prof. Chen, hopefully, to
+                    find an alternative. <br>
+
+                    The key to the pulp deinking may be related to using the oxidant, which is hydrogen
+                    peroxide. So he suggested us to use oxidase, such as monooxygenase. <br>
+
+                    Prof. Chen explained to us that monooxygenase inserts a single oxygen atom in the process of
+                    reacting with substrate molecules so that the conjugated side chains of lignin and other colored
+                    substances. Finally, these colored substances become unstable, and ultimately achieve the purpose of
+                    bleaching, which may be able to achieve the same or even better effect than hydrogen peroxide
+                    treatment. This gives us a new idea for our processing system, more details can be found on our
+                    <a style="font-weight: bolder;text-decoration: none;"
+                      href="design">Design</a> page. <br>
+
+                    <b>Notion:</b><br>
+                    With the introduction of monooxygenase, we may be able to synchronize the de-inking and bleaching
+                    processes, which will further improve the production efficiency of the company.<br>
+
+                    <b>Decision:</b> <br>
+                    Through this exchange, we have managed to focus on monooxygenase and its potential bleaching
+                    effects. After the introduction of monooxygenase, the de-inking process has been significantly
+                    improved. Details can be seen on <a style="font-weight: bolder;text-decoration: none;"
+                      href="results">Results</a>.
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 10 -->
+          <h3 class="myPage-paragraph-headline-h3">10. Xiaoyan Zhuang</h3>
+
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/hp/10hp-1.png" alt=""
+              style="max-width: 800px;margin-top: 0px;margin-bottom: 20px;">
+          </div>
+          <div id="accordion-Det" class="accordion">
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading10">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse10" aria-expanded="true"
+                    aria-controls="collapse10">
+                    Click this
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse10" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>
+                    <b>Will:</b><br>
+                    After finding some effective candidate enzymes, we hope to communicate with Prof. Zhuang about the
+                    feasibility of our release system to make these enzymes work effectively in reality.<br>
+
+                    <b>Action:</b><br>
+
+                    <img src="https://static.igem.wiki/teams/5136/hp/16.jpg" alt=""
+                      style="position: relative;width: 80%;left: 12%;">
+                    <br>
+                    <!-- <span class="myPage-paragraph-fig-description"><b>Figure 9 Members of XMU-China discussed with Ms.
+                        Zhuang Xiaoyan.</b>
+                    </span><br> -->
+
+                    In the initial design, we used a bacterial autolytic system called FLSA (FhuD-Lysozyme-SsrA Mediated
+                    Autolytic System) for the effective release of intracellular products (Details in <a
+                      style="font-weight: bolder;text-decoration: none;"
+                      href="design">Design</a>). Prof. Zhuang expressed concerns about
+                    our autolytic system.<br>
+
+                    The leakage of plasmids is inevitable when cracking engineered bacteria without safety measures.
+                    Moreover, if adding extra inducers to initiate autolysis is applied in an
+                    industrial environment, the cost will be dramatically increased due to the large consumption of
+                    inducers. <br>
+
+                    To our surprise, Prof. Zhuang proposed a new idea – engineer the protein secretion ability of the
+                    bacteria to achieve the goal of efficient enzyme release. Because the engineered bacteria can
+                    release the enzyme continuously, rather than cracking it all at once. This inspired us to redesign
+                    our project. <br>
+
+                    <b>Notion:</b><br>
+                    Based on the experiments of LMT in 2021 XMU-China and 2023 XMU-China, we tried to compare the LMT
+                    with the other seven signal peptides recommended by Ms. Zhuang. <br>
+
+                    <b>Decision:</b> <br>
+                    Through communication with Prof. Zhuang, we considered more details about the actual industrial
+                    treatment scenarios. We re-examined our design from the perspective of efficiency and biosafety,
+                    carrying out corresponding optimization, which made our deinking enzyme system more feasible and
+                    reliable. Finally, we decided to use the LMT to secrete our enzymes. <br>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 11 -->
+          <h3 class="myPage-paragraph-headline-h3">11. Yong Sha</h3>
+
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/hp/11hp-1.png" alt=""
+              style="max-width: 800px;margin-top: 0px;margin-bottom: 20px;">
+          </div>
+          <div id="accordion-Det" class="accordion">
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading11">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse11" aria-expanded="true"
+                    aria-controls="collapse11">
+                    Click this
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse11" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>
+                    <b>Will:</b><br>
+                    In the process of our experiment, we encountered the problem of fiber loss described by the Nine
+                    Dragons Paper Company Limited, and we needed to explore new ways to improve the fiber yield.<br>
+
+                    <b>Action:</b><br>
+
+                    <img src="https://static.igem.wiki/teams/5136/hp/11hp-2.jpg" alt=""
+                      style="position: relative;width: 80%;left: 12%;">
+                    <br>
+                    <!-- <span class="myPage-paragraph-fig-description"><b>Figure 10 Team members discuss the flotation
+                        deinking plan with Dr. Sha Yong.</b>
+                    </span><br> -->
+
+                    To improve the efficiency of the industrial de-inking process, we had a interview with Prof.
+                    Sha. When we introduced the project, we analyzed the industrial pulping process together with him,
+                    including pulping, screening and purification, washing and concentration, de-inking flotation and
+                    finally bleaching. Prof. Sha paid attention to the process of flotation. He explained to us that
+                    flotation is an effective way to separate solid particles in the liquid phase environment, but in
+                    the paper recycling process, the scale of ink and fine fibers is close to each other. So, it is
+                    difficult to effectively separate by flotation method. <br>
+
+                    However, most of the ink and fibers still have differences in the hydrophilic relationship, and
+                    perhaps hydrophobic solvent extraction can be more effective in separating them. <br>
+
+                    <b>Notion:</b><br>
+                    The reason why we could not improve the separation efficiency before may be the floating method, not
+                    just about fiber quality.<br>
+
+                    <b>Decision:</b> <br>
+                    With the help of Prof. Sha, We fully analyze the properties behind the industrial treatments to
+                    better find the key and feasible solutions to the problem. Considering the environmental
+                    friendliness and biodegradability, we use limonene for ink extraction, rather than the original
+                    flotation method by surfactants, bettering the deinking process.<br>
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 12 -->
+          <h3 class="myPage-paragraph-headline-h3">12. Anfeng Xiao</h3>
+
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/hp/12hp-1-new.png" alt=""
+              style="max-width: 800px;margin-top: 0px;margin-bottom: 20px;">
+          </div>
+          <div id="accordion-Det" class="accordion">
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading12">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse12" aria-expanded="true"
+                    aria-controls="collapse12">
+                    Click this
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse12" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>
+                    <b>Will:</b><br>
+                    We hoped to use alginate hydrogel beads wrap-engineered bacteria as our biosafety strategy. On Prof.
+                    Zhuang's recommendation, we visited Prof. Xiao to exchange information about the preparation and use
+                    of hydrogels. We hope his rich practical experience can help us better evaluate the feasibility of
+                    the alginate hydrogel beads.<br>
+
+                    <b>Action:</b><br>
+
+                    <img src="https://static.igem.wiki/teams/5136/hp/20.jpg" alt=""
+                      style="position: relative;width: 80%;left: 12%;">
+                    <br>
+                    <!-- <span class="myPage-paragraph-fig-description"><b>Figure 11 Members of XMU-China communicated with
+                        Dr. Xiao
+                        about the use of alginate hydrogel beads.
+                      </b>
+                    </span><br> -->
+
+                    We had an in-depth discussion with Prof. Xiao about the biosafety strategy of wrapping engineering
+                    bacteria by using alginate hydrogel beads, especially the side effects of alginate hydrogel beads in
+                    nutrient preservation and heavy metal ion transportation.<br>
+
+                    Dr. Xiao regrettably indicated that we could not narrow the pore size of the hydrogel to avoid the
+                    dissipation of small molecules of nutrients and inducers, because it might also impact the
+                    adsorption process of heavy metal ions. At the very least, using a hydrogel carrier is not the most
+                    economical option in the industry. <br>
+
+                    <b>Notion:</b><br>
+                    This exchange made us rethink the necessity of hydrogel carriers. <br>
+
+                    <b>Decision:</b> <br>
+                    This conversation made us think more critically consider the use of alginate hydrogel beads.
+                    Finally, we decided to abandon this scheme, and combined with the actual situation of the Nine
+                    Dragons Paper Company Limited, we decided to use the light-triggered kill switch to ensure
+                    biosafety.<br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 13 -->
+          <h3 class="myPage-paragraph-headline-h3">13. Feedback from the Nine Dragons Paper Company Limited (Quanzhou
+            City)</h3>
+          <div class="myPage-paragraph-fig">
+            <img src="https://static.igem.wiki/teams/5136/hp/5hp-1.png" alt=""
+              style="max-width: 800px;margin-top: 0px;margin-bottom: 20px;">
+          </div>
+
+          <div id="accordion-Det" class="accordion">
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading23">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse23" aria-expanded="true"
+                    aria-controls="collapse23">
+                    Click this
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse23" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>
+                    <b>Will:</b><br>
+                    After the last communication, we further improved our design. To further adapt to the industrial
+                    process of the recycled paper process, we introduced the light-triggered kill switch, combined with
+                    the deinking enzyme and the enzyme release system based on the signal peptide LMT that we screened,
+                    hoping to better meet the needs of the Company to simplify production conditions and ensure
+                    biosafety.<br>
+
+                    <b>Action:</b><br>
+
+                    <img src="https://static.igem.wiki/teams/5136/hp/21.jpg" alt=""
+                      style="position: relative;width: 80%;left: 12%;">
+                    <br>
+                    <!-- <span class="myPage-paragraph-fig-description"><b>Figure 11 Members of XMU-China communicated with
+                        Dr. Xiao
+                        about the use of alginate hydrogel beads.
+                      </b>
+                    </span><br> -->
+
+                    We once again communicated with the Nine Dragons Paper Company Limited. about the feasibility of our
+                    deinking solution. We presented with a complete and optimized deinking process and wastewater
+                    treatment solution, including efficient deinking enzymes and heavy metal ion adsorption systems (see
+                    <a style="font-weight: bolder;text-decoration: none;"
+                      href="design">Design</a> for details), and
+                    established more standardized operating procedures (see <a
+                      style="font-weight: bolder;text-decoration: none;"
+                      href="sop">SOP</a> for details).
+                    To enable staff to better understand the results of our projects, we evaluated our solutions in
+                    terms of laboratory deinking effectiveness, cost control, and carbon emission control (see <a
+                      style="font-weight: bolder;text-decoration: none;"
+                      href="lca">LCA</a> for
+                    details), which was highly valued by the staff. <br>
+
+                    It is worth pointing out that although our
+                    light-controlled kill switch can be well adapted to the current production conditions of the
+                    industry. In addition, the staff have encountered great difficulties in understanding the concepts
+                    related to synthetic biology. Subsequently, we conducted an introduction on synthetic biology,
+                    introducing the application of engineered bacteria to dyes degradation, the production of
+                    high-value-added products, and so on. Refreshing the thoughts of employees about engineered bacteria
+                    has succeeded in promoting public awareness of the powerful tools of synthetic biology.<br>
+
+
+
+                    <b>Notion:</b><br>
+                    Further interaction withthe Nine Dragons Paper Company Limited has provided significant feedback to
+                    our project, which includes not only a more comprehensive evaluation of our project but also the
+                    public's understanding and perception of synthetic biology. We are more deeply aware that the
+                    successful promotion of an application program needs people's understanding and recognition.<br>
+
+                    <b>Decision:</b> <br>
+                    Through this exchange, we realized the importance of further promoting the project, so we decided to
+                    publish relevant scientific science articles on the public account to promote public understanding
+                    and recognition of our project and stimulate public interest in synthetic biology.<br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="myPage-paragraph" id="section5">
+          <h2 class="myPage-paragraph-headline-h2">Educations</h2>
+          <h3 class="myPage-paragraph-headline-h3">Overview</h3>
+          <p class="myPage-paragraph-content">
+            “Education is a tree shakes another; a cloud promotes another; a soul awakens another.” This year, we
+            continue iGEMer's mission to develop public awareness of synthetic biology, demystifying synthetic biology
+            through education and entertainment, to inspire more people to learn about this fascinating field.
+          </p>
+          <!-- 12+1=13 -->
+          <h3 class="myPage-paragraph-headline-h3">1. Science and Technology Museum (Xiamen City)</h3>
+          <p class="myPage-paragraph-content">
+            Xiamen Science and Technology Museum is an important science base for children and teenagers in Xiamen.
+          </p>
+          <div id="accordion-Det" class="accordion">
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading13">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse13" aria-expanded="true"
+                    aria-controls="collapse13">
+                    Click this
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse13" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>
+                    <b>Will:</b><br>
+                    Based on the previous interview and survey results, there is a lack of public knowledge about
+                    wastepaper recycling. We hope to raise the awareness of children and teenagers to cherish and
+                    protect forest resources.<br>
+
+                    <b>Action:</b><br>
+
+                    <img src="https://static.igem.wiki/teams/5136/hp/22.png" alt="">
+                    <!-- <span class="myPage-paragraph-fig-description"><b>Figure 13 Members of XMU-China give a science
+                        popularization lecture on forest protection and saving paper.
+                      </b>
+                    </span><br> -->
+
+                    <img src="https://static.igem.wiki/teams/5136/hp/23.png" alt="">
+                    <!-- <span class="myPage-paragraph-fig-description"><b>Figure 14 Members play edutainment games with
+                        kids.
+                      </b>
+                    </span><br> -->
+
+                    We had cooperated with the Science and Technology Museum to organize a science popularization event
+                    with the theme of protecting forests and saving paper. By issuing brochures, playing games, poster
+                    displays, and project promotion, we helped children and teenagers understand the ways of wastepaper
+                    recycling and cultivate a paper-saving lifestyle. <br>
+
+                    <b>Notion:</b><br>
+                    We have received many positive feedbacks from participants of our event. We really felt that many of
+                    them are curious about nature and thirsty for knowledge. However, most of the participants were
+                    under preliminary school age, so we then plan to carry out events among older children.<br>
+
+                    <b>Decision:</b> <br>
+                    Through this activity, XMU-China not only demonstrated scientific research achievements and
+                    innovative thinking but also reflected the iGEMer's sense of social responsibility and public
+                    welfare spirit.<br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 12+2=14 -->
+          <h3 class="myPage-paragraph-headline-h3">2. Yanwu Primary School</h3>
+          <p class="myPage-paragraph-content">
+            Xiamen Yanwu Primary School is a well-regarded educational institution located in Xiamen.
+          </p>
+          <div id="accordion-Det" class="accordion">
+            <div class="panel">
+              <div class="panel-heading" role="tab" id="heading14">
+                <h4 class="panel-title">
+                  <a role="button" class="collapsed" data-toggle="collapse" href="#collapse14" aria-expanded="true"
+                    aria-controls="collapse14">
+                    Click this
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse14" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <p>
+                    <b>Will:</b><br>
+                    Based on previous research and activities, we decided to promote science popularization for children
+                    and teenagers to raise their awareness of paper saving and forest conservation.<br>
+
+                    <b>Action:</b><br>
+
+                    <img src="https://static.igem.wiki/teams/5136/hp/24.jpg" alt="">
+                    <!-- <span class="myPage-paragraph-fig-description"><b>Figure 13 Members of XMU-China give a science
+                        popularization lecture on forest protection and saving paper.
+                      </b>
+                    </span><br> -->
+
+                    <img src="https://static.igem.wiki/teams/5136/hp/25.jpg" alt="">
+                    <!-- <span class="myPage-paragraph-fig-description"><b>Figure 14 Members play edutainment games with
+                        kids.
+                      </b>
+                    </span><br> -->
+
+                    We came to the Yanwu Primary School to carry out the Protect the Forest and Save Paper science
+                    popularization activities, which not only included the popularization of knowledge but also included
+                    tailored experiments. In the class, Prof. Hong, the PI of our team, introduced some basic knowledge
+                    about forests to students and explained how trees simply become our writing paper.<br>
+
+                    He also explained to the students the indispensable "partner" in synthetic biology ---- E. coli,
+                    which excites the children's interest. Through picture display and video learning, the children had
+                    a new understanding of E. coli, and the infinite possibilities given by synthetic biology also make
+                    them felt the charm of science. <br>
+
+                    To let the students better understand the nature of carbon dioxide and the concept of forest
+                    protection, the team designed a variety of fun experiments in advance to help the children better
+                    understand the scientific principles behind the interesting phenomenon through the way of education
+                    and entertainment. <br>
+
+                    <b>Notion:</b><br>
+                    By enriching our learning methods and constantly trying in practice, we cannot be limited to
+                    textbook knowledge and truly feel the charm of science in life. We also hope to stimulate students'
+                    interest in synthetic biology through this activity, so that the flame of synthetic biology will
+                    pass on.<br>
+
+                    <b>Decision:</b> <br>
+                    This activity not only enhanced the children's awareness of treasure and protection of forest
+                    resources but also let the children develop a paper-saving lifestyle. So far, with many offline
+                    activities, we decided to publish these gains in the form of popular science articles on our public
+                    account so that more people can understand and even join our actions to protect forests and cope
+                    with the climate crisis.<br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-bottom: 100px;"></div>
+  <script>
+    // jQuery to handle the collapse toggle and style changes
+    $(document).ready(function () {
+      $('#accordion-Det .panel-title a').click(function () {
+        var targetId = $(this).attr('href');
+        // Toggle the collapse
+        $(targetId).collapse('toggle');
+
+        // Event for collapse show
+        $(targetId).on('shown.bs.collapse', function () {
+          $(this).prev().find('a').removeClass('collapsed').addClass('expanded');
+        });
+
+        // Event for collapse hide
+        $(targetId).on('hidden.bs.collapse', function () {
+          $(this).prev().find('a').removeClass('expanded').addClass('collapsed');
+        });
+
+        return false; // Prevent the default behavior of the anchor
+      });
+    });
+  </script>
+
+</div>
+
+
+  </div>
+
+  <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+  
+    <!-- topbutton -->
+    <div class="menu">
+
+        <div class="toggle">
+            <i class="fa fa-angle-double-up"></i>
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-0.png" alt="" style="z-index: 100;">
+        </div>
+        <li style="--i:0">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:1">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:2">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:3">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:4">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:6">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+        <li style="--i:7">
+            <img src="https://static.igem.wiki/teams/5136/top-button/mfb-1.png" alt="">
+        </li>
+    </div>
+    
+    <div id="myFooter">
+        <!--  内容部分-->
+        <div class="footer-xiaohui">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-xmulogo.png" alt="">
+            <div class="footer-xiaoming">
+                Xiamen University
+            </div>
+        </div>
+        <div class="footer-didian">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-position.png" alt="">
+            <div class="footer-didianming">
+                Xiamen University, Fujian, China<br>
+                No.422, Siming South Road, Fujian, P.R.China 361005
+            </div>
+        </div>
+        <div class="footer-duihui">
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-teamlogo-2024.png" alt="">
+        </div>
+        <div class="footer-follow">
+            <div class="footer-followus">
+                Follow Us
+            </div>
+            <div class="footer-wechat">
+                <a href="https://static.igem.wiki/teams/5136/header-footer-img/wechat.png">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wechat.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-facebook">
+                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FIGEM-XMU-China-1067638406629389">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-f.png" alt=""
+                     style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-ins">
+                <a href="https://www.instagram.com/xmu_china_igem">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-o.png" alt=""
+                    style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-weibo">
+                <a href="https://weibo.com/u/7482868083">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-wb.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+            <div class="footer-twitter">
+                <a href="https://twitter.com/XMU_igem">
+                    <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-x.png" alt=""
+                         style="max-width: 100%;">
+                </a>
+            </div>
+        </div>
+        <!-- <div class="footer-bar"></div> -->
+        <div class="footer-contact">
+            <div class="footer-contactus">
+                Contact Us
+            </div>
+            <img src="https://static.igem.wiki/teams/5136/header-footer-img/footer-mail.png" alt="">
+            <div class="footer-mail">
+                igem_xmu@163.com
+            </div>
+        </div>
+    </div>
+    
+
+  <!-- Bootstrap Bundle with Popper -->
+  
+  <script src="static/bootstrap.bundle.min.js"></script>
+  <script src="static/js2024/top.js"></script>
+  <script src="static/js2024/scroll.js"></script>
+</body>
+
+</html>
